@@ -15,13 +15,13 @@ const unit: Unit = {
       lines: [
         {
           speaker: 'You',
-          en: "Excuse me, could you tell me where I'd find soy sauce?",
+          en: "Excuse me, could you tell me where I\'d find soy sauce?",
           zh: '不好意思，請問醬油在哪裡？',
           note: '問店員位置的萬用開頭。"Where would I find ___?" 比 "Where is ___?" 更客氣自然。美國超市員工被問路是家常便飯，別不好意思開口。',
         },
         {
           speaker: 'Employee',
-          en: "Soy sauce? That'd be aisle 7, with the international foods. About halfway down, on your left.",
+          en: "Soy sauce? That\'d be aisle 7, with the international foods. About halfway down, on your left.",
           zh: '醬油嗎？在第 7 走道，國際食品區。走到一半左手邊。',
           note: 'aisle（唸 /aɪl/，s 不發音！）是「走道」，美國超市每條走道有編號，上方掛牌寫著該走道有什麼。亞洲食品通常歸在 "international" 或 "ethnic foods" 區。',
         },
@@ -35,17 +35,17 @@ const unit: Unit = {
           speaker: 'Employee',
           en: "You bet. Anything else I can help you find?",
           zh: '不客氣。還有什麼要找的嗎？',
-          note: '"You bet" 是很美式的「不客氣」，跟 "No problem"、"Sure thing" 一樣常見，比課本的 "You're welcome" 出現頻率高得多。',
+          note: '"You bet" 是很美式的「不客氣」，跟 "No problem"、"Sure thing" 一樣常見，比課本的 "You\'re welcome" 出現頻率高得多。',
         },
         {
           speaker: 'You',
-          en: "Actually, yeah—where's the deli counter?",
+          en: "Actually, yeah—where\'s the deli counter?",
           zh: '啊，還真有——deli 櫃檯在哪？',
           note: '"Actually, yeah" 是想起還有事要問時的自然轉折。deli 是超市裡現切肉品、起司、熟食的櫃檯，要跟店員互動，很多人因為怕開口就只買包裝好的，很可惜。',
         },
         {
           speaker: 'Employee',
-          en: "Back corner, past the bakery. You might wanna grab a number ticket if it's busy.",
+          en: "Back corner, past the bakery. You might wanna grab a number ticket if it\'s busy.",
           zh: '在最裡面的角落，過了麵包區。人多的話記得先抽號碼牌。',
           note: '很多 deli 櫃檯有抽號碼機（number ticket / take a number），跟台灣銀行一樣。沒抽號站在那乾等，店員可能一直服務別人。',
         },
@@ -77,13 +77,13 @@ const unit: Unit = {
           speaker: 'Deli clerk',
           en: "Sure thing. It came out a little over—that okay?",
           zh: '沒問題。切出來稍微超過一點——可以嗎？',
-          note: '切肉很難剛剛好，店員切超過一點會問你 "It's a little over, is that okay?"。多個零點零幾磅照常買單即可，回 "That's fine" 就好，斤斤計較會顯得很怪。',
+          note: '切肉很難剛剛好，店員切超過一點會問你 "It\'s a little over, is that okay?"。多個零點零幾磅照常買單即可，回 "That\'s fine" 就好，斤斤計較會顯得很怪。',
         },
         {
           speaker: 'You',
-          en: "That's fine, thanks. That'll do it for me.",
+          en: "That\'s fine, thanks. That\'ll do it for me.",
           zh: '可以，謝謝。這樣就好了。',
-          note: '"That'll do it" 或 "That's all for me" 表示「我買齊了」，店員就會把東西包好貼標籤給你，價格標籤到收銀台一起結。',
+          note: '"That\'ll do it" 或 "That\'s all for me" 表示「我買齊了」，店員就會把東西包好貼標籤給你，價格標籤到收銀台一起結。',
         },
       ],
     },
@@ -107,34 +107,34 @@ const unit: Unit = {
           speaker: 'Cashier',
           en: "Do you have a rewards card with us?",
           zh: '你有我們的會員卡嗎？',
-          note: 'rewards card / loyalty card / club card 是會員卡，很多折扣價（標籤上寫 member price）沒卡就吃不到。沒有就說 "No, I don't."，店員常會接著問要不要辦。',
+          note: 'rewards card / loyalty card / club card 是會員卡，很多折扣價（標籤上寫 member price）沒卡就吃不到。沒有就說 "No, I don\'t."，店員常會接著問要不要辦。',
         },
         {
           speaker: 'You',
-          en: "No, I don't. Actually—could I sign up? I heard the sale prices need it.",
+          en: "No, I don\'t. Actually—could I sign up? I heard the sale prices need it.",
           zh: '沒有耶。欸——我可以辦一張嗎？聽說特價要有卡才有。',
           note: '美國超市會員卡幾乎都免費，用電話號碼就能辦。之後結帳店員問 "Phone number for your rewards?" 報號碼即可，不用真的帶卡。',
         },
         {
           speaker: 'Cashier',
-          en: "Sure, it just takes a sec. I'll just need a phone number... Okay, you're all set. Paper or plastic?",
+          en: "Sure, it just takes a sec. I\'ll just need a phone number... Okay, you\'re all set. Paper or plastic?",
           zh: '當然，很快。給我一個電話號碼就好……好，辦好了。要紙袋還是塑膠袋？',
-          note: '"Paper or plastic?" 是美國超市的經典問題。有些州塑膠袋要收費或禁用，自備袋子就說 "I brought my own bags."。"You're all set" 是「都弄好了」的萬用句。',
+          note: '"Paper or plastic?" 是美國超市的經典問題。有些州塑膠袋要收費或禁用，自備袋子就說 "I brought my own bags."。"You\'re all set" 是「都弄好了」的萬用句。',
         },
         {
           speaker: 'You',
-          en: "Paper's fine. Oh wait—I think this yogurt rang up wrong. The shelf said two for five dollars?",
+          en: "Paper\'s fine. Oh wait—I think this yogurt rang up wrong. The shelf said two for five dollars?",
           zh: '紙袋就好。等等——這個優格價格好像刷錯了。架上寫兩個五塊？',
           note: '"ring up" 是「刷進收銀機」，價格有誤說 "It rang up wrong" 或 "I think it rang up at the wrong price."。美國超市對這種反映很習慣，會請人去查價（price check），不用覺得不好意思。',
         },
         {
           speaker: 'Cashier',
-          en: "Hmm, let me check... you're right, it's on sale. I'll fix that for you. Sorry about that!",
+          en: "Hmm, let me check... you\'re right, it\'s on sale. I\'ll fix that for you. Sorry about that!",
           zh: '嗯，我看一下……你說得對，這有特價。我幫你改。抱歉！',
         },
         {
           speaker: 'Cashier',
-          en: "Alright, your total's $43.20. You can go ahead and insert your card whenever you're ready.",
+          en: "Alright, your total\'s $43.20. You can go ahead and insert your card whenever you\'re ready.",
           zh: '好，總共 43 元 20 分。準備好就可以插卡了。',
           note: '刷卡機常會問 "Cash back?"（要不要順便提現金）、"Debit or credit?"。都不需要就按 No / Credit。台灣卡在美國刷選 credit 通常最順。',
         },
@@ -152,13 +152,13 @@ const unit: Unit = {
         },
         {
           speaker: 'Attendant',
-          en: "I got you. It does that all the time. There you go—you're good now.",
+          en: "I got you. It does that all the time. There you go—you\'re good now.",
           zh: '我來幫你。這機器常這樣。好了——現在沒問題了。',
           note: '每區自助結帳都有一位 attendant（機台管理員），機器閃燈他就會過來刷員工卡解鎖。買酒也需要他來核對證件（ID check）。"I got you" 是「交給我、我罩你」的口語。',
         },
         {
           speaker: 'You',
-          en: "Thanks. Oh, and how do I ring up these apples? They don't have a barcode.",
+          en: "Thanks. Oh, and how do I ring up these apples? They don\'t have a barcode.",
           zh: '謝謝。對了，這些蘋果要怎麼刷？上面沒有條碼。',
           note: '秤重蔬果在自助結帳要按 "Produce"，輸入品名或貼紙上的 4 位 PLU 碼（例如香蕉是 4011），機器會自己秤重計價。',
         },
@@ -197,7 +197,7 @@ const unit: Unit = {
       word: 'a pound / half a pound',
       ipa: '/paʊnd/',
       zh: '一磅（約 454 克）／半磅',
-      example: "I'll take half a pound of roast beef, please.",
+      example: "I\'ll take half a pound of roast beef, please.",
       exampleZh: '請給我半磅烤牛肉。',
     },
     {
@@ -211,7 +211,7 @@ const unit: Unit = {
       word: 'a loaf of bread',
       ipa: '/loʊf/',
       zh: '一條吐司麵包',
-      example: "We're out of bread—grab a loaf of whole wheat.",
+      example: "We\'re out of bread—grab a loaf of whole wheat.",
       exampleZh: '我們麵包吃完了——買一條全麥的。',
     },
     {
@@ -231,7 +231,7 @@ const unit: Unit = {
     {
       word: 'ring up',
       zh: '（把商品）刷進收銀機、結帳',
-      example: "The avocados rang up at full price, but they're on sale.",
+      example: "The avocados rang up at full price, but they\'re on sale.",
       exampleZh: '酪梨用原價刷進去了，但它們在特價。',
     },
     {
@@ -243,7 +243,7 @@ const unit: Unit = {
     {
       word: 'self-checkout',
       zh: '自助結帳',
-      example: "I only have a few things, so I'll use self-checkout.",
+      example: "I only have a few things, so I\'ll use self-checkout.",
       exampleZh: '我只買幾樣東西，用自助結帳就好。',
     },
     {
@@ -255,20 +255,20 @@ const unit: Unit = {
     {
       word: 'rewards card / loyalty card',
       zh: '超市會員卡，特價常需出示',
-      example: "Without the rewards card, it's full price.",
+      example: "Without the rewards card, it\'s full price.",
       exampleZh: '沒有會員卡就是原價。',
     },
     {
       word: 'cart / shopping cart',
       ipa: '/kɑrt/',
       zh: '購物推車（英式叫 trolley）',
-      example: "Grab a cart—we've got a long list today.",
+      example: "Grab a cart—we\'ve got a long list today.",
       exampleZh: '拿台推車——我們今天要買的東西很多。',
     },
     {
       word: 'basket',
       zh: '購物提籃',
-      example: "I'm just getting a couple things; a basket's fine.",
+      example: "I\'m just getting a couple things; a basket\'s fine.",
       exampleZh: '我只買幾樣，提籃就夠了。',
     },
     {
@@ -287,13 +287,13 @@ const unit: Unit = {
     {
       word: 'out of stock',
       zh: '缺貨',
-      example: "Sorry, that brand's out of stock till Thursday.",
+      example: "Sorry, that brand\'s out of stock till Thursday.",
       exampleZh: '抱歉，那個牌子缺貨到週四。',
     },
     {
       word: 'rain check',
       zh: '缺貨補價券（特價品缺貨時，之後補貨仍可用特價買）',
-      example: "It's out of stock, but you can ask for a rain check.",
+      example: "It\'s out of stock, but you can ask for a rain check.",
       exampleZh: '缺貨了，但你可以要一張 rain check。',
     },
     {
@@ -361,7 +361,7 @@ const unit: Unit = {
     {
       en: "Could I try a slice of that first?",
       zh: '我可以先試吃一片嗎？',
-      usage: 'deli 試吃是常態，店員都樂意給。試完不買也沒關係，說 "I'll think about it, thanks!" 就好。',
+      usage: 'deli 試吃是常態，店員都樂意給。試完不買也沒關係，說 "I\'ll think about it, thanks!" 就好。',
     },
     {
       en: "I think this rang up wrong.",
@@ -374,14 +374,14 @@ const unit: Unit = {
       usage: '回應 "Paper or plastic?" 的第三選項。加州等地塑膠袋要錢，自備袋是常態，有些店還會給你幾分錢折扣。',
     },
     {
-      en: "No, I don't have one. / It's under my phone number: ___.",
+      en: "No, I don\'t have one. / It\'s under my phone number: ___.",
       zh: '我沒有會員卡。／用我的電話號碼查：___。',
       usage: '回應 "Do you have a rewards card?"。辦過卡的話報電話號碼即可，美國人幾乎不帶實體卡。',
     },
     {
-      en: "I'm still waiting on a price check.",
+      en: "I\'m still waiting on a price check.",
       zh: '我還在等查價。',
-      usage: '店員廣播 "Price check on register 3" 就是在查價。輪到你被查價時跟後面的人說聲 "Sorry, it'll just be a sec." 緩和氣氛。',
+      usage: '店員廣播 "Price check on register 3" 就是在查價。輪到你被查價時跟後面的人說聲 "Sorry, it\'ll just be a sec." 緩和氣氛。',
     },
     {
       en: "Whereabouts in the store is that?",
@@ -389,17 +389,17 @@ const unit: Unit = {
       usage: '店員說了商品名但你想知道更精確位置時的追問句。"whereabouts" 比 where 更口語，問「大概哪一區」。',
     },
     {
-      en: "I'm good, thanks. Just looking.",
+      en: "I\'m good, thanks. Just looking.",
       zh: '不用了謝謝，我看看而已。',
-      usage: '店員問 "Can I help you find anything?" 但你只想自己逛時的婉拒句。"I'm good" 在這裡是「不用了」，不是「我很好」。',
+      usage: '店員問 "Can I help you find anything?" 但你只想自己逛時的婉拒句。"I\'m good" 在這裡是「不用了」，不是「我很好」。',
     },
     {
-      en: "Could you double-bag that? It's pretty heavy.",
+      en: "Could you double-bag that? It\'s pretty heavy.",
       zh: '可以幫我套兩層袋子嗎？滿重的。',
       usage: '買牛奶、罐頭等重物時跟裝袋的人說。美國紙袋容易破，double-bag 是常見要求。',
     },
     {
-      en: "That'll do it for me. / That's everything.",
+      en: "That\'ll do it for me. / That\'s everything.",
       zh: '這樣就好了。／就這些。',
       usage: '在 deli 或任何櫃檯表示「我點完了、買齊了」。店員問 "Anything else?" 時的標準收尾。',
     },
@@ -442,12 +442,12 @@ const unit: Unit = {
       question: '收銀員問 "Do you have a rewards card with us?" 你沒有也不想辦，最自然的回答是？',
       options: [
         '"I refuse."',
-        '"No, I don't, thanks."',
-        '"What is reward? I don't understand."',
+        '"No, I don\'t, thanks."',
+        '"What is reward? I don\'t understand."',
         '"Card? Visa card, yes."',
       ],
       answer: 1,
-      explanation: '簡單說 "No, I don't." 即可，店員可能追問要不要辦，不想辦就說 "I'm okay, thanks."。rewards card 是超市會員卡，不是信用卡。',
+      explanation: '簡單說 "No, I don\'t." 即可，店員可能追問要不要辦，不想辦就說 "I\'m okay, thanks."。rewards card 是超市會員卡，不是信用卡。',
     },
     {
       question: '自助結帳機一直喊 "Unexpected item in the bagging area"，你該怎麼辦？',
