@@ -78,6 +78,14 @@ export function mountDialogue(root, lesson, { onComplete, done }) {
       <p>${esc(lesson.tip)}</p>
     </div>
 
+    ${
+      lesson.sources?.length
+        ? `<div class="sources card"><div class="insider-title">本週話題來源 · Read More</div><ul>${lesson.sources
+            .map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`)
+            .join('')}</ul></div>`
+        : ''
+    }
+
     <div class="complete-bar">
       ${done ? `<span class="done-badge">${icon.check} 已完成「聽懂對話」</span>` : ''}
       <button class="btn primary big" data-act="complete">${done ? '前往下一步：跟讀' : '我聽懂了，完成此步驟'}</button>

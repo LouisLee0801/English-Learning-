@@ -1,7 +1,7 @@
 // 每日課表、課程完成判定、單字本與連續天數
-import { LESSONS, getLesson, tokoItems } from './data/lessons.js';
-import { getState, dayLog, lessonLog, save } from './store.js';
-import { addDays, isWeekend, mondayOf, todayStr, weekday } from './util.js';
+import { ALL_LESSONS, HOT_LESSONS, LESSONS, getLesson, tokoItems } from './data/lessons.js';
+import { getState, dayLog, lessonLog, save, settings } from './store.js';
+import { addDays, diffDays, isWeekend, mondayOf, todayStr, weekday } from './util.js';
 import { isDue, newCard } from './srs.js';
 
 /** 一堂課完成的必要步驟（角色扮演是加分題） */
@@ -10,11 +10,24 @@ export const LESSON_STEPS = ['listen', 'shadow', 'toko'];
 export const isLessonDone = (id) => !!getState().lessons[id]?.completedAt;
 export const nextLesson = () => LESSONS.find((l) => !isLessonDone(l.id));
 
+/** 核心課程進行中，週二、週四上熱門話題；核心課全部完成後，平日都上熱門話題 */
+export const HOT_DAYS = [2, 4];
+/** 熱門話題發布後幾天內會排進課表（之後仍可在課程地圖自由練習） */
+export const HOT_FRESH_DAYS = 21;
+
+export function nextHotLesson(date = todayStr()) {
+  return HOT_LESSONS.filter((l) => !isLessonDone(l.id) && l.publishedAt <= date && diffDays(l.publishedAt, date) <= HOT_FRESH_DAYS).sort(
+    (a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.day - b.day,
+  )[0];
+}
+
+export const isBeforeStart = (date = todayStr()) => !!settings().startDate && date < settings().startDate;
+
 /** 週末複習範圍：本週完成的課；若本週沒上課，往前抓 14 天 */
 export function reviewLessonIds(date = todayStr()) {
   const st = getState();
   const inRange = (from) =>
-    LESSONS.filter((l) => {
+    ALL_LESSONS.filter((l) => {
       const c = st.lessons[l.id]?.completedAt;
       return c && c >= from && c <= date;
     }).map((l) => l.id);
@@ -27,12 +40,14 @@ export function todayLessonId(date = todayStr()) {
   const d = dayLog(date);
   if (d.lessonId && getLesson(d.lessonId)) return d.lessonId;
   const next = nextLesson();
+  const hot = nextHotLesson(date);
   let id;
-  if (next) id = next.id;
+  if (hot && (!next || HOT_DAYS.includes(weekday(date)))) id = hot.id;
+  else if (next) id = next.id;
   else {
     const st = getState();
     const last = (l) => st.lessons[l.id]?.lastPracticed || '';
-    id = [...LESSONS].sort((a, b) => last(a).localeCompare(last(b)))[0].id;
+    id = [...ALL_LESSONS].sort((a, b) => last(a).localeCompare(last(b)))[0].id;
   }
   d.lessonId = id;
   save();
@@ -51,6 +66,9 @@ export function weekCards(date = todayStr()) {
 }
 
 export function getPlan(date = todayStr()) {
+  if (isBeforeStart(date)) {
+    return { date, mode: 'pending', startDate: settings().startDate, steps: [], doneCount: 0, totalMin: 0 };
+  }
   const d = dayLog(date);
   const weekIds = isWeekend(date) ? reviewLessonIds(date) : [];
   const due = dueCards(date).length;
@@ -80,8 +98,8 @@ export function getPlan(date = todayStr()) {
     { key: 'toko', title: 'Toko 中翻英', desc: '看中文，開口說出整句英文', min: 8, href: `#/lesson/${lessonId}/toko` },
     { key: 'homework', title: '今日作業', desc: lesson.homework.slice(0, 34) + '…', min: 3, href: '#/homework' },
   ];
-  const review = !nextLesson() && isLessonDone(lessonId);
-  return finalize({ date, mode: review ? 'cycle' : 'weekday', lessonId, steps, d });
+  const mode = lesson.track === 'trending' ? 'hot' : !nextLesson() && isLessonDone(lessonId) ? 'cycle' : 'weekday';
+  return finalize({ date, mode, lessonId, steps, d });
 }
 
 function finalize(plan) {

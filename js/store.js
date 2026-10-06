@@ -15,6 +15,7 @@ export const defaults = () => ({
     voiceM: '',
     youGender: 'f',
     showZh: true,
+    startDate: '2026-10-07', // 課表開始日；之前只能預覽
   },
   lessons: {}, // id -> { steps: {listen, shadow, toko, roleplay}, completedAt, best }
   days: {}, // 'YYYY-MM-DD' -> { seconds, plan, lessonId, toko, shadow, reviewed, roleplays }

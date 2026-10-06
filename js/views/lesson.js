@@ -1,5 +1,5 @@
 import { esc, fillName } from '../util.js';
-import { getLesson, tokoItems, TRACKS } from '../data/lessons.js';
+import { getLesson, lessonLabel, tokoItems, TRACKS } from '../data/lessons.js';
 import { dayLog, lessonLog, save, settings } from '../store.js';
 import { completeLessonStep, getPlan } from '../plan.js';
 import { icon } from '../icons.js';
@@ -26,7 +26,7 @@ export function renderLesson(root, [id, tab = 'listen']) {
   const isToday = getPlan().lessonId === id;
 
   root.innerHTML = `
-    <nav class="crumbs"><a href="#/lessons">課程地圖</a> / Week ${lesson.week} · Day ${lesson.day}${isToday ? ' · <span class="gold">今日課程</span>' : ''}</nav>
+    <nav class="crumbs"><a href="#/lessons">課程地圖</a> / ${esc(lessonLabel(lesson))}${isToday ? ' · <span class="gold">今日課程</span>' : ''}</nav>
     <header class="lesson-header ${lesson.track}">
       <div class="eyebrow">${TRACKS[lesson.track].en} · ${esc(lesson.location)}</div>
       <h1>${esc(lesson.title)} <small>${esc(lesson.titleZh)}</small></h1>
