@@ -23,6 +23,28 @@
 
 **輪替**：每週 5 堂課要涵蓋 5 個不同 topic。優先選前兩週沒出現過的 topic，確保 9 大題材每 2 週左右輪完一次；當週若有大事件（冠軍賽、大型發表會、爆紅的梗），可以優先排入。
 
+## 找題材：Reddit 熱門討論
+
+Reddit 是美國 20–40 歲族群最集中的討論區，用來找「大家正在聊什麼、用什麼梗」。抓取方式：`https://www.reddit.com/r/<sub>/top.json?t=week&limit=15`（帶一般 User-Agent），或用網路搜尋 `site:reddit.com`。
+
+| 題材 | 建議 subreddit |
+|---|---|
+| 綜合、梗 | r/popular、r/OutOfTheLoop、r/popculturechat、r/television |
+| 比賽 | r/sports、r/nfl、r/baseball、r/nba、r/formula1 |
+| 紅酒 | r/wine |
+| 高爾夫 | r/golf |
+| 泰拳 | r/MuayThai、r/MMA |
+| 音樂 | r/popheads、r/Music |
+| 汽車 | r/cars、r/electricvehicles |
+| 旅行 | r/travel、r/TravelHacks |
+| 科技 | r/technology、r/gadgets |
+| 投資 | r/investing、r/stocks、r/personalfinance |
+
+- Reddit 只用來**挑題材、抓語氣與流行語**；事實細節一律再用可信來源查證（見下節）
+- 可以把 Reddit 討論串放進 `sources`，標題寫明「Reddit r/xxx 討論」，但每課至少還要 1 個非 Reddit 的可信來源
+- 不要直接照抄網友留言；改寫成自然的對話
+- 如果 Reddit 連不上，改搜尋報導 Reddit 熱門話題的新聞，或直接用其他來源，並在 PR 說明
+
 ## 事實查核（最重要）
 
 1. 每個時事細節（賽事、日期、排行榜、新聞）都必須用網路搜尋確認，且至少有 1 個可信來源：大型媒體、官方網站、產業媒體。不要用內容農場、預測市場頁面，或 AI 生成的彙整頁當來源
