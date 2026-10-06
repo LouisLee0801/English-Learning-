@@ -1,11 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { _setState, defaults, getState } from '../js/store.js';
-import { getPlan, completeLessonStep, nextLesson, streak, reviewLessonIds, dueCards } from '../js/plan.js';
-import { LESSONS, tokoItems } from '../js/data/lessons.js';
+import { getPlan, completeLessonStep, nextLesson, nextHotLesson, streak, reviewLessonIds, dueCards } from '../js/plan.js';
+import { LESSONS, HOT_LESSONS, HOT_WEEKS, TOPICS, tokoItems } from '../js/data/lessons.js';
 import { todayStr, addDays, isWeekend } from '../js/util.js';
 
-const fresh = () => _setState(defaults());
+// 預設不設開課日；個別測試再設定
+const fresh = (startDate = '') => {
+  const s = defaults();
+  s.settings.startDate = startDate;
+  _setState(s);
+};
+const finish = (id, day) => ['listen', 'shadow', 'toko'].forEach((step) => completeLessonStep(id, step, day));
 
 test('curriculum: 20 lessons, every lesson has You lines, phrases and accent tips', () => {
   assert.equal(LESSONS.length, 20);
@@ -77,4 +83,48 @@ test('streak counts consecutive active days', () => {
   st.days[addDays(t, -2)] = { seconds: 400, plan: {} };
   st.days[addDays(t, -4)] = { seconds: 900, plan: {} };
   assert.equal(streak(t), 3);
+});
+
+test('hot topic weeks: valid content, unique ids, sources and known topics', () => {
+  assert.ok(HOT_WEEKS.length >= 1);
+  const ids = new Set(LESSONS.map((l) => l.id));
+  for (const w of HOT_WEEKS) {
+    assert.match(w.id, /^\d{4}-W\d{2}$/);
+    assert.match(w.publishedAt, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(w.lessons.length >= 3, `${w.id} needs >= 3 lessons`);
+  }
+  for (const l of HOT_LESSONS) {
+    assert.ok(!ids.has(l.id), `duplicate id ${l.id}`);
+    ids.add(l.id);
+    assert.ok(TOPICS[l.topic], `${l.id} unknown topic ${l.topic}`);
+    assert.ok(l.sources.length >= 1 && l.sources.every((s) => /^https:\/\//.test(s.url)), `${l.id} needs https sources`);
+    assert.ok(l.lines.filter((x) => x.you).length >= 4, `${l.id} needs >= 4 You lines`);
+    assert.ok(l.lines.every((x) => x.speaker === 'You' || l.cast[x.speaker]), `${l.id} speaker missing from cast`);
+    assert.ok(l.phrases.length >= 6 && l.accent.length >= 2 && l.homework && l.tip && l.goal && l.scene, `${l.id} incomplete`);
+  }
+});
+
+test('before the start date the plan is pending', () => {
+  fresh('2026-10-07');
+  assert.equal(getPlan('2026-10-06').mode, 'pending');
+  assert.notEqual(getPlan('2026-10-07').mode, 'pending');
+});
+
+test('hot topics run on Tue/Thu while core lessons are in progress', () => {
+  fresh('2026-10-07');
+  const hot = HOT_LESSONS.find((l) => l.hotWeek === '2026-W41');
+  assert.equal(getPlan('2026-10-07').lessonId, 'w1d1'); // Wed -> core
+  const thu = getPlan('2026-10-08');
+  assert.equal(thu.mode, 'hot');
+  assert.equal(thu.lessonId, hot.id);
+  finish(hot.id, '2026-10-08');
+  assert.equal(getPlan('2026-10-09').lessonId, 'w1d1'); // Fri -> core again
+  assert.notEqual(nextHotLesson('2026-10-13').id, hot.id); // next Tue -> next hot lesson
+});
+
+test('hot topics expire from the schedule after 3 weeks and fill every weekday after the core course', () => {
+  fresh();
+  assert.equal(nextHotLesson('2026-11-30'), undefined);
+  LESSONS.forEach((l) => finish(l.id, '2026-10-07'));
+  assert.equal(getPlan('2026-10-12').mode, 'hot'); // Monday, core done
 });

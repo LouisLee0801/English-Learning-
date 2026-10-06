@@ -1,7 +1,7 @@
-import { esc, fillName, formatDate, minutes, todayStr } from '../util.js';
-import { getLesson, LESSONS, TRACKS } from '../data/lessons.js';
+import { diffDays, esc, fillName, formatDate, minutes, todayStr } from '../util.js';
+import { getLesson, HOT_LESSONS, lessonLabel, LESSONS, TOPICS, TRACKS } from '../data/lessons.js';
 import { dayLog, getState, settings } from '../store.js';
-import { getPlan, nextLesson, streak, dueCards, isLessonDone } from '../plan.js';
+import { getPlan, nextLesson, streak, dueCards, isLessonDone, HOT_FRESH_DAYS } from '../plan.js';
 import { icon } from '../icons.js';
 
 function greeting() {
@@ -25,10 +25,65 @@ function ring(value, goal) {
     </svg>`;
 }
 
+function hotCards(date, excludeId) {
+  const fresh = HOT_LESSONS.filter((l) => l.publishedAt <= date && diffDays(l.publishedAt, date) <= HOT_FRESH_DAYS && l.id !== excludeId)
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.day - b.day)
+    .slice(0, 5);
+  if (!fresh.length) return '';
+  return `
+    <section>
+      <h2 class="section-title">本週熱門話題 <small>每週更新 · 跟美國人聊天的最新梗</small></h2>
+      <div class="lesson-grid">
+        ${fresh
+          .map(
+            (l) => `
+          <a class="lesson-card card hot ${isLessonDone(l.id) ? 'done' : ''}" href="#/lesson/${l.id}">
+            <div class="lesson-card-top"><span class="day">${TOPICS[l.topic]?.emoji || ''} ${esc(TOPICS[l.topic]?.label || '')}</span>${isLessonDone(l.id) ? '<span class="done-badge">完成</span>' : ''}</div>
+            <div class="lesson-title">${esc(l.title)}</div>
+            <div class="lesson-zh">${esc(l.titleZh)}</div>
+          </a>`,
+          )
+          .join('')}
+      </div>
+    </section>`;
+}
+
+function renderPending(root, plan, s) {
+  const days = diffDays(todayStr(), plan.startDate);
+  const first = LESSONS[0];
+  root.innerHTML = `
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow">Countdown · 課程倒數</div>
+        <h1>Almost time, <span class="gold">${esc(s.name)}</span>.</h1>
+        <p class="lede">正式課表從 <b>${formatDate(plan.startDate)}</b> 開始，${days === 1 ? '就是明天' : `還有 ${days} 天`}。平日每天約 30 分鐘，週末總複習；週二、週四會插入當週的美國熱門話題。</p>
+      </div>
+    </section>
+    <a class="card focus lesson-hero ${first.track}" href="#/lesson/${first.id}">
+      <div class="eyebrow">第一堂課預覽 · ${lessonLabel(first)}</div>
+      <h2>${esc(first.title)}</h2>
+      <div class="title-zh">${esc(first.titleZh)}<span class="loc">📍 ${esc(first.location)}</span></div>
+      <p>${esc(fillName(first.scene, s.name))}</p>
+      <div class="goal">🎯 ${esc(first.goal)}</div>
+    </a>
+    <section class="card">
+      <h2 class="chart-title">開課前先做好 3 件事</h2>
+      <ol class="prep">
+        <li>到 <a href="#/settings">設定</a> 填你的英文名字、選一個好聽的美式語音並試聽</li>
+        <li>在課程頁按一次「開口說」，允許瀏覽器使用麥克風</li>
+        <li>手機用 Safari／Chrome「加入主畫面」，每天一鍵打開</li>
+      </ol>
+      <p class="muted small">想改開課日？到「設定」調整開始日期。</p>
+    </section>
+    ${hotCards(plan.startDate)}
+  `;
+}
+
 export function renderToday(root) {
   const date = todayStr();
   const s = settings();
   const plan = getPlan(date);
+  if (plan.mode === 'pending') return renderPending(root, plan, s);
   const d = dayLog(date);
   const mins = minutes(d.seconds);
   const doneLessons = LESSONS.filter((l) => isLessonDone(l.id)).length;
@@ -48,7 +103,7 @@ export function renderToday(root) {
     const l = getLesson(plan.lessonId);
     focus = `
       <a class="card focus lesson-hero ${l.track}" href="#/lesson/${l.id}">
-        <div class="eyebrow">Week ${l.week} · Day ${l.day} · ${TRACKS[l.track].label}${plan.mode === 'cycle' ? ' · 複習循環' : ''}</div>
+        <div class="eyebrow">${esc(lessonLabel(l))} · ${TRACKS[l.track].label}${plan.mode === 'cycle' ? ' · 複習循環' : ''}</div>
         <h2>${esc(l.title)}</h2>
         <div class="title-zh">${esc(l.titleZh)}<span class="loc">📍 ${esc(l.location)}</span></div>
         <p>${esc(fillName(l.scene, s.name))}</p>
@@ -59,7 +114,9 @@ export function renderToday(root) {
   const lede =
     plan.mode === 'weekend'
       ? '週末不學新課，專心把本週內容練到能脫口而出。'
-      : plan.mode === 'cycle'
+      : plan.mode === 'hot'
+        ? `今天是熱門話題日：${TOPICS[getLesson(plan.lessonId).topic]?.label || ''}。用美國人這週正在聊的話題練 small talk。`
+        : plan.mode === 'cycle'
         ? '20 堂課全部完成！現在進入複習循環，今天重練最久沒碰的一課。'
         : `今天 ${plan.steps.length} 個步驟，約 ${plan.totalMin} 分鐘。先聽懂、再跟讀、最後看中文說英文。`;
 
@@ -116,5 +173,6 @@ export function renderToday(root) {
           .join('')}
       </ol>
     </section>
+    ${plan.mode === 'weekend' ? '' : hotCards(date, plan.lessonId)}
   `;
 }

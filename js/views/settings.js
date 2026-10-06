@@ -22,6 +22,7 @@ export function renderSettings(root) {
     <section class="card form">
       <h2 class="chart-title">個人</h2>
       <label>你的英文名字（對話中會用到）<input name="name" value="${esc(s.name)}" maxlength="24"></label>
+      <label>課表開始日（之前只能預覽）<input type="date" name="startDate" value="${esc(s.startDate || '')}"></label>
       <label>每日學習目標
         <select name="dailyGoal">${[15, 20, 30, 45, 60].map((m) => `<option value="${m}" ${m === s.dailyGoal ? 'selected' : ''}>${m} 分鐘</option>`).join('')}</select>
       </label>

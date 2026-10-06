@@ -1,6 +1,6 @@
 // 複習（SRS）、Toko 全週挑戰、本週角色扮演
 import { esc, shuffle, todayStr } from '../util.js';
-import { getLesson, LESSONS, tokoItems } from '../data/lessons.js';
+import { ALL_LESSONS, getLesson, lessonLabel, tokoItems } from '../data/lessons.js';
 import { dayLog, getState, lessonLog, save } from '../store.js';
 import { dueCards, markPlan, reviewLessonIds, weekCards, isLessonDone, getPlan } from '../plan.js';
 import { review } from '../srs.js';
@@ -13,7 +13,7 @@ const MAX_REVIEW = 30;
 
 const contextIndex = () => {
   const map = new Map();
-  LESSONS.forEach((l) => tokoItems(l).forEach((it) => map.set(it.id, it)));
+  ALL_LESSONS.forEach((l) => tokoItems(l).forEach((it) => map.set(it.id, it)));
   return map;
 };
 
@@ -82,7 +82,7 @@ export function renderChallenge(root) {
   let ids = reviewLessonIds(today);
   let scopeText = '本週';
   if (!ids.length) {
-    ids = LESSONS.filter((l) => isLessonDone(l.id)).map((l) => l.id);
+    ids = ALL_LESSONS.filter((l) => isLessonDone(l.id)).map((l) => l.id);
     scopeText = '已完成課程';
   }
   const items = shuffle(ids.flatMap((id) => tokoItems(getLesson(id)).filter((it) => !it.phrase))).slice(0, 20);
@@ -143,7 +143,7 @@ export function renderRoleplayHub(root, [id]) {
     return;
   }
 
-  const pool = weekIds.length ? weekIds : LESSONS.map((l) => l.id);
+  const pool = weekIds.length ? weekIds : ALL_LESSONS.map((l) => l.id);
   root.innerHTML = `
     <h1 class="page-title">角色扮演 <small>你是主角</small></h1>
     <p class="lede">${weekIds.length ? `本週場景（完成 ${needed} 個即達成今日任務）` : '還沒有本週完成的課程，可以先挑任何一課試試。'}</p>
@@ -155,7 +155,7 @@ export function renderRoleplayHub(root, [id]) {
           const best = getState().lessons[lid]?.best?.roleplay;
           return `
           <a class="lesson-card card ${played ? 'done' : ''}" href="#/roleplay/${lid}">
-            <div class="lesson-card-top"><span class="day">W${l.week} · D${l.day}</span>${played ? `<span class="done-badge">${icon.check}今天演過</span>` : ''}</div>
+            <div class="lesson-card-top"><span class="day">${esc(lessonLabel(l))}</span>${played ? `<span class="done-badge">${icon.check}今天演過</span>` : ''}</div>
             <div class="lesson-title">${esc(l.title)}</div>
             <div class="lesson-zh">${esc(l.titleZh)}</div>
             ${best != null ? `<div class="muted small">最佳 ${Math.round(best * 100)}%</div>` : ''}

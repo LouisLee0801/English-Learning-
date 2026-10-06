@@ -37,13 +37,14 @@ export default [
       ["I'll also grab ...", '我也順便拿…', 'grab 在口語是「隨手拿、快速買」，非常常見。'],
       ["That'd be great.", '那太好了。', '接受別人提議時的萬用句，語氣溫暖。'],
       ['Can I get a name for the order?', '訂單要留什麼名字？', '美國咖啡店會叫名字取餐，先聽懂這句。'],
+      ['tall / grande / venti', '星巴克的小／中／大杯', '只有星巴克用這套說法：Can I get a grande iced latte? 一般咖啡店說 small / medium / large，或直接說 12-ounce / 16-ounce。'],
     ],
     accent: [
       ['latte', 'LAH-day', '母音之間的 t 會變成輕彈的 d（flap T），美國腔的招牌。'],
       ['Can I get a', 'c’n-I-geh-duh', 'can 弱化成 c’n，get a 連成 geh-duh。整句一口氣念完。'],
       ['water / butter', 'WAH-der / BUH-der', '同樣是 flap T，練熟這個音，馬上有美國味。'],
     ],
-    tip: '美國點餐講究「一次講完」：size → hot/iced → drink → milk → sweetness。點完記得說 thanks，結帳時店員可能問 Do you want to leave a tip?，咖啡店小費隨意，按 No tip 也不失禮。',
+    tip: '美國點餐講究「一次講完」：size → hot/iced → drink → milk → sweetness。杯型說法看店家：這課是獨立咖啡店，所以說 large；在星巴克就說 grande（中）或 venti（大），說 large 店員也聽得懂，但會幫你換成 venti。點完記得說 thanks，結帳時店員可能問 Do you want to leave a tip?，咖啡店小費隨意，按 No tip 也不失禮。',
     homework: '想像你今天走進最愛的咖啡店，用英文完整點一次「你的固定飲料」：杯型＋冰熱＋奶類＋甜度＋內用外帶，再加點一樣點心。寫下 3 句並大聲念 3 遍。',
   },
   {
