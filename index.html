@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Small Talk Society</title>
+    <meta name="description" content="每天 30 分鐘，練出道地美式 small talk：旅行點餐問路、派對社交、商務會議前後閒聊。" />
+    <meta name="theme-color" content="#0f3d32" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#/">
+        <span class="brand-mark">S</span>
+        <span class="brand-text"><b>Small Talk Society</b><small>道地美式閒聊 · 每日 30 分鐘</small></span>
+      </a>
+      <nav class="topnav" aria-label="主選單">
+        <a data-nav="today" href="#/">今日</a>
+        <a data-nav="lessons" href="#/lessons">課程</a>
+        <a data-nav="review" href="#/review">複習</a>
+        <a data-nav="notebook" href="#/notebook">單字本</a>
+        <a data-nav="progress" href="#/progress">進度</a>
+      </nav>
+      <div class="topbar-right">
+        <span id="clock" class="clock"></span>
+        <a data-nav="settings" class="icon-link" href="#/settings" aria-label="設定">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" class="container"></main>
+
+    <nav class="bottomnav" aria-label="主選單">
+      <a data-nav="today" href="#/"><span>🏠</span>今日</a>
+      <a data-nav="lessons" href="#/lessons"><span>📖</span>課程</a>
+      <a data-nav="review" href="#/review"><span>🃏</span>複習</a>
+      <a data-nav="notebook" href="#/notebook"><span>⭐</span>單字本</a>
+      <a data-nav="progress" href="#/progress"><span>📈</span>進度</a>
+    </nav>
+
+    <noscript>請開啟 JavaScript 才能使用本網站。</noscript>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

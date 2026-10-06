@@ -1,0 +1,14 @@
+{
+  "name": "Small Talk Society",
+  "short_name": "Small Talk",
+  "description": "每天 30 分鐘，練出道地美式 small talk",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f4ec",
+  "theme_color": "#0f3d32",
+  "lang": "zh-Hant-TW",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
