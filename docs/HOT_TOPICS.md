@@ -25,7 +25,17 @@
 
 ## 找題材：Reddit 熱門討論
 
-Reddit 是美國 20–40 歲族群最集中的討論區，用來找「大家正在聊什麼、用什麼梗」。抓取方式：`https://www.reddit.com/r/<sub>/top.json?t=week&limit=15`（帶一般 User-Agent），或用網路搜尋 `site:reddit.com`。
+Reddit 是美國 20–40 歲族群最集中的討論區，用來找「大家正在聊什麼、用什麼梗」。
+
+抓取方式：用 **RSS**（雲端主機呼叫 `.json` 會被 Reddit 擋，回 403），且要帶瀏覽器 User-Agent，並設定重試，因為偶爾會回 429：
+
+```bash
+curl -s --retry 3 --retry-delay 8 --retry-all-errors \
+  -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36" \
+  "https://www.reddit.com/r/<sub>/top/.rss?t=week" | grep -o "<title>[^<]*</title>"
+```
+
+每個 subreddit 之間間隔幾秒，避免被限流。
 
 | 題材 | 建議 subreddit |
 |---|---|
