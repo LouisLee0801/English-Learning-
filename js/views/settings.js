@@ -44,6 +44,14 @@ export function renderSettings(root) {
         <button class="btn" data-test="f">試聽女聲</button>
         <button class="btn" data-test="m">試聽男聲</button>
       </div>
+      <label>跟讀時同時錄下我的聲音（可回放對照）
+        <select name="recordVoice">
+          <option value="auto" ${(s.recordVoice || 'auto') === 'auto' ? 'selected' : ''}>自動（iPhone／iPad 關閉，其他開啟）</option>
+          <option value="on" ${s.recordVoice === 'on' ? 'selected' : ''}>開啟</option>
+          <option value="off" ${s.recordVoice === 'off' ? 'selected' : ''}>關閉（辨識最準）</option>
+        </select>
+      </label>
+      <p class="muted small">收音技巧：說話時離麥克風 15–30 公分、找安靜的地方；戴有麥克風的耳機效果最好。辨識不準時，先把上方「同時錄音」關閉再試。</p>
       <p class="muted small">語音辨識（開口說、跟讀）：${canRecognize ? '✅ 此瀏覽器支援' : '⚠️ 此瀏覽器不支援，請改用 Chrome、Edge 或 Safari，或用打字作答'}</p>
     </section>
 

@@ -80,7 +80,7 @@ export function mountRoleplay(root, lesson, { onDone }) {
       <div class="card rp-turn">
         <div class="prompt-label">輪到你了，用英文說：</div>
         <div class="prompt-zh">${esc(fill(line.zh))}</div>
-        <textarea class="drill-input" rows="2" placeholder="按「開口說」，或打字作答⋯"></textarea>
+        <textarea class="drill-input" rows="2" placeholder="按「開口說」，說完再按一次結束；辨識結果可以直接修改⋯"></textarea>
         <div class="btn-row">
           <button class="btn mic" data-mic></button>
           <button class="btn primary" data-check>對答案 ${icon.arrow}</button>
@@ -95,16 +95,15 @@ export function mountRoleplay(root, lesson, { onDone }) {
       }
     });
     bindMic(stage().querySelector('[data-mic]'), {
-      record: false,
+      hint: fill(line.en),
       onInterim: (t) => {
         answer = t;
         input.value = t;
       },
       onResult: ({ text }) => {
-        if (text) {
-          answer = text;
-          check(line);
-        }
+        answer = text || answer;
+        input.value = answer;
+        input.focus();
       },
     });
     stage().querySelector('[data-check]').addEventListener('click', () => check(line));
