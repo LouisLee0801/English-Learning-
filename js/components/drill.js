@@ -49,7 +49,8 @@ export function mountDrill(root, { items, onRate, onDone, emptyText = '目前沒
     if (phase === 'ask') {
       body = `
         <label class="sr-only" for="drill-input">你的英文</label>
-        <textarea id="drill-input" class="drill-input" rows="2" placeholder="按「開口說」直接講，或用打字作答⋯（Enter 對答案）">${esc(answer)}</textarea>
+        <textarea id="drill-input" class="drill-input" rows="2" placeholder="按「開口說」，說完再按一次結束；也可以打字（Enter 對答案）">${esc(answer)}</textarea>
+        <div class="mic-tip muted small" hidden>辨識結果可以直接修改，確認後按「對答案」或 Enter。</div>
         ${showHint ? `<div class="hint">${esc(hint(item.en))}</div>` : ''}
         <div class="btn-row">
           <button class="btn mic" data-act="mic"></button>
@@ -106,16 +107,19 @@ export function mountDrill(root, { items, onRate, onDone, emptyText = '目前沒
     const micBtn = root.querySelector('[data-act="mic"]');
     if (micBtn) {
       bindMic(micBtn, {
-        record: false,
+        hint: queue[idx].en,
         onInterim: (t) => {
           answer = t;
           if (input) input.value = t;
         },
         onResult: ({ text }) => {
-          if (text) {
-            answer = text;
-            reveal();
+          answer = text || answer;
+          if (input) {
+            input.value = answer;
+            input.focus();
           }
+          const tip = root.querySelector('.mic-tip');
+          if (tip) tip.hidden = !text;
         },
       });
     }

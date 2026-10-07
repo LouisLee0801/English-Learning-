@@ -1,5 +1,6 @@
 // 美式發音（Web Speech API 語音合成）、語音辨識、錄音
 import { settings } from './store.js';
+import { matchCount } from './text.js';
 
 const synth = typeof window !== 'undefined' ? window.speechSynthesis : null;
 let voices = [];
@@ -115,42 +116,145 @@ export async function speakSequence(items, onItem) {
 // ---------- 語音辨識 ----------
 const SR = typeof window !== 'undefined' ? window.SpeechRecognition || window.webkitSpeechRecognition : null;
 export const canRecognize = !!SR;
+const MAX_LISTEN_MS = 90000; // 忘了按結束時的保險
 
-export function listen({ onInterim } = {}) {
+let phrasesUnsupported = false;
+
+/** 從多個辨識候選中，挑出最接近目標句的那一個 */
+function pickAlternative(result, hint) {
+  if (!hint || result.length < 2) return result[0].transcript;
+  let best = result[0].transcript;
+  let bestScore = -Infinity;
+  for (let k = 0; k < result.length; k++) {
+    const t = result[k].transcript;
+    const { count, answerLen } = matchCount(hint, t);
+    const score = count - 0.5 * (answerLen - count) + (result[k].confidence || 0) * 0.1;
+    if (score > bestScore) {
+      bestScore = score;
+      best = t;
+    }
+  }
+  return best;
+}
+
+/**
+ * 開始聆聽，直到呼叫 stop() 才結束（中途停頓不會自動關掉）。
+ * hint：預期要說的句子，用來從候選結果中挑最接近的，並在支援的瀏覽器上加強辨識。
+ */
+export function listen({ onInterim, hint = '' } = {}) {
   if (!SR) return { promise: Promise.reject(new Error('unsupported')), stop() {} };
-  const rec = new SR();
-  rec.lang = 'en-US';
-  rec.interimResults = true;
-  rec.continuous = false;
-  rec.maxAlternatives = 1;
-  let text = '';
-  const promise = new Promise((resolve, reject) => {
+  let stopped = false;
+  let carried = ''; // 前幾次（瀏覽器自動中斷後重啟）累積的文字
+  let finals = [];
+  let interim = '';
+  let rec = null;
+  let restarts = 0;
+  let resolveFn;
+  let rejectFn;
+  const promise = new Promise((res, rej) => {
+    resolveFn = res;
+    rejectFn = rej;
+  });
+  const text = () => [carried, ...finals, interim].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+  const finalText = () => [carried, ...finals].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+  const timer = setTimeout(() => stop(), MAX_LISTEN_MS);
+
+  function start() {
+    rec = new SR();
+    rec.lang = 'en-US';
+    rec.interimResults = true;
+    rec.continuous = true;
+    rec.maxAlternatives = 5;
+    if (hint && !phrasesUnsupported && 'phrases' in rec && typeof window.SpeechRecognitionPhrase === 'function') {
+      try {
+        rec.phrases = [new window.SpeechRecognitionPhrase(hint, 5)];
+      } catch {
+        phrasesUnsupported = true;
+      }
+    }
+    finals = [];
+    interim = '';
     rec.onresult = (e) => {
-      text = Array.from(e.results)
-        .map((r) => r[0].transcript)
-        .join(' ')
-        .trim();
-      onInterim?.(text);
+      finals = [];
+      interim = '';
+      for (let i = 0; i < e.results.length; i++) {
+        const r = e.results[i];
+        if (r.isFinal) finals.push(pickAlternative(r, hint));
+        else interim += ' ' + r[0].transcript;
+      }
+      onInterim?.(text());
     };
     rec.onerror = (e) => {
-      if (e.error === 'no-speech' || e.error === 'aborted') resolve(text);
-      else reject(new Error(e.error));
+      if (e.error === 'phrases-not-supported') {
+        phrasesUnsupported = true;
+        return; // onend 會以不帶 phrases 的方式重啟
+      }
+      if (e.error === 'not-allowed' || e.error === 'service-not-allowed' || e.error === 'audio-capture') {
+        stopped = true;
+        clearTimeout(timer);
+        rejectFn(new Error(e.error));
+      }
+      // no-speech、network、aborted：交給 onend 決定要不要重啟
     };
-    rec.onend = () => resolve(text);
-  });
-  try {
+    rec.onend = () => {
+      carried = finalText() || carried;
+      if (interim) carried = [carried, interim].filter(Boolean).join(' ');
+      finals = [];
+      interim = '';
+      if (!stopped && restarts < 30) {
+        restarts += 1;
+        try {
+          start();
+          return;
+        } catch {
+          /* 重啟失敗就直接結束 */
+        }
+      }
+      clearTimeout(timer);
+      resolveFn(carried.replace(/\s+/g, ' ').trim());
+    };
     rec.start();
+  }
+
+  function stop() {
+    if (stopped) return;
+    stopped = true;
+    try {
+      rec?.stop();
+    } catch {
+      resolveFn(text());
+    }
+  }
+
+  try {
+    start();
   } catch (e) {
+    clearTimeout(timer);
     return { promise: Promise.reject(e), stop() {} };
   }
-  return { promise, stop: () => rec.stop() };
+  return { promise, stop };
 }
 
 // ---------- 錄音（聽自己的發音） ----------
 export const canRecord = typeof window !== 'undefined' && !!navigator.mediaDevices?.getUserMedia && typeof MediaRecorder !== 'undefined';
 
+/** iPhone / iPad 同時錄音與辨識會互搶麥克風，辨識品質明顯變差 */
+export const isIOS =
+  typeof navigator !== 'undefined' &&
+  (/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
+/** 跟讀時是否同時錄音：設定為 on/off，或 auto（iOS 關閉、其他開啟） */
+export function shouldRecord() {
+  const pref = settings().recordVoice || 'auto';
+  if (pref === 'on') return canRecord;
+  if (pref === 'off') return false;
+  return canRecord && !isIOS;
+}
+
 export async function startRecording() {
-  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1 },
+  });
   const mr = new MediaRecorder(stream);
   const chunks = [];
   mr.ondataavailable = (e) => e.data.size && chunks.push(e.data);
@@ -168,11 +272,9 @@ export async function startRecording() {
   };
 }
 
-/**
- * 同時辨識 + 錄音，任一功能不支援時自動降級。
- * stop() 手動結束；done 在辨識因靜音自動結束時 resolve（不支援辨識時為 null）。
- */
-export async function captureSpeech({ onInterim, record = true } = {}) {
+/** 辨識 + （選擇性）錄音，任一功能不支援時自動降級。只有 stop() 會結束。 */
+export async function captureSpeech({ onInterim, record = false, hint = '' } = {}) {
+  const session = canRecognize ? listen({ onInterim, hint }) : null;
   let recorder = null;
   if (record && canRecord) {
     try {
@@ -181,21 +283,17 @@ export async function captureSpeech({ onInterim, record = true } = {}) {
       recorder = null;
     }
   }
-  const session = canRecognize ? listen({ onInterim }) : null;
   if (!session && !recorder) throw new Error('unsupported');
   let result = null;
-  const finish = () =>
-    (result ||= (async () => {
-      let text = '';
-      if (session) text = await session.promise.catch(() => '');
-      const audioUrl = recorder ? await recorder.stop() : null;
-      return { text, audioUrl };
-    })());
   return {
     stop: () => {
       session?.stop();
-      return finish();
+      return (result ||= (async () => {
+        const text = session ? await session.promise.catch(() => '') : '';
+        const audioUrl = recorder ? await recorder.stop() : null;
+        return { text, audioUrl };
+      })());
     },
-    done: session ? session.promise.catch(() => '').then(finish) : null,
+    failed: session ? session.promise.then(() => false, () => true) : Promise.resolve(false),
   };
 }

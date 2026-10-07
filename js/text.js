@@ -63,6 +63,13 @@ function lcsMatches(a, b) {
   return { count: dp[0][0], hitA, hitB };
 }
 
+/** 目標句與回答之間有幾個字對得上（用來挑語音辨識的最佳候選） */
+export function matchCount(target, answer) {
+  const a = tokenize(target);
+  const b = tokenize(answer);
+  return { count: lcsMatches(a, b).count, answerLen: b.length };
+}
+
 /**
  * 比對使用者答案與標準答案。
  * 回傳 { score: 0–1, targetHtml, answerHtml }，標準答案中沒說到的字會被標示。

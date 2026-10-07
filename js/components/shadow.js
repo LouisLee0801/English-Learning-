@@ -1,6 +1,6 @@
 // 「跟讀模仿」：聽一句 → 模仿 → 錄音辨識 → 比對 → 聽自己的聲音
 import { esc, fillName } from '../util.js';
-import { speak, canRecognize, canRecord } from '../speech.js';
+import { speak, canRecognize, shouldRecord } from '../speech.js';
 import { compare, scoreLabel } from '../text.js';
 import { dayLog, lessonLog, save, settings } from '../store.js';
 import { speakerGender } from '../data/lessons.js';
@@ -22,7 +22,7 @@ export function mountShadow(root, lesson, { onComplete, done }) {
 
   root.innerHTML = `
     <div class="howto card">
-      <b>跟讀 4 步驟：</b>① 按 ${icon.play} 聽原音 → ② 不看字、模仿語調與連音 → ③ 按「跟讀」說一次 → ④ 看比對結果、播放自己的聲音和原音對照。
+      <b>跟讀 4 步驟：</b>① 按 ${icon.play} 聽原音 → ② 不看字、模仿語調與連音 → ③ 按「跟讀」開始說，<b>說完再按一次結束</b> → ④ 看比對結果、播放自己的聲音和原音對照。
       <div class="muted small">技巧：模仿「節奏」比每個字都念清楚更重要。美國人會把不重要的字念得又輕又快。</div>
     </div>
     ${support}
@@ -66,7 +66,8 @@ export function mountShadow(root, lesson, { onComplete, done }) {
     const out = root.querySelector(`[data-result="${i}"]`);
     bindMic(btn, {
       label: '跟讀',
-      record: canRecord,
+      record: shouldRecord(),
+      hint: fill(l.en),
       onInterim: (t) => (out.innerHTML = `<span class="muted">${esc(t)}</span>`),
       onResult: ({ text, audioUrl }) => {
         let html = '';
@@ -75,7 +76,8 @@ export function mountShadow(root, lesson, { onComplete, done }) {
           const lbl = scoreLabel(c.score);
           html += `<div class="score ${lbl.cls}">${lbl.text}<b>${Math.round(c.score * 100)}%</b></div>
             <div class="diff">${c.targetHtml}</div>
-            <div class="heard">系統聽到：${c.answerHtml}</div>`;
+            <div class="heard">系統聽到：${c.answerHtml}</div>
+            ${c.score < 0.6 ? '<div class="muted small">辨識跟你說的不一樣？靠近麥克風、找安靜的地方，或戴有麥克風的耳機再試一次。</div>' : ''}`;
           const key = 'shadow-' + i;
           best[key] = Math.max(best[key] || 0, c.score);
         } else if (canRecognize) {
