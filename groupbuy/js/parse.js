@@ -2,7 +2,7 @@
 // 爬蟲與網站「我的團購 → 貼上貼文」共用，只用標準 JS，瀏覽器與 Node 都能跑。
 // 時間一律是台灣時間字串：'YYYY-MM-DD' 或 'YYYY-MM-DD HH:mm'。
 
-import { classify, brandOf } from './categories.js';
+import { classify, brandOf, findTerms } from './categories.js';
 
 const pad = (n) => String(n).padStart(2, '0');
 const TPE = 8 * 3600 * 1000;
@@ -82,6 +82,13 @@ export function scanDates(text, refYmd) {
     if (!ymd) continue;
     const time = m[9] != null ? toTime(m[8], m[9], m[10] || m[11], m[12]) : null;
     const tok = { start, end, ymd, time, dot: !hasYear && sep === '.' };
+    // 「10/13~19」：同月份的期間
+    const sameMonth = !time && t.slice(end).match(/^\s*[~～〜\-–—至到]\s*(\d{1,2})\s*(?:日|號)?(?![\d/.月:：])/);
+    if (sameMonth && Number(sameMonth[1]) > d && validDay(+ymd.slice(0, 4), mo, Number(sameMonth[1]))) {
+      tok.endYmd = `${ymd.slice(0, 8)}${pad(sameMonth[1])}`;
+      end += sameMonth[0].length;
+      tok.end = end;
+    }
     // 「10/20 10:00~22:00」：同一天的時段
     const tail = time && t.slice(end).match(TIME_ONLY);
     if (tail) {
@@ -180,12 +187,12 @@ export function parseWindow(text, ref) {
     span = [a.start, b.end];
     break;
   }
-  // 2. 同一天時段（10/20 10:00~22:00）
+  // 2. 同一天時段（10/20 10:00~22:00）、同月份期間（10/13~19）
   if (!open) {
-    const k = usable.find((x) => x.endTime);
+    const k = usable.find((x) => x.endTime || x.endYmd);
     if (k) {
       open = stampOf(k);
-      close = stampOf(k, 'endTime');
+      close = k.endYmd || stampOf(k, 'endTime');
       span = [k.start, k.end];
     }
   }
@@ -225,7 +232,7 @@ export function parseWindow(text, ref) {
 const AMOUNT = String.raw`(?:NT\s*\$?|\$|＄|台幣\s*)?\s*(\d{1,3}(?:,\d{3})+|\d{2,6})(?:\s*(?:元|塊|起))?`;
 const LABELED = [
   ['團購', new RegExp(String.raw`(?:團購|開團|團媽|粉絲|獨家|直播|限時)(?:優惠)?(?:價|價格|只要)\s*[:：]?\s*${AMOUNT}`)],
-  ['優惠', new RegExp(String.raw`(?:優惠價|特價|活動價|下殺|超值價|驚喜價|破盤價|會員價|折扣價)\s*[:：]?\s*${AMOUNT}`)],
+  ['優惠', new RegExp(String.raw`(?:優惠價|特價|活動價|下殺|超值價|驚喜價|破盤價|會員價|折扣價|最優惠|最低價)\s*[:：]?\s*${AMOUNT}`)],
   ['售價', new RegExp(String.raw`(?:只要|售價|價格|價錢|單價|每組|每盒|每包|每件|每入|一組|一盒|一包|一件|價)\s*[:：]?\s*${AMOUNT}`)],
 ];
 const ORIGINAL = new RegExp(String.raw`(?:原價|市價|定價|專櫃價|官網價|建議售價)\s*[:：]?\s*${AMOUNT}`);
@@ -247,7 +254,7 @@ export function parsePrice(text) {
     const v = toNum(m[1] || m[2]);
     const before = t.slice(Math.max(0, m.index - 6), m.index);
     const after = t.slice(m.index + m[0].length, m.index + m[0].length + 4);
-    if (/滿|運費|運|門檻|超過|回饋|折抵|現折|省|贈|原價|市價|定價/.test(before) || /免運|折|回饋|以上/.test(after)) continue;
+    if (/滿|運費|運|門檻|超過|回饋|折抵|現折|省|贈|原價|市價|定價|還要|要價|原本|一般|專櫃/.test(before) || /免運|折|回饋|以上/.test(after)) continue;
     if (v < 10 || v === original) continue;
     return { price: v, originalPrice: original, priceText: m[0].trim() };
   }
@@ -258,10 +265,10 @@ export function parsePrice(text) {
 
 // ---------- 是否為開團文 ----------
 const POS = [
-  [/開團(?:啦|囉|喇|了|中|！|!|～|~|[^\p{L}\p{N}\s])|限時開團|正式開團|準時開團|開團時間|開團日期|開團期間|團購開跑|開團價|團購價|開團資訊/u, 4],
-  [/開團|揪團|團購|合購|預購/, 2],
+  [/開團\s*(?:啦|囉|喇|嚕|了|中|！|!|～|~|\p{Extended_Pictographic})|限時開團|正式開團|準時開團|開團時間|開團日期|開團期間|團購開跑|開團價|團購價|開團資訊/u, 4],
+  [/開團|揪團|團購|合購|預購|開這團|開此團|跟團/, 2],
   [/收單|結單|截單|結團|收團/, 3],
-  [/下單|訂購|購買|表單|賣貨便|一頁|商店|蝦皮|連結|網址|私訊下單|留言\+1|\+1|喊單|進群|小盒子/, 2],
+  [/下單|訂購|購買|表單|賣貨便|一頁|商店|蝦皮|連結|網址|私訊下單|留言\+1|\+1|喊單|進群|小盒子|留言[「『"]|留言.{0,6}(?:傳|私訊|連結|給你)/, 2],
   [/\$\s*\d|NT\s*\$?\s*\d|\d\s*元|價格|售價|只要|特價|優惠價/, 2],
   [/款式|規格|尺寸|顏色|口味|容量|組合|現貨|免運|贈品|加購|限量|數量有限|宅配|超取/, 1],
 ];
@@ -269,9 +276,12 @@ const NEG = [
   /(?:找|徵|尋找|尋求|洽談|歡迎|願意).{0,10}(?:廠商|合作|貨源|商品|品項)|合作廠商|廠商.{0,6}(?:私訊|聯繫|洽談|自薦)|自薦|有沒有人|^請問|請問(?:有|大家|各位|一下)|推薦.{0,6}給我|經營.{0,10}群|我是.{0,8}團(?:購)?主|團購新手|想詢問|怎麼開團|如何開團|開團教學/,
   /洗版|情勒|詐騙|避雷|靠北|抱怨|退款|客訴|糾紛|跑路|延遲出貨|還沒出貨|沒收到|退貨|雷團|爛團|不推/,
   /代購賺|副業|兼職|賺錢|被動收入|加盟|招募團[媽爸]|徵團[媽爸]|分潤|抽成/,
+  /新團品|找.{0,4}團品|拓展.{0,6}通路|有沒有.{0,8}(?:商家|廠商|店家)|找團[爸媽]|供應商/,
 ];
 // 香港、澳門、中國的團購（廣東話、港幣、順豐）不收
 const NOT_TW = /港幣|HK\$|HKD|香港|澳門|順豐|[佢嘅咗冇睇嘢啲唔俾攞噉]|喇$|喇[！!🎉]|人民幣|淘寶代購|大陸/;
+// 簡體字（三個以上）多半是中國的貼文
+const SIMPLIFIED = /[们这个说对时会为发买卖团购单价钱货经还见长东车马门问听观历亲汇总号丝爱宝儿鲜鸡猪鱼虾礼盒装订]/g;
 
 /** 開團文判斷：正向字詞加分、找廠商／抱怨文扣分。回傳 { score, isGroupBuy } */
 export function groupBuyScore(text) {
@@ -279,43 +289,71 @@ export function groupBuyScore(text) {
   let score = 0;
   for (const [re, pts] of POS) if (re.test(t)) score += pts;
   for (const re of NEG) if (re.test(t)) score -= 4;
-  if (NOT_TW.test(t)) score -= 10;
+  if (NOT_TW.test(t) || (t.match(SIMPLIFIED) || []).length >= 3) score -= 10;
   return { score, isGroupBuy: score >= 4 };
 }
 
 // ---------- 商品名 ----------
-const TAG_BRACKET = /[【\[「『〔(（]\s*([^】\]」』〕)）]{0,16})\s*[】\]」』〕)）]/g;
+const TAG_BRACKET = /[【\[「『〔(（《]\s*([^】\]」』〕)）》]{0,24})\s*[】\]」』〕)）》]/g;
+const GROUP_WORDS = /開團|團購|合購|預購|限時|現貨|代購|徵|揪|免運|結單|收單|情報|分享|限量|快閃|販售|活動|優惠|期間|時間|售/;
 const NOISE = [
   /#[^\s#]+/g,
   /https?:\/\/\S+/g,
-  /(?:限時|正式|準時|即將|今晚|明天|本週|下週)?(?:開團|揪團|團購|合購|預購|開賣)(?:啦|囉|喇|了|中|囉|開跑|資訊|預告|通知|價|時間)?[！!～~。.]*/g,
+  /(?:限時|正式|準時|即將|今晚|明天|本週|下週|重新|終於可以|終於|決定)?(?:開團|揪團|團購|合購|預購|開賣|常態團|首發團)(?:啦|囉|喇|嚕|了|中|囉|開跑|資訊|預告|通知|價|時間|期間)?[！!～~。.]*/g,
+  /第\s*[\dNn一二三四五六七八九十]+\s*[團波]/g,
   /(?:收單|結單|截單|結團)(?:時間|日)?\s*[:：]?/g,
-  /(?:現貨|免運|限量|最後|加開|首團|回購|快閃|搶購|好物|推薦|分享|必買|爆款|熱銷|新品|上市)[！!～~]*/g,
+  /(?:現貨|免運|限量|最後|加開|首團|回購|快閃|搶購|好物|推薦|分享|必買|爆款|熱銷|新品|上市|到貨)[！!～~]*/g,
   /(?:只要|售價|價格|團購價|特價|優惠價)\s*[:：]?\s*(?:NT\s*\$?|\$|＄)?\s*[\dXx,]+\s*(?:元|起)?/g,
   /\d+\s*[/／]\s*(?:NT\s*\$|\$|＄)?\s*\d+/g,
   /(?:NT\s*\$|\$|＄)\s*[\d,]+\s*(?:元|起)?|\d[\d,]*\s*元/g,
-  /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu,
-  /[ʕ•ᴥʔ▓★☆◆◇■□▲△▼▽●○◎✦✧❤♥♡❣︎⭐️]+/g,
+  /(?:來了|來囉|來啦|駕到|登場|報到|賣爆|開搶)(?=$|\s|[!！~～⋯…])/g,
+  /(?:已|去年)?賣爆\s*[\d一二三四五六七八九十兩百千萬]*\s*[台隻組件個份盒包]?(?:以上)?/g,
+  /文末抽獎|留言抽獎|抽獎/g,
 ];
+// 只留中日韓文字、英數與少數商品名常用符號（表情、顏文字、注音一律拿掉）
+const KEEP = /[^\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}A-Za-z0-9\s&+\-/.()（）｜|・·'’%×_ー]/gu;
 const LABEL_LINE = /(?:品名|商品名稱|商品|團購商品|團購品項|品項|產品|本次開團|開團商品|這次開團)\s*[:：]\s*([^\n]{2,50})/;
-const STRIP_EDGE = /^[\s\-–—~～:：|｜/、,，.。!！?？>＞》»⋯…]+|[\s\-–—~～:：|｜/、,，.。!！?？<＜《«⋯…]+$/g;
-// 開頭的贅字：「今天社群限時開團一款波點包包」→「波點包包」
-const FILLER = /^(?:(?:今天|今晚|明天|社群|這次|本次|這週|本週|一款|一個|這款|這個|大家|我們|終於|又來|再度|再次|手刀|超美|超好用|必收|老闆|小編|來了)\s*)+/;
+const STRIP_EDGE = /^[\s\-–—~～:：|｜/、,，.。!！?？>＞》»⋯…&+]+|[\s\-–—~～:：|｜/、,，.。!！?？<＜《«⋯…&+(（]+$/g;
+// 開頭的贅字：「今天社群限時開團一款波點包包」→「波點包包」、「主婦們最愛的BRUNO」→「BRUNO」
+const FILLER = /^(?:(?:今天|今晚|明天|社群|這次|本次|這週|本週|一款|一個|這款|這個|大家|我們|我|是|來自|終於|又來|再度|再次|手刀|超美|超好用|必收|老闆|小編|來了|的|新款|超夯|超人氣|最近|爆紅|全網|大品牌好安心|.{0,8}(?:最愛|超紅|最紅|爆紅|人氣|必買|熱賣)的)\s*)+/u;
+const PRONOUN = /^(?:我|你|妳|您|他|她|大家|這|那|今天|最近|謝謝|感謝|終於|為了|因為|如果|聽說|於是|知道|想|有沒有|要不要)/;
 // 下單方式、規則類的句子不是商品名
-const INSTRUCTION = /湊團|成團|告知|下單|私訊|小盒子|匯款|付款|運費|賣貨便|出貨|取貨|注意|規則|不接受|三思|備註|截圖|留言|\+1|進群|喊單|併單|基本資料|詳情|連結|網址|點我/;
+const INSTRUCTION = /湊團|成團|告知|下單|私訊|小盒子|匯款|付款|運費|賣貨便|出貨|取貨|注意|規則|不接受|三思|備註|截圖|留言|\+1|進群|喊單|併單|基本資料|詳情|連結|網址|點我|底下|下方|主頁|首頁|訂購|搶購|購買方式/;
+const ANNOUNCE = /開團|團購|開賣|預購|合購|上架|首發/;
 const width = (s) => [...s].reduce((n, c) => n + (/[\x00-\xff]/.test(c) ? 1 : 2), 0);
 
 function cleanLine(line, refYmd) {
   let s = String(line);
-  s = s.replace(TAG_BRACKET, (all, inner) => (/開團|團購|合購|預購|限時|現貨|代購|徵|揪|免運|結單|收單|情報|分享|限量|快閃|販售|售/.test(inner) ? ' ' : ` ${inner} `));
+  // （括號）多半是備註：（10/31收單）（老朋友新朋友看過來）
+  s = s.replace(/[(（][^()（）]{0,30}[)）]/g, ' ');
+  s = s.replace(TAG_BRACKET, (all, inner) => (GROUP_WORDS.test(inner) ? ' ' : ` ${inner} `));
   // 日期期間
   for (const k of scanDates(s, refYmd).reverse()) s = s.slice(0, k.start) + ' ' + s.slice(k.end);
   for (const re of NOISE) s = s.replace(re, ' ');
-  s = s.replace(/\s+/g, ' ').replace(STRIP_EDGE, '').trim();
+  s = s.replace(/[(（][^)）]*$/, ' ');
+  s = s.replace(KEEP, ' ').replace(/\s+/g, ' ').replace(STRIP_EDGE, '').trim();
   return s.replace(FILLER, '').replace(STRIP_EDGE, '').trim();
 }
 
-/** 商品名：「品名：」行 → 標題／第一行清掉開團字樣、表情、日期、價格；太短就接下一行 */
+/** 子句分數：品牌、分類關鍵字、開團字樣加分；代名詞開頭、太長、沒有關鍵字扣分 */
+function clauseScore(raw, clean, lineIndex) {
+  const hits = findTerms(clean);
+  let sc = 0;
+  if (hits.some((h) => h.brand)) sc += 3;
+  sc += Math.min(hits.filter((h) => !h.brand).length, 2) * 2;
+  if (!hits.length) sc -= 2;
+  if (ANNOUNCE.test(raw)) sc += 2;
+  if (lineIndex === 0) sc += 1;
+  if (PRONOUN.test(clean)) sc -= 2;
+  if (/抽\s*\d*\s*位|送同款|抽獎|文末/.test(raw) && !hits.some((h) => h.brand)) sc -= 3;
+  if (clean.length > 20) sc -= Math.ceil((clean.length - 20) / 10);
+  return sc;
+}
+
+/**
+ * 商品名：「品名：」行優先；否則把標題與前幾行切成子句，挑分數最高的一句（品牌、商品關鍵字、開團字樣），
+ * 太短時接上同篇下一個有商品關鍵字的子句。也會從「留言「氣炸鍋」」這類關鍵字取候選。
+ */
 export function extractProduct({ title, text, ref } = {}) {
   const refYmd = ymdOf(ref || taipeiStamp());
   const body = String(text ?? '');
@@ -324,17 +362,38 @@ export function extractProduct({ title, text, ref } = {}) {
     const v = cleanLine(m[1], refYmd);
     if (v.length >= 2) return v.slice(0, 40);
   }
-  const lines = [title, ...body.split(/\n+/)].map((l) => String(l ?? '').trim()).filter(Boolean);
-  let out = '';
-  for (const [i, l] of lines.slice(0, 6).entries()) {
-    // 第一行遇到下單方式就截斷；之後的行整行是規則就跳過
-    const cut = l.search(INSTRUCTION);
-    if (i > 0 && cut >= 0) continue;
-    let c = cleanLine(cut > 0 ? l.slice(0, cut) : l, refYmd);
-    if (c.length > 24) c = c.split(/[。！!？?，,；;]/)[0];
-    if (c.length < 2) continue;
-    out = out ? `${out} ${c}` : c;
-    if (width(out) >= 8) break;
+  const lines = [title, ...body.split(/\n+/)].map((l) => String(l ?? '').trim()).filter(Boolean).slice(0, 8);
+  const cands = [];
+  lines.forEach((l, i) => {
+    for (let raw of l.split(/[。！!？?，,；;]+|(?<!\d)\s*[~～]+\s*(?!\d)|\s{2,}|\s[/\-–—]\s|\p{Extended_Pictographic}+/u)) {
+      if (!raw.trim()) continue;
+      // 句子後半是下單方式：「購物包開團 底下任意留言」只取前半
+      const cut = raw.search(INSTRUCTION);
+      if (cut > 3) raw = raw.slice(0, cut);
+      else if (cut >= 0) {
+        // 「留言「氣炸鍋」我傳資訊給你」：引號裡常是商品名
+        const q = raw.match(/[「『"]([^」』"]{2,12})[」』"]/);
+        if (q) cands.push({ text: cleanLine(q[1], refYmd), score: findTerms(q[1]).length ? 1 : -3, order: cands.length });
+        continue;
+      }
+      let c = cleanLine(raw, refYmd);
+      // 太長的子句以「｜」再切，取商品字詞最多的一段
+      if (width(c) > 30 && /[｜|]/.test(c)) c = c.split(/\s*[｜|]\s*/).filter(Boolean).sort((x, y) => findTerms(y).length - findTerms(x).length || x.length - y.length)[0];
+      if (width(c) < 4) {
+        if (c.length >= 2 && ANNOUNCE.test(raw)) cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length, short: true });
+        continue;
+      }
+      cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length });
+    }
+  });
+  if (!cands.length) return '';
+  const best = [...cands].sort((a, b) => b.score - a.score || a.order - b.order)[0];
+  let out = best.text;
+  // 「三麗鷗」太短：接上後面有商品關鍵字的子句（萬聖節｜芭蕾小公仔）
+  if (width(out) < 8) {
+    const cat = classify({ product: out });
+    const more = cands.find((c) => c.order > best.order && findTerms(c.text).length && !c.short && width(c.text) <= 24 && !c.text.includes(out) && !out.includes(c.text));
+    if (more && (cat === '其他' || classify({ product: more.text }) === cat)) out = `${out} ${more.text}`;
   }
   return out.slice(0, 40).trim();
 }
@@ -392,9 +451,12 @@ export function splitSchedule(text, ref) {
 export function parsePost({ text, title = '', ref } = {}) {
   const r = ref || taipeiStamp();
   const all = [title, text].filter(Boolean).join('\n');
-  const { score, isGroupBuy } = groupBuyScore(all);
-  const product = extractProduct({ title, text, ref: r });
   const win = parseWindow(all, r);
+  // 有寫開團期間或收單日，多半是真的開團文
+  let { score } = groupBuyScore(all);
+  if (win.openAt || win.closeAt) score += 2;
+  const isGroupBuy = score >= 4;
+  const product = extractProduct({ title, text, ref: r });
   const price = parsePrice(all);
   return {
     isGroupBuy,

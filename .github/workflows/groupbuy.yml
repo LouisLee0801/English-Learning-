@@ -2,7 +2,7 @@ name: Group-buy scrape
 
 on:
   schedule:
-    - cron: '27 */3 * * *' # 每 3 小時（台北 02:27、05:27…23:27）：團購開團、結單變動快
+    - cron: '27 */2 * * *' # 每 2 小時（台北 00:27、02:27…）：開團、結單變動快；未登入搜尋每次只能查少量，靠頻率累積
   workflow_dispatch:
     inputs:
       discover:
@@ -11,7 +11,7 @@ on:
         default: false
   push:
     branches: [main, claude/intelligent-bell-29e3ea]
-    paths: ['scripts/groupbuy/**', 'groupbuy/js/categories.js', 'groupbuy/data/watchlist.json', '.github/workflows/groupbuy.yml']
+    paths: ['scripts/groupbuy/**', 'groupbuy/js/categories.js', 'groupbuy/js/parse.js', 'groupbuy/data/watchlist.json', '.github/workflows/groupbuy.yml']
 
 permissions:
   contents: write
@@ -46,6 +46,7 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
         run: node scripts/groupbuy/scrape.mjs
       - name: Commit data
         if: success() || failure()
