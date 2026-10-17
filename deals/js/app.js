@@ -453,7 +453,7 @@ function viewStatus() {
   $main.innerHTML = `
     <section class="panel">
       <h2>資料來源</h2>
-      <p class="muted" style="margin-top:0">GitHub Actions 每天台北時間 06:17 自動抓取；某個平台失敗時保留上一次成功的資料，不會清空。</p>
+      <p class="muted" style="margin-top:0">GitHub Actions 每天台北時間 06:17 抓全部來源，12:47、18:47、00:47 再更新 PTT 與新聞；某個來源失敗時保留上一次成功的資料，不會清空。</p>
       ${rows.length ? `<div class="table-wrap"><table>
         <thead><tr><th>平台</th><th>狀態</th><th>筆數</th><th>最後成功</th><th>說明</th></tr></thead>
         <tbody>${rows.map(([k, s]) => `<tr>
@@ -472,6 +472,8 @@ function viewStatus() {
         <li>加碼只在活動期間內計入；過期加碼自動回到基本回饋。</li>
         <li>「回饋高 → 低」先排回饋類，再排折價券與活動（折扣幅度與回饋率不能直接相比）；無門檻的贈點不換算 %。</li>
         <li>「7 天內到期」以台灣日期計算，含到期當天。</li>
+        <li>新聞與 PTT 情報沒寫期限的，以發文日 + 7 天暫定，並標「期限見原文」。</li>
+        <li>分類由品牌字典與關鍵字判斷，少數可能分錯；可用搜尋補足。</li>
       </ul>
     </section>`;
 }

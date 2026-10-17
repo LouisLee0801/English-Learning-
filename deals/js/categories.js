@@ -16,6 +16,7 @@ export const CATEGORIES = [
   { key: '交通出行', icon: '🚗' },
   { key: '娛樂影音', icon: '🎬' },
   { key: '綜合電商', icon: '🛒' },
+  { key: '百貨商場', icon: '🏬' },
   { key: '金融支付', icon: '💳' },
   { key: '精品', icon: '💎' },
   { key: '生活服務', icon: '🧾' },
@@ -39,6 +40,7 @@ const ALIAS = {
 
 /** 品牌 → 分類（比對正規化後的店名開頭或包含） */
 const BRANDS = {
+  百貨商場: ['新光三越', 'sogo', '太平洋sogo', '遠東百貨', '遠百', '大遠百', '微風', '台北101', '京站', '統一時代', '漢神', '夢時代', '大立', 'global mall', '環球購物中心', 'ifg', '遠雄廣場', '三井outlet', 'mitsui', 'lalaport', '華泰名品城', '誠品', '中友百貨', '廣三sogo', '新光三越', '比漾', '美麗華', '大江購物中心', '巨城', '晶品城', '義大世界', '德安百貨', '耐斯廣場', 'att 4 fun', 'bellavita', '寶麗廣場'],
   藥妝美妝: ['屈臣氏', 'watsons', '康是美', 'cosmed', '寶雅', 'poya', '日藥本舖', '松本清', '大樹藥局', '杏一', '丁丁藥局', '躍獅', 'sephora', '莎莎', 'sasa', 'olive young', '小三美日', '美華泰', 'lancome', '蘭蔻', 'estee', '雅詩蘭黛', 'la mer', '海洋拉娜', 'kiehl', '契爾氏', 'shiseido', '資生堂', 'sk-ii', 'clinique', '倩碧', 'bobbi brown', 'nars', 'm.a.c', 'mac cosmetics', 'jo malone', 'dior', '迪奧', 'chanel', 'ysl', 'clarins', 'loccitane', '歐舒丹', 'the body shop', 'innisfree', '理膚寶水', '薇姿', 'iherb', 'lookfantastic', 'strawberrynet', '草莓網', 'ipsa', 'orbis', '雪肌精', 'kose', 'shu uemura', '植村秀', '葡萄王', '大研生醫', '娘家', '白蘭氏', 'myprotein'],
   運動戶外: ['nike', 'adidas', '愛迪達', 'puma', 'new balance', 'asics', 'mizuno', 'under armour', 'lululemon', 'decathlon', '迪卡儂', 'the north face', 'columbia', 'skechers', 'fila', 'converse', 'vans', 'reebok', 'hoka', 'on running', '健身工廠', 'world gym', '世界健身', 'garmin', 'arc\'teryx', 'patagonia', '摩曼頓', 'sports direct', 'sportsdirect'],
   外送: ['uber eats', 'ubereats', 'foodpanda', '熊貓', 'foodomo'],
@@ -60,9 +62,10 @@ const BRANDS = {
 
 /** 標題／內文關鍵字（品牌字典沒中時用） */
 const KEYWORDS = {
+  百貨商場: ['週年慶', '百貨', '購物中心', 'outlet', '商場', '商圈'],
   藥妝美妝: ['beauty', 'cosmetic', 'makeup', 'make up', 'skin', '香氛', '髮', '人蔘', '藥妝', '美妝', '保養', '彩妝', '面膜', '精華液', '乳液', '防曬', '香水', '洗髮', '沐浴', '保健', '維他命', '益生菌', '葉黃素', '魚油', '藥局'],
   運動戶外: ['運動', '跑鞋', '球鞋', '慢跑', '健身', '瑜珈', '登山', '露營', '戶外', '馬拉松', '自行車', '球衣'],
-  餐飲美食: ['餐廳', '套餐', '漢堡', '披薩', '炸雞', '咖啡', '拿鐵', '美式', '奶茶', '手搖', '飲料', '甜點', '蛋糕', '早餐', '火鍋', '燒肉', '吃到飽', '買一送一', '第二杯', '半價', '內用', '外帶'],
+  餐飲美食: ['速食', '比薩', '蛋撻', '炸雞', '茶飲', '自助餐', '甜點', '麵包', '餐廳', '套餐', '漢堡', '披薩', '炸雞', '咖啡', '拿鐵', '美式', '奶茶', '手搖', '飲料', '甜點', '蛋糕', '早餐', '火鍋', '燒肉', '吃到飽', '買一送一', '第二杯', '半價', '內用', '外帶'],
   外送: ['外送', '外帶自取', '運費', '送餐'],
   超商量販: ['超商', '便利商店', '量販', '超市', 'icash', 'openpoint', 'open point', '會員點數'],
   '3C家電': ['手機', '筆電', '平板', '耳機', '充電', '家電', '冷氣', '冰箱', '洗衣機', '電視', '相機', '螢幕', '電競', '3c'],

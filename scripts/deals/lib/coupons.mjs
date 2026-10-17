@@ -293,12 +293,21 @@ export function parseRss(xml) {
   return items;
 }
 
+// 台灣以外的優惠（Google 新聞繁中結果常混進香港、中國）
+const NOT_TW = /港幣|HK\$|HKD|香港|港九|新界|九龍|尖沙咀|灣仔|荃灣|銅鑼灣|旺角|觀塘|沙田|元朗|強積金|MPF|百佳|惠康|HKTVmall|八達通|澳門|深圳|廣州|上海|北京|大陸|內地|人民幣|新加坡|星國|馬來西亞|國泰假期/;
+const HK_MEDIA = /HK01|香港01|星島|明報|東方日報|on\.cc|am730|U Lifestyle|ulifestyle|晴報|TOPick|Yahoo新聞香港|頭條日報|經濟一週|港生活|新假期|MoneyHero/i;
+// 不是優惠：財經、政治、分析、問句
+const NOT_DEAL = /詐騙|股價|營收|財報|法說|ETF|股東|裁員|判決|檢舉|罰款|業績|考題|選舉|立委|市長|議員|政府|普發|補助|退稅|會不會|會變嗎|怎麼辦|為何|為什麼/;
+const STRONG = /\d+(\.\d+)?\s*[%％]|買一送一|買1送1|買\d送\d|第二(杯|件)|第2(杯|件)|半價|\d+(\.\d)?折|折扣碼|優惠碼|折價券|優惠券|現折|折\$?\d|免費|特價|下殺|\$\d|\d+元|1元|一元|免運|送[^出貨達]|週年慶|會員日/;
+
 /** 新聞標題常是「全家咖啡買一送一！10/17起…｜ETtoday」：去掉媒體名與裝飾 */
 export function newsDeal(item) {
   let title = item.title.replace(/\s+[-–|｜]\s+[^-–|｜]+$/, '').trim();
   if (item.source) title = title.replace(new RegExp(`\\s*[-–|｜]\\s*${item.source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`), '');
-  if (!DEAL_WORDS.test(title)) return null;
-  if (/詐騙|股價|營收|財報|法說|ETF|股東|裁員|判決|檢舉|罰款/.test(title)) return null;
+  title = title.replace(/\s*[|｜]\s*[^|｜]{2,6}\s*[|｜]\s*地方新聞$/, ''); // 「| 記者名 | 地方新聞」
+  if (!DEAL_WORDS.test(title) || !STRONG.test(title)) return null;
+  if (NOT_DEAL.test(title) || NOT_TW.test(title) || HK_MEDIA.test(item.source || '')) return null;
+  if (/[？?]$/.test(title) && !/買一送一|折|免費/.test(title)) return null;
   const pub = item.pubDate ? new Date(item.pubDate).toISOString() : null;
   return feedDeal({
     source: 'news',

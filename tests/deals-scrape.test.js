@@ -180,3 +180,15 @@ test('coupon sources: PTT index, supertaste, Cosmed, RSS', async () => {
   assert.equal(nd[0].endAt, '2026-10-23'); // 無明確迄日 → 發文日 + 7 天
   assert.ok(nd[0].tags.includes('期限見原文'));
 });
+
+test('news filter drops Hong Kong items, finance/politics and non-deal questions', async () => {
+  const { newsDeal } = await import('../scripts/deals/lib/coupons.mjs');
+  const item = (title, source = 'ETtoday') => ({ title: `${title} - ${source}`, link: 'x', guid: title, pubDate: 'Fri, 16 Oct 2026 02:00:00 GMT', source });
+  assert.ok(newsDeal(item('本周咖啡優惠！7-11買2送2、全家拿鐵半價')));
+  assert.ok(newsDeal(item('韓國旅遊用LINE Pay 最高25%回饋抽666點')));
+  assert.equal(newsDeal(item('百佳優惠｜百佳即日起買滿$150送$18優惠券')), null); // 香港
+  assert.equal(newsDeal(item('Sephora 必買｜指定產品低至4折', 'U Lifestyle')), null); // 香港媒體
+  assert.equal(newsDeal(item('不是普發1萬！ 政府加碼發錢了')), null);
+  assert.equal(newsDeal(item('foodpanda變Grab？外送費和優惠會變嗎？')), null);
+  assert.equal(newsDeal(item('某公司第三季營收創新高')), null);
+});

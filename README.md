@@ -76,7 +76,7 @@ tests/                  單元測試
 
 ## 優惠雷達（deals/）
 
-同一個 repo 另有一個獨立小站：一頁查詢 LINE購物、長榮 Mileage Mall、國泰 Milesback 的品牌回饋，以及現行優惠券的條件與期限，支援篩選、跨平台品牌比較與個人券夾。資料由 GitHub Actions 每天自動抓取。說明見 [`docs/DEALS.md`](docs/DEALS.md)。
+同一個 repo 另有一個獨立小站：掃描全網現行優惠券與優惠活動（新聞、PTT 省錢板、食尚玩家券、品牌官網），依藥妝、運動、餐飲等分類；結帳前比較 LINE購物、長榮 Mileage Mall、國泰 Milesback 的回饋。資料由 GitHub Actions 自動抓取。說明見 [`docs/DEALS.md`](docs/DEALS.md)。
 
 ## 新增課程
 
