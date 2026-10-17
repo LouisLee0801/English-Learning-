@@ -10,7 +10,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main]
+    branches: [main, claude/sharp-cannon-5364vx]
     paths: ['scripts/deals/**', '.github/workflows/deals.yml']
 
 permissions:
@@ -33,11 +33,15 @@ jobs:
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1
           npx playwright install --with-deps chromium
+      # commit 訊息含 [discover:來源1,來源2] 時只做探勘（開發用）
       - name: Discover
-        if: inputs.discover
-        run: node scripts/deals/discover.mjs
+        if: inputs.discover || contains(github.event.head_commit.message, '[discover')
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: node scripts/deals/discover.mjs $(printf '%s' "$MSG" | sed -n 's/.*\[discover:\([^]]*\)\].*/\1/p' | tr ',' ' ')
         continue-on-error: true
       - name: Scrape
+        if: "!contains(github.event.head_commit.message, '[discover')"
         run: node scripts/deals/scrape.mjs
       - name: Commit data
         if: success() || failure()

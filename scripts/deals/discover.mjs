@@ -1,5 +1,5 @@
-// 探勘模式：把三個平台的頁面、JSON 回應、連結存成快照，供撰寫解析器時參考。
-// 用法：node scripts/deals/discover.mjs [line|eva|cathay ...]
+// 探勘模式：把來源網站的頁面、JSON 回應、連結存成快照，供撰寫解析器時參考。
+// 用法：node scripts/deals/discover.mjs [來源名稱 ...]（不指定 = 全部）
 import { mkdir, writeFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { openBrowser, loadPage } from './lib/browser.mjs';
@@ -57,6 +57,39 @@ const SOURCES = {
   },
 };
 
+// 優惠券／優惠情報候選來源（第三輪探勘）
+const wp = (host) => [
+  [`https://${host}/wp-json/wp/v2/posts?per_page=5`, {}],
+  [`https://${host}/wp-json/wp/v2/categories?per_page=100`, {}],
+];
+const site = (host, start, follow, extra = {}) => ({
+  host,
+  start,
+  follow,
+  skip: /login|logout|signin|register|privacy|terms|cookie|javascript:|mailto:|facebook|line\.me|instagram|youtube/i,
+  maxFollow: 2,
+  robots: [`https://${host}/robots.txt`],
+  requests: [],
+  ...extra,
+});
+Object.assign(SOURCES, {
+  ptt: site('www.ptt.cc', ['https://www.ptt.cc/bbs/Lifeismoney/index.html'], /\/bbs\/Lifeismoney\/M\.\d+/, { maxFollow: 3 }),
+  uptogo: site('uptogo.com.tw', ['https://uptogo.com.tw/'], null, { requests: wp('uptogo.com.tw') }),
+  supertaste: site('supertaste.tvbs.com.tw', ['https://supertaste.tvbs.com.tw/offers'], /\/offers\/\d+/),
+  cashfeel: site('www.cashfeel.com.tw', ['https://www.cashfeel.com.tw/'], /\/article\//, { requests: wp('www.cashfeel.com.tw') }),
+  applealmond: site('applealmond.com', ['https://applealmond.com/'], null, { requests: [['https://applealmond.com/wp-json/wp/v2/posts?per_page=5&search=%E5%84%AA%E6%83%A0%E7%A2%BC', {}], ...wp('applealmond.com').slice(1)] }),
+  shopback: site('www.shopback.com.tw', ['https://www.shopback.com.tw/', 'https://www.shopback.com.tw/all-stores'], /shopback\.com\.tw\/[a-z0-9-]+$/),
+  picodi: site('www.picodi.com', ['https://www.picodi.com/tw/'], /picodi\.com\/tw\/[a-z0-9-]+$/),
+  dcard: site('www.dcard.tw', ['https://www.dcard.tw/f/savemoney'], null, { requests: [['https://www.dcard.tw/service/api/v2/forums/savemoney/posts?limit=30', {}]] }),
+  kfc: site('www.kfcclub.com.tw', ['https://www.kfcclub.com.tw/'], /coupon|優惠|promo/i),
+  burgerking: site('www.burgerking.com.tw', ['https://www.burgerking.com.tw/'], /coupon|優惠|promo/i),
+  mcd: site('www.mcdonalds.com', ['https://www.mcdonalds.com/tw/zh-tw.html'], /promotion|優惠|deal/i),
+  family: site('www.family.com.tw', ['https://www.family.com.tw/Marketing/zh/Event'], /Event|活動|優惠/i),
+  seven: site('www.7-11.com.tw', ['https://www.7-11.com.tw/'], /活動|優惠|promotion|event/i),
+  watsons: site('www.watsons.com.tw', ['https://www.watsons.com.tw/'], /promotion|優惠|活動|coupon/i),
+  cosmed: site('www.cosmed.com.tw', ['https://www.cosmed.com.tw/'], /promotion|優惠|活動|coupon/i),
+});
+
 const MAX_FOLLOW = 10;
 const slug = (u) =>
   u
@@ -103,7 +136,7 @@ async function discover(name, cfg, context) {
     const url = queue.shift();
     if (seen.has(url)) continue;
     seen.add(url);
-    const p = await loadPage(context, url, { clickMore: cfg.clickMore, maxClicks: cfg.clickMore ? 8 : 0 });
+    const p = await loadPage(context, url, { clickMore: cfg.clickMore, maxClicks: cfg.clickMore ? 8 : 0, scrolls: 2, wait: 1500 });
     const id = `${String(n++).padStart(2, '0')}-${slug(url)}`;
     const { html, ...rest } = p;
     await writeFile(join(dir, `${id}.html`), html.slice(0, 1_500_000));
