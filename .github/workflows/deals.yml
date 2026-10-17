@@ -34,13 +34,13 @@ jobs:
           npm install --no-save --no-package-lock playwright@1.56.1
           npx playwright install --with-deps chromium
       - name: Discover
-        if: github.event_name == 'push' || inputs.discover
+        if: inputs.discover
         run: node scripts/deals/discover.mjs
         continue-on-error: true
       - name: Scrape
-        if: hashFiles('scripts/deals/scrape.mjs') != ''
         run: node scripts/deals/scrape.mjs
       - name: Commit data
+        if: success() || failure()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
