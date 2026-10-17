@@ -1,30 +1,13 @@
-# eva discovery 2026-10-17T01:41:26.187Z
+# eva discovery 2026-10-17T01:50:17.832Z
 
-- https://mall.brmile.com/robots.txt → 200
-- https://mall.brmile.com/sitemap.xml → 404
-- [00-mall-brmile-com] https://mall.brmile.com/ → status 200 final https://mall.brmile.com/zh/ title "EVA Mileage Mall : 首頁" html 304063B json 1 links 241
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&p=%2Fzh%2F&params=&page_title=EVA%20Mileage%20Mall%20%3A%20%E9%A6%96%E9%A0%81&referrer=&uri=https%3A%2F%2Fmall.
-- [01-mall-brmile-com-en] https://mall.brmile.com/en/ → status 200 final https://mall.brmile.com/en/ title "EVA Mileage Mall : Shop online and earn Miles" html 309731B json 1 links 242
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fen%2F&params=&page_title=EVA%20Mileage%2
-- [02-mall-brmile-com-en-travel-easy-travel] https://mall.brmile.com/en/travel/easy-travel → status 200 final https://mall.brmile.com/en/travel/easy-travel title "EVA Mileage Mall : Easy Travel - earn Miles with EVA AIR Mileage Mall" html 148084B json 1 links 106
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fen%2Ftravel%2Feasy-travel&params=&page_t
-- [03-mall-brmile-com-zh] https://mall.brmile.com/zh/ → status 200 final https://mall.brmile.com/zh/ title "EVA Mileage Mall : 首頁" html 304063B json 1 links 241
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2F&params=&page_title=EVA%20Mileage%2
-- [04-mall-brmile-com-zh-top-new] https://mall.brmile.com/zh/top/new → status 200 final https://mall.brmile.com/zh/top/new title "EVA Mileage Mall : 新商家" html 157225B json 1 links 118
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Ftop%2Fnew&params=&page_title=EVA%20
-- [05-mall-brmile-com-zh-top-special-offers] https://mall.brmile.com/zh/top/special-offers → status 200 final https://mall.brmile.com/zh/top/special-offers title "EVA Mileage Mall : 額外賞哩" html 157201B json 1 links 112
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Ftop%2Fspecial-offers&params=&page_t
-- [06-mall-brmile-com-zh-how-it-works-html] https://mall.brmile.com/zh/how-it-works.html → status 200 final https://mall.brmile.com/zh/how-it-works.html title "EVA Mileage Mall : 網站攻略" html 134520B json 1 links 97
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Fhow-it-works.html&params=&page_titl
-- [07-mall-brmile-com-zh-az] https://mall.brmile.com/zh/az → status 200 final https://mall.brmile.com/zh/az title "EVA Mileage Mall : 所有商戶" html 165981B json 1 links 149
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Faz&params=&page_title=EVA%20Mileage
-- [08-mall-brmile-com-zh-app-tracking-merchants] https://mall.brmile.com/zh/app-tracking-merchants → status 200 final https://mall.brmile.com/zh/app-tracking-merchants title "EVA Mileage Mall : 支援App追蹤之商戶" html 160983B json 1 links 120
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Fapp-tracking-merchants&params=&page
-- [09-mall-brmile-com-zh-children-and-family] https://mall.brmile.com/zh/children-and-family → status 200 final https://mall.brmile.com/zh/children-and-family title "EVA Mileage Mall : 育兒及家庭" html 159496B json 1 links 121
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Fchildren-and-family&params=&page_ti
-- [10-mall-brmile-com-zh-clothes-and-fashion] https://mall.brmile.com/zh/clothes-and-fashion → status 200 final https://mall.brmile.com/zh/clothes-and-fashion title "EVA Mileage Mall : 時尚服飾" html 161238B json 1 links 121
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Fclothes-and-fashion&params=&page_ti
-- [11-mall-brmile-com-zh-department-stores] https://mall.brmile.com/zh/department-stores → status 200 final https://mall.brmile.com/zh/department-stores title "EVA Mileage Mall : 百貨公司" html 155529B json 1 links 116
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Fdepartment-stores&params=&page_titl
-- [12-mall-brmile-com-zh-electricals] https://mall.brmile.com/zh/electricals → status 200 final https://mall.brmile.com/zh/electricals title "EVA Mileage Mall : 電子產品" html 158814B json 1 links 121
-  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=557d5daa22a30a297b11997d&sid=fac9c534430c2b4606915e6c&hb=6724&p=%2Fzh%2Felectricals&params=&page_title=EVA%
+- setup https://mall.brmile.com/zh/?countryID=200 → 200 https://mall.brmile.com/zh/ "EVA Mileage Mall : 首頁"
+- request https://mall.brmile.com/zh/az?orderBy=popular&letter=&page=2 {"X-Requested-With":"XMLHttpRequest"} → 200 157315B
+- request https://mall.brmile.com/zh/az?orderBy=popular&letter=&page=2 {} → 200 157315B
+- [00-mall-brmile-com-zh-az] https://mall.brmile.com/zh/az → status 200 final https://mall.brmile.com/zh/az title "EVA Mileage Mall : 所有商戶" html 165981B json 1 links 149
+  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=f84da1e489088b297b0e6cc2&sid=faf0172612a7aa46068eabd3&hb=1501&p=%2Fzh%2Faz&params=&page_title=EVA%20Mileage 
+- [01-mall-brmile-com-zh-department-stores-shopee-taiwan] https://mall.brmile.com/zh/department-stores/shopee-taiwan → status 200 final https://mall.brmile.com/zh/department-stores/shopee-taiwan title "EVA Mileage Mall : Shopee Taiwan - 透過賺取哩程 EVA AIR Mileage Mall" html 154891B json 1 links 125
+  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=f84da1e489088b297b0e6cc2&sid=faf0172612a7aa46068eabd3&hb=6418&p=%2Fzh%2Fdepartment-stores%2Fshopee-taiwan&p 
+- [02-mall-brmile-com-zh-travel-klook-taiwan] https://mall.brmile.com/zh/travel/klook-taiwan → status 200 final https://mall.brmile.com/zh/travel/klook-taiwan title "EVA Mileage Mall : KLOOK Taiwan - 透過賺取哩程 EVA AIR Mileage Mall" html 165331B json 1 links 141
+  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=f84da1e489088b297b0e6cc2&sid=faf0172612a7aa46068eabd3&hb=6672&p=%2Fzh%2Ftravel%2Fklook-taiwan&params=&page_ 
+- [03-mall-brmile-com-zh-top-vouchers] https://mall.brmile.com/zh/top/vouchers → status 200 final https://mall.brmile.com/zh/top/vouchers title "EVA Mileage Mall : 優惠券及推廣" html 171483B json 1 links 121
+  - json 200 9313B https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=f84da1e489088b297b0e6cc2&sid=faf0172612a7aa46068eabd3&hb=6672&p=%2Fzh%2Ftop%2Fvouchers&params=&page_title=E 

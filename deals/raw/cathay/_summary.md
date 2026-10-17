@@ -1,56 +1,28 @@
-# cathay discovery 2026-10-17T01:43:10.388Z
+# cathay discovery 2026-10-17T01:50:53.003Z
 
-- https://shop.asiamiles.com/robots.txt → 200
-- https://shop.asiamiles.com/sitemap.xml → 404
-- [00-shop-asiamiles-com] https://shop.asiamiles.com/ → status 200 final https://shop.asiamiles.com/zh/ title "里賞匯 - 網購賺里 | 國泰亞洲萬里通美國" html 278212B json 3 links 210
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [01-shop-asiamiles-com-en] https://shop.asiamiles.com/en/ → status 200 final https://shop.asiamiles.com/en/ title "Milesback - Shop online and earn miles | Asia Miles by Cathay US" html 286570B json 3 links 210
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [02-shop-asiamiles-com-en-department-stores-orderBy-amount] https://shop.asiamiles.com/en/department-stores?orderBy=amount → status 200 final https://shop.asiamiles.com/en/department-stores?orderBy=amount title "Milesback - Department Stores | Asia Miles by Cathay US" html 177597B json 3 links 130
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [03-shop-asiamiles-com-zh] https://shop.asiamiles.com/zh/ → status 200 final https://shop.asiamiles.com/zh/ title "里賞匯 - 網購賺里 | 國泰亞洲萬里通美國" html 278212B json 3 links 210
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [04-shop-asiamiles-com-zh-top-special-offers] https://shop.asiamiles.com/zh/top/special-offers → status 200 final https://shop.asiamiles.com/zh/top/special-offers title "里賞匯 - 額外里數 | 國泰亞洲萬里通美國" html 172696B json 3 links 127
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [05-shop-asiamiles-com-zh-top-new] https://shop.asiamiles.com/zh/top/new → status 200 final https://shop.asiamiles.com/zh/top/new title "里賞匯 - 最新商戶 | 國泰亞洲萬里通美國" html 183124B json 3 links 138
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [06-shop-asiamiles-com-zh-top-vouchers] https://shop.asiamiles.com/zh/top/vouchers → status 200 final https://shop.asiamiles.com/zh/top/vouchers title "里賞匯 - 優惠推廣 | 國泰亞洲萬里通美國" html 184936B json 3 links 141
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [07-shop-asiamiles-com-zh-how-it-works-html] https://shop.asiamiles.com/zh/how-it-works.html → status 200 final https://shop.asiamiles.com/zh/how-it-works.html title "里賞匯 - 如何運作 | 國泰亞洲萬里通美國" html 157175B json 3 links 116
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [08-shop-asiamiles-com-zh-az] https://shop.asiamiles.com/zh/az → status 200 final https://shop.asiamiles.com/zh/az title "里賞匯 - 所有商戶 | 國泰亞洲萬里通美國" html 188194B json 3 links 169
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [09-shop-asiamiles-com-zh-app-tracking-merchants] https://shop.asiamiles.com/zh/app-tracking-merchants → status 200 final https://shop.asiamiles.com/zh/app-tracking-merchants title "里賞匯 - 支援App追蹤之商戶 | 國泰亞洲萬里通美國" html 162514B json 3 links 121
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [10-shop-asiamiles-com-zh-children-and-family] https://shop.asiamiles.com/zh/children-and-family → status 200 final https://shop.asiamiles.com/zh/children-and-family title "里賞匯 - 育兒及家庭 | 國泰亞洲萬里通美國" html 172240B json 3 links 130
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [11-shop-asiamiles-com-zh-clothes-and-fashion] https://shop.asiamiles.com/zh/clothes-and-fashion → status 200 final https://shop.asiamiles.com/zh/clothes-and-fashion title "里賞匯 - 時尚服飾 | 國泰亞洲萬里通美國" html 187100B json 3 links 141
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
-- [12-shop-asiamiles-com-zh-department-stores] https://shop.asiamiles.com/zh/department-stores → status 200 final https://shop.asiamiles.com/zh/department-stores title "里賞匯 - 百貨公司 | 國泰亞洲萬里通美國" html 173487B json 3 links 130
-  - json 200 69B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json
-  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json
+- setup https://shop.asiamiles.com/zh/?countryID=200 → 200 https://shop.asiamiles.com/zh/ "里賞匯 - 網購賺里 | 亞洲萬里通台灣"
+- request https://shop.asiamiles.com/zh/az?orderBy=popular&letter=&page=2 {"X-Requested-With":"XMLHttpRequest"} → 200 63960B
+- [00-shop-asiamiles-com-zh-az] https://shop.asiamiles.com/zh/az → status 200 final https://shop.asiamiles.com/zh/az title "里賞匯 - 所有商戶 | 亞洲萬里通台灣" html 193111B json 3 links 169
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 
+- [01-shop-asiamiles-com-zh-top-special-offers] https://shop.asiamiles.com/zh/top/special-offers → status 200 final https://shop.asiamiles.com/zh/top/special-offers title "里賞匯 - 額外里數 | 亞洲萬里通台灣" html 184147B json 3 links 133
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 
+- [02-shop-asiamiles-com-zh-top-vouchers] https://shop.asiamiles.com/zh/top/vouchers → status 200 final https://shop.asiamiles.com/zh/top/vouchers title "里賞匯 - 優惠推廣 | 亞洲萬里通台灣" html 186121B json 3 links 141
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 
+- [03-shop-asiamiles-com-zh-travel-marriott-international-asia-placement-page-az-block] https://shop.asiamiles.com/zh/travel/marriott-international-asia?&placement=page-az_block_1_list_p_1 → status 200 final https://shop.asiamiles.com/zh/travel/marriott-international-asia?&placement=page-az_block_1_list_p_1 title "里賞匯 - Marriott International Asia | 亞洲萬里通台灣" html 174675B json 3 links 124
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 
+- [04-shop-asiamiles-com-zh-department-stores-shopee-taiwan-placement-page-az-block-1-] https://shop.asiamiles.com/zh/department-stores/shopee-taiwan?&placement=page-az_block_1_list_p_2 → status 200 final https://shop.asiamiles.com/zh/department-stores/shopee-taiwan?&placement=page-az_block_1_list_p_2 title "里賞匯 - Shopee Taiwan | 亞洲萬里通台灣" html 179572B json 3 links 136
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 
+- [05-shop-asiamiles-com-zh-travel-trip-com-taiwan-placement-page-az-block-1-list-p-3] https://shop.asiamiles.com/zh/travel/trip-com-taiwan?&placement=page-az_block_1_list_p_3 → status 200 final https://shop.asiamiles.com/zh/travel/trip-com-taiwan?&placement=page-az_block_1_list_p_3 title "里賞匯 - Trip.com Taiwan | 亞洲萬里通台灣" html 183440B json 3 links 142
+  - json 200 65B https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location 
+  - json 200 15345B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/otFlat.json 
+  - json 200 66689B https://cdn-ukwest.onetrust.com/scripttemplates/202506.1.0/assets/v2/otPcCenter.json 

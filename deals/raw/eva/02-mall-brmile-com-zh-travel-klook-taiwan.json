@@ -1,0 +1,246 @@
+{
+ "url": "https://mall.brmile.com/zh/travel/klook-taiwan",
+ "status": 200,
+ "error": null,
+ "json": [
+  {
+   "url": "https://execution-ci360.evaair.com/t/s/c/0164247f20000101f92c16b1?domain=mall.brmile.com&vid=f84da1e489088b297b0e6cc2&sid=faf0172612a7aa46068eabd3&hb=6672&p=%2Fzh%2Ftravel%2Fklook-taiwan&params=&page_title=EVA%20Mileage%20Mall%20%3A%20KLOOK%20Taiwan%20-%20%E9%80%8F%E9%81%8E%E8%B3%BA%E5%8F%96%E5%93%A9%E7%A8%8B%20EVA%20AIR%20Mileage%20Mall&referrer=&uri=https%3A%2F%2Fmall.brmile.com%2Fzh%2Ftravel%2Fklook-taiwan&cts=1792201838161&tzo=-480&platform=Linux%20x86_64&port=&protocol=https&screen_info=1366x900@24&browser_language=zh-TW&character_set=UTF-8&csz=165335&bsz=1366x900&tab_id=35896504351&java_enabled=false&flash_enabled=false&init=ot2&version=2.1",
+   "status": 200,
+   "bytes": 9313,
+   "body": "{\"ff\":{\"Datalayer_Support\":false,\"Send_Mode\":false,\"Force_OT2\":false},\"c\":{\"contentevents\":\"true\",\"jsvars\":\"true\",\"clicks\":\"true\",\"fieldinteractions\":\"true\",\"formsubmits\":\"true\",\"media\":\"true\",\"pageloads\":\"true\",\"mouseovers\":\"false\"},\"csu\":\"https://delivery-ci360.evaair.com/hserver\",\"e\":{\"term\":[[\"f\",\"pe_2168d558837042339402ba35cb5b40bd\",\"#tpl3_WCH\"],[\"f\",\"pe_aa12ac8bb5dd345bf516e9c7a3ee6ada\",\"#numNo\"],[\"l\",\"pe_a651f60017a9454273c38b573a347c58\",\"#promotion > div.owl-stage-outer > div > div > a > img\",\"alt\",\"none\",\"\"],[\"l\",\"pe_a8b3f92bbcabb8dbe9736a6fd804dfba\",\"div.text-left.container-location.container-location-to > div > span.airport-code > bdo,#calendarPerBound-cell-display-inbound > header > div.calendar-bound > div > header > div.header-panel > div.text-right.container-location.container-location-from > div > span.airport-code > bdo\",\"innerText\",\"between\",\"(__&&__)\"],[\"l\",\"pe_0f46ca625728a271188d18edfbdfb778\",\"div.text-right.container-location.container-location-from > div > span.airport-code > bdo,#calendarPerBound-cell-display-outbound > header > div.calendar-bound > div > header > div.header-panel > div.text-right.container-location.container-location-from > div > span.airport-code > bdo\",\"innerText\",\"between\",\"(__&&__)\"],[\"l\",\"pe_b90f806eb8f9848f985bfabbff648624\",\"#member > div.owl-stage-outer > div > div.owl-item.active > a > img\",\"alt\",\"none\",\"\"],[\"l\",\"pe_31866e1c28e158866d0f392a3c3623ce\",\"img#CPH_Body_rpt_HomeBanner_img_banner_5\",\"src\",\"none\",\"\"],[\"l\",\"pe_34f94f6d543cc43b9ac84278da6aa0b1\",\"a#lang-select\",\"innerText\",\"none\",\"\"],[\"l\",\"pe_8cd1357b42b7a7e0f48d5b83f2953fb8\",\"img#CPH_Body_rpt_UNISelect_img_banner_8\",\"src\",\"none\",\"\"],[\"l\",\"pe_b18327278897f6fb7a36156adcc19981\",\"img#CPH_Body_rpt_UNISelect_img_banner_5\",\"src\",\"none\",\"\"],[\"l\",\"pe_03ebf930b324b41c61fca70f3aba6ad5\",\"img#CPH_Body_rpt_UNISelect_img_banner_9\",\"src\",\"none\",\"\"],[\"f\",\"pe_63a405459cb7a93bbe42fb4030040a70\",\"button[id=\\\"loginTab\\\"][aria-selected=\\\"true\\\"]\"],[\"l\",\"pe_0771c9ce32bea1f1e219ed84cac86273\",\"img#CPH_Body_rpt_UNISelect_img_banner_0\",\"src\",\"none\",\"\"],[\"f\",\"pe_dcea8f04bf4c68e790ade4d22241aff4\",\"#tpl3_BAG\"],[\"l\",\"pe_99889b56f99ce1a087cdffa8303eb5e3\",\"img#CPH_Body_rpt_UNISelect_img_banner_1\",\"src\",\"none\",\"\"],[\"l\",\"pe_6cb58e7ad3fdfac710c77634fdbd3a26\",\"img#CPH_Body_rpt_HomeBanner_img_banner_9\",\"src\",\"none\",\"\"],[\"f\",\"pe_9c9f925a2b87f5e2d58b1bb8d4de3d20\",\"#content_pal_Result > div.editorA > h1\"],[\"l\",\"pe_e642fad6dc21337e8aaea39bfcbdd20d\",\"img#CPH_Body_rpt_HomeBanner_img_banner_0\",\"src\",\"none\",\"\"],[\"l\",\"pe_367c15b652cab7a1869f272456e380e2\",\"body > main > div.content-bg.content-bg--white.content-bg--index > div:nth-child(5) > div > a > div > img\",\"alt\",\"none\",\"\"],[\"l\",\"pe_9d862ee77d72d51323a438d3acadc817\",\"img#CPH_Body_rpt_HomeBanner_img_banner_4\",\"src\",\"none\",\"\"],[\"l\",\"pe_8a60de61f5f54a984994818a416f5975\",\"img#CPH_Body_rpt_UNISelect_img_banner_7\",\"src\",\"none\",\"\"],[\"l\",\"pe_c74fc3e701bfd6365ccef3b2b196cf7c\",\"img#CPH_Body_rpt_UNISelect_img_banner_6\",\"src\",\"none\",\"\"],[\"l\",\"pe_f5d8bd460add07971088b5c5217f0a8a\",\"img#CPH_Body_rpt_UNISelect_img_banner_4\",\"src\",\"none\",\"\"],[\"l\",\"pe_a9a58b698942ba6920bbf9d9cfb1b108\",\"img#CPH_Body_rpt_UNISelect_img_banner_2\",\"src\",\"none\",\"\"],[\"l\",\"pe_08e806499573119fbe0fc575792b1356\",\"img#CPH_Body_rpt_HomeBanner_img_banner_6\",\"src\",\"none\",\"\"],[\"l\",\"pe_2126687422d981153eb09ba0d1d9788a\",\"img#CPH_Body_rpt_HomeBanner_img_banner_1\",\"src\",\"none\",\"\"],[\"f\",\"pe_152886a9102c543d137ed67dc050bd1c\",\"button[id=\\\"PNRAndTicketTab\\\"][aria-selected=\\\"true\\\"]\"],[\"l\",\"pe_0d297458a9dc7fb9a75828d07e3728ef\",\"img#CPH_Body_rpt_HomeBanner_img_banner_8\",\"src\",\"none\",\"\"],[\"f\",\"pe_cfc247f4523fcd2c4b1f8631b200c2bb\",\"#Content_NestedContent_lbtn_ConfirmOrder\"],[\"f\",\"pe_2722778a73b5a478e5f82b58487737d7\",\"#tpl3_SIT\"],[\"l\",\"pe_cec183ac9ba2a15c2454f85eb54bf820\",\"#sale > div.owl-stage-outer > div > div.owl-item.active > a > img\",\"alt\",\"none\",\"\"],[\"l\",\"pe_14f9f19b972638b64bcd9bc2fecec271\",\"a[id='sb-home-header-portal-link']\",\"href\",\"after\",\"lang=\"],[\"f\",\"pe_854b5cbb148eb30db77a26f93282b819\",\"#tpl3_MEL\"],[\"l\",\"pe_4a68949549f986ce027bff2281e406df\",\"div.text-right.container-location.container-location-to > div > span.airport-code > bdo,#calendarPerBound-cell-display-inbound > header > div.calendar-bound > div > header > div.header-panel > div.text-right.container-location.container-location-from > div > span.airport-code > bdo\",\"innerText\",\"between\",\"(__&&__)\"],[\"l\",\"pe_aceb71394568a0a9c7f4e6fae9df7c4b\",\"img#CPH_Body_rpt_UNISelect_img_banner_3\",\"src\",\"none\",\"\"],[\"f\",\"pe_af0e513ad1c3645316103c60269e57bb\",\"#CPH_Body_btn_Back\"],[\"l\",\"pe_16e3179125134a51ccf1500d222bdc08\",\"img#CPH_Body_rpt_HomeBanner_img_banner_3\",\"src\",\"none\",\"\"],[\"f\",\"pe_8d9b737dd5f781d904ab60fd6260d35e\",\"a#lang-select\"],[\"l\",\"pe_926a231d571fd1627f0deee23a512deb\",\"img#CPH_Body_rpt_HomeBanner_img_banner_2\",\"src\",\"none\",\"\"],[\"l\",\"pe_f217e0a6d6b79962c9e92bcce422f615\",\"img#CPH_Body_rpt_HomeBanner_img_banner_7\",\"src\",\"none\",\"\"],[\"f\",\"pe_b565f3ccdf23b2e4c3cdf89ca1f70090\",\"#content_pal_Result\"]]},\"3pc\":true,\"f\":{\"obs\":{\"r\":[[[\"domain\",\"contains\",[\"www.shopeva.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"Name\"]]],[[\"domain\",\"contains\",[\"book.evaair.com\",\"wav.bibi.amadeus.com\",\"www.evaair.com\",\"webqa3.evaair.com\",\"qawww.evaair.com\",\"booking.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"LastName\",\"FirstName\",\"Email\",\"Name\",\"email\",\"name\"]]],[[\"domain\",\"contains\",[\"mall.evaair.com1\"]],[\"uri\",\"contains\",[\"HomeDelivery/Orders/OrderDetailAndPayment.aspx\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"form1\"]],[\"field\",\"id\",\"equals\",[\"Content_NestedContent_txtBuyerID\",\"Content_NestedContent_txtBuyerEamil\",\"Content_NestedContent_txtBuyerPhone\",\"Content_NestedContent_txtCreditNumber1\",\"Content_NestedContent_txtCreditNumber2\",\"Content_NestedContent_txtCreditNumber3\",\"Content_NestedContent_txtCreditNumber4\",\"Content_NestedContent_txtReceiverPhone\",\"Content_NestedContent_txtBuyerTel\",\"Content_NestedContent_txtReceiverMobile\"]]],[[\"domain\",\"equals\",[]],[\"uri\",\"contains\",[\"homedelivery\",\"HomeDelivery\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"nonLogin\"]],[\"field\",\"id\",\"equals\",[\"nonMemberID\"]]],[[\"domain\",\"contains\",[\"mall.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"Name\",\"name\",\"Email\",\"BuyerID\",\"Eamil\"]]],[[\"domain\",\"equals\",[\"webqa2.evaair.com\"]],[\"uri\",\"contains\",[\"flyeva/EVA/FFP/login.aspx\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"content_ctl02_Account\"]]]]},\"ign\":{},\"inc\":{\"r\":[[[\"domain\",\"equals\",[\"www.shopeva.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"User_Page\"]],[\"field\",\"id\",\"contains\",[\"Search_Prod\",\"Product\",\"SkyShop\",\"Category\",\"Price_S\",\"Price_E\",\"CPH_main_txt_CardNo\"]]],[[\"domain\",\"equals\",[\"mall.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"tbKeyword\",\"txt_username\",\"enterID\"]]],[[\"domain\",\"equals\",[\"book.evaair.com\",\"booking.evaair.com\",\"wav.bibi.amadeus.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"evaair\"]]],[[\"domain\",\"contains\",[\"booking.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"MainContent_HID_Cabin\",\"MainContent_HID_Lang\",\"MainContent_ddl_cabinclass\",\"MainContent_hid_ReferralLanguage\",\"MainContent_hid_NonSTU\"]]],[[\"domain\",\"contains\",[\"www.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"HID_Lang\",\"ddl_cabinclass\"]]],[[\"domain\",\"contains\",[\"www.evaair.com\",\"booking.evaair.com\",\"eservice.evaair.com\",\"eservice2.evaair.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"field\",\"id\",\"contains\",[\"Member\"]]],[[\"domain\",\"equals\",[\"wav.bibi.amadeus.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"SevenPrice\"]]],[[\"domain\",\"equals\",[\"wav.bibi.amadeus.com\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"TotalPrice\"]]],[[\"domain\",\"equals\",[\"webqa2.evaair.com\"]],[\"uri\",\"contains\",[\"flyeva/EVA/FFP/login.aspx\"]],[\"protocol\",\"equals\",[\"https\"]],[\"field\",\"id\",\"equals\",[\"content_ctl02_Account\"]]],[[\"domain\",\"equals\",[\"eservice2.evaair.com\"]],[\"uri\",\"contains\",[\"register-now.aspx\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"User_Page\"]],[\"field\",\"id\",\"equals\",[\"content_txt_email\",\"content_txt_lename\",\"content_txt_fename\",\"content_txt_cname_F\",\"content_txt_cname_G\",\"content_wuc_Sex_0\",\"content_wuc_Birthday_Year\",\"content_wuc_Birthday_Month\",\"content_wuc_Birthday_Day\",\"Nationality___Page\",\"Mobile___Page\",\"content_txt_MobilePhoneNo\",\"content_wuc_recPromotion_A_1\",\"content_wuc_provideInfo_A_1\",\"content_wuc_Questionnaire_A_1\",\"content_wuc_StarQuestionnaire_A_1\",\"Read___Page\"]]],[[\"domain\",\"equals\",[\"eservice2.evaair.com\"]],[\"uri\",\"contains\",[\"Register-evafans.aspx\"]],[\"protocol\",\"equals\",[\"http\",\"https\"]],[\"form\",\"id\",\"equals\",[\"User_Page\"]]]],\"n\":\"inc\"}},\"sld\":\".brmile.com,.mall.brmile.com\",\"sid\":\"faf0172612a7aa46068eabd3\",\"vid\":\"f84da1e489088b297b0e6cc2\",\"isNewSid\":false,\"datahubId\":\"759b9a50-0cce-376b-8901-3f29c24e40e4\",\"isNewVid\":true,\"s\":{\"mxTtlEv\":\"2000\",\"mxMd\":\"200\",\"mxCCMtch\":\"10\",\"crnCode\":\"TWD\",\"dSep\":\".\",\"smo\":\"0\",\"cstmSptDlv\":false,\"mxCC\":\"10\",\"mxJsc\":\"10\",\"ntTout\":\"2000\",\"tSep\":\",\"},\"loadId\":\"9f950ec091f9f73531a8e72b\",\"uis\":false,\"timestamp\":\"1792201838531\"}"
+  }
+ ],
+ "title": "EVA Mileage Mall : KLOOK Taiwan - 透過賺取哩程 EVA AIR Mileage Mall",
+ "finalUrl": "https://mall.brmile.com/zh/travel/klook-taiwan",
+ "text": "跳到內容\n登入 成為會員\n台灣\n繁體中文\n搜尋\nSearch\n目錄\n\t\n新商家\n\t\n額外賞哩\n\t\n網站攻略\n\t\n常見問題\n此為 頁 KLOOK Taiwan 商戶\n最多 10 哩程 / TWD100\n非促銷期間 最多 7 哩程 / TWD100\n有效期至 2026/10/31\nKLOOK Taiwan - 精選優惠\n登入並開始購物\n哩程轉換器\n\n\nKLOOK Taiwan\n3 哩程 / TWD100\n\t\nKLOOK 禮品卡\n\t\n登入並開始購物\n\n\n3 哩程 / TWD100\n\t\n特殊活動 (包括火車票)\n\t\n登入並開始購物\n\n\n7 哩程 / TWD100\n\t\n交通運輸及Wi-Fi\n\t\n登入並開始購物\n\n\n7 哩程 / TWD100\n\t\n美食饗宴\n\t\n登入並開始購物\n\n\n10 哩程 / TWD100\n2026/09/03 – 2026/10/31\n\t\n活動與體驗\n\t\n登入並開始購物\n\n\n10 哩程 / TWD100\n2026/09/03 – 2026/10/31\n\t\n旅遊觀光\n\t\n登入並開始購物\n\n\n10 哩程 / TWD100\n2026/09/03 – 2026/10/31\n\t\n汽車出租\n\t\n登入並開始購物\n\n\n7 哩程 / TWD100\n\t\n景點與表演\n\t\n登入並開始購物\n\n\n10 哩程 / TWD100\n2026/09/03 – 2026/10/31\n\t\n保險\n\t\n登入並開始購物\n\n\n7 哩程 / TWD100\n\t\neSIM\n\t\n登入並開始購物\n\n\n10 哩程 / TWD100\n2026/09/03 – 2026/10/31\n\t\n酒店\n\t\n登入並開始購物\n什麽時候才能收到我的哩程？\n交易\n今天\n追蹤所需時間 i\n24 小時\n計入所需時間 i\n146 天\n購買細則\n2026年4月1日至4月30日，標示獎勵只適用於汽車出租、旅遊觀光、保險、酒店、活動與體驗。\n如無額外列明，上述獎勵適用於所有產品，惟禮品卡和特別產品會獲得較少獎勵，及個別產品不會獲得獎勵。請按此以查閲特別產品及無法獲得獎勵之產品列表。\n購買機票不會獲得獎勵。\n使用所有於本商戶頁面以外顯示的第三方優惠編碼會導致交易不能獲得獎勵。\n經本商戶頁面按「立即購物」連結往KLOOK APP交易的訂單皆可獲得獎勵（需符合有關條款及細則）。\n\n***\n使用非本網站提供的優惠代碼可能導致獎勵失效。獎勵不適用於郵費/手續費/運費及各種稅項（包括但不限於增值稅和消費稅等）。\n關於 KLOOK Taiwan\n帶着對這個世界的好奇，客路旅行體驗師行程萬里、深入不同文化，挖掘出亞太地區優質獨特的體驗活動。\n無論是新奇活動、小眾路線還是特價演出和景點快速通道，每一次出行，客路都會給你想不到的驚喜！\n\n在客路，\n旅行 可以是一種創造，靈感將不止在異國村落與大廚學習當地料理的過程中迸發；\n旅行 還能是一種探索，冒險將不止於騎着機車探索千年古都的神秘故事；\n旅行 甚至是一种放肆，尖叫將不止在極限挑戰和勇敢遊戲中喧嘩。\n折扣優惠\nKlook 日本秋日物語專屬優惠\n優惠代碼: HKJPTPARK0906\n到期日 2026/10/31\n*須受條款及細則約束\n立即購物\n[Oct] Klook X BoC Pay 專屬優惠\n優惠代碼: BOCP26S10\n到期日 2026/10/31\n*須受條款及細則約束\n立即購物\n[Oct] Klook X WeWa EarnMORE 信用卡優惠\n優惠代碼: WEWA26SCREAM\n到期日 2026/10/31\n*須受條款及細則約束\n立即購物\n您已瀏覽 3 共 9 優惠券\n更多資訊\n同類商家\nTrip.com Taiwan\n最多 9 哩程 / TWD100\n非促銷期間 最多 6 哩程 / TWD100\nMarriott International Asia\n12 哩程 / HKD50\nKKday Taiwan\n最多 6 哩程 / TWD100\nRakuten Travel Taiwan\n最多 15 哩程 / TWD100\n非促銷期間 最多 12 哩程 / TWD100\n隱私保護政策 條款及細則 Cookie 政策 聯絡我們\n©2026 由 Valuedynamx/Points.com 支援\n版權 ©長榮航空。版權所有\n我同意\n透過使用數碼存根（Cookie）功能，我們能為你提供更優質的個人網上服務。按下“我同意”，即表示同意使用數碼存根功能，若你想關閉此功能，請參閱我們的數碼存根政策。\n關閉",
+ "links": [
+  {
+   "href": "https://mall.brmile.com/zh/#hereiscontent",
+   "text": "跳到內容"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/",
+   "text": "logotype of 長榮航空哩程商店"
+  },
+  {
+   "href": "javascript:void(0);",
+   "text": "目錄"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/top/new",
+   "text": "新商家"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/top/special-offers",
+   "text": "額外賞哩"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/how-it-works.html",
+   "text": "網站攻略"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/faqs.html",
+   "text": "常見問題"
+  },
+  {
+   "href": "javascript:;",
+   "text": "選擇商戶地區 / 語"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/az",
+   "text": "所有商家"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/app-tracking-merchants",
+   "text": "支援App追蹤之商戶"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/children-and-family",
+   "text": "育兒及家庭"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/clothes-and-fashion",
+   "text": "時尚服飾"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/department-stores",
+   "text": "百貨公司"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/electricals",
+   "text": "電子產品"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/entertainment-and-leisure",
+   "text": "娛樂及休閒"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/food-and-drink",
+   "text": "飲食產品"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/gifts-and-flowers",
+   "text": "禮品及鮮花"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/health-and-beauty",
+   "text": "保健及美容"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/home-and-garden",
+   "text": "家居及園藝"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/international",
+   "text": "國際"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/luxury",
+   "text": "豪華"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/office-and-business",
+   "text": "商業及文儀用品"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/sport-and-fitness",
+   "text": "體育及健美"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/toys-and-games",
+   "text": "玩具及遊戲"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel",
+   "text": "旅行"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/utilities-and-telecoms",
+   "text": "公共服務及電訊"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=200",
+   "text": "台灣"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=1",
+   "text": "美國"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=2",
+   "text": "加拿大"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=203",
+   "text": "泰國"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=96",
+   "text": "香港澳門"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=216",
+   "text": "英國"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=105",
+   "text": "日本"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=110",
+   "text": "韓國"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=43",
+   "text": "中國大陸"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=183",
+   "text": "新加坡"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/?countryID[]=72",
+   "text": "法國"
+  },
+  {
+   "href": "https://mall.brmile.com/en/travel/klook-taiwan",
+   "text": "English"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/klook-taiwan",
+   "text": "繁體中文"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/login?ref=%2Ftravel%2Fklook-taiwan",
+   "text": "登入"
+  },
+  {
+   "href": "https://www.evaair.com/zh-tw/index.html",
+   "text": ""
+  },
+  {
+   "href": "javascript:void(null);",
+   "text": "Pause"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/login?ref=%2Fzh%2Ftracking%2F535985",
+   "text": "登入並開始購物"
+  },
+  {
+   "href": "https://docs.google.com/spreadsheets/d/1B0xEqpRplbX_EgUnNdgjkGwTBK7lqvWgWUSc01HwDE8/edit?usp=sharing",
+   "text": "按此"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/#merchant-description-text",
+   "text": "+ 了解更多- 少讀"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/klook-taiwan#box-merchant-vouchers",
+   "text": ""
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/trip-com-taiwan?&placement=page-merchant_block_1_recommended_p_1",
+   "text": "Trip.com Taiwan\n最多 9 哩程 / TWD100\n非促銷期間 最多 6 哩程 / TWD100"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/marriott-international-asia?&placement=page-merchant_block_1_recommended_p_2",
+   "text": "Marriott International Asia\n12 哩程 / HKD50"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/kkday-taiwan?&placement=page-merchant_block_1_recommended_p_3",
+   "text": "KKday Taiwan\n最多 6 哩程 / TWD100"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/travel/rakuten-travel-taiwan?&placement=page-merchant_block_1_recommended_p_4",
+   "text": "Rakuten Travel Taiwan\n最多 15 哩程 / TWD100\n非促銷期間 最多 12 哩程 / TWD100"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/privacy.html",
+   "text": "隱私保護政策"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/terms.html",
+   "text": "條款及細則"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/cookie-policy.html",
+   "text": "Cookie 政策"
+  },
+  {
+   "href": "https://mall.brmile.com/zh/claimpoints",
+   "text": "聯絡我們"
+  },
+  {
+   "href": "https://www.valuedynamx.com/",
+   "text": "Valuedynamx"
+  },
+  {
+   "href": "https://www.evaair.com/en-global/about-eva-air/about-us/awards-and-honors/default.html",
+   "text": ""
+  },
+  {
+   "href": "https://www.staralliance.com/",
+   "text": ""
+  }
+ ]
+}
