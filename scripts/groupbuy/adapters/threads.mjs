@@ -59,12 +59,19 @@ export default {
       posts.push(...(await apiSearch(context, env.THREADS_ACCESS_TOKEN, kws, log)));
       stats.api = { keywords: kws, posts: posts.length };
     } else {
+      // 輪到的關鍵字查無結果時，改用第一個（通常是「開團」）再試一次
       const [kw] = rotate(watch.keywords.threads, 1, rotation);
-      const { status, html } = await loadHtml(context, `https://www.threads.com/search/?q=${encodeURIComponent(kw)}&serp_type=default&filter=recent`);
-      const found = S.parseThreadsHtml(html);
-      stats.search = { keyword: kw, status, posts: found.length, limited: !found.length && S.threadsNoResults(html) };
-      log(`search "${kw}" → ${status}, ${found.length} posts${stats.search.limited ? '（查無結果／限流）' : ''}`);
-      posts.push(...found.map((p) => S.threadsPost(p, 'search')));
+      stats.search = [];
+      for (const q of [...new Set([kw, watch.keywords.threads[0]])]) {
+        const { status, html } = await loadHtml(context, `https://www.threads.com/search/?q=${encodeURIComponent(q)}&serp_type=default&filter=recent`);
+        const found = S.parseThreadsHtml(html);
+        const limited = !found.length && S.threadsNoResults(html);
+        stats.search.push({ keyword: q, status, posts: found.length, limited });
+        log(`search "${q}" → ${status}, ${found.length} posts${limited ? '（查無結果／限流）' : ''}`);
+        posts.push(...found.map((p) => S.threadsPost(p, 'search')));
+        if (found.length) break;
+        await sleep(5000);
+      }
     }
     let watched = 0;
     for (const u of watch.threads.slice(0, 20)) {
@@ -79,8 +86,8 @@ export default {
       }
     }
     stats.watch = { accounts: Math.min(watch.threads.length, 20), posts: watched };
-    // 追蹤的團主每篇都可能是開團文，門檻放寬
-    const items = posts.flatMap((p) => postToItems(p, { minScore: p.via === 'watch' ? 2 : 4 }));
+    // 追蹤的團主每篇都可能是開團文，postToItems 對 watch／api 來源門檻放寬
+    const items = posts.flatMap((p) => postToItems(p));
     stats.items = items.length;
     return { items, stats };
   },

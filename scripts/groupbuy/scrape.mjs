@@ -4,7 +4,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { openBrowser } from '../deals/lib/browser.mjs';
-import { validateItem, mergeItems } from './lib/items.mjs';
+import { validateItem, mergeItems, rederive } from './lib/items.mjs';
 import { normalizeWatch } from './lib/watch.mjs';
 import { taipeiStamp } from '../../groupbuy/js/parse.js';
 import threads from './adapters/threads.mjs';
@@ -69,7 +69,8 @@ try {
         seen.add(it.id);
         fresh.push(it);
       }
-      const items = mergeItems(fresh, prev.items, { now, today, keepPrev: A.accumulate !== false });
+      const keep = A.accumulate !== false;
+      const items = mergeItems(fresh, keep ? rederive(prev.items) : prev.items, { now, today, keepPrev: keep });
       if (items.length < (A.minCount ?? 0)) throw new Error(`只有 ${items.length} 筆，疑似版面變更，保留舊資料`);
       await writeFile(file, JSON.stringify({ source: name, items }, null, 1) + '\n');
       meta.sources[name] = { ok: true, count: items.length, fresh: fresh.length, updatedAt: now, seconds: Math.round((Date.now() - t0) / 1000), note: A.note, version: A.version ?? 1, stats };

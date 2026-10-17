@@ -336,6 +336,24 @@ function cleanLine(line, refYmd) {
   return s.replace(FILLER, '').replace(STRIP_EDGE, '').trim();
 }
 
+// 長句裡的商品詞：從第一個品牌／商品字往左帶上英文品牌名，往右接到語氣字為止
+const STOP_CHAR = /[這那的很超真好太也都就是了嗎吧呢啊熱賣只要讓給在跟和與及或更最我你妳他她，,。.!！?？\s]/;
+function focusClause(c) {
+  const hits = findTerms(c);
+  if (!hits.length) return c;
+  const t = c.normalize('NFKC');
+  let start = Math.min(...hits.map((h) => h.index));
+  let end = Math.max(...hits.filter((h) => h.index - start < 16).map((h) => h.index + h.w.length));
+  while (start > 0 && /[A-Za-z0-9&.'’\- ]/.test(t[start - 1])) start--;
+  let extra = 0;
+  while (end < t.length && extra < 6 && !STOP_CHAR.test(t[end])) {
+    end++;
+    extra++;
+  }
+  const out = t.slice(start, end).replace(STRIP_EDGE, '').trim();
+  return width(out) >= 4 ? out : c;
+}
+
 /** 子句分數：品牌、分類關鍵字、開團字樣加分；代名詞開頭、太長、沒有關鍵字扣分 */
 function clauseScore(raw, clean, lineIndex) {
   const hits = findTerms(clean);
@@ -384,6 +402,8 @@ export function extractProduct({ title, text, ref } = {}) {
       const pickPart = (parts) => parts.map((x) => x.replace(STRIP_EDGE, '').trim()).filter((x) => width(x) >= 4).sort((x, y) => findTerms(y).length - findTerms(x).length || x.length - y.length)[0];
       if (/\s[-–—－]\s/.test(c)) c = pickPart(c.split(/\s[-–—－]\s/)) || c;
       if (width(c) > 30 && /[｜|]/.test(c)) c = pickPart(c.split(/\s*[｜|]\s*/)) || c;
+      // 口語長句（我、你、真的、怎麼…）才縮到商品詞；商品清單的長品名照留
+      if (width(c) > 28 && /我|你|妳|大家|這麼|怎麼|知道|覺得|真的|因為|所以|如果|就是|一定|現在才/.test(c)) c = focusClause(c);
       if (width(c) < 4) {
         if (c.length >= 2 && ANNOUNCE.test(raw)) cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length, short: true });
         continue;

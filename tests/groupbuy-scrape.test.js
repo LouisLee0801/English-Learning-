@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseThreadsHtml, threadsNoResults, threadsPost, parseDdgHtml, ddgBlocked, igPostFromDdg, fbPostFromDdg, threadsPostFromDdg, parseCalendarText, pagePost, codeOf } from '../scripts/groupbuy/lib/sources.mjs';
-import { postToItems, mergeItems, expireOf, validateItem, rotate } from '../scripts/groupbuy/lib/items.mjs';
+import { postToItems, mergeItems, rederive, expireOf, validateItem, rotate } from '../scripts/groupbuy/lib/items.mjs';
 import { normalizeWatch, DEFAULT_KEYWORDS } from '../scripts/groupbuy/lib/watch.mjs';
 
 // Threads 未登入搜尋頁：貼文藏在 <script type="application/json" data-sjs>（真實結構，欄位精簡）
@@ -130,20 +130,38 @@ test('group-buy calendar page: one item per line with close date and order link'
 
 test('accumulate across runs: keep unexpired items, keep firstSeenAt, drop expired ones', () => {
   const prev = [
-    { id: 'a', product: '舊的', expireAt: '2026-10-20', firstSeenAt: '2026-10-10T00:00:00Z' },
-    { id: 'b', product: '過期', expireAt: '2026-10-16', firstSeenAt: '2026-10-01T00:00:00Z' },
-    { id: 'c', product: '這次又抓到', expireAt: '2026-10-25', firstSeenAt: '2026-10-12T00:00:00Z' },
+    { id: 'a', product: '還沒結單', closeAt: '2026-10-20', firstSeenAt: '2026-10-10T00:00:00Z' },
+    { id: 'b', product: '已過結單隔天', closeAt: '2026-10-15', firstSeenAt: '2026-10-01T00:00:00Z' },
+    { id: 'c', product: '這次又抓到', firstSeenAt: '2026-10-12T00:00:00Z' },
+    { id: 'e', product: '沒日期、11 天前抓到', firstSeenAt: '2026-10-06T00:00:00Z' },
   ];
-  const fresh = [{ id: 'c', product: '這次又抓到（新內文）', expireAt: '2026-10-26' }, { id: 'd', product: '新的', expireAt: '2026-10-27' }];
+  const fresh = [{ id: 'c', product: '這次又抓到（新內文）' }, { id: 'd', product: '新的', postedAt: '2026-10-16T04:00:00Z' }];
   const out = mergeItems(fresh, prev, { now: '2026-10-17T04:00:00Z', today: '2026-10-17' });
   assert.deepEqual(out.map((x) => x.id), ['a', 'c', 'd']);
   assert.equal(out.find((x) => x.id === 'c').firstSeenAt, '2026-10-12T00:00:00Z');
   assert.equal(out.find((x) => x.id === 'c').product, '這次又抓到（新內文）');
+  assert.equal(out.find((x) => x.id === 'c').expireAt, '2026-10-22'); // 沒有發文日：第一次抓到 + 10 天
   assert.equal(out.find((x) => x.id === 'd').firstSeenAt, '2026-10-17T04:00:00Z');
   assert.deepEqual(mergeItems(fresh, prev, { today: '2026-10-17', keepPrev: false }).map((x) => x.id), ['c', 'd']);
   assert.equal(expireOf({ closeAt: '2026-10-26 23:59' }), '2026-10-27');
   assert.equal(expireOf({ openAt: '2026-10-20' }), '2026-11-03');
   assert.equal(expireOf({ postedAt: '2026-10-17T04:00:00Z' }), '2026-10-27');
+});
+
+test('re-derive stored posts with the current rules, keep firstSeenAt, drop posts that no longer qualify', () => {
+  const post = { source: 'threads', id: 'threads:P1', url: 'https://www.threads.com/@a/post/P1', author: 'a', text: '刺繡襪子開團！\n售價 $280\n10/25收單', postedAt: '2026-10-16T04:00:00Z', via: 'search' };
+  const [item] = postToItems(post);
+  assert.equal(item.post.text, post.text);
+  // 舊版解析出來的商品名不好，重算後更新；找廠商文重算後移除；沒存原文的舊資料照留
+  const stale = [
+    { ...item, product: '舊的錯誤商品名', firstSeenAt: '2026-10-16T05:00:00Z' },
+    { ...item, id: 'threads:P2', post: { ...post, id: 'threads:P2', text: '我是團購主，想找合作廠商' }, firstSeenAt: '2026-10-16T05:00:00Z' },
+    { id: 'legacy', product: '沒有原文', firstSeenAt: '2026-10-16T05:00:00Z' },
+  ];
+  const out = rederive(stale);
+  assert.deepEqual(out.map((x) => [x.id, x.product]), [['threads:P1', '刺繡襪子'], ['legacy', '沒有原文']]);
+  assert.equal(out[0].firstSeenAt, '2026-10-16T05:00:00Z');
+  assert.equal(out[0].closeAt, '2026-10-25');
 });
 
 test('schedule post becomes several items with their own ids', () => {

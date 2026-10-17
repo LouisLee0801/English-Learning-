@@ -16,15 +16,19 @@ const ymd = (s) => String(s).slice(0, 10);
 export function expireOf(item) {
   if (item.closeAt) return addDays(ymd(item.closeAt), 1);
   if (item.openAt) return addDays(ymd(item.openAt), 14);
-  const base = item.postedAt ? taipeiStamp(item.postedAt) : taipeiStamp();
-  return addDays(ymd(base), TTL_DAYS);
+  // 搜尋摘要沒有發文日的，從第一次抓到算起
+  const base = item.postedAt || item.firstSeenAt;
+  return addDays(ymd(base ? taipeiStamp(base) : taipeiStamp()), TTL_DAYS);
 }
+
+// 存一份精簡原文在項目上，之後解析規則改進時，累積中的舊貼文能重新解析
+const keepPost = (p) => ({ source: p.source, id: p.id, url: p.url, author: p.author || null, authorName: p.authorName || null, authorUrl: p.authorUrl || null, title: p.title || '', text: String(p.text || '').slice(0, 2000), postedAt: p.postedAt || null, via: p.via || null, isReply: Boolean(p.isReply) });
 
 /**
  * 一篇貼文 → 0～n 筆團購（預告文一篇拆多筆）。
- * minScore：搜尋來的貼文要像開團文才收；追蹤帳號、團媽網站可放寬
+ * minScore：搜尋來的貼文要像開團文才收（4 分）；追蹤帳號、官方 API 讀的團主貼文放寬（2 分）
  */
-export function postToItems(post, { minScore = 4 } = {}) {
+export function postToItems(post, { minScore = post.via === 'search' ? 4 : 2 } = {}) {
   const ref = post.ref || (post.postedAt ? taipeiStamp(post.postedAt) : taipeiStamp());
   const base = {
     source: post.source,
@@ -61,6 +65,7 @@ export function postToItems(post, { minScore = 4 } = {}) {
   if (post.isReply || r.score < minScore || isGeneric(r.product)) return [];
   const one = {
     ...base,
+    post: keepPost(post),
     id: post.id,
     product: r.product,
     brand: r.brand,
@@ -114,10 +119,33 @@ export function mergeItems(fresh, prev = [], { now = new Date().toISOString(), t
   const out = new Map();
   for (const it of fresh) {
     const o = old.get(it.id);
-    out.set(it.id, { ...it, firstSeenAt: o?.firstSeenAt || now });
+    out.set(it.id, { ...it, firstSeenAt: o?.firstSeenAt || it.firstSeenAt || now });
   }
-  if (keepPrev) for (const o of prev) if (!out.has(o.id) && (o.expireAt || '9999') >= today) out.set(o.id, o);
-  return [...out.values()].filter((x) => (x.expireAt || '9999') >= today).sort((a, b) => a.id.localeCompare(b.id));
+  if (keepPrev) for (const o of prev) if (!out.has(o.id)) out.set(o.id, o);
+  return [...out.values()]
+    .map((x) => ({ ...x, expireAt: expireOf(x) }))
+    .filter((x) => x.expireAt >= today)
+    .sort((a, b) => a.id.localeCompare(b.id));
+}
+
+/**
+ * 用目前的解析規則重新整理累積中的舊資料（有存原文的才重算）；同一篇拆成多筆的只算一次。
+ * 重算後不再算開團文的就移除。
+ */
+export function rederive(items = []) {
+  const out = [];
+  const done = new Set();
+  for (const it of items) {
+    if (!it.post) {
+      out.push(it);
+      continue;
+    }
+    if (done.has(it.post.id)) continue;
+    done.add(it.post.id);
+    const seen = new Map(items.filter((x) => x.post?.id === it.post.id).map((x) => [x.id, x.firstSeenAt]));
+    for (const x of postToItems(it.post)) out.push({ ...x, firstSeenAt: seen.get(x.id) || it.firstSeenAt });
+  }
+  return out;
 }
 
 /** 從清單挑這次要用的關鍵字（每次排程輪替，避免被限流時總是同一組） */

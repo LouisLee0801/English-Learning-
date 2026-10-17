@@ -333,7 +333,7 @@ function viewMine() {
       toast(`已匯入 ${mine.importJson(await file.text())} 筆`);
       viewMine();
     } catch (err) {
-      alert(`匯入失敗：${err.message}`);
+      toast(`匯入失敗：${err.message}`);
     }
   });
 }
@@ -411,11 +411,22 @@ $main.addEventListener('click', (e) => {
     toast(on ? '已收藏，到「我的團購」查看' : '已取消收藏');
     return;
   }
+  // 刪除要按兩次（內嵌瀏覽器常擋 confirm 對話框）
   const r = e.target.closest('[data-remove]');
-  if (r && confirm('確定刪除這筆？')) {
+  if (!r) return;
+  if (r.dataset.armed) {
     mine.removeAdded(r.dataset.remove);
+    toast('已刪除');
     render();
+    return;
   }
+  r.dataset.armed = '1';
+  r.textContent = '再按一次刪除';
+  setTimeout(() => {
+    if (!r.isConnected) return;
+    delete r.dataset.armed;
+    r.textContent = '刪除';
+  }, 3000);
 });
 
 let lastRoute = '';

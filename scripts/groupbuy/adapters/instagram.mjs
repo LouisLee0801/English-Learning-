@@ -45,7 +45,7 @@ export default {
       stats.accounts.push({ u, posts: bd.media?.data?.length || 0 });
       await sleep(400);
     }
-    const items = posts.flatMap((p) => postToItems(p, { minScore: 2 }));
+    const items = posts.flatMap((p) => postToItems(p));
     stats.items = items.length;
     return { items, stats };
   },

@@ -9,11 +9,13 @@ export const DEFAULT_KEYWORDS = {
     'site:instagram.com 開團 家電',
     'site:instagram.com 開團啦',
     'site:instagram.com 開團 童裝',
-    'site:threads.com 開團',
     'site:instagram.com 團購 開團期間',
+    'site:instagram.com 開團 嬰兒',
     'site:instagram.com 開團 收納',
     'site:facebook.com 開團 結單',
     'site:instagram.com 開團 保養',
+    'site:instagram.com 開團 居家',
+    'site:instagram.com 開團 零食',
   ],
 };
 
