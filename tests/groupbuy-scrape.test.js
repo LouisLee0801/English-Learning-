@@ -128,6 +128,57 @@ test('group-buy calendar page: one item per line with close date and order link'
   assert.equal(it.expireAt, '2026-11-01');
 });
 
+// 部落客團購預告（倩兒☓魯蛋 Adrianne Life 真實片段）：「10/23止！商品」＋「►跟團去：網址」「⭕圖文心得：網址」
+const BLOG_PREVIEW = `▍現正開團中 ▍
+10/23止！ 從寶寶第一顆牙開始顧！齒妍堂兒童口腔保健全系列健齒噴霧／清潔棉棒／兒童漱口水／牙膏
+►跟團去：https://lab52.tw/luvadrianne2610
+⭕圖文心得：https://reurl.cc/XxAGAg
+10/30止！ Cofit大餐救援包｜飲食管理神隊友
+►跟團去：https://hi.cofit.me/pfmio
+⭕圖文心得：https://reurl.cc/xeNapZ
+▍2026/11 團購排程
+11/5 monbear X crywolf 冬季外套｜換季添新衣、冬天出遊先準備！想幫孩子挑外套的，這團先記下來！
+►跟團去：
+⭕圖文心得：https://pse.is/9qqz9p`;
+
+// 部落客團購總覽（主夫尼克真實片段）：商品名是超連結，下一行只有結團日；後面的詳細介紹沒有連結、名稱不同
+const BLOG_INDEX = `有問題直接私訊找我（⚠️避免訊息、貼圖洗版）
+Line@一對一客服： https://lin.ee/bNH5N8h
+目前開團中總覽
+本週新開團
+小v鬆餅機.熱壓吐司機
+10/22結團
+BALMUDA The Range S微波爐
+10/26結團
+伯尼寢具天絲床包
+10/31結團
+本週新開團
+10/22 結團 小v鬆餅機團購》日本Vitantonio熱壓吐司機.鬆餅機評價.食譜
+10/26 結團 BALMUDA團購》百慕達微波爐`;
+const BLOG_INDEX_LINKS = [
+  { text: '小v鬆餅機.熱壓吐司機', href: 'https://nickjufu.tw/vitantonio-waffle/' },
+  { text: 'BALMUDA The Range S微波爐', href: 'https://nickjufu.tw/balmuda-s/' },
+  { text: '伯尼寢具天絲床包', href: 'https://nickjufu.tw/bonybed/' },
+];
+
+test('blog group-buy previews and indexes: close dates, order vs article links, no duplicates or rules text', () => {
+  const a = parseCalendarText(BLOG_PREVIEW, { ref: '2026-10-17 20:00' });
+  assert.deepEqual(a.map((r) => [r.product, r.openAt, r.closeAt, r.orderUrl, r.linkUrl]), [
+    ['齒妍堂兒童口腔保健全系列健齒噴霧 清潔棉棒 兒童漱口水 牙膏', null, '2026-10-23', 'https://lab52.tw/luvadrianne2610', 'https://reurl.cc/XxAGAg'],
+    ['Cofit大餐救援包', null, '2026-10-30', 'https://hi.cofit.me/pfmio', 'https://reurl.cc/xeNapZ'],
+    ['monbear X crywolf 冬季外套', '2026-11-05', null, null, 'https://pse.is/9qqz9p'],
+  ]);
+  const b = parseCalendarText(BLOG_INDEX, { ref: '2026-10-17 20:00', links: BLOG_INDEX_LINKS });
+  assert.deepEqual(b.map((r) => [r.product, r.closeAt, r.linkUrl]), [
+    ['小v鬆餅機.熱壓吐司機', '2026-10-22', 'https://nickjufu.tw/vitantonio-waffle/'],
+    ['BALMUDA The Range S微波爐', '2026-10-26', 'https://nickjufu.tw/balmuda-s/'],
+    ['伯尼寢具天絲床包', '2026-10-31', 'https://nickjufu.tw/bonybed/'],
+  ]);
+  const [it] = postToItems(pagePost({ name: '主夫尼克團購', url: 'https://nickjufu.tw/6358/' }, b[1], '2026-10-17 20:00'));
+  assert.equal(it.url, 'https://nickjufu.tw/balmuda-s/');
+  assert.equal(it.category, '家電');
+});
+
 test('accumulate across runs: keep unexpired items, keep firstSeenAt, drop expired ones', () => {
   const prev = [
     { id: 'a', product: '還沒結單', closeAt: '2026-10-20', firstSeenAt: '2026-10-10T00:00:00Z' },

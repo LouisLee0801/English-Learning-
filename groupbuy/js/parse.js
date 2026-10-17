@@ -310,6 +310,7 @@ const NOISE = [
   /(?:來了|來囉|來啦|駕到|登場|報到|賣爆|開搶)(?=$|\s|[!！~～⋯…])/g,
   /(?:已|去年)?賣爆\s*[\d一二三四五六七八九十兩百千萬]*\s*[台隻組件個份盒包]?(?:以上)?/g,
   /文末抽獎|留言抽獎|抽獎/g,
+  /\d+(?:\.\d)?\s*折起?(?![抵價扣])/g,
 ];
 // 只留中日韓文字、英數與少數商品名常用符號（表情、顏文字、注音一律拿掉）
 const KEEP = /[^\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}A-Za-z0-9\s&+\-/.()（）｜|・·'’%×_ー]/gu;
@@ -366,7 +367,8 @@ function focusClause(c) {
 
 /** 子句分數：品牌、分類關鍵字、開團字樣加分；代名詞開頭、太長、沒有關鍵字扣分 */
 function clauseScore(raw, clean, lineIndex) {
-  const hits = findTerms(clean);
+  // 分類名稱（營養、居家…）不算商品字
+  const hits = findTerms(clean).filter((h) => !CATEGORY_WORDS.test(h.w));
   let sc = 0;
   if (hits.some((h) => h.brand)) sc += 3;
   sc += Math.min(hits.filter((h) => !h.brand).length, 2) * 2;
@@ -385,7 +387,7 @@ function clauseScore(raw, clean, lineIndex) {
  * 商品名：「品名：」行優先；否則把標題與前幾行切成子句，挑分數最高的一句（品牌、商品關鍵字、開團字樣），
  * 太短時接上同篇下一個有商品關鍵字的子句。也會從「留言「氣炸鍋」」這類關鍵字取候選。
  */
-export function extractProduct({ title, text, ref } = {}) {
+export function extractProduct({ title, text, ref, strict = true } = {}) {
   const refYmd = ymdOf(ref || taipeiStamp());
   const body = String(text ?? '');
   const m = body.match(LABEL_LINE);
@@ -396,7 +398,7 @@ export function extractProduct({ title, text, ref } = {}) {
   const lines = [title, ...body.split(/\n+/)].map((l) => String(l ?? '').trim()).filter(Boolean).slice(0, 8);
   const cands = [];
   lines.forEach((l, i) => {
-    for (let raw of l.split(/[。！!？?，,；;]+|(?<!\d)\s*[~～]+\s*(?!\d)|\s{2,}|\s[/\-–—]\s|\p{Extended_Pictographic}+/u)) {
+    for (let raw of l.split(/[。！!？?，,；;》]+|(?<!\d)\s*[~～]+\s*(?!\d)|\s{2,}|\s[/\-–—]\s|\p{Extended_Pictographic}+/u)) {
       if (!raw.trim()) continue;
       // 句子後半是下單方式：「購物包開團 底下任意留言」只取前半
       const cut = raw.search(INSTRUCTION);
@@ -409,7 +411,8 @@ export function extractProduct({ title, text, ref } = {}) {
       }
       let c = cleanLine(raw, refYmd);
       // 太長的子句以「｜」再切、「 - 」一律再切，取商品字詞最多的一段
-      const pickPart = (parts) => parts.map((x) => x.replace(STRIP_EDGE, '').trim()).filter((x) => width(x) >= 4).sort((x, y) => findTerms(y).length - findTerms(x).length || x.length - y.length)[0];
+      // 商品字一樣多時取前面那段（品名通常寫在前、標語在後）
+      const pickPart = (parts) => parts.map((x) => x.replace(STRIP_EDGE, '').trim()).filter((x) => width(x) >= 4).sort((x, y) => findTerms(y).length - findTerms(x).length)[0];
       if (/\s[-–—－]\s/.test(c)) c = pickPart(c.split(/\s[-–—－]\s/)) || c;
       if (width(c) > 30 && /[｜|]/.test(c)) c = pickPart(c.split(/\s*[｜|]\s*/)) || c;
       // 口語長句（我、你、真的、怎麼…）才縮到商品詞；商品清單的長品名照留
@@ -423,8 +426,8 @@ export function extractProduct({ title, text, ref } = {}) {
   });
   if (!cands.length) return '';
   const best = [...cands].sort((a, b) => b.score - a.score || a.order - b.order)[0];
-  // 最好的一句都沒有商品字、也不是開團句：多半沒寫商品名，寧可不收
-  if (best.score < 0) return '';
+  // 社群貼文：最好的一句都沒有商品字、也不是開團句，多半沒寫商品名，寧可不收（團媽清單 strict=false 照收）
+  if (strict && best.score < 0) return '';
   let out = best.text;
   // 「三麗鷗」太短：接上後面有商品關鍵字的子句（萬聖節｜芭蕾小公仔）
   if (width(out) < 8) {

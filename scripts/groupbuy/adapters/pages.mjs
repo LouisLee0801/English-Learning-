@@ -17,9 +17,13 @@ export default {
         const res = await page.goto(p.url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
         await page.waitForLoadState('networkidle', { timeout: 20_000 }).catch(() => {});
         if ((res?.status() ?? 0) >= 400) throw new Error(`HTTP ${res.status()}`);
-        const text = await page.evaluate(() => document.body?.innerText || '');
+        // 部落格的清單常是「商品名＝超連結」，網址不會出現在文字裡，所以連結一起帶出來比對
+        const { text, links } = await page.evaluate(() => ({
+          text: document.body?.innerText || '',
+          links: [...document.querySelectorAll('a[href]')].map((a) => ({ text: (a.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 200), href: a.href })).filter((l) => l.text && /^https?:/.test(l.href)),
+        }));
         const ref = taipeiStamp();
-        const rows = S.parseCalendarText(text, { ref, pageUrl: p.url });
+        const rows = S.parseCalendarText(text, { ref, pageUrl: p.url, links });
         items.push(...rows.flatMap((r) => postToItems(S.pagePost(p, r, ref))));
         stats.pages.push({ name: p.name, items: rows.length });
         log(`${p.name || p.url} → ${rows.length} items`);

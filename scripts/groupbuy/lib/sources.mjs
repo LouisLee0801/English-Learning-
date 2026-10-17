@@ -144,36 +144,78 @@ export function fbPostFromDdg(r) {
 // ---------- 團媽網站的開團日曆（Strikingly、Portaly、部落格頁面…） ----------
 
 const BULLET = /^[\s]*(?:[🌟⭐✨🔥✅🔸🔹▶►•●◆◇■□★☆➤➜👉🎀💕💖🆕🌸🍼]|[-*]\s|\d{1,2}[.、)]\s?|[①-⑳])/u;
-const HEADING = /^(?:正在開團|開團日曆|本月開團|團購清單|開團清單|近期開團|即將開團|copyright|cookie)/i;
+const HEADING = /^(?:▍|▼|正在開團|開團日曆|本月開團|團購清單|開團清單|近期開團|即將開團|目前開團中|本週新開團|現正開團中|長期團購|copyright|cookie)|團購排程|開團行事曆/i;
 const ORDER_LINE = /(?:搶購|購買|下單|訂購|團購|商品)?(?:網址|連結|link)\s*[→:：>＞]|^\s*🛒|^\s*https?:\/\//i;
+// 不是商品的行：連結說明、心得文、客服、文章資訊（最後更新、發文日期）
+const SKIP_LINE = /^[►⭕▶︎→➜👉\s]*(?:跟團去|圖文心得|心得|開箱文?|商品介紹|介紹|參考更多|客服|訂閱連結|延伸閱讀|最後更新|更新|發布|發佈|作者|分類|標籤|留言|上一篇|下一篇)|^\d{4}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日|私訊|版規|碎碎念|群組|社群|客服|line\s*@|加入.{0,6}(?:line|群)/i;
+// 「商品名」下一行只有「10/25結團」這種日期：併回上一行
+const DATE_ONLY = /^\d{1,2}[/.]\d{1,2}\s*(?:[(（][一二三四五六日天][)）])?\s*(?:結團|收單|結單|截止|止|開團|開賣)\s*$/;
+const URL_IN = /https?:\/\/[^\s<>"'，。）)】]+/;
+const bigrams = (s) => new Set((String(s).match(/\p{Script=Han}{2,}/gu) || []).flatMap((run) => [...run].slice(1).map((c, i) => run[i] + c)));
+function sharedBigrams(a, b) {
+  const x = bigrams(a);
+  let n = 0;
+  for (const g of bigrams(b)) if (x.has(g)) n++;
+  return n;
+}
 
 /**
- * 開團日曆頁的文字 → 每檔一筆：「🌟recolte 無線萬用調理機(10/31收單)」＋下一行「🛒搶購網址→https://…」。
- * 只收有期間、有收單日，或下一兩行附下單連結的項目。
+ * 開團日曆頁的文字 → 每檔一筆。認得的格式：
+ * - 「🌟recolte 無線萬用調理機(10/31收單)」＋下一行「🛒搶購網址→https://…」（Strikingly）
+ * - 「10/23止！齒妍堂兒童口腔保健…」＋「►跟團去：https://…」「⭕圖文心得：https://…」（部落格團購預告）
+ * - 「Mistifi噴油瓶.油醋壺」＋下一行「10/25結團」，商品名是超連結（部落格團購總覽）
+ * links：頁面上的超連結 [{ text, href }]，用來補文字裡沒有的網址。同一頁同一檔只收一次。
  */
-export function parseCalendarText(text, { ref = taipeiStamp(), pageUrl = null } = {}) {
-  const lines = String(text ?? '').split(/\n/).map((l) => l.trim()).filter(Boolean);
+export function parseCalendarText(text, { ref = taipeiStamp(), pageUrl = null, links = [] } = {}) {
+  // 文字對應到的超連結：連結文字出現在這一行裡（取最長的），站內選單連結不算
+  const usable = links.filter((l) => l.text.length >= 3 && !/^(首頁|home|關於|聯絡|隱私|上一篇|下一篇|more|read more|繼續閱讀)$/i.test(l.text));
+  const linkFor = (line) => usable.filter((l) => line.includes(l.text)).sort((a, b) => b.text.length - a.text.length)[0] || null;
+  const lines = [];
+  for (const l of String(text ?? '').split(/\n/).map((x) => x.trim()).filter(Boolean)) {
+    if (DATE_ONLY.test(l) && lines.length) lines[lines.length - 1] += `（${l}）`;
+    else lines.push(l);
+  }
   const items = [];
+  const seen = new Set();
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    if (HEADING.test(line.replace(BULLET, '')) || ORDER_LINE.test(line) || line.length < 4 || line.length > 160) continue;
-    const next = lines.slice(i + 1, i + 3).find((l) => ORDER_LINE.test(l) || /https?:\/\//.test(l));
-    const orderUrl = extractOrderUrl(line) || (next && (next.match(/https?:\/\/[^\s<>"'，。）)】]+/) || [])[0]) || null;
+    if (HEADING.test(line.replace(BULLET, '')) || ORDER_LINE.test(line) || SKIP_LINE.test(line) || line.length < 4 || line.length > 160) continue;
+    // 後面兩行的網址：「跟團去／搶購」是下單連結，「心得／介紹」是文章
+    let nextOrder = null;
+    let nextPost = null;
+    for (const n of lines.slice(i + 1, i + 4)) {
+      const u = n.match(URL_IN)?.[0];
+      if (!u) continue;
+      if (!nextOrder && /跟團|搶購|下單|購買|訂購|團購|🛒|網址|連結/.test(n)) nextOrder = u;
+      else if (!nextPost && /心得|開箱|介紹|分享|參考/.test(n)) nextPost = u;
+      else if (!nextOrder && !nextPost && URL_IN.test(n.slice(0, 12))) nextOrder = u;
+    }
+    const link = linkFor(line);
+    const orderUrl = extractOrderUrl(line) || nextOrder || (link && extractOrderUrl(link.href)) || null;
     const win = parseWindow(line, ref);
     const hasDeal = win.openAt || win.closeAt || /開團|團購|收單|結單|開賣|現貨|預購/.test(line);
-    if (!(BULLET.test(line) || win.closeAt || orderUrl) || !(hasDeal || orderUrl)) continue;
-    const product = extractProduct({ title: line.replace(BULLET, ''), ref });
+    if (!(BULLET.test(line) || win.closeAt || win.openAt || orderUrl) || !(hasDeal || orderUrl)) continue;
+    const product = extractProduct({ title: line.replace(BULLET, ''), ref, strict: false });
     if (product.length < 2) continue;
-    items.push({ line, product, ...win, orderUrl, index: items.length });
+    const linkUrl = link?.href || nextPost || null;
+    const when = win.closeAt || win.openAt || '';
+    const keys = [orderUrl, linkUrl, `${when}|${product.slice(0, 6)}`].filter(Boolean);
+    if (keys.some((k) => seen.has(k))) continue;
+    // 同頁的「總覽」和「詳細介紹」常寫成不同名字（小v鬆餅機 vs 日本Vitantonio鬆餅機）：沒有連結的那筆，同一天又有兩組相同中文字就算重複
+    if (!orderUrl && !linkUrl && items.some((x) => (x.closeAt || x.openAt || '') === when && sharedBigrams(x.product, product) >= 2)) continue;
+    keys.forEach((k) => seen.add(k));
+    items.push({ line, product, ...win, orderUrl, linkUrl, index: items.length });
   }
-  return items;
+  // 清單大多附連結（商品名是超連結或下一行有網址）時，沒連結的多半是下面詳細介紹的重複或說明文字
+  const linked = items.filter((x) => x.orderUrl || x.linkUrl).length;
+  return linked >= items.length * 0.6 ? items.filter((x) => x.orderUrl || x.linkUrl) : items;
 }
 
 export function pagePost(page, item, ref) {
   return {
     source: 'pages',
     id: `pages:${page.id || page.url}#${item.product.slice(0, 30)}`,
-    url: item.orderUrl || page.url,
+    url: item.orderUrl || item.linkUrl || page.url,
     pageUrl: page.url,
     author: null,
     authorName: page.name || null,
