@@ -1,0 +1,48 @@
+{
+ "sources": {
+  "line": {
+   "ok": false,
+   "count": 0,
+   "error": "graphql HTTP 500: {\"errors\":[{\"message\":\"Query too complex. Value of 540 is over the maximum 500 on the query: [object Object]\",\"extensions\":{\"code\":\"INTERNAL_SERVER_ERROR\"}}]}",
+   "failedAt": "2026-10-17T01:57:11.554Z"
+  },
+  "eva": {
+   "ok": true,
+   "count": 319,
+   "updatedAt": "2026-10-17T01:57:11.554Z",
+   "seconds": 54,
+   "note": "長榮 Mileage Mall台灣版；外幣計價依當日匯率換算成每 NT$100"
+  },
+  "cathay": {
+   "ok": true,
+   "count": 140,
+   "updatedAt": "2026-10-17T01:57:11.554Z",
+   "seconds": 30,
+   "note": "國泰 Milesback台灣版；外幣計價依當日匯率換算成每 NT$100"
+  }
+ },
+ "generatedAt": "2026-10-17T01:57:11.554Z",
+ "fx": {
+  "USD": 32.4444,
+  "HKD": 4.1305,
+  "SGD": 25.3229,
+  "AUD": 22.5352,
+  "NZD": 18.3281,
+  "CAD": 22.9011,
+  "JPY": 0.2051,
+  "KRW": 0.0243,
+  "CNY": 4.8379,
+  "THB": 0.9694,
+  "MYR": 7.9407,
+  "GBP": 43.1611,
+  "EUR": 36.4087,
+  "CHF": 39.3066,
+  "_src": "open.er-api.com"
+ },
+ "files": [
+  "line.json",
+  "eva.json",
+  "cathay.json",
+  "manual.json"
+ ]
+}
