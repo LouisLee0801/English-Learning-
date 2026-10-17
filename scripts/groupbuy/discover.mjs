@@ -56,6 +56,17 @@ const PROBES = {
   'dq-4': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:facebook.com 開團')}&df=w` },
   'dq-5': { mode: 'req', wait: 15_000, url: `https://lite.duckduckgo.com/lite/?q=${q('site:instagram.com 團購 開團期間')}&df=w` },
   'dq-6': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:threads.com 開團啦')}&df=w` },
+  // 第四輪：親子部落客／團媽的團購預告、行事曆頁
+  'gm-adrianne': { mode: 'page', url: 'https://adriannelife.com/blog/groupbuying' },
+  'gm-nick': { mode: 'page', url: 'https://nickjufu.tw/6358/' },
+  'gm-esther7': { mode: 'page', url: 'https://www.esther7.com/2026/03/GroupBuying-1.html?m=0' },
+  'gm-rubee': { mode: 'page', url: 'https://rubeelittle.com/post-228261311/' },
+  'gm-weima': { mode: 'page', url: 'https://yujuan162.pixnet.net/blog/posts/8225774197' },
+  'gm-bigv': { mode: 'page', url: 'https://bigv.com.tw/shopping/' },
+  'gm-eva': { mode: 'page', url: 'https://evalife.tw/groupbuy/' },
+  'gm-bobowin': { mode: 'page', url: `https://bobowin.blog/category/life/${q('團購')}/` },
+  'gm-kiki': { mode: 'page', url: 'https://kikimami.tw/' },
+  'gm-coco': { mode: 'page', url: 'https://shop.obodo.tw/' },
 };
 
 // 第三方網頁偶爾內嵌金鑰；快照寫檔前一律遮蔽，避免進 repo
