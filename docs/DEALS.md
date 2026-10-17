@@ -93,5 +93,5 @@ Actions 頁面可手動執行「Deals scrape」，勾選 discover 會一併存�
 
 1. 在 `scripts/deals/adapters/` 匯出 `{ scrape({ context, fx, today, now, prev, log }) → Deal[], minCount, note }`（全網優惠類放 `coupon-sources.mjs`，會自動登記）
 2. 回饋平台類在 `scripts/deals/scrape.mjs` 的 `ADAPTERS` 登記
-3. 在 `deals/js/core.js` 的 `SOURCES` 加名稱，`deals/css/deals.css` 加 `.src-<name>` 顏色
+3. 在 `deals/js/core.js` 的 `SOURCES` 加名稱，`deals/css/deals.css` 加 `.src-<name>` 顏色（回饋平台另在 `deals/js/app.js` 的 `SOURCE_ICONS` 加圖示，顏色要和既有平台明顯不同）
 4. 解析邏輯寫成純函式放 `scripts/deals/lib/`（全網優惠類在 `coupons.mjs`），在 `tests/deals-scrape.test.js` 用真實頁面片段測試
