@@ -66,14 +66,16 @@ try {
         seen.add(d.id);
         deals.push(d);
       }
-      // 數量驟降通常是版面改了，不覆蓋舊資料
+      // 數量驟降通常是對方改版，不覆蓋舊資料；adapter 自己改了輸出（version 變了）則不檢查
       const min = ADAPTERS[name].minCount ?? 1;
-      if (deals.length < min || (prev.deals.length >= 20 && deals.length < prev.deals.length * 0.4)) {
+      const version = ADAPTERS[name].version ?? 1;
+      const sameVersion = (meta.sources[name]?.version ?? 1) === version;
+      if (deals.length < min || (sameVersion && prev.deals.length >= 20 && deals.length < prev.deals.length * 0.4)) {
         throw new Error(`只抓到 ${deals.length} 筆（上次 ${prev.deals.length} 筆），疑似版面變更，保留舊資料`);
       }
       deals.sort((a, b) => a.id.localeCompare(b.id));
       await writeFile(file, JSON.stringify({ source: name, deals: carryUpdatedAt(deals, prev.deals, now) }, null, 1) + '\n');
-      meta.sources[name] = { ok: true, count: deals.length, updatedAt: now, seconds: Math.round((Date.now() - t0) / 1000), note: ADAPTERS[name].note || '' };
+      meta.sources[name] = { ok: true, count: deals.length, updatedAt: now, seconds: Math.round((Date.now() - t0) / 1000), note: ADAPTERS[name].note || '', version };
       console.log(`[${name}] ok ${deals.length} deals in ${meta.sources[name].seconds}s`);
     } catch (e) {
       failures++;

@@ -91,6 +91,7 @@ export const cosmed = {
 
 /** 7-ELEVEN 首頁看板與精品集點 */
 export const seven = {
+  version: 2, // v2：精品集點合併成一張卡
   minCount: 1,
   note: '7-ELEVEN 官網首頁看板、精品集點活動',
   async scrape({ context, today }) {
