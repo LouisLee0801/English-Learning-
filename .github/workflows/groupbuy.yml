@@ -10,7 +10,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main, claude/intelligent-bell-29e3ea]
+    branches: [main]
     paths: ['scripts/groupbuy/**', 'groupbuy/js/categories.js', 'groupbuy/js/parse.js', 'groupbuy/data/watchlist.json', '.github/workflows/groupbuy.yml']
 
 permissions:
