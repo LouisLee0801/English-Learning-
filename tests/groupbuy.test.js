@@ -138,7 +138,7 @@ test('status: upcoming, closing within 48h, open, closed, and expiry for posts w
   assert.equal(status(item({ expireAt: '2026-10-16' }), now), 'closed');
   assert.equal(status(item({}), now), 'open');
   assert.equal(dueText(item({ closeAt: '2026-10-17 23:59' }), now), '今天 23:59 結單');
-  assert.equal(dueText(item({ closeAt: '2026-10-18' }), now), '明天 結單');
+  assert.equal(dueText(item({ closeAt: '2026-10-18' }), now), '明天結單');
   assert.equal(dueText(item({ closeAt: '2026-10-26' }), now), '剩 9 天 · 10/26 結單');
   assert.equal(dueText(item({ openAt: '2026-10-20 20:00' }), now), '10/20 20:00 開團');
   assert.equal(dueText(item({}), now), '結單日見原文');

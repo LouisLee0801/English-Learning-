@@ -86,6 +86,7 @@ try {
 
 meta.runs = rotation;
 meta.generatedAt = now;
-meta.files = FILES;
+// 只列出存在的檔案（未啟用的來源沒有檔案），網站就不會去抓 404
+meta.files = (await Promise.all(FILES.map(async (f) => ((await readJson(join(DIR, f), null)) ? f : null)))).filter(Boolean);
 await writeFile(join(DIR, 'meta.json'), JSON.stringify(meta, null, 1) + '\n');
 if (ran && failures === ran) process.exitCode = 1;

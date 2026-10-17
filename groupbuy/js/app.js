@@ -161,7 +161,7 @@ function bindFilters(f, path, rerender) {
   return update;
 }
 
-const SEARCH_HINT = '搜尋商品、品牌、團主…（例：吸塵器、Combi、童裝、育兒）';
+const SEARCH_HINT = '搜尋商品、品牌、團主（例：吸塵器、童裝）';
 
 // ---------- 團購清單 ----------
 function viewList(qs) {
@@ -225,7 +225,7 @@ function viewCalendar(qs) {
     const t = st === 'upcoming' ? (it.openAt.length > 10 ? it.openAt.slice(11) : '開團') : it.closeAt ? (it.closeAt.length > 10 ? it.closeAt.slice(11) : '全天') : '—';
     return `<a class="tl-row" href="${esc(it.url)}" target="_blank" rel="noopener">
       <span class="tl-time">${esc(t)}</span>
-      <span class="tl-main"><b>${hl(it.product, f.q)}</b><span>${categoryIcon(it.category)} ${esc(it.category)}${it.authorName || it.author ? ` · ${esc(it.authorName || `@${it.author}`)}` : ''}${it.price ? ` · ${fmtPrice(it.price)}` : ''}</span></span>
+      <span class="tl-main"><b>${hl(it.product, f.q)}</b><span><span class="pf-text">${esc(pf.short)} · </span>${categoryIcon(it.category)} ${esc(it.category)}${it.authorName || it.author ? ` · ${esc(it.authorName || `@${it.author}`)}` : ''}${it.price ? ` · ${fmtPrice(it.price)}` : ''}</span></span>
       <span class="tl-side"><span class="badge pf pf-${pf.cls}">${esc(pf.short)}</span></span>
     </a>`;
   };
@@ -256,7 +256,7 @@ function viewMine() {
       <form id="p-form" class="form">
         ${field('貼文內容 *', `<textarea name="text" rows="6" required placeholder="例：【限時團購】Combi 嬰兒推車 團購價 $8,990（原價 $12,800）開團時間 10/20 20:00 ~ 10/26 23:59">${esc(d.text || '')}</textarea>`, true)}
         ${field('原文網址', `<input name="url" type="url" value="${esc(d.url || '')}" placeholder="https://www.instagram.com/p/…" />`, true)}
-        <div class="row field wide"><button class="btn primary" style="margin-left:0" type="submit">解析</button>${draft ? '<button class="btn" type="button" id="p-clear">清除</button>' : ''}</div>
+        <div class="form-actions"><button class="btn primary" type="submit">解析</button>${draft ? '<button class="btn" type="button" id="p-clear">清除</button>' : ''}</div>
       </form>
       ${draft ? `<form id="d-form" class="form preview">
         ${field('商品 *', `<input name="product" required value="${esc(d.product || '')}" />`, true)}
@@ -266,7 +266,7 @@ function viewMine() {
         ${field('結單時間', `<input name="closeAt" type="datetime-local" value="${esc(toLocal(d.closeAt))}" />`)}
         ${field('團主', `<input name="authorName" value="${esc(d.authorName || '')}" placeholder="例：初六媽" />`)}
         ${field('下單連結', `<input name="orderUrl" type="url" value="${esc(d.orderUrl || '')}" />`)}
-        <div class="row field wide"><button class="btn primary" style="margin-left:0" type="submit">加入我的團購</button><span class="muted">${d.isGroupBuy ? '看起來是開團文' : '不太像開團文，請確認欄位'}</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit">加入我的團購</button><span class="muted">${d.isGroupBuy ? '看起來是開團文' : '不太像開團文，請確認欄位'}</span></div>
       </form>` : ''}
     </section>
     <div class="toolbar">
@@ -353,7 +353,7 @@ function viewSources() {
       ${rows.length ? `<div class="table-wrap"><table>
         <thead><tr><th>來源</th><th>狀態</th><th>筆數</th><th>本次新抓</th><th>最後成功</th><th>說明</th></tr></thead>
         <tbody>${rows.map(([k, s]) => `<tr>
-          <td><b>${esc(SOURCE_NAMES[k] || k)}</b></td><td>${stat(s)}</td><td class="num">${s.count ?? 0}</td><td class="num">${s.fresh ?? '—'}</td>
+          <td><b>${esc(SOURCE_NAMES[k] || k)}</b></td><td class="nowrap">${stat(s)}</td><td class="num">${s.count ?? 0}</td><td class="num">${s.fresh ?? '—'}</td>
           <td class="num">${esc(fmtTime(s.updatedAt))}</td>
           <td class="muted">${esc(s.error || s.note || '')}${s.skipped ? '（未設定金鑰，略過）' : ''}</td></tr>`).join('')}</tbody>
       </table></div>` : `<div class="notice">尚未產生資料狀態檔（data/meta.json）。排程第一次執行後就會出現。</div>`}
@@ -365,7 +365,7 @@ function viewSources() {
         <div class="field"><span>Threads 帳號（${w.threads?.length || 0}）</span>${list(w.threads, (u) => `<li><a href="https://www.threads.com/@${esc(u)}" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
         <div class="field"><span>Instagram 帳號（${w.instagram?.length || 0}，需官方 API）</span>${list(w.instagram, (u) => `<li><a href="https://www.instagram.com/${esc(u)}/" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
         <div class="field"><span>團媽網站（${w.pages?.length || 0}）</span>${list(w.pages, (p) => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name || p.url)}</a></li>`)}</div>
-        <div class="field"><span>搜尋關鍵字</span>${list([...(w.keywords?.threads || []).map((k) => `Threads：${k}`), ...(w.keywords?.search || [])], (k) => `<li>${esc(k)}</li>`)}</div>
+        <div class="field wide"><span>搜尋關鍵字（每次排程輪替）</span><div class="kw">${[...(w.keywords?.threads || []).map((k) => `Threads：${k}`), ...(w.keywords?.search || [])].map((k) => `<span class="badge">${esc(k)}</span>`).join('') || '<span class="muted">（使用預設）</span>'}</div></div>
       </div>
     </section>
     <section class="panel">

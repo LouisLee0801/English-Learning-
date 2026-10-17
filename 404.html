@@ -10,6 +10,7 @@
         var p = decodeURIComponent(location.pathname);
         var base = (p.match(/^\/[^/]+\//) || ['/'])[0];
         if (/\/deals/i.test(p) && p !== base + 'deals/') location.replace(base + 'deals/' + location.hash);
+        else if (/\/groupbuy/i.test(p) && p !== base + 'groupbuy/') location.replace(base + 'groupbuy/' + location.hash);
       })();
     </script>
     <style>
@@ -21,7 +22,7 @@
   <body>
     <main>
       <h1>找不到這個頁面</h1>
-      <p><a href="/English-Learning-/">Small Talk Society</a>　·　<a href="/English-Learning-/deals/">優惠雷達</a></p>
+      <p><a href="/English-Learning-/">Small Talk Society</a>　·　<a href="/English-Learning-/deals/">優惠雷達</a>　·　<a href="/English-Learning-/groupbuy/">團購雷達</a></p>
     </main>
   </body>
 </html>

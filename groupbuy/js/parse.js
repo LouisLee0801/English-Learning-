@@ -277,9 +277,10 @@ const NEG = [
   /洗版|情勒|詐騙|避雷|靠北|抱怨|退款|客訴|糾紛|跑路|延遲出貨|還沒出貨|沒收到|退貨|雷團|爛團|不推/,
   /代購賺|副業|兼職|賺錢|被動收入|加盟|招募團[媽爸]|徵團[媽爸]|分潤|抽成/,
   /新團品|找.{0,4}團品|拓展.{0,6}通路|有沒有.{0,8}(?:商家|廠商|店家)|找團[爸媽]|供應商/,
+  /招募|VIP\s*群|加入.{0,6}(?:群組|社群|VIP)|群組招生/,
 ];
 // 香港、澳門、中國的團購（廣東話、港幣、順豐）不收
-const NOT_TW = /港幣|HK\$|HKD|香港|澳門|順豐|[佢嘅咗冇睇嘢啲唔俾攞噉]|喇$|喇[！!🎉]|人民幣|淘寶代購|大陸/;
+const NOT_TW = /港幣|HK\$|HKD|香港|澳門|順豐|緊貼|[佢嘅咗冇睇嘢啲唔俾攞噉]|喇$|喇[！!🎉]|人民幣|淘寶代購|大陸/;
 // 簡體字（三個以上）多半是中國的貼文
 const SIMPLIFIED = /[们这个说对时会为发买卖团购单价钱货经还见长东车马门问听观历亲汇总号丝爱宝儿鲜鸡猪鱼虾礼盒装订]/g;
 
@@ -305,7 +306,7 @@ const NOISE = [
   /(?:現貨|免運|限量|最後|加開|首團|回購|快閃|搶購|好物|推薦|分享|必買|爆款|熱銷|新品|上市|到貨)[！!～~]*/g,
   /(?:只要|售價|價格|團購價|特價|優惠價)\s*[:：]?\s*(?:NT\s*\$?|\$|＄)?\s*[\dXx,]+\s*(?:元|起)?/g,
   /\d+\s*[/／]\s*(?:NT\s*\$|\$|＄)?\s*\d+/g,
-  /(?:NT\s*\$|\$|＄)\s*[\d,]+\s*(?:元|起)?|\d[\d,]*\s*元/g,
+  /(?:原價|市價|定價|專櫃價|官網價)?\s*(?:NT\s*\$|\$|＄)\s*[\d,]+\s*(?:元|起)?|\d[\d,]*\s*元/g,
   /(?:來了|來囉|來啦|駕到|登場|報到|賣爆|開搶)(?=$|\s|[!！~～⋯…])/g,
   /(?:已|去年)?賣爆\s*[\d一二三四五六七八九十兩百千萬]*\s*[台隻組件個份盒包]?(?:以上)?/g,
   /文末抽獎|留言抽獎|抽獎/g,
@@ -313,7 +314,7 @@ const NOISE = [
 // 只留中日韓文字、英數與少數商品名常用符號（表情、顏文字、注音一律拿掉）
 const KEEP = /[^\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}A-Za-z0-9\s&+\-/.()（）｜|・·'’%×_ー]/gu;
 const LABEL_LINE = /(?:品名|商品名稱|商品|團購商品|團購品項|品項|產品|本次開團|開團商品|這次開團)\s*[:：]\s*([^\n]{2,50})/;
-const STRIP_EDGE = /^[\s\-–—~～:：|｜/、,，.。!！?？>＞》»⋯…&+]+|[\s\-–—~～:：|｜/、,，.。!！?？<＜《«⋯…&+(（]+$/g;
+const STRIP_EDGE = /^[\s\-–—－‐−~～:：|｜/、,，.。!！?？>＞》»⋯…&+]+|[\s\-–—－‐−~～:：|｜/、,，.。!！?？<＜《«⋯…&+(（]+$/g;
 // 開頭的贅字：「今天社群限時開團一款波點包包」→「波點包包」、「主婦們最愛的BRUNO」→「BRUNO」
 const FILLER = /^(?:(?:今天|今晚|明天|社群|這次|本次|這週|本週|一款|一個|這款|這個|大家|我們|我|是|來自|終於|又來|再度|再次|手刀|超美|超好用|必收|老闆|小編|來了|的|新款|超夯|超人氣|最近|爆紅|全網|大品牌好安心|.{0,8}(?:最愛|超紅|最紅|爆紅|人氣|必買|熱賣)的)\s*)+/u;
 const PRONOUN = /^(?:我|你|妳|您|他|她|大家|這|那|今天|最近|謝謝|感謝|終於|為了|因為|如果|聽說|於是|知道|想|有沒有|要不要)/;
@@ -345,6 +346,8 @@ function clauseScore(raw, clean, lineIndex) {
   if (ANNOUNCE.test(raw)) sc += 2;
   if (lineIndex === 0) sc += 1;
   if (PRONOUN.test(clean)) sc -= 2;
+  // 以商品名常見字結尾（…組、…機、…包）多半是商品名
+  if (/[組機器包袋鍋墊椅車衣褲鞋膜霜乳液粉罐瓶杯盒套枕被燈扇架筆卡貼劑棒刷梳夾鏡錶板盤碗壺桶箱櫃凳傘帽襪]$/.test(clean)) sc += 1;
   if (/抽\s*\d*\s*位|送同款|抽獎|文末/.test(raw) && !hits.some((h) => h.brand)) sc -= 3;
   if (clean.length > 20) sc -= Math.ceil((clean.length - 20) / 10);
   return sc;
@@ -377,8 +380,10 @@ export function extractProduct({ title, text, ref } = {}) {
         continue;
       }
       let c = cleanLine(raw, refYmd);
-      // 太長的子句以「｜」再切，取商品字詞最多的一段
-      if (width(c) > 30 && /[｜|]/.test(c)) c = c.split(/\s*[｜|]\s*/).filter(Boolean).sort((x, y) => findTerms(y).length - findTerms(x).length || x.length - y.length)[0];
+      // 太長的子句以「｜」再切、「 - 」一律再切，取商品字詞最多的一段
+      const pickPart = (parts) => parts.map((x) => x.replace(STRIP_EDGE, '').trim()).filter((x) => width(x) >= 4).sort((x, y) => findTerms(y).length - findTerms(x).length || x.length - y.length)[0];
+      if (/\s[-–—－]\s/.test(c)) c = pickPart(c.split(/\s[-–—－]\s/)) || c;
+      if (width(c) > 30 && /[｜|]/.test(c)) c = pickPart(c.split(/\s*[｜|]\s*/)) || c;
       if (width(c) < 4) {
         if (c.length >= 2 && ANNOUNCE.test(raw)) cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length, short: true });
         continue;

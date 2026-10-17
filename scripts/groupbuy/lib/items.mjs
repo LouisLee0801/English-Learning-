@@ -4,6 +4,9 @@ import { classify, brandOf } from '../../../groupbuy/js/categories.js';
 
 export const PLATFORM = { threads: 'Threads', instagram: 'Instagram', facebook: 'Facebook', pages: '團媽網站', manual: '精選' };
 const TTL_DAYS = 10; // 沒寫結單日的貼文，發文後保留幾天
+// 抓不出具體商品（只剩「服飾」「好物」這種字）就不收
+const GENERIC = /^(?:服飾|衣服|家電|美食|零食|保養|美妝|好物|商品|優惠|團購|生活用品|日用品|用品|新品|現貨|預購|代購|韓國|日本|泰國|各式|多款|系列)$/;
+export const isGeneric = (p) => !p || [...String(p)].length < 2 || GENERIC.test(String(p).trim());
 const ymd = (s) => String(s).slice(0, 10);
 
 /**
@@ -55,7 +58,7 @@ export function postToItems(post, { minScore = 4 } = {}) {
     return [{ ...item, expireAt: expireOf(item) }];
   }
   const r = parsePost({ title: post.title, text: post.text, ref });
-  if (post.isReply || r.score < minScore || !r.product) return [];
+  if (post.isReply || r.score < minScore || isGeneric(r.product)) return [];
   const one = {
     ...base,
     id: post.id,

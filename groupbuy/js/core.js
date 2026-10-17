@@ -46,8 +46,8 @@ export function dueText(item, now = nowStamp()) {
   if (!item.closeAt) return '結單日見原文';
   const days = dayDiff(now.slice(0, 10), item.closeAt.slice(0, 10));
   const time = item.closeAt.length > 10 ? item.closeAt.slice(11) : '';
-  if (days === 0) return `今天${time ? ` ${time}` : ''} 結單`;
-  if (days === 1) return `明天${time ? ` ${time}` : ''} 結單`;
+  if (days === 0) return time ? `今天 ${time} 結單` : '今天結單';
+  if (days === 1) return time ? `明天 ${time} 結單` : '明天結單';
   return `剩 ${days} 天 · ${md(item.closeAt)} 結單`;
 }
 
