@@ -1,0 +1,133 @@
+# line discovery 2026-10-17T01:40:00.638Z
+
+- https://buy.line.me/robots.txt → 200
+- https://buy.line.me/sitemap.xml → 404
+- [00-buy-line-me] https://buy.line.me/ → status 200 final https://buy.line.me/ title "LINE購物 ｜ 先LINE購物 再購物 · LINE POINTS回饋賺不停" html 364408B json 17 links 215
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 851B https://buy.line.me/api/graphql
+  - json 200 1091B https://buy.line.me/api/graphql
+  - json 200 11708B https://buy.line.me/api/graphql
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 1649B https://buy.line.me/api/graphql
+  - json 200 34336B https://buy.line.me/api/graphql
+  - json 200 11154B https://buy.line.me/api/graphql
+  - json 200 34205B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 7534B https://buy.line.me/api/graphql
+  - json 200 89B https://buy.line.me/api/graphql
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 3066B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201204954&cv=11&fst=1792201204954&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+- [01-buy-line-me-u-partner-4321335] https://buy.line.me/u/partner/4321335 → status 200 final https://buy.line.me/u/partner/4321335 title "PChome 24h購物 | LINE購物" html 227642B json 21 links 114
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 81B https://buy.line.me/api/graphql
+  - json 200 1014B https://buy.line.me/api/graphql
+  - json 200 165B https://buy.line.me/api/graphql
+  - json 200 1893B https://buy.line.me/api/graphql
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+  - json 200 605B https://buy.line.me/api/graphql
+  - json 200 34304B https://buy.line.me/api/graphql
+  - json 200 2958B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201215483&cv=11&fst=1792201215483&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 167B https://buy.line.me/api/graphql
+  - json 200 44B https://buy.line.me/api/graphql
+  - json 200 39B https://buy.line.me/api/graphql
+  - json 200 39B https://buy.line.me/api/graphql
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 32379B https://buy.line.me/api/graphql
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 34022B https://buy.line.me/api/graphql
+  - json 200 34038B https://buy.line.me/api/graphql
+- [02-buy-line-me-u-partner-4747560] https://buy.line.me/u/partner/4747560 → status 200 final https://buy.line.me/u/partner/4747560 title "亞洲跨境設計購物平台 Pinkoi | LINE購物" html 197572B json 20 links 106
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 81B https://buy.line.me/api/graphql
+  - json 200 1002B https://buy.line.me/api/graphql
+  - json 200 1780B https://buy.line.me/api/graphql
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 1774B https://buy.line.me/api/graphql
+  - json 200 39B https://buy.line.me/api/graphql
+  - json 200 39B https://buy.line.me/api/graphql
+  - json 200 165B https://buy.line.me/api/graphql
+  - json 200 44B https://buy.line.me/api/graphql
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 3048B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201225922&cv=11&fst=1792201225922&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 32223B https://buy.line.me/api/graphql
+  - json 200 10179B https://buy.line.me/api/graphql
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 32375B https://buy.line.me/api/graphql
+  - json 200 19588B https://buy.line.me/api/graphql
+- [03-buy-line-me-note] https://buy.line.me/note → status 200 final https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1530376675%26redirect_uri%3Dhttps%253A%252F%252Fbuy.line.me%252Fapi%252Fauth%252Fcallback%253Ffrom%253Dhttps%25253A%25252F%25252Fbuy.line.me%25252Fnote%26state%3D0.qxr3vjcnaz%26scope%3Dprofile&loginChannelId=1530376675&loginState=Pz6ul2RtT8StFUanF0GyYb#/ title "LINE Login" html 14155B json 1 links 4
+  - json 200 31B https://optout-api.tr.line.me/enabled
+- [04-buy-line-me-campaigns-filter-REWARD-MISSION] https://buy.line.me/campaigns?filter=REWARD_MISSION → status 200 final https://buy.line.me/campaigns?filter=REWARD_MISSION&classification=101 title "十月好康優惠活動限時瘋搶中 | LINE購物" html 220170B json 15 links 136
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 46B https://buy.line.me/api/graphql
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 3098B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201246649&cv=11&fst=1792201246649&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 34367B https://buy.line.me/api/graphql
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+  - json 200 1177B https://buy.line.me/api/graphql
+  - json 200 10582B https://buy.line.me/api/graphql
+  - json 200 80B https://buy.line.me/api/graphql
+  - json 200 31913B https://buy.line.me/api/graphql
+  - json 200 34042B https://buy.line.me/api/graphql
+- [05-buy-line-me-campaigns-filter-REWARD-MISSION-classification-101] https://buy.line.me/campaigns?filter=REWARD_MISSION&classification=101 → status 200 final https://buy.line.me/campaigns?filter=REWARD_MISSION&classification=101 title "十月好康優惠活動限時瘋搶中 | LINE購物" html 219169B json 14 links 136
+  - json 200 46B https://buy.line.me/api/graphql
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 34367B https://buy.line.me/api/graphql
+  - json 200 3160B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201256624&cv=11&fst=1792201256624&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 1177B https://buy.line.me/api/graphql
+  - json 200 10582B https://buy.line.me/api/graphql
+  - json 200 31913B https://buy.line.me/api/graphql
+  - json 200 34042B https://buy.line.me/api/graphql
+- [06-buy-line-me-shopping-event-lspwinwin202509] https://buy.line.me/shopping-event/lspwinwin202509/ → status 200 final https://buy.line.me/shopping-event/lspwinwin202509/ title "LINE 購物消費宣言｜50+品牌全館回饋無上限！再享限量點數紅包！" html 152681B json 2 links 39
+  - json 200 2B https://ly.my.sentry.io/api/1343/envelope/?sentry_version=7&sentry_key=acc36ef4ce8011f7cf93269219c30977&sentry_client=sentry.javascript.nextjs%2F10.66.0
+  - json 200 2B https://ly.my.sentry.io/api/1343/envelope/?sentry_version=7&sentry_key=acc36ef4ce8011f7cf93269219c30977&sentry_client=sentry.javascript.nextjs%2F10.66.0
+- [07-buy-line-me-specialoffer] https://buy.line.me/specialoffer → status 200 final https://buy.line.me/specialoffer title "找優惠品牌、商家推薦一次看 | LINE購物" html 201460B json 16 links 179
+  - json 200 102B https://buy.line.me/api/graphql
+  - json 200 1649B https://buy.line.me/api/graphql
+  - json 200 2780B https://buy.line.me/api/graphql
+  - json 200 2158B https://buy.line.me/api/graphql
+  - json 200 188B https://buy.line.me/api/graphql
+  - json 200 3088B https://www.googleadservices.com/pagead/conversion/824789114/?random=1792201275076&cv=11&fst=1792201275076&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0&
+  - json 200 2878B https://api.line.me/liff/v2/apps/1530376675-qxz2gEmo/contextToken
+  - json 200 913B https://liffsdk.line-scdn.net/xlt/manifest.json
+  - json 200 206B https://liffsdk.line-scdn.net/xlt/messages_zh-TW.ad68754fc7d0af50fb9ce13ffc808726.json
+  - json 200 41040B https://buy.line.me/api/graphql
+  - json 200 86115B https://buy.line.me/api/graphql
+  - json 200 507B https://buy.line.me/api/graphql
+  - json 200 513B https://buy.line.me/api/graphql
+  - json 200 507B https://buy.line.me/api/graphql
+  - json 200 505B https://buy.line.me/api/graphql
+  - json 200 518B https://buy.line.me/api/graphql
+- [08-buy-line-me-rest-api-calendar-summary-Klook-28-E9-AB-94-E9-A9-97-E8-88-87-E7-A5-] https://buy.line.me/rest-api/calendar?summary=Klook+%28%E9%AB%94%E9%A9%97%E8%88%87%E7%A5%A8%E5%88%B8%29+-+LINE%E6%97%85%E9%81%8A%E9%99%90%E6%99%82%E6%9C%80%E9%AB%9810%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880044225097%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D334&startTime=20261017T140000Z&endTime=20261017T145959Z&alarm=-PT5M&openexternalbrowser=1&sn=EITgHubJbSirfcUZt70ci_8gyWDngkEnkSee0LyFY9h5ni4VuuECZ-OiIHpD7_8hdxiSQAdRYQZbaA2F3BhyGwloDm8WpH3ErgDTKUa6NR0KJWJFkofnxmdLXWXfIBWl8u7kiAZZFlRNc_2Kv6PgsrIYQY_XaXekmk9JcTc9irEqDHiwwrVpXhDhNmE3upCPxUJL1D2zRT1t1W4Xj96XOuRS1rLaASDDiqGc4Ay2ixfFRopCGS6s17D_i_VEqzZRExH2nWsQpA9oSahjAufZOUovw4dse25ikhks9NdeLae9xWSPTz2xiHSWT4spsAQmWLhd7ih4EXlHZhd6nE6YZp1c623zSN77namqSb-ou02UXdxaYtWimS-nMzn7m00xF9BkUpEgQ0BvmE1h320yQFLxsGar433nLGyeA_84G_X467T9sONIjgsJu3vywf495tWrQ03P-__vxo1IumRgMcT3KtYhyE2UHKQrfK3LiNimZ0kOl4hwrnwGJ3gAnkQPoZ7dJEvhIipNHxsZvceL-MmfnKt-oAzQsDlcJmpMuOIAnXnETz8gc6Vx31-IHJlDrNcFEfSJx7InkfqPTrkEO8dbWto8qNl98M6Uj52DJQO25A_PZL7hBcD07bAgDfJP_fAwbqWBwtDvC-u6rLoaKDkFj7VRU6QiNkUwQjTlIaGJTCK9ebfUX8rJVrANTpwDJ2M2tOw1tpprKsfE_GHVoawcTgXwx9cVrCzfmr4zpPb7tjaVzl7MZmLUYeF4KBXvHUgf9vfcOfrrFJw_TQCZ_BzDbIFptNR_9vQX8SaMl4flFqshtjdSzQe2Jf53WpvOl-NyUxL5bDoLW120FdmrUY_Jfybzo5hRG0pT31wqQqMd8VbDauRZULz61p-ill72C8rJJIKpoOhzNl127wZjhd6Yx06hXydaKVSnT6MgZWpbXWPfzz_eYI0gGNXDsFjmzdk → status null final about:blank title "" html 39B json 0 links 0 ERROR page.goto: Download is starting
+Call log:
+  - navigating to "https://buy.line.me/rest-api/calendar?summary=Klook+%28%E9%AB%94%E9%A9%97%E8%88%87%E7%A5%A8%E5%88%B8%29+-+LINE%E6%97%85%E9%81%8A%E9%99%90%E6%99%82%E6%9C%80%E9%AB%9810%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880044225097%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D334&startTime=20261017T140000Z&endTime=20261017T145959Z&alarm=-PT5M&openexternalbrowser=1&sn=EITgHubJbSirfcUZt70ci_8gyWDn
+- [09-buy-line-me-rest-api-calendar-summary-E8-9D-A6-E7-9A-AE-E7-9B-B4-E7-87-9F-E6-9C-] https://buy.line.me/rest-api/calendar?summary=%E8%9D%A6%E7%9A%AE%E7%9B%B4%E7%87%9F_%E6%9C%80%E5%BF%AB%E7%95%B6%E6%97%A5%E5%88%B0%E9%99%90%E6%99%82%E6%9C%80%E9%AB%986%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880050678110%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D991234&startTime=20261017T160000Z&endTime=20261018T155959Z&alarm=-PT5M&openexternalbrowser=1&sn=EM2OiOiEwgUPPWF3hUEwZyEgvnuWfrzRzwOFWBO2dEO5A6YxfQ7ZbH8VBmHhd4aUf81I78aVl0WOvK98KACf4K5MuKSm0DNngypb4F1dmlNVDoxpoBzpfDNq54-vIAP6sOORYqfDyYaK86P9hJmVGqdp-HD9zoa3iG03kPfePkUSiFJq9WJ-euPWdRMjsnepTB7pUlY-PYmBA5NdgxxvLzh15EDeS7duz2oDDr9a1mhs0DmJrQzrpNrxSApW7c6E_iLbaEKEAtmpj83E44RxkXaoKYiE69JBSDYEhHlgt5KHm8AY46v0jwnp-OBdmSXDQgd36yHKxkxmOHgq4w_dZbbkQNvC6BlFI6RUsULsk5Efl6wTF3pV5bvOC9MhJfi5G7q4o47b3R4_mO5Rlm1nql0NfDpRviVKSkXJLrX1LCJzvqGSpVR0fNI9aLCgO1NpZFdbd3Ex7kmmJ9DyzT9jowdMie4QSPxa6-nScNLTzAsUe9n9iiJ6SZ9CBiUrdIIqBR-t5EZCSLwA6K9AI8sOKvi869LWAzLk6gMWBs6-0U2J9Uk5yMVezTAfyiLOySvW0tQc63rfq9vHN1zrto-WfcR9TAac2mJeMxlQdCJ8X1-7Yw2kLX9p2CEA9KYeWTC-i1Fj3IZCKIuVJDialnSO-oMjt2W3jL3VugOk0UBu6oOVYEHVs2NIoBlUyA_IdcdsxDEYJlO_hPgfkpYU-iskrQwl_imtBKKXB4DFQJKUtAi9JY653D8Zc01G5rCaGVCKHG58BZ1aMdZcHOIsJVJrxyqsa9N63BmHq5YxzfeM0af0e1tHz8EbPICmRaid50LUV_2MaXDFeeuPrdPfVgX_-QjidmEgY3gYtQMgKS51qADn0hnhZObYGegFu1QT4sLyMc11AnhOLutP35QXDGNDI0OFI1OcJhZ4F88j5eeVvTlroocPyJpdeDEtmfk1siSe1wM → status null final about:blank title "" html 39B json 0 links 0 ERROR page.goto: Download is starting
+Call log:
+  - navigating to "https://buy.line.me/rest-api/calendar?summary=%E8%9D%A6%E7%9A%AE%E7%9B%B4%E7%87%9F_%E6%9C%80%E5%BF%AB%E7%95%B6%E6%97%A5%E5%88%B0%E9%99%90%E6%99%82%E6%9C%80%E9%AB%986%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880050678110%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D991234&startTime=20261017T160000Z&endTime=20261018T155959Z&alarm=-PT5M&openexternalbrowser=1&sn=EM2OiOiEwgUPPWF3hUEwZyEgvn
+- [10-buy-line-me-rest-api-calendar-summary-E5-B1-88-E8-87-A3-E6-B0-8FWatsons-E9-99-90] https://buy.line.me/rest-api/calendar?summary=%E5%B1%88%E8%87%A3%E6%B0%8FWatsons%E9%99%90%E6%99%82%E6%9C%80%E9%AB%982%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F4447352%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D234&startTime=20261017T160000Z&endTime=20261018T095959Z&alarm=-PT5M&openexternalbrowser=1&sn=ENs_uJj9gz8Wk3sCYGMH4J4gVS_Sx2NRZKFlSp141wUqcWu5qkAYWNB7aCRVC-oJQvOplWd_Pw1IsK2eXtoHtVt6JBwW78UnKBrUGHjF1GBqEf6j3WAippHWYEvvKYu8_WUAoKzDOwoMV4OXY14Xv1GMRbVzmWCIWrapvRZaCrlE3jl5sEPQwk2WHi2oXV9wI7JSkomCRV1-Oj6nwGRamIGouvhVi4rrQ3T50MFRBPyIzTSzIl9yruVsShM51TDt7TIY_v6799NZDdi_B6Bza2e40qpntD-etcSm6LztyauadhuClBbUNCr4Fihsjqt3pej-mvyY7s4084FS4hPAKnyuoaomz801dHzVl6lmfHNYOfvre_uN-jGn862r_N9M-JvYuVEXoKpFJiN5um92iZlT-JXauQhC1CJojNvaJL4pSH9hI4rPG3B15dWmUgVmEHj7vEfLR1cCxxo0j1BdIAnp6EOleYT99ZS8vtfSUbs7N9M5SH8kEm1i4t7oGzcJXBtKGtjC-syDiFHnhhDSkQyCo3fgEuMQ3pMXZMpln-3nNlwzKgShm0-0v621RE6DBU9SKFrSGRwVpt4spo_dfUj10RsuHHL6Kbapvy6_fVDf6Jf_o1v4sTEv34YYA5W8YSoJlU_pf16jJrEvHY1DA5AVnYU6PlsB_42esYyM432JUSVbysYgkkclV9-1aXNT560wn8mIuI2MT4U32LFzN31dpPMH9Nuc_N-iLgaVYBNnVdxqoL4hj2bl3XdKsQgtoS63EqmCxvSyKBn4RVuT-IY4AulgteBekQb8Un9xyAey8DY5P3dpM6pYb9vm2wu886Cvf1yQMcIAeLmXQWwt8MEL → status null final about:blank title "" html 39B json 0 links 0 ERROR page.goto: Download is starting
+Call log:
+  - navigating to "https://buy.line.me/rest-api/calendar?summary=%E5%B1%88%E8%87%A3%E6%B0%8FWatsons%E9%99%90%E6%99%82%E6%9C%80%E9%AB%982%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F4447352%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D234&startTime=20261017T160000Z&endTime=20261018T095959Z&alarm=-PT5M&openexternalbrowser=1&sn=ENs_uJj9gz8Wk3sCYGMH4J4gVS_Sx2NRZKFlSp141wUqcWu5qkAYWNB7aCRVC-oJQvOplWd_Pw1IsK2eXt
+- [11-buy-line-me-rest-api-calendar-summary-E5-AF-B6-E9-9B-85-E7-B7-9A-E4-B8-8A-E8-B2-] https://buy.line.me/rest-api/calendar?summary=%E5%AF%B6%E9%9B%85%E7%B7%9A%E4%B8%8A%E8%B2%B7%E9%99%90%E6%99%82%E6%9C%80%E9%AB%983%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880046380236%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D910536&startTime=20261017T160000Z&endTime=20261018T155959Z&alarm=-PT5M&openexternalbrowser=1&sn=EOyMQ3I76Id4vBoRFt-qTvggYaEoCXbDcxv7H6iXs2ca6FL_FCBIw5QvcS6ltvfzuvbb9uRhbXP4TkxSVs5qQT4RP6bba9nB8W23DJjq3wIuMBR8U7JlCBOjvUcI0KBWmu2fn4KFJp8fH4iLE8awCSTbmfkojqzKiukwKx37qmbDhYlvNDLtZNvH99Juw7OHHpwxltZJyGCgrPVwIFl7Z3KHT_eOiErzxjCkocrR88mPhigjMQ-2kvwWZUBlEMMwC4rzAbrjKllqIenepyXt-PkKij1Y44QSEtoCPPFoR1Qa16bUU0EusSEz90QMnoxecy0GMHKrgd2lizVF25lxNPIdCcQZT5LWcKF5ZXRwpWCfWsCo_aqXzlTqAouRtLZJA-ZIcgIA4bGc8id1WCeGKb2WtpmB6fHa5W3iLj9SwYJEaV2m9U2f11B_8VjfONnwOJE-1pWSt0OXOTDeCgf5qsWf8oxCKcrnsb3eOL56xjram7dZ9aJXXj1nvabSwMjROqaFSe0VZwF3GU0D8Fxks4ZsT_zEwVPiZFJDIk1uxwM18FxM1YAaMJ4sVH7aYwcSJG4yMz3vtuQ-RkeBb7_4xKATKV8_34vcFiUzFuPrha59_uEY8Lh2oKhL7r19MCeE9IQx0Ivo4pkyNeyTNXOPnggQYsrfGdfrqz0e4vI_qnah5ZdeZE_UQSsqrFo92sl_REtavykyZOo_rA1WlDYjrb7ad0ZVmX8zBFoggr_-9rhoLM16dQiWbr9_0zlK7Au22ZOt10L96IVH5-3Ptjd_IsOAgIMKs3vyfGOMMA9yKDhJdllW0Tl20vNynaC92uIKJaX-HIMjnwbcSJGteY2WPz5pwwrNW8DmNmU7ti0NgMCKwvHD0wzly0APY_YpDLShT8A → status null final about:blank title "" html 39B json 0 links 0 ERROR page.goto: Download is starting
+Call log:
+  - navigating to "https://buy.line.me/rest-api/calendar?summary=%E5%AF%B6%E9%9B%85%E7%B7%9A%E4%B8%8A%E8%B2%B7%E9%99%90%E6%99%82%E6%9C%80%E9%AB%983%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880046380236%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D910536&startTime=20261017T160000Z&endTime=20261018T155959Z&alarm=-PT5M&openexternalbrowser=1&sn=EOyMQ3I76Id4vBoRFt-qTvggYaEoCXbDcxv7H6iXs2ca6FL_FCBIw5QvcS6ltvf
+- [12-buy-line-me-rest-api-calendar-summary-Klook-28-E4-BD-8F-E5-AE-BF-29-LINE-E6-97-8] https://buy.line.me/rest-api/calendar?summary=Klook+%28%E4%BD%8F%E5%AE%BF%29+-+LINE%E6%97%85%E9%81%8A%E9%99%90%E6%99%82%E6%9C%80%E9%AB%9815%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880048631385%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D502&startTime=20261017T160000Z&endTime=20261018T095959Z&alarm=-PT5M&openexternalbrowser=1&sn=EMR9qV-VVPWSOJGE4FLA62AgNWH6pbjQsnd3xKVTYt6dTh3R3Cro7PLnzhMMbwdWxEECcA04T4_7-OEknB2T78hkTLAQ81j-6tcORBiTy5wal4p-KsH0NNarx0PBrD9O4rJJ-El7dzm2nFS71Jrku8hjigKvhNBgm2Z2ih_RYX6Akp0EJXMLRHL2PMQe5XlWg-xR4qdZqmRarjrWznvl9MEqte3PKQCxj1QgGWSSyvFTtCcwAgtmPQPc9BVChrgWVREFeT5_9va0oYymGvH-y_EqeV5ATMLa4jvHwvCDrpf1nJq1NoTgBrxLwx5kdziobXQhki7rjz9DN5S-GLs6rTNE7EIUo4czAPkT-iDd4OZ4O_wym8_Cr5QqqjpmUYg8-MrpTWm34Y6Yud4HPXPetwtUZeBtbhza_jmNNzB7krIsEy3KabWZJYplb32eXf0efOye4yvgEuFozEblsDkmMoIyadd9gJnQrKOUgoMyjf-suzBCyAPCjfBTeI0i0PYP7yT1Io00XUw3rqN4LdEYfkS5fmonWxOTlpQj3J3WcOponrQhIoliIompoW-ZwWQSAb8DkyWg_KrQ3FFs9UxMfrUvhvy7ky0AoJKMC6V08Hv3T52XnYJGo9XmDo3_mvUqKaHMQvj7jqLkxhyYfPHQ_vIyQWBxMsWYidMqFJS17TRxIdVE0d8KPnXVj0HHDKmzjE3EFjdQ7TwRee4ZnGNtGs52BPK7lmG6Td-mKkel38v8eFeczU6vjrwy84FWiwexxMSpAf8sVRALGo-H6-7JRiuS9JkiMKo3nFZaGDlT9mqOTz0yxtnOzfQYOu_hpVpc-656zkVe9SE50kMzLKupyZqvbxdLiY7x-vjp3CX14Hgh2Gp2v_Js3zc6hFf46HIJySFrTpdi2GpGSANB-U7eE9JB → status null final about:blank title "" html 39B json 0 links 0 ERROR page.goto: Download is starting
+Call log:
+  - navigating to "https://buy.line.me/rest-api/calendar?summary=Klook+%28%E4%BD%8F%E5%AE%BF%29+-+LINE%E6%97%85%E9%81%8A%E9%99%90%E6%99%82%E6%9C%80%E9%AB%9815%25&encodedLink=https%3A%2F%2Fbuy.line.me%2Fu%2Fpartner%2F880048631385%3Futm_source%3Dnative_calendar%26utm_medium%3Devent_description%26utm_campaign%3D502&startTime=20261017T160000Z&endTime=20261018T095959Z&alarm=-PT5M&openexternalbrowser=1&sn=EMR9qV-VVPWSOJGE4FLA62AgNWH6pbjQsnd3xKVTYt6dTh3R3Cro7PL

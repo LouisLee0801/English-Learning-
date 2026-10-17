@@ -1,0 +1,33 @@
+200
+User-agent: Googlebot
+Disallow: /account
+Disallow: /like
+Disallow: /browsing
+Disallow: /order
+Disallow: /privacy
+Disallow: /event
+Disallow: /error
+Disallow: /filter
+
+Allow: /s$
+Allow: /s/$
+
+Disallow: /s?*
+Disallow: /s/
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: *
+Disallow: /account
+Disallow: /like
+Disallow: /browsing
+Disallow: /order
+Disallow: /privacy
+Disallow: /event
+Disallow: /error
+Disallow: /filter
+
+Disallow: /s$
+Disallow: /s?*
+Disallow: /s/
