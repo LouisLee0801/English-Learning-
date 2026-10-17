@@ -1,0 +1,75 @@
+# groupbuy discovery 2026-10-17T12:29:50.324Z
+
+- **gm-adrianne** [00] https://adriannelife.com/blog/groupbuying → 200 final https://adriannelife.com/blog/groupbuying title "【2026團購預告】每個月優質團購及長期優惠資訊，隨時更新也以這篇為主喔！(更新至2026/12) – 倩兒☓魯蛋 ❤ 夢享生活" html 343541B text 6605ch json 1 links 255
+  - json 200 18434B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261015&st=env&sjk=4300806284335890
+  - text: 跳至主要內容 倩兒☓魯蛋 ❤ 夢享生活 COOL！各國自由行懶人包 HOT！各國旅行行前準備 WOW！各國精彩戰利品 【2026團購預告】每個月優質團購及長期優惠資訊，隨時更新也以這篇為主喔！(更新至2026/12) 2026-10-15好物必敗團購 這篇是最新的團購預告，時間上有調整的話也會隨時更新最新日期，以下都是姊精挑細選的好商品 大部分都是已經團過好幾次的口碑商品了，如果怕錯過團購資訊，麻煩加入line社群，開團跟結團我都會提醒喔！ 收合 目錄 ▍長期團購優惠 ▍現正開團中 ▍ ▍2026/10 團購排程 ▍2026/11 團購排程 ▍2026/12 團購排程 ▍長期團購優惠 米鴻乳清
+- **gm-nick** [00] https://nickjufu.tw/6358/ → 200 final https://nickjufu.tw/6358/ title "主夫尼克團購2026/10月份開團行事曆＆團購公告 – 主夫尼克 & 攸三" html 182645B text 17766ch json 1 links 161
+  - json 200 4014B https://www.googleadservices.com/pagead/conversion/16555651073/?random=1792240199971&cv=11&fst=1792240199971&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=4
+  - text: 跳至主要內容 關於我 主夫尼克團購 世界旅行 TRAVEL遊記 主夫尼克團購2026/10月份開團行事曆＆團購公告 2026 年 10 月 17 日主夫尼克團購 最後更新：2026/10/17 🌟感謝來看版規的各位！你們好棒！好多人沒看嗚嗚 有問題直接私訊找我（⚠️避免訊息、貼圖洗版） 群組不要傳大圖，不用說：謝謝、了解等(在我的訊息按讚就好👍) 開團日期在各文章標題 團購價要在開團時才會公布（廠商規定） 群內禁止：討論非團購商品、比價、情緒發言 歡迎分享收到的開心心得～ 如有違反版規，可能會退群處理 群組人數眾多，為了不讓一堆通知打擾大家，在訊息管理方面會嚴格一點 私訊我會盡量在12小時
+- **gm-esther7** [00] https://www.esther7.com/2026/03/GroupBuying-1.html?m=0 → 200 final https://www.esther7.com/2026/03/GroupBuying-1.html?m=0 title "《七先生與艾小姐》 2023-2026年 團購優惠總整理（隨時更新/已結糰商品） - 七先生與艾小姐" html 3359981B text 78338ch json 7 links 1008
+  - json 200 869B https://syndication.twitter.com/settings?session_id=84fbf3368c382b71b6176366f25379b5fce5b792
+  - json 200 27B https://connect.facebook.net/app_config/json/137940239628606/
+  - json 200 107743B https://affiliate.klook.com/v2/usrcsrv/hit/experiments
+  - json 200 473B https://affiliate.klook.com/v1/affadsrv/banner/static?adid=92717
+  - json 200 62B https://log.klook.com/v2/frontlogsrv/log/web
+  - json 200 18754B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261015&st=env&sjk=1791930851298419
+  - json 200 62B https://log.klook.com/v3/frontlogsrv/log/web?platform=desktop
+  - text: 七先生與艾小姐 分享各地美 食、國內外旅遊、購物、生活用品...等實用資訊， 熱愛美食旅遊與寵物的艾小姐，最大的心願是帶著七先生吃遍各地的好料！ 訂購美味生鮮 首頁 即時美味筆記 台灣美食 台灣旅遊 國外旅遊 好市多必買物 活動邀稿 FB IG Home - 七先生與艾小姐 - 七先生與艾小姐團購 - 開團 - 團購 - 團購熱門 - 團購優惠 - 熱門團購 - 熱門團購美食 - 優惠 - 《七先生與艾小姐》 2023-2026年 團購優惠總整理（隨時更新/已結糰商品） 深入瞭解 觀看選秀節目 追蹤明星動態 觀看熱門韓劇 《七先生與艾小姐》 2023-2026年 團購優惠總整理（隨時更新/已結
+- **gm-rubee** [00] https://rubeelittle.com/post-228261311/ → 200 final https://rubeelittle.com/post-228261311/ title "rubeelittle｜團購預告 – 2026持續更新(6/14update) – rubeelittle" html 528493B text 2745ch json 11 links 136
+  - json 200 113B https://googleads.g.doubleclick.net/pagead/id
+  - json 200 113B https://googleads.g.doubleclick.net/pagead/id
+  - json 200 106B https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT
+  - json 200 106B https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT
+  - json 200 18330B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261015&st=env&sjk=6490176505642735
+  - json 200 137B https://graph.instagram.com/logging_client_events
+  - json 200 137B https://graph.instagram.com/logging_client_events
+  - json 200 28B https://www.youtube.com/youtubei/v1/log_event?alt=json
+  - json 200 28B https://www.youtube.com/youtubei/v1/log_event?alt=json
+  - json 200 28B https://www.youtube.com/youtubei/v1/log_event?alt=json
+  - json 200 28B https://www.youtube.com/youtubei/v1/log_event?alt=json
+  - text:  rubeelittle 居家｜生活｜親子｜旅行 關於RURU 居家空間 世界旅行 台灣旅行 生活提案 中文書 英文書 親子生活 關於Ruru Facebook Youtube Rubee 親子共讀社團 Instagram 生活 居家空間 世界旅行 2024 日本｜大阪京都 2024 日本｜東京 2023 日本｜東京 2020 日本│東京苗場 2019 英國│倫敦 2019 日本│東京苗場 2018 法國│巴黎+南法 2018 日本│大阪 2018 日本│名古屋 2017 日本│東京聖誕 2017 日本│東京 2017 德國│南部 2016 澳洲│雪梨+墨爾本 2016 日本│東京 2016 
+- **gm-weima** [00] https://yujuan162.pixnet.net/blog/posts/8225774197 → 200 final https://yujuan162.pixnet.net/blog/posts/8225774197 title "8/5更新｜維媽育兒精選團購2026年度預告（隨時更新密切關注) | Smile Life維媽育兒生活 ♥ | 婚姻育兒分享 | 痞客邦 | PIXNET" html 613064B text 10124ch json 56 links 321
+  - json 200 886B https://sticker.events.pixnet.net/2023pixstarawards/title-list.json
+  - json 200 8102B https://sticker.events.pixnet.net/2023pixstarawards/sent-list.json
+  - json 200 968B https://emrldtp.com/entrypoint_config?page_url=https%3A%2F%2Fyujuan162.pixnet.net%2Fblog%2Fposts%2F8225774197&t=543219
+  - json 200 1771B https://yujuan162.pixnet.net/blog/get-widget-data?name=pixLatestArticle
+  - json 200 7109B https://yujuan162.pixnet.net/blog/get-widget-data?name=pixCategory
+  - json 200 1208B https://yujuan162.pixnet.net/blog/get-widget-data?name=pixPostRecommend&postId=8225774197
+  - json 401 24B https://yujuan162.pixnet.net/auth/me
+  - json 200 26B https://yujuan162.pixnet.net/api/stats/post?postId=8225774197
+  - json 401 24B https://yujuan162.pixnet.net/auth/me
+  - json 200 2685B https://yujuan162.pixnet.net/blog/get-comments?postId=8225774197&page=1
+  - json 401 24B https://yujuan162.pixnet.net/auth/me
+  - json 200 44B https://caesar-api.cyntelli.com/website/e570fc5eb3fe5fad12f569d49198bdaee509c5ec.json?t=1792240200000
+  - json 200 2685B https://yujuan162.pixnet.net/blog/get-comments?postId=8225774197&page=1
+  - json 200 18474B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202610130101&st=env&sjk=7215441909026994
+  - json 200 18294B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202610130101&st=env&sjk=7966983388806208
+  - text: 登入 我的部落格 我的部落格後台 我的帳號 登出 Smile Life維媽育兒生活 ♥ 育兒生活x親子旅行x料理食譜♥ 合作邀稿：yujuan162@gmail.com 相簿 部落格 名片 AUG 05 2026 8/5更新｜維媽育兒精選團購2026年度預告（隨時更新密切關注) ▼現正開團中，請留意各結團時間▼ ➤房型免費大升等 丨入住宜蘭最高地標「村却國際溫泉酒店」百萬夜景、間間雙湯池、椰林泳池、賽車免費玩、近火車站，羅東夜市走路十分鐘 ➤喝的葉黃素│ 唯一市售添加100種蔬果精華 葉黃素，小分子吸收加倍【葉黃素】 ➤洗衣／清潔用品。我用好多年的【毛寶／毛寶兔】團購組合超殺送贈品 ➤傳家寶料
+- **gm-bigv** [00] https://bigv.com.tw/shopping/ → 403 final https://bigv.com.tw/shopping/ title "請稍候..." html 28452B text 132ch json 0 links 2
+  - text: bigv.com.tw 正在執行安全驗證 此網站使用安全服務抵禦惡意機器人。當網站驗證並確認您不是機器人時，便會顯示此頁面。 Ray ID: a4bf5199584e4c93 Performance and Security by Cloudflare 隱私權
+- **gm-eva** [00] https://evalife.tw/groupbuy/ → 200 final https://evalife.tw/groupbuy/ title "依娃的團購行事曆 (KOL部落客, 團購主,團媽,IG網紅推薦) @台北媽媽日常｜依娃親子旅遊・團購選物" html 1041947B text 5753ch json 7 links 182
+  - json 200 27B https://connect.facebook.net/app_config/json/249643311490/
+  - json 200 27B https://connect.facebook.net/app_config/json/249643311490/
+  - json 200 27B https://connect.facebook.net/app_config/json/249643311490/
+  - json 200 898B https://securepubads.g.doubleclick.net/pagead/ppub_config?ippd=evalife.tw
+  - json 200 4522B https://evalife.tw/groupbuy/?relatedposts=1
+  - json 200 59B https://server.aquarium.punwave.com/admanager/url
+  - json 200 18626B https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261015&st=env&sjk=6981865628049313
+  - text: Skip to content 商務合作 YT頻道 IG 抖音 精品購物 開箱評價 國外網購教學文 網購折扣碼資訊 台灣旅遊 北北基 基隆市 台北市 新北市 桃竹苗 桃園 新竹 苗栗縣 中台灣 苗栗 台中 彰化 雲林 南投 南台灣 嘉義 台南 高雄 屏東 東台灣 宜蘭縣 花蓮 台東 離島 澎湖縣 金門 小琉球 蘭嶼 馬祖 綠島 亞洲旅遊 日本旅遊 河口湖五湖 北海道 東京都 千葉縣 大阪 神戶 靜岡縣 岐阜縣 愛知縣 沖繩旅遊 泰國旅遊 曼谷 清邁 普吉島 越南旅遊 富國島 中國旅遊 澳門 非洲旅遊 摩洛哥 歐洲旅行 美國旅遊 關島旅遊 紐約景點 質感生活 居家用品 3C開箱 親子育兒 好市多
+- **gm-bobowin** [00] https://bobowin.blog/category/life/%E5%9C%98%E8%B3%BC/ → 403 final https://bobowin.blog/category/life/%E5%9C%98%E8%B3%BC/ title "請稍候..." html 28549B text 133ch json 0 links 2
+  - text: bobowin.blog 正在執行安全驗證 此網站使用安全服務抵禦惡意機器人。當網站驗證並確認您不是機器人時，便會顯示此頁面。 Ray ID: a4bf52694e767a66 Performance and Security by Cloudflare 隱私權
+- **gm-kiki** [00] https://kikimami.tw/ → 200 final https://kikimami.tw/ title "KiKi媽咪大小遊記 – 育兒親子x美食旅遊小部落| 親子旅遊住宿 |親子生活" html 95270B text 3009ch json 11 links 52
+  - json 200 26B https://iptoweather.vm5apis.com/addr.json
+  - json 200 190B https://vahfront.vm5apis.com/lite/connect
+  - json 200 261B https://pusti.svc.litv.tv/puid
+  - json 200 30B https://t.ssp.hinet.net/emome2?u=4ff5d7da-4c16-4383-ae3b-032092ec94f1
+  - json 200 26B https://iptoweather.vm5apis.com/addr.json
+  - json 200 2B https://adsv.svc.litv.tv/id_sync?vmf=01a149d9-1ef1-78bd-9afa-076ea89bc8c1&puid=17ac0051-da23-48ab-9728-eeca0bc9d40f
+  - json 200 48B https://event.tagtoo.co/permanent?fp=0e7d6f422ca06f19d1e92ae7fcd66861
+  - json 200 2B https://event.tagtoo.co/event/v1
+  - json 200 2B https://event.tagtoo.co/event/v1
+  - json 200 21B https://ttd-cm.tagtoo.com.tw/prn/uidm/?tuid=79b3fa00f32b5f76046ed4322db7cf08&pid=1011&puid=01a149d9-1ef1-78bd-9afa-076ea89bc8c1&
+  - json 200 21B https://ttd-cm.tagtoo.com.tw/prn/uidm/?tuid=79b3fa00f32b5f76046ed4322db7cf08&pid=1011&puid=01a149d9-1ef1-78bd-9afa-076ea89bc8c1
+  - text: 跳至主要內容 首頁 關於我 親子育兒 美食品味 國內旅行 國外旅行 烘焙手作 好物好用分享 KiKi媽咪大小遊記 育兒親子x美食旅遊小部落| 親子旅遊住宿 |親子生活 2026 年 7 月 31 日國內旅行宜蘭基隆旅行 羅東親子飯店推薦｜”限時開團”『村却國際溫泉酒店』房內獨家雙湯池，超放電泳池遊戲室，還有「睡到自然醒」神級早午餐!【最完整分享】 矗立在羅東市中心的『村却國際溫泉酒店』，宜蘭最高的地標飯店，這裡最迷人的就是每間房都擁有 270 度的無敵高空景觀，白天看火車穿梭與蘭陽平原，晚上直接坐擁浪漫夜景。最厲害的是房間內超奢… 閱讀全文 羅東親子飯店推薦｜”限時開團”『村却國際溫泉酒店』房
+- **gm-coco** [00] https://shop.obodo.tw/ → 200 final https://shop.obodo.tw/ title "～月亮媽咪省C o C o團～" html 60409B text 1654ch json 0 links 28
+  - text: 首頁 網站導覽 加入最愛 瀏覽紀錄 會員登入 註冊 關於月亮媽咪 填寫付款單 團購商品 留言板 FB粉絲團 下載區 【重要公告】 下次開團日期：2026/10/10 22:00~2026/10/16 23:59 下團匯款期限：2026/10/17 23:59 第一次參加團購教學 1、註冊會員/登入/無法登入教學 https://obodo.tw/registered-member/ 2、購物流程/查詢訂單/回傳付款單教學 https://obodo.tw/shopping-teaching/ 3、常見問題 https://obodo.tw/qa/ fb粉絲團： https://www.face
