@@ -1,0 +1,62 @@
+name: Deals scrape
+
+on:
+  schedule:
+    - cron: '17 22 * * *' # 每天台北時間 06:17：全部來源
+    - cron: '47 4,10,16 * * *' # 台北 12:47／18:47／00:47：只更新 PTT、新聞（情報類變動快）
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: '同時存探勘快照（deals/raw）'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ['scripts/deals/**', '.github/workflows/deals.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deals-scrape-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      # commit 訊息含 [discover:來源1,來源2] 時只做探勘（開發用）
+      - name: Discover
+        if: inputs.discover || contains(github.event.head_commit.message, '[discover')
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: node scripts/deals/discover.mjs $(printf '%s' "$MSG" | sed -n 's/.*\[discover:\([^]]*\)\].*/\1/p' | tr ',' ' ')
+        continue-on-error: true
+      - name: Scrape
+        if: "!contains(github.event.head_commit.message, '[discover')"
+        env:
+          ONLY: ${{ github.event.schedule == '47 4,10,16 * * *' && 'ptt news' || '' }}
+        run: node scripts/deals/scrape.mjs $ONLY
+      - name: Commit data
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git add -A deals
+          if git diff --cached --quiet; then echo 'no changes'; exit 0; fi
+          git commit -m "Update deals data $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
+          BR="${GITHUB_REF_NAME}"
+          for i in 1 2 3; do
+            git fetch origin "$BR" && git rebase "origin/$BR" && git push origin "HEAD:refs/heads/$BR" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

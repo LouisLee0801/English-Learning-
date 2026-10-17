@@ -1,0 +1,889 @@
+{
+ "source": "burgerking",
+ "deals": [
+  {
+   "id": "burgerking:330506",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)國王特選雙人餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$279"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/330506",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:330598",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)雙人海陸大餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$299"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/330598",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:331763",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "洋蔥圈(小)買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$49"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/331763",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:331765",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "四塊雞塊買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$55"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/331765",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:331831",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "花生培根脆雞堡+小薯+4塊雞塊+中飲",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$119"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：單人獨享餐"
+   ],
+   "tags": [
+    "單人獨享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/331831",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:331943",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "中杯飲料買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$38"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/331943",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332242",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)超省自由配 159",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$159"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332242",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332319",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "薯條(小)買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$49"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332319",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332468",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "黃金QQ球(3入)買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$39"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332468",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332532",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)國王點心全餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$179"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332532",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332534",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)超值三重奏",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$289"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332534",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332788",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "雙起士牛肉堡+4塊雞塊+小薯+中飲",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$109"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：單人獨享餐"
+   ],
+   "tags": [
+    "單人獨享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332788",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332790",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "雙層火烤牛肉堡+4塊雞塊+小薯+中飲",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$139"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：單人獨享餐"
+   ],
+   "tags": [
+    "單人獨享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332790",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332810",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)安格斯自由配",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$239"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332810",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332862",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)捲捲德腸單人霸主餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$179"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332862",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332866",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "辣薯球(小)買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$49"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332866",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332868",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "1+1 49元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$49"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：1+1 自由配$49"
+   ],
+   "tags": [
+    "1+1 自由配$49"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332868",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332870",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "1+1 69元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$69"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：1+1 自由配$69"
+   ],
+   "tags": [
+    "1+1 自由配$69"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332870",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332882",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "玉米濃湯(小)買一送一",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$45"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：買一送一"
+   ],
+   "tags": [
+    "買一送一"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332882",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:332950",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "雙層火烤牛肉堡+雙層小華堡(原/辣)+小薯+雞薯條4入+小辣薯球+中飲X2",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$259"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：雙人分享餐"
+   ],
+   "tags": [
+    "雙人分享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332950",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333080",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "花生培根脆雞堡+花生培根牛肉堡+中薯+6塊雞塊+中飲X2",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$199"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：雙人分享餐"
+   ],
+   "tags": [
+    "雙人分享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333080",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333082",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "勁濃安格斯牛肉堡+安格斯厚切牛肉堡+小薯+雞薯條4入+小辣薯球+中飲X2",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$299"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：雙人分享餐"
+   ],
+   "tags": [
+    "雙人分享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333082",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333217",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "兩堡任選自由配$99",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$99"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：兩堡任選自由配"
+   ],
+   "tags": [
+    "兩堡任選自由配"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333217",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333227",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "雙層田園華鱈魚堡+小薯+4塊雞塊+中飲",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$139"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：單人獨享餐"
+   ],
+   "tags": [
+    "單人獨享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333227",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333401",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "Q彈海老牛肉堡+捲捲德腸烤牛堡+小薯+雞薯條4入+小辣薯球+中飲X2",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$279"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：雙人分享餐"
+   ],
+   "tags": [
+    "雙人分享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333401",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333467",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家) 川椒皇家華堡餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$219"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333467",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333469",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家) 川椒辣雞腿堡餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$169"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333469",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333471",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家) 川椒雙人餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$339"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333471",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333554",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家) 國王辣雞腿堡餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$179"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333554",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333562",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)皇家華堡雙套餐",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$329"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333562",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333566",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "兩堡任選自由配$129",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$129"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：兩堡任選自由配"
+   ],
+   "tags": [
+    "兩堡任選自由配"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333566",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333568",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "1+1_89元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$89"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：1+1 自由配$89"
+   ],
+   "tags": [
+    "1+1 自由配$89"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333568",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333570",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "Q彈海老牛肉堡+小薯+4塊雞塊+中飲",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$169"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：單人獨享餐"
+   ],
+   "tags": [
+    "單人獨享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333570",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "burgerking:333572",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "勁濃培根烤腿堡+火烤雞腿培根堡+小薯+雞薯條4入+小辣薯球+中飲X2",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$259"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：雙人分享餐"
+   ],
+   "tags": [
+    "雙人分享餐"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/333572",
+   "updatedAt": "2026-10-17T03:14:18.345Z"
+  }
+ ]
+}
