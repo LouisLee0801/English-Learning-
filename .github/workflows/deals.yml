@@ -11,7 +11,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main, claude/sharp-cannon-5364vx]
+    branches: [main]
     paths: ['scripts/deals/**', '.github/workflows/deals.yml']
 
 permissions:
