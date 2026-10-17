@@ -91,7 +91,9 @@ function rewardHtml(r) {
   const v = typeof r.value === 'number' ? fmtNum(r.value) : '';
   switch (r.type) {
     case 'percent': return `<span class="big">${v}%</span>`;
-    case 'percent_off': return `<span class="big">${v}%</span><span class="unit">off</span>`;
+    case 'percent_off':
+      // 台灣習慣看「幾折」，原文有折數就照寫
+      return /折/.test(r.text || '') ? `<span class="big">${esc(r.text)}</span>` : `<span class="big">${v}%</span><span class="unit">off</span>`;
     case 'miles': return `<span class="big">${v}</span><span class="unit">哩 / NT$100</span>`;
     case 'miles_fixed': return `<span class="big">${v}</span><span class="unit">哩 / 每筆</span>`;
     case 'amount':

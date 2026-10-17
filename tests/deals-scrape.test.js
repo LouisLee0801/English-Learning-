@@ -189,6 +189,8 @@ test('news filter drops Hong Kong items, finance/politics and non-deal questions
   assert.equal(newsDeal(item('百佳優惠｜百佳即日起買滿$150送$18優惠券')), null); // 香港
   assert.equal(newsDeal(item('Sephora 必買｜指定產品低至4折', 'U Lifestyle')), null); // 香港媒體
   assert.equal(newsDeal(item('不是普發1萬！ 政府加碼發錢了')), null);
+  assert.equal(newsDeal(item('PayMe優惠｜屈臣氏買滿40元即減5元', '香港財經時報HKBT')), null);
+  assert.equal(newsDeal(item('飯店旅展 住房券最低3.3折')).reward.text, '3.3折起');
   assert.equal(newsDeal(item('foodpanda變Grab？外送費和優惠會變嗎？')), null);
   assert.equal(newsDeal(item('某公司第三季營收創新高')), null);
 });

@@ -100,7 +100,8 @@ export function parseDiscount(text) {
   if (m && !/折(?:抵|價|扣)/.test(t.slice(m.index, m.index + 4))) {
     const v = Number(m[1]);
     const off = v >= 10 ? 100 - v : Math.round((10 - v) * 10);
-    if (off > 0 && off < 100) return { reward: { type: 'percent_off', value: off, text: `${m[1]}折${t[m.index + m[0].length] === '起' ? '起' : ''}` }, minSpend };
+    const from = t[m.index + m[0].length] === '起' || /最低|低至|下殺|最殺/.test(t.slice(Math.max(0, m.index - 3), m.index));
+    if (off > 0 && off < 100) return { reward: { type: 'percent_off', value: off, text: `${m[1]}折${from ? '起' : ''}` }, minSpend };
   }
   m = t.match(/(\d{1,2})\s*%\s*off/i);
   if (m) return { reward: { type: 'percent_off', value: Number(m[1]), text: `${m[1]}% off` }, minSpend };
