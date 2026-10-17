@@ -120,3 +120,21 @@ test('LINE: reward mission becomes a promo with min spend, newbie tag and Taipei
   assert.deepEqual(validateDeal(d), []);
   assert.equal(taipeiDate(Date.UTC(2026, 9, 31, 16, 0)), '2026-11-01');
 });
+
+test('activity period parser handles common Taiwanese date wording', async () => {
+  const { parsePeriod } = await import('../scripts/deals/lib/normalize.mjs');
+  const ref = '2026-10-17';
+  const cases = [
+    ['活動期間：2026/10/17(五)~2026/10/20(一)', '2026-10-17', '2026-10-20'],
+    ['10/17(五)-10/20(一) 咖啡第二杯半價', '2026-10-17', '2026-10-20'],
+    ['即日起～10/31', null, '2026-10-31'],
+    ['即日起至 2026/11/30 止', null, '2026-11-30'],
+    ['10月17日至10月20日', '2026-10-17', '2026-10-20'],
+    ['優惠期限 10/31止', null, '2026-10-31'],
+    ['1/5~1/10 新年活動', '2027-01-05', '2027-01-10'],
+    ['10/18 當天限定', '2026-10-18', '2026-10-18'],
+    ['活動時間 10/17 11:00 ~ 10/19 23:59', '2026-10-17', '2026-10-19'],
+    ['中午12:30開賣 單價1.5元', null, null],
+  ];
+  for (const [t, s, e] of cases) assert.deepEqual(parsePeriod(t, ref), { startAt: s, endAt: e }, t);
+});

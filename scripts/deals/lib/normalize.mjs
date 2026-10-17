@@ -115,3 +115,43 @@ export function parseFixedMiles(text) {
   const m = String(text ?? '').match(/(\d+(?:[.,]\d+)*)\s*(?:哩程|里數|哩|里|miles?)(?!\s*(?:\/|per|每))/i);
   return m ? { miles: Number(m[1].replace(/,/g, '')), upTo: /最多|最高|up to/i.test(text) } : null;
 }
+
+const ymd = (y, m, d) => `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+/** 沒寫年份的日期：以參考日推年份；比參考日早超過 60 天視為明年 */
+function withYear(m, d, ref) {
+  const [ry] = ref.split('-').map(Number);
+  const cand = ymd(ry, m, d);
+  const diff = (new Date(cand) - new Date(ref)) / 86400000;
+  return diff < -60 ? ymd(ry + 1, m, d) : cand;
+}
+
+const DATE_RE = /(?:(\d{4})\s*([/.\-年])\s*)?(\d{1,2})\s*([/.月])\s*(\d{1,2})(?:\s*日)?(?:\s*[(（][一二三四五六日天][)）])?/g;
+const SEP = /^\s*(?:\d{1,2}[:：]\d{2})?\s*(?:[~～〜\-–—至到]|起至|起到)\s*$/;
+
+/**
+ * 從活動文字找期間：「10/17(五)~10/20(一)」「即日起至11/30」「2026/10/17-2026/10/20」「10月17日至10月20日」「10/31止」。
+ * ref 為發文日（YYYY-MM-DD），用來推算沒寫年份的日期。
+ */
+export function parsePeriod(text, ref) {
+  const t = clean(text);
+  const dates = [];
+  for (const m of t.matchAll(DATE_RE)) {
+    const [, y, , mo, sep, d] = m.map((x, i) => (i === 2 || i === 4 ? x : Number(x)));
+    if (mo < 1 || mo > 12 || d < 1 || d > 31) continue;
+    // 排除價格（1.5 元）與時間（12:30）：沒有年份時不接受「.」分隔；前後不能緊接數字
+    if (!y && sep === '.') continue;
+    if (/\d/.test(t[m.index - 1] || '') || /^\d/.test(t.slice(m.index + m[0].length))) continue;
+    dates.push({ v: y ? ymd(y, mo, d) : withYear(mo, d, ref), start: m.index, end: m.index + m[0].length });
+  }
+  for (let i = 0; i + 1 < dates.length; i++) {
+    const between = t.slice(dates[i].end, dates[i + 1].start);
+    if (SEP.test(between) && dates[i + 1].v >= dates[i].v) return { startAt: dates[i].v, endAt: dates[i + 1].v };
+  }
+  for (const d of dates) {
+    if (/^\s*(當天|當日|一日限定|限定一天)/.test(t.slice(d.end, d.end + 6))) return { startAt: d.v, endAt: d.v };
+    const before = t.slice(Math.max(0, d.start - 8), d.start);
+    const after = t.slice(d.end, d.end + 3);
+    if (/即日起|起至|至|到|~|～|截止|期限|效期/.test(before) || /^\s*(止|前|為止|截止)/.test(after)) return { startAt: null, endAt: d.v };
+  }
+  return { startAt: null, endAt: null };
+}

@@ -77,7 +77,6 @@ Object.assign(SOURCES, {
   uptogo: site('uptogo.com.tw', ['https://uptogo.com.tw/'], null, { requests: wp('uptogo.com.tw') }),
   supertaste: site('supertaste.tvbs.com.tw', ['https://supertaste.tvbs.com.tw/offers'], /\/offers\/\d+/),
   cashfeel: site('www.cashfeel.com.tw', ['https://www.cashfeel.com.tw/'], /\/article\//, { requests: wp('www.cashfeel.com.tw') }),
-  applealmond: site('applealmond.com', ['https://applealmond.com/'], null, { requests: [['https://applealmond.com/wp-json/wp/v2/posts?per_page=5&search=%E5%84%AA%E6%83%A0%E7%A2%BC', {}], ...wp('applealmond.com').slice(1)] }),
   shopback: site('www.shopback.com.tw', ['https://www.shopback.com.tw/', 'https://www.shopback.com.tw/all-stores'], /shopback\.com\.tw\/[a-z0-9-]+$/),
   picodi: site('www.picodi.com', ['https://www.picodi.com/tw/'], /picodi\.com\/tw\/[a-z0-9-]+$/),
   dcard: site('www.dcard.tw', ['https://www.dcard.tw/f/savemoney'], null, { requests: [['https://www.dcard.tw/service/api/v2/forums/savemoney/posts?limit=30', {}]] }),
@@ -91,6 +90,18 @@ Object.assign(SOURCES, {
 });
 
 const MAX_FOLLOW = 10;
+
+// 第三方網頁偶爾內嵌金鑰；快照寫檔前一律遮蔽，避免進 repo
+const SECRET_PATTERNS = [
+  /\b(?:AKIA|ASIA)[0-9A-Z]{16}\b/g, // AWS access key id
+  /(aws.{0,20}?(?:secret|key).{0,5}?['"=:\s]{1,4})[A-Za-z0-9/+=]{40}/gi, // AWS secret
+  /\bAIza[0-9A-Za-z_-]{35}\b/g, // Google API key
+  /\bgh[pousr]_[A-Za-z0-9]{36,}\b/g, // GitHub token
+  /\bxox[abposr]-[A-Za-z0-9-]{10,}\b/g, // Slack token
+  /\bsk_(?:live|test)_[A-Za-z0-9]{16,}\b/g, // Stripe
+  /-----BEGIN [A-Z ]*PRIVATE KEY-----[\s\S]*?-----END [A-Z ]*PRIVATE KEY-----/g,
+];
+const scrub = (s) => SECRET_PATTERNS.reduce((t, re) => t.replace(re, (m, p1) => (typeof p1 === 'string' ? `${p1}[REDACTED]` : '[REDACTED]')), String(s));
 const slug = (u) =>
   u
     .replace(/^https?:\/\//, '')
@@ -112,7 +123,7 @@ async function discover(name, cfg, context) {
     try {
       const res = await context.request.get(u, { timeout: 30_000, headers });
       const body = await res.text();
-      await writeFile(join(dir, `_req-${slug(u)}-${headers['X-Requested-With'] ? 'xhr' : 'plain'}.txt`), `${res.status()} ${res.headers()['content-type']}\n${body.slice(0, 600_000)}`);
+      await writeFile(join(dir, `_req-${slug(u)}-${headers['X-Requested-With'] ? 'xhr' : 'plain'}.txt`), scrub(`${res.status()} ${res.headers()['content-type']}\n${body.slice(0, 600_000)}`));
       summary.push(`- request ${u} ${JSON.stringify(headers)} → ${res.status()} ${body.length}B`);
     } catch (e) {
       summary.push(`- request ${u} → ERROR ${String(e.message).slice(0, 200)}`);
@@ -121,7 +132,7 @@ async function discover(name, cfg, context) {
   for (const u of cfg.robots || []) {
     try {
       const res = await context.request.get(u, { timeout: 30_000 });
-      await writeFile(join(dir, `_${slug(u)}.txt`), `${res.status()}\n${(await res.text()).slice(0, 200_000)}`);
+      await writeFile(join(dir, `_${slug(u)}.txt`), scrub(`${res.status()}\n${(await res.text()).slice(0, 200_000)}`));
       summary.push(`- ${u} → ${res.status()}`);
     } catch (e) {
       summary.push(`- ${u} → ERROR ${String(e.message).slice(0, 200)}`);
@@ -139,10 +150,10 @@ async function discover(name, cfg, context) {
     const p = await loadPage(context, url, { clickMore: cfg.clickMore, maxClicks: cfg.clickMore ? 8 : 0, scrolls: 2, wait: 1500 });
     const id = `${String(n++).padStart(2, '0')}-${slug(url)}`;
     const { html, ...rest } = p;
-    await writeFile(join(dir, `${id}.html`), html.slice(0, 1_500_000));
+    await writeFile(join(dir, `${id}.html`), scrub(html.slice(0, 1_500_000)));
     await writeFile(
       join(dir, `${id}.json`),
-      JSON.stringify({ ...rest, text: rest.text.slice(0, 60_000), links: dedupeLinks(rest.links) }, null, 1),
+      scrub(JSON.stringify({ ...rest, text: rest.text.slice(0, 60_000), links: dedupeLinks(rest.links) }, null, 1)),
     );
     summary.push(
       `- [${id}] ${url} → status ${p.status} final ${p.finalUrl} title "${p.title}" html ${html.length}B json ${p.json.length} links ${p.links.length}${p.error ? ` ERROR ${p.error}` : ''}`,

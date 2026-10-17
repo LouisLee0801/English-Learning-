@@ -111,3 +111,21 @@ test('filters round-trip through the URL query', () => {
   assert.deepEqual(queryToFilters(filtersToQuery(f)), f);
   assert.equal(filtersToQuery(defaultFilters()), '');
 });
+
+test('classify: source category alias, brand dictionary, then keywords', async () => {
+  const { classify, brandCategory } = await import('../deals/js/categories.js');
+  assert.equal(classify({ category: '美妝保健', merchant: 'Lancome' }), '藥妝美妝');
+  assert.equal(classify({ merchant: '屈臣氏Watsons', title: '全館 85 折' }), '藥妝美妝');
+  assert.equal(classify({ merchant: '', title: '[情報] 全家 咖啡第二杯半價' }), '超商量販');
+  assert.equal(classify({ title: '[情報] Uber Eats 外送 現折 100' }), '外送');
+  assert.equal(classify({ title: '[情報] 麥當勞 大麥克買一送一' }), '餐飲美食');
+  assert.equal(classify({ title: '[情報] Nike 會員日 全館 8 折' }), '運動戶外');
+  assert.equal(classify({ title: '[情報] 國泰世華 CUBE 卡 新戶首刷 回饋' }), '金融支付');
+  assert.equal(classify({ title: '某某活動', text: '保養品 面膜 防曬 下殺' }), '藥妝美妝');
+  assert.equal(classify({ category: '特色店家', merchant: '寶雅' }), '藥妝美妝'); // 籠統分類改用品牌細分
+  assert.equal(classify({ title: '完全看不出來' }), '其他');
+  // 短英文品牌要整個字比對
+  assert.equal(brandCategory('Netflix'), '娛樂影音');
+  assert.equal(brandCategory('Uber Eats'), '外送');
+  assert.equal(brandCategory('Uber 叫車'), '交通出行');
+});
