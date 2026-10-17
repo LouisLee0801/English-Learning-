@@ -2,7 +2,8 @@ name: Deals scrape
 
 on:
   schedule:
-    - cron: '17 22 * * *' # 每天台北時間 06:17
+    - cron: '17 22 * * *' # 每天台北時間 06:17：全部來源
+    - cron: '47 4,10,16 * * *' # 台北 12:47／18:47／00:47：只更新 PTT、新聞（情報類變動快）
   workflow_dispatch:
     inputs:
       discover:
@@ -42,7 +43,9 @@ jobs:
         continue-on-error: true
       - name: Scrape
         if: "!contains(github.event.head_commit.message, '[discover')"
-        run: node scripts/deals/scrape.mjs
+        env:
+          ONLY: ${{ github.event.schedule == '47 4,10,16 * * *' && 'ptt news' || '' }}
+        run: node scripts/deals/scrape.mjs $ONLY
       - name: Commit data
         if: success() || failure()
         run: |

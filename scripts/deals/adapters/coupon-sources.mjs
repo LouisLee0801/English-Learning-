@@ -21,37 +21,40 @@ const get = async (context, url, headers = {}) => {
   return r.text();
 };
 
-/** PTT 省錢板：從最新一頁往回翻，收近 7 天的 [情報]／[分享] 標題 */
+/**
+ * PTT 省錢板：Atom 訂閱源（含內文開頭）＋ 最新一頁列表（推文數）。
+ * 舊頁有 Cloudflare 驗證抓不到，所以每次合併上次已抓、7 天內的文章，排程每 6 小時跑一次補齊。
+ */
 export const ptt = {
-  minCount: 10,
-  note: 'PTT Lifeismoney 板近 7 天情報（只取標題；內文有 Cloudflare 驗證）',
-  async scrape({ context, today, log }) {
+  minCount: 5,
+  note: 'PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）',
+  async scrape({ context, today, prev = [], log }) {
     const cutoff = new Date(Date.parse(`${today}T00:00:00+08:00`) - 7 * 86400000).toISOString().slice(0, 10);
     const page = await context.newPage();
-    const deals = [];
+    let entries = [];
+    const pushes = new Map();
     try {
-      let url = 'https://www.ptt.cc/bbs/Lifeismoney/index.html';
-      for (let i = 0; url && i < 25; i++) {
-        let html;
-        try {
-          html = await render(page, url);
-        } catch (e) {
-          if (i === 0) throw e;
-          log(`stop at page ${i}: ${e.message}`); // 被擋就保留已抓到的
-          break;
-        }
-        const { posts, prev } = C.parsePttIndex(html, today);
-        deals.push(...posts.map(C.pttDeal).filter(Boolean));
-        const dated = posts.filter((p) => p.date);
-        if (i > 0 && dated.length && dated.every((p) => p.date < cutoff)) break;
-        url = prev;
-        await sleep(1500);
+      try {
+        entries = C.parseAtom(await get(context, 'https://www.ptt.cc/atom/Lifeismoney.xml'));
+      } catch (e) {
+        log('atom via request failed, retry in browser:', e.message);
+        await page.goto('https://www.ptt.cc/atom/Lifeismoney.xml', { timeout: 60_000 });
+        entries = C.parseAtom(await page.content());
+      }
+      try {
+        for (const p of C.parsePttIndex(await render(page, 'https://www.ptt.cc/bbs/Lifeismoney/index.html'), today).posts) pushes.set(p.url, p.pushes);
+      } catch (e) {
+        log('index failed (push counts skipped):', e.message);
       }
     } finally {
       await page.close();
     }
-    log(`posts ${deals.length}`);
-    return deals.filter((d) => (d.publishedAt || '').slice(0, 10) >= cutoff);
+    const fresh = entries.map((e) => C.pttDeal({ ...e, pushes: pushes.get(e.url) })).filter(Boolean);
+    const ids = new Set(fresh.map((d) => d.id));
+    const kept = prev.filter((d) => !ids.has(d.id) && (d.publishedAt || '').slice(0, 10) >= cutoff);
+    log(`atom ${entries.length}, deals ${fresh.length}, kept from previous runs ${kept.length}`);
+    if (!fresh.length && !kept.length) throw new Error('Atom 訂閱源沒有資料');
+    return [...fresh, ...kept].filter((d) => (d.publishedAt || '').slice(0, 10) >= cutoff);
   },
 };
 

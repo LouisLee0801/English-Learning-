@@ -82,24 +82,54 @@ export function parsePttIndex(html, today) {
   return { posts, prev: prev ? `https://www.ptt.cc${prev}` : null };
 }
 
+/** PTT Atom 訂閱源（https://www.ptt.cc/atom/<看板>.xml）：最新約 20 篇，含內文開頭 */
+export function parseAtom(xml) {
+  const out = [];
+  for (const m of String(xml).matchAll(/<entry>([\s\S]*?)<\/entry>/g)) {
+    const b = m[1];
+    const pick = (tag) => decode(b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`))?.[1] || '').trim();
+    const url = decode(b.match(/<link[^>]*href="([^"]+)"/)?.[1] || '');
+    // 內文是 HTML（<pre> 包著）：保留換行，去掉標頭「作者／看板／標題／時間」
+    const body = decode(pick('content'))
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, ' ')
+      .split('\n')
+      .map((l) => l.replace(/\s+/g, ' ').trim())
+      .filter((l) => l && !/^(作者|看板|標題|時間)\s/.test(l))
+      .join('\n');
+    out.push({ url, title: pick('title'), published: pick('published') || pick('updated'), body });
+  }
+  return out;
+}
+
 /** PTT 文章 → 優惠；只收 [情報]／[分享]，排除置底公告與集中文 */
 export function pttDeal(post) {
   const m = post.title.match(/^\[(情報|分享|限時|好康)\]\s*(.+)$/);
-  if (!m || !post.date) return null;
+  if (!m || !(post.date || post.published)) return null;
   const title = m[2].replace(/^\s*[-–]\s*/, '');
   const id = post.url.match(/M\.(\d+\.A\.[0-9A-F]+)/)?.[1] || hash(post.url);
   const pushes = post.pushes === '爆' ? 100 : Number(post.pushes) || 0;
   const tags = pushes >= 100 ? ['推文爆'] : pushes >= 10 ? [`推 ${pushes}`] : [];
   // 發文時間：M.<unix 秒>.A.xxx
   const ts = Number(id.split('.')[0]);
+  const body = clean(post.body || '');
+  // 內文開頭幾句當作重點（網址與簽名檔不要）
+  const lines = String(post.body || '')
+    .split(/\n+/)
+    .map(clean)
+    .filter((l) => l.length > 3 && !/https?:|^--$|^※|^◆|發信站|文章網址/.test(l))
+    .slice(0, 4)
+    .map((l) => l.slice(0, 90));
   return feedDeal({
     source: 'ptt',
     id,
     title,
     url: post.url,
-    publishedAt: ts > 1e9 ? new Date(ts * 1000).toISOString() : `${post.date}T12:00:00+08:00`,
+    publishedAt: ts > 1e9 ? new Date(ts * 1000).toISOString() : post.published || `${post.date}T12:00:00+08:00`,
+    text: body,
+    merchant: brandName(title) || brandName(body.slice(0, 200)) || null,
     tags,
-    conditions: ['PTT 省錢板網友情報，細節與限制請點「前往」看原文'],
+    conditions: [...lines, 'PTT 省錢板網友情報，完整條件請點「前往」看原文'],
   });
 }
 

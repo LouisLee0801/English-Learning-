@@ -52,7 +52,7 @@ try {
     const prev = await readJson(file, { deals: [] });
     const t0 = Date.now();
     try {
-      const raw = await ADAPTERS[name].scrape({ context, fx, today, now, log: (...a) => console.log(`[${name}]`, ...a) });
+      const raw = await ADAPTERS[name].scrape({ context, fx, today, now, prev: prev.deals, log: (...a) => console.log(`[${name}]`, ...a) });
       const seen = new Set();
       const deals = [];
       for (const d of raw) {
