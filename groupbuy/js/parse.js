@@ -316,7 +316,7 @@ const KEEP = /[^\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Ha
 const LABEL_LINE = /(?:品名|商品名稱|商品|團購商品|團購品項|品項|產品|本次開團|開團商品|這次開團)\s*[:：]\s*([^\n]{2,50})/;
 const STRIP_EDGE = /^[\s\-–—－‐−~～:：|｜/、,，.。!！?？>＞》»⋯…&+]+|[\s\-–—－‐−~～:：|｜/、,，.。!！?？<＜《«⋯…&+(（]+$/g;
 // 開頭的贅字：「今天社群限時開團一款波點包包」→「波點包包」、「主婦們最愛的BRUNO」→「BRUNO」
-const FILLER = /^(?:(?:今天|今晚|明天|社群|這次|本次|這週|本週|一款|一個|這款|這個|大家|我們|我|是|來自|終於|又來|再度|再次|手刀|超美|超好用|必收|老闆|小編|來了|的|新款|超夯|超人氣|最近|爆紅|全網|大品牌好安心|.{0,8}(?:最愛|超紅|最紅|爆紅|人氣|必買|熱賣)的)\s*)+/u;
+const FILLER = /^(?:(?:今天|今晚|明天|社群|這次|本次|這週|本週|一款|一個|這款|這個|大家|我們|我|是|來自|終於|又來|再度|再次|手刀|超美|超好用|必收|老闆|小編|團主|團媽|團爸|決定|來了|的|新款|超夯|超人氣|最近|爆紅|全網|大品牌好安心|.{0,8}(?:最愛|超紅|最紅|爆紅|人氣|必買|熱賣)的)\s*)+/u;
 const PRONOUN = /^(?:我|你|妳|您|他|她|大家|這|那|今天|最近|謝謝|感謝|終於|為了|因為|如果|聽說|於是|知道|想|有沒有|要不要)/;
 // 下單方式、規則類的句子不是商品名
 const INSTRUCTION = /湊團|成團|告知|下單|私訊|小盒子|匯款|付款|運費|賣貨便|出貨|取貨|注意|規則|不接受|三思|備註|截圖|留言|\+1|進群|喊單|併單|基本資料|詳情|連結|網址|點我|底下|下方|主頁|首頁|訂購|搶購|購買方式/;
@@ -338,15 +338,25 @@ function cleanLine(line, refYmd) {
 
 // 長句裡的商品詞：從第一個品牌／商品字往左帶上英文品牌名，往右接到語氣字為止
 const STOP_CHAR = /[這那的很超真好太也都就是了嗎吧呢啊熱賣只要讓給在跟和與及或更最我你妳他她，,。.!！?？\s]/;
+// 分類名稱本身（育兒、居家、美食…）不是商品詞，聚焦時優先找真正的商品字
+const CATEGORY_WORDS = /^(?:育兒|母嬰|親子|家電|電器|服飾|居家|家居|生活用品|日用品|美妝|保養|彩妝|美食|食品|零食|生鮮|保健|營養|3c|寵物|毛孩|運動|戶外|旅遊|文創|周邊|追星|baby|kids)$/;
 function focusClause(c) {
-  const hits = findTerms(c);
+  const all = findTerms(c);
+  const hits = all.filter((h) => !CATEGORY_WORDS.test(h.w)).length ? all.filter((h) => !CATEGORY_WORDS.test(h.w)) : all;
   if (!hits.length) return c;
   const t = c.normalize('NFKC');
   let start = Math.min(...hits.map((h) => h.index));
   let end = Math.max(...hits.filter((h) => h.index - start < 16).map((h) => h.index + h.w.length));
+  // 往左帶上英文品牌名，或「小／迷你／兒童」這類修飾字
+  let left = 0;
+  while (start > 0 && left < 3 && /[小大新迷你兒童嬰寶]/.test(t[start - 1])) {
+    start--;
+    left++;
+  }
   while (start > 0 && /[A-Za-z0-9&.'’\- ]/.test(t[start - 1])) start--;
+  // 往右只接型號、規格字（V15、Pro、黃色款、三入組）
   let extra = 0;
-  while (end < t.length && extra < 6 && !STOP_CHAR.test(t[end])) {
+  while (end < t.length && extra < 6 && !STOP_CHAR.test(t[end]) && /[A-Za-z0-9款組型號色入包盒罐瓶件套]/.test(t[end])) {
     end++;
     extra++;
   }
@@ -403,7 +413,7 @@ export function extractProduct({ title, text, ref } = {}) {
       if (/\s[-–—－]\s/.test(c)) c = pickPart(c.split(/\s[-–—－]\s/)) || c;
       if (width(c) > 30 && /[｜|]/.test(c)) c = pickPart(c.split(/\s*[｜|]\s*/)) || c;
       // 口語長句（我、你、真的、怎麼…）才縮到商品詞；商品清單的長品名照留
-      if (width(c) > 28 && /我|你|妳|大家|這麼|怎麼|知道|覺得|真的|因為|所以|如果|就是|一定|現在才/.test(c)) c = focusClause(c);
+      if (width(c) > 28 && /我|你|妳|大家|這麼|怎麼|知道|覺得|真的|因為|所以|如果|就是|一定|現在才|最近|超超|真心|愛用|新角落|分享/.test(c)) c = focusClause(c);
       if (width(c) < 4) {
         if (c.length >= 2 && ANNOUNCE.test(raw)) cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length, short: true });
         continue;
@@ -413,6 +423,8 @@ export function extractProduct({ title, text, ref } = {}) {
   });
   if (!cands.length) return '';
   const best = [...cands].sort((a, b) => b.score - a.score || a.order - b.order)[0];
+  // 最好的一句都沒有商品字、也不是開團句：多半沒寫商品名，寧可不收
+  if (best.score < 0) return '';
   let out = best.text;
   // 「三麗鷗」太短：接上後面有商品關鍵字的子句（萬聖節｜芭蕾小公仔）
   if (width(out) < 8) {

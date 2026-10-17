@@ -9,6 +9,8 @@ import * as mine from './mine.js';
 const $main = document.getElementById('main');
 const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ESC[c]);
+// 連結只接受 http(s)：匯入的備份或貼上的網址不能變成 javascript: 連結
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || '')) ? esc(u) : '');
 const PAGE = 60;
 const REPO = 'https://github.com/LouisLee0801/English-Learning-';
 
@@ -72,7 +74,7 @@ function windowText(it) {
 function byline(it) {
   const name = it.authorName || (it.author ? `@${it.author}` : '');
   const handle = it.authorName && it.author ? ` @${it.author}` : '';
-  const who = name ? (it.authorUrl ? `<a href="${esc(it.authorUrl)}" target="_blank" rel="noopener">${esc(name)}${esc(handle)}</a>` : esc(name + handle)) : '';
+  const who = name ? (safeUrl(it.authorUrl) ? `<a href="${safeUrl(it.authorUrl)}" target="_blank" rel="noopener">${esc(name)}${esc(handle)}</a>` : esc(name + handle)) : '';
   const when = it.postedAt ? `${fmtTime(it.postedAt)} 發文` : it.firstSeenAt ? `${fmtTime(it.firstSeenAt)} 收錄` : '';
   return [who, when].filter(Boolean).join(' · ');
 }
@@ -102,8 +104,8 @@ function card(it, now, q = '') {
       <button type="button" class="btn save" data-save="${esc(it.id)}" aria-pressed="${saved}">${saved ? '★ 已收藏' : '☆ 收藏'}</button>
       ${cal && st !== 'closed' ? `<a class="btn" href="${esc(cal)}" target="_blank" rel="noopener" title="加到 Google 日曆，結單前提醒">📅 提醒</a>` : ''}
       ${it.source === 'mine' ? `<button type="button" class="btn danger" data-remove="${esc(it.id)}">刪除</button>` : ''}
-      ${it.orderUrl ? `<a class="btn order" href="${esc(it.orderUrl)}" target="_blank" rel="noopener">下單</a>` : ''}
-      ${it.url ? `<a class="btn primary" href="${esc(it.url)}" target="_blank" rel="noopener">看原文 →</a>` : ''}
+      ${safeUrl(it.orderUrl) ? `<a class="btn order" href="${safeUrl(it.orderUrl)}" target="_blank" rel="noopener">下單</a>` : ''}
+      ${safeUrl(it.url) ? `<a class="btn primary" href="${safeUrl(it.url)}" target="_blank" rel="noopener">看原文 →</a>` : ''}
     </div>
   </article>`;
 }
@@ -223,7 +225,7 @@ function viewCalendar(qs) {
     const pf = PLATFORMS[it.platform] || { short: it.platform, cls: 'web' };
     const st = status(it, now);
     const t = st === 'upcoming' ? (it.openAt.length > 10 ? it.openAt.slice(11) : '開團') : it.closeAt ? (it.closeAt.length > 10 ? it.closeAt.slice(11) : '全天') : '—';
-    return `<a class="tl-row" href="${esc(it.url)}" target="_blank" rel="noopener">
+    return `<a class="tl-row" href="${safeUrl(it.url) || '#/calendar'}" target="_blank" rel="noopener">
       <span class="tl-time">${esc(t)}</span>
       <span class="tl-main"><b>${hl(it.product, f.q)}</b><span><span class="pf-text">${esc(pf.short)} · </span>${categoryIcon(it.category)} ${esc(it.category)}${it.authorName || it.author ? ` · ${esc(it.authorName || `@${it.author}`)}` : ''}${it.price ? ` · ${fmtPrice(it.price)}` : ''}</span></span>
       <span class="tl-side"><span class="badge pf pf-${pf.cls}">${esc(pf.short)}</span></span>
@@ -364,7 +366,7 @@ function viewSources() {
       <div class="form">
         <div class="field"><span>Threads 帳號（${w.threads?.length || 0}）</span>${list(w.threads, (u) => `<li><a href="https://www.threads.com/@${esc(u)}" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
         <div class="field"><span>Instagram 帳號（${w.instagram?.length || 0}，需官方 API）</span>${list(w.instagram, (u) => `<li><a href="https://www.instagram.com/${esc(u)}/" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
-        <div class="field"><span>團媽網站（${w.pages?.length || 0}）</span>${list(w.pages, (p) => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name || p.url)}</a></li>`)}</div>
+        <div class="field"><span>團媽網站（${w.pages?.length || 0}）</span>${list(w.pages, (p) => `<li><a href="${safeUrl(p.url)}" target="_blank" rel="noopener">${esc(p.name || p.url)}</a></li>`)}</div>
         <div class="field wide"><span>搜尋關鍵字（每次排程輪替）</span><div class="kw">${[...(w.keywords?.threads || []).map((k) => `Threads：${k}`), ...(w.keywords?.search || [])].map((k) => `<span class="badge">${esc(k)}</span>`).join('') || '<span class="muted">（使用預設）</span>'}</div></div>
       </div>
     </section>
