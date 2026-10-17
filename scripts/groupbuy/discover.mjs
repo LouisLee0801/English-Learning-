@@ -44,6 +44,18 @@ const PROBES = {
   'ptt-buytogether-over18': { mode: 'page', url: 'https://www.ptt.cc/bbs/BuyTogether/index.html', follow: /\/bbs\/BuyTogether\/M\.\d+/, maxFollow: 2 },
   'ptt-babymother-index': { mode: 'page', url: 'https://www.ptt.cc/bbs/BabyMother/index.html' },
   'calendar-page': { mode: 'page', url: 'https://site-4031271-2277-6785.mystrikingly.com/' },
+  // 第三輪：連續搜尋會不會被限流（每次間隔 20 秒、各用新的瀏覽器環境）
+  'tq-1': { mode: 'page', fresh: true, url: `https://www.threads.com/search/?q=${q('團購')}&serp_type=default` },
+  'tq-2': { mode: 'page', fresh: true, wait: 20_000, url: `https://www.threads.com/search/?q=${q('結單')}&serp_type=default` },
+  'tq-3': { mode: 'page', fresh: true, wait: 20_000, url: `https://www.threads.com/search/?q=${q('開團 嬰兒')}&serp_type=default` },
+  'tq-4': { mode: 'page', fresh: true, wait: 20_000, url: `https://www.threads.com/search/?q=${q('開團啦')}&serp_type=default` },
+  'tq-5': { mode: 'page', wait: 20_000, url: `https://www.threads.com/search/?q=${q('團購 家電')}&serp_type=default` },
+  'dq-1': { mode: 'req', url: `https://html.duckduckgo.com/html/?q=${q('site:instagram.com 開團 結單')}&df=w` },
+  'dq-2': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:instagram.com 開團 寶寶')}&df=w` },
+  'dq-3': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:instagram.com 開團 家電')}&df=w` },
+  'dq-4': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:facebook.com 開團')}&df=w` },
+  'dq-5': { mode: 'req', wait: 15_000, url: `https://lite.duckduckgo.com/lite/?q=${q('site:instagram.com 團購 開團期間')}&df=w` },
+  'dq-6': { mode: 'req', wait: 15_000, url: `https://html.duckduckgo.com/html/?q=${q('site:threads.com 開團啦')}&df=w` },
 };
 
 // 第三方網頁偶爾內嵌金鑰；快照寫檔前一律遮蔽，避免進 repo
@@ -65,7 +77,17 @@ function dedupeLinks(links) {
   return [...m.values()].slice(0, 2000);
 }
 
-async function probe(name, cfg, context, summary) {
+async function probe(name, cfg, shared, summary) {
+  if (cfg.wait) await new Promise((r) => setTimeout(r, cfg.wait));
+  const context = cfg.fresh ? await shared.browser().newContext({ locale: 'zh-TW', timezoneId: 'Asia/Taipei' }) : shared.context;
+  try {
+    await probeIn(name, cfg, context, summary);
+  } finally {
+    if (cfg.fresh) await context.close();
+  }
+}
+
+async function probeIn(name, cfg, context, summary) {
   const dir = join(OUT, name);
   await rm(dir, { recursive: true, force: true });
   await mkdir(dir, { recursive: true });
@@ -115,7 +137,7 @@ try {
       continue;
     }
     try {
-      await probe(name, PROBES[name], context, summary);
+      await probe(name, PROBES[name], { context, browser: () => browser }, summary);
     } catch (e) {
       summary.push(`- **${name}** FAILED ${String(e.message).split('\n')[0].slice(0, 200)}`);
     }
