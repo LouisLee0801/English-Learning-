@@ -2,5 +2,6 @@
 // 撰寫規則見 docs/HOT_TOPICS.md
 import w2026_41 from './2026-W41.js';
 import w2026_42 from './2026-W42.js';
+import w2026_43 from './2026-W43.js';
 
-export const TRENDING_WEEKS = [w2026_41, w2026_42];
+export const TRENDING_WEEKS = [w2026_41, w2026_42, w2026_43];
