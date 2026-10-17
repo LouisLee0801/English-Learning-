@@ -139,7 +139,10 @@ const BLOG_PREVIEW = `▍現正開團中 ▍
 ▍2026/11 團購排程
 11/5 monbear X crywolf 冬季外套｜換季添新衣、冬天出遊先準備！想幫孩子挑外套的，這團先記下來！
 ►跟團去：
-⭕圖文心得：https://pse.is/9qqz9p`;
+⭕圖文心得：https://pse.is/9qqz9p
+⭕媞妍型+光潤型圖文心得：https://reurl.cc/WqQo55
+加倩兒官方LINE HTTPS://LIN.EE/SYBB8GL
+看限時動態加IG HTTPS://REURL.CC/GXNZRV`;
 
 // 部落客團購總覽（主夫尼克真實片段）：商品名是超連結，下一行只有結團日；後面的詳細介紹沒有連結、名稱不同
 const BLOG_INDEX = `有問題直接私訊找我（⚠️避免訊息、貼圖洗版）

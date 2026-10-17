@@ -299,7 +299,7 @@ const TAG_BRACKET = /[【\[「『〔(（《]\s*([^】\]」』〕)）》]{0,24})\
 const GROUP_WORDS = /開團|團購|合購|預購|限時|現貨|代購|徵|揪|免運|結單|收單|情報|分享|限量|快閃|販售|活動|優惠|期間|時間|售/;
 const NOISE = [
   /#[^\s#]+/g,
-  /https?:\/\/\S+/g,
+  /https?:\/\/\S+/gi,
   /(?:限時|正式|準時|即將|今晚|明天|本週|下週|重新|終於可以|終於|決定)?(?:開團|揪團|團購|合購|預購|開賣|常態團|首發團)(?:啦|囉|喇|嚕|了|中|囉|開跑|資訊|預告|通知|價|時間|期間)?[！!～~。.]*/g,
   /第\s*[\dNn一二三四五六七八九十]+\s*[團波]/g,
   /(?:收單|結單|截單|結團)(?:時間|日)?\s*[:：]?/g,
@@ -441,7 +441,7 @@ export function extractProduct({ title, text, ref, strict = true } = {}) {
 // ---------- 其他欄位 ----------
 const ORDER_HOSTS = /1shop\.tw|shopline|cyberbiz|waca\.|meepshop|forms\.gle|docs\.google\.com\/forms|lin\.ee|line\.me|portaly\.cc|pse\.is|reurl\.cc|bit\.ly|tinyurl|myship\.7-11|shopee\.tw|shp\.ee|easystore|mysubline|pinkoi|iopenmall|ecpay|surveycake|typeform|beacons\.ai|linktr\.ee/i;
 export function extractOrderUrl(text) {
-  const urls = String(text ?? '').match(/https?:\/\/[^\s<>"'，。）)】]+/g) || [];
+  const urls = String(text ?? '').match(/https?:\/\/[^\s<>"'，。）)】]+/gi) || [];
   return urls.find((u) => ORDER_HOSTS.test(u)) || null;
 }
 
