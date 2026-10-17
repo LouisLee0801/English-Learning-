@@ -33,6 +33,17 @@ const PROBES = {
   'pixnet-emma': { mode: 'req', url: `https://emma.pixnet.cc/blog/articles/search?key=${q('團購')}&format=json` },
   ihergo: { mode: 'page', url: 'https://www.ihergo.com/', follow: /ihergo\.com\/.*(group|buy|item|product|tuan)/i, maxFollow: 2 },
   portaly: { mode: 'page', url: 'https://portaly.cc/' },
+  // 第二輪：Threads「最新」排序與分類關鍵字、DuckDuckGo 近一週、PTT 18 歲驗證、團媽開團日曆頁
+  'threads-recent': { mode: 'page', url: `https://www.threads.com/search/?q=${q('開團')}&serp_type=default&filter=recent` },
+  'threads-recent-baby': { mode: 'page', url: `https://www.threads.com/search/?q=${q('開團 寶寶')}&serp_type=default&filter=recent` },
+  'threads-close': { mode: 'page', url: `https://www.threads.com/search/?q=${q('收單')}&serp_type=default&filter=recent` },
+  'ddg-ig-week': { mode: 'req', url: `https://html.duckduckgo.com/html/?q=${q('site:instagram.com 開團')}&df=w` },
+  'ddg-threads-week': { mode: 'req', url: `https://html.duckduckgo.com/html/?q=${q('site:threads.com 開團 結單')}&df=w` },
+  'ddg-fb-week': { mode: 'req', url: `https://html.duckduckgo.com/html/?q=${q('site:facebook.com 開團 結單')}&df=w` },
+  'ptt-buytogether-atom-page': { mode: 'page', url: 'https://www.ptt.cc/atom/BuyTogether.xml' },
+  'ptt-buytogether-over18': { mode: 'page', url: 'https://www.ptt.cc/bbs/BuyTogether/index.html', follow: /\/bbs\/BuyTogether\/M\.\d+/, maxFollow: 2 },
+  'ptt-babymother-index': { mode: 'page', url: 'https://www.ptt.cc/bbs/BabyMother/index.html' },
+  'calendar-page': { mode: 'page', url: 'https://site-4031271-2277-6785.mystrikingly.com/' },
 };
 
 // 第三方網頁偶爾內嵌金鑰；快照寫檔前一律遮蔽，避免進 repo
@@ -95,6 +106,8 @@ async function probe(name, cfg, context, summary) {
 const wanted = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(PROBES);
 const summary = [`# groupbuy discovery ${new Date().toISOString()}`, ''];
 const { browser, context } = await openBrowser();
+// PTT 部分看板（合購板）要先點「已滿 18 歲」
+await context.addCookies([{ name: 'over18', value: '1', domain: '.ptt.cc', path: '/' }]);
 try {
   for (const name of wanted) {
     if (!PROBES[name]) {
