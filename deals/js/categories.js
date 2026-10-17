@@ -33,6 +33,7 @@ const ALIAS = {
   門市通路: '超商量販', 通路門市: '超商量販', 超商: '超商量販',
   親子: '親子寵物', 親子婦幼: '親子寵物',
   旅遊: '旅遊住宿', 住宿: '旅遊住宿',
+  這鍋超有料: '餐飲美食', 輕食午茶: '餐飲美食', 聚餐餐廳: '餐飲美食', 連鎖速食: '餐飲美食', 旅遊行程: '旅遊住宿', 消費情報: null,
   網購平台: '綜合電商', 跨境購物: '綜合電商', 全球直送: '綜合電商', 品牌旗艦: '其他', 特色店家: '其他',
 };
 
@@ -59,7 +60,7 @@ const BRANDS = {
 
 /** 標題／內文關鍵字（品牌字典沒中時用） */
 const KEYWORDS = {
-  藥妝美妝: ['藥妝', '美妝', '保養', '彩妝', '面膜', '精華液', '乳液', '防曬', '香水', '洗髮', '沐浴', '保健', '維他命', '益生菌', '葉黃素', '魚油', '藥局'],
+  藥妝美妝: ['beauty', 'cosmetic', 'makeup', 'make up', 'skin', '香氛', '髮', '人蔘', '藥妝', '美妝', '保養', '彩妝', '面膜', '精華液', '乳液', '防曬', '香水', '洗髮', '沐浴', '保健', '維他命', '益生菌', '葉黃素', '魚油', '藥局'],
   運動戶外: ['運動', '跑鞋', '球鞋', '慢跑', '健身', '瑜珈', '登山', '露營', '戶外', '馬拉松', '自行車', '球衣'],
   餐飲美食: ['餐廳', '套餐', '漢堡', '披薩', '炸雞', '咖啡', '拿鐵', '美式', '奶茶', '手搖', '飲料', '甜點', '蛋糕', '早餐', '火鍋', '燒肉', '吃到飽', '買一送一', '第二杯', '半價', '內用', '外帶'],
   外送: ['外送', '外帶自取', '運費', '送餐'],
@@ -72,29 +73,35 @@ const KEYWORDS = {
   交通出行: ['高鐵', '台鐵', '計程車', '叫車', '加油', '停車', '機車', '租車', '共享'],
   娛樂影音: ['電影', '影城', '串流', '追劇', '演唱會', '展覽', '遊戲', '點數卡', '電子書', '音樂'],
   綜合電商: ['購物節', '雙11', '雙十一', '雙12', '全站', '全館', '網購'],
-  金融支付: ['信用卡', '刷卡', '回饋', '行動支付', '電子支付', '新戶', '開戶', '首刷', '現金回饋', '分期', '銀行', '數位帳戶', '證券', '保險'],
+  金融支付: ['信用卡', '刷卡', '行動支付', '電子支付', '新戶', '開戶', '首刷', '分期', '銀行', '數位帳戶', '證券', '保險'],
   生活服務: ['電信', '門號', '網路', '課程', '訂閱', '軟體', 'vpn', '資費', '線上課', '補習', '洗衣', '搬家', '清潔服務', '快遞', '雲端'],
   食品生鮮: ['生鮮', '有機', '果物', '肉品', '海鮮', '零食', '咖啡豆'],
 };
 
 const lower = (s) => String(s ?? '').toLowerCase();
 
-/** 依品牌字典判斷 */
-export function brandCategory(merchant) {
-  const m = lower(merchant).replace(/\s+/g, ' ');
+/** 在文字中找最長的品牌字（英文短字要整個字比對，避免 lg、gu、net 誤中） */
+function findBrand(text) {
+  const raw = String(text ?? '').replace(/\s+/g, ' ');
+  const m = raw.toLowerCase();
   if (!m) return null;
   let best = null;
   for (const [cat, list] of Object.entries(BRANDS)) {
     for (const b of list) {
       const i = m.indexOf(b);
-      // 英文短字（lg、gu、hp、net）要整個字比對，避免誤中
       if (i < 0) continue;
       if (/^[a-z0-9&'.+-]{1,3}$/.test(b) && /[a-z0-9]/.test(m[i - 1] || '') + /[a-z0-9]/.test(m[i + b.length] || '') > 0) continue;
-      if (!best || b.length > best.len) best = { cat, len: b.length };
+      if (!best || b.length > best.len) best = { cat, len: b.length, name: raw.slice(i, i + b.length) };
     }
   }
-  return best?.cat || null;
+  return best;
 }
+
+/** 依品牌字典判斷分類 */
+export const brandCategory = (text) => findBrand(text)?.cat || null;
+
+/** 從標題抓出品牌名稱（保留原文大小寫），找不到回傳 null */
+export const brandName = (text) => findBrand(text)?.name || null;
 
 /** 依關鍵字計分判斷 */
 export function keywordCategory(text) {
@@ -114,5 +121,5 @@ export function keywordCategory(text) {
 export function classify({ merchant, title, text, category } = {}) {
   const given = ALIAS[category] || (CATEGORY_KEYS.includes(category) ? category : null);
   if (given && given !== '其他') return given;
-  return brandCategory(merchant) || brandCategory(title) || keywordCategory(title) || keywordCategory(text) || given || '其他';
+  return brandCategory(merchant) || brandCategory(title) || keywordCategory(`${merchant || ''} ${title || ''}`) || keywordCategory(text) || given || '其他';
 }

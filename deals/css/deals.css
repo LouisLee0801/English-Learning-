@@ -122,6 +122,23 @@ details.more[open] > summary { margin-bottom: 8px; }
 .stats b { font-size: 15px; }
 .stats span + span::before { content: '·'; margin: 0 8px; color: var(--muted); }
 
+/* 分類列 */
+.catbar {
+  display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 10px; margin-bottom: 4px;
+  scrollbar-width: thin; -webkit-overflow-scrolling: touch;
+}
+.cat {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 7px 12px; font-size: 14px;
+}
+.cat b { font-size: 12px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cat[aria-pressed='true'] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.cat[aria-pressed='true'] b { color: rgba(255, 255, 255, 0.75); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cat[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #141a26; }
+  :root:not([data-theme='light']) .cat[aria-pressed='true'] b { color: rgba(20, 26, 38, 0.7); }
+}
+
 /* 卡片 */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
 .card {
@@ -141,7 +158,14 @@ details.more[open] > summary { margin-bottom: 8px; }
 .src-cathay { background: var(--cathay) !important; }
 .src-manual { background: var(--manual) !important; }
 .src-mine { background: var(--mine) !important; }
-.dot.src-line, .dot.src-eva, .dot.src-cathay, .dot.src-manual, .dot.src-mine { color: transparent; }
+.src-ptt { background: #1f2937 !important; }
+.src-news { background: #2563eb !important; }
+.src-supertaste { background: #d9480f !important; }
+.src-cosmed { background: #c2255c !important; }
+.src-seven { background: #e8590c !important; }
+.src-burgerking { background: #b5390f !important; }
+.badge.src { background: var(--ink-2); }
+.dot[class*='src-'] { color: transparent; }
 .due { white-space: nowrap; font-weight: 600; }
 .due.ending { color: var(--bad); }
 .due.upcoming { color: var(--warn); }
@@ -159,6 +183,10 @@ details.more[open] > summary { margin-bottom: 8px; }
   border-radius: 6px; padding: 1px 7px; font-size: 12px; font-weight: 700;
 }
 .eq { font-size: 12px; color: var(--muted); }
+.hint { font-size: 12px; color: var(--ink-2); background: var(--surface-2); border-radius: 8px; padding: 6px 8px; }
+.hint a { text-decoration: none; font-weight: 600; }
+.hint a:hover { text-decoration: underline; }
+.hint a.best { color: var(--warn); }
 .conds { margin: 0; padding-left: 18px; font-size: 13px; color: var(--ink-2); }
 .conds li { margin: 1px 0; }
 .card details summary { cursor: pointer; font-size: 13px; color: var(--muted); }

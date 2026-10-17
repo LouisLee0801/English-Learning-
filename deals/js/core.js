@@ -5,6 +5,12 @@ export const SOURCES = {
   eva: { name: '長榮 Mileage Mall', short: '長榮', unit: '哩程' },
   cathay: { name: '國泰 Milesback', short: '國泰', unit: '里數' },
   manual: { name: '精選優惠', short: '精選', unit: '' },
+  ptt: { name: 'PTT 省錢板', short: 'PTT', unit: '' },
+  news: { name: '優惠新聞', short: '新聞', unit: '' },
+  supertaste: { name: '食尚玩家券', short: '食尚', unit: '' },
+  cosmed: { name: '康是美', short: '康是美', unit: '' },
+  seven: { name: '7-ELEVEN', short: '7-11', unit: '' },
+  burgerking: { name: '漢堡王', short: '漢堡王', unit: '' },
   mine: { name: '我的券夾', short: '我的', unit: '' },
 };
 
@@ -101,7 +107,7 @@ export function brandKey(name) {
   return k;
 }
 
-export const defaultFilters = () => ({
+export const defaultFilters = (sort = 'rate') => ({
   q: '',
   sources: [], // 空 = 全部
   kinds: [],
@@ -112,7 +118,7 @@ export const defaultFilters = () => ({
   codeOnly: false,
   noNewbie: false,
   maxMinSpend: null,
-  sort: 'rate',
+  sort,
 });
 
 export function matches(deal, f, today) {
@@ -144,6 +150,8 @@ export function sortDeals(list, sort, today, mileValue) {
     ending: (a, b) => (a.endAt || '9999').localeCompare(b.endAt || '9999'),
     brand: (a, b) => a.merchant.localeCompare(b.merchant, 'zh-Hant'),
     updated: (a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || ''),
+    // 最新上架：論壇／情報站用發文時間，其他用資料更新時間
+    new: (a, b) => (b.publishedAt || b.updatedAt || '').localeCompare(a.publishedAt || a.updatedAt || ''),
   }[sort] || (() => 0);
   return [...list].sort((a, b) => by(a, b) || a.merchant.localeCompare(b.merchant, 'zh-Hant'));
 }
@@ -186,8 +194,8 @@ export function categories(deals) {
 }
 
 /** 篩選條件 ↔ URL hash 查詢字串，方便分享與保留 */
-export function filtersToQuery(f) {
-  const d = defaultFilters();
+export function filtersToQuery(f, sort = 'rate') {
+  const d = defaultFilters(sort);
   const p = new URLSearchParams();
   for (const [k, v] of Object.entries(f)) {
     if (JSON.stringify(v) === JSON.stringify(d[k])) continue;
@@ -196,8 +204,8 @@ export function filtersToQuery(f) {
   return p.toString();
 }
 
-export function queryToFilters(qs) {
-  const f = defaultFilters();
+export function queryToFilters(qs, sort = 'rate') {
+  const f = defaultFilters(sort);
   const p = new URLSearchParams(qs);
   for (const [k, v] of p) {
     if (!(k in f)) continue;

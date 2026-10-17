@@ -125,7 +125,7 @@ function withYear(m, d, ref) {
   return diff < -60 ? ymd(ry + 1, m, d) : cand;
 }
 
-const DATE_RE = /(?:(\d{4})\s*([/.\-年])\s*)?(\d{1,2})\s*([/.月])\s*(\d{1,2})(?:\s*日)?(?:\s*[(（][一二三四五六日天][)）])?/g;
+const DATE_RE = /(?:(\d{3,4})\s*([/.\-年])\s*)?(\d{1,2})\s*([/.月])\s*(\d{1,2})(?:\s*日)?(?:\s*[(（][一二三四五六日天][)）])?/g;
 const SEP = /^\s*(?:\d{1,2}[:：]\d{2})?\s*(?:[~～〜\-–—至到]|起至|起到)\s*$/;
 
 /**
@@ -141,7 +141,8 @@ export function parsePeriod(text, ref) {
     // 排除價格（1.5 元）與時間（12:30）：沒有年份時不接受「.」分隔；前後不能緊接數字
     if (!y && sep === '.') continue;
     if (/\d/.test(t[m.index - 1] || '') || /^\d/.test(t.slice(m.index + m[0].length))) continue;
-    dates.push({ v: y ? ymd(y, mo, d) : withYear(mo, d, ref), start: m.index, end: m.index + m[0].length });
+    const year = y && y < 1911 ? y + 1911 : y; // 民國年（115/9/30）
+    dates.push({ v: year ? ymd(year, mo, d) : withYear(mo, d, ref), start: m.index, end: m.index + m[0].length });
   }
   for (let i = 0; i + 1 < dates.length; i++) {
     const between = t.slice(dates[i].end, dates[i + 1].start);

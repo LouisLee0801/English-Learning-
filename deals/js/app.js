@@ -1,7 +1,8 @@
 import {
   SOURCES, KINDS, REWARD_TYPES, todayStr, status, daysLeft, activeBoost, effectiveRate,
-  defaultFilters, filterDeals, compareByBrand, categories, filtersToQuery, queryToFilters,
+  filterDeals, compareByBrand, filtersToQuery, queryToFilters, brandKey,
 } from './core.js';
+import { CATEGORIES, CATEGORY_KEYS, categoryIcon, classify } from './categories.js';
 import * as wallet from './wallet.js';
 
 const $main = document.getElementById('main');
@@ -25,6 +26,8 @@ async function load() {
     const files = data.meta?.files || ['line.json', 'eva.json', 'cathay.json', 'manual.json'];
     const parts = await Promise.all(files.map((f) => getJson(`data/${f}`).catch(() => ({ deals: [] }))));
     data.deals = parts.flatMap((p) => p.deals || []);
+    for (const d of data.deals) if (!CATEGORY_KEYS.includes(d.category)) d.category = classify(d);
+    buildRebateIndex();
   } catch (e) {
     data.error = e.message;
   }
@@ -32,7 +35,38 @@ async function load() {
   render();
 }
 
-const allDeals = () => [...data.deals, ...wallet.myDeals()];
+const allDeals = () => [...data.deals, ...wallet.myDeals().map((d) => ({ ...d, category: CATEGORY_KEYS.includes(d.category) ? d.category : classify(d) }))];
+
+// 品牌 → 三個回饋平台的最佳回饋，用來在優惠券上提示「結帳先走哪個平台」
+let rebateIndex = new Map();
+let rebateKeys = [];
+function buildRebateIndex() {
+  const rows = compareByBrand(data.deals, todayStr(), wallet.getMileValue());
+  rebateIndex = new Map(rows.map((r) => [r.key, r]));
+  rebateKeys = rows.map((r) => r.key).filter((k) => k.length >= 2);
+}
+function rebatesFor(merchant) {
+  const k = brandKey(merchant);
+  if (!k || k.length < 2) return null;
+  if (rebateIndex.has(k)) return rebateIndex.get(k);
+  // 「全家」對「全家便利」這類：較短的一方是另一方的開頭（中文至少 2 字、英文至少 4 字）
+  const min = /^[a-z0-9]+$/.test(k) ? 4 : 2;
+  if (k.length < min) return null;
+  const hit = rebateKeys.find((x) => x.length >= min && (x.startsWith(k) || k.startsWith(x)));
+  return hit ? rebateIndex.get(hit) : null;
+}
+function portalHint(d, today, mileValue) {
+  if (d.kind === 'rebate') return '';
+  const r = rebatesFor(d.merchant);
+  if (!r) return '';
+  const parts = PORTALS.filter((s) => r.by[s]).map((s) => {
+    const x = r.by[s];
+    const rw = activeBoost(x, today) || x.reward;
+    const txt = rw.type === 'miles' ? `${fmtNum(rw.value)} 哩/百元` : rw.type === 'miles_fixed' ? `每筆 ${fmtNum(rw.value)} 哩` : `${fmtNum(rw.value)}%`;
+    return `<a href="${esc(x.url)}" target="_blank" rel="noopener" class="${r.best === s ? 'best' : ''}">${SOURCES[s].short} ${txt}</a>`;
+  });
+  return `<div class="hint">結帳前先走：${parts.join(' · ')}</div>`;
+}
 
 // ---------- 共用片段 ----------
 function toast(msg) {
@@ -61,7 +95,9 @@ function rewardHtml(r) {
     case 'miles': return `<span class="big">${v}</span><span class="unit">哩 / NT$100</span>`;
     case 'miles_fixed': return `<span class="big">${v}</span><span class="unit">哩 / 每筆</span>`;
     case 'amount':
-      return r.unit === '點' ? `<span class="big">${v}</span><span class="unit">點 LINE POINTS</span>` : `<span class="big">$${v}</span><span class="unit">折抵</span>`;
+      if (r.unit === '點') return `<span class="big">${v}</span><span class="unit">點 LINE POINTS</span>`;
+      if (r.unit === '省') return `<span class="unit">省</span><span class="big">$${v}</span>`;
+      return `<span class="big">$${v}</span><span class="unit">折抵</span>`;
     case 'shipping': return `<span class="big">免運</span>`;
     default: return `<span class="big">${esc(r.text || '優惠')}</span>`;
   }
@@ -72,7 +108,7 @@ function dueHtml(d, today) {
   if (st === 'upcoming') return `<span class="due upcoming">${fmtDate(d.startAt)} 開始</span>`;
   if (st === 'expired') return `<span class="due ending">已過期</span>`;
   const left = daysLeft(d, today);
-  if (left === null) return `<span class="due long">長期</span>`;
+  if (left === null) return `<span class="due long">${d.kind === 'rebate' ? '長期' : '未標示期限'}</span>`;
   if (left === 0) return `<span class="due ending">今天截止</span>`;
   return `<span class="due ${st === 'ending' ? 'ending' : ''}">剩 ${left} 天 · ${fmtDate(d.endAt)}</span>`;
 }
@@ -88,7 +124,7 @@ function card(d, today, mileValue) {
     <div class="card-top">
       <div class="badges">
         <span class="badge src src-${esc(d.source)}">${esc(src.name)}</span>
-        ${d.category ? `<span class="badge">${esc(d.category)}</span>` : ''}
+        ${d.category ? `<span class="badge">${categoryIcon(d.category)} ${esc(d.category)}</span>` : ''}
         ${d.kind && d.kind !== 'rebate' ? `<span class="badge">${esc(KINDS[d.kind] || d.kind)}</span>` : ''}
       </div>
       ${dueHtml(d, today)}
@@ -106,6 +142,7 @@ function card(d, today, mileValue) {
     </div>
     ${d.reward?.type === 'miles' ? `<div class="eq">≈ ${fmtNum(eq)}% 等值回饋（1 哩 = NT$${mileValue}）</div>` : ''}
     ${extra.length ? `<div class="badges">${extra.map((t) => `<span class="badge">${esc(t)}</span>`).join('')}</div>` : ''}
+    ${portalHint(d, today, mileValue)}
     ${conds.length ? `<details><summary>條件 ${conds.length} 項</summary><ul class="conds">${conds.map((c) => `<li>${esc(c)}</li>`).join('')}</ul></details>` : ''}
     <div class="card-actions">
       ${d.code ? `<button class="btn code" data-copy="${esc(d.code)}" title="複製折扣碼">${esc(d.code)} ⧉</button>` : ''}
@@ -126,78 +163,97 @@ function emptyState() {
   return `<div class="empty"><b>沒有符合條件的優惠</b>試著放寬篩選或清除搜尋。</div>`;
 }
 
-// ---------- 全部優惠 ----------
-function viewList(qs) {
-  const f = queryToFilters(qs);
+// ---------- 優惠券／回饋平台（同一個清單元件，兩種模式） ----------
+const PORTALS = ['line', 'eva', 'cathay'];
+const MODES = {
+  coupons: { path: '#/', sort: 'new', pick: (d) => d.kind !== 'rebate', placeholder: '搜尋品牌、優惠、折扣碼…（例：屈臣氏、買一送一、免運）' },
+  portals: { path: '#/portals', sort: 'rate', pick: (d) => d.kind === 'rebate', placeholder: '搜尋商店（例：momo、Agoda、Nike）' },
+};
+const SORTS = {
+  coupons: [['new', '最新上架'], ['ending', '即將到期優先'], ['rate', '折扣高 → 低'], ['brand', '品牌名稱']],
+  portals: [['rate', '回饋高 → 低'], ['ending', '加碼即將結束'], ['brand', '品牌名稱'], ['updated', '最近更新']],
+};
+
+function categoryBar(f, live) {
+  const counts = new Map();
+  for (const d of live) counts.set(d.category, (counts.get(d.category) || 0) + 1);
+  const items = CATEGORIES.filter((c) => counts.get(c.key));
+  return `<div class="catbar" role="tablist" aria-label="分類">
+    <button type="button" class="cat" data-cat="" aria-pressed="${!f.category}"><span>全部</span><b>${live.length}</b></button>
+    ${items.map((c) => `<button type="button" class="cat" data-cat="${esc(c.key)}" aria-pressed="${f.category === c.key}"><span>${c.icon} ${esc(c.key)}</span><b>${counts.get(c.key)}</b></button>`).join('')}
+  </div>`;
+}
+
+function viewList(qs, mode = 'coupons') {
+  const M = MODES[mode];
+  const f = queryToFilters(qs, M.sort);
   const today = todayStr();
   const mileValue = wallet.getMileValue();
-  const deals = allDeals();
+  const deals = allDeals().filter(M.pick);
   const list = filterDeals(deals, f, today, mileValue);
   const live = deals.filter((d) => ['active', 'ending'].includes(status(d, today)));
-  const cats = categories(live);
+  const liveInSources = live.filter((d) => !f.sources.length || f.sources.includes(d.source));
   const counts = {};
   for (const d of live) counts[d.source] = (counts[d.source] || 0) + 1;
+  const sourceKeys = mode === 'portals' ? PORTALS : Object.keys(SOURCES).filter((k) => counts[k] || k === 'mine');
   const on = (arr, v) => arr.includes(v);
   const ending = list.filter((d) => status(d, today) === 'ending').length;
   const boosted = list.filter((d) => activeBoost(d, today)).length;
+  const moreOpen = f.kinds.length || f.rewardTypes.length || f.boostOnly || f.codeOnly || f.noNewbie || f.maxMinSpend != null;
 
   $main.innerHTML = `
     <form class="search" id="q-form" role="search">
-      <input id="q" type="search" placeholder="搜尋品牌、優惠、折扣碼、條件…（例：pchome、免運、新客）" value="${esc(f.q)}" autocomplete="off" />
+      <input id="q" type="search" placeholder="${M.placeholder}" value="${esc(f.q)}" autocomplete="off" />
     </form>
+    ${categoryBar(f, liveInSources)}
     <div class="filters">
       <div class="group"><span class="label">來源</span>
-        ${Object.entries(SOURCES).map(([k, s]) => chip('sources', k, `${s.short} ${counts[k] || 0}`, on(f.sources, k), `src-${k}`)).join('')}
+        ${sourceKeys.map((k) => chip('sources', k, `${SOURCES[k].short} ${counts[k] || 0}`, on(f.sources, k), `src-${k}`)).join('')}
       </div>
       <div class="group"><span class="label">狀態</span>
         <select class="sel" data-field="status">
           ${[['live', '進行中'], ['ending', '7 天內到期'], ['upcoming', '尚未開始'], ['all', '全部（含過期）']].map(([v, l]) => `<option value="${v}" ${f.status === v ? 'selected' : ''}>${l}</option>`).join('')}
         </select>
       </div>
-      <div class="group"><span class="label">分類</span>
-        <select class="sel" data-field="category">
-          <option value="">全部分類</option>
-          ${cats.map((c) => `<option value="${esc(c.name)}" ${f.category === c.name ? 'selected' : ''}>${esc(c.name)}（${c.count}）</option>`).join('')}
-        </select>
-      </div>
     </div>
-    <details class="more" ${f.kinds.length || f.rewardTypes.length || f.boostOnly || f.codeOnly || f.noNewbie || f.maxMinSpend != null ? 'open' : ''}>
+    <details class="more" ${moreOpen ? 'open' : ''}>
       <summary>＋ 更多篩選</summary>
       <div class="filters">
-        <div class="group"><span class="label">類型</span>${Object.entries(KINDS).map(([k, l]) => chip('kinds', k, l, on(f.kinds, k))).join('')}</div>
-        <div class="group"><span class="label">回饋形式</span>${Object.entries(REWARD_TYPES).map(([k, l]) => chip('rewardTypes', k, l, on(f.rewardTypes, k))).join('')}</div>
+        ${mode === 'coupons' ? `<div class="group"><span class="label">類型</span>${['coupon', 'promo'].map((k) => chip('kinds', k, KINDS[k], on(f.kinds, k))).join('')}</div>` : ''}
+        <div class="group"><span class="label">形式</span>${Object.entries(REWARD_TYPES)
+          .filter(([k]) => (mode === 'portals' ? ['percent', 'miles', 'miles_fixed'] : ['amount', 'percent_off', 'shipping', 'gift']).includes(k))
+          .map(([k, l]) => chip('rewardTypes', k, l, on(f.rewardTypes, k)))
+          .join('')}</div>
         <div class="group">
-          ${chip('boostOnly', 'true', '只看加碼中', f.boostOnly)}
-          ${chip('codeOnly', 'true', '有折扣碼', f.codeOnly)}
+          ${mode === 'portals' ? chip('boostOnly', 'true', '只看加碼中', f.boostOnly) : chip('codeOnly', 'true', '有折扣碼', f.codeOnly)}
           ${chip('noNewbie', 'true', '排除新客限定', f.noNewbie)}
         </div>
-        <div class="group"><span class="label">低消上限 NT$</span>
+        ${mode === 'coupons' ? `<div class="group"><span class="label">低消上限 NT$</span>
           <input class="sel" type="number" min="0" step="100" inputmode="numeric" data-field="maxMinSpend" value="${f.maxMinSpend ?? ''}" placeholder="不限" />
-        </div>
-        <div class="group"><span class="label">1 哩價值 NT$</span>
+        </div>` : `<div class="group"><span class="label">1 哩價值 NT$</span>
           <input class="sel" type="number" min="0.1" step="0.05" inputmode="decimal" id="mile-value" value="${mileValue}" />
-        </div>
+        </div>`}
       </div>
     </details>
     <div class="toolbar">
       <div class="stats"><span><b class="num">${list.length}</b> 筆</span>${boosted ? `<span>加碼中 ${boosted}</span>` : ''}${ending ? `<span>7 天內到期 ${ending}</span>` : ''}${data.meta?.generatedAt ? `<span class="muted">更新於 ${esc(fmtTime(data.meta.generatedAt))}</span>` : ''}</div>
       <div class="row">
         <select class="sel" data-field="sort" aria-label="排序">
-          ${[['rate', '回饋高 → 低'], ['ending', '即將到期優先'], ['brand', '品牌名稱'], ['updated', '最近更新']].map(([v, l]) => `<option value="${v}" ${f.sort === v ? 'selected' : ''}>${l}</option>`).join('')}
+          ${SORTS[mode].map(([v, l]) => `<option value="${v}" ${f.sort === v ? 'selected' : ''}>${l}</option>`).join('')}
         </select>
-        ${filtersToQuery(f) ? `<a class="btn" href="#/">清除篩選</a>` : ''}
+        ${filtersToQuery(f, M.sort) ? `<a class="btn" href="${M.path}">清除篩選</a>` : ''}
       </div>
     </div>
     ${list.length ? `<div class="grid">${list.slice(0, shown).map((d) => card(d, today, mileValue)).join('')}</div>` : emptyState()}
     ${list.length > shown ? `<button class="btn more-btn" id="more">再顯示 ${Math.min(PAGE, list.length - shown)} 筆（共 ${list.length}）</button>` : ''}
   `;
 
+  const rerender = (q) => viewList(q, mode);
   const update = (patch) => {
     shown = PAGE;
-    const next = { ...f, ...patch };
-    const q = filtersToQuery(next);
-    history.replaceState(null, '', q ? `#/?${q}` : '#/');
-    viewList(q);
+    const q = filtersToQuery({ ...f, ...patch }, M.sort);
+    history.replaceState(null, '', q ? `${M.path}?${q}` : M.path);
+    rerender(q);
   };
   const qInput = document.getElementById('q');
   let timer;
@@ -212,6 +268,7 @@ function viewList(qs) {
     }, 250);
   });
   document.getElementById('q-form').addEventListener('submit', (e) => e.preventDefault());
+  $main.querySelectorAll('.cat').forEach((b) => b.addEventListener('click', () => update({ category: b.dataset.cat })));
   $main.querySelectorAll('.chip').forEach((b) =>
     b.addEventListener('click', () => {
       const { group, value } = b.dataset;
@@ -226,13 +283,13 @@ function viewList(qs) {
       update({ [k]: k === 'maxMinSpend' ? (el.value === '' ? null : Number(el.value)) : el.value });
     }),
   );
-  document.getElementById('mile-value').addEventListener('change', (e) => {
+  document.getElementById('mile-value')?.addEventListener('change', (e) => {
     wallet.setMileValue(Number(e.target.value));
-    viewList(filtersToQuery(f));
+    rerender(filtersToQuery(f, M.sort));
   });
   document.getElementById('more')?.addEventListener('click', () => {
     shown += PAGE;
-    viewList(filtersToQuery(f));
+    rerender(filtersToQuery(f, M.sort));
   });
 }
 
@@ -422,12 +479,13 @@ function viewStatus() {
 // ---------- 路由 ----------
 function render() {
   const [path, qs = ''] = location.hash.replace(/^#/, '').split('?');
-  const route = path.replace(/^\//, '') || 'list';
+  const route = path.replace(/^\//, '') || 'coupons';
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === route));
   if (route === 'compare') viewCompare(qs);
   else if (route === 'wallet') viewWallet(qs);
   else if (route === 'status') viewStatus();
-  else viewList(qs);
+  else if (route === 'portals') viewList(qs, 'portals');
+  else viewList(qs, 'coupons');
 }
 
 $main.addEventListener('click', (e) => {

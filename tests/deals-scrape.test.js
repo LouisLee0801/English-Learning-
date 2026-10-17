@@ -138,3 +138,45 @@ test('activity period parser handles common Taiwanese date wording', async () =>
   ];
   for (const [t, s, e] of cases) assert.deepEqual(parsePeriod(t, ref), { startAt: s, endAt: e }, t);
 });
+
+test('coupon sources: PTT index, supertaste, Cosmed, RSS', async () => {
+  const C = await import('../scripts/deals/lib/coupons.mjs');
+  const { classify } = await import('../deals/js/categories.js');
+  const ptt = C.parsePttIndex(
+    `<div class="r-ent"><div class="nrec"><span class="hl f2">12</span></div><div class="title"><a href="/bbs/Lifeismoney/M.1792200000.A.1AB.html">[情報] 全家 咖啡第二杯半價 10/17-10/20</a></div><div class="meta"><div class="date">10/17</div></div></div>
+     <div class="r-ent"><div class="nrec"></div><div class="title"><a href="/bbs/Lifeismoney/M.1792100000.A.2CD.html">[公告] 板規</a></div><div class="meta"><div class="date">10/16</div></div></div>
+     <div class="r-ent"><div class="nrec"></div><div class="title">(本文已被刪除)</div><div class="meta"><div class="date">10/16</div></div></div>
+     <a class="btn wide" href="/bbs/Lifeismoney/index4002.html">‹ 上頁</a>`,
+    '2026-10-17',
+  );
+  assert.equal(ptt.posts.length, 2);
+  assert.equal(ptt.prev, 'https://www.ptt.cc/bbs/Lifeismoney/index4002.html');
+  const d = C.pttDeal(ptt.posts[0]);
+  assert.equal(d.merchant, '全家');
+  assert.equal(classify(d), '超商量販');
+  assert.deepEqual([d.startAt, d.endAt], ['2026-10-17', '2026-10-20']);
+  assert.deepEqual(d.tags, ['推 12']);
+  assert.equal(C.pttDeal(ptt.posts[1]), null); // 公告不收
+
+  const st = C.supertasteDeal({ id: 14376, flagship: '免費送果香氣泡飲', description: '現省79元', start_time: '2026-10-13T10:00:00+08:00', end_time: '2026-11-01T23:59:00+08:00', is_exclusive: true, category: { name: '這鍋超有料' }, store: { name: '賴山嶼麻辣燙', area: '連鎖門市' } });
+  assert.deepEqual(st.reward, { type: 'amount', value: 79, unit: '省', text: '現省79元' });
+  assert.equal(classify(st), '餐飲美食');
+  assert.deepEqual([st.startAt, st.endAt], ['2026-10-13', '2026-11-01']);
+
+  const cos = C.parseCosmedNews(`<li class="list--1"><div class="tab-box"><span>2026-10-12</span><div class="tab tab--1" runat="server">門市活動</div></div><p>10/12-10/22icash Pay滿$2,000送100點OPENPOINT</p><a href="news_detail.aspx?id=3120"></a></li>
+    <li class="list--1"><div class="tab-box"><span>2026-09-23</span><div class="tab tab--1">門市活動</div></div><p>THE ORDINARY限店販售門市</p><a href="news_detail.aspx?id=3100"></a></li>`);
+  const cd = cos.map(C.cosmedDeal).filter(Boolean);
+  assert.equal(cd.length, 1);
+  assert.deepEqual([cd[0].startAt, cd[0].endAt, cd[0].category, cd[0].url], ['2026-10-12', '2026-10-22', '藥妝美妝', 'https://www.cosmed.com.tw/news_detail.aspx?id=3120']);
+
+  const rss = C.parseRss(`<rss><channel><item><title>屈臣氏會員日全館85折 10/20起連3天 - ETtoday</title><link>https://news.google.com/rss/articles/abc</link><guid>abc</guid><pubDate>Fri, 16 Oct 2026 02:00:00 GMT</pubDate><source url="https://www.ettoday.net">ETtoday</source></item>
+    <item><title>某公司第三季營收創新高 - 經濟日報</title><link>x</link><guid>x</guid><pubDate>Fri, 16 Oct 2026 02:00:00 GMT</pubDate><source url="y">經濟日報</source></item></rss>`);
+  const nd = rss.map(C.newsDeal).filter(Boolean);
+  assert.equal(nd.length, 1);
+  assert.equal(nd[0].title, '屈臣氏會員日全館85折 10/20起連3天');
+  assert.equal(nd[0].merchant, '屈臣氏');
+  assert.equal(classify(nd[0]), '藥妝美妝');
+  assert.deepEqual(nd[0].reward, { type: 'percent_off', value: 15, text: '85折' });
+  assert.equal(nd[0].endAt, '2026-10-23'); // 無明確迄日 → 發文日 + 7 天
+  assert.ok(nd[0].tags.includes('期限見原文'));
+});

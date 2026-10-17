@@ -1,18 +1,21 @@
-// 每日排程：抓三個回饋平台，輸出 deals/data/<source>.json 與 meta.json。
+// 每日排程：抓回饋平台與全網優惠來源，輸出 deals/data/<source>.json 與 meta.json。
 // 某平台失敗時保留上一次成功的檔案，只在 meta 標記錯誤。
-// 用法：node scripts/deals/scrape.mjs [line|eva|cathay ...]
+// 用法：node scripts/deals/scrape.mjs [來源名稱 ...]（不指定 = 全部）
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { openBrowser } from './lib/browser.mjs';
 import { validateDeal } from './lib/normalize.mjs';
 import { getFx } from './lib/fx.mjs';
+import { classify } from '../../deals/js/categories.js';
 import line from './adapters/line.mjs';
 import eva from './adapters/eva.mjs';
 import cathay from './adapters/cathay.mjs';
+import * as couponSources from './adapters/coupon-sources.mjs';
 
 const DIR = 'deals/data';
-const ADAPTERS = { line, eva, cathay };
-const FILES = ['line.json', 'eva.json', 'cathay.json', 'manual.json'];
+// 回饋平台（結帳入口）＋ 全網優惠券／優惠情報
+const ADAPTERS = { line, eva, cathay, ...couponSources };
+const FILES = [...Object.keys(ADAPTERS).map((k) => `${k}.json`), 'manual.json'];
 
 const readJson = async (p, fallback) => {
   try {
@@ -53,6 +56,7 @@ try {
       const seen = new Set();
       const deals = [];
       for (const d of raw) {
+        d.category = classify(d); // 各來源分類統一成網站的分類
         const errs = validateDeal(d);
         if (errs.length) {
           console.warn(`[${name}] skip ${d.id || d.merchant}: ${errs.join(', ')}`);
