@@ -1,0 +1,54 @@
+# shopback discovery 2026-10-17T03:06:21.206Z
+
+- https://www.shopback.com.tw/robots.txt → 200
+- [00-www-shopback-com-tw] https://www.shopback.com.tw/ → status 200 final https://www.shopback.com.tw/ title "網路購物返利+現金回饋平台｜折價券/促銷/好康優惠－ShopBack" html 682955B json 14 links 40
+  - json 200 90B https://www.shopback.com.tw/api/members/experiment?target=new_signup_enabled_pre_login 
+  - json 200 76B https://www.shopback.com.tw/api/auth/signup/config?version=5850000&variant=treatment 
+  - json 200 3842B https://www.googleadservices.com/pagead/conversion/949662838/?random=1792206384224&cv=11&fst=1792206384224&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143 
+  - json 200 31B https://www.shopback.com.tw/sw-manifest.json 
+  - json 200 58B https://www.shopback.com.tw/api/auth/signin/config?version=4010000 
+  - json 200 218B https://google.com/.well-known/web-identity 
+  - json 200 1386B https://accounts.google.com/gsi/fedcm.json 
+  - json 200 62B https://accounts.google.com/gsi/fedcm/listaccounts 
+  - json 201 44752B https://sdk.iad-05.braze.com/api/v3/data/ {"respond_with":{"triggers":true,"config":{"config_time":0}},"events":[{"name":"ss","time":1792206384.601,"data":{},"session_id":"70bc6fcc-9e48-4265-b5eb-f9e098
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"503378e5-2123-4bdd-a6e2-c989c6928c8c","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"595b40d4-6f38-4d67-8f9a-2d1271d39442","event_type":"Web.Launch","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"www.s
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"97229e7c-dd7e-4ba7-a44b-37868edcc86f","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"w
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"6a1bca28-3ea5-4932-b8ab-7de48ef6d4af","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events/bulk {"data":[{"event_uuid":"3cb16d38-4b44-4461-9f87-8fcdc53d9a66","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","d
+- [01-www-shopback-com-tw-all-stores] https://www.shopback.com.tw/all-stores → status 200 final https://www.shopback.com.tw/all--stores title "全部可賺取現金回饋的網購商家和品牌－ShopBack" html 1120853B json 11 links 93
+  - json 200 31B https://www.shopback.com.tw/sw-manifest.json 
+  - json 200 58B https://www.shopback.com.tw/api/auth/signin/config?version=4010000 
+  - json 200 90B https://www.shopback.com.tw/api/members/experiment?target=new_signup_enabled_pre_login 
+  - json 200 3684B https://www.googleadservices.com/pagead/conversion/949662838/?random=1792206394367&cv=11&fst=1792206394367&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143 
+  - json 200 76B https://www.shopback.com.tw/api/auth/signup/config?version=5850000&variant=treatment 
+  - json 201 2B https://sdk.iad-05.braze.com/api/v3/data/ {"respond_with":{"config":{"config_time":1792141592}},"events":[{"name":"ce","time":1792206385.607,"data":{"n":"Web.Launch","p":{"browser_name":"Chrome","domain
+  - json 200 855B https://conversation-gateway.lv3.ai/api/chat-bff/config 
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"a9bc10f4-7d63-434e-9618-dcb80a4b8158","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"15088d65-61c2-45fd-a90e-feb4727df394","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"6a39308a-8f0f-4730-9cca-09c94ddd84b9","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"w
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events/bulk {"data":[{"event_uuid":"c4d26060-dcd9-4fc8-a3f9-c90c8ebd6f58","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","d
+- [02-www-shopback-com-tw-online-cashback-how-it-works] https://www.shopback.com.tw/online-cashback-how-it-works → status 200 final https://www.shopback.com.tw/online-cashback-how-it-works title "ShopBack線上購物新手懶人包！如何幫您購物省更多－ShopBack" html 482333B json 11 links 35
+  - json 200 31B https://www.shopback.com.tw/sw-manifest.json 
+  - json 200 90B https://www.shopback.com.tw/api/members/experiment?target=new_signup_enabled_pre_login 
+  - json 200 58B https://www.shopback.com.tw/api/auth/signin/config?version=4010000 
+  - json 200 855B https://conversation-gateway.lv3.ai/api/chat-bff/config 
+  - json 200 3810B https://www.googleadservices.com/pagead/conversion/949662838/?random=1792206402842&cv=11&fst=1792206402842&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143 
+  - json 200 76B https://www.shopback.com.tw/api/auth/signup/config?version=5850000&variant=treatment 
+  - json 201 2B https://sdk.iad-05.braze.com/api/v3/data/ {"respond_with":{"config":{"config_time":1792141592}},"events":[{"name":"ce","time":1792206396.022,"data":{"n":"Web.Launch","p":{"browser_name":"Chrome Headless
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"f150fef3-6108-4961-9134-68a292aeca52","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"51fac22b-5fc2-4edc-8857-5813dafb5f02","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"w
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"b7d7a83c-0a95-4433-b0a8-26965b13e4e4","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events/bulk {"data":[{"event_uuid":"97286ccf-a1c2-4e88-91ac-f443e95d1dbd","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","d
+- [03-www-shopback-com-tw-how-shopback-works] https://www.shopback.com.tw/how-shopback-works → status 200 final https://www.shopback.com.tw/how-shopback-works title "聰明消費，萬事ShopBack－馬上認識ShopBack開始購物賺現金" html 452659B json 11 links 31
+  - json 200 31B https://www.shopback.com.tw/sw-manifest.json 
+  - json 200 58B https://www.shopback.com.tw/api/auth/signin/config?version=4010000 
+  - json 200 90B https://www.shopback.com.tw/api/members/experiment?target=new_signup_enabled_pre_login 
+  - json 200 855B https://conversation-gateway.lv3.ai/api/chat-bff/config 
+  - json 200 3760B https://www.googleadservices.com/pagead/conversion/949662838/?random=1792206409922&cv=11&fst=1792206409922&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143 
+  - json 200 76B https://www.shopback.com.tw/api/auth/signup/config?version=5850000&variant=treatment 
+  - json 201 2B https://sdk.iad-05.braze.com/api/v3/data/ {"respond_with":{"config":{"config_time":1792141592}},"events":[{"name":"ce","time":1792206404.302,"data":{"n":"Web.Launch","p":{"browser_name":"Chrome Headless
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"83264a60-2322-4a72-90d8-bdeacc0d6954","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"c6b876de-e8da-452f-bf18-78109c276ffc","event_type":"Web.View.Screen","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events {"event_uuid":"c8a3a3ef-4b41-4c7e-ae52-465bc4ff1cb0","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","domain":"w
+  - json 200 16B https://tracking-aps1.shopback.com/client/v1/web_events/bulk {"data":[{"event_uuid":"624c2c54-dbb1-4226-aff0-990393c4ab16","event_type":"Web.Impression","profile_id":"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840","d

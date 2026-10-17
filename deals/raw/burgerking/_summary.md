@@ -1,0 +1,58 @@
+# burgerking discovery 2026-10-17T03:07:20.594Z
+
+- https://www.burgerking.com.tw/robots.txt → 404
+- [00-www-burgerking-com-tw] https://www.burgerking.com.tw/ → status 200 final https://www.burgerking.com.tw/ title "漢堡王首頁 | 線上點餐 - 預訂外帶外送" html 1722424B json 23 links 133
+  - json 200 348B https://ps-weather-service-fh74i6wtsa-de.a.run.app/weather/bk/v1/now 
+  - json 200 29733B https://aiqua-user.c.appier.net/web-inapp/?appId=658146c7c862b0c200ba&firstTime=1&wUserId=5085149513348485&versionNo=0 
+  - json 200 198B https://pixel-api.scupio.com/v1/event?cb=0.2611406772473024 browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2F&browser[referrer]=&browser[is_in_iframe]=false&browser[ga_id]=&browser[first_pa
+  - json 200 216271B https://www.burgerking.com.tw/AJhandler/frontierHandler.aspx {"what":"getDeliveryInfo","args":520000,"list":{"type":21},"args2":""}
+  - json 200 3082B https://www.googleadservices.com/pagead/conversion/529200795/?random=1792206444303&cv=11&fst=1792206444303&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0& 
+  - json 200 10B https://anylist.c.appier.net/r2?country=US&enable_cookie_sync=1&url=https%3A%2F%2Fwww.burgerking.com.tw%2F&referer=&ssid=wvYg0LHI_2mZkC7YNI4vnw&sessidx=1&siteuid=w4guXzJx84U9Ge-e&appier_utmz={}&_t=179 
+  - json 200 48B https://dmp.eland-tech.com/dmpreceiver/getEdmpUuid?url=https%3A%2F%2Fwww.burgerking.com.tw%2F 
+  - json 200 2B https://trace.popin.cc/api/bidder/track/pixel/pageview?tn=f9f2b1ef23fe2759c2cad0953029a94b&spd=&mgd=b93f37405f154db2ad776785924c12a8&ptd=&tkd=&acd=35593&cpid=&v=244089662 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 36B https://api.quantumgraph.com/web/cm/?from=dback&qaid=8v2HLJnGXqNIA2oOdbvI2Q&noredir=1 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 200 47B https://aiqua-sdk.c.appier.net/aiqua/web/658146c7c862b0c200ba/data/ {"profiles":{"qg_qaid":"8v2HLJnGXqNIA2oOdbvI2Q"},"wUserId":"5085149513348485","device":"web","cv":"4.28.1-459edf5-514-production_gcp_jp0","sdkPresence":1,"devic
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 200 2970B https://recommendation.jp.aiqua.io/api/v1.0/app/658146c7c862b0c200ba/scenarios/KeBxQNa6vwbiysXaFXeyEU/recommendation?agent=web {"uid":"5085149513348485","num_items":"6","events":{"recentEvents":[]}}
+  - json 200 884B https://pixel-api.scupio.com/v0/event?cb=0.7963798853632532 advertiser_id=1630-13CH046Y1GC8220&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2F&browser[referrer]=&browser[is_in_iframe]=fal
+  - json 200 884B https://pixel-api.scupio.com/v0/event?cb=0.210680103761397 advertiser_id=1783-13P1647Q1MCE670&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2F&browser[referrer]=&browser[is_in_iframe]=fal
+  - json 200 884B https://pixel-api.scupio.com/v0/event?cb=0.8300810059024819 advertiser_id=1814-12WH844P1RCAJ9R&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2F&browser[referrer]=&browser[is_in_iframe]=fal
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 200 47B https://aiqua-sdk.c.appier.net/aiqua/web/658146c7c862b0c200ba/data/ {"events":[{"initiator":"SDK","eventName":"visited","qgts":1792206443,"uuid":"f39fefc8-3936-441f-a60d-29515e90ee14","tabId":"31d28468-0b72-48bb-89f7-6c799947b66
+- [01-www-burgerking-com-tw-category-1] https://www.burgerking.com.tw/category/1 → status 200 final https://www.burgerking.com.tw/category/1 title "限時新品" html 612553B json 12 links 112
+  - json 200 216271B https://www.burgerking.com.tw/AJhandler/frontierHandler.aspx {"what":"getDeliveryInfo","args":520000,"list":{"type":21},"args2":""}
+  - json 200 333B https://anylist.c.appier.net/r2?country=US&enable_cookie_sync=1&url=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F1&referer=&ssid=wvYg0LHI_2mZkC7YNI4vnw&sessidx=4&siteuid=w4guXzJx84U9Ge-e&appier_ut 
+  - json 200 2800B https://www.googleadservices.com/pagead/conversion/529200795/?random=1792206452663&cv=11&fst=1792206452663&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0& 
+  - json 200 198B https://pixel-api.scupio.com/v1/event?cb=0.032088477793461356 browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F1&browser[referrer]=&browser[is_in_iframe]=false&browser[ga_id]=&brow
+  - json 200 2B https://trace.popin.cc/api/bidder/track/pixel/pageview?tn=f9f2b1ef23fe2759c2cad0953029a94b&spd=&mgd=b93f37405f154db2ad776785924c12a8&ptd=&tkd=&acd=35593&cpid=&v=244089662 
+  - json 200 29733B https://aiqua-user.c.appier.net/web-inapp/?appId=658146c7c862b0c200ba&firstTime=1&wUserId=5085149513348485&versionNo=0 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.42688948762155576 advertiser_id=1630-13CH046Y1GC8220&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F1&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.4430809887372734 advertiser_id=1783-13P1647Q1MCE670&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F1&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.2377824936888694 advertiser_id=1814-12WH844P1RCAJ9R&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F1&browser[referrer]=&browser[is_in
+  - json 200 47B https://aiqua-sdk.c.appier.net/aiqua/web/658146c7c862b0c200ba/data/ {"events":[{"initiator":"SDK","eventName":"incognito_browsing","qgts":1792206453,"uuid":"a93d5f76-7bee-494a-a3af-4f37a80155cc","tabId":"16970d9a-552e-4633-9c5e-
+- [02-www-burgerking-com-tw-category-6] https://www.burgerking.com.tw/category/6 → status 200 final https://www.burgerking.com.tw/category/6 title "優惠券" html 625728B json 17 links 132
+  - json 200 216271B https://www.burgerking.com.tw/AJhandler/frontierHandler.aspx {"what":"getDeliveryInfo","args":520000,"list":{"type":21},"args2":""}
+  - json 200 280B https://anylist.c.appier.net/r2?country=US&enable_cookie_sync=1&url=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&referer=&ssid=wvYg0LHI_2mZkC7YNI4vnw&sessidx=8&siteuid=w4guXzJx84U9Ge-e&appier_ut 
+  - json 200 2842B https://www.googleadservices.com/pagead/conversion/529200795/?random=1792206459984&cv=11&fst=1792206459984&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1za200xecxf1&gcd=13l3l3l3l1l1&dma=0& 
+  - json 200 198B https://pixel-api.scupio.com/v1/event?cb=0.43368913621372596 browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in_iframe]=false&browser[ga_id]=&brow
+  - json 200 2B https://trace.popin.cc/api/bidder/track/pixel/pageview?tn=f9f2b1ef23fe2759c2cad0953029a94b&spd=&mgd=b93f37405f154db2ad776785924c12a8&ptd=&tkd=&acd=35593&cpid=&v=244089662 
+  - json 200 29733B https://aiqua-user.c.appier.net/web-inapp/?appId=658146c7c862b0c200ba&firstTime=1&wUserId=5085149513348485&versionNo=0 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 201 2B https://api.giosg.com/events/v2/store/external 
+  - json 200 54B https://log.popin.cc/discovery/trace?type=readlogs eyJ0ZF92ZXJzaW9uIjoiMS43LjEiLCJ0ZF9jbGllbnRfaWQiOiI1OTVmMzk1NC01ZDBkLTQ1ODQtYmY4Ni1iMDc4ZmFjZjA0ZDIiLCJ0ZF9jaGFyc2V0IjoidXRmLTgiLCJ0ZF9sYW5ndWFnZSI6InpoLXR3Iiwi
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.08211379938843089 advertiser_id=1630-13CH046Y1GC8220&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.9292643496399907 advertiser_id=1783-13P1647Q1MCE670&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.1415260866531135 advertiser_id=1814-12WH844P1RCAJ9R&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.5709938709476 advertiser_id=1630-13CH046Y1GC8220&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.14297092527643207 advertiser_id=1783-13P1647Q1MCE670&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 40B https://pixel-api.scupio.com/v0/event?cb=0.6111749609712306 advertiser_id=1814-12WH844P1RCAJ9R&browser[pixel_version]=3.2.0&browser[url]=https%3A%2F%2Fwww.burgerking.com.tw%2Fcategory%2F6&browser[referrer]=&browser[is_in
+  - json 200 47B https://aiqua-sdk.c.appier.net/aiqua/web/658146c7c862b0c200ba/data/ {"events":[{"initiator":"SDK","eventName":"page_viewed","qgts":1792206460,"uuid":"c1b980a6-a9df-4f6e-ae79-7362b20a07dd","tabId":"0f81c767-eb3f-4f08-9f4f-57a1a9b
+  - json 200 54B https://log.popin.cc/discovery/trace?type=readlogs eyJ0ZF92ZXJzaW9uIjoiMS43LjEiLCJ0ZF9jbGllbnRfaWQiOiI1OTVmMzk1NC01ZDBkLTQ1ODQtYmY4Ni1iMDc4ZmFjZjA0ZDIiLCJ0ZF9jaGFyc2V0IjoidXRmLTgiLCJ0ZF9sYW5ndWFnZSI6InpoLXR3Iiwi

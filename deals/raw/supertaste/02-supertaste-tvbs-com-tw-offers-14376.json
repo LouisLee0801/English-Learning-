@@ -1,0 +1,416 @@
+{
+ "url": "https://supertaste.tvbs.com.tw/offers/14376/",
+ "status": 200,
+ "error": null,
+ "json": [
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/identity",
+   "status": 200,
+   "bytes": 109,
+   "body": "{\"data\":{\"cora_id\":\"9c83f7f0-9e03-453c-a593-8f01d184fb45\",\"is_new\":false,\"source\":\"existing\"},\"success\":true}"
+  },
+  {
+   "url": "https://r.skimresources.com/api/",
+   "status": 200,
+   "request": "data=%7B%22pubcode%22%3A%22298146X1785686%22%2C%22page%22%3A%22https%3A%2F%2Fsupertaste.tvbs.com.tw%2Foffers%2F14376%22%2C%22domains%22%3A%5B%22apps.apple.com%22%2C%22play.google.com%22%2C%22forms.gle%22%2C%22schedule.tvbs.com.tw%22%2C%22member.tvbs.com.tw%22%2C%22starvision.tvbs.com.tw%22%2C%22facebook.com%22%2C%22line.me%22%2C%22instagram.com%22%2C%22news.tvbs.com.tw%22%5D%2C%22link_swapping%22%3Atrue%7D",
+   "bytes": 208,
+   "body": "{\"csp\":null,\"country_state\":\"VA\",\"consent\":null,\"ts\":1792206370,\"link_swapping_domains\":[],\"bv\":\"4.9.0-1450820b\",\"merchant_domains\":[\"apps.apple.com\",\"instagram.com\"],\"country\":\"US\",\"sessid\":null,\"guid\":null}"
+  },
+  {
+   "url": "https://supertaste.tvbs.com.tw/api/auth/session",
+   "status": 200,
+   "bytes": 37,
+   "body": "{\"user\":null,\"isAuthenticated\":false}"
+  },
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/campaigns/manifest?brand=supertaste&write_key=3735a22dd4ad871a998ca0ad714bc43837b1e0b8ee0f7d2df2c2f358e34091bd",
+   "status": 200,
+   "bytes": 46,
+   "body": "{\"version\":\"e3b0c44298fc1c14\",\"page_rules\":[]}"
+  },
+  {
+   "url": "https://ls.skimresources.com/api",
+   "status": 200,
+   "request": "{\"publisher_id\":298146,\"publisher_domain_id\":1785686,\"page_url\":\"https://supertaste.tvbs.com.tw/offers/14376\",\"urls\":[\"https://apps.apple.com/app/apple-store/id1508974479?pt=216163&ct=web_navigation&mt=8\",\"https://www.instagram.com/supertastesupertaste/\"]}",
+   "bytes": 2,
+   "body": "{}"
+  },
+  {
+   "url": "https://identity.mparticle.com/v1/identify",
+   "status": 200,
+   "request": "{\"client_sdk\":{\"platform\":\"web\",\"sdk_vendor\":\"mparticle\",\"sdk_version\":\"2.81.0\"},\"context\":null,\"environment\":\"production\",\"request_id\":\"162cdff2-3017-4c62-ab23-7e6163168458\",\"request_timestamp_ms\":1792206370165,\"previous_mpid\":\"682377096044153669\",\"known_identities\":{\"other7\":\"1219378773.1792206355\",\"device_application_stamp\":\"d0a242fc-e74a-4444-bc6f-36cc8d1cfbd8\"}}",
+   "bytes": 174,
+   "body": "{\"context\":null,\"matched_identities\":{\"device_application_stamp\":\"d0a242fc-e74a-4444-bc6f-36cc8d1cfbd8\"},\"is_ephemeral\":true,\"mpid\":\"682377096044153669\",\"is_logged_in\":false}"
+  },
+  {
+   "url": "https://aryuder.api.useinsider.com/v3/status",
+   "status": 200,
+   "request": "{\"p\":\"tvbssupertaste\",\"u\":\"1792206356513000cdd2115.c528acc6\",\"c\":[{\"c\":252,\"j\":35},{\"c\":253,\"j\":35},{\"c\":386,\"j\":42},{\"c\":387,\"j\":42},{\"c\":383,\"j\":43},{\"c\":379,\"j\":50}]}",
+   "bytes": 74,
+   "body": "{\"252\":false,\"253\":false,\"379\":false,\"383\":false,\"386\":false,\"387\":false}\n"
+  },
+  {
+   "url": "https://jssdks.mparticle.com/v3/JS/au1-4f7a82b928941d489365dec2dec2815c/events",
+   "status": 202,
+   "request": "{\"source_request_id\":\"1ddd7b9f-ed7f-41df-d81b-367358f1494d\",\"mpid\":\"682377096044153669\",\"timestamp_unixtime_ms\":1792206370791,\"environment\":\"production\",\"events\":[{\"event_type\":\"application_state_transition\",\"data\":{\"application_transition_type\":\"application_initialized\",\"is_first_run\":false,\"is_upgrade\":false,\"launch_referral\":\"https://supertaste.tvbs.com.tw/offers/14376\",\"timestamp_unixtime_ms\":1792206370171,\"session_uuid\":\"3EA9DA77-B3BC-40DC-E8FD-66F1F60AB9FB\",\"session_start_unixtime_ms\":1792206355559,\"custom_attributes\":null,\"location\":null,\"source_message_id\":\"7a109b3f-ee1f-4429-be6b-6464fc4e89fd\",\"active_time_on_site_ms\":5538,\"total_time_on_site_ms\":14612,\"page_url\":\"https://supertaste.tvbs.com.tw/offers/14376\"}},{\"event_type\":\"user_identity_change\",\"data\":{\"new\":{\"identity_type\":\"other_id_7\",\"identity\":\"1219378773.1792206355\",\"timestamp_unixtime_ms\":1792206370790,\"created_this_batch\":true},\"old\":{\"identity_type\":\"other_id_7\",\"identity\":null,\"timestamp_unixtime_ms\":1792206370790,\"created_this_batch\":false},\"timestamp_unixtime_ms\":1792206370790,\"session_uuid\":\"3EA9DA77-B3BC-40DC-E8FD-66F1F60AB9FB\",\"session_start_unixtime_ms\":1792206355559,\"custom_attributes\":null,\"location\":null,\"source_message_id\":\"d7a1df80-8f9c-4d29-4f10-d81d7d26e1ce\",\"active_time_on_site_ms\":6157,\"total_time_on_site_ms\":15231,\"page_url\":\"https://supertaste.tvbs.com.tw/offers/14376\"}}],\"mp_deviceid\":\"d0a242fc-e74a-4444-bc6f-36cc8d1cfbd8\",\"sdk_version\":\"2.81.0\",\"application_info\":{\"application_name\":\"Supertaste\"},\"device_info\":{\"platform\":\"web\",\"screen_width\":1366,\"screen_height\":900},\"user_attributes\":{},\"user_identities\":{\"other_id_7\":\"1219378773.1792206355\"},\"consent_state\":null,\"integration_attributes\":{},\"context\":{\"data_plan\":{\"plan_id\":\"tvbs_plan_v2\"}}}",
+   "bytes": 40,
+   "body": "{\"mpid\":\"682377096044153669\",\"Store\":{}}"
+  },
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/track",
+   "status": 202,
+   "request": "{\"events\":[{\"event_type\":\"page_view\",\"properties\":{\"screen_width\":1366,\"screen_height\":900,\"viewport_width\":1366,\"viewport_height\":900,\"language\":\"zh-TW\",\"timezone\":\"Asia/Taipei\",\"page_location\":\"https://supertaste.tvbs.com.tw/offers/14376\",\"page_title\":\"免費送果香氣泡飲｜賴山嶼麻辣燙｜獨家優惠｜食尚玩家\",\"page_referrer\":\"\",\"page_path\":\"/offers/14376\",\"content_url\":\"https://supertaste.tvbs.com.tw/offers/14376\",\"content_title\":\"免費送果香氣泡飲｜賴山嶼麻辣燙｜獨家優惠｜食尚玩家\",\"content_id\":\"14376\",\"_content_source\":{\"content_url\":2,\"content_title\":2,\"content_id\":2}},\"timestamp\":\"2026-10-17T03:06:10.114Z\",\"event_id\":\"80fb12f3-191f-4232-8bb3-b4799b219427\",\"retry_count\":0,\"cora_id\":\"9c83f7f0-9e03-453c-a593-8f01d184fb45\",\"session_id\":\"37d5b448-8cbf-4487-a063-dfbda200285f\",\"platform\":\"web\",\"brand\":\"supertaste\"}]}",
+   "bytes": 55,
+   "body": "{\"accepted\":1,\"errors\":[],\"rejected\":0,\"success\":true}\n"
+  }
+ ],
+ "title": "免費送果香氣泡飲｜賴山嶼麻辣燙｜獨家優惠｜食尚玩家",
+ "finalUrl": "https://supertaste.tvbs.com.tw/offers/14376",
+ "text": "城市玩家\n優惠券\n節目\n熱門\n美食\n旅行\n懶人包\n親子\n更多\n城市玩家\n\n北部\n\n基隆市\n台北市\n新北市\n桃園市\n新竹市\n新竹縣\n宜蘭縣\n\n中部\n\n苗栗縣\n台中市\n彰化縣\n南投縣\n雲林縣\n\n南部\n\n嘉義市\n嘉義縣\n台南市\n高雄市\n屏東縣\n\n東部／離島\n\n花蓮縣\n台東縣\n澎湖縣\n金門縣\n連江縣\n全台熱門城市\n優惠券\n節目\n熱門\n美食\n\n城市探索\n\n台北市\n新北市\n桃園市\n台中市\n台南市\n高雄市\n所有地區\n\n美食分類\n\n火鍋\n燒肉\n吃到飽\n牛排\n鐵板燒\n夜市小吃\n所有類別\n\n通路情報\n\n超商\n賣場\n旅行\n懶人包\n親子\n生活\n日韓\n達人\n店家\n永續旅遊\n專題策展\n賴山嶼麻辣燙\n免費送果香氣泡飲\n現省79元\n領取期間：2026/10/12 10:00 ～ 2026/11/01 23:59\n兌換截止：2026/11/10 20:00\n限量 1000 份\n下載 APP 領取\n兌換店家\n賴山嶼 內湖旗艦店\n地址：台北市內湖區瑞光路583巷22號\n電話：02-8751-6309\n時間：週一至日11:00～21:00\n\n賴山嶼 桃園華泰店（華泰名品城三期）\n地址：桃園市中壢區春德路159號三期\n電話：03-287-1672\n時間：週一至四11:00～21:00／週五至日11:00～22:00\n活動說明\n雞湯大叔旗下最新品牌「賴山嶼」與《食尚玩家》合作獨家優惠，於10/12~11/1推出「消費即贈百香土鳳梨氣泡飲」活動，提供1000張優惠券。《食尚玩家》會員只要於「賴山嶼」店內用消費滿300元，可享「免費百香土鳳梨氣泡飲或紫蘇梅蜂蜜氣泡酒」乙瓶（原價79元），兌換期限至11/10，每人每帳號限兌換乙組。【名額有限，依門市兌換順序計算】\n注意事項\n1. 每位會員活動期間，每種優惠券限領乙次。\n2. 本優惠券數量有限，兌完為止，若可兌換名額已滿則無法使用，請於優惠期間內盡早至店家兌換。\n3. 領券者非保障名額，依門市兌換順序遞減，直至提供額度用罄。\n4. 獨家優惠兌換券，詳細商品規格與注意事項依店家公告為準。\n5. 食尚獨家優惠券兌換限指定「賴山嶼」內用，不適用外送平台，亦不得與現場其他任何優惠併用，依現場人員說明為準。兌換店家如下：\n\n賴山嶼 內湖旗艦店\n地址：台北市內湖區瑞光路583巷22號\n電話：02-8751-6309\n時間：週一至日11:00～21:00\n\n賴山嶼 桃園華泰店（華泰名品城三期）\n地址：桃園市中壢區春德路159號三期\n電話：03-287-1672\n時間：週一至四11:00～21:00／週五至日11:00～22:00\n\n6. 優惠券兌換憑證僅限兌換一次，不得重複使用，優惠兌換一經交易完成，恕無法提供退貨及換貨。\n7. 優惠券若逾期、影印、翻拍或螢幕截圖、汙損塗改、無法辨識均無效，毀損或遺失恕不補發。\n8. 優惠券兌換憑證，請勿擅自偽造、變造，以免觸犯刑責。\n9. 本公司保有隨時調整本活動辦法之最終解釋及取消、終止、更改等相關權利，若有變更活動辦法，將公布食尚玩家官網及APP，以當時最新活動公布之活動辦法為準。\n10. 使用優惠須於用餐前主動出示優惠券予現場工作人員。\n11. 若優惠券上品項供應完畢，店家有權利更換供應品項，不得異議。\n12. 不得與Ocard優惠併用。\n店家報導\n【火鍋祭】送百香土鳳梨飲品！賴山嶼開新店升級日光番茄濃湯，加碼免費加菜\n天冷就是要嗑鍋！《食尚玩家》集結全台超人氣火鍋名店，奉上最狂獨家優惠！時尚麻辣燙品牌「賴山嶼」展店不斷，10/22將進軍中和環球購物中心，另外為迎接秋冬季節到來\n分享：\n下載 APP 領取\n本週優惠券，領起來\n更多優惠\n\n泰滾Rolling Thai\n\n正在進行中\n\n泰式招牌鍋底免費\n\n連鎖門市\n去領券\n\n撈王鍋物料理\n\n正在進行中\n\n免費吃百香果嫩雞\n\n連鎖門市\n去領券\n\n雞湯大叔\n\n正在進行中\n\n送檸檬康普氣泡茶\n\n連鎖門市\n去領券\n\n小川鍋物\n\n正在進行中\n\n海鮮三品150元\n\n連鎖門市\n去領券\n\n高鐵假期\n\n正在進行中\n\n高鐵假期折200\n\n連鎖門市\n去領券\n\nTEA TOP 第一味\n\n正在進行中\n\n奶茶第２杯半價\n\n連鎖門市\n去領券\n\n您的意見是我們前進的動力，歡迎來信或來電反映\n\n食尚編輯：supertaste@tvbs.com.tw\n意見反映：service@tvbs.com.tw\n觀眾服務專線：02-2656-1599\n關於食尚玩家\n公司介紹\n人才招募\n企業動態\n優惠券店家招募\n創作者招募\n節目表\n版權宣告\n業務服務\n隱私權政策\n網站使用協定\n數位廣告與贊助政策\n節目版權銷售\n公開招標\n官方聲明\n星藝象娛樂\n\n© TVBS Media Inc. All Rights Reserved. 聯利媒體股份有限公司\n\nTVBS 官網\nTVBS 新聞網",
+ "links": [
+  {
+   "href": "https://supertaste.tvbs.com.tw/",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city",
+   "text": "城市玩家"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers",
+   "text": "優惠券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/review",
+   "text": "節目"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/hot",
+   "text": "熱門"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food",
+   "text": "美食"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/travel",
+   "text": "旅行"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/pack",
+   "text": "懶人包"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/kids",
+   "text": "親子"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/accessories",
+   "text": "生活"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/asia",
+   "text": "日韓"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/player",
+   "text": "達人"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/infocard",
+   "text": "店家"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/esg",
+   "text": "永續旅遊"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/topic",
+   "text": "專題策展"
+  },
+  {
+   "href": "https://tvbs.to/8yuj8d",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/keelung-city",
+   "text": "基隆市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taipei-city",
+   "text": "台北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/new-taipei-city",
+   "text": "新北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taoyuan-city",
+   "text": "桃園市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hsinchu-city",
+   "text": "新竹市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hsinchu-county",
+   "text": "新竹縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/yilan-county",
+   "text": "宜蘭縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/miaoli-county",
+   "text": "苗栗縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taichung-city",
+   "text": "台中市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/changhua-county",
+   "text": "彰化縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/nantou-county",
+   "text": "南投縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/yunlin-county",
+   "text": "雲林縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/chiayi-city",
+   "text": "嘉義市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/chiayi-county",
+   "text": "嘉義縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/tainan-city",
+   "text": "台南市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/kaohsiung-city",
+   "text": "高雄市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/pingtung-county",
+   "text": "屏東縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hualien-county",
+   "text": "花蓮縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taitung-county",
+   "text": "台東縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/penghu-county",
+   "text": "澎湖縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/kinmen-county",
+   "text": "金門縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/lienchiang-county",
+   "text": "連江縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taipei-city",
+   "text": "台北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/new-taipei-city",
+   "text": "新北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taoyuan-city",
+   "text": "桃園市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taichung-city",
+   "text": "台中市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/tainan-city",
+   "text": "台南市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/kaohsiung-city",
+   "text": "高雄市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/hot-pot",
+   "text": "火鍋"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/bbq",
+   "text": "燒肉"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/all-you-can-eat",
+   "text": "吃到飽"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/steak",
+   "text": "牛排"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/teppanyaki",
+   "text": "鐵板燒"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/street-food",
+   "text": "夜市小吃"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/convenience-store",
+   "text": "超商"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/chain-store",
+   "text": "賣場"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/food/361827",
+   "text": "【火鍋祭】送百香土鳳梨飲品！賴山嶼開新店升級日光番茄濃湯，加碼免費加菜\n天冷就是要嗑鍋！《食尚玩家》集結全台超人氣火鍋名店，奉上最狂獨家優惠！時尚麻辣燙品牌「賴山嶼」展店不斷，10/22將進軍中和環球購物中心，另外為迎接秋冬季節到來"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14373",
+   "text": "泰滾Rolling Thai正在進行中泰式招牌鍋底免費連鎖門市去領券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14372",
+   "text": "撈王鍋物料理正在進行中免費吃百香果嫩雞連鎖門市去領券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14371",
+   "text": "雞湯大叔正在進行中送檸檬康普氣泡茶連鎖門市去領券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14364",
+   "text": "小川鍋物\n\n正在進行中\n\n海鮮三品150元\n\n連鎖門市\n去領券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14409",
+   "text": "高鐵假期\n\n正在進行中\n\n高鐵假期折200\n\n連鎖門市\n去領券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14339",
+   "text": "TEA TOP 第一味\n\n正在進行中\n\n奶茶第２杯半價\n\n連鎖門市\n去領券"
+  },
+  {
+   "href": "mailto:supertaste@tvbs.com.tw",
+   "text": "supertaste@tvbs.com.tw"
+  },
+  {
+   "href": "mailto:service@tvbs.com.tw",
+   "text": "service@tvbs.com.tw"
+  },
+  {
+   "href": "tel:+886-2-26561599",
+   "text": "02-2656-1599"
+  },
+  {
+   "href": "https://apps.apple.com/app/apple-store/id1508974479?pt=216163&ct=web_navigation&mt=8",
+   "text": ""
+  },
+  {
+   "href": "https://play.google.com/store/apps/details?id=com.tvbs.news.food.topnews.bestfood.restaurant.news.supertaste.news.ratings.news&referrer=utm_source=web_navigation&utm_medium=androidbutton&utm_term=download&utm_content=androidbutton&utm_campaign=web_navigation",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/about-us",
+   "text": "關於食尚玩家"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company",
+   "text": "公司介紹"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/careers/",
+   "text": "人才招募"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company/news/latest",
+   "text": "企業動態"
+  },
+  {
+   "href": "https://forms.gle/WGip9ig7vBcUEPUJ9",
+   "text": "優惠券店家招募"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/hot/359206",
+   "text": "創作者招募"
+  },
+  {
+   "href": "https://schedule.tvbs.com.tw/",
+   "text": "節目表"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/policies/copyright",
+   "text": "版權宣告"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/advertise",
+   "text": "業務服務"
+  },
+  {
+   "href": "https://member.tvbs.com.tw/index/privacy_policy?back_url=https://www.tvbs.com.tw/&site=Tvbs",
+   "text": "隱私權政策"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/policies/terms",
+   "text": "網站使用協定"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/about-us/advertising-policy",
+   "text": "數位廣告與贊助政策"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/copyright",
+   "text": "節目版權銷售"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/tender",
+   "text": "公開招標"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company/announcement",
+   "text": "官方聲明"
+  },
+  {
+   "href": "https://starvision.tvbs.com.tw/home",
+   "text": "星藝象娛樂"
+  },
+  {
+   "href": "https://www.facebook.com/supertastesupertaste/",
+   "text": "facebook"
+  },
+  {
+   "href": "https://www.youtube.com/channel/UC00wMIWR48SYidE6jmpL7Qg",
+   "text": "youtube"
+  },
+  {
+   "href": "https://line.me/R/ti/p/@supertaste",
+   "text": "line"
+  },
+  {
+   "href": "https://www.instagram.com/supertastesupertaste/",
+   "text": "instagram"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/",
+   "text": "TVBS 官網"
+  },
+  {
+   "href": "https://news.tvbs.com.tw/",
+   "text": "TVBS 新聞網"
+  }
+ ]
+}

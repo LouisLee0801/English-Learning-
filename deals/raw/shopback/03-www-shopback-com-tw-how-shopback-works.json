@@ -1,0 +1,207 @@
+{
+ "url": "https://www.shopback.com.tw/how-shopback-works",
+ "status": 200,
+ "error": null,
+ "json": [
+  {
+   "url": "https://www.shopback.com.tw/sw-manifest.json",
+   "status": 200,
+   "bytes": 31,
+   "body": "{\n  \"file\": \"sw-e72a9b72.js\"\n}\n"
+  },
+  {
+   "url": "https://www.shopback.com.tw/api/auth/signin/config?version=4010000",
+   "status": 200,
+   "bytes": 58,
+   "body": "{\"methods\":[\"mobile\",\"google\",\"email\",\"facebook\",\"apple\"]}"
+  },
+  {
+   "url": "https://www.shopback.com.tw/api/members/experiment?target=new_signup_enabled_pre_login",
+   "status": 200,
+   "bytes": 90,
+   "body": "{\"new_signup_enabled_pre_login\":{\"variant_name\":\"treatment\",\"data\":{\"value\":\"treatment\"}}}"
+  },
+  {
+   "url": "https://conversation-gateway.lv3.ai/api/chat-bff/config",
+   "status": 200,
+   "bytes": 855,
+   "body": "{\"succeed\":true,\"message\":\"Success\",\"data\":{\"privacyNotice\":{\"enabled\":false,\"text\":\"\"},\"style\":{\"title\":\"Emily (Virtual Assistant)\",\"agentLogo\":\"https://emily-server.s3.ap-southeast-1.amazonaws.com/shopback/portal/2026/07/03/RL1HWNS786ZY.png\",\"titleAlign\":\"left\",\"titleColor\":\"#050505\",\"brandLogoUrl\":\"https://emily-server.s3.ap-southeast-1.amazonaws.com/shopback/portal/2026/07/03/L16FJM9VL55T.png\",\"primaryColor\":\"#fda591\",\"userBubbleBg\":\"#ededff\",\"headerIconColor\":\"#ffffff\",\"typingIndicator\":\"dots\",\"launcherIconColor\":\"#050505\",\"userBubbleTextColor\":\"#000000\",\"useLv3Branding\":true},\"maxAttachmentSizeMb\":20,\"inputTypes\":[\"text\",\"emoji\",\"image\",\"pdf\",\"file\"],\"serverTimestamp\":1792206409823,\"transport\":\"CENTRIFUGO\",\"centrifugoUrl\":\"wss://messaging.lv3.ai/connection/websocket\",\"centrifugoChannelPrefix\":\"chat:CH-a0cfc377f498a78ac850b3939b3b20d5.\"}}"
+  },
+  {
+   "url": "https://www.googleadservices.com/pagead/conversion/949662838/?random=1792206409922&cv=11&fst=1792206409922&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143zd71746143xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~119381664~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Fwww.shopback.com.tw%2Fhow-shopback-works&rcb=6&label=rnx2CLvZjo4ZEPbo6sQD&capi=1&frm=0&tiba=%E8%81%B0%E6%98%8E%E6%B6%88%E8%B2%BB%EF%BC%8C%E8%90%AC%E4%BA%8BShopBack%EF%BC%8D%E9%A6%AC%E4%B8%8A%E8%AA%8D%E8%AD%98ShopBack%E9%96%8B%E5%A7%8B%E8%B3%BC%E7%89%A9%E8%B3%BA%E7%8F%BE%E9%87%91&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1799961907.1792206384&uaa=x86&uab=64&uafvl=HeadlessChrome%3B141.0.7390.37%7CNot%253FA_Brand%3B8.0.0.0%7CChromium%3B141.0.7390.37&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&ec_mode=a&oid=GG_1087455743.1792206410&oidsrc=3&ecsid2=926040721.1792206384&_tu=CBA&gcl_ctr=4~0~0~0&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5",
+   "status": 200,
+   "bytes": 3760,
+   "body": "event: message\ndata: {\"fetch\":[\"https://googleads.g.doubleclick.net/pagead/viewthroughconversion/949662838/?random=1391508230&cv=11&fst=1792206409922&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143zd71746143xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~119381664~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Fwww.shopback.com.tw%2Fhow-shopback-works&rcb=6&label=rnx2CLvZjo4ZEPbo6sQD&capi=1&frm=0&tiba=%E8%81%B0%E6%98%8E%E6%B6%88%E8%B2%BB%EF%BC%8C%E8%90%AC%E4%BA%8BShopBack%EF%BC%8D%E9%A6%AC%E4%B8%8A%E8%AA%8D%E8%AD%98ShopBack%E9%96%8B%E5%A7%8B%E8%B3%BC%E7%89%A9%E8%B3%BA%E7%8F%BE%E9%87%91&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1799961907.1792206384&uaa=x86&uab=64&uafvl=HeadlessChrome%3B141.0.7390.37%7CNot%253FA_Brand%3B8.0.0.0%7CChromium%3B141.0.7390.37&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=926040721.1792206384&_tu=CBA&gcl_ctr=4~0~0~0&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkgKEQjwlsfWBhDtlKDQtui2jtwBEjMAId2G2txwMQJXyu3Ljd6R-iqv6uMxI4sGeGtJgq_zGtjAqnqHu2S2f39J2JHdrTe6gUTw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgiK8rECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIpt2xAgiw3rECCIDbsQIIzeGxAkowbm90LW5hdmlnYXRpb24tc291cmNlLCBub3QtZXZlbnQtc291cmNlLCB0cmlnZ2VyWgMKAQFiAwoBAw&cerd=CgTI7L4t&eitems=ChEI8JbH1gYQiPb9nbniuo7hARIdAEWAZI6oWxyDpGbZZpPDBCbCiKfcB7Rq8Z4exLo&fsk=ChAI8JbH1gYQjp2u1cmXtq5bEiwAL7wapuoXEVELdjrN7EG5x1uiDyijYih3Rq7cgF7zvsRON4GqL4nAiZlRQRoCAA8&pscrd=IhMI-9u2k4nAlwMVmCdoCB3pQzbdOhxodHRwczovL3d3dy5zaG9wYmFjay5jb20udHcvQldDaEVJOEpiSDFnWVE5LVNvMDZqNDhPU19BUklzQUFQbmlpdkNUb1Y3RzBDTWdLOTJNby04dzBCNXlGMEIxa2pXWVVoT0FUX3UyUFUtbVhWSmZyYWdBdEF6DAgJYggIABAAGAAgAA\"],\"options\":{\"fallback_url\":\"https://www.google.com/pagead/1p-conversion/949662838/?random=1391508230&cv=11&fst=1792206409922&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6ae1v898292524z871746143za20gzb71746143zd71746143xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~119381664~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Fwww.shopback.com.tw%2Fhow-shopback-works&rcb=6&label=rnx2CLvZjo4ZEPbo6sQD&capi=1&frm=0&tiba=%E8%81%B0%E6%98%8E%E6%B6%88%E8%B2%BB%EF%BC%8C%E8%90%AC%E4%BA%8BShopBack%EF%BC%8D%E9%A6%AC%E4%B8%8A%E8%AA%8D%E8%AD%98ShopBack%E9%96%8B%E5%A7%8B%E8%B3%BC%E7%89%A9%E8%B3%BA%E7%8F%BE%E9%87%91&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1799961907.1792206384&uaa=x86&uab=64&uafvl=HeadlessChrome%3B141.0.7390.37%7CNot%253FA_Brand%3B8.0.0.0%7CChromium%3B141.0.7390.37&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=926040721.1792206384&_tu=CBA&gcl_ctr=4~0~0~0&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkgKEQjwlsfWBhDtlKDQtui2jtwBEjMAId2G2txwMQJXyu3Ljd6R-iqv6uMxI4sGeGtJgq_zGtjAqnqHu2S2f39J2JHdrTe6gUTw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgiK8rECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIpt2xAgiw3rECCIDbsQIIzeGxAkowbm90LW5hdmlnYXRpb24tc291cmNlLCBub3QtZXZlbnQtc291cmNlLCB0cmlnZ2VyWgMKAQFiAwoBAw&cerd=CgTI7L4t&eitems=ChEI8JbH1gYQiPb9nbniuo7hARIdAEWAZI6oWxyDpGbZZpPDBCbCiKfcB7Rq8Z4exLo&fsk=ChAI8JbH1gYQjp2u1cmXtq5bEiwAL7wapuoXEVELdjrN7EG5x1uiDyijYih3Rq7cgF7zvsRON4GqL4nAiZlRQRoCAA8&pscrd=IhMI-9u2k4nAlwMVmCdoCB3pQzbdOhxodHRwczovL3d3dy5zaG9wYmFjay5jb20udHcvQldDaEVJOEpiSDFnWVE5LVNvMDZqNDhPU19BUklzQUFQbmlpdkNUb1Y3RzBDTWdLOTJNby04dzBCNXlGMEIxa2pXWVVoT0FUX3UyUFUtbVhWSmZyYWdBdEF6DAgJYggIABAAGAAgAA&gcp=3\",\"fallback_url_method\":\"fetch\"}}\n\n"
+  },
+  {
+   "url": "https://www.shopback.com.tw/api/auth/signup/config?version=5850000&variant=treatment",
+   "status": 200,
+   "bytes": 76,
+   "body": "{\"methods\":[\"mobile_email_password\",\"google_mobile_otp\",\"facebook\",\"apple\"]}"
+  },
+  {
+   "url": "https://sdk.iad-05.braze.com/api/v3/data/",
+   "status": 201,
+   "request": "{\"respond_with\":{\"config\":{\"config_time\":1792141592}},\"events\":[{\"name\":\"ce\",\"time\":1792206404.302,\"data\":{\"n\":\"Web.Launch\",\"p\":{\"browser_name\":\"Chrome Headless\",\"domain\":\"www.shopback.com.tw\",\"has_extension\":false,\"current_url\":\"https://www.shopback.com.tw/online-cashback-how-it-works\",\"web_platform\":\"desktop_web\"}},\"session_id\":\"70bc6fcc-9e48-4265-b5eb-f9e09838738d\"}],\"api_key\":\"78604755-24c9-48a9-98e1-33234ec55667\",\"time\":1792206410,\"sdk_version\":\"6.9.0\",\"device_id\":\"825dad2f-8db9-4d2e-b202-a10a9efb75d5\"}",
+   "bytes": 2,
+   "body": "{}"
+  },
+  {
+   "url": "https://tracking-aps1.shopback.com/client/v1/web_events",
+   "status": 200,
+   "request": "{\"event_uuid\":\"83264a60-2322-4a72-90d8-bdeacc0d6954\",\"event_type\":\"Web.View.Screen\",\"profile_id\":\"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840\",\"domain\":\"www.shopback.com.tw\",\"timestamp\":1792206409,\"shopback_session_id\":\"guest_1792206383839\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"browser_name\":\"Chrome\",\"browser_version\":\"Chrome_141.0.0.0\",\"event_properties\":{\"screen_resolution\":\"1366 x 900\",\"viewport_width\":1366,\"device_pixel_ratio\":1,\"has_extension\":false,\"has_adblock\":false,\"is_first_entry\":true,\"is_logged_in\":false,\"current_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"user_gave_consent\":false,\"screen_name\":\"How shopback works\",\"screen_type\":\"campaign\",\"screen_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"screen_id\":\"/how-shopback-works\",\"layout_id\":\"22\",\"layout_name\":\"馬上認識_shop_back開始購物賺現金\",\"layout_uid\":\"hXnFQpnWmGwWbBCeb2hfyp_22\"},\"web_platform\":\"desktop_web\",\"device_type\":\"Desktop\"}",
+   "bytes": 16,
+   "body": "{\"success\":true}"
+  },
+  {
+   "url": "https://tracking-aps1.shopback.com/client/v1/web_events",
+   "status": 200,
+   "request": "{\"event_uuid\":\"c6b876de-e8da-452f-bf18-78109c276ffc\",\"event_type\":\"Web.View.Screen\",\"profile_id\":\"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840\",\"domain\":\"www.shopback.com.tw\",\"timestamp\":1792206410,\"shopback_session_id\":\"guest_1792206383839\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"browser_name\":\"Chrome\",\"browser_version\":\"Chrome_141.0.0.0\",\"event_properties\":{\"screen_resolution\":\"1366 x 900\",\"viewport_width\":1366,\"device_pixel_ratio\":1,\"has_extension\":false,\"has_adblock\":false,\"is_first_entry\":true,\"is_logged_in\":false,\"current_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"user_gave_consent\":false,\"screen_name\":\"How shopback works\",\"screen_type\":\"campaign\",\"screen_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"screen_id\":\"/how-shopback-works\",\"layout_id\":\"22\",\"layout_name\":\"馬上認識_shop_back開始購物賺現金\",\"layout_uid\":\"hXnFQpnWmGwWbBCeb2hfyp_22\",\"ui_element_name\":\"confirm_country\"},\"web_platform\":\"desktop_web\",\"device_type\":\"Desktop\"}",
+   "bytes": 16,
+   "body": "{\"success\":true}"
+  },
+  {
+   "url": "https://tracking-aps1.shopback.com/client/v1/web_events",
+   "status": 200,
+   "request": "{\"event_uuid\":\"c8a3a3ef-4b41-4c7e-ae52-465bc4ff1cb0\",\"event_type\":\"Web.Impression\",\"profile_id\":\"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840\",\"domain\":\"www.shopback.com.tw\",\"timestamp\":1792206410,\"shopback_session_id\":\"guest_1792206383839\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"browser_name\":\"Chrome\",\"browser_version\":\"Chrome_141.0.0.0\",\"event_properties\":{\"screen_resolution\":\"1366 x 900\",\"viewport_width\":1366,\"device_pixel_ratio\":1,\"has_extension\":false,\"has_adblock\":false,\"is_first_entry\":true,\"is_logged_in\":false,\"current_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"user_gave_consent\":false,\"screen_name\":\"How shopback works\",\"screen_type\":\"campaign\",\"screen_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"screen_id\":\"/how-shopback-works\",\"layout_id\":\"22\",\"layout_name\":\"馬上認識_shop_back開始購物賺現金\",\"layout_uid\":\"hXnFQpnWmGwWbBCeb2hfyp_22\",\"ui_element_name\":\"highlight_panel\",\"feature_destination_url\":\"https://chromewebstore.google.com/detail/shopback-cashback-rewards/djjjmdgomejlopjnccoejdhgjmiappap?onsite_source=onsite&onsite_medium=organic&onsite_content=chrome&onsite_campaign=slider&hl=zh-TW\"},\"web_platform\":\"desktop_web\",\"device_type\":\"Desktop\"}",
+   "bytes": 16,
+   "body": "{\"success\":true}"
+  },
+  {
+   "url": "https://tracking-aps1.shopback.com/client/v1/web_events/bulk",
+   "status": 200,
+   "request": "{\"data\":[{\"event_uuid\":\"624c2c54-dbb1-4226-aff0-990393c4ab16\",\"event_type\":\"Web.Impression\",\"profile_id\":\"web_SD4qMAr3KLt1nYw7iEmLRyLy0RYdVp21_1792206383840\",\"domain\":\"www.shopback.com.tw\",\"timestamp\":1792206412,\"shopback_session_id\":\"guest_1792206383839\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"browser_name\":\"Chrome\",\"browser_version\":\"Chrome_141.0.0.0\",\"event_properties\":{\"screen_resolution\":\"1366 x 900\",\"viewport_width\":1366,\"device_pixel_ratio\":1,\"has_extension\":false,\"has_adblock\":false,\"is_first_entry\":true,\"is_logged_in\":false,\"current_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"user_gave_consent\":false,\"screen_name\":\"How shopback works\",\"screen_type\":\"campaign\",\"screen_url\":\"https://www.shopback.com.tw/how-shopback-works\",\"screen_id\":\"/how-shopback-works\",\"layout_id\":\"22\",\"layout_name\":\"馬上認識_shop_back開始購物賺現金\",\"layout_uid\":\"hXnFQpnWmGwWbBCeb2hfyp_22\",\"ui_element_type\":\"web_banner_grid\",\"ui_element_name\":\"LP\",\"ui_element_id\":\"243\",\"ui_element_position\":2,\"feature_type\":\"manual\",\"feature_name\":\"WEB_HIW_MAIN_LP\",\"feature_id\":\"1067\",\"feature_position\":1,\"feature_destination_url\":\"https://www.shopback.com.tw/login?ui_element_id=243&ui_element_name=LP&ui_element_type=web_banner_grid&ui_element_position=2&screen_id=%2Fhow-shopback-works&screen_type=campaign&screen_name=%2Fhow-shopback-works&layout_id=22&layout_name=%E9%A6%AC%E4%B8%8A%E8%AA%8D%E8%AD%98_shop_back%E9%96%8B%E5%A7%8B%E8%B3%BC%E7%89%A9%E8%B3%BA%E7%8F%BE%E9%87%91\",\"content_source_name\":\"Banner Set\",\"content_uid\":\"hXnFQpnWmGwWbBCeb2hfyp_22_243_aXgmdaV8LJar7DXWHX1NTZ\"}}],\"web_platform\":\"desktop_web\",\"device_type\":\"Desktop\"}",
+   "bytes": 16,
+   "body": "{\"success\":true}"
+  }
+ ],
+ "title": "聰明消費，萬事ShopBack－馬上認識ShopBack開始購物賺現金",
+ "finalUrl": "https://www.shopback.com.tw/how-shopback-works",
+ "text": "取得 ShopBack 的 Chrome 現金回饋小幫手\n\n使用ShopBack現金回饋小幫手，不錯過任何現金回饋！\n\n免費新增至 Chrome\n如何運作\n登入\n註冊\n類別\nShopBack Plus\n旅遊攻略\n流行時尚\n綜合購物\n電子3C\n數位服務\n美妝保養\nWEB_HIW_MAIN_LP\nWEB_HIW_MAIN_TESTIMONIAL\n開始探索ShopBack提供的所有服務\nWEB_HIW_MAIN_TOOLS_1\nWEB_HIW_MAIN_TOOLS_3\n\n聯繫我們\n\n線上客服\n\n客服中心\n\nShopBack\n\n關於我們\n\n加入我們\n\n所有商家\n\n商務艙\n\n新聞報導\n\n服務總覽\n\n從iOS下載app\n\n從Google Play下載app\n\n安裝ShopBack現金回饋小幫手\n\n如何運作\n\n線上現金回饋\n\n網路安全\n\n新加坡\n印尼\n馬來西亞\n菲律賓\n泰國\n台灣\n澳洲\n越南\n韓國\n香港\n德國\n紐西蘭\n美國\n\n地址：台北市松山區南京東路四段1號8樓\n\n其他條款與細則\n\n隱私權政策\n\n確認國家/地區\n\nThis is to make sure we take you to the correct website.\n\nShopBack site you're on: 台灣\n偵測到的位置：美國\n前往 美國 網站\n繼續使用 台灣 網站\n或選擇其他國家/地區",
+ "links": [
+  {
+   "href": "https://www.shopback.com.tw/",
+   "text": "Home"
+  },
+  {
+   "href": "https://www.shopback.com.tw/how-shopback-works",
+   "text": "如何運作"
+  },
+  {
+   "href": "https://www.shopback.com.tw/campaign-shopback-plus",
+   "text": "ShopBack Plus"
+  },
+  {
+   "href": "https://www.shopback.com.tw/travel-deals",
+   "text": "旅遊攻略"
+  },
+  {
+   "href": "https://www.shopback.com.tw/fashion",
+   "text": "流行時尚"
+  },
+  {
+   "href": "https://www.shopback.com.tw/marketplace",
+   "text": "綜合購物"
+  },
+  {
+   "href": "https://www.shopback.com.tw/electronics",
+   "text": "電子3C"
+  },
+  {
+   "href": "https://www.shopback.com.tw/digital-goods",
+   "text": "數位服務"
+  },
+  {
+   "href": "https://www.shopback.com.tw/beauty",
+   "text": "美妝保養"
+  },
+  {
+   "href": "https://www.shopback.com.tw/login?content_uid=hXnFQpnWmGwWbBCeb2hfyp_22_243_aXgmdaV8LJar7DXWHX1NTZ",
+   "text": "WEB_HIW_MAIN_LP"
+  },
+  {
+   "href": "https://www.shopback.com.tw/?content_uid=hXnFQpnWmGwWbBCeb2hfyp_22_245_dDywxzW3i8mGnsga9wSjoq",
+   "text": "WEB_HIW_MAIN_TESTIMONIAL"
+  },
+  {
+   "href": "https://www.shopback.com.tw/online-cashback-how-it-works?content_uid=hXnFQpnWmGwWbBCeb2hfyp_22_246_91c3sgS17uyGrkMrR2dMzh",
+   "text": "WEB_HIW_MAIN_TOOLS_1"
+  },
+  {
+   "href": "https://www.shopback.com.tw/shopback-button-how-it-works?content_uid=hXnFQpnWmGwWbBCeb2hfyp_22_246_ufpPwp9ZeuxVPGFRxyGMqB",
+   "text": "WEB_HIW_MAIN_TOOLS_3"
+  },
+  {
+   "href": "https://app.shopback.com/tw/chat",
+   "text": "線上客服"
+  },
+  {
+   "href": "https://support.shopback.com.tw/hc/zh-tw",
+   "text": "客服中心"
+  },
+  {
+   "href": "http://corporate.shopback.com/",
+   "text": "關於我們"
+  },
+  {
+   "href": "http://careers.shopback.com/",
+   "text": "加入我們"
+  },
+  {
+   "href": "https://www.shopback.com.tw/all-stores",
+   "text": "所有商家"
+  },
+  {
+   "href": "https://corporate.shopback.com/partnership-enquiries",
+   "text": "商務艙"
+  },
+  {
+   "href": "https://corporate.shopback.com/press",
+   "text": "新聞報導"
+  },
+  {
+   "href": "https://app.shopback.com/app-store-tw",
+   "text": "從iOS下載app"
+  },
+  {
+   "href": "https://app.shopback.com/play-store-tw",
+   "text": "從Google Play下載app"
+  },
+  {
+   "href": "https://www.shopback.com.tw/undefined?onsite_source=onsite&onsite_medium=footerbanner&onsite_content=chrome&onsite_campaign=undefined&hl=zh-TW",
+   "text": "安裝ShopBack現金回饋小幫手"
+  },
+  {
+   "href": "https://www.shopback.com.tw/online-cashback-how-it-works",
+   "text": "線上現金回饋"
+  },
+  {
+   "href": "https://www.facebook.com/ShopBackTaiwan",
+   "text": ""
+  },
+  {
+   "href": "https://www.instagram.com/shopbacktw/",
+   "text": ""
+  },
+  {
+   "href": "https://line.me/R/ti/p/@shopback",
+   "text": ""
+  },
+  {
+   "href": "https://www.youtube.com/c/ShopbackTw",
+   "text": ""
+  },
+  {
+   "href": "https://www.tiktok.com/@shopback_tw",
+   "text": ""
+  },
+  {
+   "href": "https://support.shopback.com.tw/hc/zh-tw/articles/360039161774",
+   "text": "其他條款與細則"
+  },
+  {
+   "href": "https://support.shopback.com.tw/hc/zh-tw/articles/360039187814",
+   "text": "隱私權政策"
+  }
+ ]
+}

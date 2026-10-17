@@ -1,0 +1,33 @@
+# supertaste discovery 2026-10-17T03:05:53.410Z
+
+- https://supertaste.tvbs.com.tw/robots.txt → 200
+- [00-supertaste-tvbs-com-tw-offers] https://supertaste.tvbs.com.tw/offers → status 200 final https://supertaste.tvbs.com.tw/offers title "最新優惠 | 食尚玩家" html 257456B json 15 links 130
+  - json 200 208B https://r.skimresources.com/api/ data=%7B%22pubcode%22%3A%22298146X1785686%22%2C%22page%22%3A%22https%3A%2F%2Fsupertaste.tvbs.com.tw%2Foffers%22%2C%22domains%22%3A%5B%22graphics.tvbs.com.tw%22%
+  - json 200 2B https://ls.skimresources.com/api {"publisher_id":298146,"publisher_domain_id":1785686,"page_url":"https://supertaste.tvbs.com.tw/offers","urls":["https://apps.apple.com/app/apple-store/id150897
+  - json 200 37B https://supertaste.tvbs.com.tw/api/auth/session 
+  - json 200 12626B https://api.supertaste.tvbs.app/v1/coupons?page=1&per_page=24&_skipNotFound=true 
+  - json 200 109B https://cora.tvbs.com.tw/api/v1/identity 
+  - json 200 46B https://cora.tvbs.com.tw/api/v1/campaigns/manifest?brand=supertaste&write_key=3735a22dd4ad871a998ca0ad714bc43837b1e0b8ee0f7d2df2c2f358e34091bd 
+  - json 200 174B https://identity.mparticle.com/v1/identify {"client_sdk":{"platform":"web","sdk_vendor":"mparticle","sdk_version":"2.81.0"},"context":null,"environment":"production","request_id":"3569648b-495e-4984-870b
+  - json 200 927B https://segment.api.useinsider.com/v4/segments/1792206356513000cdd2115.c528acc6?partnerid=10009630&fields=42f944750624454c6fd769a3961bca89,cee91c1a11e755c627e4c6ebec0755e0& 
+  - json 200 274B https://locationv2.api.useinsider.com/?v=2&pId=10009630& 
+  - json 200 175B https://carrier.useinsider.com/y/v2/z {"user_id":"1792206356513000cdd2115.c528acc6","campaigns":[{"id":553,"sbre":true,"et":1792208156000},{"id":3020,"sbre":true,"et":1792208156000},{"id":3088,"sbre
+  - json 200 11B https://falcon.useinsider.com/api/v1/contact-profile/get/tvbssupertaste {"attributes":["c_line_uid","ag","ge","uuid","c_cr_wline30_s_241029_ting","c_s_coupontea_core_241029_yuhan"],"events":[{"event_name":"confirmation_page_view","p
+  - json 200 74B https://aryuder.api.useinsider.com/v3/status {"p":"tvbssupertaste","u":"1792206356513000cdd2115.c528acc6","c":[{"c":252,"j":35},{"c":253,"j":35},{"c":386,"j":42},{"c":387,"j":42},{"c":383,"j":43},{"c":379,
+  - json 200 175B https://carrier.useinsider.com/y/v2/z {"user_id":"1792206356513000cdd2115.c528acc6","campaigns":[{"id":553,"sbre":true,"et":1792208157000},{"id":3020,"sbre":true,"et":1792208157000},{"id":3088,"sbre
+  - json 200 927B https://segment.api.useinsider.com/v4/segments/1792206356513000cdd2115.c528acc6?partnerid=10009630&fields=42f944750624454c6fd769a3961bca89,cee91c1a11e755c627e4c6ebec0755e0& 
+  - json 202 55B https://cora.tvbs.com.tw/api/v1/track {"events":[{"event_type":"page_view","properties":{"screen_width":1366,"screen_height":900,"viewport_width":1366,"viewport_height":900,"language":"zh-TW","timez
+- [01-supertaste-tvbs-com-tw-offers-14409] https://supertaste.tvbs.com.tw/offers/14409/ → status 200 final https://supertaste.tvbs.com.tw/offers/14409 title "高鐵假期折200｜高鐵假期｜獨家優惠｜食尚玩家" html 185935B json 3 links 117
+  - json 200 37B https://supertaste.tvbs.com.tw/api/auth/session 
+  - json 200 208B https://r.skimresources.com/api/ data=%7B%22pubcode%22%3A%22298146X1785686%22%2C%22page%22%3A%22https%3A%2F%2Fsupertaste.tvbs.com.tw%2Foffers%2F14409%22%2C%22domains%22%3A%5B%22supr.link%22%2C%
+  - json 200 2B https://ls.skimresources.com/api {"publisher_id":298146,"publisher_domain_id":1785686,"page_url":"https://supertaste.tvbs.com.tw/offers/14409","urls":["https://apps.apple.com/app/apple-store/id
+- [02-supertaste-tvbs-com-tw-offers-14376] https://supertaste.tvbs.com.tw/offers/14376/ → status 200 final https://supertaste.tvbs.com.tw/offers/14376 title "免費送果香氣泡飲｜賴山嶼麻辣燙｜獨家優惠｜食尚玩家" html 256040B json 9 links 116
+  - json 200 109B https://cora.tvbs.com.tw/api/v1/identity 
+  - json 200 208B https://r.skimresources.com/api/ data=%7B%22pubcode%22%3A%22298146X1785686%22%2C%22page%22%3A%22https%3A%2F%2Fsupertaste.tvbs.com.tw%2Foffers%2F14376%22%2C%22domains%22%3A%5B%22apps.apple.com%2
+  - json 200 37B https://supertaste.tvbs.com.tw/api/auth/session 
+  - json 200 46B https://cora.tvbs.com.tw/api/v1/campaigns/manifest?brand=supertaste&write_key=3735a22dd4ad871a998ca0ad714bc43837b1e0b8ee0f7d2df2c2f358e34091bd 
+  - json 200 2B https://ls.skimresources.com/api {"publisher_id":298146,"publisher_domain_id":1785686,"page_url":"https://supertaste.tvbs.com.tw/offers/14376","urls":["https://apps.apple.com/app/apple-store/id
+  - json 200 174B https://identity.mparticle.com/v1/identify {"client_sdk":{"platform":"web","sdk_vendor":"mparticle","sdk_version":"2.81.0"},"context":null,"environment":"production","request_id":"162cdff2-3017-4c62-ab23
+  - json 200 74B https://aryuder.api.useinsider.com/v3/status {"p":"tvbssupertaste","u":"1792206356513000cdd2115.c528acc6","c":[{"c":252,"j":35},{"c":253,"j":35},{"c":386,"j":42},{"c":387,"j":42},{"c":383,"j":43},{"c":379,
+  - json 202 40B https://jssdks.mparticle.com/v3/JS/au1-4f7a82b928941d489365dec2dec2815c/events {"source_request_id":"1ddd7b9f-ed7f-41df-d81b-367358f1494d","mpid":"682377096044153669","timestamp_unixtime_ms":1792206370791,"environment":"production","events
+  - json 202 55B https://cora.tvbs.com.tw/api/v1/track {"events":[{"event_type":"page_view","properties":{"screen_width":1366,"screen_height":900,"viewport_width":1366,"viewport_height":900,"language":"zh-TW","timez

@@ -1,0 +1,70 @@
+{
+ "url": "https://www.picodi.com/tw/",
+ "status": 404,
+ "error": null,
+ "json": [
+  {
+   "url": "https://my.picodi.com/us/api/v1/user",
+   "status": 403,
+   "bytes": 0,
+   "body": ""
+  },
+  {
+   "url": "https://consentcdn.cookiebot.eu/consentconfig/bf324eec-8457-4905-94bf-eb7f5f987fd8/settings.json",
+   "status": 200,
+   "bytes": 719,
+   "body": "{\"widget\":{\"enabled\":false,\"position\":{\"position\":\"bottom-left\",\"distanceVerticalPx\":10,\"distanceHorizontalPx\":10},\"theme\":{\"closed\":{\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#141414\"},\"opened\":{\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#141414\",\"highlightColor\":\"#1032CF\",\"shadeColor\":\"#D6D6D6\",\"changeBackgroundColor\":\"#1032CF\",\"changeTextColor\":\"#FFFFFF\",\"changeBorderColor\":\"#1032CF\",\"withdrawBackgroundColor\":\"#FFFFFF\",\"withdrawTextColor\":\"#141414\",\"withdrawBorderColor\":\"#1032CF\",\"detailsBackgroundColor\":\"#F2F2F2\"}},\"content\":{\"cultures\":[\"en\",\"pl\",\"ro\",\"tr\",\"de\",\"vi\",\"th\",\"it\",\"ms\",\"hi\",\"id\",\"el\",\"be\",\"uk\",\"ru\",\"hu\",\"sk\",\"es\",\"sv\",\"pt\",\"fi\",\"cs\",\"pt-br\"],\"default\":\"en\",\"autodetectLanguage\":true}}}"
+  },
+  {
+   "url": "https://metric.picodi.com/us/t?uri_str=https%3A%2F%2Fwww.picodi.com%2Ftw%2F&st_id=6ad2e64f66aba4341aa8f650",
+   "status": 200,
+   "bytes": 2,
+   "body": "{}"
+  }
+ ],
+ "title": "Error 404 - Picodi United States",
+ "finalUrl": "https://www.picodi.com/tw/",
+ "text": "Search\nTop 50\nCashback of the Day\nSign in\nSign up\nERROR 404\nError 404\n\nGo back to\n\nhome page.\nTerms of Use - cashback\nTerms of Use\nPrivacy Policy\nJob offers\nReports\nContact\nList of shops\nShop categories\nWe may earn a commission when you use one of our coupons/links to make a purchase.\nDownload Picodi on your mobile device\n© 2010 – 2026 Picodi.com All Rights Reserved\nHide\n\nCollect CASHBACK and save money more easily – with Picodi Extension\n\nAdd to your browser",
+ "links": [
+  {
+   "href": "https://www.picodi.com/us/",
+   "text": "Picodi - menu.home"
+  },
+  {
+   "href": "https://www.picodi.com/us/pages/terms-cashback",
+   "text": "Terms of Use - cashback"
+  },
+  {
+   "href": "https://www.picodi.com/us/pages/terms",
+   "text": "Terms of Use"
+  },
+  {
+   "href": "https://www.picodi.com/us/pages/privacy",
+   "text": "Privacy Policy"
+  },
+  {
+   "href": "https://www.picodi.com/company/career",
+   "text": "Job offers"
+  },
+  {
+   "href": "https://www.picodi.com/us/bargain-hunting/",
+   "text": "Reports"
+  },
+  {
+   "href": "https://www.picodi.com/us/contact",
+   "text": "Contact"
+  },
+  {
+   "href": "https://www.picodi.com/us/retailers",
+   "text": "List of shops"
+  },
+  {
+   "href": "https://www.picodi.com/us/categories",
+   "text": "Shop categories"
+  },
+  {
+   "href": "https://chrome.google.com/webstore/detail/picodicom-cashback/kafpjghdfockenndmdalblagbonhemkf?hl=en_US&utm_source=picodi&utm_medium=link&utm_campaign=sticky-bottom-bar-dark",
+   "text": "Add to your browser"
+  }
+ ]
+}

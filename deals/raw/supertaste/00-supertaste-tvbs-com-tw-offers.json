@@ -1,0 +1,526 @@
+{
+ "url": "https://supertaste.tvbs.com.tw/offers",
+ "status": 200,
+ "error": null,
+ "json": [
+  {
+   "url": "https://r.skimresources.com/api/",
+   "status": 200,
+   "request": "data=%7B%22pubcode%22%3A%22298146X1785686%22%2C%22page%22%3A%22https%3A%2F%2Fsupertaste.tvbs.com.tw%2Foffers%22%2C%22domains%22%3A%5B%22graphics.tvbs.com.tw%22%2C%22apps.apple.com%22%2C%22play.google.com%22%2C%22forms.gle%22%2C%22schedule.tvbs.com.tw%22%2C%22member.tvbs.com.tw%22%2C%22starvision.tvbs.com.tw%22%2C%22facebook.com%22%2C%22line.me%22%2C%22instagram.com%22%2C%22news.tvbs.com.tw%22%5D%2C%22link_swapping%22%3Atrue%7D",
+   "bytes": 208,
+   "body": "{\"csp\":null,\"country_state\":\"VA\",\"consent\":null,\"ts\":1792206355,\"link_swapping_domains\":[],\"bv\":\"4.9.0-1450820b\",\"merchant_domains\":[\"apps.apple.com\",\"instagram.com\"],\"country\":\"US\",\"sessid\":null,\"guid\":null}"
+  },
+  {
+   "url": "https://ls.skimresources.com/api",
+   "status": 200,
+   "request": "{\"publisher_id\":298146,\"publisher_domain_id\":1785686,\"page_url\":\"https://supertaste.tvbs.com.tw/offers\",\"urls\":[\"https://apps.apple.com/app/apple-store/id1508974479?pt=216163&ct=web_navigation&mt=8\",\"https://www.instagram.com/supertastesupertaste/\"]}",
+   "bytes": 2,
+   "body": "{}"
+  },
+  {
+   "url": "https://supertaste.tvbs.com.tw/api/auth/session",
+   "status": 200,
+   "bytes": 37,
+   "body": "{\"user\":null,\"isAuthenticated\":false}"
+  },
+  {
+   "url": "https://api.supertaste.tvbs.app/v1/coupons?page=1&per_page=24&_skipNotFound=true",
+   "status": 200,
+   "bytes": 12626,
+   "body": "{\"data\":[{\"id\":14409,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/legacy\\/img\\/program\\/upload\\/2025\\/06\\/03\\/20250603172701-59629535.jpg\",\"flagship\":\"\\u9ad8\\u9435\\u5047\\u671f\\u6298200\",\"description\":\"\\u73fe\\u7701200\\u5143\\u8d77\",\"start_time\":\"2026-10-15T10:00:00+08:00\",\"end_time\":\"2026-11-04T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u65c5\\u904a\\u884c\\u7a0b\"},\"store\":{\"id\":32485,\"name\":\"\\u9ad8\\u9435\\u5047\\u671f\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14376,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a10bba3dd2711380e68cd82051f43f.jpg\",\"flagship\":\"\\u514d\\u8cbb\\u9001\\u679c\\u9999\\u6c23\\u6ce1\\u98f2\",\"description\":\"\\u73fe\\u770179\\u5143\",\"start_time\":\"2026-10-12T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":32616,\"name\":\"\\u8cf4\\u5c71\\u5dbc\\u9ebb\\u8fa3\\u71d9\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14373,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/legacy\\/img\\/program\\/upload\\/2019\\/12\\/17\\/20191217122222-9e46bfe5.jpg\",\"flagship\":\"\\u6cf0\\u5f0f\\u62db\\u724c\\u934b\\u5e95\\u514d\\u8cbb\",\"description\":\"\\u6700\\u9ad8\\u7701588\\u5143\",\"start_time\":\"2026-10-12T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":16453,\"name\":\"\\u6cf0\\u6efeRolling Thai\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14372,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0fd7df5e471288d01b1ed2feed72f.jpg\",\"flagship\":\"\\u514d\\u8cbb\\u5403\\u767e\\u9999\\u679c\\u5ae9\\u96de\",\"description\":\"\\u73fe\\u7701379\\u5143\",\"start_time\":\"2026-10-12T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":34286,\"name\":\"\\u6488\\u738b\\u934b\\u7269\\u6599\\u7406\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14371,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0fd72c75d724998171a005dcd0ae3.jpg\",\"flagship\":\"\\u9001\\u6ab8\\u6aac\\u5eb7\\u666e\\u6c23\\u6ce1\\u8336\",\"description\":\"\\u73fe\\u770189\\u5143\",\"start_time\":\"2026-10-12T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":26645,\"name\":\"\\u96de\\u6e6f\\u5927\\u53d4\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14364,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f70a815d70f8b291295e79c423d0.jpg\",\"flagship\":\"\\u6d77\\u9bae\\u4e09\\u54c1150\\u5143\",\"description\":\"\\u73fe\\u770149\\u5143\",\"start_time\":\"2026-10-12T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":31549,\"name\":\"\\u5c0f\\u5ddd\\u934b\\u7269\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14339,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0ed9968a070d4bcaaa73d9b20f7cc.png\",\"flagship\":\"\\u5976\\u8336\\u7b2c\\uff12\\u676f\\u534a\\u50f9\",\"description\":\"\\u73fe\\u770128\\u5143\\u8d77\",\"start_time\":\"2026-10-10T10:00:00+08:00\",\"end_time\":\"2026-10-30T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":15655,\"name\":\"TEA TOP \\u7b2c\\u4e00\\u5473\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14338,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0ed95f98e7133a6f284e3c7fba1d9.jpg\",\"flagship\":\"\\u70cf\\u9f8d\\u9eb585\\u6298\",\"description\":\"\\u73fe\\u770117\\u5143\",\"start_time\":\"2026-10-10T10:00:00+08:00\",\"end_time\":\"2026-10-30T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u6d88\\u8cbb\\u60c5\\u5831\"},\"store\":{\"id\":34258,\"name\":\"\\u7121\\u51acWOODONG\\u70cf\\u9f8d\\u9eb5\\u6240\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14348,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f29a7800700fa5460d7674d3d0e8.jpg\",\"flagship\":\"\\u96de\\u7fc5200\\u5143\\u52a0\\u8cfc\",\"description\":\"\\u73fe\\u770140\\u5143\\u8d77\",\"start_time\":\"2026-10-09T10:00:00+08:00\",\"end_time\":\"2026-10-29T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u805a\\u9910\\u9910\\u5ef3\"},\"store\":{\"id\":34276,\"name\":\"\\u8778\\u725b\\u7fa9\\u5927\\u5229\\u9910\\u5ef3\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14340,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f166369f70fbae2b3462affa1b2f.jpg\",\"flagship\":\"\\u6eff199\\u9001\\u760b\\u85af\",\"description\":\"\\u73fe\\u770140\\u5143\",\"start_time\":\"2026-10-09T10:00:00+08:00\",\"end_time\":\"2026-10-29T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9023\\u9396\\u901f\\u98df\"},\"store\":{\"id\":34259,\"name\":\"\\u5343\\u9999\\u6f22\\u5821\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14351,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f2b97cf4704f9aea0e52f1c9c620.jpg\",\"flagship\":\"\\u90013000\\u5143\\u8ab2\\u7a0b\",\"description\":\"\\u73fe\\u77013000\\u5143\",\"start_time\":\"2026-10-08T10:00:00+08:00\",\"end_time\":\"2026-10-28T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u6d88\\u8cbb\\u60c5\\u5831\"},\"store\":{\"id\":34278,\"name\":\"A\\uff06B\\u808c\\u819a\\u5065\\u5eb7\\u7ba1\\u7406\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14350,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f2afb50c701fa38b0b4369ede2ae.jpg\",\"flagship\":\"\\u6307\\u5b9a\\u98f2\\u54c1\\u8cb7\\u4e00\\u9001\\u4e00\",\"description\":\"\\u6700\\u591a\\u770145\\u5143\",\"start_time\":\"2026-10-08T10:00:00+08:00\",\"end_time\":\"2026-10-28T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":34277,\"name\":\"\\u65e9\\u5230\\u665a\\u5230\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14378,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a10c4cd58c71bba146d83c89789c53.jpg\",\"flagship\":\"\\u9001\\u5bf5\\u7269\\u6e05\\u6f54\\u6fd5\\u5dfe\",\"description\":\"\\u73fe\\u770139\\u5143\",\"start_time\":\"2026-10-07T10:00:00+08:00\",\"end_time\":\"2026-10-27T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u65c5\\u904a\\u884c\\u7a0b\"},\"store\":{\"id\":26532,\"name\":\"\\u6731\\u9298\\u7f8e\\u8853\\u9928Juming Museum\",\"kind\":\"single_store\",\"area\":\"\\u65b0\\u5317\\u30fb\\u91d1\\u5c71\\u5340\",\"address\":\"\\u65b0\\u5317\\u5e02\\u91d1\\u5c71\\u5340\\u897f\\u52e2\\u6e562\\u865f\",\"tel\":\"02-24989940\",\"time\":\"\\u9031\\u4e8c\\u81f3\\u65e510\\uff1a00\\uff5e17\\uff1a00\\uff08\\u9031\\u4e00\\u4f11\\uff09\"}},{\"id\":14349,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0f29d94a370eba7166d49cdccf4e0.jpg\",\"flagship\":\"\\u5496\\u5561\\u5916\\u5e36\\u8cb7\\u4e00\\u9001\\u4e00\",\"description\":\"\\u6700\\u591a\\u7701190\\u5143\",\"start_time\":\"2026-10-07T10:00:00+08:00\",\"end_time\":\"2026-10-27T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":15663,\"name\":\"\\u6210\\u771f\\u5496\\u5561\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14324,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0e70007897317914c51d337619c9a.png\",\"flagship\":\"\\u828b\\u6ce5\\u70b8\\u86cb\\u9905\\uff18\\u6298\",\"description\":\"\\u73fe\\u770112\\u5143\",\"start_time\":\"2026-10-07T10:00:00+08:00\",\"end_time\":\"2026-10-27T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9023\\u9396\\u901f\\u98df\"},\"store\":{\"id\":18987,\"name\":\"\\u6668\\u9593\\u5eda\\u623f\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14323,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0e6fc92117362b4a109e59be17df9.jpg\",\"flagship\":\"\\u5916\\u5e36\\u7f8e\\u5f0f\\u8cb7\\u4e00\\u9001\\u4e00\",\"description\":\"\\u73fe\\u7701105\\u5143\",\"start_time\":\"2026-10-06T10:00:00+08:00\",\"end_time\":\"2026-10-26T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":34249,\"name\":\"\\u6e5b\\u76e7\\u5496\\u5561\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14322,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0e6f35bb5700e8bc6e440fc149c9c.jpg\",\"flagship\":\"\\u6eff200\\u4eab85\\u6298\",\"description\":\"\\u73fe\\u770130\\u5143\\u8d77\",\"start_time\":\"2026-10-06T10:00:00+08:00\",\"end_time\":\"2026-10-26T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":34248,\"name\":\"\\u8336\\u8a60\\u6625\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14347,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/legacy\\/img\\/program\\/upload\\/2026\\/07\\/17\\/20260717180057-74292a07.jpg\",\"flagship\":\"\\u9001A5\\u548c\\u725b\\u3001\\u96ea\\u7cd5\",\"description\":\"\\u73fe\\u7701258\\u5143\",\"start_time\":\"2026-10-05T10:00:00+08:00\",\"end_time\":\"2026-11-01T23:59:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9019\\u934b\\u8d85\\u6709\\u6599\"},\"store\":{\"id\":33447,\"name\":\"\\u7fbd\\u8449\\u9ebb\\u8fa3\\u706b\\u934b\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14321,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0e6eae0bd7208a9b0e5fe671f2e91.png\",\"flagship\":\"\\u9001\\u9ebb\\u8fa3\\u9d28\\u8840\\u6216\\u8c46\\u8150\",\"description\":\"\\u73fe\\u770140\\u5143\",\"start_time\":\"2026-10-05T10:00:00+08:00\",\"end_time\":\"2026-10-25T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u6d88\\u8cbb\\u60c5\\u5831\"},\"store\":{\"id\":30648,\"name\":\"\\u4e09\\u9867\\u8305\\u5eec\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14337,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0ed8c670370789d4fd7ab8a97c587.jpg\",\"flagship\":\"\\u98f2\\u54c1\\u4efb\\u907885\\u6298\",\"description\":\"\\u6700\\u9ad8\\u770112\\u5143\",\"start_time\":\"2026-10-04T10:00:00+08:00\",\"end_time\":\"2026-10-24T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u8f15\\u98df\\u5348\\u8336\"},\"store\":{\"id\":34257,\"name\":\"3\\uff1a15PM\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14264,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/legacy\\/img\\/program\\/upload\\/2026\\/09\\/16\\/1789548404_3d9b8dc6a7b5dd430c3ac61607f053cd.jpg\",\"flagship\":\"\\u6eff\\u984d\\u9001\\u9ec3\\u91d1\\u70b8\\u8c46\\u8150\",\"description\":\"\\u73fe\\u7701208\\u5143\",\"start_time\":\"2026-10-04T10:00:00+08:00\",\"end_time\":\"2026-10-24T22:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u805a\\u9910\\u9910\\u5ef3\"},\"store\":{\"id\":15451,\"name\":\"\\u6d93\\u8c46\\u8150\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14320,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0ddb3e9f573f3950c572082dd0db0.jpg\",\"flagship\":\"\\u9001\\u9ec3\\u91d1\\u9b5a\\u677f\\u9165\\u689d\",\"description\":\"\\u73fe\\u770164\\u5143\",\"start_time\":\"2026-10-03T10:00:00+08:00\",\"end_time\":\"2026-10-23T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u9023\\u9396\\u901f\\u98df\"},\"store\":{\"id\":28209,\"name\":\"Bonchon chicken\\u672c\\u6751\\u70b8\\u96de\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14319,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/images\\/01a0ddacb77a7052860fe7dc6c4e2e97.png\",\"flagship\":\"\\u70e4\\u8089\\u86cb\\u5410\\u53f8\\u8d08\\u7d05\\u8336\",\"description\":\"\\u73fe\\u770120\\u5143\",\"start_time\":\"2026-10-03T10:00:00+08:00\",\"end_time\":\"2026-10-23T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u6d88\\u8cbb\\u60c5\\u5831\"},\"store\":{\"id\":34247,\"name\":\"\\u9ea5\\u753a\\u5410\\u53f8\\u5de5\\u623f\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}},{\"id\":14263,\"image\":\"https:\\/\\/supertaste-asset.tvbs.com.tw\\/legacy\\/img\\/program\\/upload\\/2026\\/09\\/17\\/1789616016_01b344471b520e17f42e5940e5a103cf.jpg\",\"flagship\":\"\\u6eff\\u984d\\u9001\\u6708\\u4eae\\u8766\\u9905\",\"description\":\"\\u73fe\\u7701320\\u5143\",\"start_time\":\"2026-10-01T10:00:00+08:00\",\"end_time\":\"2026-10-21T23:00:00+08:00\",\"is_exclusive\":true,\"category\":{\"name\":\"\\u805a\\u9910\\u9910\\u5ef3\"},\"store\":{\"id\":34174,\"name\":\"\\u767e\\u5bb6\\u73ed\\u6d3b\\u8766\",\"kind\":\"chain_store\",\"area\":\"\\u9023\\u9396\\u9580\\u5e02\",\"address\":null,\"tel\":null,\"time\":null}}],\"links\":{\"next\":\"https:\\/\\/api.supertaste.tvbs.app\\/v1\\/coupons?page=2\",\"prev\":null},\"meta\":{\"total\":131,\"path\":\"https:\\/\\/api.supertaste.tvbs.app\\/v1\\/coupons\",\"per_page\":24,\"current_page\":1,\"last_page\":6}}"
+  },
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/identity",
+   "status": 200,
+   "bytes": 109,
+   "body": "{\"data\":{\"cora_id\":\"9c83f7f0-9e03-453c-a593-8f01d184fb45\",\"is_new\":true,\"source\":\"generated\"},\"success\":true}"
+  },
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/campaigns/manifest?brand=supertaste&write_key=3735a22dd4ad871a998ca0ad714bc43837b1e0b8ee0f7d2df2c2f358e34091bd",
+   "status": 200,
+   "bytes": 46,
+   "body": "{\"version\":\"e3b0c44298fc1c14\",\"page_rules\":[]}"
+  },
+  {
+   "url": "https://identity.mparticle.com/v1/identify",
+   "status": 200,
+   "request": "{\"client_sdk\":{\"platform\":\"web\",\"sdk_vendor\":\"mparticle\",\"sdk_version\":\"2.81.0\"},\"context\":null,\"environment\":\"production\",\"request_id\":\"3569648b-495e-4984-870b-cd5a4c69c126\",\"request_timestamp_ms\":1792206355559,\"previous_mpid\":null,\"known_identities\":{\"device_application_stamp\":\"d0a242fc-e74a-4444-bc6f-36cc8d1cfbd8\"}}",
+   "bytes": 174,
+   "body": "{\"context\":null,\"matched_identities\":{\"device_application_stamp\":\"d0a242fc-e74a-4444-bc6f-36cc8d1cfbd8\"},\"is_ephemeral\":true,\"mpid\":\"682377096044153669\",\"is_logged_in\":false}"
+  },
+  {
+   "url": "https://segment.api.useinsider.com/v4/segments/1792206356513000cdd2115.c528acc6?partnerid=10009630&fields=42f944750624454c6fd769a3961bca89,cee91c1a11e755c627e4c6ebec0755e0&",
+   "status": 200,
+   "bytes": 927,
+   "body": "{\"f8c8b8e0a08b18df27fdc057095d65cd\":\"7ca57c4d094abc93473852082d2111c2\",\"a50cb56aae081d266eee293bbcf50cee\":\"c4a097ac5b4f6d04139d9ab4d661290b\",\"b34f5c3ab496faf068ae9114a6f4c946\":\"unknown\",\"6f2832bdb7e40f88840b3683ab1ee0da\":\"7ca57c4d094abc93473852082d2111c2\",\"041b6eeda1563f42469a766eca5f26bc\":{},\"90550d6bfb1ba69eb838b6a37f780b39\":\"7ca57c4d094abc93473852082d2111c2\",\"3101c1fde707bc288adf61ace566c978\":{},\"42f944750624454c6fd769a3961bca89\":\"unknown\",\"cee91c1a11e755c627e4c6ebec0755e0\":{},\"1f972f5b9622c0029e5320fe7b13f773\":\"7ca57c4d094abc93473852082d2111c2\",\"a9d017aa70743593cd613d72d8a2d6ab\":{},\"71d3cc3d802baa15c6422a1574f5520f\":\"7ca57c4d094abc93473852082d2111c2\",\"3a8f90ffa3d58ae6936dbcdf750f8694\":\"unknown\",\"908bd22bceee5303dcb77bb1db191b76\":{},\"0698715d65a294d7c510c6fa4df0d800\":\"7ca57c4d094abc93473852082d2111c2\",\"6ba03059c6bcab80661a9e756bbd01ee\":\"7ca57c4d094abc93473852082d2111c2\",\"27a698ecc53521f6f1745c525ee8add9\":60000}"
+  },
+  {
+   "url": "https://locationv2.api.useinsider.com/?v=2&pId=10009630&",
+   "status": 200,
+   "bytes": 274,
+   "body": "{\"ip\":\"cf56c755360f4961c73efbac61918ff2\",\"countryCode\":\"US\",\"countrName\":\"United States\",\"cityName\":\"Washington\",\"cityNameId\":\"4792307\",\"regionName\":\"Virginia\",\"regionNameId\":\"VA\",\"latitude\":\"1c85892e73725f1af4966b2ff1fd6b8d\",\"longitude\":\"57b06d17223db13a7a9a4825336cc5cb\"}\n"
+  },
+  {
+   "url": "https://carrier.useinsider.com/y/v2/z",
+   "status": 200,
+   "request": "{\"user_id\":\"1792206356513000cdd2115.c528acc6\",\"campaigns\":[{\"id\":553,\"sbre\":true,\"et\":1792208156000},{\"id\":3020,\"sbre\":true,\"et\":1792208156000},{\"id\":3088,\"sbre\":true,\"et\":1792208156000}],\"partner\":\"tvbssupertaste\"}",
+   "bytes": 175,
+   "body": "[{\"c\":553,\"t\":\"45d349b5f70d0c30b3f06e870f80cdc270906155\"},{\"c\":3020,\"t\":\"e02cb2d097eceb68ad4dde784134d2e64852abee\"},{\"c\":3088,\"t\":\"2482c5bd2c4885019a01caf4fd3d5c9f746ef758\"}]\n"
+  },
+  {
+   "url": "https://falcon.useinsider.com/api/v1/contact-profile/get/tvbssupertaste",
+   "status": 200,
+   "request": "{\"attributes\":[\"c_line_uid\",\"ag\",\"ge\",\"uuid\",\"c_cr_wline30_s_241029_ting\",\"c_s_coupontea_core_241029_yuhan\"],\"events\":[{\"event_name\":\"confirmation_page_view\",\"params\":[\"crea\"]}],\"insider_id\":\"1792206356513000cdd2115.c528acc6\"}",
+   "bytes": 11,
+   "body": "{\"data\":{}}"
+  },
+  {
+   "url": "https://aryuder.api.useinsider.com/v3/status",
+   "status": 200,
+   "request": "{\"p\":\"tvbssupertaste\",\"u\":\"1792206356513000cdd2115.c528acc6\",\"c\":[{\"c\":252,\"j\":35},{\"c\":253,\"j\":35},{\"c\":386,\"j\":42},{\"c\":387,\"j\":42},{\"c\":383,\"j\":43},{\"c\":379,\"j\":50}]}",
+   "bytes": 74,
+   "body": "{\"252\":false,\"253\":false,\"379\":false,\"383\":false,\"386\":false,\"387\":false}\n"
+  },
+  {
+   "url": "https://carrier.useinsider.com/y/v2/z",
+   "status": 200,
+   "request": "{\"user_id\":\"1792206356513000cdd2115.c528acc6\",\"campaigns\":[{\"id\":553,\"sbre\":true,\"et\":1792208157000},{\"id\":3020,\"sbre\":true,\"et\":1792208157000},{\"id\":3088,\"sbre\":true,\"et\":1792208157000}],\"partner\":\"tvbssupertaste\"}",
+   "bytes": 175,
+   "body": "[{\"c\":553,\"t\":\"0725a7cead719bc6c8f008ea8830442c389482d7\"},{\"c\":3020,\"t\":\"040843f269e68242246d14183c9557dc61f1344e\"},{\"c\":3088,\"t\":\"5389965becce222b6c4ece29c63d66a11bc8e9ae\"}]\n"
+  },
+  {
+   "url": "https://segment.api.useinsider.com/v4/segments/1792206356513000cdd2115.c528acc6?partnerid=10009630&fields=42f944750624454c6fd769a3961bca89,cee91c1a11e755c627e4c6ebec0755e0&",
+   "status": 200,
+   "bytes": 927,
+   "body": "{\"f8c8b8e0a08b18df27fdc057095d65cd\":\"7ca57c4d094abc93473852082d2111c2\",\"a50cb56aae081d266eee293bbcf50cee\":\"c4a097ac5b4f6d04139d9ab4d661290b\",\"b34f5c3ab496faf068ae9114a6f4c946\":\"unknown\",\"6f2832bdb7e40f88840b3683ab1ee0da\":\"7ca57c4d094abc93473852082d2111c2\",\"041b6eeda1563f42469a766eca5f26bc\":{},\"90550d6bfb1ba69eb838b6a37f780b39\":\"7ca57c4d094abc93473852082d2111c2\",\"3101c1fde707bc288adf61ace566c978\":{},\"42f944750624454c6fd769a3961bca89\":\"unknown\",\"cee91c1a11e755c627e4c6ebec0755e0\":{},\"1f972f5b9622c0029e5320fe7b13f773\":\"7ca57c4d094abc93473852082d2111c2\",\"a9d017aa70743593cd613d72d8a2d6ab\":{},\"71d3cc3d802baa15c6422a1574f5520f\":\"7ca57c4d094abc93473852082d2111c2\",\"3a8f90ffa3d58ae6936dbcdf750f8694\":\"unknown\",\"908bd22bceee5303dcb77bb1db191b76\":{},\"0698715d65a294d7c510c6fa4df0d800\":\"7ca57c4d094abc93473852082d2111c2\",\"6ba03059c6bcab80661a9e756bbd01ee\":\"7ca57c4d094abc93473852082d2111c2\",\"27a698ecc53521f6f1745c525ee8add9\":60000}"
+  },
+  {
+   "url": "https://cora.tvbs.com.tw/api/v1/track",
+   "status": 202,
+   "request": "{\"events\":[{\"event_type\":\"page_view\",\"properties\":{\"screen_width\":1366,\"screen_height\":900,\"viewport_width\":1366,\"viewport_height\":900,\"language\":\"zh-TW\",\"timezone\":\"Asia/Taipei\",\"page_location\":\"https://supertaste.tvbs.com.tw/offers\",\"page_title\":\"最新優惠 | 食尚玩家\",\"page_referrer\":\"\",\"page_path\":\"/offers\",\"content_url\":\"https://supertaste.tvbs.com.tw/offers\",\"content_title\":\"最新優惠｜食尚玩家\",\"content_id\":\"offers\",\"_content_source\":{\"content_url\":2,\"content_title\":2,\"content_id\":2}},\"timestamp\":\"2026-10-17T03:05:56.165Z\",\"event_id\":\"54047802-ed0e-4605-ac75-1977956c2b98\",\"retry_count\":0,\"cora_id\":\"9c83f7f0-9e03-453c-a593-8f01d184fb45\",\"session_id\":\"37d5b448-8cbf-4487-a063-dfbda200285f\",\"platform\":\"web\",\"brand\":\"supertaste\"}]}",
+   "bytes": 55,
+   "body": "{\"accepted\":1,\"errors\":[],\"rejected\":0,\"success\":true}\n"
+  }
+ ],
+ "title": "最新優惠 | 食尚玩家",
+ "finalUrl": "https://supertaste.tvbs.com.tw/offers",
+ "text": "城市玩家\n優惠券\n節目\n熱門\n美食\n旅行\n懶人包\n親子\n更多\n城市玩家\n\n北部\n\n基隆市\n台北市\n新北市\n桃園市\n新竹市\n新竹縣\n宜蘭縣\n\n中部\n\n苗栗縣\n台中市\n彰化縣\n南投縣\n雲林縣\n\n南部\n\n嘉義市\n嘉義縣\n台南市\n高雄市\n屏東縣\n\n東部／離島\n\n花蓮縣\n台東縣\n澎湖縣\n金門縣\n連江縣\n全台熱門城市\n優惠券\n節目\n熱門\n美食\n\n城市探索\n\n台北市\n新北市\n桃園市\n台中市\n台南市\n高雄市\n所有地區\n\n美食分類\n\n火鍋\n燒肉\n吃到飽\n牛排\n鐵板燒\n夜市小吃\n所有類別\n\n通路情報\n\n超商\n賣場\n旅行\n懶人包\n親子\n生活\n日韓\n達人\n店家\n永續旅遊\n專題策展\n人氣鍋物優惠開跑！超值優惠都在這，找朋友一起開鍋吧！10/12-11/1下載APP領券再抽住宿券\n最新優惠\n已領取\n已兌換\n已錯過\n全部\n/\n不分類\n篩選\n連鎖門市\n高鐵假期\n高鐵假期折200\n現省200元起\n領取\n連鎖門市\n賴山嶼麻辣燙\n免費送果香氣泡飲\n現省79元\n領取\n連鎖門市\n泰滾Rolling Thai\n泰式招牌鍋底免費\n最高省588元\n領取\n連鎖門市\n撈王鍋物料理\n免費吃百香果嫩雞\n現省379元\n領取\n連鎖門市\n雞湯大叔\n送檸檬康普氣泡茶\n現省89元\n領取\n連鎖門市\n小川鍋物\n海鮮三品150元\n現省49元\n領取\n連鎖門市\nTEA TOP 第一味\n奶茶第２杯半價\n現省28元起\n領取\n連鎖門市\n無冬WOODONG烏龍麵所\n烏龍麵85折\n現省17元\n領取\n連鎖門市\n蝸牛義大利餐廳\n雞翅200元加購\n現省40元起\n領取\n連鎖門市\n千香漢堡\n滿199送瘋薯\n現省40元\n領取\n連鎖門市\nA＆B肌膚健康管理\n送3000元課程\n現省3000元\n領取\n連鎖門市\n早到晚到\n指定飲品買一送一\n最多省45元\n領取\n新北・金山區\n朱銘美術館Juming Museum\n送寵物清潔濕巾\n現省39元\n領取\n連鎖門市\n成真咖啡\n咖啡外帶買一送一\n最多省190元\n領取\n連鎖門市\n晨間廚房\n芋泥炸蛋餅８折\n現省12元\n領取\n連鎖門市\n湛盧咖啡\n外帶美式買一送一\n現省105元\n領取\n連鎖門市\n茶詠春\n滿200享85折\n現省30元起\n領取\n連鎖門市\n羽葉麻辣火鍋\n送A5和牛、雪糕\n現省258元\n領取\n連鎖門市\n三顧茅廬\n送麻辣鴨血或豆腐\n現省40元\n領取\n連鎖門市\n3：15PM\n飲品任選85折\n最高省12元\n領取\n連鎖門市\n涓豆腐\n滿額送黃金炸豆腐\n現省208元\n領取\n連鎖門市\nBonchon chicken本村炸雞\n送黃金魚板酥條\n現省64元\n領取\n連鎖門市\n麥町吐司工房\n烤肉蛋吐司贈紅茶\n現省20元\n領取\n連鎖門市\n百家班活蝦\n滿額送月亮蝦餅\n現省320元\n領取\n1\n2\n3\n4\n5\n6\n\n您的意見是我們前進的動力，歡迎來信或來電反映\n\n食尚編輯：supertaste@tvbs.com.tw\n意見反映：service@tvbs.com.tw\n觀眾服務專線：02-2656-1599\n關於食尚玩家\n公司介紹\n人才招募\n企業動態\n優惠券店家招募\n創作者招募\n節目表\n版權宣告\n業務服務\n隱私權政策\n網站使用協定\n數位廣告與贊助政策\n節目版權銷售\n公開招標\n官方聲明\n星藝象娛樂\n\n© TVBS Media Inc. All Rights Reserved. 聯利媒體股份有限公司\n\nTVBS 官網\nTVBS 新聞網",
+ "links": [
+  {
+   "href": "https://supertaste.tvbs.com.tw/",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city",
+   "text": "城市玩家"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers",
+   "text": "優惠券"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/review",
+   "text": "節目"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/hot",
+   "text": "熱門"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food",
+   "text": "美食"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/travel",
+   "text": "旅行"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/pack",
+   "text": "懶人包"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/kids",
+   "text": "親子"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/accessories",
+   "text": "生活"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/asia",
+   "text": "日韓"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/player",
+   "text": "達人"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/infocard",
+   "text": "店家"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/esg",
+   "text": "永續旅遊"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/topic",
+   "text": "專題策展"
+  },
+  {
+   "href": "https://tvbs.to/8yuj8d",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/keelung-city",
+   "text": "基隆市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taipei-city",
+   "text": "台北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/new-taipei-city",
+   "text": "新北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taoyuan-city",
+   "text": "桃園市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hsinchu-city",
+   "text": "新竹市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hsinchu-county",
+   "text": "新竹縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/yilan-county",
+   "text": "宜蘭縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/miaoli-county",
+   "text": "苗栗縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taichung-city",
+   "text": "台中市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/changhua-county",
+   "text": "彰化縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/nantou-county",
+   "text": "南投縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/yunlin-county",
+   "text": "雲林縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/chiayi-city",
+   "text": "嘉義市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/chiayi-county",
+   "text": "嘉義縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/tainan-city",
+   "text": "台南市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/kaohsiung-city",
+   "text": "高雄市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/pingtung-county",
+   "text": "屏東縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/hualien-county",
+   "text": "花蓮縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/taitung-county",
+   "text": "台東縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/penghu-county",
+   "text": "澎湖縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/kinmen-county",
+   "text": "金門縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/taiwan/city/lienchiang-county",
+   "text": "連江縣"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taipei-city",
+   "text": "台北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/new-taipei-city",
+   "text": "新北市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taoyuan-city",
+   "text": "桃園市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/taichung-city",
+   "text": "台中市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/tainan-city",
+   "text": "台南市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/kaohsiung-city",
+   "text": "高雄市"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/hot-pot",
+   "text": "火鍋"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/bbq",
+   "text": "燒肉"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/all-you-can-eat",
+   "text": "吃到飽"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/steak",
+   "text": "牛排"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/teppanyaki",
+   "text": "鐵板燒"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/street-food",
+   "text": "夜市小吃"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/convenience-store",
+   "text": "超商"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/category/food/all/chain-store",
+   "text": "賣場"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14409/",
+   "text": "連鎖門市\n高鐵假期\n高鐵假期折200\n現省200元起\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14376/",
+   "text": "連鎖門市\n賴山嶼麻辣燙\n免費送果香氣泡飲\n現省79元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14373/",
+   "text": "連鎖門市\n泰滾Rolling Thai\n泰式招牌鍋底免費\n最高省588元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14372/",
+   "text": "連鎖門市\n撈王鍋物料理\n免費吃百香果嫩雞\n現省379元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14371/",
+   "text": "連鎖門市\n雞湯大叔\n送檸檬康普氣泡茶\n現省89元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14364/",
+   "text": "連鎖門市\n小川鍋物\n海鮮三品150元\n現省49元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14339/",
+   "text": "連鎖門市\nTEA TOP 第一味\n奶茶第２杯半價\n現省28元起\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14338/",
+   "text": "連鎖門市\n無冬WOODONG烏龍麵所\n烏龍麵85折\n現省17元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14348/",
+   "text": "連鎖門市\n蝸牛義大利餐廳\n雞翅200元加購\n現省40元起\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14340/",
+   "text": "連鎖門市\n千香漢堡\n滿199送瘋薯\n現省40元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14351/",
+   "text": "連鎖門市\nA＆B肌膚健康管理\n送3000元課程\n現省3000元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14350/",
+   "text": "連鎖門市\n早到晚到\n指定飲品買一送一\n最多省45元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14378/",
+   "text": "新北・金山區\n朱銘美術館Juming Museum\n送寵物清潔濕巾\n現省39元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14349/",
+   "text": "連鎖門市\n成真咖啡\n咖啡外帶買一送一\n最多省190元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14324/",
+   "text": "連鎖門市\n晨間廚房\n芋泥炸蛋餅８折\n現省12元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14323/",
+   "text": "連鎖門市\n湛盧咖啡\n外帶美式買一送一\n現省105元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14322/",
+   "text": "連鎖門市\n茶詠春\n滿200享85折\n現省30元起\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14347/",
+   "text": "連鎖門市\n羽葉麻辣火鍋\n送A5和牛、雪糕\n現省258元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14321/",
+   "text": "連鎖門市\n三顧茅廬\n送麻辣鴨血或豆腐\n現省40元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14337/",
+   "text": "連鎖門市\n3：15PM\n飲品任選85折\n最高省12元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14264/",
+   "text": "連鎖門市\n涓豆腐\n滿額送黃金炸豆腐\n現省208元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14320/",
+   "text": "連鎖門市\nBonchon chicken本村炸雞\n送黃金魚板酥條\n現省64元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14319/",
+   "text": "連鎖門市\n麥町吐司工房\n烤肉蛋吐司贈紅茶\n現省20元\n領取"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/offers/14263/",
+   "text": "連鎖門市\n百家班活蝦\n滿額送月亮蝦餅\n現省320元\n領取"
+  },
+  {
+   "href": "https://graphics.tvbs.com.tw/redirect/supertaste/supertaste_web_offers/index.html",
+   "text": ""
+  },
+  {
+   "href": "mailto:supertaste@tvbs.com.tw",
+   "text": "supertaste@tvbs.com.tw"
+  },
+  {
+   "href": "mailto:service@tvbs.com.tw",
+   "text": "service@tvbs.com.tw"
+  },
+  {
+   "href": "tel:+886-2-26561599",
+   "text": "02-2656-1599"
+  },
+  {
+   "href": "https://apps.apple.com/app/apple-store/id1508974479?pt=216163&ct=web_navigation&mt=8",
+   "text": ""
+  },
+  {
+   "href": "https://play.google.com/store/apps/details?id=com.tvbs.news.food.topnews.bestfood.restaurant.news.supertaste.news.ratings.news&referrer=utm_source=web_navigation&utm_medium=androidbutton&utm_term=download&utm_content=androidbutton&utm_campaign=web_navigation",
+   "text": ""
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/about-us",
+   "text": "關於食尚玩家"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company",
+   "text": "公司介紹"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/careers/",
+   "text": "人才招募"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company/news/latest",
+   "text": "企業動態"
+  },
+  {
+   "href": "https://forms.gle/WGip9ig7vBcUEPUJ9",
+   "text": "優惠券店家招募"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/hot/359206",
+   "text": "創作者招募"
+  },
+  {
+   "href": "https://schedule.tvbs.com.tw/",
+   "text": "節目表"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/policies/copyright",
+   "text": "版權宣告"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/advertise",
+   "text": "業務服務"
+  },
+  {
+   "href": "https://member.tvbs.com.tw/index/privacy_policy?back_url=https://www.tvbs.com.tw/&site=Tvbs",
+   "text": "隱私權政策"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/policies/terms",
+   "text": "網站使用協定"
+  },
+  {
+   "href": "https://supertaste.tvbs.com.tw/about-us/advertising-policy",
+   "text": "數位廣告與贊助政策"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/copyright",
+   "text": "節目版權銷售"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/tender",
+   "text": "公開招標"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/ours/company/announcement",
+   "text": "官方聲明"
+  },
+  {
+   "href": "https://starvision.tvbs.com.tw/home",
+   "text": "星藝象娛樂"
+  },
+  {
+   "href": "https://www.facebook.com/supertastesupertaste/",
+   "text": "facebook"
+  },
+  {
+   "href": "https://www.youtube.com/channel/UC00wMIWR48SYidE6jmpL7Qg",
+   "text": "youtube"
+  },
+  {
+   "href": "https://line.me/R/ti/p/@supertaste",
+   "text": "line"
+  },
+  {
+   "href": "https://www.instagram.com/supertastesupertaste/",
+   "text": "instagram"
+  },
+  {
+   "href": "https://www.tvbs.com.tw/",
+   "text": "TVBS 官網"
+  },
+  {
+   "href": "https://news.tvbs.com.tw/",
+   "text": "TVBS 新聞網"
+  }
+ ]
+}
