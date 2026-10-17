@@ -6,35 +6,54 @@ import { openBrowser, loadPage } from './lib/browser.mjs';
 
 const OUT = 'deals/raw';
 
+// 第二輪探勘：指定頁面＋少量跟隨，確認分頁、詳情頁與台灣版
 const SOURCES = {
   line: {
     host: 'buy.line.me',
     start: [
-      'https://buy.line.me/',
-      'https://buy.line.me/u/partner/4321335',
-      'https://buy.line.me/u/partner/4747560',
+      'https://buy.line.me/brand',
+      'https://buy.line.me/specialoffer',
+      'https://buy.line.me/specialoffer?filter=discount',
+      'https://buy.line.me/specialoffer/travel',
+      'https://buy.line.me/campaigns',
+      'https://buy.line.me/u/partner/4747361',
     ],
-    follow: /商店|品牌|全部|回饋|優惠|活動|折價|coupon|campaign|shop|store|brand|merchant|event/i,
-    skip: /\/u\/partner\/\d+|\/product\/|login|logout|help|faq|privacy|terms/i,
-    robots: ['https://buy.line.me/robots.txt', 'https://buy.line.me/sitemap.xml'],
+    clickMore: /^(查看)?(更多|全部)/,
+    follow: /\/brand\/|\/specialoffer\/\d+|classification=/i,
+    skip: /\/u\/partner\/\d+|\/product\/|login|logout|help|faq|privacy|terms|rest-api|\/s\/|\/t\/\?/i,
+    maxFollow: 4,
+    requests: [],
   },
   eva: {
     host: 'mall.brmile.com',
-    start: ['https://mall.brmile.com/', 'https://mall.brmile.com/en/', 'https://mall.brmile.com/en/travel/easy-travel'],
-    follow: /tw|zh|taiwan|台灣|中文|all|merchant|store|categor|offer|promo|bonus|活動|全部|商店/i,
-    skip: /login|logout|signin|register|faq|privacy|terms|cookie/i,
-    robots: ['https://mall.brmile.com/robots.txt', 'https://mall.brmile.com/sitemap.xml'],
+    setup: 'https://mall.brmile.com/zh/?countryID=200',
+    start: [
+      'https://mall.brmile.com/zh/az',
+      'https://mall.brmile.com/zh/department-stores/shopee-taiwan',
+      'https://mall.brmile.com/zh/travel/klook-taiwan',
+      'https://mall.brmile.com/zh/top/vouchers',
+    ],
+    follow: null,
+    requests: [
+      ['https://mall.brmile.com/zh/az?orderBy=popular&letter=&page=2', { 'X-Requested-With': 'XMLHttpRequest' }],
+      ['https://mall.brmile.com/zh/az?orderBy=popular&letter=&page=2', {}],
+    ],
   },
   cathay: {
     host: 'shop.asiamiles.com',
+    setup: 'https://shop.asiamiles.com/zh/?countryID=200',
     start: [
-      'https://shop.asiamiles.com/',
-      'https://shop.asiamiles.com/en/',
-      'https://shop.asiamiles.com/en/department-stores?orderBy=amount',
+      'https://shop.asiamiles.com/zh/az',
+      'https://shop.asiamiles.com/zh/top/special-offers',
+      'https://shop.asiamiles.com/zh/top/vouchers',
     ],
-    follow: /tw|zh|taiwan|台灣|中文|all|merchant|store|categor|offer|promo|bonus|活動|全部|商店/i,
-    skip: /login|logout|signin|register|faq|privacy|terms|cookie/i,
-    robots: ['https://shop.asiamiles.com/robots.txt', 'https://shop.asiamiles.com/sitemap.xml'],
+    // 從所有商戶頁挑前幾個商戶詳情頁
+    follow: /^https:\/\/shop\.asiamiles\.com\/zh\/[a-z-]+\/[a-z0-9-]+\?/i,
+    skip: /login|logout|signin|register|faq|privacy|terms|cookie|\/top\/|\/az|how-it-works/i,
+    maxFollow: 3,
+    requests: [
+      ['https://shop.asiamiles.com/zh/az?orderBy=popular&letter=&page=2', { 'X-Requested-With': 'XMLHttpRequest' }],
+    ],
   },
 };
 
@@ -52,7 +71,21 @@ async function discover(name, cfg, context) {
   await mkdir(dir, { recursive: true });
   const summary = [`# ${name} discovery ${new Date().toISOString()}`, ''];
 
-  for (const u of cfg.robots) {
+  if (cfg.setup) {
+    const p = await loadPage(context, cfg.setup, { scrolls: 0, wait: 500 });
+    summary.push(`- setup ${cfg.setup} → ${p.status} ${p.finalUrl} "${p.title}"`);
+  }
+  for (const [u, headers] of cfg.requests || []) {
+    try {
+      const res = await context.request.get(u, { timeout: 30_000, headers });
+      const body = await res.text();
+      await writeFile(join(dir, `_req-${slug(u)}-${headers['X-Requested-With'] ? 'xhr' : 'plain'}.txt`), `${res.status()} ${res.headers()['content-type']}\n${body.slice(0, 600_000)}`);
+      summary.push(`- request ${u} ${JSON.stringify(headers)} → ${res.status()} ${body.length}B`);
+    } catch (e) {
+      summary.push(`- request ${u} → ERROR ${String(e.message).slice(0, 200)}`);
+    }
+  }
+  for (const u of cfg.robots || []) {
     try {
       const res = await context.request.get(u, { timeout: 30_000 });
       await writeFile(join(dir, `_${slug(u)}.txt`), `${res.status()}\n${(await res.text()).slice(0, 200_000)}`);
@@ -65,11 +98,12 @@ async function discover(name, cfg, context) {
   const seen = new Set();
   const queue = [...cfg.start];
   let n = 0;
-  while (queue.length && n < cfg.start.length + MAX_FOLLOW) {
+  let followed = 0;
+  while (queue.length && n < cfg.start.length + (cfg.maxFollow ?? MAX_FOLLOW)) {
     const url = queue.shift();
     if (seen.has(url)) continue;
     seen.add(url);
-    const p = await loadPage(context, url);
+    const p = await loadPage(context, url, { clickMore: cfg.clickMore, maxClicks: cfg.clickMore ? 8 : 0 });
     const id = `${String(n++).padStart(2, '0')}-${slug(url)}`;
     const { html, ...rest } = p;
     await writeFile(join(dir, `${id}.html`), html.slice(0, 1_500_000));
@@ -80,9 +114,9 @@ async function discover(name, cfg, context) {
     summary.push(
       `- [${id}] ${url} → status ${p.status} final ${p.finalUrl} title "${p.title}" html ${html.length}B json ${p.json.length} links ${p.links.length}${p.error ? ` ERROR ${p.error}` : ''}`,
     );
-    for (const j of p.json) summary.push(`  - json ${j.status} ${j.bytes}B ${j.url.slice(0, 200)}`);
+    for (const j of p.json) summary.push(`  - json ${j.status} ${j.bytes}B ${j.url.slice(0, 200)} ${(j.request || '').slice(0, 160)}`);
     // 只在起始頁擴散，避免爬太深
-    if (cfg.start.includes(url)) {
+    if (cfg.follow && cfg.start.includes(url)) {
       for (const l of dedupeLinks(p.links)) {
         let h;
         try {
@@ -93,7 +127,11 @@ async function discover(name, cfg, context) {
         if (!h.hostname.endsWith(cfg.host)) continue;
         const href = h.href.replace(/#.*$/, '');
         if (seen.has(href) || queue.includes(href) || cfg.skip.test(href)) continue;
-        if (cfg.follow.test(l.text) || cfg.follow.test(h.pathname + h.search)) queue.push(href);
+        if (followed >= (cfg.maxFollow ?? MAX_FOLLOW)) break;
+        if (cfg.follow.test(href) || cfg.follow.test(l.text)) {
+          queue.push(href);
+          followed++;
+        }
       }
     }
   }

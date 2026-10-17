@@ -22,14 +22,15 @@ const isJson = (res) => /json/i.test(res.headers()['content-type'] || '');
  * 載入頁面並收集：HTML、所有 JSON 回應、連結。
  * jsonFilter 可略過不相關的追蹤 API。
  */
-export async function loadPage(context, url, { scrolls = 4, maxJsonBytes = 400_000, wait = 2500 } = {}) {
+export async function loadPage(context, url, { scrolls = 4, maxJsonBytes = 400_000, wait = 2500, clickMore = null, maxClicks = 0 } = {}) {
   const page = await context.newPage();
   const json = [];
   page.on('response', async (res) => {
     try {
       if (!isJson(res)) return;
       const body = await res.text();
-      json.push({ url: res.url(), status: res.status(), bytes: body.length, body: body.slice(0, maxJsonBytes) });
+      const request = res.request().postData();
+      json.push({ url: res.url(), status: res.status(), request: request?.slice(0, 20_000), bytes: body.length, body: body.slice(0, maxJsonBytes) });
     } catch {
       /* 頁面關閉後的回應讀不到，忽略 */
     }
@@ -43,6 +44,14 @@ export async function loadPage(context, url, { scrolls = 4, maxJsonBytes = 400_0
     for (let i = 0; i < scrolls; i++) {
       await page.mouse.wheel(0, 4000);
       await page.waitForTimeout(800);
+    }
+    // 點「更多」按鈕載入完整清單
+    for (let i = 0; clickMore && i < maxClicks; i++) {
+      const btn = page.getByRole('button', { name: clickMore }).or(page.getByText(clickMore)).first();
+      if (!(await btn.isVisible().catch(() => false))) break;
+      await btn.click({ timeout: 5_000 }).catch(() => {});
+      await page.waitForLoadState('networkidle', { timeout: 10_000 }).catch(() => {});
+      await page.waitForTimeout(600);
     }
     await page.waitForTimeout(wait);
   } catch (e) {
