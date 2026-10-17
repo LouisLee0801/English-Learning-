@@ -1328,7 +1328,7 @@
    },
    "conditions": [
     "KLOOK 禮品卡：3 哩程 / TWD100",
-    "特殊活動 &#x28;包括火車票&#x29;：3 哩程 / TWD100",
+    "特殊活動 (包括火車票)：3 哩程 / TWD100",
     "交通運輸及Wi-Fi：7 哩程 / TWD100",
     "美食饗宴：7 哩程 / TWD100",
     "活動與體驗：10 哩程 / TWD100（09/03–10/31）",
@@ -1347,7 +1347,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/klook-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178368.9b25315c6863c2ea6d5dd1ae147823f429c15fa8.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-10-17T02:11:00.484Z"
   },
   {
    "id": "eva:185398",
@@ -5285,9 +5285,9 @@
    "boost": null,
    "conditions": [
     "原始回饋 最多 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1305 換算",
-    "Hotel Orders &#x28;New customers&#x29;：15 哩程 / HKD50",
-    "\"Thing To Do\" Orders &#x28;New customers&#x29;：6 哩程 / HKD50",
-    "Flight Orders &#x28;New customers&#x29;：9 哩程",
+    "Hotel Orders (New customers)：15 哩程 / HKD50",
+    "\"Thing To Do\" Orders (New customers)：6 哩程 / HKD50",
+    "Flight Orders (New customers)：9 哩程",
     "Stated rewards are only applicable to hotel booking orders from new customers, \"Thing To Do\" orders from new customers will earn less rewards.",
     "New customers booking flights will earn fixed rewards.",
     "No rewards will be earned for existing customers.",
@@ -5304,7 +5304,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/tiket-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630261.941c252358e73f17ed2934b5c01758335e13368e59452476ff4b941fd00c0095.png",
-   "updatedAt": "2026-10-17T02:06:17.746Z"
+   "updatedAt": "2026-10-17T02:11:00.484Z"
   },
   {
    "id": "eva:632389",
@@ -6045,31 +6045,6 @@
   },
   {
    "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:19qegbl",
-   "kind": "coupon",
-   "title": "Sale - up to 80% Off Previous Seasons' Kids Collections | Valid Worldwide &#x28;Italy and France Excluded&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 80,
-    "text": "80% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-08-30"
-  },
-  {
-   "source": "eva",
    "merchant": "NET-A-PORTER Asia",
    "merchantId": "446495",
    "category": "時尚服飾",
@@ -6120,6 +6095,31 @@
   },
   {
    "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:1bvw8ka",
+   "kind": "coupon",
+   "title": "Sale - up to 80% Off Previous Seasons' Men Collections | Valid Worldwide (Italy and France Excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 80,
+    "text": "80% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-08-30"
+  },
+  {
+   "source": "eva",
    "merchant": "La Mer",
    "merchantId": "614685",
    "category": "美妝保健",
@@ -6142,31 +6142,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2026-10-21"
-  },
-  {
-   "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:1cvo092",
-   "kind": "coupon",
-   "title": "Up to 60% Off SS26 Women's Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide &#x28;IT/FR excluded&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 60,
-    "text": "60% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-07-15"
   },
   {
    "source": "eva",
@@ -6204,31 +6179,6 @@
    "id": "eva:v:1fapdkp",
    "kind": "coupon",
    "title": "Up to 60% Off SS26 Kids Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Italy & France!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 60,
-    "text": "60% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-07-15"
-  },
-  {
-   "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:1g0uohs",
-   "kind": "coupon",
-   "title": "Up to 60% Off SS26 Men's Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide &#x28;IT/FR excluded&#x29;!",
    "code": null,
    "reward": {
     "type": "percent_off",
@@ -6475,15 +6425,15 @@
    "category": "時尚服飾",
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:1jx6z6e",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:1iu1xwq",
    "kind": "coupon",
-   "title": "Sale - up to 80% Off Previous Seasons' Men Collections | Valid Worldwide &#x28;Italy and France Excluded&#x29;!",
+   "title": "Tdf Sale SS26 — up to 50% Off Men's Collections | No Code Needed | Worldwide (Excluded Italy and France)!",
    "code": null,
    "reward": {
     "type": "percent_off",
-    "value": 80,
-    "text": "80% off"
+    "value": 50,
+    "text": "50% off"
    },
    "minSpend": null,
    "conditions": [
@@ -6491,7 +6441,7 @@
    ],
    "tags": [],
    "startAt": null,
-   "endAt": "2032-08-30"
+   "endAt": "2032-05-12"
   },
   {
    "source": "eva",
@@ -6667,31 +6617,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2031-11-17"
-  },
-  {
-   "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:1nmc6ak",
-   "kind": "coupon",
-   "title": "Sale - up to 80% Off Previous Seasons' Women Collections | Valid Worldwide &#x28;Italy and France Excluded&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 80,
-    "text": "80% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-08-30"
   },
   {
    "source": "eva",
@@ -6945,6 +6870,31 @@
   },
   {
    "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:1u394q2",
+   "kind": "coupon",
+   "title": "Up to 60% Off SS26 Women's Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide (IT/FR excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 60,
+    "text": "60% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-07-15"
+  },
+  {
+   "source": "eva",
    "merchant": "Rakuten Travel",
    "merchantId": "157458",
    "category": "旅遊",
@@ -7017,6 +6967,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2031-12-22"
+  },
+  {
+   "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:1vrur50",
+   "kind": "coupon",
+   "title": "Up to 60% Off SS26 Men's Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide (IT/FR excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 60,
+    "text": "60% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-07-15"
   },
   {
    "source": "eva",
@@ -7117,6 +7092,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2026-10-17"
+  },
+  {
+   "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:1yl0xls",
+   "kind": "coupon",
+   "title": "Sale - up to 80% Off Previous Seasons' Women Collections | Valid Worldwide (Italy and France Excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 80,
+    "text": "80% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-08-30"
   },
   {
    "source": "eva",
@@ -7470,6 +7470,31 @@
   },
   {
    "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:7s4fth",
+   "kind": "coupon",
+   "title": "TDF SALE SS26 — Up to 50% Off Kid's Collections | No Code Needed | Worldwide (excluded Italy & France)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 50,
+    "text": "50% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-05-12"
+  },
+  {
+   "source": "eva",
    "merchant": "Booking.com",
    "merchantId": "131768",
    "category": "旅遊",
@@ -7576,31 +7601,6 @@
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
    "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:9mmbtd",
-   "kind": "coupon",
-   "title": "Up to 60% Off SS26 Kids Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide &#x28;IT/FR excluded&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 60,
-    "text": "60% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-07-15"
-  },
-  {
-   "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
    "id": "eva:v:9ysmbd",
    "kind": "coupon",
    "title": "New Sale Discount Reviews | Up to 75% off SS25 and past seasons for Kids | No Code needed | Valid Worldwide!",
@@ -7617,31 +7617,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2031-10-30"
-  },
-  {
-   "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:aubunz",
-   "kind": "coupon",
-   "title": "TDF SALE SS26 — up To 50% Off Women's Collections | No Code Needed | Worldwide &#x28;excluded Italy & France&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "50% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-05-12"
   },
   {
    "source": "eva",
@@ -8045,6 +8020,31 @@
   },
   {
    "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:i54n05",
+   "kind": "coupon",
+   "title": "Up to 60% Off SS26 Kids Collections plus Up to Extra 20% Off Previous Seasons Collections on Sale | No Code Needed | Worldwide (IT/FR excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 60,
+    "text": "60% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-07-15"
+  },
+  {
+   "source": "eva",
    "merchant": "La Mer",
    "merchantId": "614685",
    "category": "美妝保健",
@@ -8170,31 +8170,6 @@
   },
   {
    "source": "eva",
-   "merchant": "The DoubleF Asia",
-   "merchantId": "552035",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:k09oq9",
-   "kind": "coupon",
-   "title": "TDF SALE SS26 — Up to 50% Off Kid's Collections | No Code Needed | Worldwide &#x28;excluded Italy & France&#x29;!",
-   "code": null,
-   "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "50% off"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2032-05-12"
-  },
-  {
-   "source": "eva",
    "merchant": "Sunspel",
    "merchantId": "514485",
    "category": "時尚服飾",
@@ -8292,6 +8267,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2028-02-08"
+  },
+  {
+   "source": "eva",
+   "merchant": "6IXTY 8IGHT",
+   "merchantId": "387505",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/6ixty-8ight-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_387505.35c8dd8b4f3e35984c04ba1117435be1faa166be.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:mwvufx",
+   "kind": "coupon",
+   "title": "PANTY COMBO 5 FOR NT$ 568(ONLY TW)",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2027-01-01"
   },
   {
    "source": "eva",
@@ -8395,31 +8395,6 @@
   },
   {
    "source": "eva",
-   "merchant": "6IXTY 8IGHT",
-   "merchantId": "387505",
-   "category": "時尚服飾",
-   "url": "https://mall.brmile.com/zh/clothes-and-fashion/6ixty-8ight-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_387505.35c8dd8b4f3e35984c04ba1117435be1faa166be.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:rb9gd5",
-   "kind": "coupon",
-   "title": "PANTY COMBO 5 FOR NT$ 568&#x28;ONLY TW&#x29;",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2027-01-01"
-  },
-  {
-   "source": "eva",
    "merchant": "SSENSE",
    "merchantId": "202868",
    "category": "時尚服飾",
@@ -8492,6 +8467,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2027-02-23"
+  },
+  {
+   "source": "eva",
+   "merchant": "The DoubleF Asia",
+   "merchantId": "552035",
+   "category": "時尚服飾",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:s4djj9",
+   "kind": "coupon",
+   "title": "Sale - up to 80% Off Previous Seasons' Kids Collections | Valid Worldwide (Italy and France Excluded)!",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 80,
+    "text": "80% off"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2032-08-30"
   },
   {
    "source": "eva",
@@ -8800,10 +8800,10 @@
    "category": "時尚服飾",
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z",
-   "id": "eva:v:xwu4fa",
+   "updatedAt": "2026-10-17T02:11:00.484Z",
+   "id": "eva:v:xvl0df",
    "kind": "coupon",
-   "title": "Tdf Sale SS26 — up to 50% Off Men's Collections | No Code Needed | Worldwide &#x28;Excluded Italy and France&#x29;!",
+   "title": "TDF SALE SS26 — up To 50% Off Women's Collections | No Code Needed | Worldwide (excluded Italy & France)!",
    "code": null,
    "reward": {
     "type": "percent_off",
