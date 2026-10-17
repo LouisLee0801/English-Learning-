@@ -1677,6 +1677,35 @@
    "updatedAt": "2026-10-17T01:57:11.554Z"
   },
   {
+   "id": "cathay:394885",
+   "kind": "rebate",
+   "source": "cathay",
+   "merchant": "eDreams",
+   "merchantId": "394885",
+   "category": "旅遊",
+   "title": "每筆100.75 里",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 100.75,
+    "text": "100.75 里數"
+   },
+   "boost": null,
+   "conditions": [
+    "一般商品：100.75",
+    "獎勵只適用於購買機票。購買其他產品會獲得不同獎勵。獎勵只適用於eDreams 旅行社 (台灣)網站上完成的訂單。",
+    "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
+    "里約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://shop.asiamiles.com/zh/travel/edreams-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_394885.19c73f234348c2c2b1bb48dbed24147472e8d1f8.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
    "id": "cathay:395385",
    "kind": "rebate",
    "source": "cathay",
@@ -2114,6 +2143,64 @@
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/voicetube-hero-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457205.a9a363cf6d230190f30a932992242dd1470c4c3e.png",
    "updatedAt": "2026-10-17T01:57:11.554Z"
+  },
+  {
+   "id": "cathay:457245",
+   "kind": "rebate",
+   "source": "cathay",
+   "merchant": "Disney+ Taiwan - Monthly Subscription",
+   "merchantId": "457245",
+   "category": "運動休閒",
+   "title": "每筆最高 44 里",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 44,
+    "text": "最多 44 里數"
+   },
+   "boost": null,
+   "conditions": [
+    "Disney+ 台灣高級月費計劃：44",
+    "Disney+ 台灣標準月費：31.5",
+    "2023年11月1日起，獎勵只適用於Disney+ 台灣高級月費計劃。Disney+ 台灣標準月費計劃會獲得較少獎勵。",
+    "里約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/disney-taiwan-monthly-subscription",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457245.165974fe8314ae733a1c9cc480a27e1c23fa3c190dcf09d427395efca3357ad9.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
+   "id": "cathay:457255",
+   "kind": "rebate",
+   "source": "cathay",
+   "merchant": "Disney+ Taiwan - Annual Subscription",
+   "merchantId": "457255",
+   "category": "運動休閒",
+   "title": "每筆最高 551 里",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 551,
+    "text": "最多 551 里數"
+   },
+   "boost": null,
+   "conditions": [
+    "Disney+ 台灣高級年費計劃：551",
+    "Disney+ 台灣標準年費計劃：441",
+    "2023年11月1日起，獎勵只適用於Disney+ 台灣高級年費計劃。Disney+ 台灣標準年費計劃會獲得較少獎勵。",
+    "里約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/disney-taiwan-annual-subscription",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457255.e0f37c2bc1432f75b6b9694f724224211bb35faf7fe8abf18c157d00f1440e59.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
   },
   {
    "id": "cathay:468125",

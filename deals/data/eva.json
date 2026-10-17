@@ -270,6 +270,41 @@
    "updatedAt": "2026-10-17T01:57:11.554Z"
   },
   {
+   "id": "eva:13641",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "JD.com",
+   "merchantId": "13641",
+   "category": "綜合電商",
+   "title": "每筆最高 25 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 25,
+    "text": "最多 25 哩程 / RMB50"
+   },
+   "boost": null,
+   "conditions": [
+    "糖果/巧克力, 车载蓝牙, 电子香薰, 汽车炭包, 车内除味剂, 灭火器, 手机贴膜：25 哩程 / RMB50",
+    "请注意，京东不接受丢单查询。不同产品的奖励有所不同，某些商品奖励可能会较少或没有奖励，最终待确认里数以京东方面作准。",
+    "京东Plus会员在京东商城自营店铺购物会获得较少的奖励。",
+    "标示奖励只适用于京东自营店的糖果/巧克力, 车载蓝牙, 电子香薰, 汽车炭包, 车内除味剂, 灭火器, 手机贴膜。所有京东自营店的其他货品类别会获得较少奖励或没有奖励。",
+    "请参考清单中 无法获得奖励的产品和品类",
+    "用户须通过本页面点击\"立即购物\"进入指定页面，并于该页面查询商品后跳转至京东 App 商品详情页，方可获得相应奖励。请注意，所有未通过\"立即购物\"跳转至指定页面完成的订单，均不能获得奖励。",
+    "以下订单或情况不会获得奖励，购物前请务必先确认以下购买细则：",
+    "1. 非京东自营店之订单。",
+    "2. 使用优惠券/礼品卡的订单",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/department-stores/jd-com",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_13641.93ce752cbf7a2a9c0bad5fa587cbcab5ff0e2482.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
    "id": "eva:140608",
    "kind": "rebate",
    "source": "eva",
@@ -1180,6 +1215,34 @@
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/diesel-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1680981.b9783355cefce901362ea79383c8f8e764c2113cc02e5b42dcca06c831fcbc3d.png",
    "updatedAt": "2026-10-17T01:57:11.554Z"
+  },
+  {
+   "id": "eva:1685951",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "Preply Asia",
+   "merchantId": "1685951",
+   "category": "生活服務",
+   "title": "每筆310 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 310,
+    "text": "310 哩程"
+   },
+   "boost": null,
+   "conditions": [
+    "一般商品：310 哩程",
+    "標示獎勵只適用於 Preply Asia 新客戶。 Preply Asia 現有客戶不會獲得獎勵。",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/office-and-business/preply-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1685951.5b4ceaa2811794cf77e89b76cc003e6747590f9ffa9a3ca90acc16b7a5027a5b.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
   },
   {
    "id": "eva:1697911",
@@ -2304,6 +2367,35 @@
    "updatedAt": "2026-10-17T01:57:11.554Z"
   },
   {
+   "id": "eva:394885",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "eDreams",
+   "merchantId": "394885",
+   "category": "旅遊",
+   "title": "每筆98 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 98,
+    "text": "98 哩程"
+   },
+   "boost": null,
+   "conditions": [
+    "一般商品：98 哩程",
+    "獎勵只適用於購買機票。購買其他產品會獲得不同獎勵。獎勵只適用於eDreams 旅行社 (台灣)網站上完成的訂單。",
+    "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/travel/edreams-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_394885.19c73f234348c2c2b1bb48dbed24147472e8d1f8.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
    "id": "eva:395385",
    "kind": "rebate",
    "source": "eva",
@@ -2714,6 +2806,41 @@
    "updatedAt": "2026-10-17T01:57:11.554Z"
   },
   {
+   "id": "eva:427155",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "Pinduoduo China",
+   "merchantId": "427155",
+   "category": "綜合電商",
+   "title": "每筆2 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 2,
+    "text": "2 哩程 / RMB50"
+   },
+   "boost": null,
+   "conditions": [
+    "一般商品：2 哩程 / RMB50",
+    "请注意，拼多多不接受丢单查询。奖励只适用于拼多多App订单。不同产品的奖励有所不同，某些商品奖励可能会较少或没有奖励，最终待确认奖励以拼多多方面为准。",
+    "以下订单或商品不会获得奖励，购物前请务必先确认以下购买细则：",
+    "-比价订单：顾客在拼多多App浏览商品后，在短时间（一小时以内）通过本平台下单该件商品。",
+    "-审核失败订单：未成团的订单、全部退款订单。",
+    "-锁佣/染色关系解除订单：顾客在下单前删除拼多多App的缓存记录或点击其他商品链接。",
+    "-处罚订单：拼多多平台判定为站内违规导流、站内违规二次售卖等交易异常的订单。",
+    "-换货订单/退款订单（包含部分退换货和部分退款订单）/购买海外购商品的订单。",
+    "使用非本网站提供的优惠代码可能导致奖励失效。奖励不适用于邮费/手续费/运费及各种税项（包括但不限于增值税和消费税等）。",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/department-stores/pinduoduo-china",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_427155.63868311f0876a3094bdeb2e4383fccd1a0f1147.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
    "id": "eva:437745",
    "kind": "rebate",
    "source": "eva",
@@ -2971,6 +3098,64 @@
    "url": "https://mall.brmile.com/zh/entertainment-and-leisure/voicetube-hero-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457205.a9a363cf6d230190f30a932992242dd1470c4c3e.png",
    "updatedAt": "2026-10-17T01:57:11.554Z"
+  },
+  {
+   "id": "eva:457245",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "Disney+ Taiwan - Monthly Subscription",
+   "merchantId": "457245",
+   "category": "運動休閒",
+   "title": "每筆最高 42 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 42,
+    "text": "最多 42 哩程"
+   },
+   "boost": null,
+   "conditions": [
+    "Disney+ 台灣高級月費計劃：42 哩程",
+    "Disney+ 台灣標準月費：30 哩程",
+    "2023年11月1日起，獎勵只適用於Disney+ 台灣高級月費計劃。Disney+ 台灣標準月費計劃會獲得較少獎勵。",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/entertainment-and-leisure/disney-taiwan-monthly-subscription",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457245.165974fe8314ae733a1c9cc480a27e1c23fa3c190dcf09d427395efca3357ad9.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
+  },
+  {
+   "id": "eva:457255",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "Disney+ Taiwan - Annual Subscription",
+   "merchantId": "457255",
+   "category": "運動休閒",
+   "title": "每筆最高 536 哩",
+   "reward": {
+    "type": "miles_fixed",
+    "value": 536,
+    "text": "最多 536 哩程"
+   },
+   "boost": null,
+   "conditions": [
+    "Disney+ 台灣高級年費計劃：536 哩程",
+    "Disney+ 台灣標準年費計劃：428 哩程",
+    "2023年11月1日起，獎勵只適用於Disney+ 台灣高級年費計劃。Disney+ 台灣標準年費計劃會獲得較少獎勵。",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "每筆固定"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/entertainment-and-leisure/disney-taiwan-annual-subscription",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457255.e0f37c2bc1432f75b6b9694f724224211bb35faf7fe8abf18c157d00f1440e59.png",
+   "updatedAt": "2026-10-17T02:00:44.420Z"
   },
   {
    "id": "eva:459555",
