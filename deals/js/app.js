@@ -47,7 +47,7 @@ function toast(msg) {
   }, 1600);
 }
 
-const fmtDate = (s) => (s ? s.slice(5).replace('-', '/') : '');
+const fmtDate = (s) => (!s ? '' : s.slice(0, 4) === todayStr().slice(0, 4) ? s.slice(5).replace('-', '/') : s.replaceAll('-', '/'));
 const fmtNum = (n) => (Number.isInteger(n) ? n.toLocaleString('zh-TW') : n.toFixed(2).replace(/\.?0+$/, ''));
 
 function rewardHtml(r) {
@@ -408,7 +408,7 @@ function viewStatus() {
     <section class="panel">
       <h2>計算方式</h2>
       <ul class="conds">
-        <li>哩程統一換算成「每 NT$100 可得幾哩」，外幣計價依抓取當日匯率換算。</li>
+        <li>哩程統一換算成「每 NT$100 可得幾哩」，外幣計價依抓取當日匯率換算；訂閱、訂房等「每筆固定哩數」另外標示，不參與 % 比較。</li>
         <li>等值回饋 % = 每百元哩數 × 1 哩價值（預設 NT$0.5，可在篩選區調整）。</li>
         <li>加碼只在活動期間內計入；過期加碼自動回到基本回饋。</li>
         <li>「7 天內到期」以台灣日期計算，含到期當天。</li>

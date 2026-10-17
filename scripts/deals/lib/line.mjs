@@ -175,7 +175,7 @@ export function missionDeal(mi, merchant, now) {
     category: null,
     title: clean(mi.contractName),
     reward,
-    minSpend: mi.orderMinimalCharge || null,
+    minSpend: mi.orderMinimalCharge > 1 ? mi.orderMinimalCharge : null, // 1 元 = 無門檻
     conditions: conditions.filter(Boolean),
     tags,
     startAt: null,

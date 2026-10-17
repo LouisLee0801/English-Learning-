@@ -58,6 +58,14 @@ test('brandKey matches the same brand across portals', () => {
   assert.equal(brandKey('Apple 官方網站'), brandKey('Apple Store Online Taiwan'));
   assert.equal(brandKey('PUMA台灣官方購物網站'), 'puma');
   assert.equal(brandKey('Bulgari'), 'bulgari');
+  assert.equal(brandKey('Yahoo奇摩購物中心'), brandKey('Yahoo Shopping Taiwan'));
+  assert.equal(brandKey('KKday (體驗與票券) - LINE旅遊'), brandKey('KKday Taiwan'));
+  assert.equal(brandKey('樂天旅遊(住宿)-LINE旅遊'), brandKey('Rakuten Travel Taiwan'));
+  assert.equal(brandKey('ALL-Accor Live Limitless Asia'), 'accor');
+  assert.equal(brandKey('Marriott International Asia'), 'marriott');
+  // 不該合併的
+  assert.notEqual(brandKey('Apple Music'), brandKey('Apple 官方網站'));
+  assert.notEqual(brandKey('Momocat Taiwan'), brandKey('momo購物網'));
 });
 
 test('filters: source, status, search, newbie, min spend, code; sorted by rate', () => {
@@ -67,17 +75,18 @@ test('filters: source, status, search, newbie, min spend, code; sorted by rate',
     deal({ id: 'c', source: 'eva', merchant: 'Agoda', reward: { type: 'miles', value: 10 } }), // ≈ 5%
     deal({ id: 'd', merchant: 'Old', endAt: '2026-10-01' }),
     deal({ id: 'e', kind: 'coupon', source: 'manual', merchant: 'foodpanda', code: 'EAT100', minSpend: 300, tags: ['新客限定'], reward: { type: 'amount', value: 100 } }),
+    deal({ id: 'f', kind: 'promo', merchant: 'Coupang', reward: { type: 'amount', value: 200, unit: '點' } }), // 無門檻贈點，不換算 %
   ];
   const f = defaultFilters();
   // 滿 300 折 100 ≈ 33% 折扣率，排最前
-  assert.deepEqual(filterDeals(list, f, today).map((d) => d.id), ['e', 'b', 'c', 'a']);
+  assert.deepEqual(filterDeals(list, f, today).map((d) => d.id), ['e', 'b', 'c', 'a', 'f']);
   assert.deepEqual(filterDeals(list, { ...f, sources: ['eva'] }, today).map((d) => d.id), ['c']);
   assert.deepEqual(filterDeals(list, { ...f, status: 'ending' }, today).map((d) => d.id), ['b']);
-  assert.deepEqual(filterDeals(list, { ...f, status: 'all' }, today).length, 5);
+  assert.deepEqual(filterDeals(list, { ...f, status: 'all' }, today).length, 6);
   assert.deepEqual(filterDeals(list, { ...f, q: 'pink' }, today).map((d) => d.id), ['b']);
   assert.deepEqual(filterDeals(list, { ...f, codeOnly: true }, today).map((d) => d.id), ['e']);
-  assert.deepEqual(filterDeals(list, { ...f, noNewbie: true }, today).map((d) => d.id), ['b', 'c', 'a']);
-  assert.deepEqual(filterDeals(list, { ...f, maxMinSpend: 100 }, today).map((d) => d.id), ['b', 'c', 'a']);
+  assert.deepEqual(filterDeals(list, { ...f, noNewbie: true }, today).map((d) => d.id), ['b', 'c', 'a', 'f']);
+  assert.deepEqual(filterDeals(list, { ...f, maxMinSpend: 100 }, today).map((d) => d.id), ['b', 'c', 'a', 'f']);
   assert.deepEqual(filterDeals(list, { ...f, sort: 'ending' }, today)[0].id, 'b');
 });
 

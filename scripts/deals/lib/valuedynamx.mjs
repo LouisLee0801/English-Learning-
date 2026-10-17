@@ -74,7 +74,6 @@ export function parseMerchantList(html, baseUrl) {
       featured: /merchant-with-offer|ico-offer/.test(b),
       hasVoucher: /merchant-with-voucher|ico-voucher/.test(b),
       logo: b.match(/<img src="(https:\/\/[^"]+)"/)?.[1] || null,
-      ...(rate ? {} : { raw: b.slice(0, 1500) }),
     });
   }
   return out;

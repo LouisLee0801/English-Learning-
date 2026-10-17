@@ -59,38 +59,45 @@ export function effectiveRate(deal, today, mileValue = 0.5) {
   const type = r.type || deal.reward?.type;
   if (type === 'percent' || type === 'percent_off') return r.value;
   if (type === 'miles') return r.value * mileValue; // 每 NT$100 得 v 哩 = v × 每哩價值 元，即 v × 每哩價值 %
-  if (type === 'amount' && deal.minSpend) return (r.value / deal.minSpend) * 100;
+  if (type === 'amount' && deal.minSpend >= 100) return (r.value / deal.minSpend) * 100; // 無門檻的贈點無法換算 %
   return 0;
 }
 
 const norm = (s) => String(s ?? '').toLowerCase();
 
-// 中英文品牌對照（正規化後以開頭比對），讓 LINE購物 的中文店名能對上長榮／國泰的英文商戶名
-const ALIASES = [
+// 中文店名 → 英文品牌（以開頭比對）
+const ZH_ALIASES = [
   ['蝦皮', 'shopee'], ['酷澎', 'coupang'], ['淘寶', 'taobao'], ['天貓', 'tmall'], ['樂天市場', 'rakutenichiba'], ['樂天旅遊', 'rakutentravel'],
-  ['雅虎', 'yahoo'], ['yahoo', 'yahoo'], ['家樂福', 'carrefour'], ['屈臣氏', 'watsons'], ['康是美', 'cosmed'], ['博客來', 'books'],
-  ['蘭蔻', 'lancome'], ['雅詩蘭黛', 'esteelauder'], ['海洋拉娜', 'lamer'], ['契爾氏', 'kiehls'], ['倩碧', 'clinique'], ['資生堂', 'shiseido'],
-  ['迪奧', 'dior'], ['戴森', 'dyson'], ['三星', 'samsung'], ['華碩', 'asus'], ['宏碁', 'acer'], ['羅技', 'logitech'], ['飛利浦', 'philips'],
-  ['國際牌', 'panasonic'], ['萬豪', 'marriott'], ['洲際', 'ihg'], ['希爾頓', 'hilton'], ['雅高', 'accor'], ['allaccor', 'accor'], ['凱悅', 'hyatt'],
-  ['迪士尼', 'disney'], ['卡巴斯基', 'kaspersky'], ['優衣庫', 'uniqlo'], ['耐吉', 'nike'], ['愛迪達', 'adidas'], ['客路', 'klook'], ['攜程', 'trip'],
-  ['maccosmetics', 'mac'], ['jomalone', 'jomalone'], ['applestore', 'apple'], ['apple', 'apple'], ['hotels', 'hotels'], ['booking', 'booking'],
-  ['shopee', 'shopee'], ['agoda', 'agoda'], ['klook', 'klook'], ['kkday', 'kkday'], ['expedia', 'expedia'], ['foodpanda', 'foodpanda'],
-  ['lululemon', 'lululemon'], ['iherb', 'iherb'], ['farfetch', 'farfetch'], ['nike', 'nike'], ['adidas', 'adidas'], ['puma', 'puma'],
-  ['lancome', 'lancome'], ['esteelauder', 'esteelauder'], ['lamer', 'lamer'], ['kiehls', 'kiehls'], ['bobbibrown', 'bobbibrown'], ['dyson', 'dyson'],
-  ['momo', 'momo'], ['pchome', 'pchome'], ['pinkoi', 'pinkoi'], ['myprotein', 'myprotein'], ['marriott', 'marriott'], ['ihg', 'ihg'],
+  ['雅虎', 'yahoo'], ['家樂福', 'carrefour'], ['屈臣氏', 'watsons'], ['康是美', 'cosmed'], ['博客來', 'books'], ['蘭蔻', 'lancome'],
+  ['雅詩蘭黛', 'esteelauder'], ['海洋拉娜', 'lamer'], ['契爾氏', 'kiehls'], ['倩碧', 'clinique'], ['資生堂', 'shiseido'], ['迪奧', 'dior'],
+  ['戴森', 'dyson'], ['三星', 'samsung'], ['華碩', 'asus'], ['宏碁', 'acer'], ['羅技', 'logitech'], ['飛利浦', 'philips'], ['國際牌', 'panasonic'],
+  ['萬豪', 'marriott'], ['洲際', 'ihg'], ['希爾頓', 'hilton'], ['雅高', 'accor'], ['凱悅', 'hyatt'], ['迪士尼', 'disney'], ['卡巴斯基', 'kaspersky'],
+  ['優衣庫', 'uniqlo'], ['耐吉', 'nike'], ['愛迪達', 'adidas'], ['客路', 'klook'], ['攜程', 'trip'],
 ];
+// 英文全名 → 簡稱（完全相同才換，避免 Apple Music 被併進 Apple）
+const EN_ALIASES = {
+  applestoreonline: 'apple', applestore: 'apple', maccosmetics: 'mac', jomalonelondon: 'jomalone', yahooshopping: 'yahoo',
+  allaccorlivelimitless: 'accor', allaccor: 'accor', ihghotelsresorts: 'ihg', rakutenichiba: 'rakutenichiba', esteelaudercompanies: 'esteelauder',
+};
+const GENERIC_ZH = /官方購物網站|官方購物網|官方網路商店|官方網站|官方商城|官方旗艦店|旗艦館|旗艦店|購物網站|購物網|購物中心|網路商店|線上商店|線上商城|官網|官方|直營|商城|台灣|臺灣|-?\s*line旅遊/g;
 
 /** 品牌名稱正規化：去掉地區、「官方網站」「旗艦店」、括號註記、空白與標點，再套中英對照 */
 export function brandKey(name) {
-  const k = norm(name)
+  let k = norm(name)
     .normalize('NFKD')
     .replace(/[̀-ͯ]/g, '')
     .normalize('NFKC')
     .replace(/[（(【\[].*?[)）】\]]/g, '')
+    .replace(GENERIC_ZH, '')
     .replace(/\s+(taiwan|asia|global|us|usa|uk|hk|international|japan|apac)\b/g, '')
-    .replace(/官方|網路|線上|購物|商城|直營|專賣店|旗艦館|旗艦店|網站|官網|商店|台灣|臺灣|taiwan|official|online|store|\.com(\.tw)?|\.tw/g, '')
+    .replace(/\b(official|online|store|shop)\b/g, '')
+    .replace(/\.com(\.tw)?\b|\.tw\b/g, '')
     .replace(/[\s\-_.,:;'"!?&+/|·・｜’]/g, '');
-  for (const [p, c] of ALIASES) if (k.startsWith(p)) return c;
+  // 中英混排（「lancome蘭蔻」「屈臣氏watsons」）取英文部分
+  const en = k.match(/^[a-z0-9]{3,}(?=[^a-z0-9])/)?.[0] || k.match(/(?<=[^a-z0-9])[a-z0-9]{3,}$/)?.[0];
+  if (en && /[^\x00-\x7f]/.test(k)) k = en;
+  if (EN_ALIASES[k]) return EN_ALIASES[k];
+  for (const [p, c] of ZH_ALIASES) if (k.startsWith(p)) return c;
   return k;
 }
 

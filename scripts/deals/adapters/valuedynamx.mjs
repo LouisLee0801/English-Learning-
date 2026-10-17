@@ -7,6 +7,7 @@ const TW_COUNTRY_ID = 200;
 const MAX_PAGES = 40;
 const md = (ymd) => (ymd ? ymd.slice(5).replace('-', '/') : '');
 const displayName = (n) => clean(n).replace(/\s+Taiwan$/i, '');
+const NEWBIE = /首次訂閱|首次購買|首購|新客|新會員|新用戶|first[- ]time|new customer/i;
 
 function commonConditions(d, unit) {
   const conditions = [];
@@ -33,7 +34,7 @@ function fixedDeal(m, d, { source, unit, now }) {
     reward: { type: 'miles_fixed', value: f.miles, text: m.rateText },
     boost: null,
     conditions: commonConditions(d, unit),
-    tags: ['每筆固定'],
+    tags: ['每筆固定', ...((d?.conditions || []).some((c) => NEWBIE.test(c)) ? ['新客條件'] : [])],
     startAt: null,
     endAt: null,
     url: m.url,
@@ -54,6 +55,7 @@ function rebateDeal(m, d, ctx) {
   const conditions = commonConditions(d, unit);
   if (foreign) conditions.unshift(`原始回饋 ${m.rateText}，以 1 ${cur.currency} ≈ NT$${fx[cur.currency]} 換算`);
   const tags = [];
+  if (conditions.some((c) => NEWBIE.test(c))) tags.push('新客條件');
   if (cur.upTo) tags.push('依品類不同');
   if (cur.atLeast) tags.push('最低保證');
   if (foreign) tags.push('外幣計價');
@@ -191,11 +193,14 @@ export function makeAdapter({ source, base, unit, label, expectTitle }) {
 
       const ctx = { source, unit, label, fx, now };
       const deals = [];
+      const noRate = [];
       for (const m of merchants.values()) {
         const d = rebateDeal(m, details.get(m.id), ctx);
         if (d) deals.push(d);
-        else log('unparsed rate', m.name, JSON.stringify(m.rateText), m.raw ? m.raw.replace(/\s+/g, ' ').slice(0, 900) : '');
+        else if (!m.rateText) noRate.push(m.name); // 平台目前未標示回饋（暫停中），不列入
+        else log('unparsed rate', m.name, JSON.stringify(m.rateText));
       }
+      if (noRate.length) log(`no rate shown (skipped) ${noRate.length}: ${noRate.join(', ')}`);
       const byUrl = new Map([...merchants.values()].map((m) => [m.url, m]));
       deals.push(...voucherDeals(vouchers, byUrl, ctx));
       return deals;
