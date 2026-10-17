@@ -2,20 +2,14 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 11,
-   "fresh": 5,
-   "updatedAt": "2026-10-17T17:25:07.721Z",
-   "seconds": 12,
+   "count": 12,
+   "fresh": 8,
+   "updatedAt": "2026-10-17T20:48:08.179Z",
+   "seconds": 8,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
-     {
-      "keyword": "收單",
-      "status": 200,
-      "posts": 0,
-      "limited": true
-     },
      {
       "keyword": "開團",
       "status": 200,
@@ -27,40 +21,40 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 5
+    "items": 8
    }
   },
   "search": {
    "ok": true,
-   "count": 18,
-   "fresh": 7,
-   "updatedAt": "2026-10-17T17:25:07.721Z",
+   "count": 21,
+   "fresh": 11,
+   "updatedAt": "2026-10-17T20:48:08.179Z",
    "seconds": 13,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:instagram.com 開團 家電",
+      "q": "site:instagram.com 開團 童裝",
       "status": 200,
       "results": 10,
       "posts": 10
      },
      {
-      "q": "site:instagram.com 開團啦",
+      "q": "site:instagram.com 團購 開團期間",
       "status": 200,
       "results": 10,
       "posts": 10
      }
     ],
-    "items": 12
+    "items": 13
    }
   },
   "pages": {
    "ok": true,
    "count": 149,
    "fresh": 151,
-   "updatedAt": "2026-10-17T17:25:07.721Z",
+   "updatedAt": "2026-10-17T20:48:08.179Z",
    "seconds": 9,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -90,8 +84,8 @@
    "version": 1
   }
  },
- "runs": 7,
- "generatedAt": "2026-10-17T17:25:07.721Z",
+ "runs": 8,
+ "generatedAt": "2026-10-17T20:48:08.179Z",
  "files": [
   "threads.json",
   "search.json",
