@@ -10,9 +10,10 @@
   --navy: #14213d;
   --accent: #e8890c;
   --accent-soft: #fdf1e0;
+  /* 三個回饋平台：綠／琥珀／藍綠，再加圖示區分；深色模式沿用同色，白字才看得清楚 */
   --line-green: #06a94d;
-  --eva: #00704a;
-  --cathay: #006564;
+  --eva: #c77700;
+  --cathay: #0e7490;
   --manual: #6b4bc4;
   --mine: #c2410c;
   --ok: #15803d;
@@ -36,9 +37,6 @@
     --navy: #0b1222;
     --accent: #fbbf24;
     --accent-soft: #33280f;
-    --line-green: #34d27b;
-    --eva: #4cc39a;
-    --cathay: #45c4c2;
     --manual: #a78bfa;
     --mine: #fb923c;
     --ok: #4ade80;
@@ -152,7 +150,8 @@ details.more[open] > summary { margin-bottom: 8px; }
   border-radius: 6px; padding: 1px 7px; font-size: 12px; white-space: nowrap;
   background: var(--surface-2); color: var(--ink-2);
 }
-.badge.src { color: #fff; }
+.badge.src { color: #fff; display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+.badge .ico { width: 12px; height: 12px; fill: currentColor; flex: none; }
 .src-line { background: var(--line-green) !important; }
 .src-eva { background: var(--eva) !important; }
 .src-cathay { background: var(--cathay) !important; }
@@ -166,6 +165,11 @@ details.more[open] > summary { margin-bottom: 8px; }
 .src-burgerking { background: #b5390f !important; }
 .badge.src { background: var(--ink-2); }
 .dot[class*='src-'] { color: transparent; }
+.mark {
+  display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%;
+  margin-right: 5px; vertical-align: -4px; flex: none;
+}
+.mark .ico { width: 12px; height: 12px; fill: #fff; }
 .due { white-space: nowrap; font-weight: 600; }
 .due.ending { color: var(--bad); }
 .due.upcoming { color: var(--warn); }

@@ -63,12 +63,24 @@ function portalHint(d, today, mileValue) {
     const x = r.by[s];
     const rw = activeBoost(x, today) || x.reward;
     const txt = rw.type === 'miles' ? `${fmtNum(rw.value)} 哩/百元` : rw.type === 'miles_fixed' ? `每筆 ${fmtNum(rw.value)} 哩` : `${fmtNum(rw.value)}%`;
-    return `<a href="${esc(x.url)}" target="_blank" rel="noopener" class="${r.best === s ? 'best' : ''}">${SOURCES[s].short} ${txt}</a>`;
+    return `<a href="${esc(x.url)}" target="_blank" rel="noopener" class="${r.best === s ? 'best' : ''}">${srcMark(s)}${SOURCES[s].short} ${txt}</a>`;
   });
   return `<div class="hint">結帳前先走：${parts.join(' · ')}</div>`;
 }
 
 // ---------- 共用片段 ----------
+// 三個回饋平台的圖示，搭配品牌色一眼分得出來
+const icon = (d, rotate = 0) =>
+  `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${d}"${rotate ? ` transform="rotate(${rotate} 12 12)"` : ''}/></svg>`;
+const SOURCE_ICONS = {
+  line: icon('M12 3C6.48 3 2 6.58 2 11c0 2.4 1.32 4.55 3.4 6.02L4.6 21l4.3-2.33c1 .22 2.04.33 3.1.33 5.52 0 10-3.58 10-8s-4.48-8-10-8z'), // 對話泡泡
+  eva: icon('M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z', 45), // 飛機
+  cathay: icon('M2 19.5c2.6-6 7.3-10.6 13.6-12.6 2.2-.7 4.4-1 6.4-.9-1.6.9-3.2 2-4.5 3.4-2.5 2.6-4 6-7.4 8.3-2.4 1.6-5.3 2.2-8.1 1.8z'), // 翅膀筆觸
+};
+const srcBadge = (k) => `<span class="badge src src-${esc(k)}">${SOURCE_ICONS[k] || ''}${esc(SOURCES[k]?.name || k)}</span>`;
+/** 篩選鈕、結帳提示、比較表表頭用的小記號：回饋平台是圓形圖示，其他來源是色點 */
+const srcMark = (k) => (SOURCE_ICONS[k] ? `<span class="mark src-${k}">${SOURCE_ICONS[k]}</span>` : `<span class="dot src-${esc(k)}"></span>`);
+
 function toast(msg) {
   const el = document.createElement('div');
   el.className = 'toast';
@@ -119,7 +131,6 @@ const NUMERIC = new Set(['percent', 'percent_off', 'miles', 'miles_fixed', 'amou
 
 function card(d, today, mileValue) {
   if (d.kind !== 'rebate') return couponCard(d, today, mileValue);
-  const src = SOURCES[d.source] || { name: d.source };
   const boost = activeBoost(d, today);
   const eq = effectiveRate(d, today, mileValue);
   const conds = d.conditions || [];
@@ -128,7 +139,7 @@ function card(d, today, mileValue) {
   return `<article class="card ${st}">
     <div class="card-top">
       <div class="badges">
-        <span class="badge src src-${esc(d.source)}">${esc(src.name)}</span>
+        ${srcBadge(d.source)}
         ${d.category ? `<span class="badge">${categoryIcon(d.category)} ${esc(d.category)}</span>` : ''}
         ${d.kind && d.kind !== 'rebate' ? `<span class="badge">${esc(KINDS[d.kind] || d.kind)}</span>` : ''}
       </div>
@@ -159,7 +170,6 @@ function card(d, today, mileValue) {
 
 /** 優惠券／活動：標題就是優惠內容；有金額、折數才放大顯示 */
 function couponCard(d, today, mileValue) {
-  const src = SOURCES[d.source] || { name: d.source };
   const conds = d.conditions || [];
   const st = status(d, today);
   const r = d.reward || {};
@@ -168,7 +178,7 @@ function couponCard(d, today, mileValue) {
   return `<article class="card coupon ${st}">
     <div class="card-top">
       <div class="badges">
-        <span class="badge src src-${esc(d.source)}">${esc(src.name)}</span>
+        ${srcBadge(d.source)}
         ${d.category ? `<span class="badge">${categoryIcon(d.category)} ${esc(d.category)}</span>` : ''}
       </div>
       ${dueHtml(d, today)}
@@ -192,8 +202,58 @@ function couponCard(d, today, mileValue) {
   </article>`;
 }
 
-function chip(group, value, label, on, dotClass = '') {
-  return `<button type="button" class="chip" data-group="${group}" data-value="${esc(value)}" aria-pressed="${on}">${dotClass ? `<span class="dot ${dotClass}"></span>` : ''}${esc(label)}</button>`;
+function chip(group, value, label, on, mark = '') {
+  return `<button type="button" class="chip" data-group="${group}" data-value="${esc(value)}" aria-pressed="${on}">${mark}${esc(label)}</button>`;
+}
+
+// ---------- 搜尋框與重繪 ----------
+// 同一頁重繪時保留搜尋框、只換下方內容：注音／拼音選字途中輸入框被換掉，選字框會被打斷、方向鍵無法選字
+let mounted = null;
+const currentQs = () => location.hash.split('?')[1] || '';
+
+function mount(view, inputHtml, q, onSearch) {
+  if (mounted?.view === view && mounted.body.isConnected) {
+    // 上一頁、清除篩選改了網址：輸入框跟著網址（正在打字、選字時不動）
+    if (!mounted.typing && mounted.input.value.trim() !== q) mounted.input.value = q;
+    return mounted.body;
+  }
+  $main.innerHTML = `<form class="search" role="search">${inputHtml}</form><div class="view-body"></div>`;
+  const input = $main.querySelector('.search input');
+  const m = { view, input, body: $main.querySelector('.view-body'), typing: false };
+  let timer;
+  const run = () => {
+    clearTimeout(timer);
+    m.typing = true;
+    timer = setTimeout(() => {
+      m.typing = false;
+      onSearch(input.value.trim());
+    }, 250);
+  };
+  // 選字中不搜尋，選定（compositionend）才搜
+  input.addEventListener('input', (e) => (e.isComposing ? (m.typing = true) : run()));
+  input.addEventListener('compositionstart', () => {
+    clearTimeout(timer);
+    m.typing = true;
+  });
+  input.addEventListener('compositionend', run);
+  $main.querySelector('.search').addEventListener('submit', (e) => e.preventDefault());
+  mounted = m;
+  return m.body;
+}
+
+/** 換掉內容但保留分類列的水平捲動位置；選中的分類被切到時才捲到看得見 */
+function paint(body, html) {
+  const x = body.querySelector('.catbar')?.scrollLeft || 0;
+  body.innerHTML = html;
+  const bar = body.querySelector('.catbar');
+  if (!bar) return;
+  bar.scrollLeft = x;
+  const on = bar.querySelector('[aria-pressed="true"]');
+  if (!on) return;
+  const b = bar.getBoundingClientRect();
+  const r = on.getBoundingClientRect();
+  if (r.left < b.left) bar.scrollLeft -= b.left - r.left + 16;
+  else if (r.right > b.right) bar.scrollLeft += r.right - b.right + 16;
 }
 
 function emptyState() {
@@ -224,6 +284,15 @@ function categoryBar(f, live) {
   </div>`;
 }
 
+/** 篩選改變：以目前網址為準套上變更，寫回網址並重繪 */
+function setListFilters(mode, patch) {
+  const M = MODES[mode];
+  shown = PAGE;
+  const q = filtersToQuery({ ...queryToFilters(currentQs(), M.sort), ...patch }, M.sort);
+  history.replaceState(null, '', q ? `${M.path}?${q}` : M.path);
+  viewList(q, mode);
+}
+
 function viewList(qs, mode = 'coupons') {
   const M = MODES[mode];
   const f = queryToFilters(qs, M.sort);
@@ -241,14 +310,17 @@ function viewList(qs, mode = 'coupons') {
   const boosted = list.filter((d) => activeBoost(d, today)).length;
   const moreOpen = f.kinds.length || f.rewardTypes.length || f.boostOnly || f.codeOnly || f.noNewbie || f.maxMinSpend != null;
 
-  $main.innerHTML = `
-    <form class="search" id="q-form" role="search">
-      <input id="q" type="search" placeholder="${M.placeholder}" value="${esc(f.q)}" autocomplete="off" />
-    </form>
+  const body = mount(
+    mode,
+    `<input id="q" type="search" placeholder="${M.placeholder}" value="${esc(f.q)}" autocomplete="off" enterkeyhint="search" />`,
+    f.q,
+    (q) => setListFilters(mode, { q }),
+  );
+  paint(body, `
     ${categoryBar(f, liveInSources)}
     <div class="filters">
       <div class="group"><span class="label">來源</span>
-        ${sourceKeys.map((k) => chip('sources', k, `${SOURCES[k].short} ${counts[k] || 0}`, on(f.sources, k), `src-${k}`)).join('')}
+        ${sourceKeys.map((k) => chip('sources', k, `${SOURCES[k].short} ${counts[k] || 0}`, on(f.sources, k), srcMark(k))).join('')}
       </div>
       <div class="group"><span class="label">狀態</span>
         <select class="sel" data-field="status">
@@ -286,30 +358,12 @@ function viewList(qs, mode = 'coupons') {
     </div>
     ${list.length ? `<div class="grid">${list.slice(0, shown).map((d) => card(d, today, mileValue)).join('')}</div>` : emptyState()}
     ${list.length > shown ? `<button class="btn more-btn" id="more">再顯示 ${Math.min(PAGE, list.length - shown)} 筆（共 ${list.length}）</button>` : ''}
-  `;
+  `);
 
   const rerender = (q) => viewList(q, mode);
-  const update = (patch) => {
-    shown = PAGE;
-    const q = filtersToQuery({ ...f, ...patch }, M.sort);
-    history.replaceState(null, '', q ? `${M.path}?${q}` : M.path);
-    rerender(q);
-  };
-  const qInput = document.getElementById('q');
-  let timer;
-  qInput.addEventListener('input', () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      const pos = qInput.selectionStart;
-      update({ q: qInput.value.trim() });
-      const el = document.getElementById('q');
-      el.focus();
-      el.setSelectionRange(pos, pos);
-    }, 250);
-  });
-  document.getElementById('q-form').addEventListener('submit', (e) => e.preventDefault());
-  $main.querySelectorAll('.cat').forEach((b) => b.addEventListener('click', () => update({ category: b.dataset.cat })));
-  $main.querySelectorAll('.chip').forEach((b) =>
+  const update = (patch) => setListFilters(mode, patch);
+  body.querySelectorAll('.cat').forEach((b) => b.addEventListener('click', () => update({ category: b.dataset.cat })));
+  body.querySelectorAll('.chip').forEach((b) =>
     b.addEventListener('click', () => {
       const { group, value } = b.dataset;
       if (typeof f[group] === 'boolean') return update({ [group]: !f[group] });
@@ -317,7 +371,7 @@ function viewList(qs, mode = 'coupons') {
       update({ [group]: arr });
     }),
   );
-  $main.querySelectorAll('[data-field]').forEach((el) =>
+  body.querySelectorAll('[data-field]').forEach((el) =>
     el.addEventListener('change', () => {
       const k = el.dataset.field;
       update({ [k]: k === 'maxMinSpend' ? (el.value === '' ? null : Number(el.value)) : el.value });
@@ -334,6 +388,14 @@ function viewList(qs, mode = 'coupons') {
 }
 
 // ---------- 品牌比較 ----------
+function compareGo(patch) {
+  const n = new URLSearchParams(currentQs());
+  for (const [k, v] of Object.entries(patch)) n.set(k, v);
+  for (const [k, v] of [...n]) if (!v || v === 'false') n.delete(k);
+  history.replaceState(null, '', `#/compare${n.toString() ? `?${n}` : ''}`);
+  viewCompare(n.toString());
+}
+
 function viewCompare(qs) {
   const p = new URLSearchParams(qs);
   const q = (p.get('q') || '').trim().toLowerCase();
@@ -356,10 +418,13 @@ function viewCompare(qs) {
     const eq = rw.type === 'miles' ? ` <span class="muted">≈${fmtNum(effectiveRate(d, today, mileValue))}%</span>` : '';
     return `<td class="${r.best === s && r.count > 1 ? 'best' : ''}"><a href="${esc(d.url || '#')}" target="_blank" rel="noopener"><span class="rate">${txt}</span>${eq}${b ? ' <span class="boost">加碼</span>' : ''}</a></td>`;
   };
-  $main.innerHTML = `
-    <form class="search" id="c-form" role="search">
-      <input id="cq" type="search" placeholder="搜尋品牌（例：Apple、Agoda、Nike）" value="${esc(p.get('q') || '')}" autocomplete="off" />
-    </form>
+  const body = mount(
+    'compare',
+    `<input id="cq" type="search" placeholder="搜尋品牌（例：Apple、Agoda、Nike）" value="${esc(p.get('q') || '')}" autocomplete="off" enterkeyhint="search" />`,
+    (p.get('q') || '').trim(),
+    (v) => compareGo({ q: v }),
+  );
+  paint(body, `
     <div class="toolbar">
       <div class="stats"><span><b class="num">${rows.length}</b> / ${total} 個品牌</span><span>黃底 = 該品牌目前最划算的平台</span></div>
       <div class="row">
@@ -368,29 +433,11 @@ function viewCompare(qs) {
       </div>
     </div>
     ${rows.length ? `<div class="table-wrap"><table>
-      <thead><tr><th>品牌</th><th>分類</th>${portals.map((s) => `<th>${SOURCES[s].name}</th>`).join('')}</tr></thead>
+      <thead><tr><th>品牌</th><th>分類</th>${portals.map((s) => `<th>${srcMark(s)}${SOURCES[s].name}</th>`).join('')}</tr></thead>
       <tbody>${rows.slice(0, 500).map((r) => `<tr><td><b>${esc(r.name)}</b></td><td class="muted">${esc(r.category || '')}</td>${portals.map((s) => cell(r, s)).join('')}</tr>`).join('')}</tbody>
     </table></div>` : emptyState()}
-  `;
-  const go = (patch) => {
-    const n = new URLSearchParams({ ...(q ? { q: p.get('q') } : {}), ...(multi ? { multi: 'true' } : {}), ...patch });
-    for (const [k, v] of [...n]) if (!v || v === 'false') n.delete(k);
-    history.replaceState(null, '', `#/compare${n.toString() ? `?${n}` : ''}`);
-    viewCompare(n.toString());
-  };
-  const input = document.getElementById('cq');
-  let t;
-  input.addEventListener('input', () => {
-    clearTimeout(t);
-    t = setTimeout(() => {
-      go({ q: input.value.trim() });
-      const el = document.getElementById('cq');
-      el.focus();
-      el.setSelectionRange(el.value.length, el.value.length);
-    }, 250);
-  });
-  document.getElementById('c-form').addEventListener('submit', (e) => e.preventDefault());
-  $main.querySelector('.chip[data-group="multi"]').addEventListener('click', () => go({ multi: multi ? '' : 'true' }));
+  `);
+  body.querySelector('.chip[data-group="multi"]').addEventListener('click', () => compareGo({ multi: multi ? '' : 'true' }));
   document.getElementById('mile-value').addEventListener('change', (e) => {
     wallet.setMileValue(Number(e.target.value));
     viewCompare(qs);
@@ -497,7 +544,7 @@ function viewStatus() {
       ${rows.length ? `<div class="table-wrap"><table>
         <thead><tr><th>平台</th><th>狀態</th><th>筆數</th><th>最後成功</th><th>說明</th></tr></thead>
         <tbody>${rows.map(([k, s]) => `<tr>
-          <td><span class="badge src src-${esc(k)}">${esc(SOURCES[k]?.name || k)}</span></td>
+          <td>${srcBadge(k)}</td>
           <td>${s.ok ? '<span class="ok">正常</span>' : '<span class="err">失敗</span>'}</td>
           <td class="num">${s.count ?? 0}</td>
           <td class="num">${esc(fmtTime(s.updatedAt))}</td>

@@ -130,27 +130,71 @@ function categoryBar(f, pool, path) {
   </div>`;
 }
 
-/** 搜尋框輸入、分類、篩選的共用事件；update(patch) 更新網址並重畫 */
-function bindFilters(f, path, rerender) {
-  const update = (patch) => {
-    shown = PAGE;
-    const q = filtersToQuery({ ...f, ...patch });
-    history.replaceState(null, '', q ? `${path}?${q}` : path);
-    rerender(q);
-  };
-  const qInput = document.getElementById('q');
+// 同一頁重繪時保留搜尋框、只換下方內容：注音／拼音選字途中輸入框被換掉，選字框會被打斷、方向鍵無法選字
+let mounted = null;
+const currentQs = () => location.hash.split('?')[1] || '';
+
+/** 篩選改變：以目前網址為準套上變更，寫回網址並重畫 */
+function setFilters(path, rerender, patch) {
+  shown = PAGE;
+  const q = filtersToQuery({ ...queryToFilters(currentQs()), ...patch });
+  history.replaceState(null, '', q ? `${path}?${q}` : path);
+  rerender(q);
+}
+
+/** 建立（或沿用）搜尋框，回傳下方內容區 */
+function mount(view, f, path, rerender) {
+  if (mounted?.view === view && mounted.body.isConnected) {
+    // 上一頁、清除篩選改了網址：輸入框跟著網址（正在打字、選字時不動）
+    if (!mounted.typing && mounted.input.value.trim() !== f.q) mounted.input.value = f.q;
+    return mounted.body;
+  }
+  $main.innerHTML = `
+    <form class="search" role="search">
+      <input id="q" type="search" placeholder="${SEARCH_HINT}" value="${esc(f.q)}" autocomplete="off" enterkeyhint="search" />
+    </form>
+    <div class="view-body"></div>`;
+  const input = document.getElementById('q');
+  const m = { view, input, body: $main.querySelector('.view-body'), typing: false };
   let timer;
-  qInput?.addEventListener('input', () => {
+  const run = () => {
     clearTimeout(timer);
+    m.typing = true;
     timer = setTimeout(() => {
-      const pos = qInput.selectionStart;
-      update({ q: qInput.value.trim() });
-      const el = document.getElementById('q');
-      el.focus();
-      el.setSelectionRange(pos, pos);
+      m.typing = false;
+      setFilters(path, rerender, { q: input.value.trim() });
     }, 250);
+  };
+  // 選字中不搜尋，選定（compositionend）才搜
+  input.addEventListener('input', (e) => (e.isComposing ? (m.typing = true) : run()));
+  input.addEventListener('compositionstart', () => {
+    clearTimeout(timer);
+    m.typing = true;
   });
-  document.getElementById('q-form')?.addEventListener('submit', (e) => e.preventDefault());
+  input.addEventListener('compositionend', run);
+  $main.querySelector('.search').addEventListener('submit', (e) => e.preventDefault());
+  mounted = m;
+  return m.body;
+}
+
+/** 換掉內容但保留分類列的水平捲動位置；選中的分類被切到時才捲到看得見 */
+function paint(body, html) {
+  const x = body.querySelector('.catbar')?.scrollLeft || 0;
+  body.innerHTML = html;
+  const bar = body.querySelector('.catbar');
+  if (!bar) return;
+  bar.scrollLeft = x;
+  const on = bar.querySelector('[aria-pressed="true"]');
+  if (!on) return;
+  const b = bar.getBoundingClientRect();
+  const r = on.getBoundingClientRect();
+  if (r.left < b.left) bar.scrollLeft -= b.left - r.left + 16;
+  else if (r.right > b.right) bar.scrollLeft += r.right - b.right + 16;
+}
+
+/** 分類、篩選的共用事件 */
+function bindFilters(f, path, rerender) {
+  const update = (patch) => setFilters(path, rerender, patch);
   $main.querySelectorAll('.cat').forEach((b) => b.addEventListener('click', () => update({ category: b.dataset.cat })));
   $main.querySelectorAll('.chip[data-group]').forEach((b) =>
     b.addEventListener('click', () => {
@@ -179,10 +223,7 @@ function viewList(qs) {
   const upcoming = items.filter((x) => status(x, now) === 'upcoming').length;
   const hasFilter = Boolean(filtersToQuery(f));
 
-  $main.innerHTML = `
-    <form class="search" id="q-form" role="search">
-      <input id="q" type="search" placeholder="${SEARCH_HINT}" value="${esc(f.q)}" autocomplete="off" enterkeyhint="search" />
-    </form>
+  paint(mount('list', f, '#/', viewList), `
     ${categoryBar(f, pool, '#/')}
     <div class="filters">
       <div class="group"><span class="label">平台</span>
@@ -207,7 +248,7 @@ function viewList(qs) {
     </div>
     ${list.length ? `<div class="grid">${list.slice(0, shown).map((x) => card(x, now, f.q)).join('')}</div>` : emptyState(hasFilter)}
     ${list.length > shown ? `<button class="btn more-btn" id="more">再顯示 ${Math.min(PAGE, list.length - shown)} 筆（共 ${list.length}）</button>` : ''}
-  `;
+  `);
   bindFilters(f, '#/', viewList);
   document.getElementById('more')?.addEventListener('click', () => {
     shown += PAGE;
@@ -231,14 +272,11 @@ function viewCalendar(qs) {
       <span class="tl-side"><span class="badge pf pf-${pf.cls}">${esc(pf.short)}</span></span>
     </a>`;
   };
-  $main.innerHTML = `
-    <form class="search" id="q-form" role="search">
-      <input id="q" type="search" placeholder="${SEARCH_HINT}" value="${esc(f.q)}" autocomplete="off" enterkeyhint="search" />
-    </form>
+  paint(mount('calendar', f, '#/calendar', viewCalendar), `
     ${categoryBar(f, pool, '#/calendar')}
     ${groups.length ? groups.map((g) => `<section class="tl-group ${g.title.startsWith('今天') ? 'today' : ''}"><h2>${esc(g.title)} <small>${g.items.length} 筆</small></h2><div class="tl-list">${g.items.map(row).join('')}</div></section>`).join('') : emptyState(Boolean(f.q || f.category))}
     <p class="muted" style="font-size:12px">時間軸只列還沒結單的團；點一列開原文。想在結單前被提醒，可在「團購」卡片按「📅 提醒」加到 Google 日曆。</p>
-  `;
+  `);
   bindFilters(f, '#/calendar', viewCalendar);
 }
 
