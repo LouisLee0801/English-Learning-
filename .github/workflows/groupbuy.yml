@@ -1,0 +1,64 @@
+name: Group-buy scrape
+
+on:
+  schedule:
+    - cron: '27 */2 * * *' # 每 2 小時（台北 00:27、02:27…）：開團、結單變動快；未登入搜尋每次只能查少量，靠頻率累積
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: '同時存探勘快照（groupbuy/raw）'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ['scripts/groupbuy/**', 'groupbuy/js/categories.js', 'groupbuy/js/parse.js', 'groupbuy/data/watchlist.json', '.github/workflows/groupbuy.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: groupbuy-scrape-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      # commit 訊息含 [discover] 或 [discover:項目1,項目2] 時只做探勘（開發用）
+      - name: Discover
+        if: inputs.discover || contains(github.event.head_commit.message, '[discover')
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: node scripts/groupbuy/discover.mjs $(printf '%s' "$MSG" | sed -n 's/.*\[discover:\([^]]*\)\].*/\1/p' | tr ',' ' ')
+        continue-on-error: true
+      - name: Scrape
+        if: "!contains(github.event.head_commit.message, '[discover') && hashFiles('scripts/groupbuy/scrape.mjs') != ''"
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+        run: node scripts/groupbuy/scrape.mjs
+      - name: Commit data
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git add -A groupbuy
+          if git diff --cached --quiet; then echo 'no changes'; exit 0; fi
+          git commit -m "Update group-buy data $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
+          BR="${GITHUB_REF_NAME}"
+          for i in 1 2 3; do
+            git fetch origin "$BR" && git rebase "origin/$BR" && git push origin "HEAD:refs/heads/$BR" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
