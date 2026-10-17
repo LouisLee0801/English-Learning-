@@ -5,7 +5,7 @@ import { collectMerchants, merchantDeal, couponDeals, missionDeal } from '../lib
 const ORIGIN = 'https://buy.line.me';
 const SHOPPING_CODES = [101, 1, 2, 4, 102, 5, 3, 7, 6, 19, 8, 10, 20, 21, 28];
 const TRAVEL_CODES = [11, 12, 13, 14, 26, 27];
-const BATCH = 20;
+const BATCH = 15; // 每家約 27 個欄位；LINE 限制單次查詢複雜度 500
 
 const LIST_QUERY = `query ($queryCodes: [Int]!, $limit: Int, $filter: SpecialOfferMerchantListFilter, $merchantGroup: SpecialOfferTab) {
   merchantList: specialOfferMerchantList(queryCodes: $queryCodes, limit: $limit, filter: $filter, merchantGroup: $merchantGroup) {

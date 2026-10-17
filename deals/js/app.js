@@ -57,7 +57,9 @@ function rewardHtml(r) {
     case 'percent': return `<span class="big">${v}%</span>`;
     case 'percent_off': return `<span class="big">${v}%</span><span class="unit">off</span>`;
     case 'miles': return `<span class="big">${v}</span><span class="unit">哩 / NT$100</span>`;
-    case 'amount': return `<span class="big">$${v}</span><span class="unit">折抵</span>`;
+    case 'miles_fixed': return `<span class="big">${v}</span><span class="unit">哩 / 每筆</span>`;
+    case 'amount':
+      return r.unit === '點' ? `<span class="big">${v}</span><span class="unit">點 LINE POINTS</span>` : `<span class="big">$${v}</span><span class="unit">折抵</span>`;
     case 'shipping': return `<span class="big">免運</span>`;
     default: return `<span class="big">${esc(r.text || '優惠')}</span>`;
   }
@@ -250,7 +252,8 @@ function viewCompare(qs) {
     if (!d) return `<td class="muted">—</td>`;
     const b = activeBoost(d, today);
     const rw = b ? { ...d.reward, ...b } : d.reward;
-    const txt = rw.type === 'miles' ? `${fmtNum(rw.value)} 哩/百元` : rw.type === 'percent' ? `${fmtNum(rw.value)}%` : esc(rw.text || '');
+    const txt =
+      rw.type === 'miles' ? `${fmtNum(rw.value)} 哩/百元` : rw.type === 'miles_fixed' ? `每筆 ${fmtNum(rw.value)} 哩` : rw.type === 'percent' ? `${fmtNum(rw.value)}%` : esc(rw.text || '');
     const eq = rw.type === 'miles' ? ` <span class="muted">≈${fmtNum(effectiveRate(d, today, mileValue))}%</span>` : '';
     return `<td class="${r.best === s && r.count > 1 ? 'best' : ''}"><a href="${esc(d.url || '#')}" target="_blank" rel="noopener"><span class="rate">${txt}</span>${eq}${b ? ' <span class="boost">加碼</span>' : ''}</a></td>`;
   };

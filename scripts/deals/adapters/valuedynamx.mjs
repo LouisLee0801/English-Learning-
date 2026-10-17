@@ -1,6 +1,6 @@
 // 長榮 Mileage Mall／國泰 Milesback 共用流程：切台灣版 → 所有商戶（分頁）→ 各商戶詳情 → 優惠券。
 import { parseMerchantList, parsePager, parseDetail, parseVouchers } from '../lib/valuedynamx.mjs';
-import { parseMiles, milesPer100Twd, parseDiscount, clean } from '../lib/normalize.mjs';
+import { parseMiles, milesPer100Twd, parseFixedMiles, parseDiscount, clean } from '../lib/normalize.mjs';
 import { pool, hash } from '../lib/pool.mjs';
 
 const TW_COUNTRY_ID = 200;
@@ -8,21 +8,51 @@ const MAX_PAGES = 40;
 const md = (ymd) => (ymd ? ymd.slice(5).replace('-', '/') : '');
 const displayName = (n) => clean(n).replace(/\s+Taiwan$/i, '');
 
-function rebateDeal(m, d, { source, unit, fx, now }) {
-  const cur = parseMiles(m.rateText);
-  const curV = milesPer100Twd(cur, fx);
-  if (curV == null) return null;
-  const was = m.wasText ? parseMiles(m.wasText) : null;
-  const wasV = was ? milesPer100Twd(was, fx) : null;
-  const boosted = wasV != null && wasV < curV;
-  const foreign = cur.currency !== 'TWD';
+function commonConditions(d, unit) {
   const conditions = [];
-  if (foreign) conditions.push(`原始回饋 ${m.rateText}，以 1 ${cur.currency} ≈ NT$${fx[cur.currency]} 換算`);
   for (const t of d?.tiers?.slice(0, 6) || []) {
     conditions.push(`${t.label || '一般商品'}：${t.rate}${t.endAt ? `（${md(t.startAt)}–${md(t.endAt)}）` : ''}`);
   }
   conditions.push(...(d?.conditions || []).slice(0, 8));
   if (d?.creditDays) conditions.push(`${unit}約 ${d.creditDays} 天內入帳`);
+  return conditions;
+}
+
+/** 每筆固定哩數的商戶（訂閱、訂房）：無法換算成每 NT$100，單獨標示 */
+function fixedDeal(m, d, { source, unit, now }) {
+  const f = parseFixedMiles(m.rateText);
+  if (!f) return null;
+  return {
+    id: `${source}:${m.id}`,
+    kind: 'rebate',
+    source,
+    merchant: displayName(m.name),
+    merchantId: m.id,
+    category: m.category,
+    title: `每筆${f.upTo ? '最高 ' : ''}${f.miles} ${unit}`,
+    reward: { type: 'miles_fixed', value: f.miles, text: m.rateText },
+    boost: null,
+    conditions: commonConditions(d, unit),
+    tags: ['每筆固定'],
+    startAt: null,
+    endAt: null,
+    url: m.url,
+    logo: m.logo,
+    updatedAt: now,
+  };
+}
+
+function rebateDeal(m, d, ctx) {
+  const { source, unit, fx, now } = ctx;
+  const cur = parseMiles(m.rateText);
+  const curV = milesPer100Twd(cur, fx);
+  if (curV == null) return fixedDeal(m, d, ctx);
+  const was = m.wasText ? parseMiles(m.wasText) : null;
+  const wasV = was ? milesPer100Twd(was, fx) : null;
+  const boosted = wasV != null && wasV < curV;
+  const foreign = cur.currency !== 'TWD';
+  const conditions = commonConditions(d, unit);
+  if (foreign) conditions.unshift(`原始回饋 ${m.rateText}，以 1 ${cur.currency} ≈ NT$${fx[cur.currency]} 換算`);
   const tags = [];
   if (cur.upTo) tags.push('依品類不同');
   if (cur.atLeast) tags.push('最低保證');
@@ -128,7 +158,7 @@ export function makeAdapter({ source, base, unit, label, expectTitle }) {
       let total = 0;
       for (let i = 0; url && i < MAX_PAGES; i++) {
         const html = await get(url);
-        for (const m of parseMerchantList(html, base)) merchants.set(m.id, m);
+        for (const m of parseMerchantList(html, base)) if (!merchants.has(m.id)) merchants.set(m.id, m);
         const p = parsePager(html, base);
         total = p.total || total;
         if (total && merchants.size >= total) break;
@@ -164,7 +194,7 @@ export function makeAdapter({ source, base, unit, label, expectTitle }) {
       for (const m of merchants.values()) {
         const d = rebateDeal(m, details.get(m.id), ctx);
         if (d) deals.push(d);
-        else log('unparsed rate', m.name, m.rateText);
+        else log('unparsed rate', m.name, JSON.stringify(m.rateText), m.raw ? m.raw.replace(/\s+/g, ' ').slice(0, 900) : '');
       }
       const byUrl = new Map([...merchants.values()].map((m) => [m.url, m]));
       deals.push(...voucherDeals(vouchers, byUrl, ctx));

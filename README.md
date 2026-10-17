@@ -74,6 +74,10 @@ tests/                  單元測試
 
 由排程任務每週自動研究、撰寫並開 PR，合併後就會自動排進課表。撰寫規範與格式見 [`docs/HOT_TOPICS.md`](docs/HOT_TOPICS.md)。
 
+## 優惠雷達（deals/）
+
+同一個 repo 另有一個獨立小站：一頁查詢 LINE購物、長榮 Mileage Mall、國泰 Milesback 的品牌回饋，以及現行優惠券的條件與期限，支援篩選、跨平台品牌比較與個人券夾。資料由 GitHub Actions 每天自動抓取。說明見 [`docs/DEALS.md`](docs/DEALS.md)。
+
 ## 新增課程
 
 在 `js/data/` 新增 `week5.js`（格式與 `week1.js` 相同），再到 `js/data/lessons.js` 匯入並加到 `WEEKS` 與 `LESSONS`。台詞中的 `{name}` 會自動換成你在設定頁填的英文名字。

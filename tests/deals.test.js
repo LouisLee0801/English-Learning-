@@ -49,6 +49,15 @@ test('brandKey matches the same brand across portals', () => {
   assert.equal(brandKey('Nike 台灣官方網站'), brandKey('NIKE'));
   assert.equal(brandKey('Booking.com'), brandKey('Booking'));
   assert.notEqual(brandKey('momo購物網'), brandKey('PChome 24h購物'));
+  // 中英文店名對照
+  assert.equal(brandKey('蝦皮直營_最快當日到'), brandKey('Shopee Taiwan'));
+  assert.equal(brandKey('Lancome蘭蔻官網'), brandKey('Lancôme Taiwan'));
+  assert.equal(brandKey('雅詩蘭黛 Estée Lauder 官網'), brandKey('Estee Lauder Taiwan'));
+  assert.equal(brandKey('Trip.com'), brandKey('Trip.com US'));
+  assert.equal(brandKey('M.A.C 官網'), brandKey('MAC Cosmetics Taiwan'));
+  assert.equal(brandKey('Apple 官方網站'), brandKey('Apple Store Online Taiwan'));
+  assert.equal(brandKey('PUMA台灣官方購物網站'), 'puma');
+  assert.equal(brandKey('Bulgari'), 'bulgari');
 });
 
 test('filters: source, status, search, newbie, min spend, code; sorted by rate', () => {

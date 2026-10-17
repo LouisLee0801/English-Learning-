@@ -37,11 +37,11 @@ function section(block, cls) {
   if (i < 0) return null;
   const start = block.indexOf('>', i) + 1;
   const rest = block.slice(start);
-  const j = rest.search(/class="merch(?:ant)?-|<\/a>/);
+  const j = rest.search(/class="merch(?:ant)?-(?:rates-was|icons|title|banner|summary|full|item)|class="(?:label-space|spec-until|merchant-offer-expdate)|<\/a>/);
   return j < 0 ? rest : rest.slice(0, j).replace(/<[^>]*$/, '');
 }
 const ariaOf = (block, cls) => {
-  const m = block.match(new RegExp(`class="${cls}"[^>]*aria-label="([^"]+)"`, 'i'));
+  const m = block.match(new RegExp(`class="${cls}(?:\\s[^"]*)?"[^>]*aria-label="([^"]+)"`, 'i'));
   return m ? clean(decode(m[1])) : null;
 };
 
@@ -60,9 +60,9 @@ export function parseMerchantList(html, baseUrl) {
     const url = new URL(href, baseUrl);
     url.search = '';
     const slugCat = url.pathname.split('/').filter(Boolean).at(-2);
-    const name = text(section(b, 'merch-title') ?? b.match(/class="merchant-link[^>]*>([^<]+)</)?.[1]);
-    const rate = ariaOf(b, 'merchant-rates') || text(section(b, 'merch-rates'));
-    const was = (ariaOf(b, 'merchant-rates-was') || text(section(b, 'merch-rates-was')) || '').replace(/^(非促銷期間|非推廣期|Was)\s*/, '');
+    const name = text(b.match(/class="merch-title"[^>]*>\s*(?:<span>)?([^<]+)/)?.[1] ?? b.match(/class="merchant-link[^>]*>([^<]+)</)?.[1]);
+    const rate = ariaOf(b, 'merchant-rates') || text(section(b, 'merch-rates')) || text(section(b, 'merchant-rates'));
+    const was = (ariaOf(b, 'merchant-rates-was') || text(section(b, 'merch-rates-was')) || text(section(b, 'merchant-rates-was')) || '').replace(/^(非促銷期間|非推廣期|Was)\s*/, '');
     out.push({
       id,
       name,
@@ -74,6 +74,7 @@ export function parseMerchantList(html, baseUrl) {
       featured: /merchant-with-offer|ico-offer/.test(b),
       hasVoucher: /merchant-with-voucher|ico-voucher/.test(b),
       logo: b.match(/<img src="(https:\/\/[^"]+)"/)?.[1] || null,
+      ...(rate ? {} : { raw: b.slice(0, 1500) }),
     });
   }
   return out;

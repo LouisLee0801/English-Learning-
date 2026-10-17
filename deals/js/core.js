@@ -13,6 +13,7 @@ export const KINDS = { rebate: '回饋', coupon: '折價券', promo: '活動' };
 export const REWARD_TYPES = {
   percent: '回饋 %',
   miles: '哩程',
+  miles_fixed: '每筆哩程',
   amount: '折抵金額',
   percent_off: '折扣 %',
   shipping: '免運',
@@ -64,13 +65,33 @@ export function effectiveRate(deal, today, mileValue = 0.5) {
 
 const norm = (s) => String(s ?? '').toLowerCase();
 
-/** 品牌名稱正規化：去掉「官方網站」「旗艦店」、括號註記、空白與標點 */
+// 中英文品牌對照（正規化後以開頭比對），讓 LINE購物 的中文店名能對上長榮／國泰的英文商戶名
+const ALIASES = [
+  ['蝦皮', 'shopee'], ['酷澎', 'coupang'], ['淘寶', 'taobao'], ['天貓', 'tmall'], ['樂天市場', 'rakutenichiba'], ['樂天旅遊', 'rakutentravel'],
+  ['雅虎', 'yahoo'], ['yahoo', 'yahoo'], ['家樂福', 'carrefour'], ['屈臣氏', 'watsons'], ['康是美', 'cosmed'], ['博客來', 'books'],
+  ['蘭蔻', 'lancome'], ['雅詩蘭黛', 'esteelauder'], ['海洋拉娜', 'lamer'], ['契爾氏', 'kiehls'], ['倩碧', 'clinique'], ['資生堂', 'shiseido'],
+  ['迪奧', 'dior'], ['戴森', 'dyson'], ['三星', 'samsung'], ['華碩', 'asus'], ['宏碁', 'acer'], ['羅技', 'logitech'], ['飛利浦', 'philips'],
+  ['國際牌', 'panasonic'], ['萬豪', 'marriott'], ['洲際', 'ihg'], ['希爾頓', 'hilton'], ['雅高', 'accor'], ['allaccor', 'accor'], ['凱悅', 'hyatt'],
+  ['迪士尼', 'disney'], ['卡巴斯基', 'kaspersky'], ['優衣庫', 'uniqlo'], ['耐吉', 'nike'], ['愛迪達', 'adidas'], ['客路', 'klook'], ['攜程', 'trip'],
+  ['maccosmetics', 'mac'], ['jomalone', 'jomalone'], ['applestore', 'apple'], ['apple', 'apple'], ['hotels', 'hotels'], ['booking', 'booking'],
+  ['shopee', 'shopee'], ['agoda', 'agoda'], ['klook', 'klook'], ['kkday', 'kkday'], ['expedia', 'expedia'], ['foodpanda', 'foodpanda'],
+  ['lululemon', 'lululemon'], ['iherb', 'iherb'], ['farfetch', 'farfetch'], ['nike', 'nike'], ['adidas', 'adidas'], ['puma', 'puma'],
+  ['lancome', 'lancome'], ['esteelauder', 'esteelauder'], ['lamer', 'lamer'], ['kiehls', 'kiehls'], ['bobbibrown', 'bobbibrown'], ['dyson', 'dyson'],
+  ['momo', 'momo'], ['pchome', 'pchome'], ['pinkoi', 'pinkoi'], ['myprotein', 'myprotein'], ['marriott', 'marriott'], ['ihg', 'ihg'],
+];
+
+/** 品牌名稱正規化：去掉地區、「官方網站」「旗艦店」、括號註記、空白與標點，再套中英對照 */
 export function brandKey(name) {
-  return norm(name)
+  const k = norm(name)
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
     .normalize('NFKC')
     .replace(/[（(【\[].*?[)）】\]]/g, '')
-    .replace(/官方網站|官方網路商店|官方商城|官方旗艦店|旗艦店|官網|網路商店|線上商店|購物網|台灣|臺灣|taiwan|official\s*(store|site)?|online\s*store|\.com(\.tw)?|\.tw/g, '')
-    .replace(/[\s\-_.,:;'"!?&+/|·・｜]/g, '');
+    .replace(/\s+(taiwan|asia|global|us|usa|uk|hk|international|japan|apac)\b/g, '')
+    .replace(/官方|網路|線上|購物|商城|直營|專賣店|旗艦館|旗艦店|網站|官網|商店|台灣|臺灣|taiwan|official|online|store|\.com(\.tw)?|\.tw/g, '')
+    .replace(/[\s\-_.,:;'"!?&+/|·・｜’]/g, '');
+  for (const [p, c] of ALIASES) if (k.startsWith(p)) return c;
+  return k;
 }
 
 export const defaultFilters = () => ({

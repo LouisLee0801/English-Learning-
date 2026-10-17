@@ -109,3 +109,9 @@ export function parseDiscount(text) {
   if (/免運/.test(t)) return { reward: { type: 'shipping', value: null, text: '免運' }, minSpend };
   return { reward: { type: 'gift', value: null, text: '優惠' }, minSpend };
 }
+
+/** 每筆固定哩數（訂閱、訂房等）：「最多 42 哩程」「100.75 里數」 */
+export function parseFixedMiles(text) {
+  const m = String(text ?? '').match(/(\d+(?:[.,]\d+)*)\s*(?:哩程|里數|哩|里|miles?)(?!\s*(?:\/|per|每))/i);
+  return m ? { miles: Number(m[1].replace(/,/g, '')), upTo: /最多|最高|up to/i.test(text) } : null;
+}
