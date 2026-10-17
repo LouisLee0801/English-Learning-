@@ -3,26 +3,65 @@
   "line": {
    "ok": true,
    "count": 1392,
-   "updatedAt": "2026-10-17T02:11:00.484Z",
-   "seconds": 53,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 63,
    "note": "LINE POINTS 回饋 %；加碼期間、折價券、賺點任務來自 LINE購物 官方 API"
   },
   "eva": {
    "ok": true,
    "count": 325,
-   "updatedAt": "2026-10-17T02:11:00.484Z",
-   "seconds": 49,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 43,
    "note": "長榮 Mileage Mall台灣版；外幣計價依當日匯率換算成每 NT$100"
   },
   "cathay": {
    "ok": true,
    "count": 143,
-   "updatedAt": "2026-10-17T02:11:00.484Z",
-   "seconds": 28,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 26,
    "note": "國泰 Milesback台灣版；外幣計價依當日匯率換算成每 NT$100"
+  },
+  "burgerking": {
+   "ok": true,
+   "count": 34,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 6,
+   "note": "漢堡王官網線上點餐優惠券（官網／App 價格）"
+  },
+  "cosmed": {
+   "ok": false,
+   "count": 0,
+   "error": "只抓到 0 筆（上次 0 筆），疑似版面變更，保留舊資料",
+   "failedAt": "2026-10-17T03:14:18.345Z"
+  },
+  "news": {
+   "ok": true,
+   "count": 466,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 12,
+   "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）"
+  },
+  "ptt": {
+   "ok": false,
+   "count": 0,
+   "error": "https://www.ptt.cc/bbs/Lifeismoney/index.html → HTTP 403",
+   "failedAt": "2026-10-17T03:14:18.345Z"
+  },
+  "seven": {
+   "ok": false,
+   "count": 0,
+   "error": "只抓到 0 筆（上次 0 筆），疑似版面變更，保留舊資料",
+   "failedAt": "2026-10-17T03:14:18.345Z"
+  },
+  "supertaste": {
+   "ok": true,
+   "count": 131,
+   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "seconds": 5,
+   "note": "食尚玩家 App 優惠券（需在 App／官網領券）"
   }
  },
- "generatedAt": "2026-10-17T02:11:00.484Z",
+ "generatedAt": "2026-10-17T03:14:18.345Z",
  "fx": {
   "USD": 32.4444,
   "HKD": 4.1305,
@@ -44,6 +83,12 @@
   "line.json",
   "eva.json",
   "cathay.json",
+  "burgerking.json",
+  "cosmed.json",
+  "news.json",
+  "ptt.json",
+  "seven.json",
+  "supertaste.json",
   "manual.json"
  ]
 }
