@@ -48,6 +48,8 @@ function toast(msg) {
 }
 
 const fmtDate = (s) => (!s ? '' : s.slice(0, 4) === todayStr().slice(0, 4) ? s.slice(5).replace('-', '/') : s.replaceAll('-', '/'));
+const fmtTime = (iso) =>
+  iso ? new Date(iso).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) : '';
 const fmtNum = (n) => (Number.isInteger(n) ? n.toLocaleString('zh-TW') : n.toFixed(2).replace(/\.?0+$/, ''));
 
 function rewardHtml(r) {
@@ -178,7 +180,7 @@ function viewList(qs) {
       </div>
     </details>
     <div class="toolbar">
-      <div class="stats"><span><b class="num">${list.length}</b> 筆</span>${boosted ? `<span>加碼中 ${boosted}</span>` : ''}${ending ? `<span>7 天內到期 ${ending}</span>` : ''}${data.meta?.generatedAt ? `<span class="muted">更新於 ${esc(data.meta.generatedAt.slice(0, 16).replace('T', ' '))}</span>` : ''}</div>
+      <div class="stats"><span><b class="num">${list.length}</b> 筆</span>${boosted ? `<span>加碼中 ${boosted}</span>` : ''}${ending ? `<span>7 天內到期 ${ending}</span>` : ''}${data.meta?.generatedAt ? `<span class="muted">更新於 ${esc(fmtTime(data.meta.generatedAt))}</span>` : ''}</div>
       <div class="row">
         <select class="sel" data-field="sort" aria-label="排序">
           ${[['rate', '回饋高 → 低'], ['ending', '即將到期優先'], ['brand', '品牌名稱'], ['updated', '最近更新']].map(([v, l]) => `<option value="${v}" ${f.sort === v ? 'selected' : ''}>${l}</option>`).join('')}
@@ -401,7 +403,7 @@ function viewStatus() {
           <td><span class="badge src src-${esc(k)}">${esc(SOURCES[k]?.name || k)}</span></td>
           <td>${s.ok ? '<span class="ok">正常</span>' : '<span class="err">失敗</span>'}</td>
           <td class="num">${s.count ?? 0}</td>
-          <td class="num">${esc((s.updatedAt || '').slice(0, 16).replace('T', ' '))}</td>
+          <td class="num">${esc(fmtTime(s.updatedAt))}</td>
           <td class="muted" style="white-space:normal">${esc(s.error || s.note || '')}</td></tr>`).join('')}</tbody>
       </table></div>` : `<div class="notice">尚未產生資料狀態檔（data/meta.json）。排程第一次執行後就會出現。</div>`}
     </section>
@@ -411,6 +413,7 @@ function viewStatus() {
         <li>哩程統一換算成「每 NT$100 可得幾哩」，外幣計價依抓取當日匯率換算；訂閱、訂房等「每筆固定哩數」另外標示，不參與 % 比較。</li>
         <li>等值回饋 % = 每百元哩數 × 1 哩價值（預設 NT$0.5，可在篩選區調整）。</li>
         <li>加碼只在活動期間內計入；過期加碼自動回到基本回饋。</li>
+        <li>「回饋高 → 低」先排回饋類，再排折價券與活動（折扣幅度與回饋率不能直接相比）；無門檻的贈點不換算 %。</li>
         <li>「7 天內到期」以台灣日期計算，含到期當天。</li>
       </ul>
     </section>`;

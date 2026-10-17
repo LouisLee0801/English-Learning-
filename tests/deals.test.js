@@ -78,8 +78,8 @@ test('filters: source, status, search, newbie, min spend, code; sorted by rate',
     deal({ id: 'f', kind: 'promo', merchant: 'Coupang', reward: { type: 'amount', value: 200, unit: '點' } }), // 無門檻贈點，不換算 %
   ];
   const f = defaultFilters();
-  // 滿 300 折 100 ≈ 33% 折扣率，排最前
-  assert.deepEqual(filterDeals(list, f, today).map((d) => d.id), ['e', 'b', 'c', 'a', 'f']);
+  // 回饋類在前（依等值 %），折價券／活動在後（滿 300 折 100 ≈ 33% 排在無門檻贈點前）
+  assert.deepEqual(filterDeals(list, f, today).map((d) => d.id), ['b', 'c', 'a', 'e', 'f']);
   assert.deepEqual(filterDeals(list, { ...f, sources: ['eva'] }, today).map((d) => d.id), ['c']);
   assert.deepEqual(filterDeals(list, { ...f, status: 'ending' }, today).map((d) => d.id), ['b']);
   assert.deepEqual(filterDeals(list, { ...f, status: 'all' }, today).length, 6);

@@ -21,14 +21,25 @@ export const CATEGORY = {
   'utilities-and-telecoms': '生活服務',
 };
 
-const decode = (s) =>
-  String(s ?? '')
-    .replace(/&amp;/g, '&')
+const decodeOnce = (s) =>
+  s
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
     .replace(/&quot;/g, '"')
-    .replace(/&#0?39;/g, "'")
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
-    .replace(/&nbsp;/g, ' ');
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&');
+/** 解 HTML 實體；平台的 title 屬性有時被編碼兩次，所以解到不再變化為止 */
+const decode = (s) => {
+  let t = String(s ?? '');
+  for (let i = 0; i < 3; i++) {
+    const n = decodeOnce(t);
+    if (n === t) break;
+    t = n;
+  }
+  return t;
+};
 export const text = (html) => clean(decode(String(html ?? '').replace(/<[^>]+>/g, ' ')));
 
 /** 取出某個 class 元素的文字：從該 class 起算到下一個同系列 class 為止（內含巢狀 span） */

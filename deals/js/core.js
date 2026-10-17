@@ -139,7 +139,8 @@ export function matches(deal, f, today) {
 
 export function sortDeals(list, sort, today, mileValue) {
   const by = {
-    rate: (a, b) => effectiveRate(b, today, mileValue) - effectiveRate(a, today, mileValue),
+    // 回饋與折扣不可直接比：回饋類在前，各組內依等值 % 排
+    rate: (a, b) => (a.kind !== 'rebate') - (b.kind !== 'rebate') || effectiveRate(b, today, mileValue) - effectiveRate(a, today, mileValue),
     ending: (a, b) => (a.endAt || '9999').localeCompare(b.endAt || '9999'),
     brand: (a, b) => a.merchant.localeCompare(b.merchant, 'zh-Hant'),
     updated: (a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || ''),

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseMiles, milesPer100Twd, parsePercent, toYmd, validateDeal } from '../scripts/deals/lib/normalize.mjs';
-import { parseMerchantList, parsePager } from '../scripts/deals/lib/valuedynamx.mjs';
+import { parseMerchantList, parsePager, parseVouchers } from '../scripts/deals/lib/valuedynamx.mjs';
 import { apolloState, collectMerchants, merchantDeal, missionDeal, splitConditions, taipeiDate } from '../scripts/deals/lib/line.mjs';
 
 const fx = { USD: 32, HKD: 4.1, JPY: 0.21 };
@@ -71,6 +71,14 @@ test('Valuedynamx list parser reads both EVA and Cathay markup', () => {
   assert.equal(eva[1].wasText, '');
   assert.equal(eva[1].category, '綜合電商');
   assert.deepEqual(parsePager(EVA_HTML, 'https://mall.brmile.com/zh/az'), { total: 219, next: 'https://mall.brmile.com/zh/az?orderBy=popular&letter=&page=2' });
+
+  const v = parseVouchers(
+    `<div class="voucher-item"><a href="fashion/the-doublef-asia?&amp;placement=x#box" title="x"></a><span class="merchant-title">The DoubleF Asia</span>
+     <span class="item-txt" title="Sale | Valid Worldwide &amp;#x28;Italy Excluded&amp;#x29;!"></span>
+     <span class="voucher-code">優惠代碼: <strong>no code required</strong></span><span class="voucher-expdate">到期日 <span class="date">2026/10/31</span></span></div>`,
+    'https://mall.brmile.com/zh/',
+  );
+  assert.deepEqual(v, [{ merchant: 'The DoubleF Asia', merchantUrl: 'https://mall.brmile.com/zh/fashion/the-doublef-asia', title: 'Sale | Valid Worldwide (Italy Excluded)!', code: null, endAt: '2026-10-31', hidden: false }]);
 
   const cx = parseMerchantList(CX_HTML, 'https://shop.asiamiles.com/zh/');
   assert.equal(cx[0].name, 'Trip.com US');
