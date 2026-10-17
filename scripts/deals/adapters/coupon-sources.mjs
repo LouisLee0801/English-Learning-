@@ -3,6 +3,18 @@ import * as C from '../lib/coupons.mjs';
 import { pool } from '../lib/pool.mjs';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** 用瀏覽器載入（需要 JS 渲染或有機器人驗證的網站） */
+async function render(page, url) {
+  const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+  await page.waitForLoadState('networkidle', { timeout: 20_000 }).catch(() => {});
+  // Cloudflare 檢查頁會自動跳轉，多等一下
+  if (/請稍候|Just a moment/i.test(await page.title())) await page.waitForTimeout(8000);
+  const status = res?.status() ?? 0;
+  const html = await page.content();
+  if (status >= 400 && !/r-ent|list--|gaLogOpenWin/.test(html)) throw new Error(`${url} → HTTP ${status}`);
+  return html;
+}
 const get = async (context, url, headers = {}) => {
   const r = await context.request.get(url, { timeout: 45_000, headers });
   if (!r.ok()) throw new Error(`${url} → HTTP ${r.status()}`);
@@ -15,26 +27,28 @@ export const ptt = {
   note: 'PTT Lifeismoney 板近 7 天情報（只取標題；內文有 Cloudflare 驗證）',
   async scrape({ context, today, log }) {
     const cutoff = new Date(Date.parse(`${today}T00:00:00+08:00`) - 7 * 86400000).toISOString().slice(0, 10);
-    let url = 'https://www.ptt.cc/bbs/Lifeismoney/index.html';
+    const page = await context.newPage();
     const deals = [];
-    for (let i = 0; url && i < 25; i++) {
-      let html;
-      try {
-        html = await get(context, url, { Cookie: 'over18=1' });
-      } catch (e) {
-        if (i === 0) throw e;
-        log(`stop at page ${i}: ${e.message}`); // 被擋就保留已抓到的
-        break;
+    try {
+      let url = 'https://www.ptt.cc/bbs/Lifeismoney/index.html';
+      for (let i = 0; url && i < 25; i++) {
+        let html;
+        try {
+          html = await render(page, url);
+        } catch (e) {
+          if (i === 0) throw e;
+          log(`stop at page ${i}: ${e.message}`); // 被擋就保留已抓到的
+          break;
+        }
+        const { posts, prev } = C.parsePttIndex(html, today);
+        deals.push(...posts.map(C.pttDeal).filter(Boolean));
+        const dated = posts.filter((p) => p.date);
+        if (i > 0 && dated.length && dated.every((p) => p.date < cutoff)) break;
+        url = prev;
+        await sleep(1500);
       }
-      const { posts, prev } = C.parsePttIndex(html, today);
-      for (const p of posts) {
-        const d = C.pttDeal(p);
-        if (d) deals.push(d);
-      }
-      const dated = posts.filter((p) => p.date);
-      if (i > 0 && dated.length && dated.every((p) => p.date < cutoff)) break;
-      url = prev;
-      await sleep(1500);
+    } finally {
+      await page.close();
     }
     log(`posts ${deals.length}`);
     return deals.filter((d) => (d.publishedAt || '').slice(0, 10) >= cutoff);
@@ -63,8 +77,12 @@ export const cosmed = {
   minCount: 1,
   note: '康是美官網最新活動',
   async scrape({ context }) {
-    const html = await get(context, 'https://www.cosmed.com.tw/news.aspx?c=2');
-    return C.parseCosmedNews(html).map(C.cosmedDeal).filter(Boolean);
+    const page = await context.newPage();
+    try {
+      return C.parseCosmedNews(await render(page, 'https://www.cosmed.com.tw/news.aspx?c=2')).map(C.cosmedDeal).filter(Boolean);
+    } finally {
+      await page.close();
+    }
   },
 };
 
@@ -73,8 +91,12 @@ export const seven = {
   minCount: 1,
   note: '7-ELEVEN 官網首頁看板、精品集點活動',
   async scrape({ context, today }) {
-    const html = await get(context, 'https://www.7-11.com.tw/');
-    return C.parseSevenHome(html).map((x) => C.sevenDeal(x, today)).filter(Boolean);
+    const page = await context.newPage();
+    try {
+      return C.parseSevenHome(await render(page, 'https://www.7-11.com.tw/')).map((x) => C.sevenDeal(x, today)).filter(Boolean);
+    } finally {
+      await page.close();
+    }
   },
 };
 
@@ -85,9 +107,7 @@ export const burgerking = {
   async scrape({ context }) {
     const page = await context.newPage();
     try {
-      await page.goto('https://www.burgerking.com.tw/category/6', { waitUntil: 'domcontentloaded', timeout: 60_000 });
-      await page.waitForLoadState('networkidle', { timeout: 20_000 }).catch(() => {});
-      return C.parseBurgerKing(await page.content()).map(C.burgerKingDeal);
+      return C.parseBurgerKing(await render(page, 'https://www.burgerking.com.tw/category/6')).map(C.burgerKingDeal);
     } finally {
       await page.close();
     }
