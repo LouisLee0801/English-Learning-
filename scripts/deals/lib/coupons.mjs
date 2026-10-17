@@ -221,7 +221,31 @@ export function parseSevenHome(html) {
   return out;
 }
 
+/** 精品集點檔期很多，合併成一張卡，名稱列在條件裡 */
+export function sevenCollectDeal(items, today) {
+  const names = items.filter((x) => x.block === '精品集點送').map((x) => x.title.replace(/精品集點活動$|集點活動$/, '').trim());
+  if (!names.length) return null;
+  return {
+    id: 'seven:collect',
+    kind: 'promo',
+    source: 'seven',
+    merchant: '7-ELEVEN',
+    category: '超商量販',
+    title: `精品集點 ${names.length} 檔進行中`,
+    reward: { type: 'gift', value: null, text: '集點換購' },
+    minSpend: null,
+    code: null,
+    conditions: [...names.slice(0, 15), names.length > 15 ? `…等 ${names.length} 檔，詳見官網` : ''].filter(Boolean),
+    tags: ['集點'],
+    startAt: null,
+    endAt: null,
+    publishedAt: null,
+    url: 'https://www.7-11.com.tw/special/collection.aspx',
+  };
+}
+
 export function sevenDeal(item, today) {
+  if (item.block === '精品集點送') return null; // 由 sevenCollectDeal 合併
   const all = `${item.title} ${item.body}`;
   // 只收首頁大看板、精品集點，以及內文寫了活動期間的項目（其餘是選單連結）
   if (!['大看板', '精品集點送'].includes(item.block) && !/活動期間/.test(all)) return null;
@@ -237,7 +261,7 @@ export function sevenDeal(item, today) {
     text: item.body,
     ttlDays: 14,
   });
-  return { ...d, category: '超商量販' };
+  return { ...d, category: '超商量販', publishedAt: null }; // 官網沒有上架時間，不參與「最新」排序
 }
 
 // ---------- 漢堡王 線上優惠券（官網點餐頁的「優惠券」分類） ----------

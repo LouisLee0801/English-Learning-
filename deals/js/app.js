@@ -113,7 +113,10 @@ function dueHtml(d, today) {
   return `<span class="due ${st === 'ending' ? 'ending' : ''}">剩 ${left} 天 · ${fmtDate(d.endAt)}</span>`;
 }
 
+const NUMERIC = new Set(['percent', 'percent_off', 'miles', 'miles_fixed', 'amount']);
+
 function card(d, today, mileValue) {
+  if (d.kind !== 'rebate') return couponCard(d, today, mileValue);
   const src = SOURCES[d.source] || { name: d.source };
   const boost = activeBoost(d, today);
   const eq = effectiveRate(d, today, mileValue);
@@ -148,6 +151,41 @@ function card(d, today, mileValue) {
       ${d.code ? `<button class="btn code" data-copy="${esc(d.code)}" title="複製折扣碼">${esc(d.code)} ⧉</button>` : ''}
       ${d.source === 'mine' ? `<a class="btn" href="#/wallet?edit=${encodeURIComponent(d.id)}">編輯</a>` : ''}
       ${d.url ? `<a class="btn primary" href="${esc(d.url)}" target="_blank" rel="noopener">前往 →</a>` : ''}
+    </div>
+  </article>`;
+}
+
+/** 優惠券／活動：標題就是優惠內容；有金額、折數才放大顯示 */
+function couponCard(d, today, mileValue) {
+  const src = SOURCES[d.source] || { name: d.source };
+  const conds = d.conditions || [];
+  const st = status(d, today);
+  const r = d.reward || {};
+  const numeric = NUMERIC.has(r.type) && typeof r.value === 'number';
+  const extra = [d.minSpend ? `低消 NT$${fmtNum(d.minSpend)}` : '', ...(d.tags || [])].filter(Boolean);
+  return `<article class="card coupon ${st}">
+    <div class="card-top">
+      <div class="badges">
+        <span class="badge src src-${esc(d.source)}">${esc(src.name)}</span>
+        ${d.category ? `<span class="badge">${categoryIcon(d.category)} ${esc(d.category)}</span>` : ''}
+      </div>
+      ${dueHtml(d, today)}
+    </div>
+    <div class="merchant">
+      ${d.logo ? `<img src="${esc(d.logo)}" alt="" loading="lazy" referrerpolicy="no-referrer" />` : ''}
+      <div style="min-width:0">
+        <div class="sub">${esc(d.merchant)}${d.publishedAt ? ` · ${fmtTime(d.publishedAt)}` : ''}</div>
+        <h3 class="deal-title" title="${esc(d.title)}">${esc(d.title || d.merchant)}</h3>
+      </div>
+    </div>
+    ${numeric ? `<div class="reward">${rewardHtml(r)}</div>` : r.text && !/^優惠(活動)?$/.test(r.text) ? `<div><span class="pill">${esc(r.text)}</span></div>` : ''}
+    ${extra.length ? `<div class="badges">${extra.map((t) => `<span class="badge">${esc(t)}</span>`).join('')}</div>` : ''}
+    ${portalHint(d, today, mileValue)}
+    ${conds.length ? `<details><summary>條件與說明 ${conds.length} 項</summary><ul class="conds">${conds.map((c) => `<li>${esc(c)}</li>`).join('')}</ul></details>` : ''}
+    <div class="card-actions">
+      ${d.code ? `<button class="btn code" data-copy="${esc(d.code)}" title="複製折扣碼">${esc(d.code)} ⧉</button>` : ''}
+      ${d.source === 'mine' ? `<a class="btn" href="#/wallet?edit=${encodeURIComponent(d.id)}">編輯</a>` : ''}
+      ${d.url ? `<a class="btn primary" href="${esc(d.url)}" target="_blank" rel="noopener">${d.source === 'news' || d.source === 'ptt' ? '看原文' : '前往'} →</a>` : ''}
     </div>
   </article>`;
 }

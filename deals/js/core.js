@@ -150,8 +150,8 @@ export function sortDeals(list, sort, today, mileValue) {
     ending: (a, b) => (a.endAt || '9999').localeCompare(b.endAt || '9999'),
     brand: (a, b) => a.merchant.localeCompare(b.merchant, 'zh-Hant'),
     updated: (a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || ''),
-    // 最新上架：論壇／情報站用發文時間，其他用資料更新時間
-    new: (a, b) => (b.publishedAt || b.updatedAt || '').localeCompare(a.publishedAt || a.updatedAt || ''),
+    // 最新上架：有發文時間的（新聞、論壇、官網消息）依時間；沒有的排在後面
+    new: (a, b) => (!a.publishedAt - !b.publishedAt) || (b.publishedAt || b.updatedAt || '').localeCompare(a.publishedAt || a.updatedAt || ''),
   }[sort] || (() => 0);
   return [...list].sort((a, b) => by(a, b) || a.merchant.localeCompare(b.merchant, 'zh-Hant'));
 }

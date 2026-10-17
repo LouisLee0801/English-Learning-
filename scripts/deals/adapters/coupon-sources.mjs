@@ -96,7 +96,8 @@ export const seven = {
   async scrape({ context, today }) {
     const page = await context.newPage();
     try {
-      return C.parseSevenHome(await render(page, 'https://www.7-11.com.tw/')).map((x) => C.sevenDeal(x, today)).filter(Boolean);
+      const items = C.parseSevenHome(await render(page, 'https://www.7-11.com.tw/'));
+      return [...items.map((x) => C.sevenDeal(x, today)), C.sevenCollectDeal(items, today)].filter(Boolean);
     } finally {
       await page.close();
     }
