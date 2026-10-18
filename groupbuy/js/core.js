@@ -12,7 +12,7 @@ export const PLATFORMS = {
 };
 
 // 同一篇在多個來源都抓到時，以前面的為準（官方 API 的內文最完整）
-export const FILE_PRIORITY = ['manual.json', 'instagram.json', 'threads.json', 'pages.json', 'search.json'];
+export const FILE_PRIORITY = ['manual.json', 'instagram.json', 'threads.json', 'rss.json', 'pages.json', 'search.json'];
 
 export const nowStamp = (d = new Date()) => taipeiStamp(d);
 const startOf = (s) => (!s ? null : s.length === 10 ? `${s} 00:00` : s);
@@ -55,17 +55,58 @@ export const dayDiff = (a, b) => Math.round((Date.parse(`${b}T00:00:00Z`) - Date
 
 const norm = (s) => String(s ?? '').toLowerCase().normalize('NFKC').replace(/\s+/g, ' ');
 
-/** 合併各檔案：依 FILE_PRIORITY 去重（同 id 或同網址），分類不認得就歸「其他」 */
+// 商品名的兩字組合（中文、英數），用來判斷「萬歲牌 甘栗」是不是「萬歲牌 甘栗仁」
+const pairsOf = (s) => {
+  const out = new Set();
+  for (const run of String(s).toLowerCase().match(/[\p{Script=Han}a-z0-9]{2,}/gu) || []) for (let i = 0; i + 1 < run.length; i++) out.add(run.slice(i, i + 2));
+  return out;
+};
+const within = (a, b) => a.size >= 2 && [...a].every((x) => b.has(x));
+const richness = (x) => (x.price ? 4 : 0) + (x.orderUrl ? 2 : 0) + (x.openAt ? 1 : 0) + String(x.product).length / 100;
+// 同一團的兩篇：以資訊多的為主，補上另一篇才有的欄位，商品名取長的
+function mergeSame(a, b) {
+  const [keep, other] = richness(b) > richness(a) ? [b, a] : [a, b];
+  return {
+    ...keep,
+    product: String(other.product).length > String(keep.product).length ? other.product : keep.product,
+    orderUrl: keep.orderUrl || other.orderUrl || null,
+    price: keep.price ?? other.price ?? null,
+    originalPrice: keep.originalPrice ?? other.originalPrice ?? null,
+    priceText: keep.priceText || other.priceText || null,
+    openAt: keep.openAt || other.openAt || null,
+  };
+}
+
+/**
+ * 合併各檔案：依 FILE_PRIORITY 去重（同 id 或同網址），分類不認得就歸「其他」。
+ * 社群貼文另外去重：同一位團主、同一天結單、商品名一個包含另一個，是同一團的不同貼文，留資訊多的那篇。
+ * （團媽網站的清單不做，同天結單的相關商品常是不同檔）
+ */
 export function combine(parts) {
   const seen = new Set();
   const out = [];
+  const sameGroup = new Map();
   const ordered = [...parts].sort((a, b) => rank(a.file) - rank(b.file));
   for (const p of ordered) {
     for (const it of p.items || []) {
       const keys = [it.id, it.url && it.url !== it.authorUrl ? `${it.url}#${it.product}` : null].filter(Boolean);
       if (keys.some((k) => seen.has(k))) continue;
       keys.forEach((k) => seen.add(k));
-      out.push({ ...it, category: CATEGORY_KEYS.includes(it.category) ? it.category : '其他' });
+      const row = { ...it, category: CATEGORY_KEYS.includes(it.category) ? it.category : '其他' };
+      const who = it.authorName || it.author;
+      if (who && it.closeAt && it.source !== 'pages') {
+        const key = `${who}|${it.closeAt.slice(0, 10)}`;
+        const pairs = pairsOf(it.product);
+        const group = sameGroup.get(key) || [];
+        const dup = group.find((g) => within(g.pairs, pairs) || within(pairs, g.pairs));
+        if (dup) {
+          out[dup.index] = mergeSame(out[dup.index], row);
+          continue;
+        }
+        group.push({ pairs, index: out.length });
+        sameGroup.set(key, group);
+      }
+      out.push(row);
     }
   }
   return out;
@@ -79,6 +120,7 @@ export const defaultFilters = () => ({
   status: 'live', // live 開團中＋即將結單｜closing｜upcoming｜all
   hasClose: false,
   hasPrice: false,
+  following: false, // 只看追蹤的團主（追蹤清單在各自裝置，app.js 過濾）
   sort: 'closing',
 });
 

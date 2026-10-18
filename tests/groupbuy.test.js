@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { parseWindow, parsePrice, groupBuyScore, extractProduct, parsePost, splitSchedule, taipeiStamp } from '../groupbuy/js/parse.js';
 import { classify, brandOf } from '../groupbuy/js/categories.js';
 import { status, dueText, combine, filterItems, defaultFilters, matchesQuery, timeline, calendarUrl, filtersToQuery, queryToFilters } from '../groupbuy/js/core.js';
+import { compareQuery, matchScore, pickOffers, cheapest, priceVerdict, SHOPS } from '../groupbuy/js/compare.js';
 
 const ref = '2026-10-17 12:00'; // 週六
 
@@ -190,4 +191,111 @@ test('Google Calendar link and filter round-trip', () => {
   const f = { ...defaultFilters(), q: '童裝', platforms: ['Instagram'], hasClose: true };
   assert.deepEqual(queryToFilters(filtersToQuery(f)), f);
   assert.equal(filtersToQuery(defaultFilters()), '');
+});
+
+// 團媽 FB 粉專長文（七先生與艾小姐，節錄）：《》標商品、「糰」寫法、文末 hashtag 品牌
+const FB_CHESTNUT = `當天下單，隔天中午前就到貨！！萬歲牌真的是光速模範生！
+我自己之前有次在官網訂都還要等兩、三天，所以後來都趁自己開糰補好補滿。
+這檔是年度最後一糰，很難得有從過年後就一路缺貨的《甘栗仁》，成分單純僅栗子本人，已做去殼處理吃起來很方便。
+滿 888元的卡迪那薯條造型食物封口夾也很棒，一組 12支有專屬薯條紙盒盛裝，還附磁鐵方便吸附在冰箱上。
+雖然這糰一路開到 10/22，下單禮跟滿額禮都是有限量的，有興趣的朋友請盡量早早出手呦～感恩。`;
+const FB_CHESTNUT_REEL = `過年後就缺貨的香甜甘栗終於重出江湖啦！
+成份單純僅栗子本身，還通過安心履歷認證，大小朋友都能放心吃。
+萬歲牌限時～10/22：
+https://linkgoods.com/tw/sevenesther
+#七先生與艾小姐 #萬歲牌 #萬歲牌堅果`;
+const FB_BLENDER = `超美的《麗克特調理機》首度降價！一台直接降 300元，五色現貨有限量。（留 言「調理機」傳限量優惠給您）
+如果平常喜歡自己下廚，又不想為了處理不同食材買一堆廚房工具，這台真的很實用！
+《電動研磨罐》也是我的心頭好，一組兩支還附專屬木質磁吸底座，限量降價只要 990元！
+#七先生與艾小姐 #麗克特 #麗克特調理機`;
+const FB_BAG = `業績太好老闆龍心大悅，超強旅人擴充後背包 38L一咖省 600元！！
+👉限時：https://citiesocial.co/p14EX
+我平常出門很怕跟別人撞衫、撞包，唯一例外，就是我有開糰的包包！
+《BAGSMART 旅人休閒擴充後背包》是我很推薦的旅行好物。
+BAGSMART 旅人休閒後背包 38L 擴充款，五色現貨，官網售價 2,399 元/個，我們糰價限時只要 1,799 元，一咖直接省 600 元！
+#七先生與艾小姐 #旅行包包`;
+
+test('團媽 FB long posts: 《》 product names, 糰, hashtag brands, own-line prices', () => {
+  const a = parsePost({ text: FB_CHESTNUT, ref });
+  assert.equal(a.product, '萬歲牌 甘栗仁');
+  assert.equal(a.category, '美食生鮮');
+  assert.equal(a.closeAt, '2026-10-22');
+  assert.equal(a.price, null, '「一組 12支」「滿 888元」不是價格');
+  assert.ok(a.isGroupBuy);
+
+  const b = parsePost({ text: FB_CHESTNUT_REEL, ref });
+  assert.equal(b.product, '萬歲牌 甘栗');
+  assert.equal(b.closeAt, '2026-10-22', '「限時～10/22」是結單日');
+  assert.equal(b.openAt, null);
+  assert.equal(b.orderUrl, 'https://linkgoods.com/tw/sevenesther');
+
+  const c = parsePost({ text: FB_BLENDER, ref });
+  assert.equal(c.product, '麗克特調理機');
+  assert.equal(c.category, '家電');
+  assert.equal(c.price, null, '990 元是另一個商品（研磨罐）的價格');
+
+  const d = parsePost({ text: FB_BAG, ref });
+  assert.equal(d.product, 'BAGSMART 旅人休閒擴充後背包');
+  assert.equal(d.price, 1799);
+  assert.equal(d.originalPrice, 2399);
+  assert.equal(d.orderUrl, 'https://citiesocial.co/p14EX');
+  assert.equal(d.category, '服飾配件');
+
+  assert.ok(groupBuyScore('開糰囉！跟糰價只要 $990，10/22 結單').isGroupBuy);
+  assert.equal(parsePrice('一組 12支有專屬紙盒').price, null);
+  assert.equal(parsePrice('一組 $590，兩組更便宜').price, 590);
+  assert.equal(parseWindow('即日起～10/31', ref).closeAt, '2026-10-31');
+});
+
+test('combine merges two posts about the same 團 from one 團媽', () => {
+  const base = { source: 'rss', platform: 'Facebook', authorName: '七先生與艾小姐', closeAt: '2026-10-22', url: 'https://www.facebook.com/x/posts/1' };
+  const out = combine([
+    { file: 'rss.json', items: [
+      item({ ...base, id: 'facebook:1', product: '萬歲牌 甘栗仁' }),
+      item({ ...base, id: 'facebook:2', url: 'https://www.facebook.com/reel/2', product: '萬歲牌 甘栗', orderUrl: 'https://linkgoods.com/tw/sevenesther' }),
+      item({ ...base, id: 'facebook:3', url: 'https://www.facebook.com/x/posts/3', product: '麗克特調理機' }),
+    ] },
+    // 團媽網站同一天結單的相關商品不合併
+    { file: 'pages.json', items: [item({ source: 'pages', id: 'p:1', authorName: '主夫尼克團購', closeAt: '2026-10-20', product: 'Nespresso膠囊' }), item({ source: 'pages', id: 'p:2', authorName: '主夫尼克團購', closeAt: '2026-10-20', product: 'Nespresso膠囊咖啡機', url: 'https://x/2' })] },
+  ]);
+  const fb = out.filter((x) => x.source === 'rss');
+  assert.equal(fb.length, 2);
+  assert.equal(fb[0].product, '萬歲牌 甘栗仁');
+  assert.equal(fb[0].orderUrl, 'https://linkgoods.com/tw/sevenesther');
+  assert.equal(out.filter((x) => x.source === 'pages').length, 2);
+});
+
+test('price comparison: search words, same-product matching, verdict', () => {
+  assert.equal(compareQuery({ product: 'OXO 按壓保鮮盒 8 件組', category: '居家生活' }), 'OXO 按壓保鮮盒');
+  assert.equal(compareQuery({ product: '萬歲牌 甘栗仁', category: '美食生鮮' }), '萬歲牌 甘栗仁');
+  assert.equal(compareQuery({ product: '飯店住宿券', category: '旅遊票券' }), null, '票券不比價');
+  assert.equal(compareQuery({ product: '好物', category: '其他' }), null, '太籠統不比價');
+
+  const q = 'OXO 按壓保鮮盒';
+  assert.equal(matchScore(q, '【Glasslock】強化玻璃保鮮盒'), 0, '品牌不同');
+  assert.equal(matchScore(q, '美國OXO POP 按壓保鮮盒專用配件-米飯匙'), 0, '配件不算');
+  assert.ok(matchScore(q, '【美國OXO】POP 按壓密封收納保鮮盒-正方0.4L') >= 0.5);
+  const offers = pickOffers(q, [
+    { name: '美國OXO POP 正方按壓保鮮盒0.4L', price: 349, url: 'https://tw.buy.yahoo.com/a' },
+    { name: '美國OXO POP 小正方按壓保鮮盒0.2L', price: 249, url: 'https://tw.buy.yahoo.com/b' },
+    { name: 'OXO 好好握矽膠刮刀', price: 99, url: 'https://tw.buy.yahoo.com/c' },
+    { name: '沒有網址', price: 1, url: '' },
+  ]);
+  assert.deepEqual(offers.map((o) => o.price), [249, 349]);
+
+  const all = { pchome: [], momo: [{ name: 'x', price: 125, url: 'https://m/1' }], yahoo: [{ name: 'y', price: 99, url: 'https://y/1' }] };
+  assert.deepEqual(cheapest(all).map((o) => o.shop), ['yahoo', 'momo']);
+  assert.deepEqual(priceVerdict({ price: 89 }, all), { kind: 'good', diff: 10, shop: 'Yahoo', text: '團購價比網路最低（Yahoo）便宜 $10' });
+  assert.equal(priceVerdict({ price: 150 }, all).kind, 'warn');
+  assert.equal(priceVerdict({ price: null }, all), null);
+  assert.match(SHOPS.coupang.search('萬歲牌 甘栗仁'), /^https:\/\/www\.tw\.coupang\.com\/search\?q=/);
+});
+
+test('price comparison without a dictionary brand: anchors and vague names', () => {
+  assert.equal(compareQuery({ product: '小帳篷', category: '運動戶外' }), null, '太籠統');
+  assert.equal(matchScore('波琳小姐蝴蝶酥', '【HERA 赫拉】熊熊小姐蝴蝶結髮夾'), 0, '沒有「波琳」');
+  assert.ok(matchScore('源鮮生菜', '【源鮮智慧農場】地中海蔬食生菜箱180g x 4袋') >= 0.5);
+  assert.equal(matchScore('MOODO浴巾 內衣 乾髮帽', '【FUN HOUSE】加厚珊瑚絨乾髮帽-任選2入組'), 0, '開頭英文名要對上');
+  assert.equal(matchScore('沛樂保鮮盒', '【AKWATEK】304全防水智能音樂保溫杯 加贈保鮮盒'), 0, '沛樂是品牌');
+  assert.ok(matchScore('沛樂保鮮盒', '【Prepara沛樂生活】Latchlok 系列 TRITAN 保鮮盒 4件') >= 0.3);
 });

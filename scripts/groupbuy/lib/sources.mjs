@@ -1,6 +1,6 @@
-// 各來源頁面的解析（純函式）：Threads 搜尋／個人頁、DuckDuckGo 搜尋結果（IG／FB／Threads 貼文）、團媽網站的開團日曆。
+// 各來源頁面的解析（純函式）：Threads 搜尋／個人頁、DuckDuckGo 搜尋結果（IG／FB／Threads 貼文）、團媽網站的開團日曆、RSS feed（FB 粉專）。
 // 抓取流程在 adapters/，這裡只把 HTML／文字轉成統一的貼文格式：
-// { source, id, url, author, authorName, authorUrl, title, text, postedAt(ISO), via }
+// { source, id, url, author, authorName, authorUrl, title, text, postedAt(ISO), via, platform? }
 import { parseWindow, extractProduct, extractOrderUrl, taipeiStamp } from '../../../groupbuy/js/parse.js';
 
 const decode = (s) =>
@@ -250,3 +250,145 @@ export function threadsPostFromDdg(r) {
 
 /** 官方 API 回傳的 permalink → 貼文代碼（和網頁抓到的同一篇能對上） */
 export const codeOf = (permalink) => String(permalink || '').match(/\/(?:post|p|reel|reels|tv)\/([\w-]+)/)?.[1] || null;
+
+// ---------- RSS（RSS.app、FetchRSS 把 FB 粉專轉成的 feed；也收 Atom、JSON Feed） ----------
+
+// CDATA 裡是原始 HTML；沒包 CDATA 的是跳脫過的 HTML，先還原一次
+const xmlText = (s) => (/<!\[CDATA\[/.test(s) ? s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1') : decode(s));
+function tag(block, name) {
+  const m = String(block).match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`, 'i'));
+  return m ? xmlText(m[1]).trim() : '';
+}
+// Atom：<link rel="alternate" href="…"/>
+function atomLink(block) {
+  const attrs = [...String(block).matchAll(/<link\b([^>]*?)\/?>/gi)].map((m) => m[1]);
+  const pick = attrs.find((a) => !/\brel\s*=/i.test(a) || /\brel\s*=\s*["']alternate["']/i.test(a));
+  return pick ? decode(pick.match(/\bhref\s*=\s*["']([^"']*)["']/i)?.[1] || '') : '';
+}
+
+/** HTML → 純文字：保留換行（br、段落），去掉 FetchRSS 浮水印 */
+export function htmlToText(html) {
+  return decode(
+    String(html ?? '')
+      .replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, ' ')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<\/(?:p|div|li|h[1-6]|blockquote|tr)>/gi, '\n')
+      .replace(/<[^>]+>/g, ' '),
+  )
+    .replace(/\(?\s*(?:Feed\s+)?generated\s+with\s+FetchRSS\s*\)?/gi, '')
+    .split('\n')
+    .map((l) => l.replace(/[ \t ]+/g, ' ').trim())
+    .filter(Boolean)
+    .join('\n');
+}
+
+/** RSS 2.0／Atom／JSON Feed → { title, link, items: [{ id, link, title, text, date }] } */
+export function parseFeed(body) {
+  const s = String(body ?? '').trim();
+  if (s.startsWith('{')) {
+    const j = JSON.parse(s);
+    return {
+      title: j.title || '',
+      link: j.home_page_url || '',
+      items: (j.items || []).map((it) => ({
+        id: String(it.id ?? it.url ?? ''),
+        link: it.url || it.external_url || '',
+        title: htmlToText(it.title || ''),
+        text: it.content_text ? String(it.content_text).trim() : htmlToText(it.content_html || it.summary || ''),
+        date: it.date_published || it.date_modified || null,
+      })),
+    };
+  }
+  const atom = /<feed[\s>]/i.test(s) && !/<rss[\s>]/i.test(s);
+  const first = s.search(atom ? /<entry[\s>]/i : /<item[\s>]/i);
+  const head = first >= 0 ? s.slice(0, first) : s;
+  const blocks = [...s.matchAll(atom ? /<entry[\s>][\s\S]*?<\/entry>/gi : /<item[\s>][\s\S]*?<\/item>/gi)].map((m) => m[0]);
+  return {
+    title: htmlToText(tag(head, 'title')),
+    link: tag(head, 'link') || atomLink(head),
+    items: blocks.map((b) => {
+      const link = tag(b, 'link') || atomLink(b);
+      return {
+        id: tag(b, 'guid') || tag(b, 'id') || link,
+        link,
+        title: htmlToText(tag(b, 'title')),
+        text: htmlToText(tag(b, 'content:encoded') || tag(b, 'description') || tag(b, 'content') || tag(b, 'summary')),
+        date: tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'updated') || tag(b, 'dc:date') || null,
+      };
+    }),
+  };
+}
+
+const hostOf = (u) => {
+  try {
+    return new URL(u).hostname.toLowerCase();
+  } catch {
+    return '';
+  }
+};
+/** 網址 → 平台名稱（Facebook／Instagram／Threads），認不得回 null */
+export function platformOf(url) {
+  const h = hostOf(url);
+  if (/(?:^|\.)(?:facebook\.com|fb\.com|fb\.watch)$/.test(h)) return 'Facebook';
+  if (/(?:^|\.)instagram\.com$/.test(h)) return 'Instagram';
+  if (/(?:^|\.)threads\.(?:net|com)$/.test(h)) return 'Threads';
+  return null;
+}
+const fnv = (s) => {
+  let h = 0x811c9dc5;
+  for (const c of String(s)) h = Math.imul(h ^ c.codePointAt(0), 0x01000193) >>> 0;
+  return h.toString(16);
+};
+// 貼文網址 → 穩定的 id：story_fbid／fbid 參數，或路徑最後一段（posts/pfbid…、reel/123、IG 的 p/CODE）
+function postKey(link, fallback) {
+  try {
+    const u = new URL(link);
+    const q = u.searchParams.get('story_fbid') || u.searchParams.get('fbid') || u.searchParams.get('v');
+    if (q) return q;
+    const last = u.pathname.replace(/\/+$/, '').split('/').pop();
+    if (last && !/\.(?:php|html?)$/i.test(last) && !/^(?:watch|photo|photos|videos|posts|reel|reels|p|post)$/i.test(last)) return last;
+  } catch {
+    // 不是網址：用 guid
+  }
+  return fnv(fallback || link);
+}
+const pageHandle = (page) => {
+  try {
+    const u = new URL(page);
+    return u.searchParams.get('id') || decodeURIComponent(u.pathname.split('/').filter(Boolean)[0] || '') || null;
+  } catch {
+    return null;
+  }
+};
+
+const FB_UI_LINE = /^(?:(?:Photos?|Videos?|Reels?) from .{1,80}'s (?:post|reel|video)|.{1,80} (?:added|shared|updated) .{0,40}(?:photos?|videos?|post|cover photo|profile picture))\.?$/i;
+
+/**
+ * feed 的一則 → 貼文。entry 是 watchlist.json 的 { name, page, feed }。
+ * RSS.app、FetchRSS 的標題多半是內文第一行截斷；內文開頭就是標題時不重複。
+ */
+export function feedPost(entry, it) {
+  const link = /^https?:\/\//.test(it.link || '') ? it.link : entry.page || entry.feed;
+  const platform = entry.platform || platformOf(link) || platformOf(entry.page) || '團媽網站';
+  const key = { Facebook: 'facebook', Instagram: 'instagram', Threads: 'threads' }[platform] || 'rss';
+  const title = String(it.title || '').replace(/\s*(?:\.{3}|…)$/, '').trim();
+  const flat = (s) => String(s).replace(/\s+/g, '');
+  // FetchRSS 會在內文前加「Photos from 某某's post」這類 FB 介面字
+  const body = String(it.text || '').split('\n').filter((l) => !FB_UI_LINE.test(l)).join('\n');
+  const head = FB_UI_LINE.test(title) ? '' : title;
+  const text = !head || flat(body).startsWith(flat(head).slice(0, 20)) ? body : `${head}\n${body}`;
+  const t = Date.parse(it.date || '');
+  return {
+    source: 'rss',
+    platform,
+    id: `${key}:${postKey(link, it.id)}`,
+    url: link,
+    author: pageHandle(entry.page),
+    authorName: entry.name || null,
+    authorUrl: entry.page || null,
+    title: '',
+    text: text || head,
+    postedAt: Number.isNaN(t) ? null : new Date(t).toISOString(),
+    via: 'rss',
+  };
+}

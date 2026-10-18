@@ -67,6 +67,34 @@ const PROBES = {
   'gm-bobowin': { mode: 'page', url: `https://bobowin.blog/category/life/${q('團購')}/` },
   'gm-kiki': { mode: 'page', url: 'https://kikimami.tw/' },
   'gm-coco': { mode: 'page', url: 'https://shop.obodo.tw/' },
+  'gm-chien': { mode: 'page', url: 'https://chienchien99.com/category/smartbuy/' },
+  // 團媽 FB 粉專：確認網址與名稱（未登入多半只看得到標題），再交給 RSS 產生器
+  'fb-weima': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/s.smilelife' },
+  'fb-esther7': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/estherhsiao0202/' },
+  'fb-eva': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/evalife.cc/' },
+  'fb-kiki': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/kikimamitw' },
+  'fb-rubee': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/RubeeLittle/' },
+  'fb-coco': { mode: 'page', fresh: true, wait: 5_000, url: 'https://www.facebook.com/cutemoonbaby' },
+  'rssapp-pricing': { mode: 'page', url: 'https://rss.app/pricing' },
+  'fetchrss-prices': { mode: 'page', url: 'https://fetchrss.com/prices' },
+  'fetchrss-home': { mode: 'page', url: 'https://fetchrss.com/' },
+  'fetchrss-fb': { mode: 'page', url: 'https://fetchrss.com/source/facebook' },
+  'rssapp-fb-help': { mode: 'page', url: 'https://help.rss.app/en/articles/11095832-how-to-create-rss-feeds-from-facebook' },
+  // 使用者建立的 FetchRSS feed
+  'feed-1': { mode: 'req', url: 'https://fetchrss.com/feed/1xI4OdGNFATb1xI4Ou23m1fY.rss' },
+  // 比價：各購物網站的搜尋（同一個商品）
+  'pc-pchome-v43': { mode: 'req', url: `https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=${q('OXO 保鮮盒')}&page=1&pageCount=20&sort=rnk/dc` },
+  'pc-pchome-v33': { mode: 'req', url: `https://ecshweb.pchome.com.tw/search/v3.3/all/results?q=${q('OXO 保鮮盒')}&page=1&sort=rnk/dc` },
+  'pc-momo': { mode: 'page', url: `https://www.momoshop.com.tw/search/searchShop.jsp?keyword=${q('OXO 保鮮盒')}&searchType=1&curPage=1` },
+  'pc-momo-m': { mode: 'page', url: `https://m.momoshop.com.tw/search.momo?searchKeyword=${q('OXO 保鮮盒')}&cateLevel=-1` },
+  'pc-yahoo': { mode: 'page', url: `https://tw.buy.yahoo.com/search/product?p=${q('OXO 保鮮盒')}` },
+  'pc-coupang': { mode: 'page', fresh: true, url: `https://www.tw.coupang.com/search?q=${q('OXO 保鮮盒')}` },
+  'pc-biggo': { mode: 'page', url: `https://biggo.com.tw/s/${q('OXO 保鮮盒')}/` },
+  'pc-momo-req': { mode: 'req', url: `https://www.momoshop.com.tw/search/${q('萬歲牌 甘栗仁')}?searchType=1&curPage=1`, headers: { 'accept-language': 'zh-TW,zh;q=0.9' } },
+  'pc-yahoo-req': { mode: 'req', url: `https://tw.buy.yahoo.com/search/product?p=${q('萬歲牌 甘栗仁')}`, headers: { 'accept-language': 'zh-TW,zh;q=0.9' } },
+  'pc-biggo-req': { mode: 'req', url: `https://biggo.com.tw/s/${q('萬歲牌 甘栗仁')}/`, headers: { 'accept-language': 'zh-TW,zh;q=0.9' } },
+  'pc-pchome-2': { mode: 'req', url: `https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=${q('萬歲牌 甘栗仁')}&page=1&pageCount=20&sort=rnk/dc` },
+  'pc-biggo-2': { mode: 'page', url: `https://biggo.com.tw/s/${q('BAGSMART 後背包')}/` },
 };
 
 // 第三方網頁偶爾內嵌金鑰；快照寫檔前一律遮蔽，避免進 repo

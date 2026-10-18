@@ -1,4 +1,4 @@
-// 定期排程：抓各團購來源，輸出 groupbuy/data/<來源>.json 與 meta.json。
+// 定期排程：抓各團購來源（Threads、搜尋引擎、團媽網站、FB 粉專 RSS、IG 官方 API），輸出 groupbuy/data/<來源>.json 與 meta.json。
 // 來源失敗時保留上一次的檔案，只在 meta 標記錯誤；社群來源每次只看得到一小段，結果會累積到結單（或發文後 10 天）。
 // 用法：node scripts/groupbuy/scrape.mjs [來源名稱 ...]（不指定 = 全部）
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -11,9 +11,10 @@ import threads from './adapters/threads.mjs';
 import search from './adapters/search.mjs';
 import pages from './adapters/pages.mjs';
 import instagram from './adapters/instagram.mjs';
+import rss from './adapters/rss.mjs';
 
 const DIR = 'groupbuy/data';
-const ADAPTERS = { threads, search, pages, instagram };
+const ADAPTERS = { threads, search, pages, rss, instagram };
 const FILES = [...Object.keys(ADAPTERS).map((k) => `${k}.json`), 'manual.json'];
 
 const readJson = async (p, fallback) => {
@@ -37,7 +38,7 @@ const watch = normalizeWatch(await readJson(join(DIR, 'watchlist.json'), {}));
 const rotation = (meta.runs || 0) + 1;
 const wanted = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(ADAPTERS);
 const env = process.env;
-console.log('watch', JSON.stringify({ threads: watch.threads.length, instagram: watch.instagram.length, pages: watch.pages.length, rotation }));
+console.log('watch', JSON.stringify({ threads: watch.threads.length, instagram: watch.instagram.length, pages: watch.pages.length, rss: watch.rss.filter((r) => r.feed).length, rotation }));
 
 const { browser, context } = await openBrowser();
 let failures = 0;
@@ -47,7 +48,7 @@ try {
     const A = ADAPTERS[name];
     const file = join(DIR, `${name}.json`);
     const prev = await readJson(file, { items: [] });
-    if (A.enabled && !A.enabled(env)) {
+    if (A.enabled && !A.enabled(env, watch)) {
       meta.sources[name] = { ok: true, skipped: true, count: prev.items.length, note: A.note, version: A.version ?? 1 };
       console.log(`[${name}] skipped (not configured)`);
       continue;
