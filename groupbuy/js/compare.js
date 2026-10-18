@@ -41,7 +41,9 @@ export function compareQuery(item) {
 
 const wordsOf = (s) => new Set((s.match(/[a-z0-9]{2,}/g) || []).filter((w) => !/^\d+$/.test(w) || w.length >= 3));
 // 配件、耗材：搜尋字沒提到卻出現，就不是同款
-const ACCESSORY = /配件|替換|濾網|濾芯|耗材|刀頭|刷頭|吸頭|集塵袋|專用|適用|副廠|保護套|收納包|貼膜|延長線/;
+const ACCESSORY = /配件|替換|濾網|濾芯|濾心|耗材|刀頭|刷頭|吸頭|集塵袋|集塵盒|拖布|滾刷|邊刷|主刷|清潔液|補充芯|補充包|墨水匣|碳粉匣|專用|適用|副廠|保護套|收納包|貼膜|延長線/;
+// 搜尋字以器具字結尾（咖啡機、氣炸鍋、烤箱）：結果也要有這個字，膠囊、鍋蓋這類不算同款
+const DEVICE_END = /([機器鍋爐箱扇燈])\P{Script=Han}*$/u;
 
 /**
  * 搜尋結果和搜尋字有多像（0～1）：有品牌時結果一定要有同一個品牌；
@@ -59,6 +61,8 @@ export function matchScore(query, name) {
   const want = [...pairsOf(rest), ...wordsOf(rest)];
   if (!want.length) return brand ? 0.6 : 0;
   if (ACCESSORY.test(n) && !ACCESSORY.test(q)) return 0;
+  const device = q.match(DEVICE_END)?.[1];
+  if (device && !n.includes(device)) return 0;
   const have = new Set([...pairsOf(n), ...wordsOf(n)]);
   return Math.round((want.filter((x) => have.has(x)).length / want.length) * 100) / 100;
 }
@@ -79,9 +83,21 @@ export function pickOffers(query, results, { min = brandOf(query) ? 0.3 : 0.5, n
     .slice(0, n);
 }
 
+/**
+ * 各平台結果合起來看價格：比所有同款中位數的 1/4 還便宜的，多半是名稱塞了關鍵字的耗材
+ * （「Nespresso 咖啡膠囊…膠囊咖啡機」$119 對上咖啡機 $3,300），拿掉。至少 3 筆才判斷。
+ */
+export function dropOutliers(offers = {}) {
+  const prices = SHOP_KEYS.flatMap((k) => (offers[k] || []).map((o) => o.price)).sort((a, b) => a - b);
+  if (prices.length < 3) return offers;
+  const median = prices[Math.floor(prices.length / 2)];
+  return Object.fromEntries(Object.entries(offers).map(([k, list]) => [k, (list || []).filter((o) => o.price >= median / 4)]));
+}
+
 /** 各平台最便宜的同款 → [{ shop, name, price, url }]，價格低到高 */
 export function cheapest(offers = {}) {
-  return SHOP_KEYS.map((shop) => (offers[shop]?.[0] ? { shop, ...offers[shop][0] } : null))
+  const clean = dropOutliers(offers);
+  return SHOP_KEYS.map((shop) => (clean[shop]?.[0] ? { shop, ...clean[shop][0] } : null))
     .filter(Boolean)
     .sort((a, b) => a.price - b.price);
 }

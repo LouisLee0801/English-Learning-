@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { parseWindow, parsePrice, groupBuyScore, extractProduct, parsePost, splitSchedule, taipeiStamp } from '../groupbuy/js/parse.js';
 import { classify, brandOf } from '../groupbuy/js/categories.js';
 import { status, dueText, combine, filterItems, defaultFilters, matchesQuery, timeline, calendarUrl, filtersToQuery, queryToFilters } from '../groupbuy/js/core.js';
-import { compareQuery, matchScore, pickOffers, cheapest, priceVerdict, SHOPS } from '../groupbuy/js/compare.js';
+import { compareQuery, matchScore, pickOffers, cheapest, priceVerdict, dropOutliers, SHOPS } from '../groupbuy/js/compare.js';
 
 const ref = '2026-10-17 12:00'; // 週六
 
@@ -298,4 +298,25 @@ test('price comparison without a dictionary brand: anchors and vague names', () 
   assert.equal(matchScore('MOODO浴巾 內衣 乾髮帽', '【FUN HOUSE】加厚珊瑚絨乾髮帽-任選2入組'), 0, '開頭英文名要對上');
   assert.equal(matchScore('沛樂保鮮盒', '【AKWATEK】304全防水智能音樂保溫杯 加贈保鮮盒'), 0, '沛樂是品牌');
   assert.ok(matchScore('沛樂保鮮盒', '【Prepara沛樂生活】Latchlok 系列 TRITAN 保鮮盒 4件') >= 0.3);
+});
+
+test('price comparison: devices need the device word, accessories are dropped', () => {
+  assert.equal(matchScore('Nespresso膠囊咖啡機', '【Nespresso】Nespresso 咖啡膠囊 <滿三盒才出貨> 星巴克膠囊'), 0, '膠囊不是咖啡機');
+  assert.ok(matchScore('Nespresso膠囊咖啡機', '【Nespresso】Vertuo POP膠囊咖啡機_多色任選') >= 0.5);
+  assert.equal(matchScore('MOVA掃地機器人', 'MOVA 掃拖機器人圓盤拖布(4入組)'), 0);
+  assert.equal(matchScore('MOVA掃地機器人', '【MOVA TW】掃拖機器人地面清潔液 1L'), 0);
+  assert.ok(matchScore('MOVA掃地機器人', 'MOVA E50 Pro Ultra 雙機械臂防纏繞掃拖機器人') >= 0.3);
+  assert.ok(matchScore('萬歲牌 甘栗仁', '萬歲牌特選甘栗30g*5包【愛買】') >= 0.3, '食品不受器具字限制');
+});
+
+test('price comparison: keyword-stuffed consumables priced far below the rest are dropped', () => {
+  const offers = {
+    pchome: [{ name: 'Nespresso 膠囊咖啡機 Essenza Mini', price: 3300, url: 'https://p/1' }],
+    momo: [{ name: 'Nespresso 咖啡膠囊…膠囊咖啡機', price: 119, url: 'https://m/1' }, { name: 'Nespresso 膠囊咖啡機', price: 3300, url: 'https://m/2' }],
+    yahoo: [{ name: 'Nespresso Vertuo POP 膠囊咖啡機', price: 3790, url: 'https://y/1' }],
+  };
+  assert.deepEqual(dropOutliers(offers).momo.map((o) => o.price), [3300]);
+  assert.equal(cheapest(offers)[0].price, 3300);
+  const few = { momo: [{ name: 'a', price: 99, url: 'https://m/1' }, { name: 'b', price: 3300, url: 'https://m/2' }] };
+  assert.equal(dropOutliers(few), few, '少於 3 筆不判斷');
 });
