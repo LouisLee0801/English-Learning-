@@ -1,0 +1,101 @@
+name: Research yingxing backtest data
+
+# 回測研究用(research/2026-10-yingxing): 雲端開發環境擋證交所/櫃買, 改由 Actions 抓。
+# commit 訊息含 [fetch] 才跑全區間抓取; 否則只跑 probe。
+on:
+  push:
+    branches: [claude/quirky-brown-3pi0vp]
+    paths: ['research/2026-10-yingxing/**', '.github/workflows/research-yingxing.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-yingxing
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python -X utf8 research/2026-10-yingxing/fetch.py probe 20261001
+
+  fetch:
+    needs: probe
+    if: contains(github.event.head_commit.message, '[fetch]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        span:
+          - 20210101-20210331
+          - 20210401-20210630
+          - 20210701-20210930
+          - 20211001-20211231
+          - 20220101-20220331
+          - 20220401-20220630
+          - 20220701-20220930
+          - 20221001-20221231
+          - 20230101-20230331
+          - 20230401-20230630
+          - 20230701-20230930
+          - 20231001-20231231
+          - 20240101-20240331
+          - 20240401-20240630
+          - 20240701-20240930
+          - 20241001-20241231
+          - 20250101-20250331
+          - 20250401-20250630
+          - 20250701-20250930
+          - 20251001-20251231
+          - 20260101-20260331
+          - 20260401-20260630
+          - 20260701-20261017
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Fetch
+        run: |
+          S=${{ matrix.span }}
+          python -X utf8 research/2026-10-yingxing/fetch.py fetch ${S%-*} ${S#*-} px_${S}.csv.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: px_${{ matrix.span }}
+          path: px_${{ matrix.span }}.csv.gz
+
+  commit:
+    needs: fetch
+    if: always() && needs.fetch.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dl
+          merge-multiple: true
+      - name: Commit data
+        run: |
+          mkdir -p research/2026-10-yingxing/data
+          cp dl/*.csv.gz research/2026-10-yingxing/data/
+          ls -la research/2026-10-yingxing/data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git add research/2026-10-yingxing/data
+          git commit -m "research: yingxing backtest raw data"
+          BR="${GITHUB_REF_NAME}"
+          for i in 1 2 3; do
+            git fetch origin "$BR" && git rebase "origin/$BR" && git push origin "HEAD:refs/heads/$BR" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
