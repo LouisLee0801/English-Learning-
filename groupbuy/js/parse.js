@@ -125,7 +125,9 @@ const CLOSE_W = '結單|收單|截單|結團|截止|結束|收團|關團|下架|
 const AFTER_OPEN = new RegExp(String.raw`^\s*(?:[(（][^)）]{0,4}[)）])?\s*(?:準時|正式|晚上|中午|早上)?\s*(?:${OPEN_W})`);
 const AFTER_CLOSE = new RegExp(String.raw`^\s*(?:[(（][^)）]{0,4}[)）])?\s*(?:準時|晚上|中午|早上)?\s*(?:${CLOSE_W}|止|為止|前(?:下單|結單|收單)?)`);
 const BEFORE_OPEN = new RegExp(String.raw`(?:${OPEN_W}|即日起|從)(?:時間|日期|日)?\s*[:：]?\s*$`);
-const BEFORE_CLOSE = new RegExp(String.raw`(?:${CLOSE_W}|最後|期限|截至|到|至)(?:時間|日期|日)?\s*[:：]?\s*$`);
+const BEFORE_CLOSE = new RegExp(String.raw`(?:${CLOSE_W}|最後|期限|截至|到|至|限時)(?:時間|日期|日)?\s*[:：]?\s*$`);
+// 「限時～10/22」「即日起～10/31」：前面只有波浪號
+const BEFORE_TILDE = /[~～〜]\s*$/;
 const BEFORE_RANGE = /(?:團購|開團|活動|販售|銷售|預購|優惠|下單|訂購)?(?:時間|期間|日期|檔期)\s*[:：]?\s*$/;
 // 出貨、到貨等日期不是開團期間
 const SHIP = /出貨|到貨|寄出|發貨|取貨|配送|寄送|預計|製作|到台|抵台|面交|領貨|生日|演唱會|活動日/;
@@ -161,6 +163,8 @@ export function parseWindow(text, ref) {
     if (AFTER_OPEN.test(after)) return 'open';
     if (BEFORE_CLOSE.test(before)) return 'close';
     if (BEFORE_OPEN.test(before)) return 'open';
+    // 波浪號後的明確日期是結單日；「各位～今天開團」這種語氣詞後的今天、明天不算
+    if (!k.rel && BEFORE_TILDE.test(before)) return 'close';
     if (BEFORE_RANGE.test(before)) return 'range';
     return null;
   };
@@ -233,9 +237,11 @@ const AMOUNT = String.raw`(?:NT\s*\$?|\$|＄|台幣\s*)?\s*(\d{1,3}(?:,\d{3})+|\
 const LABELED = [
   ['團購', new RegExp(String.raw`(?:團購|開團|團媽|粉絲|獨家|直播|限時)(?:優惠)?(?:價|價格|只要)\s*[:：]?\s*${AMOUNT}`)],
   ['優惠', new RegExp(String.raw`(?:優惠價|特價|活動價|下殺|超值價|驚喜價|破盤價|會員價|折扣價|最優惠|最低價)\s*[:：]?\s*${AMOUNT}`)],
-  ['售價', new RegExp(String.raw`(?:只要|售價|價格|價錢|單價|每組|每盒|每包|每件|每入|一組|一盒|一包|一件|價)\s*[:：]?\s*${AMOUNT}`)],
+  ['售價', new RegExp(String.raw`(?:只要|售價|價格|價錢|單價|價)\s*[:：]?\s*${AMOUNT}`)],
+  // 「一組 12支」是數量：每組、一盒…後面要有 $ 或「元」才算價格
+  ['單位', new RegExp(String.raw`(?:每組|每盒|每包|每件|每入|一組|一盒|一包|一件)\s*[:：]?\s*(?:(?:NT\s*\$?|\$|＄|台幣)\s*(\d{1,3}(?:,\d{3})+|\d{2,6})|(\d{1,3}(?:,\d{3})+|\d{2,6})\s*(?:元|塊))`)],
 ];
-const ORIGINAL = new RegExp(String.raw`(?:原價|市價|定價|專櫃價|官網價|建議售價)\s*[:：]?\s*${AMOUNT}`);
+const ORIGINAL = new RegExp(String.raw`(?:原價|市價|定價|專櫃價|官網價|官網售價|原售價|建議售價)\s*[:：]?\s*${AMOUNT}`);
 const ANY_AMOUNT = new RegExp(String.raw`(?:(?:NT\s*\$|\$|＄)\s*(\d{1,3}(?:,\d{3})+|\d{2,6})|(\d{1,3}(?:,\d{3})+|\d{2,6})\s*元)(?:\s*起)?`, 'g');
 const toNum = (s) => Number(String(s).replace(/,/g, ''));
 
@@ -246,7 +252,7 @@ export function parsePrice(text) {
   for (const [, re] of LABELED) {
     const m = t.match(re);
     if (m) {
-      const v = toNum(m[1]);
+      const v = toNum(m[1] || m[2]);
       if (v >= 10 && v !== original) return { price: v, originalPrice: original, priceText: m[0].trim().slice(0, 30) };
     }
   }
@@ -254,7 +260,7 @@ export function parsePrice(text) {
     const v = toNum(m[1] || m[2]);
     const before = t.slice(Math.max(0, m.index - 6), m.index);
     const after = t.slice(m.index + m[0].length, m.index + m[0].length + 4);
-    if (/滿|運費|運|門檻|超過|回饋|折抵|現折|省|贈|原價|市價|定價|還要|要價|原本|一般|專櫃/.test(before) || /免運|折|回饋|以上/.test(after)) continue;
+    if (/滿|運費|運|門檻|超過|回饋|折抵|現折|省|降|贈|原價|市價|定價|售價|還要|要價|原本|一般|專櫃/.test(before) || /免運|折|回饋|以上/.test(after)) continue;
     if (v < 10 || v === original) continue;
     return { price: v, originalPrice: original, priceText: m[0].trim() };
   }
@@ -268,6 +274,8 @@ const POS = [
   [/開團\s*(?:啦|囉|喇|嚕|了|中|！|!|～|~|\p{Extended_Pictographic})|限時開團|正式開團|準時開團|開團時間|開團日期|開團期間|團購開跑|開團價|團購價|開團資訊/u, 4],
   [/開團|揪團|團購|合購|預購|開這團|開此團|跟團/, 2],
   [/收單|結單|截單|結團|收團/, 3],
+  // 「限時～10/22」「一路開到 10/22」
+  [/限時\s*[～~至到:：]*\s*\d{1,2}\s*[/.]\s*\d{1,2}|開到\s*\d{1,2}\s*[/.]\s*\d{1,2}/, 3],
   [/下單|訂購|購買|表單|賣貨便|一頁|商店|蝦皮|連結|網址|私訊下單|留言\+1|\+1|喊單|進群|小盒子|留言[「『"]|留言.{0,6}(?:傳|私訊|連結|給你)/, 2],
   [/\$\s*\d|NT\s*\$?\s*\d|\d\s*元|價格|售價|只要|特價|優惠價/, 2],
   [/款式|規格|尺寸|顏色|口味|容量|組合|現貨|免運|贈品|加購|限量|數量有限|宅配|超取/, 1],
@@ -284,9 +292,12 @@ const NOT_TW = /港幣|HK\$|HKD|香港|澳門|順豐|緊貼|[佢嘅咗冇睇嘢�
 // 簡體字（三個以上）多半是中國的貼文
 const SIMPLIFIED = /[们这个说对时会为发买卖团购单价钱货经还见长东车马门问听观历亲汇总号丝爱宝儿鲜鸡猪鱼虾礼盒装订]/g;
 
+// 團媽常把「團」寫成「糰」（開糰、跟糰、糰價），判斷前先統一
+const unify = (s) => String(s ?? '').replace(/糰/g, '團');
+
 /** 開團文判斷：正向字詞加分、找廠商／抱怨文扣分。回傳 { score, isGroupBuy } */
 export function groupBuyScore(text) {
-  const t = String(text ?? '');
+  const t = unify(text);
   let score = 0;
   for (const [re, pts] of POS) if (re.test(t)) score += pts;
   for (const re of NEG) if (re.test(t)) score -= 4;
@@ -383,17 +394,46 @@ function clauseScore(raw, clean, lineIndex) {
   return sc;
 }
 
+// 團媽長文常用《》標出商品名：《麗克特調理機》、《BAGSMART 旅人休閒擴充後背包》
+const BOOK = /《\s*([^《》\n]{2,40}?)\s*》/g;
+/** 文中《》裡的名稱（依出現順序，去掉「開團預告」「10/12～10/18」這類）；known：有品牌或商品字，才拿來當商品名 */
+export function bookTitles(text, ref) {
+  const refYmd = ymdOf(ref || taipeiStamp());
+  const out = [];
+  for (const m of unify(text).slice(0, 2000).matchAll(BOOK)) {
+    if (GROUP_WORDS.test(m[1]) || /\d{1,2}\s*[/.月]\s*\d{1,2}/.test(m[1])) continue;
+    const name = cleanLine(m[1], refYmd);
+    // 《要去什麼地方》這種歌名、書名沒有品牌或商品字，不當商品名
+    if (width(name) >= 4 && !out.some((x) => x.name === name)) out.push({ name, raw: m[0], known: findTerms(name).length > 0 });
+  }
+  return out;
+}
+
+// 品牌提示：文末「#萬歲牌」這類 hashtag；firstLine 時也看第一行出現的字典品牌
+function brandHint(title, body, firstLine = true) {
+  const tags = [...String(body).matchAll(/#([^\s#]{2,12})/g)].map((m) => m[1]);
+  const tag = tags.find((t) => /.{2,}牌$/.test(t) && !/^(?:品牌|招牌|名牌|大牌|老牌|金牌|王牌)$/.test(t)) || tags.find((t) => brandOf(t) === t);
+  return tag || (firstLine ? brandOf(`${title || ''} ${String(body).split('\n')[0]}`) : null);
+}
+const withBrand = (name, brand) => (brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name);
+
 /**
- * 商品名：「品名：」行優先；否則把標題與前幾行切成子句，挑分數最高的一句（品牌、商品關鍵字、開團字樣），
+ * 商品名：「品名：」行優先；其次是《》標出的商品名（沒寫品牌時補上 hashtag／第一行的品牌）；
+ * 否則把標題與前幾行切成子句，挑分數最高的一句（品牌、商品關鍵字、開團字樣），
  * 太短時接上同篇下一個有商品關鍵字的子句。也會從「留言「氣炸鍋」」這類關鍵字取候選。
  */
 export function extractProduct({ title, text, ref, strict = true } = {}) {
   const refYmd = ymdOf(ref || taipeiStamp());
-  const body = String(text ?? '');
+  const body = unify(text);
+  title = unify(title);
   const m = body.match(LABEL_LINE);
   if (m) {
     const v = cleanLine(m[1], refYmd);
     if (v.length >= 2) return v.slice(0, 40);
+  }
+  const book = bookTitles(`${title}\n${body}`, ref).find((b) => b.known);
+  if (book) {
+    return withBrand(book.name, brandOf(book.name) ? null : brandHint(title, body)).slice(0, 40);
   }
   const lines = [title, ...body.split(/\n+/)].map((l) => String(l ?? '').trim()).filter(Boolean).slice(0, 8);
   const cands = [];
@@ -416,7 +456,7 @@ export function extractProduct({ title, text, ref, strict = true } = {}) {
       if (/\s[-–—－]\s/.test(c)) c = pickPart(c.split(/\s[-–—－]\s/)) || c;
       if (width(c) > 30 && /[｜|]/.test(c)) c = pickPart(c.split(/\s*[｜|]\s*/)) || c;
       // 口語長句（我、你、真的、怎麼…）才縮到商品詞；商品清單的長品名照留
-      if (width(c) > 28 && /我|你|妳|大家|這麼|怎麼|知道|覺得|真的|因為|所以|如果|就是|一定|現在才|最近|超超|真心|愛用|新角落|分享/.test(c)) c = focusClause(c);
+      if (width(c) > 28 && /我|你|妳|大家|這麼|怎麼|知道|覺得|真的|因為|所以|如果|就是|一定|現在才|最近|超超|真心|愛用|新角落|分享|終於/.test(c)) c = focusClause(c);
       if (width(c) < 4) {
         if (c.length >= 2 && ANNOUNCE.test(raw)) cands.push({ text: c, score: clauseScore(raw, c, i), order: cands.length, short: true });
         continue;
@@ -429,20 +469,30 @@ export function extractProduct({ title, text, ref, strict = true } = {}) {
   // 社群貼文：最好的一句都沒有商品字、也不是開團句，多半沒寫商品名，寧可不收（團媽清單 strict=false 照收）
   if (strict && best.score < 0) return '';
   let out = best.text;
-  // 「三麗鷗」太短：接上後面有商品關鍵字的子句（萬聖節｜芭蕾小公仔）
-  if (width(out) < 8) {
+  // 只有品牌（「三麗鷗」）太短：接上後面有商品關鍵字的子句（萬聖節｜芭蕾小公仔）；「甘栗」這種商品詞不接
+  const onlyBrand = brandOf(out) && brandOf(out).replace(/\s/g, '').length >= out.replace(/\s/g, '').length - 1;
+  if (width(out) < 8 && onlyBrand) {
     const cat = classify({ product: out });
     const more = cands.find((c) => c.order > best.order && findTerms(c.text).length && !c.short && width(c.text) <= 24 && !c.text.includes(out) && !out.includes(c.text));
     if (more && (cat === '其他' || classify({ product: more.text }) === cat)) out = `${out} ${more.text}`;
   }
+  // 社群貼文沒寫品牌時，用文末 hashtag 的品牌補上（#萬歲牌）
+  if (strict && !brandOf(out)) out = withBrand(out, brandHint(title, body, false));
   return out.slice(0, 40).trim();
 }
 
 // ---------- 其他欄位 ----------
-const ORDER_HOSTS = /1shop\.tw|shopline|cyberbiz|waca\.|meepshop|forms\.gle|docs\.google\.com\/forms|lin\.ee|line\.me|portaly\.cc|pse\.is|reurl\.cc|bit\.ly|tinyurl|myship\.7-11|shopee\.tw|shp\.ee|easystore|mysubline|pinkoi|iopenmall|ecpay|surveycake|typeform|beacons\.ai|linktr\.ee/i;
+const ORDER_HOSTS = /1shop\.tw|shopline|cyberbiz|waca\.|meepshop|forms\.gle|docs\.google\.com\/forms|lin\.ee|line\.me|portaly\.cc|pse\.is|reurl\.cc|bit\.ly|tinyurl|myship\.7-11|shopee\.tw|shp\.ee|easystore|mysubline|pinkoi|iopenmall|ecpay|surveycake|typeform|beacons\.ai|linktr\.ee|linkgoods\.com|citiesocial\.co/i;
+const SOCIAL_HOSTS = /facebook\.com|fb\.com|instagram\.com|threads\.(?:net|com)|youtube\.com|youtu\.be/i;
+const URL_RE = /https?:\/\/[^\s<>"'，。）)】]+/gi;
 export function extractOrderUrl(text) {
-  const urls = String(text ?? '').match(/https?:\/\/[^\s<>"'，。）)】]+/gi) || [];
-  return urls.find((u) => ORDER_HOSTS.test(u)) || null;
+  const t = String(text ?? '');
+  const urls = [...t.matchAll(URL_RE)];
+  const known = urls.find((m) => ORDER_HOSTS.test(m[0]));
+  if (known) return known[0];
+  // 「👉限時：https://…」「下單連結：https://…」：前面標示是下單的網址也算（社群網址除外）
+  const labeled = urls.find((m) => !SOCIAL_HOSTS.test(m[0]) && /(?:下單|連結|網址|限時|跟團|搶購|購買|訂購|👉)[^\n]{0,6}$/u.test(t.slice(Math.max(0, m.index - 12), m.index)));
+  return labeled ? labeled[0] : null;
 }
 
 const TAG_WORDS = ['預購', '現貨', '免運', '限量', '贈品', '加開', '首團', '回購', '直播', '超取', '宅配', '面交', '分期'];
@@ -490,6 +540,8 @@ export function splitSchedule(text, ref) {
  */
 export function parsePost({ text, title = '', ref } = {}) {
   const r = ref || taipeiStamp();
+  text = unify(text);
+  title = unify(title);
   const all = [title, text].filter(Boolean).join('\n');
   const win = parseWindow(all, r);
   // 有寫開團期間或收單日，多半是真的開團文
@@ -497,7 +549,10 @@ export function parsePost({ text, title = '', ref } = {}) {
   if (win.openAt || win.closeAt) score += 2;
   const isGroupBuy = score >= 4;
   const product = extractProduct({ title, text, ref: r });
-  const price = parsePrice(all);
+  // 一篇介紹好幾個《商品》時，價格只看第一個商品那一行，避免拿到別的商品的價格
+  const books = bookTitles(all, r);
+  const main = books.find((b) => b.known);
+  const price = parsePrice(books.length >= 2 && main ? all.split('\n').filter((l) => l.includes(main.raw)).join('\n') : all);
   return {
     isGroupBuy,
     score,

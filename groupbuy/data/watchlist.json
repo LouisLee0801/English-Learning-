@@ -4,6 +4,7 @@
   "threads：Threads 團主帳號（寫 abc、@abc 或個人頁網址都可以），每次抓最新貼文",
   "instagram：IG 團主帳號；需要在 repo Secrets 設定 IG_ACCESS_TOKEN、IG_USER_ID 才會抓（見 docs/GROUPBUY.md）",
   "pages：團媽自己的網站或開團日曆頁（Strikingly、Portaly、部落格…），每次整頁重抓",
+  "rss：團媽的 FB 粉專。到 FetchRSS 或 RSS.app（免費版）用 page 網址建立 feed，把 feed 網址填進 feed；feed 留空的會略過",
   "keywords.threads：Threads 搜尋關鍵字，每次排程輪替使用 1 個（未登入搜尋有次數限制）",
   "keywords.search：DuckDuckGo 搜尋字，每次輪替 2 組；site:instagram.com 只找 IG 貼文"
  ],
@@ -21,6 +22,33 @@
   {
    "name": "倩兒☓魯蛋 Adrianne Life",
    "url": "https://adriannelife.com/blog/groupbuying"
+  }
+ ],
+ "rss": [
+  {
+   "name": "七先生與艾小姐",
+   "page": "https://www.facebook.com/estherhsiao0202/",
+   "feed": "https://fetchrss.com/feed/1xI4OdGNFATb1xI4Ou23m1fY.rss"
+  },
+  {
+   "name": "Smile Life 維媽育兒生活",
+   "page": "https://www.facebook.com/s.smilelife",
+   "feed": ""
+  },
+  {
+   "name": "Rubeelittle",
+   "page": "https://www.facebook.com/RubeeLittle/",
+   "feed": ""
+  },
+  {
+   "name": "月亮媽咪的育兒寶典",
+   "page": "https://www.facebook.com/cutemoonbaby",
+   "feed": ""
+  },
+  {
+   "name": "依娃Evalife－台北媽媽日常",
+   "page": "https://www.facebook.com/evalife.cc/",
+   "feed": ""
   }
  ],
  "keywords": {

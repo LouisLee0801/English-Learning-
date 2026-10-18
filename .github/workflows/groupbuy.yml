@@ -6,9 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       discover:
-        description: '同時存探勘快照（groupbuy/raw）'
+        description: '只做探勘：存快照到 groupbuy/raw，不爬取'
         type: boolean
         default: false
+      probes:
+        description: '探勘項目（空白分隔，留空＝全部）'
+        type: string
+        default: ''
   push:
     branches: [main]
     paths: ['scripts/groupbuy/**', 'groupbuy/js/categories.js', 'groupbuy/js/parse.js', 'groupbuy/data/watchlist.json', '.github/workflows/groupbuy.yml']
@@ -38,16 +42,22 @@ jobs:
         if: inputs.discover || contains(github.event.head_commit.message, '[discover')
         env:
           MSG: ${{ github.event.head_commit.message }}
-        run: node scripts/groupbuy/discover.mjs $(printf '%s' "$MSG" | sed -n 's/.*\[discover:\([^]]*\)\].*/\1/p' | tr ',' ' ')
+          PROBES: ${{ inputs.probes }}
+        run: node scripts/groupbuy/discover.mjs $(printf '%s' "$MSG" | sed -n 's/.*\[discover:\([^]]*\)\].*/\1/p' | tr ',' ' ') $PROBES
         continue-on-error: true
       - name: Scrape
-        if: "!contains(github.event.head_commit.message, '[discover') && hashFiles('scripts/groupbuy/scrape.mjs') != ''"
+        if: "!inputs.discover && !contains(github.event.head_commit.message, '[discover') && hashFiles('scripts/groupbuy/scrape.mjs') != ''"
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
         run: node scripts/groupbuy/scrape.mjs
+      # 比價：每次 20 個商品（PChome、momo、Yahoo），失敗不影響資料更新
+      - name: Compare prices
+        if: "!inputs.discover && !contains(github.event.head_commit.message, '[discover') && hashFiles('scripts/groupbuy/compare.mjs') != ''"
+        run: node scripts/groupbuy/compare.mjs
+        continue-on-error: true
       - name: Commit data
         if: success() || failure()
         run: |

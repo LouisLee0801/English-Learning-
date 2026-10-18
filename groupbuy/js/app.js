@@ -4,6 +4,7 @@ import {
 } from './core.js';
 import { CATEGORIES, CATEGORY_KEYS, categoryIcon } from './categories.js';
 import { parsePost, taipeiStamp } from './parse.js';
+import { compareQuery, cheapest, priceVerdict, SHOPS, SHOP_KEYS } from './compare.js';
 import * as mine from './mine.js';
 
 const $main = document.getElementById('main');
@@ -14,7 +15,7 @@ const safeUrl = (u) => (/^https?:\/\//i.test(String(u || '')) ? esc(u) : '');
 const PAGE = 60;
 const REPO = 'https://github.com/LouisLee0801/English-Learning-';
 
-const data = { items: [], meta: null, watch: null, loaded: false, error: null };
+const data = { items: [], meta: null, watch: null, prices: null, loaded: false, error: null };
 let shown = PAGE;
 
 // ---------- 資料 ----------
@@ -28,7 +29,8 @@ async function load() {
   try {
     data.meta = await getJson('data/meta.json').catch(() => null);
     data.watch = await getJson('data/watchlist.json').catch(() => null);
-    const files = data.meta?.files || ['threads.json', 'search.json', 'pages.json', 'instagram.json', 'manual.json'];
+    data.prices = await getJson('data/prices.json').catch(() => null);
+    const files = data.meta?.files || ['threads.json', 'search.json', 'pages.json', 'rss.json', 'instagram.json', 'manual.json'];
     const parts = await Promise.all(files.map((f) => getJson(`data/${f}`).then((j) => ({ file: f, items: j.items || [] })).catch(() => ({ file: f, items: [] }))));
     data.items = combine(parts);
   } catch (e) {
@@ -39,6 +41,9 @@ async function load() {
 }
 
 const allItems = () => [...mine.addedItems(), ...data.items];
+// 追蹤清單（每次重畫讀一次；追蹤／取消後清掉）
+let followList = null;
+const myFollows = () => (followList ||= mine.follows());
 
 // ---------- 共用片段 ----------
 function toast(msg) {
@@ -76,7 +81,26 @@ function byline(it) {
   const handle = it.authorName && it.author ? ` @${it.author}` : '';
   const who = name ? (safeUrl(it.authorUrl) ? `<a href="${safeUrl(it.authorUrl)}" target="_blank" rel="noopener">${esc(name)}${esc(handle)}</a>` : esc(name + handle)) : '';
   const when = it.postedAt ? `${fmtTime(it.postedAt)} 發文` : it.firstSeenAt ? `${fmtTime(it.firstSeenAt)} 收錄` : '';
-  return [who, when].filter(Boolean).join(' · ');
+  const on = mine.followsItem(it, myFollows());
+  const follow = name && it.source !== 'mine' ? `<button type="button" class="follow" data-follow="${esc(it.id)}" aria-pressed="${on}">${on ? '✓ 已追蹤' : '＋追蹤'}</button>` : '';
+  return `<span class="by-text">${[who, when].filter(Boolean).join(' · ')}</span>${follow}`;
+}
+
+/** 比價：各平台最便宜的相似商品＋團購價比較；還沒比到的給搜尋連結 */
+function compareBlock(it) {
+  const q = compareQuery(it);
+  if (!q) return '';
+  const rec = data.prices?.queries?.[q];
+  const rows = rec ? cheapest(rec.offers) : [];
+  const v = rec ? priceVerdict(it, rec.offers) : null;
+  const summary = rows.length ? `比價｜網路最低 ${SHOPS[rows[0].shop].name} ${fmtPrice(rows[0].price)}` : rec ? '比價｜沒找到同款' : '比價｜到各平台搜尋';
+  const note = rec ? `${fmtTime(rec.checkedAt)} 自動比對的相似商品，規格、組數可能不同，請點進去確認。` : '排程每 2 小時比一批，還沒輪到這個商品。';
+  return `<details class="compare">
+      <summary>${esc(summary)}${v ? ` <span class="verdict ${v.kind}">${esc(v.text)}</span>` : ''}</summary>
+      ${rows.length ? `<ul class="cmp">${rows.map((r) => `<li><a href="${safeUrl(r.url)}" target="_blank" rel="noopener"><b>${esc(SHOPS[r.shop].name)}</b><span class="cmp-price">${fmtPrice(r.price)}</span><span class="cmp-name">${esc(r.name)}</span></a></li>`).join('')}</ul>` : ''}
+      <div class="cmp-search"><span>搜尋</span>${SHOP_KEYS.map((k) => `<a href="${esc(SHOPS[k].search(q))}" target="_blank" rel="noopener">${esc(SHOPS[k].name)}</a>`).join('')}</div>
+      <p class="cmp-note">${esc(note)}酷澎不開放自動比價，請用搜尋連結。</p>
+    </details>`;
 }
 
 function card(it, now, q = '') {
@@ -100,6 +124,7 @@ function card(it, now, q = '') {
     ${it.price ? `<div class="price"><span class="big">${fmtPrice(it.price)}</span>${it.originalPrice ? `<s>原價 ${fmtPrice(it.originalPrice)}</s>` : ''}</div>` : it.priceText ? `<div class="price"><span class="hint">${esc(it.priceText)}</span></div>` : ''}
     ${win ? `<div class="window">${esc(win)}</div>` : ''}
     ${it.excerpt && it.excerpt !== it.product ? `<details><summary>貼文摘要</summary><p class="excerpt">${hl(it.excerpt, q)}</p></details>` : ''}
+    ${st !== 'closed' ? compareBlock(it) : ''}
     <div class="card-actions">
       <button type="button" class="btn save" data-save="${esc(it.id)}" aria-pressed="${saved}">${saved ? '★ 已收藏' : '☆ 收藏'}</button>
       ${cal && st !== 'closed' ? `<a class="btn" href="${esc(cal)}" target="_blank" rel="noopener" title="加到 Google 日曆，結單前提醒">📅 提醒</a>` : ''}
@@ -213,7 +238,8 @@ const SEARCH_HINT = '搜尋商品、品牌、團主（例：吸塵器、童裝�
 function viewList(qs) {
   const f = queryToFilters(qs);
   const now = nowStamp();
-  const items = allItems();
+  const fl = myFollows();
+  const items = f.following ? allItems().filter((x) => mine.followsItem(x, fl)) : allItems();
   const list = filterItems(items, f, now);
   const live = items.filter((x) => ['open', 'closing'].includes(status(x, now)));
   const pool = live.filter((x) => (!f.platforms.length || f.platforms.includes(x.platform)) && matchesQuery(x, f.q));
@@ -235,6 +261,7 @@ function viewList(qs) {
         </select>
         ${chip('hasClose', 'true', '有寫結單日', f.hasClose)}
         ${chip('hasPrice', 'true', '有標價', f.hasPrice)}
+        ${fl.length || f.following ? chip('following', 'true', `只看追蹤的團主 ${fl.length}`, f.following) : ''}
       </div>
     </div>
     <div class="toolbar">
@@ -282,14 +309,51 @@ function viewCalendar(qs) {
 
 // ---------- 我的團購 ----------
 let draft = null;
-function viewMine() {
+// 同步連結帶來的資料：先問要不要匯入
+let pendingSync = null;
+function viewMine(qs = '') {
+  const packed = new URLSearchParams(qs).get('sync');
+  if (packed) {
+    history.replaceState(null, '', '#/mine');
+    mine.readSync(packed).then((d) => {
+      pendingSync = d;
+      viewMine();
+    }).catch(() => toast('同步連結壞了，請重新產生'));
+  }
   const now = nowStamp();
+  const fl = myFollows();
+  // 哪些團主已收錄（排程有在抓、或資料裡出現過）
+  const w = data.watch || {};
+  const known = new Set([...(w.threads || []), ...(w.instagram || [])].map((h) => String(h).replace(/^@/, '').toLowerCase()));
+  for (const r of w.rss || []) [r.name, mine.parseFollow(r.page)?.key].filter(Boolean).forEach((k) => known.add(String(k).toLowerCase()));
+  for (const p of w.pages || []) if (p.name) known.add(p.name.toLowerCase());
+  for (const it of data.items) mine.itemKeys(it).forEach((k) => known.add(k));
+  const countOf = (f, sts) => data.items.filter((x) => sts.includes(status(x, now)) && mine.itemKeys(x).includes(f.key)).length;
+  const followRow = (f) => {
+    const open = countOf(f, ['open', 'closing']);
+    const soon = countOf(f, ['upcoming']);
+    const state = open || soon
+      ? `<a href="#/?following=true&status=all" class="muted">${[open ? `開團中 ${open} 筆` : '', soon ? `即將開團 ${soon} 筆` : ''].filter(Boolean).join('、')}</a>`
+      : known.has(f.key) || !data.loaded ? '<span class="muted">目前沒有開團中的團</span>' : `<span class="skip">尚未收錄</span> <button type="button" class="btn tiny" data-request="${esc(f.key)}">複製收錄申請</button>`;
+    return `<li><b>${safeUrl(f.url) ? `<a href="${safeUrl(f.url)}" target="_blank" rel="noopener">${esc(f.name)}</a>` : esc(f.name)}</b>${f.platform ? ` <span class="muted">${esc(f.platform)}</span>` : ''} · ${state} <button type="button" class="btn tiny" data-unfollow="${esc(f.key)}">取消追蹤</button></li>`;
+  };
+  const sync = pendingSync
+    ? `<div class="notice sync-ask">同步連結裡有 <b>${Object.keys(pendingSync.saved || {}).length}</b> 個收藏、<b>${(pendingSync.added || []).length}</b> 筆自己加的、<b>${(pendingSync.follows || []).length}</b> 位追蹤的團主。
+        <span class="row"><button class="btn primary" id="sync-yes">匯入到這台裝置</button><button class="btn" id="sync-no">不要</button></span></div>`
+    : '';
   const saved = mine.savedItems().sort((a, b) => (a.closeAt || '9999').localeCompare(b.closeAt || '9999'));
   const added = mine.addedItems();
   const field = (label, html, wide = false) => `<label class="field ${wide ? 'wide' : ''}"><span>${label}</span>${html}</label>`;
   const d = draft || {};
   const toLocal = (s) => (!s ? '' : s.length === 10 ? `${s}T23:59` : s.replace(' ', 'T'));
   $main.innerHTML = `
+    ${sync}
+    <section class="panel">
+      <h2>追蹤的團主</h2>
+      <p class="muted" style="margin-top:0">在團購卡片按團主名稱旁的「＋追蹤」，或在這裡輸入 IG／Threads 帳號、FB 粉專網址。追蹤清單只存在這台裝置；首頁可切換「只看追蹤的團主」。排程還沒在抓的團主會標「尚未收錄」，按「複製收錄申請」傳給網站管理員。</p>
+      <form id="f-form" class="search follow-form"><input name="who" autocomplete="off" placeholder="例：@littlesixmom、https://www.threads.com/@abc、七先生與艾小姐" /><button class="btn primary" type="submit">加入追蹤</button></form>
+      ${fl.length ? `<ul class="list follows">${fl.map(followRow).join('')}</ul>` : '<p class="muted" style="margin:4px 0">（還沒有追蹤的團主）</p>'}
+    </section>
     <section class="panel">
       <h2>貼上開團文，自動整理</h2>
       <p class="muted" style="margin-top:0">在 IG、FB 社團、LINE 社群看到的開團文，整段複製貼上，系統會抓出商品、價格、開團與結單時間、分類；確認後存到這台裝置。</p>
@@ -312,6 +376,7 @@ function viewMine() {
     <div class="toolbar">
       <div class="stats"><span><b class="num">${saved.length}</b> 個收藏</span><span><b class="num">${added.length}</b> 筆自己加的</span></div>
       <div class="row">
+        <button class="btn" id="m-sync" title="把收藏、自己加的團購、追蹤的團主帶到另一台裝置">同步到其他裝置</button>
         <button class="btn" id="m-export">匯出備份</button>
         <label class="btn">匯入備份<input type="file" id="m-import" accept="application/json" hidden /></label>
       </div>
@@ -358,6 +423,41 @@ function viewMine() {
     toast('已加入我的團購');
     viewMine();
   });
+  document.getElementById('f-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = mine.parseFollow(new FormData(e.target).get('who'));
+    if (!f) return;
+    if (!mine.isFollowing(f.key)) mine.toggleFollow(f);
+    followList = null;
+    toast(`已追蹤 ${f.name}`);
+    viewMine();
+  });
+  document.getElementById('sync-yes')?.addEventListener('click', () => {
+    const n = mine.mergeSync(pendingSync);
+    pendingSync = null;
+    followList = null;
+    toast(`已匯入：收藏 ${n.saved}、自己加的 ${n.added}、追蹤 ${n.follows}`);
+    viewMine();
+  });
+  document.getElementById('sync-no')?.addEventListener('click', () => {
+    pendingSync = null;
+    viewMine();
+  });
+  document.getElementById('m-sync').addEventListener('click', async () => {
+    const link = await mine.syncLink(location.href.split('#')[0]);
+    if (link.length > 30000) return toast('資料太多，請改用「匯出備份」');
+    // 手機用分享選單（傳到 LINE 給自己）；電腦複製連結
+    if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+      navigator.share({ title: '團購雷達同步', url: link }).catch(() => {});
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(link);
+      toast('已複製同步連結，在另一台裝置打開就能匯入');
+    } catch {
+      window.prompt('複製這個連結，在另一台裝置打開：', link);
+    }
+  });
   document.getElementById('m-export').addEventListener('click', () => {
     const blob = new Blob([mine.exportJson()], { type: 'application/json' });
     const a = document.createElement('a');
@@ -371,6 +471,7 @@ function viewMine() {
     if (!file) return;
     try {
       toast(`已匯入 ${mine.importJson(await file.text())} 筆`);
+      followList = null;
       viewMine();
     } catch (err) {
       toast(`匯入失敗：${err.message}`);
@@ -379,13 +480,22 @@ function viewMine() {
 }
 
 // ---------- 來源與追蹤 ----------
-const SOURCE_NAMES = { threads: 'Threads', search: '搜尋引擎（IG／FB／Threads）', pages: '團媽網站', instagram: 'Instagram 官方 API', manual: '精選' };
+const SOURCE_NAMES = { threads: 'Threads', search: '搜尋引擎（IG／FB／Threads）', pages: '團媽網站', rss: 'FB 粉專（RSS）', instagram: 'Instagram 官方 API', manual: '精選', compare: '比價（PChome／momo／Yahoo）' };
 function viewSources() {
   const m = data.meta;
   const rows = Object.entries(m?.sources || {});
   const w = data.watch || {};
   const list = (arr, fmt) => (arr?.length ? `<ul class="list">${arr.map(fmt).join('')}</ul>` : '<p class="muted" style="margin:4px 0">（尚未設定）</p>');
   const stat = (s) => (s.skipped ? '<span class="skip">未啟用</span>' : s.ok ? '<span class="ok">正常</span>' : '<span class="err">失敗</span>');
+  // 每個粉專 feed 的狀態：上次排程讀到的結果（meta.json 的 sources.rss.stats.feeds）
+  const feedStats = new Map((m?.sources?.rss?.stats?.feeds || []).map((f) => [f.name, f]));
+  const feedState = (r) => {
+    if (!r.feed) return '<span class="skip">待建立 feed</span>';
+    const f = feedStats.get(r.name);
+    if (!f) return '<span class="skip">已設定，等下次排程</span>';
+    if (f.error) return `<span class="err">讀取失敗</span> <span class="muted">${esc(f.error)}</span>`;
+    return `<span class="ok">已連上</span>${f.latest ? ` <span class="muted">最新貼文 ${esc(fmtTime(f.latest))}</span>` : ''}`;
+  };
   $main.innerHTML = `
     <section class="panel">
       <h2>資料來源</h2>
@@ -395,7 +505,7 @@ function viewSources() {
         <tbody>${rows.map(([k, s]) => `<tr>
           <td><b>${esc(SOURCE_NAMES[k] || k)}</b></td><td class="nowrap">${stat(s)}</td><td class="num">${s.count ?? 0}</td><td class="num">${s.fresh ?? '—'}</td>
           <td class="num">${esc(fmtTime(s.updatedAt))}</td>
-          <td class="muted">${esc(s.error || s.note || '')}${s.skipped ? '（未設定金鑰，略過）' : ''}</td></tr>`).join('')}</tbody>
+          <td class="muted">${esc(s.error || s.note || '')}${s.skipped ? (k === 'rss' ? '（還沒填 feed 網址，略過）' : '（未設定金鑰，略過）') : ''}</td></tr>`).join('')}</tbody>
       </table></div>` : `<div class="notice">尚未產生資料狀態檔（data/meta.json）。排程第一次執行後就會出現。</div>`}
     </section>
     <section class="panel">
@@ -405,6 +515,7 @@ function viewSources() {
         <div class="field"><span>Threads 帳號（${w.threads?.length || 0}）</span>${list(w.threads, (u) => `<li><a href="https://www.threads.com/@${esc(u)}" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
         <div class="field"><span>Instagram 帳號（${w.instagram?.length || 0}，需官方 API）</span>${list(w.instagram, (u) => `<li><a href="https://www.instagram.com/${esc(u)}/" target="_blank" rel="noopener">@${esc(u)}</a></li>`)}</div>
         <div class="field"><span>團媽網站（${w.pages?.length || 0}）</span>${list(w.pages, (p) => `<li><a href="${safeUrl(p.url)}" target="_blank" rel="noopener">${esc(p.name || p.url)}</a></li>`)}</div>
+        <div class="field"><span>FB 粉專 RSS（${(w.rss || []).filter((r) => r.feed).length}／${w.rss?.length || 0} 已建立 feed）</span>${list(w.rss, (r) => `<li><a href="${safeUrl(r.page || r.feed)}" target="_blank" rel="noopener">${esc(r.name || r.page || r.feed)}</a> ${feedState(r)}</li>`)}</div>
         <div class="field wide"><span>搜尋關鍵字（每次排程輪替）</span><div class="kw">${[...(w.keywords?.threads || []).map((k) => `Threads：${k}`), ...(w.keywords?.search || [])].map((k) => `<span class="badge">${esc(k)}</span>`).join('') || '<span class="muted">（使用預設）</span>'}</div></div>
       </div>
     </section>
@@ -413,7 +524,7 @@ function viewSources() {
       <ul class="list">
         <li><b>Threads</b>：未登入的公開搜尋，每次排程只能搜 1 個關鍵字（之後會被限流），所以輪流搜、累積結果；追蹤帳號另外抓最新貼文。在 repo Secrets 設定 <code>THREADS_ACCESS_TOKEN</code>（官方 API，需申請 threads_keyword_search 權限）後，每次可搜 5 組。</li>
         <li><b>Instagram</b>：未登入會被擋，改從搜尋引擎（DuckDuckGo 近一週）找公開的開團貼文，每次 2 組關鍵字。要固定追特定團媽，設定 <code>IG_ACCESS_TOKEN</code>＋<code>IG_USER_ID</code>（官方 Business Discovery API，需自己的 IG 專業帳號）。</li>
-        <li><b>Facebook</b>：社團與粉專需要登入、官方 API 不開放社團，只能從搜尋引擎找到少量公開貼文；FB 社團、LINE 社群的團，請用「我的團購」貼上。</li>
+        <li><b>Facebook</b>：粉專需要登入、官方 API 不開放社團。團媽的公開粉專用 RSS.app／FetchRSS 免費版轉成 RSS（每天更新、每次最新 5 則），另從搜尋引擎找少量公開貼文；FB 社團、LINE 社群的團，請用「我的團購」貼上。</li>
         <li><b>團媽網站</b>：Strikingly、Portaly、部落格上的開團日曆，每次整頁重抓。</li>
         <li>只讀公開頁面、不登入、每次請求間隔數秒；商品圖片不轉存，點「看原文」回到團主頁面。</li>
       </ul>
@@ -435,12 +546,41 @@ function render() {
   const route = path.replace(/^\//, '') || 'list';
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === route));
   if (route === 'calendar') viewCalendar(qs);
-  else if (route === 'mine') viewMine();
+  else if (route === 'mine') viewMine(qs);
   else if (route === 'sources') viewSources();
   else viewList(qs);
 }
 
 $main.addEventListener('click', (e) => {
+  const fb = e.target.closest('[data-follow]');
+  if (fb) {
+    const it = allItems().find((x) => x.id === fb.dataset.follow) || mine.savedItems().find((x) => x.id === fb.dataset.follow);
+    if (!it) return;
+    const keys = mine.itemKeys(it);
+    const mineOnes = myFollows().filter((f) => keys.includes(f.key));
+    if (mineOnes.length) mineOnes.forEach((f) => mine.toggleFollow(f));
+    else mine.toggleFollow({ key: keys[0], name: it.authorName || `@${it.author}`, platform: it.platform, url: it.authorUrl || null });
+    followList = null;
+    toast(mineOnes.length ? '已取消追蹤' : `已追蹤 ${it.authorName || `@${it.author}`}，首頁可切換「只看追蹤的團主」`);
+    render();
+    return;
+  }
+  const uf = e.target.closest('[data-unfollow]');
+  if (uf) {
+    const f = myFollows().find((x) => x.key === uf.dataset.unfollow);
+    if (f) mine.toggleFollow(f);
+    followList = null;
+    render();
+    return;
+  }
+  const rq = e.target.closest('[data-request]');
+  if (rq) {
+    const f = myFollows().find((x) => x.key === rq.dataset.request);
+    if (!f) return;
+    const text = `請幫我在團購雷達收錄這位團主：${f.platform ? `${f.platform} ` : ''}${f.name}${f.url ? ` ${f.url}` : ''}`;
+    navigator.clipboard?.writeText(text).then(() => toast('已複製，傳給網站管理員'), () => window.prompt('複製這段文字傳給網站管理員：', text));
+    return;
+  }
   const s = e.target.closest('[data-save]');
   if (s) {
     const it = allItems().find((x) => x.id === s.dataset.save) || mine.savedItems().find((x) => x.id === s.dataset.save);
@@ -479,6 +619,25 @@ window.addEventListener('hashchange', () => {
   lastRoute = route;
   render();
 });
+
+// 回到最上面：往下捲超過約一個畫面才出現
+const toTop = document.getElementById('to-top');
+let topTick = false;
+const syncTop = () => {
+  topTick = false;
+  const on = window.scrollY > Math.max(400, window.innerHeight * 0.8);
+  toTop.classList.toggle('show', on);
+  toTop.tabIndex = on ? 0 : -1;
+  toTop.setAttribute('aria-hidden', String(!on));
+};
+window.addEventListener('scroll', () => {
+  if (!topTick) {
+    topTick = true;
+    requestAnimationFrame(syncTop);
+  }
+}, { passive: true });
+toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+syncTop();
 
 lastRoute = location.hash.split('?')[0];
 render();

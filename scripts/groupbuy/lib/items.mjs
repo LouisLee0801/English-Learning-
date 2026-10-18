@@ -2,7 +2,7 @@
 import { parsePost, splitSchedule, taipeiStamp, addDays } from '../../../groupbuy/js/parse.js';
 import { classify, brandOf } from '../../../groupbuy/js/categories.js';
 
-export const PLATFORM = { threads: 'Threads', instagram: 'Instagram', facebook: 'Facebook', pages: '團媽網站', manual: '精選' };
+export const PLATFORM = { threads: 'Threads', instagram: 'Instagram', facebook: 'Facebook', rss: 'Facebook', pages: '團媽網站', manual: '精選' };
 const TTL_DAYS = 10; // 沒寫結單日的貼文，發文後保留幾天
 // 抓不出具體商品（只剩「服飾」「好物」這種字）就不收
 const GENERIC = /^(?:服飾|衣服|家電|美食|零食|保養|美妝|好物|商品|優惠|團購|生活用品|日用品|用品|新品|現貨|預購|代購|韓國|日本|泰國|各式|多款|系列)$/;
@@ -22,7 +22,7 @@ export function expireOf(item) {
 }
 
 // 存一份精簡原文在項目上，之後解析規則改進時，累積中的舊貼文能重新解析
-const keepPost = (p) => ({ source: p.source, id: p.id, url: p.url, author: p.author || null, authorName: p.authorName || null, authorUrl: p.authorUrl || null, title: p.title || '', text: String(p.text || '').slice(0, 2000), postedAt: p.postedAt || null, via: p.via || null, isReply: Boolean(p.isReply) });
+const keepPost = (p) => ({ source: p.source, platform: p.platform || null, id: p.id, url: p.url, author: p.author || null, authorName: p.authorName || null, authorUrl: p.authorUrl || null, title: p.title || '', text: String(p.text || '').slice(0, 2000), postedAt: p.postedAt || null, via: p.via || null, isReply: Boolean(p.isReply) });
 
 /**
  * 一篇貼文 → 0～n 筆團購（預告文一篇拆多筆）。
@@ -32,7 +32,8 @@ export function postToItems(post, { minScore = post.via === 'search' ? 4 : 2 } =
   const ref = post.ref || (post.postedAt ? taipeiStamp(post.postedAt) : taipeiStamp());
   const base = {
     source: post.source,
-    platform: PLATFORM[post.source] || post.source,
+    // RSS 的貼文自己帶平台（feed 可能是 FB 粉專，也可能是 IG）
+    platform: post.platform || PLATFORM[post.source] || post.source,
     via: post.via || null,
     author: post.author || null,
     authorName: post.authorName || null,

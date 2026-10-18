@@ -80,7 +80,7 @@ tests/                  單元測試
 
 ## 團購雷達（groupbuy/）
 
-另一個獨立小站：每 2 小時自動整理 Instagram、Threads、Facebook 與團媽網站「正在開團」的商品、開團與結單時間，依育兒、家電、服飾、家居等分類，可用關鍵字搜尋、看結單時間軸、一鍵加到 Google 日曆提醒；FB 社團、LINE 社群的團可直接貼上開團文自動解析。追蹤的團主帳號與網站在 `groupbuy/data/watchlist.json` 設定。說明見 [`docs/GROUPBUY.md`](docs/GROUPBUY.md)。
+另一個獨立小站：每 2 小時自動整理 Instagram、Threads、Facebook（團媽粉專 RSS）與團媽網站「正在開團」的商品、開團與結單時間，依育兒、家電、服飾、家居等分類，可用關鍵字搜尋、看結單時間軸、一鍵加到 Google 日曆提醒、和 PChome／momo／Yahoo 比價、追蹤團主（存在各自的裝置，可用同步連結換裝置）；FB 社團、LINE 社群的團可直接貼上開團文自動解析。追蹤的團主帳號、網站與 FB 粉專 feed 在 `groupbuy/data/watchlist.json` 設定。說明見 [`docs/GROUPBUY.md`](docs/GROUPBUY.md)。
 
 ## 新增課程
 

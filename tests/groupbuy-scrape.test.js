@@ -1,8 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseThreadsHtml, threadsNoResults, threadsPost, parseDdgHtml, ddgBlocked, igPostFromDdg, fbPostFromDdg, threadsPostFromDdg, parseCalendarText, pagePost, codeOf } from '../scripts/groupbuy/lib/sources.mjs';
+import { parseThreadsHtml, threadsNoResults, threadsPost, parseDdgHtml, ddgBlocked, igPostFromDdg, fbPostFromDdg, threadsPostFromDdg, parseCalendarText, pagePost, codeOf, parseFeed, feedPost, platformOf, htmlToText } from '../scripts/groupbuy/lib/sources.mjs';
 import { postToItems, mergeItems, rederive, expireOf, validateItem, rotate } from '../scripts/groupbuy/lib/items.mjs';
 import { normalizeWatch, DEFAULT_KEYWORDS } from '../scripts/groupbuy/lib/watch.mjs';
+import { pchomeResults, ldItemList, yahooResults } from '../scripts/groupbuy/lib/shops.mjs';
 
 // Threads 未登入搜尋頁：貼文藏在 <script type="application/json" data-sjs>（真實結構，欄位精簡）
 const post = (code, username, text, takenAt, reply = null) => ({ code, taken_at: takenAt, like_count: 3, caption: { text }, user: { username, full_name: `${username} 名稱` }, text_post_app_info: { direct_reply_count: 1, reply_to_author: reply } });
@@ -235,4 +236,152 @@ test('watchlist: handles from URLs, dedupe, default keywords, keyword rotation',
   assert.deepEqual(w.keywords, DEFAULT_KEYWORDS);
   assert.deepEqual(rotate(['a', 'b', 'c'], 2, 2), ['c', 'a']);
   assert.deepEqual(rotate([], 2, 0), []);
+});
+
+// RSS.app 把 FB 粉專轉成的 RSS（CDATA 包 HTML，標題是內文第一行截斷）
+const RSSAPP_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title><![CDATA[維媽育兒生活 Smile Life | Facebook]]></title>
+<description><![CDATA[維媽育兒生活 Smile Life]]></description>
+<link>https://www.facebook.com/s.smilelife</link>
+<generator>RSS.app</generator>
+<atom:link href="https://rss.app/feeds/abc123.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title><![CDATA[【開團】OXO 按壓保鮮盒 8 件組 ⏰10/20(二) 20:00 ~ 10/26(一) 23:59...]]></title>
+<description><![CDATA[<div><img src="https://scontent.xx.fbcdn.net/a.jpg" style="width: 100%;" /><div>【開團】OXO 按壓保鮮盒 8 件組<br/>⏰10/20(二) 20:00 ~ 10/26(一) 23:59<br/>💰團購價 $1,280（原價 $1,980）<br/>👉下單連結：https://reurl.cc/abc123</div></div>]]></description>
+<link>https://www.facebook.com/s.smilelife/posts/pfbid02AbCdEf</link>
+<guid isPermaLink="false">1a2b3c</guid>
+<dc:creator><![CDATA[維媽育兒生活 Smile Life]]></dc:creator>
+<pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+<media:content medium="image" url="https://scontent.xx.fbcdn.net/a.jpg"/>
+</item>
+<item>
+<title><![CDATA[週末帶寶寶去宜蘭玩，分享我們住的親子飯店]]></title>
+<description><![CDATA[<div>週末帶寶寶去宜蘭玩，分享我們住的親子飯店<br/>房間超大、有溜滑梯</div>]]></description>
+<link>https://www.facebook.com/s.smilelife/posts/pfbid0XyZ</link>
+<guid isPermaLink="false">4d5e6f</guid>
+<pubDate>Wed, 14 Oct 2026 03:00:00 GMT</pubDate>
+</item>
+</channel></rss>`;
+
+// FetchRSS：HTML 以實體跳脫、內文帶浮水印，連結是 permalink.php
+const FETCHRSS_FEED = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>七先生與艾小姐</title>
+<link>https://www.facebook.com/estherhsiao0202/</link>
+<description>七先生與艾小姐 (Feed generated with FetchRSS)</description>
+<generator>FetchRSS</generator>
+<item>
+<title>限時開團｜Mistifi 噴油瓶 10/23收單 團購價 $399</title>
+<link>https://www.facebook.com/permalink.php?story_fbid=pfbid0QwErTy&amp;id=100063</link>
+<description>&lt;span&gt;限時開團｜Mistifi 噴油瓶&lt;/span&gt;&lt;br/&gt;10/23收單 團購價 $399&lt;br/&gt;&lt;br/&gt;&lt;img src="https://x.example/y.jpg"&gt;&lt;br/&gt;&lt;br/&gt;(Feed generated with FetchRSS)</description>
+<pubDate>Sat, 17 Oct 2026 01:30:00 +0000</pubDate>
+<guid isPermaLink="false">https://www.facebook.com/permalink.php?story_fbid=pfbid0QwErTy&amp;id=100063</guid>
+</item>
+</channel></rss>`;
+
+test('RSS feeds of FB pages: RSS.app and FetchRSS items become posts with stable ids', () => {
+  const a = parseFeed(RSSAPP_FEED);
+  assert.equal(a.title, '維媽育兒生活 Smile Life | Facebook');
+  assert.equal(a.link, 'https://www.facebook.com/s.smilelife');
+  assert.equal(a.items.length, 2);
+  const entry = { name: '維媽育兒生活', page: 'https://www.facebook.com/s.smilelife', feed: 'https://rss.app/feeds/abc123.xml' };
+  const p = feedPost(entry, a.items[0]);
+  assert.equal(p.id, 'facebook:pfbid02AbCdEf');
+  assert.equal(p.platform, 'Facebook');
+  assert.equal(p.author, 's.smilelife');
+  assert.equal(p.authorName, '維媽育兒生活');
+  assert.equal(p.postedAt, '2026-10-15T12:00:00.000Z');
+  // 標題是內文開頭的截斷：不重複
+  assert.equal(p.text.split('\n')[0], '【開團】OXO 按壓保鮮盒 8 件組');
+  assert.ok(!p.text.includes('<'));
+
+  const items = a.items.map((x) => feedPost(entry, x)).flatMap((x) => postToItems(x));
+  assert.equal(items.length, 1, '心得文不收');
+  const [it] = items;
+  assert.equal(it.platform, 'Facebook');
+  assert.equal(it.source, 'rss');
+  assert.match(it.product, /OXO 按壓保鮮盒/);
+  assert.equal(it.openAt, '2026-10-20 20:00');
+  assert.equal(it.closeAt, '2026-10-26 23:59');
+  assert.equal(it.price, 1280);
+  assert.equal(it.orderUrl, 'https://reurl.cc/abc123');
+  assert.equal(it.post.platform, 'Facebook');
+  assert.deepEqual(validateItem(it), []);
+  // 累積中的舊資料重算時，平台不會變回來源名稱
+  assert.equal(rederive(items)[0].platform, 'Facebook');
+
+  const f = parseFeed(FETCHRSS_FEED);
+  const q = feedPost({ name: '七先生與艾小姐', page: 'https://www.facebook.com/estherhsiao0202/' }, f.items[0]);
+  assert.equal(q.url, 'https://www.facebook.com/permalink.php?story_fbid=pfbid0QwErTy&id=100063');
+  assert.equal(q.id, 'facebook:pfbid0QwErTy');
+  assert.equal(q.author, 'estherhsiao0202');
+  assert.ok(!/FetchRSS/.test(q.text));
+  const [m] = postToItems(q);
+  assert.match(m.product, /Mistifi/);
+  assert.equal(m.closeAt, '2026-10-23');
+  assert.equal(m.price, 399);
+  assert.equal(m.category, '居家生活');
+});
+
+test('Atom and JSON Feed entries; platform from link; non-FB feeds', () => {
+  const atom = parseFeed(`<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom"><title type="text">團媽 IG</title>
+<link rel="self" href="https://rss.app/feeds/x.atom"/><link rel="alternate" href="https://www.instagram.com/mama/"/>
+<entry><title>開團啦 寶寶餐椅 10/30結單</title><link rel="alternate" href="https://www.instagram.com/p/DAbC123/"/><id>urn:1</id>
+<updated>2026-10-16T08:00:00Z</updated><content type="html">&lt;p&gt;開團啦 寶寶餐椅&lt;/p&gt;&lt;p&gt;10/30結單&lt;/p&gt;</content></entry></feed>`);
+  assert.equal(atom.link, 'https://www.instagram.com/mama/');
+  assert.equal(atom.items[0].link, 'https://www.instagram.com/p/DAbC123/');
+  assert.equal(atom.items[0].text, '開團啦 寶寶餐椅\n10/30結單');
+  const ig = feedPost({ name: '團媽', page: 'https://www.instagram.com/mama/' }, atom.items[0]);
+  assert.equal(ig.platform, 'Instagram');
+  assert.equal(ig.id, `instagram:${codeOf(ig.url)}`);
+
+  const json = parseFeed(JSON.stringify({ version: 'https://jsonfeed.org/version/1.1', title: 'x', home_page_url: 'https://www.facebook.com/x', items: [{ id: '9', url: 'https://www.facebook.com/x/videos/123456/', content_html: '<p>開團 兒童雨衣</p>', date_published: '2026-10-16T08:00:00Z' }] }));
+  assert.equal(json.items[0].text, '開團 兒童雨衣');
+  assert.equal(feedPost({ page: 'https://www.facebook.com/x' }, json.items[0]).id, 'facebook:123456');
+  assert.equal(platformOf('https://m.facebook.com/x'), 'Facebook');
+  assert.equal(platformOf('https://www.threads.com/@a/post/B'), 'Threads');
+  assert.equal(platformOf('https://example.com/'), null);
+  assert.equal(htmlToText('a&nbsp;&amp;&nbsp;b<br>c'), 'a & b\nc');
+  assert.equal(htmlToText('開團<br/><br/>Generated with FetchRSS'), '開團');
+  // FetchRSS 的 FB 介面字不算內文
+  const ui = feedPost({ name: '七先生與艾小姐', page: 'https://www.facebook.com/estherhsiao0202' }, { link: 'https://www.facebook.com/823373055816761/posts/1678956853591706', title: "Photos from 七先生與艾小姐's post", text: "Photos from 七先生與艾小姐's post\n超美的《麗克特調理機》首度降價！", date: '2026-10-16T04:49:49Z' });
+  assert.equal(ui.text, '超美的《麗克特調理機》首度降價！');
+  assert.equal(ui.id, 'facebook:1678956853591706');
+});
+
+test('watchlist rss: feeds and pages kept, blanks and junk dropped', () => {
+  const w = normalizeWatch({ rss: ['https://rss.app/feeds/a.xml', { name: '依娃', page: 'https://www.facebook.com/evalife.cc/', feed: '' }, { name: 'x', feed: 'javascript:alert(1)' }, null] });
+  assert.deepEqual(w.rss, [
+    { name: '', page: '', feed: 'https://rss.app/feeds/a.xml' },
+    { name: '依娃', page: 'https://www.facebook.com/evalife.cc/', feed: '' },
+  ]);
+  assert.deepEqual(normalizeWatch({}).rss, []);
+});
+
+// 比價：購物網站搜尋結果（真實格式，節錄）
+const PCHOME_JSON = JSON.stringify({ TotalRows: 155, Prods: [
+  { Id: 'DEBM5Q-A900IAVWJ', Name: 'OXO POP按壓保鮮盒正方超值3入組-1Lx3(密封罐儲物罐)', Price: 1527, OriginPrice: 1527 },
+  { Id: 'DEBM5Q-A900I9A26', Name: 'OXO POP 不鏽鋼按壓保鮮盒-小正方0.2L', Price: 399, OriginPrice: 399 },
+] });
+const MOMO_HTML = `<html><body><script type="application/ld+json">{ "@context": "https://schema.org", "@type": "WebPage", "@graph": [ { "@type": "BreadcrumbList", "itemListElement": [] }, { "@type": "ItemList", "name": "萬歲牌 甘栗仁", "numberOfItems": 2, "itemListElement": [
+ { "@type": "Product", "name": "【萬歲牌】萬歲牌 特選甘栗 (30gX5包) 甘栗仁 全素", "position": 1, "url": "https://www.momoshop.com.tw/TP/TP0001571/goodsDetail/TP00015710000935", "offers": { "@type": "Offer", "price": 125, "priceCurrency": "TWD" } },
+ { "@type": "Product", "name": "【Glasslock】強化玻璃保鮮盒", "position": 2, "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15118862&Area=search&mdiv=403&oid=1_1&kw=x", "offers": { "@type": "Offer", "price": 499 } }
+] } ] }</script></body></html>`;
+const YAHOO_HTML = `<html><head><title>萬歲牌 甘栗仁-優惠推薦 | Yahoo購物中心</title></head><body>
+<script id="isoredux-data" type="mime/invalid">{"pjaxLoading":false,"search":{"searched":true,"count":1,"ecsearch":{"hits":[{"ec_title":"萬歲牌特選甘栗30g*5包【愛買】","ec_price":"99.0","ec_productid":"p0830264781396","ec_item_url":"https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=p0830264781396"},{"ec_title":"沒有價格的商品","ec_price":"","ec_item_url":"https://tw.buy.yahoo.com/gdsale/x.html"}]}}}</script></body></html>`;
+const YAHOO_LD = `<script type="application/ld+json">[{"@type":"Organization","name":"Yahoo購物中心"},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"美國OXO POP 長方三件組按壓保鮮盒","offers":{"@type":"Offer","url":"https://tw.buy.yahoo.com/gdsale/8816886.html","priceCurrency":"TWD","price":"1590"}}}]}]</script>`;
+
+test('shop search results: PChome API, momo JSON-LD, Yahoo isoredux and JSON-LD', () => {
+  const pc = pchomeResults(PCHOME_JSON);
+  assert.deepEqual(pc[0], { name: 'OXO POP按壓保鮮盒正方超值3入組-1Lx3(密封罐儲物罐)', price: 1527, url: 'https://24h.pchome.com.tw/prod/DEBM5Q-A900IAVWJ' });
+  const momo = ldItemList(MOMO_HTML);
+  assert.equal(momo.length, 2);
+  assert.equal(momo[0].price, 125);
+  assert.equal(momo[1].url, 'https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15118862', '去掉搜尋追蹤參數');
+  assert.deepEqual(yahooResults(YAHOO_HTML), [{ name: '萬歲牌特選甘栗30g*5包【愛買】', price: 99, url: 'https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=p0830264781396' }]);
+  assert.deepEqual(yahooResults(YAHOO_LD), [{ name: '美國OXO POP 長方三件組按壓保鮮盒', price: 1590, url: 'https://tw.buy.yahoo.com/gdsale/8816886.html' }]);
+  assert.deepEqual(ldItemList('<html>沒有資料</html>'), []);
 });
