@@ -30,6 +30,9 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+      # 排隊等前一次排程時，main 可能已有新的資料 commit：從最新版開始累積，寫回時才不會衝突
+      - name: Sync to latest
+        run: git fetch --depth=1 origin "$GITHUB_REF_NAME" && git reset --hard FETCH_HEAD
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -65,10 +68,24 @@ jobs:
           git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
           git add -A groupbuy
           if git diff --cached --quiet; then echo 'no changes'; exit 0; fi
-          git commit -m "Update group-buy data $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
+          MSG="Update group-buy data $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
+          git commit -m "$MSG"
           BR="${GITHUB_REF_NAME}"
           for i in 1 2 3; do
-            git fetch origin "$BR" && git rebase "origin/$BR" && git push origin "HEAD:refs/heads/$BR" && exit 0
+            git fetch origin "$BR" || { sleep $((i * 5)); continue; }
+            if ! git rebase "origin/$BR"; then
+              # 中途有別次排程寫了資料檔：放棄 rebase，把這次產生的資料檔放到最新版上（程式與 watchlist、manual 不動）
+              git rebase --abort
+              rm -rf "$RUNNER_TEMP/gb" && mkdir -p "$RUNNER_TEMP/gb" && cp groupbuy/data/*.json "$RUNNER_TEMP/gb/"
+              git reset -q --hard "origin/$BR"
+              for f in "$RUNNER_TEMP"/gb/*.json; do
+                case "$(basename "$f")" in watchlist.json|manual.json) ;; *) cp "$f" groupbuy/data/ ;; esac
+              done
+              git add -A groupbuy/data
+              git diff --cached --quiet && { echo 'no changes'; exit 0; }
+              git commit -m "$MSG"
+            fi
+            git push origin "HEAD:refs/heads/$BR" && exit 0
             sleep $((i * 5))
           done
           exit 1
