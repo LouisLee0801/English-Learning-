@@ -42,17 +42,17 @@
   },
   "news": {
    "ok": true,
-   "count": 305,
-   "updatedAt": "2026-10-18T00:03:42.479Z",
-   "seconds": 12,
+   "count": 317,
+   "updatedAt": "2026-10-18T09:05:40.195Z",
+   "seconds": 11,
    "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）",
    "version": 1
   },
   "ptt": {
    "ok": true,
-   "count": 19,
-   "updatedAt": "2026-10-18T00:03:42.479Z",
-   "seconds": 2,
+   "count": 20,
+   "updatedAt": "2026-10-18T09:05:40.195Z",
+   "seconds": 1,
    "note": "PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）",
    "version": 1
   },
@@ -73,22 +73,22 @@
    "version": 1
   }
  },
- "generatedAt": "2026-10-18T00:03:42.479Z",
+ "generatedAt": "2026-10-18T09:05:40.195Z",
  "fx": {
-  "USD": 32.4444,
-  "HKD": 4.1305,
-  "SGD": 25.3229,
-  "AUD": 22.5352,
-  "NZD": 18.3281,
-  "CAD": 22.9011,
+  "USD": 32.4359,
+  "HKD": 4.1302,
+  "SGD": 25.3145,
+  "AUD": 22.5261,
+  "NZD": 18.31,
+  "CAD": 22.8896,
   "JPY": 0.2051,
   "KRW": 0.0243,
   "CNY": 4.8379,
-  "THB": 0.9694,
-  "MYR": 7.9407,
-  "GBP": 43.1611,
-  "EUR": 36.4087,
-  "CHF": 39.3066,
+  "THB": 0.969,
+  "MYR": 7.9392,
+  "GBP": 43.1146,
+  "EUR": 36.3861,
+  "CHF": 39.2773,
   "_src": "open.er-api.com"
  },
  "files": [
