@@ -5,7 +5,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { openBrowser } from '../deals/lib/browser.mjs';
 import { combine, status, nowStamp } from '../../groupbuy/js/core.js';
-import { compareQuery, pickOffers } from '../../groupbuy/js/compare.js';
+import { compareQuery, pickOffers, dropOutliers } from '../../groupbuy/js/compare.js';
 import { pchomeResults, ldItemList, yahooResults } from './lib/shops.mjs';
 
 const DIR = 'groupbuy/data';
@@ -69,7 +69,7 @@ try {
     }
     // 全部網站都失敗：不記錄，下次再比
     if (!Object.keys(offers).length) continue;
-    prices.queries[q] = { checkedAt: new Date().toISOString(), offers, ...(Object.keys(errors).length ? { errors } : {}) };
+    prices.queries[q] = { checkedAt: new Date().toISOString(), offers: dropOutliers(offers), ...(Object.keys(errors).length ? { errors } : {}) };
     stats.checked++;
     if (Object.values(offers).some((o) => o.length)) stats.matched++;
     console.log(`[compare] ${q} → ${Object.entries(offers).map(([k, v]) => `${k} ${v.length ? `$${v[0].price}` : '-'}`).join(', ')}`);
