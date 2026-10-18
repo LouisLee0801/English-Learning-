@@ -2,6 +2,34 @@
  "source": "ptt",
  "deals": [
   {
+   "id": "ptt:1792038215.A.249",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "萊爾富",
+   "title": "萊爾富限時殺5日/全家康康五 10/14~20",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "【活動名稱】：萊爾富限時殺5日",
+    "【便利商店/廠商名稱】：萊爾富便利商店",
+    "【活動時間】：2026/10/14～2026/10/18",
+    "【活動內容】：",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [],
+   "startAt": "2026-10-14",
+   "endAt": "2026-10-18",
+   "publishedAt": "2026-10-15T04:23:35.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792038215.A.249.html",
+   "category": "超商量販",
+   "updatedAt": "2026-10-18T00:03:42.479Z"
+  },
+  {
    "id": "ptt:1792040334.A.0BD",
    "kind": "promo",
    "source": "ptt",
@@ -344,6 +372,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 17",
     "期限見原文"
    ],
    "startAt": null,
@@ -351,7 +380,7 @@
    "publishedAt": "2026-10-16T07:14:40.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792134880.A.1FB.html",
    "category": "超商量販",
-   "updatedAt": "2026-10-17T03:23:22.932Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "ptt:1792137882.A.E80",
@@ -374,6 +403,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 10",
     "期限見原文"
    ],
    "startAt": null,
@@ -381,7 +411,7 @@
    "publishedAt": "2026-10-16T08:04:42.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792137882.A.E80.html",
    "category": "綜合電商",
-   "updatedAt": "2026-10-17T03:23:22.932Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "ptt:1792143594.A.48C",
@@ -402,13 +432,15 @@
     "若優惠碼提前兌換/使用完畢，活動將提前結束。",
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
-   "tags": [],
+   "tags": [
+    "推 44"
+   ],
    "startAt": "2026-10-16",
    "endAt": "2026-11-08",
    "publishedAt": "2026-10-16T09:39:54.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792143594.A.48C.html",
    "category": "旅遊住宿",
-   "updatedAt": "2026-10-17T03:23:22.932Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "ptt:1792160337.A.002",
@@ -430,6 +462,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 23",
     "期限見原文"
    ],
    "startAt": null,
@@ -437,7 +470,7 @@
    "publishedAt": "2026-10-16T14:18:57.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792160337.A.002.html",
    "category": "超商量販",
-   "updatedAt": "2026-10-17T03:23:22.932Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "ptt:1792203021.A.211",
@@ -490,14 +523,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 23"
+    "推 26"
    ],
    "startAt": "2026-10-19",
    "endAt": "2026-10-25",
    "publishedAt": "2026-10-17T09:20:23.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792228823.A.23C.html",
    "category": "交通出行",
-   "updatedAt": "2026-10-17T18:50:34.287Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "ptt:1792249736.A.EF7",
@@ -520,7 +553,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 45",
+    "推 44",
     "期限見原文"
    ],
    "startAt": null,
@@ -528,7 +561,7 @@
    "publishedAt": "2026-10-17T15:08:56.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792249736.A.EF7.html",
    "category": "綜合電商",
-   "updatedAt": "2026-10-17T18:50:34.287Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   }
  ]
 }

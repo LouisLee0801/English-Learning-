@@ -3382,15 +3382,20 @@
    "merchant": "lululemon",
    "merchantId": "625225",
    "category": "運動戶外",
-   "title": "每 NT$100 11 里",
+   "title": "每 NT$100 23.5 里",
    "reward": {
     "type": "miles",
     "value": 11,
     "text": "TWD100 = 11 里數"
    },
-   "boost": null,
+   "boost": {
+    "type": "miles",
+    "value": 23.5,
+    "text": "TWD100 = 23.5 里數",
+    "endAt": "2026-10-31"
+   },
    "conditions": [
-    "一般商品：TWD100 = 11",
+    "一般商品：TWD100 = 23.5",
     "lululemon 台灣不接受漏單查詢。",
     "獎勵只適用於來自台灣的訂單。",
     "兌換禮品卡沒有獎勵。",
@@ -3402,7 +3407,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/sport-and-fitness/lululemon-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_625225.17902da244cde48d25c386ea727609ccaea1ec93831312eb79707b2a10d193d7.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "cathay:627579",
@@ -3895,10 +3900,10 @@
    "category": "旅遊住宿",
    "url": "https://shop.asiamiles.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "updatedAt": "2026-10-18T00:03:42.479Z",
    "id": "cathay:v:1kpbq67",
    "kind": "coupon",
-   "title": "5 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -3907,7 +3912,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：10/17、10/20、10/21、10/31、12/31"
+    "各張到期日：10/20、10/21、10/31、12/31"
    ],
    "tags": [
     "需登入"

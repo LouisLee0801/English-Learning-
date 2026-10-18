@@ -1549,64 +1549,6 @@
    "updatedAt": "2026-10-17T03:14:18.345Z"
   },
   {
-   "id": "supertaste:14313",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "好想見麵",
-   "category": "其他",
-   "title": "滿200送酸辣湯",
-   "code": null,
-   "reward": {
-    "type": "amount",
-    "value": 40,
-    "unit": "省",
-    "text": "現省40元"
-   },
-   "minSpend": 200,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [
-    "食尚獨家"
-   ],
-   "startAt": "2026-09-27",
-   "endAt": "2026-10-17",
-   "url": "https://supertaste.tvbs.com.tw/offers/14313",
-   "logo": "https://supertaste-asset.tvbs.com.tw/images/01a0dc73d0e873ab920b40c9637df221.jpg",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
-  },
-  {
-   "id": "supertaste:14314",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "順成蛋糕",
-   "category": "餐飲美食",
-   "title": "送燒餅鳳梨酥",
-   "code": null,
-   "reward": {
-    "type": "amount",
-    "value": 38,
-    "unit": "省",
-    "text": "現省38元"
-   },
-   "minSpend": null,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [
-    "食尚獨家"
-   ],
-   "startAt": "2026-09-27",
-   "endAt": "2026-10-17",
-   "url": "https://supertaste.tvbs.com.tw/offers/14314",
-   "logo": "https://supertaste-asset.tvbs.com.tw/images/01a0dc921a4470cfbb8012db44cf2d68.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
-  },
-  {
    "id": "supertaste:14315",
    "kind": "coupon",
    "source": "supertaste",

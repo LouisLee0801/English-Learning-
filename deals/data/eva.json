@@ -4989,15 +4989,20 @@
    "merchant": "lululemon",
    "merchantId": "625225",
    "category": "運動戶外",
-   "title": "每 NT$100 10 哩",
+   "title": "每 NT$100 22 哩",
    "reward": {
     "type": "miles",
     "value": 10,
     "text": "10 哩程 / TWD100"
    },
-   "boost": null,
+   "boost": {
+    "type": "miles",
+    "value": 22,
+    "text": "22 哩程 / TWD100",
+    "endAt": "2026-10-31"
+   },
    "conditions": [
-    "一般商品：10 哩程 / TWD100",
+    "一般商品：22 哩程 / TWD100",
     "lululemon 台灣不接受漏單查詢。",
     "獎勵只適用於來自台灣的訂單。",
     "兌換禮品卡沒有獎勵。",
@@ -5009,7 +5014,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/sport-and-fitness/lululemon-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_625225.17902da244cde48d25c386ea727609ccaea1ec93831312eb79707b2a10d193d7.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-10-18T00:03:42.479Z"
   },
   {
    "id": "eva:627579",
@@ -5542,6 +5547,31 @@
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/ashford-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_98674.f85e3b1a6101cce6bce6fee57c55ecad0cbea06a.png",
    "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "source": "eva",
+   "merchant": "KLOOK",
+   "merchantId": "178368",
+   "category": "旅遊住宿",
+   "url": "https://mall.brmile.com/zh/travel/klook-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178368.9b25315c6863c2ea6d5dd1ae147823f429c15fa8.png",
+   "updatedAt": "2026-10-18T00:03:42.479Z",
+   "id": "eva:v:101o8wa",
+   "kind": "coupon",
+   "title": "Klook 萬聖節主題活動及景點門票優惠",
+   "code": "HKDL501017",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-10-31"
   },
   {
    "source": "eva",
@@ -6242,31 +6272,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2026-10-18"
-  },
-  {
-   "source": "eva",
-   "merchant": "KKday",
-   "merchantId": "178348",
-   "category": "旅遊住宿",
-   "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z",
-   "id": "eva:v:1g7ln3m",
-   "kind": "coupon",
-   "title": "KKday 12 週年生日慶快閃優惠 | 指定類別產品優惠",
-   "code": "KKDBDFB",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2026-10-17"
   },
   {
    "source": "eva",
@@ -7067,31 +7072,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2031-12-22"
-  },
-  {
-   "source": "eva",
-   "merchant": "KKday",
-   "merchantId": "178348",
-   "category": "旅遊住宿",
-   "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z",
-   "id": "eva:v:1ycyd9i",
-   "kind": "coupon",
-   "title": "KKday 12 週年生日慶快閃優惠 | 指定地區產品優惠碼",
-   "code": "KKDBDHK",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2026-10-17"
   },
   {
    "source": "eva",
