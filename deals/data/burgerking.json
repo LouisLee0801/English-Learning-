@@ -340,6 +340,32 @@
    "updatedAt": "2026-10-17T03:14:18.345Z"
   },
   {
+   "id": "burgerking:332808",
+   "kind": "coupon",
+   "source": "burgerking",
+   "merchant": "漢堡王",
+   "category": "餐飲美食",
+   "title": "(官網獨家)安格斯獨享盛宴",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "$169"
+   },
+   "minSpend": null,
+   "conditions": [
+    "官網／App 線上點餐專屬價；門市臨櫃請出示優惠券",
+    "優惠類型：官網獨家"
+   ],
+   "tags": [
+    "官網獨家"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://www.burgerking.com.tw/product/332808",
+   "updatedAt": "2026-10-19T00:13:20.687Z"
+  },
+  {
    "id": "burgerking:332810",
    "kind": "coupon",
    "source": "burgerking",
