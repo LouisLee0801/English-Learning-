@@ -2,32 +2,32 @@
  "sources": {
   "line": {
    "ok": true,
-   "count": 1396,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
+   "count": 1398,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
    "seconds": 63,
    "note": "LINE POINTS 回饋 %；加碼期間、折價券、賺點任務來自 LINE購物 官方 API",
    "version": 1
   },
   "eva": {
    "ok": true,
-   "count": 323,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
-   "seconds": 44,
+   "count": 324,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "seconds": 51,
    "note": "長榮 Mileage Mall台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1
   },
   "cathay": {
    "ok": true,
    "count": 143,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
-   "seconds": 26,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "seconds": 28,
    "note": "國泰 Milesback台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1
   },
   "burgerking": {
    "ok": true,
    "count": 35,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
+   "updatedAt": "2026-10-20T01:06:36.987Z",
    "seconds": 7,
    "note": "漢堡王官網線上點餐優惠券（官網／App 價格）",
    "version": 1
@@ -35,60 +35,60 @@
   "cosmed": {
    "ok": true,
    "count": 18,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
-   "seconds": 6,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "seconds": 5,
    "note": "康是美官網最新活動",
    "version": 1
   },
   "news": {
    "ok": true,
-   "count": 299,
-   "updatedAt": "2026-10-19T17:10:30.011Z",
+   "count": 300,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
    "seconds": 12,
    "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）",
    "version": 1
   },
   "ptt": {
    "ok": true,
-   "count": 26,
-   "updatedAt": "2026-10-19T17:10:30.011Z",
-   "seconds": 5,
+   "count": 28,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "seconds": 2,
    "note": "PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）",
    "version": 1
   },
   "seven": {
    "ok": true,
    "count": 7,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
-   "seconds": 21,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "seconds": 3,
    "note": "7-ELEVEN 官網首頁看板、精品集點活動",
    "version": 2
   },
   "supertaste": {
    "ok": true,
-   "count": 124,
-   "updatedAt": "2026-10-19T00:13:20.687Z",
+   "count": 129,
+   "updatedAt": "2026-10-20T01:06:36.987Z",
    "seconds": 5,
    "note": "食尚玩家 App 優惠券（需在 App／官網領券）",
    "version": 1
   }
  },
- "generatedAt": "2026-10-19T17:10:30.011Z",
+ "generatedAt": "2026-10-20T01:06:36.987Z",
  "fx": {
-  "USD": 32.4465,
-  "HKD": 4.1299,
-  "SGD": 25.3197,
-  "AUD": 22.6019,
-  "NZD": 18.3439,
-  "CAD": 22.9184,
-  "JPY": 0.2053,
-  "KRW": 0.0243,
-  "CNY": 4.8379,
-  "THB": 0.9693,
-  "MYR": 7.9369,
-  "GBP": 43.1891,
-  "EUR": 36.3861,
-  "CHF": 39.3144,
+  "USD": 32.4918,
+  "HKD": 4.1387,
+  "SGD": 25.3814,
+  "AUD": 22.6891,
+  "NZD": 18.4047,
+  "CAD": 23.034,
+  "JPY": 0.205,
+  "KRW": 0.0244,
+  "CNY": 4.8544,
+  "THB": 0.9674,
+  "MYR": 7.9517,
+  "GBP": 43.2582,
+  "EUR": 36.4445,
+  "CHF": 39.3345,
   "_src": "open.er-api.com"
  },
  "files": [
