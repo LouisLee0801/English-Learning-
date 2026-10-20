@@ -2,18 +2,18 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 52,
-   "fresh": 3,
-   "updatedAt": "2026-10-19T23:51:16.828Z",
-   "seconds": 6,
+   "count": 58,
+   "fresh": 16,
+   "updatedAt": "2026-10-20T05:05:23.653Z",
+   "seconds": 9,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 19,
+      "posts": 20,
       "limited": false
      }
     ],
@@ -21,40 +21,40 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 3
+    "items": 16
    }
   },
   "search": {
    "ok": true,
-   "count": 35,
-   "fresh": 10,
-   "updatedAt": "2026-10-19T23:51:16.828Z",
+   "count": 37,
+   "fresh": 7,
+   "updatedAt": "2026-10-20T05:05:23.653Z",
    "seconds": 13,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:instagram.com 開團 童裝",
+      "q": "site:instagram.com 開團 嬰兒",
       "status": 200,
       "results": 10,
       "posts": 10
      },
      {
-      "q": "site:instagram.com 團購 開團期間",
+      "q": "site:instagram.com 開團 收納",
       "status": 200,
       "results": 10,
       "posts": 10
      }
     ],
-    "items": 12
+    "items": 8
    }
   },
   "pages": {
    "ok": true,
-   "count": 146,
-   "fresh": 147,
-   "updatedAt": "2026-10-19T23:51:16.828Z",
+   "count": 147,
+   "fresh": 148,
+   "updatedAt": "2026-10-20T05:05:23.653Z",
    "seconds": 9,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -66,14 +66,14 @@
      },
      {
       "name": "主夫尼克團購",
-      "items": 90
+      "items": 92
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
-      "items": 36
+      "items": 35
      }
     ],
-    "items": 148
+    "items": 149
    }
   },
   "instagram": {
@@ -87,7 +87,7 @@
    "ok": true,
    "count": 4,
    "fresh": 4,
-   "updatedAt": "2026-10-19T23:51:16.828Z",
+   "updatedAt": "2026-10-20T05:05:23.653Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -105,21 +105,21 @@
   },
   "compare": {
    "ok": true,
-   "count": 214,
-   "fresh": 3,
-   "updatedAt": "2026-10-19T23:52:08.959Z",
+   "count": 222,
+   "fresh": 8,
+   "updatedAt": "2026-10-20T05:06:53.139Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
-    "checked": 3,
-    "matched": 0,
+    "checked": 8,
+    "matched": 4,
     "errors": {},
     "pending": 0,
     "blocked": {}
    }
   }
  },
- "runs": 20,
- "generatedAt": "2026-10-19T23:51:16.828Z",
+ "runs": 21,
+ "generatedAt": "2026-10-20T05:05:23.653Z",
  "files": [
   "threads.json",
   "search.json",
