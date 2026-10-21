@@ -784,13 +784,14 @@
     "里約 105 天內入帳"
    ],
    "tags": [
-    "外幣計價"
+    "外幣計價",
+    "有折價券"
    ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/momax-international",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1678211.d062a270974a9616f8ad7f4e17afb2b025be7766c3fe833d1bd66018e3635537.png",
-   "updatedAt": "2026-10-20T01:06:36.987Z"
+   "updatedAt": "2026-10-21T00:39:37.044Z"
   },
   {
    "id": "cathay:1680981",
@@ -3900,10 +3901,10 @@
    "category": "旅遊住宿",
    "url": "https://shop.asiamiles.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-20T01:06:36.987Z",
+   "updatedAt": "2026-10-21T00:39:37.044Z",
    "id": "cathay:v:1kpbq67",
    "kind": "coupon",
-   "title": "5 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -3912,7 +3913,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：10/20、10/21、10/26、10/31、12/31"
+    "各張到期日：10/21、10/26、10/31、12/31"
    ],
    "tags": [
     "需登入"
@@ -4027,6 +4028,33 @@
    ],
    "startAt": null,
    "endAt": "2029-03-28"
+  },
+  {
+   "source": "cathay",
+   "merchant": "MOMAX International",
+   "merchantId": "1678211",
+   "category": "生活服務",
+   "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/momax-international",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1678211.d062a270974a9616f8ad7f4e17afb2b025be7766c3fe833d1bd66018e3635537.png",
+   "updatedAt": "2026-10-21T00:39:37.044Z",
+   "id": "cathay:v:1sr4hko",
+   "kind": "coupon",
+   "title": "1 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "會員券"
+   },
+   "minSpend": null,
+   "conditions": [
+    "各張到期日：10/29"
+   ],
+   "tags": [
+    "需登入"
+   ],
+   "startAt": null,
+   "endAt": "2026-10-29"
   },
   {
    "source": "cathay",
