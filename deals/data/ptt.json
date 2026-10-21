@@ -724,7 +724,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 34",
+    "推 35",
     "期限見原文"
    ],
    "startAt": null,
@@ -732,7 +732,7 @@
    "publishedAt": "2026-10-19T03:17:38.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792379858.A.C22.html",
    "category": "綜合電商",
-   "updatedAt": "2026-10-21T00:39:37.044Z"
+   "updatedAt": "2026-10-21T09:39:11.872Z"
   },
   {
    "id": "ptt:1792385736.A.D2C",
@@ -755,14 +755,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 43"
+    "推 44"
    ],
    "startAt": "2026-10-19",
    "endAt": "2026-10-22",
    "publishedAt": "2026-10-19T04:55:36.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792385736.A.D2C.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-20T20:08:25.621Z"
+   "updatedAt": "2026-10-21T09:39:11.872Z"
   },
   {
    "id": "ptt:1792430501.A.635",
@@ -814,7 +814,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 21",
+    "推 23",
     "期限見原文"
    ],
    "startAt": null,
@@ -822,7 +822,7 @@
    "publishedAt": "2026-10-19T19:48:07.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792439287.A.EB9.html",
    "category": "其他",
-   "updatedAt": "2026-10-21T00:39:37.044Z"
+   "updatedAt": "2026-10-21T09:39:11.872Z"
   },
   {
    "id": "ptt:1792477809.A.579",
@@ -905,7 +905,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 20",
+    "推 23",
     "期限見原文"
    ],
    "startAt": null,
@@ -913,7 +913,7 @@
    "publishedAt": "2026-10-20T08:56:40.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792486600.A.6B1.html",
    "category": "其他",
-   "updatedAt": "2026-10-21T00:39:37.044Z"
+   "updatedAt": "2026-10-21T09:39:11.872Z"
   },
   {
    "id": "ptt:1792536020.A.141",
@@ -929,18 +929,139 @@
    "minSpend": null,
    "code": null,
    "conditions": [
+    "到目前10/21下午3點半為止，還有回饋。",
     "[情報]街口支付綁華南銀行帳戶 消費享10%街口幣回饋",
-    "先至街口支付App活動頁完成登記，如下圖的紫框。",
-    "活動期間 10/6~12/31",
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
-   "tags": [],
-   "startAt": "2026-10-06",
-   "endAt": "2026-12-31",
+   "tags": [
+    "推 23"
+   ],
+   "startAt": null,
+   "endAt": "2026-10-21",
    "publishedAt": "2026-10-20T22:40:20.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792536020.A.141.html",
    "category": "金融支付",
-   "updatedAt": "2026-10-21T00:39:37.044Z"
+   "updatedAt": "2026-10-21T09:39:11.872Z"
+  },
+  {
+   "id": "ptt:1792544254.A.6F3",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "uber",
+   "title": "本日uber自取優惠",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "週三狂取",
+    "【自取】外帶自取消費滿 149 元享 1 次 5 折優惠，最高折抵 80 元",
+    "剛剛自己試還能用",
+    "Sent from nPTT on my iPhone 15",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 19",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-10-28",
+   "publishedAt": "2026-10-21T00:57:34.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792544254.A.6F3.html",
+   "category": "交通出行",
+   "updatedAt": "2026-10-21T09:39:11.872Z"
+  },
+  {
+   "id": "ptt:1792561367.A.F02",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "7-11",
+   "title": "萊爾富限時殺5日/7-11超值好康價10/21~25",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "【活動名稱】：萊爾富限時殺5日",
+    "【便利商店/廠商名稱】：萊爾富便利商店",
+    "【活動時間】：2026/10/21～2026/10/25",
+    "【活動內容】：",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 13"
+   ],
+   "startAt": "2026-10-21",
+   "endAt": "2026-10-25",
+   "publishedAt": "2026-10-21T05:42:47.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792561367.A.F02.html",
+   "category": "超商量販",
+   "updatedAt": "2026-10-21T09:39:11.872Z"
+  },
+  {
+   "id": "ptt:1792572287.A.56B",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "7-11",
+   "title": "隨行取7-11梔子花奶青買10送10",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "現在用PChome的隨行取買7-11的梔子花奶青買10送10$600",
+    "等於一杯30元而已",
+    "活動時間：10/17-10/31",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 11"
+   ],
+   "startAt": "2026-10-17",
+   "endAt": "2026-10-31",
+   "publishedAt": "2026-10-21T08:44:47.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792572287.A.56B.html",
+   "category": "超商量販",
+   "updatedAt": "2026-10-21T09:39:11.872Z"
+  },
+  {
+   "id": "ptt:1792575036.A.764",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "街口",
+   "title": "街口券滿百七折",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "可能是分眾 限量5700名",
+    "滿100元七折 上限折抵30元",
+    "使用通路很廣",
+    "網購 超商現場刷條碼都能帶出街口券",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-10-28",
+   "publishedAt": "2026-10-21T09:30:36.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1792575036.A.764.html",
+   "category": "金融支付",
+   "updatedAt": "2026-10-21T09:39:11.872Z"
   }
  ]
 }
