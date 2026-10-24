@@ -54,13 +54,13 @@
     "iPhone / iPad / Apple Watch：1 哩程 / TWD100",
     "iPhone / iPad / Apple Watch 以外的產品：3 哩程 / TWD100",
     "請於 Apple 網站購物前閱讀下面的重要事項。",
+    "由2026年10月23日起，購買 AirPods 5, Apple Watch Series 12, Apple Watch Ultra 4, iPhone Air 可獲得獎勵。",
     "由2026年10月14日起，購買 Siri Remote 可獲得獎勵。",
     "由2026年9月28日起，購買 Beats 360 可獲得獎勵。",
     "由2026年4月13日起，購買 MacBook Air 13 英吋 及 15英寸 (M5) 可獲得獎勵。",
     "由2026年4月8日起，購買 iPhone Air 可獲得獎勵。",
     "由2026年3月25日起，購買 AirPods Max 2 可獲得獎勵。",
     "由2026年3月24日起，購買 iPad Air 11英吋 及 13英吋 (M4) 可獲得獎勵。",
-    "由2026年3月4日起，購買 MacBook Pro (M5) 可獲得獎勵。",
     "哩約 105 天內入帳"
    ],
    "tags": [
@@ -70,7 +70,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/electricals/apple-store-online-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_118278.b76a431cf42f50906a18a4b619da370da27446dd.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-10-24T00:43:59.006Z"
   },
   {
    "id": "eva:122988",
@@ -1250,6 +1250,35 @@
    "url": "https://mall.brmile.com/zh/office-and-business/preply-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1685951.5b4ceaa2811794cf77e89b76cc003e6747590f9ffa9a3ca90acc16b7a5027a5b.png",
    "updatedAt": "2026-10-17T02:06:17.746Z"
+  },
+  {
+   "id": "eva:1697871",
+   "kind": "rebate",
+   "source": "eva",
+   "merchant": "Theory Asia",
+   "merchantId": "1697871",
+   "category": "服飾配件",
+   "title": "每 NT$100 4.81 哩",
+   "reward": {
+    "type": "miles",
+    "value": 4.81,
+    "text": "10 哩程 / HKD50"
+   },
+   "boost": null,
+   "conditions": [
+    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1573 換算",
+    "一般商品：10 哩程 / HKD50",
+    "哩約 105 天內入帳"
+   ],
+   "tags": [
+    "外幣計價",
+    "有折價券"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/theory-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z"
   },
   {
    "id": "eva:1697911",
@@ -6075,6 +6104,31 @@
   },
   {
    "source": "eva",
+   "merchant": "Theory Asia",
+   "merchantId": "1697871",
+   "category": "服飾配件",
+   "url": "https://mall.brmile.com/zh/clothes-and-fashion/theory-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
+   "id": "eva:v:17vo3g3",
+   "kind": "coupon",
+   "title": "Welcome Discount & Free Shipping Offer",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-12-31"
+  },
+  {
+   "source": "eva",
    "merchant": "KKday",
    "merchantId": "178348",
    "category": "旅遊住宿",
@@ -6447,31 +6501,6 @@
    "tags": [],
    "startAt": null,
    "endAt": "2032-05-12"
-  },
-  {
-   "source": "eva",
-   "merchant": "KKday",
-   "merchantId": "178348",
-   "category": "旅遊住宿",
-   "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-23T00:41:22.321Z",
-   "id": "eva:v:1jr7zq",
-   "kind": "coupon",
-   "title": "KKday 尖沙咀金普頓酒店餐飲與派對快閃優惠",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2026-10-28"
   },
   {
    "source": "eva",
@@ -8275,6 +8304,31 @@
   },
   {
    "source": "eva",
+   "merchant": "Estee Lauder",
+   "merchantId": "614735",
+   "category": "藥妝美妝",
+   "url": "https://mall.brmile.com/zh/health-and-beauty/estee-lauder-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614735.557c8c8d63809a53bf14d50721ec36d8e4697e3a887c36ae7ef0edd5cf843ad3.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
+   "id": "eva:v:ma3j3u",
+   "kind": "coupon",
+   "title": "_____11_____________________ 55 _________!",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-11-02"
+  },
+  {
+   "source": "eva",
    "merchant": "6IXTY 8IGHT",
    "merchantId": "387505",
    "category": "服飾配件",
@@ -8347,6 +8401,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2026-10-26"
+  },
+  {
+   "source": "eva",
+   "merchant": "Estee Lauder",
+   "merchantId": "614735",
+   "category": "藥妝美妝",
+   "url": "https://mall.brmile.com/zh/health-and-beauty/estee-lauder-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614735.557c8c8d63809a53bf14d50721ec36d8e4697e3a887c36ae7ef0edd5cf843ad3.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
+   "id": "eva:v:or4wi7",
+   "kind": "coupon",
+   "title": "___________________ 50ml _ 3____ NT$13,350__11_____ NT$7,200_!",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-11-13"
   },
   {
    "source": "eva",

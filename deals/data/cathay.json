@@ -53,13 +53,13 @@
     "iPhone / iPad / Apple Watch：TWD100 = 1.5",
     "iPhone / iPad / Apple Watch 以外的產品：TWD100 = 3.25",
     "請於 Apple 網站購物前閱讀下面的重要事項。",
+    "由2026年10月23日起，購買 AirPods 5, Apple Watch Series 12, Apple Watch Ultra 4, iPhone Air 可獲得獎勵。",
     "由2026年10月14日起，購買 Siri Remote 可獲得獎勵。",
     "由2026年9月28日起，購買 Beats 360 可獲得獎勵。",
     "由2026年4月13日起，購買 MacBook Air 13 英吋 及 15英寸 (M5) 可獲得獎勵。",
     "由2026年4月8日起，購買 iPhone Air 可獲得獎勵。",
     "由2026年3月25日起，購買 AirPods Max 2 可獲得獎勵。",
     "由2026年3月24日起，購買 iPad Air 11英吋 及 13英吋 (M4) 可獲得獎勵。",
-    "由2026年3月4日起，購買 MacBook Pro (M5) 可獲得獎勵。",
     "里約 116 天內入帳"
    ],
    "tags": [
@@ -69,7 +69,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/apple-store-online-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_118278.b76a431cf42f50906a18a4b619da370da27446dd.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-10-24T00:43:59.006Z"
   },
   {
    "id": "cathay:122988",
@@ -857,6 +857,35 @@
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/tumi-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1692661.90f16204d1949098ceb0a5add4bf2ab21a783c6383574232f2716c5265c9bd3c.png",
    "updatedAt": "2026-10-17T03:14:18.345Z"
+  },
+  {
+   "id": "cathay:1697871",
+   "kind": "rebate",
+   "source": "cathay",
+   "merchant": "Theory Asia",
+   "merchantId": "1697871",
+   "category": "服飾配件",
+   "title": "每 NT$100 5.41 里",
+   "reward": {
+    "type": "miles",
+    "value": 5.41,
+    "text": "HKD10 = 2.25 里數"
+   },
+   "boost": null,
+   "conditions": [
+    "原始回饋 HKD10 = 2.25 里數，以 1 HKD ≈ NT$4.1573 換算",
+    "一般商品：HKD10 = 2.25",
+    "里約 105 天內入帳"
+   ],
+   "tags": [
+    "外幣計價",
+    "有折價券"
+   ],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/theory-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z"
   },
   {
    "id": "cathay:1697911",
@@ -3889,6 +3918,33 @@
   },
   {
    "source": "cathay",
+   "merchant": "Theory Asia",
+   "merchantId": "1697871",
+   "category": "服飾配件",
+   "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/theory-asia",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
+   "id": "cathay:v:1i72ed5",
+   "kind": "coupon",
+   "title": "1 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "會員券"
+   },
+   "minSpend": null,
+   "conditions": [
+    "各張到期日：12/31"
+   ],
+   "tags": [
+    "需登入"
+   ],
+   "startAt": null,
+   "endAt": "2026-12-31"
+  },
+  {
+   "source": "cathay",
    "merchant": "NET-A-PORTER Asia",
    "merchantId": "446495",
    "category": "服飾配件",
@@ -3921,10 +3977,10 @@
    "category": "旅遊住宿",
    "url": "https://shop.asiamiles.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-23T00:41:22.321Z",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
    "id": "cathay:v:1kpbq67",
    "kind": "coupon",
-   "title": "5 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -3933,7 +3989,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：10/27、10/28、10/29、10/31、12/31"
+    "各張到期日：10/27、10/29、10/31、12/31"
    ],
    "tags": [
     "需登入"
@@ -4002,10 +4058,10 @@
    "category": "藥妝美妝",
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/estee-lauder-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614735.557c8c8d63809a53bf14d50721ec36d8e4697e3a887c36ae7ef0edd5cf843ad3.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z",
+   "updatedAt": "2026-10-24T00:43:59.006Z",
    "id": "cathay:v:1p5etnu",
    "kind": "coupon",
-   "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "6 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -4014,7 +4070,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：02/03、09/30、10/19、10/28"
+    "各張到期日：11/02、11/13、02/03、09/30、10/19、10/28"
    ],
    "tags": [
     "需登入"
