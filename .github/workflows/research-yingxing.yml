@@ -137,6 +137,37 @@ jobs:
           done
           exit 1
 
+  # commit 訊息含 [rev:201901-202609] -> 抓全市場月營收並 commit
+  rev:
+    if: contains(github.event.head_commit.message, '[rev:')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Fetch monthly revenue
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          S=$(printf '%s' "$MSG" | sed -n 's/.*\[rev:\([0-9]*-[0-9]*\)\].*/\1/p')
+          mkdir -p research/2026-10-yingxing/data
+          python -X utf8 research/2026-10-yingxing/fetch_rev.py ${S%-*} ${S#*-} research/2026-10-yingxing/data/rev_${S}.csv.gz
+      - name: Commit data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git add research/2026-10-yingxing/data
+          git commit -m "research: monthly revenue data"
+          BR="${GITHUB_REF_NAME}"
+          for i in 1 2 3; do
+            git fetch origin "$BR" && git rebase "origin/$BR" && git push origin "HEAD:refs/heads/$BR" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
+
   commit:
     needs: fetch
     if: always() && needs.fetch.result != 'skipped'
