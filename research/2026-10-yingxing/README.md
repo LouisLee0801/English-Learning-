@@ -83,3 +83,17 @@ python breakout.py 20 5    # 觀察期天數、爆量倍數
 ```bash
 python quiet_bt.py
 ```
+
+## 映興有沒有被虧轉盈／月營收／選股抓到（`replay_turn.py`）
+
+用 alpha-vibe-trader 的原函式（`avt.revenue.turnaround_screener`、`next_quarter_forecast`、`monthly_tracker`、
+`avt.turnaround.turn_metrics`、`be_ratio`）逐季重演，暫存 DB 只放當天已公布的資料。財報與月營收由 Actions 從 FinMind 抓（`fetch_fin.py`）。
+
+- 2026Q1（5/15）EPS +0.08，已連賺 3 季、本業連賺 9 季 → 不是虧損股，虧轉盈候選／下季轉正預測都不收（硬門檻：最近一季 EPS < 0）。
+- 唯一虧損季 2025Q2（−0.29，本業賺、業外虧）：比上季差 → 不符「虧損收斂」；預測表另被「去年同月營收 ≥1 億」擋。打平比 1.43，照 turn_prob 會是「高」，Q3 也真的翻正 +0.23，但 8/14→11/14 股價 31.95→25.75（−19%）。
+- 月營收 2026/4～9 年增 +26%～+50%，9 月 1.24 億創歷史新高；月營收榜被「最近成交量 ≤100 張」（4～8 月）與「去年同月營收 <1 億」（每個月）擋掉。
+- c1（原始收盤價）第一次是 10/6，不是 10/5（10/5 收 30.45 < 一年內最高收盤 31.40，2025/10/8）。
+
+```bash
+AVT_ROOT=/path/to/alpha-vibe-trader python replay_turn.py <暫存資料夾>
+```
