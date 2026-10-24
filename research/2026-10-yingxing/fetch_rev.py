@@ -3,7 +3,8 @@
 
 來源: 公開資訊觀測站月報彙總表 t21sc03(上市 sii / 上櫃 otc; _0 國內、_1 國外 KY), 單位千元。
 (FinMind 全市場查詢要付費會員, 免費等級只能逐檔查。)
-用法: python fetch_rev.py 2019 out.csv.gz      # 抓一整年(到 2026/09 為止)
+用法: python fetch_rev.py 2019 out.csv.gz              # 抓一整年(到 2026/09 為止)
+      python fetch_rev.py 201901,202606 out.csv.gz     # 只補這幾個月
 """
 import csv
 import gzip
@@ -55,13 +56,15 @@ def month(y, m):
 
 
 if __name__ == "__main__":
-    y, path = int(sys.argv[1]), sys.argv[2]
+    arg, path = sys.argv[1], sys.argv[2]
+    if "," in arg or len(arg) == 6:
+        todo = [(int(x[:4]), int(x[4:])) for x in arg.split(",")]
+    else:
+        todo = [(int(arg), m) for m in range(1, 13) if (int(arg), m) <= LAST]
     with gzip.open(path, "wt", newline="", encoding="utf-8") as fp:
         w = csv.writer(fp)
         w.writerow(["code", "ym", "revenue"])
-        for m in range(1, 13):
-            if (y, m) > LAST:
-                break
+        for y, m in todo:
             rows, miss = month(y, m)
             w.writerows(rows)
             print(y, m, len(rows), "MISS" if miss else "", miss or "", flush=True)
