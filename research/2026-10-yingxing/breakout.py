@@ -16,8 +16,9 @@ import pandas as pd
 
 from analyze import A, W, c, chg, dedup, m20, mup, dom, o, v, v20
 
-WIN = int(sys.argv[1]) if len(sys.argv) > 1 else 20
-MULT = float(sys.argv[2]) if len(sys.argv) > 2 else 5.0
+_args = [a for a in sys.argv[1:] if a.replace(".", "", 1).isdigit()] if __name__ == "__main__" else []
+WIN = int(_args[0]) if len(_args) > 0 else 20
+MULT = float(_args[1]) if len(_args) > 1 else 5.0
 
 h, l = W["h"], W["l"]
 ref = c - chg
