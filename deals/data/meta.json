@@ -41,20 +41,18 @@
    "version": 1
   },
   "news": {
-   "ok": false,
-   "count": 291,
-   "updatedAt": "2026-10-25T09:25:18.008Z",
+   "ok": true,
+   "count": 285,
+   "updatedAt": "2026-10-25T19:16:25.870Z",
    "seconds": 12,
    "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）",
-   "version": 1,
-   "error": "所有新聞查詢都失敗",
-   "failedAt": "2026-10-25T14:34:37.862Z"
+   "version": 1
   },
   "ptt": {
    "ok": true,
-   "count": 36,
-   "updatedAt": "2026-10-25T14:34:37.862Z",
-   "seconds": 1,
+   "count": 34,
+   "updatedAt": "2026-10-25T19:16:25.870Z",
+   "seconds": 2,
    "note": "PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）",
    "version": 1
   },
@@ -75,7 +73,7 @@
    "version": 1
   }
  },
- "generatedAt": "2026-10-25T14:34:37.862Z",
+ "generatedAt": "2026-10-25T19:16:25.870Z",
  "fx": {
   "USD": 32.5839,
   "HKD": 4.1541,
