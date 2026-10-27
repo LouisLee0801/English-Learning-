@@ -4,16 +4,16 @@
    "ok": true,
    "count": 118,
    "fresh": 3,
-   "updatedAt": "2026-10-27T01:34:18.320Z",
+   "updatedAt": "2026-10-27T08:09:07.556Z",
    "seconds": 5,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 15,
+      "posts": 7,
       "limited": false
      }
     ],
@@ -26,43 +26,43 @@
   },
   "search": {
    "ok": true,
-   "count": 58,
-   "fresh": 7,
-   "updatedAt": "2026-10-27T01:34:18.320Z",
+   "count": 60,
+   "fresh": 10,
+   "updatedAt": "2026-10-27T08:09:07.556Z",
    "seconds": 13,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:facebook.com 開團 結單",
+      "q": "site:instagram.com 開團 居家",
       "status": 200,
       "results": 10,
-      "posts": 2
+      "posts": 10
      },
      {
-      "q": "site:instagram.com 開團 保養",
+      "q": "site:instagram.com 開團 零食",
       "status": 200,
       "results": 10,
       "posts": 10
      }
     ],
-    "items": 7
+    "items": 13
    }
   },
   "pages": {
    "ok": true,
-   "count": 145,
-   "fresh": 151,
-   "updatedAt": "2026-10-27T01:34:18.320Z",
-   "seconds": 7,
+   "count": 144,
+   "fresh": 146,
+   "updatedAt": "2026-10-27T08:09:07.556Z",
+   "seconds": 8,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
     "pages": [
      {
       "name": "餅皮媽團團Buy",
-      "items": 23
+      "items": 18
      },
      {
       "name": "主夫尼克團購",
@@ -73,7 +73,7 @@
       "items": 34
      }
     ],
-    "items": 152
+    "items": 147
    }
   },
   "instagram": {
@@ -85,9 +85,9 @@
   },
   "rss": {
    "ok": true,
-   "count": 4,
-   "fresh": 2,
-   "updatedAt": "2026-10-27T01:34:18.320Z",
+   "count": 6,
+   "fresh": 3,
+   "updatedAt": "2026-10-27T08:09:07.556Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -96,30 +96,30 @@
      {
       "name": "七先生與艾小姐",
       "posts": 5,
-      "items": 2,
-      "latest": "2026-10-25T11:36:39.000Z"
+      "items": 3,
+      "latest": "2026-10-27T07:24:46.000Z"
      }
     ],
-    "items": 2
+    "items": 3
    }
   },
   "compare": {
    "ok": true,
-   "count": 292,
-   "fresh": 14,
-   "updatedAt": "2026-10-27T01:36:24.723Z",
+   "count": 291,
+   "fresh": 20,
+   "updatedAt": "2026-10-27T08:11:59.149Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
-    "checked": 14,
-    "matched": 6,
+    "checked": 20,
+    "matched": 13,
     "errors": {},
-    "pending": 0,
+    "pending": 1,
     "blocked": {}
    }
   }
  },
- "runs": 52,
- "generatedAt": "2026-10-27T01:34:18.320Z",
+ "runs": 53,
+ "generatedAt": "2026-10-27T08:09:07.556Z",
  "files": [
   "threads.json",
   "search.json",
