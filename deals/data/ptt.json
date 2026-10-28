@@ -776,7 +776,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 24",
+    "推 25",
     "期限見原文"
    ],
    "startAt": null,
@@ -784,7 +784,7 @@
    "publishedAt": "2026-10-26T16:53:53.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793033633.A.857.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-27T20:58:57.701Z"
+   "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
    "id": "ptt:1793034654.A.E6F",
@@ -863,7 +863,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 89",
+    "推 91",
     "期限見原文"
    ],
    "startAt": null,
@@ -871,7 +871,7 @@
    "publishedAt": "2026-10-27T03:50:50.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793073050.A.D58.html",
    "category": "其他",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
+   "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
    "id": "ptt:1793095649.A.9AB",
@@ -893,14 +893,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 19"
+    "推 25"
    ],
    "startAt": "2026-10-27",
    "endAt": "2026-10-31",
    "publishedAt": "2026-10-27T10:07:29.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793095649.A.9AB.html",
    "category": "綜合電商",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
+   "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
    "id": "ptt:1793100301.A.01A",
@@ -923,7 +923,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 36",
+    "推 52",
     "期限見原文"
    ],
    "startAt": null,
@@ -931,7 +931,95 @@
    "publishedAt": "2026-10-27T11:25:01.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793100301.A.01A.html",
    "category": "其他",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
+   "updatedAt": "2026-10-28T10:50:12.309Z"
+  },
+  {
+   "id": "ptt:1793161126.A.73D",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "美亞KINDLE FIRE HD10特價72.99鎂",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "美亞KINDLE FIRE HD10特價72.99鎂",
+    "地點要選美國才會出現72.99",
+    "不確定是不是史低",
+    "就算不是 應該也差不多",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T04:18:46.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793161126.A.73D.html",
+   "category": "其他",
+   "updatedAt": "2026-10-28T10:50:12.309Z"
+  },
+  {
+   "id": "ptt:1793164546.A.FB5",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "全家",
+   "title": "全家FUN心取取件活動 10/28~11/24",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "全家取件優惠時間：10/28~11/24",
+    "去全家取貨要記得報會員（出示會員條碼或手機號碼）",
+    "FUN心取轉轉樂贈品如下：",
+    "9元厚棒袖珍包(3入/包)",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [],
+   "startAt": "2026-10-28",
+   "endAt": "2026-11-24",
+   "publishedAt": "2026-10-28T05:15:46.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793164546.A.FB5.html",
+   "category": "超商量販",
+   "updatedAt": "2026-10-28T10:50:12.309Z"
+  },
+  {
+   "id": "ptt:1793182709.A.DC3",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "柯南展、奇美博埃及展折31元",
+   "reward": {
+    "type": "amount",
+    "value": 31,
+    "text": "折 $31"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "ibon 萬聖活動",
+    "結帳輸入【TRICK31】可折31元",
+    "適用有：",
+    "奇美博物館 埃及展",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T10:18:29.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793182709.A.DC3.html",
+   "category": "其他",
+   "updatedAt": "2026-10-28T10:50:12.309Z"
   }
  ]
 }
