@@ -2,11 +2,11 @@
  "source": "seven",
  "deals": [
   {
-   "id": "seven:1h6ipjp",
+   "id": "seven:1hkwp3x",
    "kind": "promo",
    "source": "seven",
    "merchant": "7-ELEVEN",
-   "title": "世界義大利麵",
+   "title": "立冬暖身",
    "reward": {
     "type": "gift",
     "value": null,
@@ -19,11 +19,11 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-10",
+   "endAt": "2026-11-11",
    "publishedAt": null,
-   "url": "https://www.7-11.com.tw/freshfoods/17_ohlala/index.aspx",
+   "url": "https://www.7-11.com.tw/freshfoods/4_Snacks/index.aspx",
    "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
+   "updatedAt": "2026-10-28T01:23:57.100Z"
   },
   {
    "id": "seven:1lk8sf6",
@@ -43,18 +43,18 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-10",
+   "endAt": "2026-11-11",
    "publishedAt": null,
    "url": "https://ibontw.com/26OPENFes",
    "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
+   "updatedAt": "2026-10-28T01:23:57.100Z"
   },
   {
-   "id": "seven:1lpu2di",
+   "id": "seven:1mqcc6k",
    "kind": "promo",
    "source": "seven",
    "merchant": "7-ELEVEN",
-   "title": "世界麵包日",
+   "title": "愛．Sharing巧克力大賞",
    "reward": {
     "type": "gift",
     "value": null,
@@ -67,83 +67,11 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-10",
+   "endAt": "2026-11-11",
    "publishedAt": null,
-   "url": "https://www.7-11.com.tw/freshfoods/11_bread/index.aspx",
+   "url": "https://www.7-11.com.tw/special/article_new.aspx?item=Event_E039",
    "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
-  },
-  {
-   "id": "seven:1m21j9r",
-   "kind": "promo",
-   "source": "seven",
-   "merchant": "7-ELEVEN",
-   "title": "雷神降臨",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-10",
-   "publishedAt": null,
-   "url": "https://www.7-11.com.tw/freshfoods/11_bread/index.aspx",
-   "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
-  },
-  {
-   "id": "seven:1ql894h",
-   "kind": "promo",
-   "source": "seven",
-   "merchant": "7-ELEVEN",
-   "title": "CITY CAFÉ",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-10",
-   "publishedAt": null,
-   "url": "https://www.citycafe.com.tw/notice-point.aspx",
-   "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
-  },
-  {
-   "id": "seven:bz7lxe",
-   "kind": "promo",
-   "source": "seven",
-   "merchant": "7-ELEVEN",
-   "title": "咖啡起司牛奶專案架",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-10",
-   "publishedAt": null,
-   "url": "https://www.7-11.com.tw/special/article_new.aspx?item=Event_E036",
-   "category": "超商量販",
-   "updatedAt": "2026-10-27T01:37:17.041Z"
+   "updatedAt": "2026-10-28T01:23:57.100Z"
   },
   {
    "id": "seven:collect",
@@ -185,6 +113,30 @@
    "publishedAt": null,
    "url": "https://www.7-11.com.tw/special/collection.aspx",
    "updatedAt": "2026-10-23T00:41:22.321Z"
+  },
+  {
+   "id": "seven:nvdth9",
+   "kind": "promo",
+   "source": "seven",
+   "merchant": "7-ELEVEN",
+   "title": "LOVEEZ心動時光",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-11",
+   "publishedAt": null,
+   "url": "https://www.7-11.com.tw/freshfoods/11_bread/index.aspx",
+   "category": "超商量販",
+   "updatedAt": "2026-10-28T01:23:57.100Z"
   }
  ]
 }
