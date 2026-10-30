@@ -82,29 +82,28 @@
    }
   },
   "沛樂保鮮盒": {
-   "checkedAt": "2026-10-27T14:47:56.757Z",
+   "checkedAt": "2026-10-30T19:35:27.685Z",
    "offers": {
     "pchome": [
      {
       "name": "PREPARA 【沛樂生活】Latchlok 系列 TRITAN 保鮮盒 4件組 (120mlx2+240mlx2)",
-      "price": 537,
+      "price": 510,
       "url": "https://24h.pchome.com.tw/prod/DEBMQY-B900HGH4U",
       "score": 1
      },
      {
       "name": "PREPARA 【沛樂生活】Latchlok 系列 TRITAN 保鮮盒 4件組 (120mlx2+240mlx2)",
-      "price": 537,
+      "price": 510,
       "url": "https://24h.pchome.com.tw/prod/DEBMKC-A900HGQK4",
       "score": 1
      },
      {
       "name": "PREPARA 【沛樂生活】Latchlok 系列 TRITAN 保鮮盒 3件套 (700mlx2+保鮮分隔盒)",
-      "price": 818,
+      "price": 777,
       "url": "https://24h.pchome.com.tw/prod/DEBMFL-A900HHNM4",
       "score": 1
      }
     ],
-    "momo": [],
     "yahoo": [
      {
       "name": "【Prepara沛樂生活】Latchlok 系列 TRITAN 保鮮盒 4件組 (120mlx2+240mlx2)",
@@ -125,6 +124,9 @@
       "score": 1
      }
     ]
+   },
+   "errors": {
+    "momo": "HTTP 504"
    }
   },
   "源鮮生菜": {
@@ -155,7 +157,7 @@
    }
   },
   "Jonquil小圓餅": {
-   "checkedAt": "2026-10-27T14:48:25.615Z",
+   "checkedAt": "2026-10-30T19:36:40.617Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -178,7 +180,7 @@
    }
   },
   "本蘊育髮膠囊": {
-   "checkedAt": "2026-10-27T14:48:40.730Z",
+   "checkedAt": "2026-10-30T19:37:02.353Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -194,7 +196,7 @@
    }
   },
   "日日好食好控麵": {
-   "checkedAt": "2026-10-27T14:48:33.161Z",
+   "checkedAt": "2026-10-30T19:36:47.252Z",
    "offers": {
     "pchome": [
      {
@@ -218,21 +220,21 @@
     ],
     "momo": [
      {
-      "name": "【Goodfoodeveryday 日日好食】日日好食 X 大呷麵本家 高纖膳控 麵線(3份/包)／好控麵 直麵(3份/包)",
-      "price": 124,
-      "url": "https://www.momoshop.com.tw/TP/TP0005983/goodsDetail/TP00059830000939",
-      "score": 0.83
-     },
-     {
       "name": "【Goodfoodeveryday 日日好食】好控麵-高纖膳控細麵3人份/包 225g 無醬料(低澱粉 菊苣纖維 全素 多穀物)",
       "price": 129,
       "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14371815",
       "score": 0.83
      },
      {
-      "name": "【Goodfoodeveryday 日日好食】好控麵－原味純麵(6人份)480g／高纖膳控(細麵3人份)225g／效期2027.03.03 #控醣麵",
-      "price": 129,
-      "url": "https://www.momoshop.com.tw/TP/TP0007307/goodsDetail/TP00073070000530",
+      "name": "【Goodfoodeveryday 日日好食】好控拌麵 好控麵 泡麵 3包入/袋（醬香油蔥/暖薑麻油/花椒胡麻/經典川辣）",
+      "price": 235,
+      "url": "https://www.momoshop.com.tw/TP/TP0002555/goodsDetail/TP00025550000402",
+      "score": 0.83
+     },
+     {
+      "name": "【Goodfoodeveryday 日日好食】好控麵-原味麵條6入/包 480g 無醬料(蛋白質 膳食纖維 健身 減鈉 銀髮 全素)",
+      "price": 239,
+      "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14369518",
       "score": 0.83
      }
     ],
@@ -286,19 +288,19 @@
    }
   },
   "鮮乳坊保久乳.A2 鮮乳": {
-   "checkedAt": "2026-10-27T14:48:47.462Z",
+   "checkedAt": "2026-10-30T19:37:09.210Z",
    "offers": {
     "pchome": [
-     {
-      "name": "鮮乳坊 【安得烈 x 鮮乳坊】每月牛奶小英雄(原味保久乳x24瓶)(購買者本人不會收到商品)",
-      "price": 840,
-      "url": "https://24h.pchome.com.tw/prod/DBAB08-A900J1UCM",
-      "score": 0.75
-     },
      {
       "name": "鮮乳坊 【公益捐贈 雙福基金會 x 鮮乳坊】每月營養守護 (原味保久乳*24瓶) (購買者本人不會收到商品)",
       "price": 840,
       "url": "https://24h.pchome.com.tw/prod/DBAB08-A900JZY2W",
+      "score": 0.75
+     },
+     {
+      "name": "鮮乳坊 【安得烈 x 鮮乳坊】每月牛奶小英雄(原味保久乳x24瓶)(購買者本人不會收到商品)",
+      "price": 840,
+      "url": "https://24h.pchome.com.tw/prod/DBAB08-A900J1UCM",
       "score": 0.75
      }
     ],
@@ -345,7 +347,7 @@
    }
   },
   "美福牛肉": {
-   "checkedAt": "2026-10-27T14:48:04.102Z",
+   "checkedAt": "2026-10-30T19:35:34.226Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -4445,7 +4447,7 @@
    }
   },
   "敲碗很久的不鏽鋼鍋": {
-   "checkedAt": "2026-10-25T16:42:30.746Z",
+   "checkedAt": "2026-10-30T19:38:24.378Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -4739,14 +4741,6 @@
     ]
    }
   },
-  "代購 joy夏天雙馬尾2立牌": {
-   "checkedAt": "2026-10-23T13:42:24.638Z",
-   "offers": {
-    "pchome": [],
-    "momo": [],
-    "yahoo": []
-   }
-  },
   "包包兩側還可以收納": {
    "checkedAt": "2026-10-29T19:48:40.081Z",
    "offers": {
@@ -4822,7 +4816,7 @@
    }
   },
   "各式Snoopy旅行袋": {
-   "checkedAt": "2026-10-26T21:10:10.760Z",
+   "checkedAt": "2026-10-30T19:38:17.405Z",
    "offers": {
     "pchome": [
      {
@@ -4832,26 +4826,7 @@
       "score": 0.67
      }
     ],
-    "momo": [
-     {
-      "name": "【SNOOPY 史努比】歐拉夫可加大旅行袋/行李袋/拉桿旅行袋/拉桿後背包",
-      "price": 699,
-      "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15366201",
-      "score": 0.67
-     },
-     {
-      "name": "【SNOOPY 史努比】拖輪旅行袋/購物袋-(輪子可拆卸/可登機/保溫保冰)-多款任選",
-      "price": 1780,
-      "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14104937",
-      "score": 0.67
-     },
-     {
-      "name": "【SNOOPY 史努比】經典、好奇、Joe Cool、懷舊復古保鮮倉酷包(大容量 防潑水 可折疊購物行李袋 帶輪旅行袋)",
-      "price": 1980,
-      "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=14651674",
-      "score": 0.67
-     }
-    ],
+    "momo": [],
     "yahoo": [
      {
       "name": "【SNOOPY 史努比】SNOOPY 拖輪旅行袋/購物袋-(輪子可拆卸/可登機/保溫保冰)-6款任選",
@@ -4863,7 +4838,7 @@
    }
   },
   "Monster Studio 日本史努比博物館限": {
-   "checkedAt": "2026-10-26T21:10:17.571Z",
+   "checkedAt": "2026-10-30T19:38:31.849Z",
    "offers": {
     "pchome": [],
     "momo": [
@@ -4884,7 +4859,7 @@
    }
   },
   "mont-bell 機能小包5 色同步": {
-   "checkedAt": "2026-10-26T21:10:24.560Z",
+   "checkedAt": "2026-10-30T19:38:48.115Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -4920,42 +4895,6 @@
     "pchome": [],
     "momo": [],
     "yahoo": []
-   }
-  },
-  "睫毛 下面有款式介紹 化妝": {
-   "checkedAt": "2026-10-23T13:44:06.135Z",
-   "offers": {
-    "pchome": [],
-    "momo": [],
-    "yahoo": []
-   }
-  },
-  "汽座隔尿墊": {
-   "checkedAt": "2026-10-23T18:35:33.947Z",
-   "offers": {
-    "pchome": [],
-    "momo": [
-     {
-      "name": "汽座隔尿墊 推車隔尿墊 隔尿墊",
-      "price": 205,
-      "url": "https://www.momoshop.com.tw/TP/TP0001467/goodsDetail/TP00014670000323",
-      "score": 1
-     },
-     {
-      "name": "【放了媽媽】汽座隔尿墊-安全座椅保護墊-汽車座椅保護墊-嬰兒推車涼感墊-嬰兒推車坐墊",
-      "price": 299,
-      "url": "https://www.momoshop.com.tw/TP/TP0000590/goodsDetail/TP00005900000573",
-      "score": 1
-     }
-    ],
-    "yahoo": [
-     {
-      "name": "MAYLILY 汽座防護屁屁墊(多款可選)隔尿墊",
-      "price": 1428,
-      "url": "https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=p0316265471207",
-      "score": 0.75
-     }
-    ]
    }
   },
   "小環妞X小行星幼兒誌月刊 橋梁書": {
@@ -5535,11 +5474,13 @@
    }
   },
   "敖尹10cm睡衣頭套體": {
-   "checkedAt": "2026-10-27T14:48:18.567Z",
+   "checkedAt": "2026-10-30T19:35:58.180Z",
    "offers": {
     "pchome": [],
-    "momo": [],
     "yahoo": []
+   },
+   "errors": {
+    "momo": "HTTP 504"
    }
   },
   "精選動態 BT21商品 BT21 BABY FL": {
@@ -5551,7 +5492,7 @@
    }
   },
   "電動真空行李收納袋 想讓行李箱多出一點空間": {
-   "checkedAt": "2026-10-24T16:12:28.613Z",
+   "checkedAt": "2026-10-30T19:38:01.619Z",
    "offers": {
     "pchome": [],
     "momo": [],
@@ -7367,7 +7308,85 @@
      }
     ]
    }
+  },
+  "專櫃內衣首": {
+   "checkedAt": "2026-10-30T19:35:11.383Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
+  },
+  "one-meter破壁機": {
+   "checkedAt": "2026-10-30T19:35:41.581Z",
+   "offers": {
+    "pchome": [],
+    "momo": [
+     {
+      "name": "【one-meter】★登錄保固送咖啡★轉轉煮茶機｜多功能冷熱兩用花茶壺",
+      "price": 1990,
+      "url": "https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15328052",
+      "score": 0.5
+     }
+    ],
+    "yahoo": []
+   }
+  },
+  "維密內褲": {
+   "checkedAt": "2026-10-30T19:36:04.603Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": [
+     {
+      "name": "內褲-6色 性感無痕 蕾絲緹花 彈力萊卡 柔感網紗系 沁甜美姬(維密典雅)",
+      "price": 259,
+      "url": "https://tw.buy.yahoo.com/gdsale/內褲-6色-性感無痕-蕾絲緹花-彈力萊卡-柔感網紗-8783200.html",
+      "score": 0.67
+     }
+    ]
+   }
+  },
+  "脆皮捏捏盲盒": {
+   "checkedAt": "2026-10-30T19:36:20.599Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
+  },
+  "coco 的GIVERNY粉底液": {
+   "checkedAt": "2026-10-30T19:36:27.300Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
+  },
+  "雙 11 巔峰輪盤 抽券期間 10.23": {
+   "checkedAt": "2026-10-30T19:37:16.033Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
+  },
+  "Kolin 囉 手洗內衣褲的救星": {
+   "checkedAt": "2026-10-30T19:37:32.123Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
+  },
+  "163穿M就遮屁屁的棉外套": {
+   "checkedAt": "2026-10-30T19:37:48.250Z",
+   "offers": {
+    "pchome": [],
+    "momo": [],
+    "yahoo": []
+   }
   }
  },
- "updatedAt": "2026-10-30T13:19:53.733Z"
+ "updatedAt": "2026-10-30T19:38:48.132Z"
 }
