@@ -2,33 +2,6 @@
  "source": "news",
  "deals": [
   {
-   "id": "news:105rhf5",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "UNIQLO",
-   "title": "UNIQLO感謝祭要來了！百款商品6.6折起 小花發熱衣台灣首賣",
-   "reward": {
-    "type": "percent_off",
-    "value": 34,
-    "text": "6.6折起"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "TVBS新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T04:07:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0yZlh0elFwNWtLS21wQl9uTHdadTNJUVBxQW8zVWsyNksteGZyNW1OZ0k2QzluZmpfSWVaM3FiNWJrNUxwWldfX2tySW4?oc=5",
-   "category": "服飾配件",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:106b1v",
    "kind": "promo",
    "source": "news",
@@ -137,6 +110,33 @@
    "updatedAt": "2026-10-30T01:58:09.472Z"
   },
   {
+   "id": "news:115aitd",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "2026 ITF旅展攻略懶人包｜晶華、君悅、萬豪25折、寒舍33折、萬麗2折，12大飯店線上＋展場優惠一次看",
+   "reward": {
+    "type": "percent_off",
+    "value": 75,
+    "text": "25折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Niusnews妞新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T03:10:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBCeHJ6bkh3eE1JbUljdUtORmNQbHV1Zm5EZ3F2d0pYaVBESEdEdGlJclkzOTNGWjNkZUVuTk9uLTRNS3o0WkVVWkN4dw?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:11m15ft",
    "kind": "promo",
    "source": "news",
@@ -164,15 +164,15 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
-   "id": "news:12vak4h",
+   "id": "news:129pgol",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "ITF旅展倒數10天！飯店餐券砍半價、泡湯住宿優惠一次看",
+   "merchant": "樂天旅遊",
+   "title": "台灣人去日本玩法變了！平均旅費破4萬元、住宿花近半，樂天旅遊揭3大趨勢，雙11訂房再祭5折優惠",
    "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "第二件優惠"
+    "type": "percent_off",
+    "value": 50,
+    "text": "5折"
    },
    "minSpend": null,
    "code": null,
@@ -180,15 +180,42 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "三立新聞網SETN.com",
+    "WalkerLand 窩客島",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T04:12:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9WLWp2aC0wT2RFbVBSc0NoZWt0dE95c3pmX2N3MWhBYWFWcFRhM3d2ZHptUkxvMWF4X2FpbEd2YmUxbTl1R0xRNtIBTEFVX3lxTE4yYXRKSXBoYktBZzREYUZYRDJabFBuU2Z4cVAxS1JCOTBwVUpnN0RuRlNKN0NVX3ExQTJvWm0xdGNjOGEzVnBQeFY5aXo?oc=5",
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T08:21:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9BZ3BRZzRjTFo3WVRyMkFIU1hSSjJiT1M0OFZaMDZhWmVYckRmN2pmLVl1VlZOV0ZJdFJmWld4ZmVjUU5ZRl9FXzlhdFFCeG56ZXRnRHJTaWx1ZDlMdlE?oc=5",
    "category": "旅遊住宿",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:12ucvwz",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "4大超商週末優惠！「咖啡買1送1」拿鐵10元 手刀寄杯了",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "TVBS新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T05:21:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBHYy1BTVhoa0FkbVBlcjFEVFBYckc2UHpQNFRGZmFrYmFZay1KVWhCRDcyWHlHbWRwMy1uY0pORTl4Z0hRRklySWM2Qm00VzBl?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:13168e8",
@@ -245,11 +272,11 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
-   "id": "news:13e0d7a",
+   "id": "news:13tfky",
    "kind": "promo",
    "source": "news",
-   "merchant": "拿坡里",
-   "title": "拿坡里萬聖節優惠快閃3天！披薩買大送大490元、烤雞8塊209元",
+   "merchant": "好市多",
+   "title": "好市多雙11拉長7天！電視、沙發超過500商品下殺　黑鑽會員多一天優惠",
    "reward": {
     "type": "gift",
     "value": null,
@@ -261,53 +288,26 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "經濟日報",
+    "三立新聞網SETN.com",
     "期限見原文"
    ],
    "startAt": null,
    "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T03:29:25.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xSXp5YmxsTGF4ZWJ5M3VoX2txOF9YVGpNbGJFNFhVYkRwdmFUMGN6TmwyWTFrR1BtQVpMRzhPX3NQSGFVcUF5c2pRNjVZaDdXeS1rWWpwZ1JaZ9IBX0FVX3lxTE80WnVDRkpRaTZHdVZwcXhkRVFDSlVxYk5hUnluaTRMZFYzNTFGcHlLZ1lyUzhWbjJJTk0xUUEzX3o5RGU4Rm1yV3hKS2tkYkZOX2l6R2NycFBvcWhNN3RJ?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "publishedAt": "2026-10-30T10:16:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5yOGtSVTl4SzNDb1o5SFpTS3JVZTd2Wk5BZEk4bHJPNmwyY2ZHMlFvWVBnT184UmdVZmRfNF85bDMyVFFsSTNVLdIBTEFVX3lxTFBzdkMzYkI1V3huSTdvRVZSeWdJTWVGOHo2a3hqTHFvamxDNjZIVnpiYW5DS3dIUDFOdTdvVGtlQkdrdURpMDl0R1ZINE4?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
-   "id": "news:13kt2u2",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "KKday",
-   "title": "KKday每月27飛航日》亞航大阪機票9699元起！指定機票折$500，機場接送搶5折券",
-   "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "5折"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "卡優新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T03:17:59.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mYllXVDNkYnhLY1V5NU01MmpxNUR1NTNCOGFwbmczdUtfSURFejBuZ1U2cmhCTFhCSjhRdDlicHNwWHd2dldramsyZlVlVkxwZmtQQ3JUSUhUZEpN?oc=5",
-   "category": "旅遊住宿",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:13vu8mx",
+   "id": "news:13v8n9t",
    "kind": "promo",
    "source": "news",
    "merchant": "優惠情報",
-   "title": "身分證對中就送！ 2大火鍋數字優惠「1268」春囍送50隻蝦、「520」高雄福華爽嗑整隻龍蝦",
+   "title": "台灣大賽》味全龍封王優惠懶人包！逾30家品牌同慶 超商買一送一、家電下殺5折",
    "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
+    "type": "percent_off",
+    "value": 50,
+    "text": "5折起"
    },
    "minSpend": null,
    "code": null,
@@ -315,15 +315,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "udn",
+    "Yahoo運動",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T08:30:01.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9PUVlZX01SU3N5QTNtZndpYzNqMm1EZW5VRHpzLW4yYno1d09seEN5bk9kRnlMbGM4UV8xZFh0OXhJLVpKQW9valFwVE5EUVA2ZHJtYU8xUVFnUGNF?oc=5",
+   "endAt": "2026-11-02",
+   "publishedAt": "2026-10-26T12:38:34.000Z",
+   "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQemZfRGFqRUpXNTNGcFNCYk5scm5mdnR3b0tuWjV6ak9vRDBtV2tJOUNCWGFMMGJLb1Awb2dQbjJva2wzMzVHUDJCbW9Xb0ZqSm55OWExUDZLZE1najliZWdqLURaNVFFbk0xZnNXTzdlaExkdVR0STIwUU8yOFUxeGNhcWxRcXR1ZFVXelFjbUhTTGhvUk9TRVVqNjIyTFFYenp5Y3hEeUxYbzBSb2wzWlA1U1EtV0JMaHlsOC1acXA3UDhtYlk5dmhCUUdTUklwOGFRV25BaHhLeExtR1VnazB5cW4zM0dWMzdlcXdOSnZMSDMyaXlLeGZ4bEVFTUpWU3Zaa194UmdnOTlhRmJjUXhyQjlweHl2OE1lQlZzaENHR0NFcS00VU42Q0JJTHcxbE81dWJwa2t3N3c1OXByZXc3RWJNSmZtVWlvN1NmWnlKM2V5UEdKU1FlcHFNY0NXNERRYzNXc1YyLXhXckdfZXNrTFBHTm9RZjkwOVBJLXFvcnBW?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:13xl0gc",
@@ -461,11 +461,11 @@
    "updatedAt": "2026-10-27T10:03:29.976Z"
   },
   {
-   "id": "news:159p0sn",
+   "id": "news:155deew",
    "kind": "promo",
    "source": "news",
-   "merchant": "星巴克",
-   "title": "週一喝咖啡！星巴克買1送1 超商任選7杯「特價333元」",
+   "merchant": "優惠情報",
+   "title": "雙11真的有比較便宜？6大購物陷阱一次看！滿額折扣、買一送一小心多花錢",
    "reward": {
     "type": "gift",
     "value": null,
@@ -477,15 +477,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "Yahoo新聞",
+    "udn 女子漾",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-25T23:41:42.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNUFAyQ3d0X2xlVUZsTEpRb3Ezbi1lMWJCTEF6NDIteUVNcExsVE5vekktOVFsbmJyXzZSZkJwVmdpcnRRNWY3NUdoYlRwWURfOC1SU28tQlZqa2lLUE42RHdPS2VzeXRZTm5CNTlGSWFqSUZ4MGprMVRlZVpPdFV6Sk9EYk9HaWxfUXhoQmNiMkJTN3cxcnN3TnYwVll3MXZ4NzFRVk1BNzlMM0VmdkhQMERGYnJfcXFOVFNtNWg0enNzY0ZRclM1eDN5SlRnNjAyOVdoczVqWEg0QVdDd2cxRmptdC1wSzhnUUZkTUh4RXk1ZkY4cHRQNkFJVXFSaWQ1cGl2ejdNOHN4bThyS1YzQVcwZWdzckZCbk5vYWJGY3F1akRnTFE0TC1mQko?oc=5",
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T06:51:25.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QZ2hfWHlSZGxwMUR0dmRHX2tNYWI1aFgzcndqOHV1NnNoSTNmNHJ1eVN5N2xlbVBVeDNrUHhQMTlybDNFMFVERld1YVhxUHBuN1JQRzh5U3RtMEly0gFiQVVfeXFMTm1VN3UtclNHYVozWVZkZ3RQZEJDLUFCckM3NUp0MEpQMFhvVjItMGV3ZEtRVHhJQWx0RmdqckwxbEptcjJONG9yZ0RibzU5QUtfUUVlOVRrWGIwNlQ5UFJNTmc?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:15q6x6e",
@@ -542,15 +542,15 @@
    "updatedAt": "2026-10-29T21:26:32.213Z"
   },
   {
-   "id": "news:160qwbo",
+   "id": "news:1680fwp",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "ITF 台灣國際旅展11月6日登場 飯店餐券下殺5折、旅遊行程一次看",
+   "merchant": "王道",
+   "title": "歡慶味全龍奪冠 王道銀行推出三天指定行動支付加碼回饋5%",
    "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "5折起"
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -563,10 +563,10 @@
    ],
    "startAt": null,
    "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T03:15:08.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FLW8xc2ZPTVZRdmZhVWtXN0FWUTd5Uy00UUpqc0h3RUtPZmpPNklCeTZVbkhCMGRhdlpUbXhuS256RFhGOUJFRnRxS3k4SEhpZ0RkYnkwVGZTNWhLd0JF0gFfQVVfeXFMTkUtbzFzZk9NVlF2ZmFVa1c3QVZRN3lTLTRRSmpzSHdFS09mak82SUJ5NlVuSEIwZGF2WlRteG5LbnpEWEY5QkVGdHFLeThISGlnRGRieTBUZlM1aEt3QkU?oc=5",
-   "category": "旅遊住宿",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "publishedAt": "2026-10-27T06:10:43.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nZm9TWU1fbmlPWlhhRXRZZ0Y3bjJOaHpEbUU0c0dMSnVOczFYa1NJSzhvVDJLMVpfOUtYbVlPUVgzbkNkbWNXUDZ5YnVTbmdYcXhsb2d6LUpwQdIBX0FVX3lxTE9rYWticUhBblduRVZsc280ZGg5eXVYYVhlck1IeFBtRWpFWHZmckl6RW9pbGpvYmx5VVFmTFBMTldXeGp4S0NMSDVUcEJac0NGdnRTN0VOLWxEN3RtMzNR?oc=5",
+   "category": "金融支付",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:16d5zun",
@@ -677,33 +677,6 @@
    "updatedAt": "2026-10-29T11:06:34.204Z"
   },
   {
-   "id": "news:17rfucb",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "CoCo",
-   "title": "手搖飲買一送一爽喝CoCo！春水堂滿額免費喝珍奶、金馬聯名周邊登場",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "玩咖Playing",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T04:38:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBmUzVJS3lJM2JyandkYkFtYWJYNkxMNVlBWnZJYmRDdmVmbFpYN19VNnZlOXBZam9SM0tYUnNzdjMtREtKWERKak9NRVduTWVseDBfZFJZMA?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:17rqrgk",
    "kind": "promo",
    "source": "news",
@@ -758,33 +731,6 @@
    "updatedAt": "2026-10-25T09:25:18.008Z"
   },
   {
-   "id": "news:17um8l4",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "萬聖變裝免費逛壽山動物園！兩大共學空間亮相親子探索自然添新據點- 娛樂新聞",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "PChome Online 新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-07",
-   "publishedAt": "2026-10-30T23:23:18.000Z",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdWIyQkpDM3NpaGlfZ1NyMk5LOXlReGo3M1ZJRW5WQXNFWUpYcFJ2Wkd4SGt2TW5UUVZnQU9LdE1ENVkzTURDQ2pBMVRGd3Z5SG5DUThSbXBMUU1YdjhBNWk5d1hTa3JTejczQnQ2RXZ0V3o2QVR4Qkx3N2JRVkl6SGM5V0RibEExdldHWkJyWUlwb1A0S3c0dklWNjA?oc=5",
-   "category": "親子寵物",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:17wgroj",
    "kind": "promo",
    "source": "news",
@@ -812,11 +758,11 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
-   "id": "news:19818n0",
+   "id": "news:18q6bs8",
    "kind": "promo",
    "source": "news",
-   "merchant": "全聯",
-   "title": "光復節全聯買一送一！衛生紙85元、無糖咖啡半價　奇異果只要15元",
+   "merchant": "星巴克",
+   "title": "星巴克雙重優惠開跑！外送第2杯半價、11月2日「買一送一」",
    "reward": {
     "type": "gift",
     "value": null,
@@ -828,15 +774,42 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "NOWnews今日新聞",
+    "UDN",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T01:52:37.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9FNzNYYnhOS0MzTU13bHY1YmotZGhhUHNRNFB0TUpiNWNaSTAzYzJWdG9Gd21PcmxwNEVVUjNIVHlwQUU2V1MzWXBueU_SAVJBVV95cUxNN3hDbUNyVU9MYlJIeC1iSnNUZjg0Rm1id3lLMER5a0pFMElnZWlWcFRTV0s1QktDdnh6bVdBNGtFMWlNd0hXejhjWEZiSmpZLUJR?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-24T09:07:49.735Z"
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T06:45:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1OQlNITGl6NnZHUGd6M1FYY2NoSWRzcm1pWG5jUS1qa09YOGJ6cGNEVGhmOURaZnhjS2hQVjJ1b2xjYWxMRWNvMVQwaWV1TDVybmF1dGkxamhPSzh1N01wZ3RPUktqazJVNFo0TEU1VmtqQmd3WFVsbzhORXc5WDA?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:194qu9a",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "foodpanda",
+   "title": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞　省錢攻略一次看",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "鏡週刊Mirror Media",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T13:14:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WbzhGQnBNOGdWNkl4a1oyTW5JSm5iNHBzUW9ORF9kcERGd2d6Zjl4T3RWVzNzU0NTVG9YODJzQmJkSHNIM3k0UlB0ei16ZVhrdHVWRDd2bEo5MzBhTWloeUQzZ0lVZnJLcDk40gFrQVVfeXFMT1ZvOEZCcE04Z1Y2SXhrWjJNbklKbmI0cHNRb05EX2RwREZ3Z3pmOXhPdFZXM3NTQ1NUb1g4MnNCYmRIc0gzeTRSUHR6LXplWGt0dVZEN3ZsSjkzMGFNaWh5RDNnSVVmcktwOTg?oc=5",
+   "category": "外送",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:198oso6",
@@ -862,33 +835,6 @@
    "endAt": "2026-11-04",
    "publishedAt": "2026-10-28T03:52:32.000Z",
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42aU4xZWlXZ2JwUzlXV2hGX0FDVVBraHJJTGRwcE1UUWVZS2Q0b0hCc1BaRnNZM012XzlXV1FsVjNvTG95aDNkRXNTUmprellmZXgzdEZpU0FSckZtOFpLX1R4eGpQcV9JQXRYT0xn?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
-   "id": "news:1991r8k",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "慶中華職棒封王「披薩買大送大再送大可樂」！　7大速食優惠一次看",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "三立新聞網SETN.com",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T03:26:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5RS0xGSkRFLW45WlZtdG14T3luU0JyQUY3azBYb3VvbFZvX1VBaFhmSE5IU1V4QVhQUEFJXzBGMWVhSG9oTDBlN9IBTEFVX3lxTFBHMzdONGFTM1gyeXQ1d1dMWHM1QkplZmZnWGw0cXZJeEtUUHB6SEhDS2lUd3hQQ3o3UDNmVXdWOFFieHI5b0c2RWpYOVY?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
@@ -1055,15 +1001,15 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
-   "id": "news:1adaels",
+   "id": "news:1ac72pd",
    "kind": "promo",
    "source": "news",
-   "merchant": "全家",
-   "title": "始源歐巴現身全家推秋冬鍋物 滿額就送始源吃鍋圍兜",
+   "merchant": "優惠情報",
+   "title": "台中Go花毯節優惠套票11月2日開跑 限量150名享5折",
    "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
+    "type": "percent_off",
+    "value": 50,
+    "text": "5折"
    },
    "minSpend": null,
    "code": null,
@@ -1071,15 +1017,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "卡優新聞網",
+    "報新聞 Mega News",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T07:45:14.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE84OFJ0QnZIeVo1S0hBU1ZQaFFTTkpSRXlTSWFyNm1aRC1McGVTc2lISGlRTlh4bWhHcjNxVnFTaHU4WmNFZlB0VFdwZ2dRNjlRTUsyMFRJSTY2bG1v?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T09:25:49.000Z",
+   "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPb18zZEMxTkpaQlVsaTVTaFBOcFFtZXY5aG13V3FfaVhiUzRRbUkweklOVzgxRmUzQ1dYbXNwTnZ1WU16OGR2bVdnTkJvRDd3b1hvdkNCS2R6TDNOWlRDSUJuWXVqaHdBcURkdF9Pd1JWQndFUVJid3hJUWZjZ1I3Q0VQQjNQaFptZ1ZjdzRXZVN6Z0FJMHR0OWltdlhNUTdWWmV5M0hQSVlUcVlsTFRkX2doRW5CSk4zOW1zdHk4dDVfRnBZdFhCMkNPdURxMTlYTTdfYzBjemJiNjBpaVd0TU9IYlMwcW40WkJ3NGEzWDdMQ0UyNHA2d0RYQzdNdlQ2SHJEejJ4enQ2dHJzeW56eG9fOHpfMVZjYjJaZVUzVFl3NEdQS3JEQ1VEUUluMnFGQnBLZVFlWDlLa2htekpZWmVPMi1LXy1JSk01N3FOSQ?oc=5",
+   "category": "其他",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1afjdlc",
@@ -1136,11 +1082,11 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
-   "id": "news:1avgbbn",
+   "id": "news:1apcqkc",
    "kind": "promo",
    "source": "news",
-   "merchant": "7-11",
-   "title": "全家11月霜淇淋曝光！櫻桃巧克力口味、送崔始源小卡，7-11首推奶霜飲",
+   "merchant": "UNIQLO",
+   "title": "免費拎HEATTECH｜10.31一連兩日UNIQLO快閃活動即睇派發時間- 東張+",
    "reward": {
     "type": "gift",
     "value": null,
@@ -1152,15 +1098,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "食尚玩家",
+    "myTV SUPER",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T08:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5WcmE4c0xLcE1NcUpaaFlaSGhnUUVCeUZ1emxGazZnNFBfLWl1NXdpTExUX0VHZUkzQVRZMDRwbWs3eHhvMFZMS3hsQ051Qk1reDc4?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T08:20:09.000Z",
+   "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNT0F6a0dVa0pDWW1FWkJNRk8wRmxNMWl3MVB1d0xRTGpkQmVwVlNSZms5ZjVNRG5JQlNKZ3h1MXBob2NrNm1NMFJQb3Z4Y3hqUmdUNngwSlpfcnFZRnloMXNRZmdJc3d4eVFRdV81T2M4ZFpHbWlWUmlYLWpMSk5zQVlXSkQ2a0RRVUMwM3F3UjdWbHJZcGNMb1JLZ2oxck9pWU12M2h0NjNESUp6ZDRSTG11elh0ZWlUVVVSQVg5cGhDWGYwWVZaOEZXZFZnN203MEtDeFlxZElTUlVaaEg2VTNlUVF3a21DVmhPVEN4dElocDVvRGxYeFltSEtTU2sxNVNnbWJSVEVtVmhHWV9WNHNacnN1bjZGMUdxMU54M2NXZzZjRzJMV0JTXzdNNkh1cWZjOHZJYk9DTk1KVkU0LVg2SHIxUXhaNFRGbXVSc01sUzhoajZtVXQ5el9sZFB3c3hEQjBYVFN1cjAtRnRRMnVFMFJoUV8yUVFV?oc=5",
+   "category": "服飾配件",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1b2g43r",
@@ -1188,33 +1134,6 @@
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nTEdmMjVvTGNqYndXckkyak1DVEpJX0RBMkc1ZlRNR2hpX2gyNDdDcm43Q3VOZ01UZmJFSjc1VFFOdUU3UGtzQ0xrOWY2SHI2Y1lnNUEtLTduM0d3RlF1MEJZRm5Ja2dWN1lzSzA3NTl1ZWlk?oc=5",
    "category": "藥妝美妝",
    "updatedAt": "2026-10-27T10:03:29.976Z"
-  },
-  {
-   "id": "news:1b30mu5",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "好市多",
-   "title": "好市多雙11拉長7天！電視、沙發超過500商品下殺 黑鑽會員多一天優惠",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Yahoo新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T10:21:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxQeF9rQ3ZyLUdtX1Fqc2NSZXdwXzk0RzVhUUhuZldKOXJ0MEpWajJUUU05RHhnUFJOc0FnRWJlbjNGajNpUGd3R0J4T0J6ZGZqaGVvZXF3bEhPaVEzSGtHYU8yVUxhX0hDUDNxeDJSLW9IZmlQQ1d6S1ZzN3NEZjVHRkpoaHBUakp5emtjU3d6OEV0dHJLejViVC1JS0V1SjlaeDZSRFVzUWdFTVg4cVBBZWc1c3dZeDNxUWpSbGdMaFF2aDhkTlBzaXFBZk5qLVJKVUtkanZkQk0zalpJQVFXZWxfTnljQjNVTy1mYXlESDVaOXl4OVpZOGptNHVraWZJellnQ3Nmc0R2X0Frd05QYXViVUc4bFROdU1vU3F4YkR5dzN0SXNlTVE4SktPV1p5WE5qVUtFendWR1hIYVNKMjNSWTE4aGp2U0tsVVREeTR5NFczTTJqdnV5NGFKV2pFNjhLaDhNcGJONmwwWklCbldacGJxSE9XZENiT2VUdk9hdHI2WHBKQklVSzg?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
    "id": "news:1b7zxp4",
@@ -1379,6 +1298,33 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
+   "id": "news:1c1ytuw",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "Kobo",
+   "title": "樂天市場雙 11 優惠 11/1 開跑！APP 下單最高 11% 點數回饋，Kobo 閱讀器 95 折、電子書 75 折",
+   "reward": {
+    "type": "percent_off",
+    "value": 5,
+    "text": "95折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "T客邦",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:30:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hYm5kdUJrMDFIQjF2MDUzbFZUMWpoaWtRLUZCV0FibjlQRTRucGNadF93WUVoV2FldE9Ic01ieGl0dWZyX1JMRm1Rd2tCcUZ2R3JIWnk0SUZOM1Ficm1kVlBCMFJEa1R6RTFDZE5vRFRTRkRDM3RLRm9oNA?oc=5",
+   "category": "娛樂影音",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1cd59is",
    "kind": "promo",
    "source": "news",
@@ -1433,15 +1379,15 @@
    "updatedAt": "2026-10-29T21:26:32.213Z"
   },
   {
-   "id": "news:1chhdfa",
+   "id": "news:1cey9iu",
    "kind": "promo",
    "source": "news",
    "merchant": "優惠情報",
-   "title": "國泰航空限時機票優惠！指定信用卡減高達$800 全線航點任揀！即睇優惠碼",
+   "title": "萬聖節手搖優惠一次看！指定品項買1送1、咖啡第2杯4折",
    "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
+    "type": "percent_off",
+    "value": 60,
+    "text": "4折"
    },
    "minSpend": null,
    "code": null,
@@ -1449,15 +1395,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "U Travel",
+    "中時新聞網",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T07:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxPMDJtanB4UGwyYTVHZXRfU3F0N0wxOGFjZWItelFJaldlUVBmNGcxelZYdll5UUd2NExzNkpJWFpDZVdkallFMHhjRzdvZzdoU3k3UWs5V0JUbTlNVXM1SEZzb3RmR1p6X2tpN0tOZ0R3d1JHdk5UcDlSd0RxbjFoMi1JUXI2TklfLWItaW85V1hxNjNlcmJON3lMZXEzdHhsNFU3aWFTNzU1cnYtV082S0J2RDNzUEhYVmtJMjhWSDFNVW5MUVN3VTg3MWMyYWpETDZ0dXhFSXRyRmx5eE1YWGRSWGhpZHROU25MVS1DcVpfT3EzZlB6Zm5lT1cyTURnc0JaNEJld3FJSmc2bXAyZFJtUjRZVHl2ZXlVTXhkS0MzNVM3SnI3cEw5RVVHT2p6OW1faUprOTRFYzhnWEZ4MGxyaXdKZl8xME1oQ2xEdWIyVFVXZUZnb0xwY0lLVHNwaHVQWW5kRlFJUHlpR3FpQThDT044blV6cXFiU2ZrTVUxMHNoQUhxVy1ha09ERnZCM0thVkpUVWhaSUFMMHlHQXFBQ1dRclpXODNCUFdvN0Q0Vkt6SzBr?oc=5",
-   "category": "旅遊住宿",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T06:05:28.000Z",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjNXRjLVBlNDNZRmJwZ01IRkt1ckc5eGtQTmFzZlY4UWVtR3lfOWQ4UWlqUkFJYnl1R3V0cjljcmFZZkxYRWtUMDdVbHZVbUoxaFM3cC1acjJZbzhjWkdkVzNMQVJXLXZLT2s0RXJ3?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1cltl7y",
@@ -1485,6 +1431,33 @@
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdUdUb3J2a2RZeWJ4eEVtOG1DTlZYaFVwOFhPbmlHZlpvR3NpaWE2Z0RjbDdIRkJsNXZ3MHIyb1R3Vy0xQllYOVlLTG13NmxWMEQ2V2ZaeUhMdDNjem50VGNQMHJaeU93SThxV3p4M0VHTVh6d1JZMmFNd0oxcW5iOA?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-27T10:03:29.976Z"
+  },
+  {
+   "id": "news:1coc8g8",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "免費入園!台中福華萬聖節親子市集10/31登場 白天逛魔法市集、入夜嚐暗黑料理！",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "PChome Online 新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T08:06:45.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVjdaU1g0SUgwWE16VTBVU0QtV1gxVXdYRGFoaExwNXNFb3dRUVEzZGhtWTVRYXdHaXBBXzBvcjFrdHRYSEU0QUF2eXhncFhoTzJ1czZnaE9VVVpDUUFQVFU1eDM5TmdMZmc0Ym9MdTBtYUVJYkpPZXpBclBKZ1hCeXNFQVRSS282SmFoRE1JaHZhdFE?oc=5",
+   "category": "親子寵物",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1cqgeoh",
@@ -1538,33 +1511,6 @@
    "publishedAt": "2026-10-30T23:12:29.000Z",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MSVFYVFVpVURLTHZFdm42cWxTQktReVpfRWwtS1A2bXZCQUJJU21pc1l5WF9RbnVTUWJ0MGprTkpUNU1zYkFfa0x1YmdVTGIzdDRTM3huVF9wTFN2?oc=5",
    "category": "旅遊住宿",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
-   "id": "news:1d2ovhw",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "麥當勞",
-   "title": "肯德基雙11搶先登場！雞塊薯條買1送1 麥當勞全新松露黑堡、巧克力三角派開吃",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "知新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T08:30:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HVEVsdnE4T2x2aE5nVXktNGtjVzJHMzZEXzBQbFpoREtsRWZoY05jYTZ3RlE1ekxGNGtGT1BhZVFIY19FOU02QnNURkxzaFdUVXZMYThWMGZGOVdORFZTTXo0YnpYcS1xTlZjMkdSZw?oc=5",
-   "category": "餐飲美食",
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
@@ -1622,33 +1568,6 @@
    "updatedAt": "2026-10-29T21:26:32.213Z"
   },
   {
-   "id": "news:1d9pepm",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "味全龍封王優惠開跑！超商買一送一、家電下殺5折 93家應援店同慶| 體育",
-   "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "5折起"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Newtalk新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-26T15:30:28.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Xc0xORmRZNVRkVjFRMk5tRDZuLTRncTBSUEZVbjllZWtjRkRHMVpqcGFXc0RWNWlBSDdwbDhWN3NTU21BcTRqSkNERmZIYU4yQm9aX1J3TW0tNmc?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
-  },
-  {
    "id": "news:1dcqe29",
    "kind": "promo",
    "source": "news",
@@ -1700,33 +1619,6 @@
    "publishedAt": "2026-10-30T08:35:52.000Z",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9maFRCZ2h4eGpCVEpWZjBNV2hsMFJKOV8wbTk5VjBOcTVxYWt1TzU2MjJCMmlNVVZGZ3NocDdIMmgzU0tZUDhVRWJIVzlqTFpCVEpZQmV0VWRHdw?oc=5",
    "category": "綜合電商",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:1dy2h06",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "味全龍封王優惠來了！ 買一送一、現金折扣一次看",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "蕃新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-26T12:56:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4tMmY5bUxqVGFqY21LaEJNcGhuTm5FbnJoZUhyZ2NDcnAzQ3BDci00MmtLeEk5RG5UUUh0QktoVHg0OEVubG02bUNvX2ExSlVUd0E?oc=5",
-   "category": "餐飲美食",
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
@@ -1919,6 +1811,33 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
+   "id": "news:1fsohun",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "ITF台灣國際旅展11/6登場！現場買吃到飽券5折　2方式拿免費門票",
+   "reward": {
+    "type": "percent_off",
+    "value": 50,
+    "text": "5折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "NOWnews今日新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T01:23:18.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5KeWIycE83Qko1RlVOUDN1X21OMU5iTjJUYzNLV1R3eUNvYTZaeHpha3pqYURhXzUtR0dKNWZTSEVWY2xtMl8tS2Z4ZjfSAVJBVV95cUxNZ2o1RkdoLWdOTXBFd3ZnSFJ0MnN2UXIyWHR2MVdQUEJ3bTd2Rlc3Sms1SVBlQV9pemFvTVBuWmNYaVJ4R1ZhWHRGY2YyNXpwb2pn?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1fzq7o",
    "kind": "promo",
    "source": "news",
@@ -1993,10 +1912,10 @@
    ],
    "startAt": "2026-10-26",
    "endAt": "2026-11-01",
-   "publishedAt": "2026-10-31T00:09:32.000Z",
+   "publishedAt": "2026-10-31T03:13:01.000Z",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNV2NPYkFVYzI1NWMzZXdocTZxUTBxZnJWSVVMcHNZSkV2NkpoUTU4THk0N3cyRUc0cGRUV2V3UEZ3Wm9BZS1ESVl2cHJjRmlVdHJYSzM0dHg4QzA3LXZDY1h4bUFIV1NtNi1yVkhiOTlFQkl4UnVfdy1fYkhMMnk4eXBQTm1ZS1dtTjhLTQ?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1gk3bb6",
@@ -2080,15 +1999,15 @@
    "updatedAt": "2026-10-30T21:03:29.472Z"
   },
   {
-   "id": "news:1i4xmuw",
+   "id": "news:1hm6xol",
    "kind": "promo",
    "source": "news",
    "merchant": "優惠情報",
-   "title": "雲海第一排！阿里山最美旅宿入住現折1920元，再享無邊際泳池、吃到飽",
+   "title": "未來美攜手艾絲樂小兔推雙11優惠聯名好禮滿額送、保養組最低2折起- 商情",
    "reward": {
-    "type": "amount",
-    "value": 1920,
-    "text": "折 $1920"
+    "type": "percent_off",
+    "value": 80,
+    "text": "2折起"
    },
    "minSpend": null,
    "code": null,
@@ -2096,15 +2015,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "食尚玩家",
+    "工商時報",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T03:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB4Y2lKVnQyUnVfLWUwT2ZQT0VsV3BZQ25PN1dNNmZrVGZvaGgwUTdhQnZvOXVHOGFwcHlmRnNtRE1rZnAyeUVPNkxHLUtWWGliZ1c4S3IzQQ?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T04:14:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kTHBOTzlrY3E1YXplZFk4R1BTLXR4VlZUczFXa0piWThNaUU2b3RmWmh1ZWFDckk4LUcwaHdVYk1oaUNaeVVLTjJuLVN6RG84VUFyVW1GVHdpX2IxYm13?oc=5",
+   "category": "藥妝美妝",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1ickivc",
@@ -2242,15 +2161,15 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
-   "id": "news:1isile6",
+   "id": "news:1ipknon",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "廢行動電源別亂丟！北市攜手3C通路推回收優惠 3顆可換50元商品卡",
+   "merchant": "好市多",
+   "title": "雙11大戰開打！好市多逾500項商品下殺、最高折1100 全聯1折券這天搶",
    "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
+    "type": "percent_off",
+    "value": 90,
+    "text": "1折"
    },
    "minSpend": null,
    "code": null,
@@ -2258,42 +2177,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "自由時報",
+    "知新聞",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T03:14:38.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43aHNXRklmUXNTT1BnMU9sbDVpc3VodGZVWVpka0J5RDVRbDA5MnYyQTJXUGFEODVzWFgwOWpGQkV6WDdhdWt0QzJQUnAzckJlZ1lhYTRyT25xeVFBbzVXZk9BaFA3dTVOd0HSAWpBVV95cUxON2hzV0ZJZlFzU09QZzFPbGw1aXN1aHRmVVlaZGtCeUQ1UWwwOTJ2MkEyV1BhRDg1c1hYMDlqRkJFelg3YXVrdEMyUFJwM3JCZWdZYWE0ck9ucXlRQW81V2ZPQWhQN3U1TndB?oc=5",
-   "category": "3C家電",
-   "updatedAt": "2026-10-28T10:50:12.309Z"
-  },
-  {
-   "id": "news:1k4k1sa",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "7-ELEVEN",
-   "title": "7-ELEVEN「咖啡買7送7」11/1限時3天開賣，飲品每週一2杯99元、每週二買2送2一次看！",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Cosmopolitan",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T03:46:56.000Z",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdG9Yd1BHV2J1cFVWbjlEMVBGYkd3ZWhmOHVZODZ1cmx5VWp3eDF6ZTZTREVCbUxWYkFvRGl5V3FBeUltcm4yb2xYN2V1TEgxdGpya0hxR0NrYTZvWVJBMGhFMlNLTzVTSko2dlBVRXllVmRkNDVpMFg1N1BxRFFUX2ptMA?oc=5",
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T03:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBmWWZNLXB1N3hjZ09EVC1SSzBBcFpUd2R3Tm5jM3ZWWEF0NGVsVlplQXNoVnJ0VGQ0NDZpejVlZGh4V0hFQjEwLTJ3dWdDZnFVZjVoOHVTSFBUMTJUN1JGRF8xaC1HOTN6cnZwYnJyUQ?oc=5",
    "category": "超商量販",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1kj1t2e",
@@ -2327,7 +2219,7 @@
    "kind": "promo",
    "source": "news",
    "merchant": "KKday",
-   "title": "2026 KKday折扣碼 》10月最新折扣碼/優惠碼(卡優專屬88折)、信用卡刷卡回饋整理",
+   "title": "2026 KKday折扣碼》10月最新折扣碼/優惠碼(卡優專屬88折)、信用卡刷卡回饋整理",
    "reward": {
     "type": "percent_off",
     "value": 12,
@@ -2344,10 +2236,64 @@
    ],
    "startAt": null,
    "endAt": "2026-11-07",
-   "publishedAt": "2026-10-30T23:30:05.000Z",
+   "publishedAt": "2026-10-31T07:30:12.000Z",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1id3VYX3FWdlZGR2tfTk1BVlU1cXZXbHNSWnRBamxBQURjRkp3eXk2Slk1eFhvUlVaUElDUjJ1QVlubjNKY011eE5IWnNYTzlMVTctcXJqVXh5WnFQ?oc=5",
    "category": "旅遊住宿",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1ko5v2o",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "麗寶",
+   "title": "麗寶OUTLET週年慶！搭台中購物節探索樂園萬聖節限定遊行登場 大小朋友一起搞怪過節",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "台灣好新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T05:50:19.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiowRBVV95cUxQMFBwWFZuYlJleV9mMnp1WVJWZmItcEh1M0ljMnEwZ1JRWEc4LUhhc1RoNk9VNE9Va1RGZGNDdmM3bEpnQ2dsMGNzYlJjQ3FuV1hMaE1hTjR4MkdvNURtQW4yUTEyYmNKQ0VKWTlzSzZaUk51MnJVeFFOMjlEUFpNTzY0R0M4VzByS3VzbGs2enRUZTM0SjdVTXFBX2ZNZDlwLWd6Z3VLdlhZM01faWxwb2cyVXNRaUxXQ3VqVDQwU1dLQW5oRXF3Y0dfVGpjeWpIOU1QX2ZiTFJOaG9qczNCLUdEdFlWSDRUejY4UnJrX1laeFduMUtHUDNOeUdOWU9WZ3VDVkUtalZ2WVh6bmJSWG9TR1JTVk51TWtWci1NTUdhNl9lb2FHWDFwTmVHOElXZm4tZlZoWnd2YjhmcHNUZ01BOXBfb1JxMDJ4VlJmUkZkdGNHQWhGNWVrVUFhVHZsOEhRemlOelQ1S0NGSkRXSTdBdlhDdjhtRnBRWno1Ri1US2VHTkNLdmJaSmFhS2tEdzJkMFA5QUpvWGxRdURqaGdSR1I5TWZoa1BCX3N0SWVRQjlhNFdfLXFkQkVZeEVmdkQxd0I3QUl1RjVQcHVfeWk5dEg1TjltSzVRVzVwX2t5UmVTN3psWGdYU0p5NjhtX0E4clY1UmJHUjIzWHQ0TUkwRUs5Y2taWXVtT1Y0RzRpVnJTLTl3Tl9reU5GTG9jYnY0?oc=5",
+   "category": "娛樂影音",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1l53owb",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "CoCo",
+   "title": "手搖控快看！CoCo兩杯85元、珍煮丹兩杯69元 11月優惠一次收",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "TVBS新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T05:58:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kdHF4TEZncHg3NnZsUllqS0Q2ZW5LaklGMVRtR3FNeG9UZkJhaDRfdG5WMWdmU1VVU0tzQkM3MW56ajlIUGN4ZnRhakp0QQ?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1l5s7zm",
@@ -2593,31 +2539,31 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
-   "id": "news:1mv2dpi",
+   "id": "news:1mveds0",
    "kind": "promo",
    "source": "news",
-   "merchant": "7-ELEVEN",
-   "title": "7-ELEVEN 嗶悠遊卡 結帳滿500現折50元",
+   "merchant": "必勝客",
+   "title": "必勝客雙11優惠整理！大比薩199元、抹茶QQ球69元買一送一，檔期別看錯",
    "reward": {
-    "type": "amount",
-    "value": 50,
-    "text": "折 $50"
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
    },
-   "minSpend": 500,
+   "minSpend": null,
    "code": null,
    "conditions": [
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "卡優新聞網",
+    "輕旅行",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T09:00:17.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZeDRCV0lxYUZWQ21OWndrZ0FNMWFRdUJFMmV1VjJyamFRamZ4dXh2Qk5Ibm9OMU9EVTZHWGZpczFOOExuVWNkdXo5dGlOVHB0OEQxdjVWejhHQQ?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T09:00:21.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBER1NNREdUYWRDT1I1RzlmSVp4OVBTUTcxVXBOMzRQLTktSWtjUGtaMjBJLTZlVnBKakZzOE1McmJObUFqSUFEOTB5NThzdw?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1n6ee69",
@@ -2699,33 +2645,6 @@
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVy0wSTc4ZVZ6eWtGSjF2NVd4ejk0N2xYTHA3VVNLQlF0SnlFVk0wMUlLeld3VnVMWXpodzBjc3p1RlNZUGZiYzFISGxvc0FmT3k4RVRwZUkwTTdTd2hLRlc1Vkx6VUhHRWh6ekUxT2FVODJVSFN0X2RGTDNZT0lsQQ?oc=5",
    "category": "金融支付",
    "updatedAt": "2026-10-30T21:03:29.472Z"
-  },
-  {
-   "id": "news:1ni0ghh",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "foodpanda",
-   "title": "foodpanda 雙十一 11 月 1 日起天天搶優惠 生鮮雜貨最高現折 111 元",
-   "reward": {
-    "type": "amount",
-    "value": 111,
-    "text": "折 $111"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "樂聯網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T11:32:20.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE00OE5LZmVoRlNzV0ljaWRkZVNXbHJtSU1OSzJrTnE3WnRvZFFHVVA0WmUweXNpZjNmWnU3NVhHUGZ3OUZyWFBNRklmVQ?oc=5",
-   "category": "外送",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:1nkraag",
@@ -2835,6 +2754,33 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
+   "id": "news:1nzw3nh",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "伊豆熱川溫泉Hotel Katara 11月平日住宿送整尾紅金眼鯛全天候溫泉泳池、親子方案- 生活新聞",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "PChome Online 新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-30T22:17:42.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYmc4dTNhQk80RHZkUzU4QnNlYmxhYnVadEdiVzI5RHZpWWZVejFfeEJRTVc1S1RrOXhZclp3OE93MGdIRXdzcHJLZVZXLW5peTZRQnJmSjVLMDBPdUpKd2YwbDN0ck5COEZ1RXNGalpTYzRTVTB2WkVlSHFtVUstbDFlQ2VFOGpPWWFJ?oc=5",
+   "category": "親子寵物",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1oesfmj",
    "kind": "promo",
    "source": "news",
@@ -2889,33 +2835,6 @@
    "updatedAt": "2026-10-30T21:03:29.472Z"
   },
   {
-   "id": "news:1oqwymc",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "長榮航空",
-   "title": "雙11熱戰！蝦皮攜長榮航空送總價破2百萬元機票 這群人不用消費就能抽",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Yahoo新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T09:13:46.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitgNBVV95cUxPTDdjenBucDg1dnR4U0FBazJIRUl6bG9ORUNVYUpZR1h4dzBpZFJwOE5ZQjk5YVlwNW1SelZpWDdTaFVSaldfY1pzbjRtaGtZcDhKcVM4QTBTMVVKZTFEcUpwUjJkbjd5SkNOaUNpVjMyYUgwbnYwZEZTY0dwN0FZVUlVTFVfX18zX2FmMVRjOUowVDZiVjJhTFJZOE9kaF9RLTJKdTRvVklBMklpRlA2YTVPUTRKTmxQMjJDUjBkdHY3X1poRlp3eDE4ZW84VDdpZmRXczF5SU9icEdNbl9pMmVGbTQ0R3ZxdVEzb0luRXlObWVUb1lpVlljZEpFMUZ1b3NORmoxNFpfa0g5Z3lHUVBQVFBuWGxscHN6cldaemdLSHVLa2Q4NC1LOElYc0xobF84SG9MdTVGV1ZQcDVWWUFrVDlQU1JUTE5yY1ZmdGJQYnZreEhBYm1hcnVCMmJwbjhRZHZyU3lTMnJkZjBJM09DaUZWZ1RoMUhRNm5LTG4zdzVYX1FlUjB4TGtzYXVfeHc0eEU3WnYxdjY3RGdfcmpIRFdpazh2Qk9jenAzd2M0Q3pldnc?oc=5",
-   "category": "旅遊住宿",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:1owy4x4",
    "kind": "promo",
    "source": "news",
@@ -2937,37 +2856,10 @@
    ],
    "startAt": null,
    "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T08:00:27.000Z",
+   "publishedAt": "2026-10-29T08:01:19.000Z",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMFRmTVJRS1Rzcmh1NVNIQzZNc3VRcFFkeklEanRUYUtfaVo2Snk0U1RkUkVTS19QWUROSXRsYmw4QzJpXzUzNW00M3pkQlFPN0JvRzViT3Z3anBucFQxV3FVMGR0b294ajVLT2JnUWpRS2hHdkhRZTZzREFqVm1ONVhWQUM2WVk?oc=5",
    "category": "超商量販",
-   "updatedAt": "2026-10-29T11:06:34.204Z"
-  },
-  {
-   "id": "news:1patd6e",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "麥當勞",
-   "title": "良心企業！麥當勞、肯德基颱風停班縣市「不外送」",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "三立新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-26T17:40:05.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE00RXNlZWY2QlVRMVhGUDhoX2NETGJvbjI2VXhSNXpxSFB4bU81Z0RjN0h2WFZqa0hCS2pwekxVQkoxbVRLN3c?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-27T20:58:57.701Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1peqnf1",
@@ -2997,6 +2889,33 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
+   "id": "news:1pes140",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "7-ELEVEN",
+   "title": "7-ELEVEN「咖啡買2送2」6款咖啡優惠10/28起快閃4天！美式、拿鐵、椰香冠軍拿鐵全都有！",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Cosmopolitan",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T10:29:04.000Z",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdTJFcE9VYnVjXzgwRTlucW1TaEllX3hDQ0ZGTWZ3YnFRSWpTTzl6V0RKTHB5bVBVck1tUHNza3JEc3E2cGp4ZGRFYW9reHhxOEdHY3MwMGw1M0xYcEJWVXZ4cEJELVF2ajNUSFlyanQwZkIwcFB6V2VkSG5RaU9HRnhodkVlU2ZhUVVkaw?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1pul7dh",
    "kind": "promo",
    "source": "news",
@@ -3024,6 +2943,60 @@
    "updatedAt": "2026-10-27T10:03:29.976Z"
   },
   {
+   "id": "news:1q91rcn",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "全台18家樂園免費玩！平日住宿獎助可兌換 11月優惠快沒了",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "壹蘋新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T05:06:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9CZjYzWjJBX1pYQkVwUUJScExYT01wWXZ6RnFpajhDOVFOMFptdEk1d2xoN29YRW9POHExQkNrN0pGWmJROGpTYkREbGE4MVl6bGpLemllWUlVVDI4ZTZXdU1VT3M0Ym5ITFdyb0J0SzVscGZsd1JHbk1HRk1Udw?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1qhomtm",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "一卡通",
+   "title": "一卡通 iPASS MONEY攜手SHOPBACK購物享現金回饋、日本旅客PayPay購卡享半價擴大生活繳費及綠色回饋生態圈",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "第二件優惠"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "民安救護車",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-02",
+   "publishedAt": "2026-10-26T06:17:44.000Z",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvQTVEWXp3X29PcnF5V1drS21aR3pLUGJpaFlWUXJ3aGJ2d1Q1R1Q5T0VCd0Q5SVdMZWNBUVpueWFhbDJFUk5wUEFrUjU2ZmFDeXMwcDVQazZvaWoyVVNsMmVERDZZei1hanJhekZYSFR2UQ?oc=5",
+   "category": "交通出行",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1qise9s",
    "kind": "promo",
    "source": "news",
@@ -3049,33 +3022,6 @@
    "url": "https://news.google.com/rss/articles/CBMiogNBVV95cUxNVDU4ODJVNGcxOVBoOTgwR1A0Sld0Zm04T1p0UW5ZeVJxZzRQanhTZGNfOWNJTk5uZXNXZ0YtOGFsdkg4a1NYc1h0OFhzWHJNUUtpYmxyS1Z3OWN6N1dyUWhIWGFMRExwUjRtQno3T3IxLU01UEVWUVZXN0txcmV4UV8xemVrRTc1RnQ1V3NaRWw1VXVzTldoTjl1Q09jVmR3N1VKZkNqU1BITElHNkQ5dG8tTWpWZWNDQVppMDgyajVPT2wxZEhEN1lUQlpUak5BRHJ2Q0dja2ZDSmdmSHJib1V2dUExdWM3Z3Z4anJFQ2FJVlJhcE9SS0QyS0UtSmVZQVJoWWFzVnFOQ2xZS0JrRks4RnpUemtyQm1TTFBUcnZGYlNoX2VoVWJCN1k5RWdneGZCOEoxV3ZvWmx4bHlXbmN5MEVaVDJBY0o0ZjFvVUpuaHlieG5iWlh4NVg1aTFwcGY5NjlzenZuMXk5YUFnd29kbENKeUc4ckR6cWwwYjY0MENrbWxZQkJSSHpDVWpwNjg3MkRVNkZ3SEhuQXl6djlR?oc=5",
    "category": "外送",
    "updatedAt": "2026-10-30T21:03:29.472Z"
-  },
-  {
-   "id": "news:1qozqo5",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "雙11真的有比較便宜？6大購物陷阱一次看！滿額折扣、買一送一小心多花錢| 生活娛樂",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "udn 女子漾",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T06:51:25.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QZ2hfWHlSZGxwMUR0dmRHX2tNYWI1aFgzcndqOHV1NnNoSTNmNHJ1eVN5N2xlbVBVeDNrUHhQMTlybDNFMFVERld1YVhxUHBuN1JQRzh5U3RtMEly?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
    "id": "news:1qpn2vs",
@@ -3130,6 +3076,33 @@
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HMFJBa2N6SmZraWdwNXVaWHpmbUVPajAta2FsSEZEZFBndG5NMnZMOEpueDd4SzlUeGdoQnRHMDhVSzVheW1xdC13YWFod2FQV2w1X1laZ2lENkg1?oc=5",
    "category": "超商量販",
    "updatedAt": "2026-10-31T01:36:23.000Z"
+  },
+  {
+   "id": "news:1qyzqe8",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "UNIQLO",
+   "title": "UNIQLO感謝祭要來了！百款商品6.6折起 小花發熱衣台灣首賣",
+   "reward": {
+    "type": "percent_off",
+    "value": 34,
+    "text": "6.6折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "TVBS新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T04:07:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4zWEJDQUItZUFMamFXVXJBYmlPaldmRW9uUFdDZURkVEZncWo3QW5zVzZGbWZTWXhNdzR0SW1vOEdWZkdHV2VRcENzYlhRZw?oc=5",
+   "category": "服飾配件",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1qzcw3h",
@@ -3213,6 +3186,87 @@
    "updatedAt": "2026-10-29T11:06:34.204Z"
   },
   {
+   "id": "news:1r95nz5",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "廢行動電源別丟！北市回收3顆送50元超商卡 3大業者加碼優惠一次看",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "民報",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T06:30:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtUWY0eldXWDRvV3RFNFZDX1BicjdZR3liTUFyR3dBSWl1elhhdTI4aW1UVERkYkRnZGFZNXVSeUhXXzRmV0tSczFQVW5IS2ZVNHZjMWdWOVZIYnJ1eFcw?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1rrzthe",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "長榮航空",
+   "title": "雙11熱戰！蝦皮攜長榮航空送總價破2百萬元機票　這群人不用消費就能抽",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "三立新聞網SETN.com",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T03:46:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1TSEpidVktakVfa01IOWxLcndxZ1FEaXphT3BpTVRnSVBkOERnd3MwRWt2R1A4TWhNVmFtRFlHc3BUWXhqZUQzbtIBTEFVX3lxTFBWYWROMHpRUmNhRkd0aG1ZUDEzN3FDTXlMZEFfNng2alRENXZxUmFjZzgxODgyd2FRTVYwNTlxaE9LVlRxRF9uSml4Q28?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1s3u8of",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "IKEA",
+   "title": "IKEA推薦8款「窩居收納」小物 售價149元起再享85折優惠",
+   "reward": {
+    "type": "percent_off",
+    "value": 15,
+    "text": "85折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "ETtoday新聞雲",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-02",
+   "publishedAt": "2026-10-25T23:04:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TNWxpUnlOcm84U0lVM0tKZmRhYkY0QWwxZlhqSERLLWZsLVlMMkllWDhuWWxyMHR3QlJJMmpITHJtTHkwWUhUZ1FWbmZSZ0ZqNEE?oc=5",
+   "category": "居家生活",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:1sbwjuu",
    "kind": "promo",
    "source": "news",
@@ -3294,15 +3348,15 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
-   "id": "news:1sypoqh",
+   "id": "news:1tdyioj",
    "kind": "promo",
    "source": "news",
    "merchant": "優惠情報",
-   "title": "萬聖節喝起來！超商咖啡買1送1 特大美式10杯360元",
+   "title": "打造親子互動學習新空間，壽山動物園「共學教室」、「森林小棧」正式啟用10/31與11/01萬聖節變裝免費入園！",
    "reward": {
     "type": "gift",
     "value": null,
-    "text": "買一送一"
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -3310,22 +3364,76 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "中天新聞網",
+    "蕃新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T09:03:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmRGR4NmtBOWx0ZGttYnBZSWNZTzlBRjhNWHd0QXR2bnJ6bGtZOF83Nk9kXzNyLVd5bU5Rdm9BalJ4YURuTmZqV3N0UUtOWnlvV3c?oc=5",
+   "category": "親子寵物",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1tf2o9e",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "悠遊付",
+   "title": "街口11月優惠直衝25% 悠遊付繳地價稅贈3%",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "卡優新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-27T19:00:37.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3ZEdSUUpBY004RzhXY3Y2S3A1UXFMMlljQmZQZmRVYXJLaU91NXlGRlNqZU1yQU5rMkhoX0Z2RlE1Uk9VOVV0ang1aGtpanZuQkRJbmZ0Q0F6QQ?oc=5",
+   "category": "金融支付",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:1uh8pt",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "MITSUI",
+   "title": "林口/台中港/台南OUTLET只帶這張卡就夠！永豐MITSUI OUTLET PARK聯名卡「停車免錢+購物餐飲娛樂85折起」",
+   "reward": {
+    "type": "percent_off",
+    "value": 15,
+    "text": "85折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "卡優新聞網",
     "期限見原文"
    ],
    "startAt": null,
    "endAt": "2026-11-07",
-   "publishedAt": "2026-10-30T23:47:38.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1S1YzQjh4MXg4ekpjTU1lRGZsbXdfRS1GZG9ZSHoyZnJZZlI2cEliZVhBdTQyZ1kwTUtjRDZpTXFjZHA2UVVJeElqa2xwMGNTRWlv?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "publishedAt": "2026-10-30T20:29:14.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5leW56anRHYjlCQ3UzZU5jMVNLcHRPc1Zac01ldUVHbFlhNFlCMEUycEFxeDZhUXZMd0FweGtmQ3BZZlFGTDI4dTdCb09xMDYxaTNyS3l3VUNDY3Z5UUE?oc=5",
+   "category": "百貨商場",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
-   "id": "news:1trrwuw",
+   "id": "news:1ui0sf7",
    "kind": "promo",
    "source": "news",
-   "merchant": "達美樂",
-   "title": "達美樂買一送一！麥塊地下城2聯名盲卡包　披薩披風、史萊姆虛寶",
+   "merchant": "7-11",
+   "title": "7-11哈根達斯買2送2！全家霜淇淋買2送2　天天抽哈根達斯買一送一",
    "reward": {
     "type": "gift",
     "value": null,
@@ -3341,11 +3449,11 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T03:29:59.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UYlQzS2xUWXFpSXBnQkJGMDhGRmlTaWlseUNhUGVKMUFBcDFONHhBMllEWk5GQkxXNUd6TDFreTlhRjFhTmF4SjhYTXXSAVJBVV95cUxOU1hUaVpBb21oZjgxX3BFem5QYUVLOXdCMnZwZ1MxTnhpYVZ6R2lMMzNhd0tMM0hmYjF6V1RvU2hJRHFIR0RmWW05dHYzMU80YmRR?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:54:12.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PenhxOU55TmE5bG9RZHpzSFZJSFBJQ3lZWDlKbHJRZURsdDkzZGFhMWpUQlZrQnlUclhKc05sRVpHZ1pra09JcFd6T3DSAVJBVV95cUxPcENNMFNWNl94QVRoYnhFbFc0VUE2TV9CUWxubUZfdmlqcHUzM01IbFBFcF84UDV3N3hRV2x6d1cxdUt6Uy05OE1rcWc4RkFWSW9R?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:1ujf8em",
@@ -3373,33 +3481,6 @@
    "url": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxNRU5OSW9SaUlYMDhBOGFGc0RYS0RDMmtDV1RKRkZPNGFVTzBtTWNSTUlqN2xJSEh6dFliQWVIUTRHUkJpaTlxOXpleXhNU3BBOG5odXNqSk4xeW5MVGlXd3RuSUFXaTdrckIzOGlld0NJTVRMcTN3el95T2R2SWtiMExQMnZyZ0NrYmVGMFFnWVp1UVFwblVXcVpabFpvTm5lQjB0S193V3N4alJUTUV6dXdtbXBjN3ZKZ0p4SjRTN2FmMFRRWHc0ZXQzZTdSNS1VVlVDYmhpWHhOOEtILWtFdVQtX01RVE1UdE1IN19QZGZNTnNpdHNzRm1rVmtfM3g1a3psMlhKQXUxS0lpUUNlcG53Q2pCQUZvd28wMm9SV2NTeUh6MEplTFp0YXF4Q1U1dk4zVWZrc2VsVWI4VHVObERpNnEwUjRSVjVad09LVU8zYU9zMmp6NnFRMmlmUnh4UUZkaXI2VkJ5R25PMERj?oc=5",
    "category": "旅遊住宿",
    "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:1uwnj58",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "雙11家電殺到2.4折！五機一體省2.3萬 洗乾組合不到2萬",
-   "reward": {
-    "type": "percent_off",
-    "value": 76,
-    "text": "2.4折"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "壹蘋新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T00:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZmRrX0x0bzZqOGxWQjRDY0pJc3JnZ2J4WkVXYnF4cUtiX1FaRXBqNVhqWlhLWkF6UVhEX2NCT0dZeW9ta01vUWlZYjd6RkliZ1A4UG5vQ0lWdmd4dm4zUHZzM3NQUkozc2thWFZVeDN3UXBWSlAyRDdQUlhMb3JhaWI4ZzM?oc=5",
-   "category": "3C家電",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:1vjdpme",
@@ -3645,11 +3726,11 @@
    "updatedAt": "2026-10-27T10:03:29.976Z"
   },
   {
-   "id": "news:1yobb0h",
+   "id": "news:1ytw3at",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "桃園新百貨「置地生活廣場小檜溪」今開幕！美食買1送1、交通地點",
+   "merchant": "7-11",
+   "title": "萬聖節咖啡買一送一！7-11美式拿鐵買7送7　全家單品拿鐵2杯95元",
    "reward": {
     "type": "gift",
     "value": null,
@@ -3665,38 +3746,11 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T02:22:04.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE81Njl0ZmU5MkkzdVZ3TnpJTlBGM3IwLVJOa09lU2QtN2Y1ZjFKUXdUblBlZS1HcTd0MEM5RzBKOFFFYWNWTHFNYllncljSAVJBVV95cUxPTXhUeXRrZzRoWWl2Yy1zNjJMTVVVQ1Rnanp4STlXMkp2aWJZN2Zyb2I3NDJ6Qy1TUUE0YURuTXVWMkFoZ2dDNWdkT0dKOTR2bVVR?oc=5",
-   "category": "百貨商場",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
-   "id": "news:1ytxqni",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "肯德基",
-   "title": "肯德基雞塊、薯條買1送1！111元個人餐限時1個月開吃　4大速食優惠請收",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "三立新聞網SETN.com",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T07:26:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBRdkxEWkxXX3RYRTF6Z3J6TXdYVG94UlVEYTlKaS1rcGNOemNqMjM4YWJmc2wyNGhKYlFLR2JnUjdsSUIxYnVvddIBTEFVX3lxTE13NjFXcEgwN2JyYkx0TVY0WkZSblRydG9oVmZoa3V1d3RPWHQwMF91VWVmQy11dWItNGpIVzh0azdVdlYxTFM0ajJtdEM?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-29T11:06:34.204Z"
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T01:55:06.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBDZHBkOVdPcHZqMnpVd0g0anZuRkpwM2FuU216VFhFdmc3dFhONXRBU2lycEt3QUlBYlpWUmpVaEY1TWJ0RlVpSU5oNEjSAVJBVV95cUxNMURkT3lGYTNhUXMwMEQ1SGNEMGE3am1jNm42eVBlLWRDcU5OaUl1dGpLU0U0ODVqUU5RS0F1Q1BHMWRWQi1VZmRDWGpqSVVIZW13?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:2eb9dw",
@@ -3807,6 +3861,33 @@
    "updatedAt": "2026-10-30T21:03:29.472Z"
   },
   {
+   "id": "news:2qnw83",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "高雄洲際酒店推雙波住房優惠 會員最低享7折",
+   "reward": {
+    "type": "percent_off",
+    "value": 30,
+    "text": "7折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Life 生活網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T07:57:31.000Z",
+   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPVUNnWVAxcWw4RTEwMk1qVnBlTTJHal9RX0FjS2M1cGRuN1pzRDljcDJKMkZWY3pySF9TS0Y4NTBfWU1PbmJqcXlOM3lqemZzMFBpVXlraEUzT2VyQUVBckZQNV90RjdSMVAwMElKaEZlSUZ6VVQxTld2UHFpMWV4OVlmQThVdm12cVE2QmFHNW03MWZwbHg3VUxDWk45aTJPOTAzbE9YTDFYU3ZRQm5INkwzUVF0R0hUSWlIdkFkNHJxRGZNV3BIYnhkcXJpRGRZR2lzVVg3ZlZHdWZnbEllTWVVY0lGTjdwLUFUejNpeTd4RDdBOHJ4T25pSGc1OGhNVXZIa0pnLWpCaFphM082RlNpRmYwZ3oxWGZWMXoxNDYxQkJoYjhiQm5zcEM1dw?oc=5",
+   "category": "其他",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:2ue8vw",
    "kind": "promo",
    "source": "news",
@@ -3832,6 +3913,33 @@
    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5tTWxFWGRKZEg3SlE5Z1RNeFdRQ3FBaFh0MTktc3NQbmJESlNjOEczWnNzeWlsXzVqRl81MmlJbGU1cWp5Y0VQNNIBTEFVX3lxTE0zUjVWSkwway1WNnZYR3dROVRKaWQ2dHFUMmFUREZOenh3QkdVV2FTd0tfcWJBTFVmYWw5alZlQjhWdlhUc3hCRklRcWk?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-30T11:01:54.892Z"
+  },
+  {
+   "id": "news:32wrou",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "萬聖節喝起來！超商咖啡買1送1 特大美式10杯360元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Yahoo新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-30T23:47:38.000Z",
+   "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQenhBeHVLMHQ3c1MtNnV5dHJjVFBmZWQ4a1AzNU5NTkltTmlwb2U0M0g5ODZDZF93dkFZSDlqb1pfSTkydGtSbFRjUkd1M05FRm9NNFltOWhvVldDZGx3bmhZOTdOOHF6Q2pjc3pXZ0s0RU9BN3A0ZDFBRWJibXFDenNVcjEzX0VCcW9EZF9SV3RlOUoyUm9sTkEyQS1CUXdQQzdQOU9DQW9uN01yRWdxa1g1X3UxdXM1ZXpsY0d6TFNzVGZqTTlUR0xIQkkyWU9LUmF0SUVULURCb3gzdEtFekdoc3pDYV9ZNGtIVVZJQWpZamNLOU9zY0lfaVhhUGlfUmVmby1BVzdsVHgtNUxKZ1J0dG5ENzZrU0h2bm50cUk3WlRzcENPR1dtdHRUZkZRWUVHWklCZw?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:3geh1i",
@@ -3861,6 +3969,33 @@
    "updatedAt": "2026-10-29T21:26:32.213Z"
   },
   {
+   "id": "news:3mvdzm",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "全家",
+   "title": "全家霜淇淋2026》口味查詢、買一送一日期、門市查詢及價格總整理",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "TVBS新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T07:30:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LXzYtS21iR0pxTUk1Y1RKcWtPT29wNHd2ZFZzWHpyamxZRUs1eTB2QUprSGN3Q2pCQUtKXzZmSUlpc25zc1JhZU9oZEUtQQ?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:3yisxt",
    "kind": "promo",
    "source": "news",
@@ -3888,60 +4023,6 @@
    "updatedAt": "2026-10-28T01:23:57.100Z"
   },
   {
-   "id": "news:4muepb",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "薔琵颱風「速食店招牌倒塌」是假的！AI圖瘋傳 警逮6人送辦",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "東森新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T08:50:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFByVEcyTkxhTW5LS3I1NkU5cnk1dFdzR1gxQmFJMmpPZ3RVWHllSGJ6UUNFakQxcDlPSU01ZEMzNDM3Umd2dXF3eXRJY2JZa0pFT3JZdnFn?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
-   "id": "news:4russl",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "全家",
-   "title": "全家「單品美式咖啡買1送1」10/27開賣，貝納頌咖啡買3送3同步開賣！",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "買一送一"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Cosmopolitan",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-07",
-   "publishedAt": "2026-10-30T17:53:39.000Z",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdFFSM05MZVh5bnpmaWh0QkczQXAxSmQ5ZkIyX3o0YzJjTlpiMHZPNGJDblNVRThKdjdQNjVCTTZfbkMyRTluVFdjRktybDdPcndWSkdLajhCMUQ4bDJIQzl5MFQwanp2WXluQkxjOGVhTlFycUZKbnAyeHNTaFgtU2FCaHgtWUNFNWtjSlN6d18?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
-  },
-  {
    "id": "news:4rwkkz",
    "kind": "promo",
    "source": "news",
@@ -3967,33 +4048,6 @@
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa1E1UUdUSlNucExBVy16Q3FseWVhQW50eXlkWTgySDdVVEwwVU9xUWFQblBSODFPbUx1bG5NcGJqaWxTdTR5QUF6NzBfMmgxVmhKMWJOV1EwZThDd1dQV1VqakJkc0swR3VaMUVYMlVSWFBGYlhobkR3ekl4YnVFN2JkYkx5VEtL?oc=5",
    "category": "旅遊住宿",
    "updatedAt": "2026-10-29T21:26:32.213Z"
-  },
-  {
-   "id": "news:4wxvb",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "全家",
-   "title": "「全家」邀始源即興開鍋！主題店和歐巴比愛心　滿額送「腹肌圍兜」誒噗快衝",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "鏡週刊Mirror Media",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T02:09:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5uZHFla2x5RzB1YjhDOEZ2ZG9waWZFNlA2UWNzN25PTkxEQ0ZNbDlkZmhpcXV1MXBVS1NaUDh3b1dEektMOE8zb2hJUVFvaEpmNHpNanFUZFFaOE1RMllfNWE4RXB0NjDSAWtBVV95cUxPOGhob240NGFUVmRCeHl6VXVyTkI3S1BrZGtxVXlPRXQ4X3NDZ3BNZGpXTEp1UE4wbjVGejBxdDc4dzZSbF8wMHhrQzg4ZTJuTjNQOXBKSUU0Z2VwZ0JRNExheGRSbll4d3Q1dw?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:4ygg11",
@@ -4050,6 +4104,33 @@
    "updatedAt": "2026-10-30T01:58:09.472Z"
   },
   {
+   "id": "news:56sf7w",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "UNIQLO",
+   "title": "雙11優惠2026｜UNIQLO 40款秋季人氣商品大減價＋APP會員燈芯絨褲 $149＋童裝單品$79起＋女裝薄外套$299",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "etnet 經濟通",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T09:40:30.000Z",
+   "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxQcXl1UHF2bUIyaWZ0Q05hMTJvanR3RlIyak80a1RqX0VaLWhNUU9MQkF6dWVFMnotMTR4MTZOeUtsQUhjUnBucHhFWWFYNEpmRHBUbmM3a0QxdUNMWjBiQ1FBNS1wZkFCLVdGZXZoYV85eVpOV2xib2JjSjgwUlNkOUZNQmZKT2pLdmJxNW4tLXFITE1hVy1Kcjl0OXZWWXVxZHZxc3h0YkVJc19ScGp1Y01aSDhHaHB5Q2ZHaEV6aEh0aGtWNVdiUFh5cEcxbW53V2QwUWhyTUsyWFFiajRIUTIxb2w3ZGFYOFUwWDF1N1RXLS0yc1JnQWZUVmxTemZaS1lrcTY3bm1ROTlCbVZFaHF4Y2tTY09mWXgxZFctcXpwSmY1MVBiZEF5cGxDbmRpdDFLZHNoYV9CanpxSl9aR2s1MXRuSncxVGlQY1N3V3dvZkJZN2tJOW5rLTBFWnN3bkNjdmVfS0ZUbjl2X0ktMjZNOXhwVVJRVGxHUERxODNsejJvZmE3bmJuYS12enhWaDRZVEFDdHRHaXpWOHUwTHk2b3FBd0ttd1NXcnN1dTRSeFowN0JOMDRPaWhHSnlDR3pfX3pCdEEwcndhSXdORkhpTmR6a2VLM2xfSDRUT3U3SjZGaWh3UE9jYWRsRWsyYzRPWWhaOEQxUzk2MHhLNEQ0bEhsTlFJY01Pdm9EcXJTTVRrRWJ1ZTJn?oc=5",
+   "category": "服飾配件",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:5i1bwu",
    "kind": "promo",
    "source": "news",
@@ -4104,15 +4185,15 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
-   "id": "news:5xb0lt",
+   "id": "news:5yss9f",
    "kind": "promo",
    "source": "news",
-   "merchant": "麥當勞",
-   "title": "19個光復連假優惠省錢吃！麥當勞送薯條、超商咖啡買一送一，炸雞披薩買5送5狂吃|美食",
+   "merchant": "台灣Pay",
+   "title": "三峽鶯歌商圈用台灣Pay 消費享20%回饋",
    "reward": {
     "type": "gift",
     "value": null,
-    "text": "買一送一"
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -4120,15 +4201,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "WalkerLand 窩客島",
+    "卡優新聞網",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T06:40:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1JOTJhVG5DTlNka3I4ZXhldncyT0s1cEl3aERyUi04NXprZ01PZWVSalVOakZWZEUwM0pSYTJLeXkxbWxpcFpxb0c1WnF0Q3A1TUJFWlFmUi02ZnNJM2c?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-24T09:07:49.735Z"
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T08:51:03.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JRG1wVmhzTUk5M1BGMW9ZUjR0QldxU2lpTU1TV0tSdnpieHl5cmhheTRxNEN5UDNWcEtiMFBBSUMzN1lSbThfSUo0a3dMTlJpUjdWQzZlOXVGdw?oc=5",
+   "category": "金融支付",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:62y5g0",
@@ -4183,6 +4264,33 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE82bm0ta0ZpSzIwenBKcFllUkJQMy1jbGVxM2Q2U3hrQUdJdEZYN0RSbkZKQlRaZHk1cmhITjBSczFUN0p2OHlCbngtNG93TW1kaEk4QzY4TVZoZ0RzaUp6aDN1TG9CRnFwTHhzUFl5UQ?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-31T01:36:23.000Z"
+  },
+  {
+   "id": "news:6eyt6k",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "100元運動券領取條件曝　全台都能拿",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "鏡週刊Mirror Media",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-01",
+   "publishedAt": "2026-10-25T03:01:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JVlFUdGF4cU5Lb3VZNlpMWTJscUpHMmJVSlZDYnNGXzJTYWJOTHdWY3UtR0U5LTFPd043MGZORVNWc2VfVFZQQWlYYjlQejJLWlVuX25rZzlKYUsw0gFiQVVfeXFMUEtUemdrV2lMbGt6d01KNko3RHo5SHBGQm9hZTF6UlpjS3c5SUtiZi1wN0dvUHU4SU94eW9kR1JFRklST2UwQWFtcEh3M1o5VUxsNzltUEdCNmUwMnJsemJBZWc?oc=5",
+   "category": "運動戶外",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:6i9u2n",
@@ -4320,33 +4428,6 @@
    "updatedAt": "2026-10-30T01:58:09.472Z"
   },
   {
-   "id": "news:7qulie",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "新光三越",
-   "title": "新光三越台南中山店10/31熄燈！直擊現場空蕩蕩　全館1折起大出清",
-   "reward": {
-    "type": "percent_off",
-    "value": 90,
-    "text": "1折起"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "NOWnews今日新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T07:05:22.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1RUGhQOGxDaUFONUkyRFhqQ3RvVzkxSnF5czBkQUo4ei1wbUtXaU9KYjFBa3ZaaTdMMnI4SWl2UjE5NFBWa25sRnhiY3PSAVJBVV95cUxOUDg5ODNaZGlndFkzZ3hvSFh6cXdDY2lLSXhycXN3SnQ2UGM0alB5ZmtpLUJTdlRSWGE2c01YTTFWclVGaFIwTVNlcHBfTHc5UkJn?oc=5",
-   "category": "百貨商場",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:7t6ejj",
    "kind": "promo",
    "source": "news",
@@ -4399,33 +4480,6 @@
    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1TdHRPQ2RxdXlNNlRRU19iUVFFNFo3RFNVY0t1NkliN0gxem1SdWpDNzROSFYwY0RIbkdTUTh1U0E1ZVY3M1dmWGJXaEQ4bE9ITEVJ?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:8ba2rr",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "7-11",
-   "title": "7-11咖啡優惠「11款咖啡、茶飲優惠組合」10/22快閃10天，最高現省500元！",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Cosmopolitan",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T07:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbndOME1yaWxvRkctbjFhNV91SlNsWG84NlNlZUZoQmlBOE44UEVLcEpDcFc2aXQ0dUNvdEw4c0ViVDFScU1lT01ZSjV6V0VDU2tBZnJuUDdwQlZJelM1dWNnVEJoR1BsT1VZM0JQUDhBZlhpTnRoc3dwXzd2VTZvSnNtV09HWTJEOE5HbA?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-29T21:26:32.213Z"
   },
   {
    "id": "news:8gvjrn",
@@ -4509,6 +4563,33 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
+   "id": "news:8xkoxk",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "小人國11月門票下殺299元！身分證開頭對中3字母就能省雙11優惠一次看- 娛樂新聞",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "PChome Online 新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T03:10:03.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdXFSdlI3TW1PYVJFMWlmRExJLU5ydzRrX1Q0SWYycHFNYS1oM0l0cGVOcDBaT2duSzdVdjVTY3Z4TXV2dTBsSzQwY1FsV2FzYjAtWjdrSHE0dGttVnpkU3BkVzh6ODdGREx6TllYWlNPQTBnZEcwTWFvaTM0UVM2QU9WOXFiZzF0MXc0V1VlWGY?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:9bamfa",
    "kind": "promo",
    "source": "news",
@@ -4590,6 +4671,33 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
+   "id": "news:a0tbzp",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "7-11",
+   "title": "全家拿鐵25元「只有5天」！可寄杯買一送一　7-11美式拿鐵買2送2",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "NOWnews今日新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T02:00:51.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aN00ta1lWZHBueGJ3X2F6aVVpVGxUSmdrbjd4a21waU1EbFhfTDRTY2NKSnpJZ2NXMlJsamFYbkZ0WDNfWFFULTE1c2HSAVJBVV95cUxNdm1xVEhDRjVTeGN6Y2RNVjd1RVBBRG4yVGdLSWFiZEJ6ZTEwcjhPc0RQOFhiR3ZROXVxb2ZpZ1NyUFIyVmpDcTBmWmJPRjRiR0Fn?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:a281ea",
    "kind": "promo",
    "source": "news",
@@ -4644,15 +4752,15 @@
    "updatedAt": "2026-10-29T01:49:03.412Z"
   },
   {
-   "id": "news:a8z9mg",
+   "id": "news:a8gp56",
    "kind": "promo",
    "source": "news",
-   "merchant": "肯德基",
-   "title": "肯德基個人餐111元　雙11優惠明開跑「點心買1送1」",
+   "merchant": "優惠情報",
+   "title": "廢行動電源別亂丟！北市攜手3C通路推回收優惠 3顆可換50元商品卡",
    "reward": {
     "type": "gift",
     "value": null,
-    "text": "買一送一"
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -4660,15 +4768,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "ETtoday新聞雲",
+    "自由時報",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-26T03:12:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zeDJyWFVHaGxSVFF2cy03TGlLVUZqRWMyS2x6eEF5NThlLW5mMldWcDltcks0SEh1Y3JmSnBKbjFHUUt0MU5wOVNGTkE2dmdaUEVacTlhd0VFVVNoOFHSAUtBVV95cUxPV0dYd2QxellSb3FXV01rM3E2Y1RVVDZNT1IxS1VuQUVOMkdvZHNGbzJTYVRKREluV1BsdmVIdDZ5Mmh5U2JXQUprQ0E?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-28T03:14:38.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9RLTJMZHI0a3dHdUJtekZYNnFZYjRzUklDTF9RQlAyOE45NkItUHVWUUNnMVZaR2FtRkREWlgzSmdzejhOVkV3eXd5NkRaaXNtT1hESlZUMTdrdk8wQWRGLXBJVS3SAWpBVV95cUxON2hzV0ZJZlFzU09QZzFPbGw1aXN1aHRmVVlaZGtCeUQ1UWwwOTJ2MkEyV1BhRDg1c1hYMDlqRkJFelg3YXVrdEMyUFJwM3JCZWdZYWE0ck9ucXlRQW81V2ZPQWhQN3U1TndB?oc=5",
+   "category": "3C家電",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:a9x6x1",
@@ -4698,32 +4806,6 @@
    "updatedAt": "2026-10-27T10:03:29.976Z"
   },
   {
-   "id": "news:aape0x",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "台中物調券10/31前進23家產業故事館！ 限量6,900份100元換200元 消費再享加碼優惠",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "蕃新聞"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-29T04:08:18.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NYmdkVTV5UEN1NW9Ibld3UGVHRjhrYndrSWVLamhkcFBfMFJsM18zM0NTd2xTSF9FdTBXX2JaN01wODl5NnZxRjNZY2pGSDhYd1E?oc=5",
-   "category": "其他",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:acc2wp",
    "kind": "promo",
    "source": "news",
@@ -4751,15 +4833,15 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
-   "id": "news:afitmu",
+   "id": "news:alpef3",
    "kind": "promo",
    "source": "news",
    "merchant": "優惠情報",
-   "title": "恭喜！味全龍勇奪中職2026年度總冠軍！超商買一送一、家電最高5,000元優惠",
+   "title": "寄杯超省！超商咖啡買10送10 還有加10元多一杯",
    "reward": {
     "type": "gift",
     "value": null,
-    "text": "買一送一"
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -4767,15 +4849,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "Life 生活網",
+    "中天新聞網",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-26T14:16:56.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxNUE9fQmtoSkRoWlZjQjJkZlE0MGFzN195Qm5WZUFGQkdrZVJCbkNvMlpwYjdPb1NQcTJBaTIxdU5rMkppZVRZSGUzSTlLRnA2WG1SVV9wSDhIZ2ZXcE9WTldGOWtWODdsMURxSGxOMVFXQTBIM3ZMUGhjZGNpb1ZLdmZiU1B2cEQ5VDJ4VzFmNnVvdWNScTVjRnlhd0wwVElZR2Eza0R3S0R2WHlhUkpvdm4xM2pkYk5pdWF3SEo4akpja1JoUmZzX2YxcHV6UUFuakk3Tng1a3lBQWRrMXpoT1BqY1Q4Sk5GR1ZTZXZJdUZSc1pRZ0FtVGFWa0pkOGh6Snh6OUpoZFdIMzNsTEUyUC1WbndRNUs0dF9DTHJEMjM3dHVXM1JlSnVuQ2NsVWdjbUlFZzVuU1Y4RWtobWxrcHI1V0NRbWR1S3pPWHBqV2R2TFJfcWZEbXhYelk5c3JSTUIxWQ?oc=5",
+   "endAt": "2026-11-04",
+   "publishedAt": "2026-10-27T23:52:13.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KTGVGUEl3WERGdHdISUItTl9fUDlfS0ZNcEt0RnBHRDhRenhzVUMzOEQxd242MnNrSnBxSGNXWDhWU3VNOFRHUGVGNE9PVnhrTHI0?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:arn09l",
@@ -4826,10 +4908,10 @@
    ],
    "startAt": null,
    "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T15:32:44.000Z",
+   "publishedAt": "2026-10-29T11:13:19.000Z",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VbG1wdkRjTHdsT2VaM3loSHhJeHpFS3ZHMS1hS3Raa0w4SWFENEhSYVJaYW1qemRJZTVFZXM1SzV1Q2xPSUpDU3NSUUcwMTF0LUZJdEpVN2Mxazhs?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:b7qfpo",
@@ -4940,6 +5022,60 @@
    "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
+   "id": "news:c31pbe",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "台灣知名百貨公司宣布熄燈！「出清特賣1折起」經營30年退場， 台茂接手蓋新商場飯店",
+   "reward": {
+    "type": "percent_off",
+    "value": 90,
+    "text": "1折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "風傳媒",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T06:15:35.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0xS2hMUGx1Z2k0STNwcHBrdmdtblVlNEQwUmkwRkRUSHkyZ1NoeW9wTS1KLUJ6YXZnTWsycUFrQWd2YkljTThBZ3lFeDhpZw?oc=5",
+   "category": "百貨商場",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:c9rv8u",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "超商周末咖啡「買1送1」　萬聖節限時優惠一次看",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "ETtoday新聞雲",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:35:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14MlhnVUYxaURMQWV5TzFPU2JJMWdVNWU5YzA4UDh0endJRlNsaHBlNTFDNV82TWRIT2p5ZldzbjlGWlctaEJNYm9KX0lkVFRFUG03dE5yaUdBREF2QnfSAUtBVV95cUxOZVFRVDFqWTJfZnM5MXhYeEZpZDBFWG9GMVVnMmxKVGFxMlNPNXZpVmZLVUt2V0NzaDl4Y09md3FHcDhnRGNTdUdGXzA?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:cqkzc5",
    "kind": "promo",
    "source": "news",
@@ -4965,6 +5101,33 @@
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9tckFwZEZla2NRclg4Wk51UkhqdmRnbmVIR1YxeElTN1FuT3pJc1BJRVZwOEpOc0hZVE5iUXNBUG5XQ3dBME1oWndVdk9kXzRB?oc=5",
    "category": "其他",
    "updatedAt": "2026-10-29T11:06:34.204Z"
+  },
+  {
+   "id": "news:cxujcq",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "CoCo",
+   "title": "手搖飲萬聖節優惠　TEA TOP免費加料、CoCo買1送1",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "ETtoday旅遊雲",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T02:41:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44NlhpMGh3TEpLdW9ob0MtcmxSMFNvNWozbHB5b2hDMi0yaWRjSjlxUVZ2bzNUYm5SdF9WNENjNXV4d0wxbkZBZ0FXaXBQR21ZeXJxWmtYSGJhQdIBT0FVX3lxTE03RGdQUk92by1PNG5uYlhtNkdPTkdSOER1alp5bFFtNGU1QURTT3huWmxURzdDNTVWWUstbDhWVUtEMm5SZGFnVzBiRVJyLTA?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:czvl1g",
@@ -4994,6 +5157,32 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
+   "id": "news:dd9sfa",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "台中物調券10/31前進23家產業故事館！ 限量6,900份100元換200元 消費再享加碼優惠",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "墨新聞-MORE News"
+   ],
+   "startAt": null,
+   "endAt": "2026-10-31",
+   "publishedAt": "2026-10-29T04:08:18.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9xMFE3TnptbjRWMEZnRmZQbVAyUll5WHBUYTVzNERIOFU2SEVTQ3J3RFZnNW5qdlJqeU1PNklqcTM1dw?oc=5",
+   "category": "其他",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:df5e03",
    "kind": "promo",
    "source": "news",
@@ -5019,33 +5208,6 @@
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaGNEYlBGTDlMajIxOE00MFZ3dTJDWGdPaVVxX2pxNXJXd2laREdEaHdHOEhyZFNwUUVQaDVGLUdMa2pxZF80aFBDeEUyYzBsZE9HNF94UHl5WHJPSzBXbi1ZU2VXbnNXbmpfaWQ2b3JwdU5oVU9rdmYyN1VoN1NiZ19XY2FmbWhUbHhRMGxCcnhhYVh0bHMyUm93LWpPTnpjWWQzNEQyS3o1ZDBVZm5sdVRfaXk2ME0tSjVEc1FOaEcxaG5SNmpWbkJNTUJDNTdseFpRSWswcllNcW1J?oc=5",
    "category": "3C家電",
    "updatedAt": "2026-10-29T11:06:34.204Z"
-  },
-  {
-   "id": "news:dlbbis",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "美廉社",
-   "title": "美廉社20週年慶！APP、門市祭優惠，多款商品20%OFF",
-   "reward": {
-    "type": "percent_off",
-    "value": 20,
-    "text": "20% off"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "卡優新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T07:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qR1RhbEJZZk9oVkpZalE1cWpGZTJCeHIzSXBxM21TcG1CM016dWEtOEJNSWthN01CMmg3SUUwYUxoTUU1NWYwc2lUcERRWW50alVYSldydFdXRFRQ?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:dslt9o",
@@ -5075,6 +5237,33 @@
    "updatedAt": "2026-10-25T09:25:18.008Z"
   },
   {
+   "id": "news:duvz7v",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "全聯",
+   "title": "萬聖節全聯買一送一！巧克力、辛拉麵半價　廚房紙巾125元⭢63元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "NOWnews今日新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:04:55.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ZRy14bmdOVXp0azAxc0hyUVo1TjlseWRGdHRKTEE0WTI0Rk5xejNJOExqZjlhcFd4RVpRdkREb1VKZFNydm5VX3lXMUfSAVJBVV95cUxQSnNHSVRJeUtRS2djcmN5dlFIVjNuZEhnSmQ4Z3ZoeTJDc19tNHRvbjh6aE9Rc3ROcHJtck5hYnY3YmtTMGZLUnRPcWdfOHVUZGpn?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:e5vzl6",
    "kind": "promo",
    "source": "news",
@@ -5100,33 +5289,6 @@
    "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxON2dHNlZDS01aNDY5MG9zSVpoNzRSS2xYeDNTbmNUXzFTdl9ZSGlPN2N2V3c0akcwakNvbDZNRmkzOHFPenRwT1FkUDcxYnhDcVl4Vk44VkNQR3g0UWRxV1puNnZ2YkpDMVBzWmczWFBaaWVQcTdKMjFTc1llN3NRTUNDQlFTX3VlM19KMG9UdHU0anVaZHZPTXp0NU9jOFhGNmZiR0hiYjZyU29tZXl6ajg3U056WlJXZXNNWGRWVzl4S1FoUHd5eFJsRjlJSUdCdXBxOUdtQkVZTzFBaUdpUlpSLVVuT3o1ZzJQN1hKY3ZOamVVc3hGMzFPRXA2OXNCcTNFVV9weS1NbHZrQlNqaVh4TjBCdmRzXzhHcFRDMXl4RDhJQThqcWhzVzVkQmNtcUZkOE9YNEg2cVRsNzlBT1N5RXZwT01OaVVnbkxfN29MQktiN0J5WVgxekJLSmlDdmxZTU82Uy0zUGNocFNyUThULS1QekZHS1lsZmxSWHJ5c3ZPZkY2dzdaNnlsdDJrc1c1MjMwa1dZZ21CQ256bjNvRjdMbHl3VVVJMVAzTE56YUhmOGZV?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
-   "id": "news:e7tyxa",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "ITF台灣國際旅展11/6登場！現場買吃到飽券5折　2方式拿免費門票",
-   "reward": {
-    "type": "percent_off",
-    "value": 50,
-    "text": "5折"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "NOWnews今日新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T01:23:18.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1najVGR2gtZ05NcEV3dmdIUnQyc3ZRcjJYdHYxV1BQQndtN3ZGVzdKazVJUGVBX2l6YW9NUG5aY1hpUnhHVmFYdEZjZjI1enBvamfSAVJBVV95cUxNZ2o1RkdoLWdOTXBFd3ZnSFJ0MnN2UXIyWHR2MVdQUEJ3bTd2Rlc3Sms1SVBlQV9pemFvTVBuWmNYaVJ4R1ZhWHRGY2YyNXpwb2pn?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-28T10:50:12.309Z"
   },
   {
    "id": "news:eb0bx6",
@@ -5156,33 +5318,6 @@
    "updatedAt": "2026-10-29T11:06:34.204Z"
   },
   {
-   "id": "news:ez3sg3",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "7-ELEVEN",
-   "title": "7-ELEVEN「咖啡買2送2」6款咖啡優惠10/28起快閃4天！美式、拿鐵、椰香冠軍拿鐵全都有！",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Cosmopolitan",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-07",
-   "publishedAt": "2026-10-30T22:24:17.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaHZseHZteUk1ejF3T3NOdFVYREV4QmpHX1BIUEJmQXk1aWdWTldjeC04VDJxbVExb291a0xUT2FnWkVaMGZfWVpaaFpFWEpfRTJkaWhhQjlsUUFSSlpiMGtsNDVRWjNIUHg1UlVSblo4NmpDVzJwQ0puVnFtZlNNMFZXRjZ6R29zUURTSw?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:f3b9uu",
    "kind": "promo",
    "source": "news",
@@ -5210,6 +5345,33 @@
    "updatedAt": "2026-10-28T21:20:36.902Z"
   },
   {
+   "id": "news:fk3la",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "萬聖變裝免費逛壽山動物園！兩大共學空間亮相 親子探索自然添新據點",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "蕃新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:00:11.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DVmdfcllSZjJkY1VxRXZ6S2hZcGQtS1Z5QW5HbnBmbXdNbG14TDFFNlppOHpub3hlZ2w4N0lrQ3VSMzRpbEtNWXJPSll5QXd6WkE?oc=5",
+   "category": "親子寵物",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:fnf5w7",
    "kind": "promo",
    "source": "news",
@@ -5235,33 +5397,6 @@
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9NNndyczFoS0hGUkJMVFBwcEJTQXJaQlZzN0hGMXB5NXVxUGJMbzRhLVUtN0RvWkY3Y3JtVVE2LTRLSDJDY0EyS19hRkhpMmhNX0lpMjlLSGI?oc=5",
    "category": "娛樂影音",
    "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:fntfvq",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "麥當勞",
-   "title": "溫娣漢堡將推出免費 RPG 遊戲《WendyQuest》紅髮女孩化身勇者 敵人還疑似在偷臭麥當勞",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "Paradaily",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T07:34:36.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jYnR4Q3FKOHFhXzlzekVUVnM1MGI0eVNsUko0Vkh0Mk5ZYmQwNVlTTmE3eEhkU0dZSG9yWWRzaHB6a3RVeVcyMTlWUGV6eHp1ZVlrM1laV2I2Sy14M2Vz?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:fpy46",
@@ -5419,11 +5554,11 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T05:04:00.000Z",
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T02:49:00.000Z",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5NZU1pOUxXeHg1ZEEzRVFlU1hKRVZoSFhzYWlnU1hVLXRaMUtzZGRsUEZxUmpvbS0wd3J2bDB1a2h4VDZ1cWMtUTBFM0RjQQ?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-27T10:03:29.976Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:gvm9mu",
@@ -5451,6 +5586,33 @@
    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhUmxpV01XRFNhU1pSemJCcHdObk44djV2eFh2YnVoQkVXRVlGdHkwMXBNSkpyVHBRS1pydEY4enBkYTlHZzNGTEtBRndyT21KdE5XakxxeGFXV3RESWfSAUtBVV95cUxPWXQ3bDNIbHZ2OFlLYUV4SENudlA0NUhQN0Q0QnRST2s2Nk5hYVJLWktwVFh4Tk84Q2ZJSjdVMXd5a1A0d3NQTzhGaFU?oc=5",
    "category": "超商量販",
    "updatedAt": "2026-10-30T01:58:09.472Z"
+  },
+  {
+   "id": "news:h1w4kj",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "ITF旅展倒數10天！飯店餐券砍半價、泡湯住宿優惠一次看",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "第二件優惠"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Yahoo新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T04:19:30.000Z",
+   "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOYXAzZUJkbHJIWlBwa0k4aFZKZDJqMGkxcUpDQnY2NHRsa3h1RGIzYUQzdXYzaVcwajFXUllPWVFYRmZDeWtZSmJNTzd2X211SEE0MmhxM2ptckFDcGhWRVU0REQwN3p1cllvbldoVXkzdzZlQ09VNnE4VUVfUk9OeU13elp3YmNTUWFQWFhOUUdkUTQ4dy05d0NISm4zeENGMXZNUDBWd2Y1eFI3VjBtdjg5SXdHYkh4aGVTWUs4NXdCR2V2UlY5czZ1QXlIZ1pDUS1vaE5RWmlJNnFpOWlld1lUXy1rdm9mNUJOSUV3dnFzU3d1OVpyUTJoUXhLd1lEMlpWalVPMmNwcWNQV1Vfc1NSazN3XzNEYXp6bjRUc0VXODZCZXBSS002MmRXYXJfM21LUUEtVUNMOVFnUGM2Q056NmpMdEpjTkxRZzhn?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:h812vx",
@@ -5505,6 +5667,33 @@
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE44ZFV0OThINUdLbkcxYTR4S1h0ZUc2VVo2V2RoUVhMbU1FMVljX25qQXRETUxBNDJERDRaOUxxYllhYW0yWkRlMFNjTGU5eDhRSHfSAVJBVV95cUxOOGRVdDk4SDVHS25HMWE0eEtYdGVHNlVaNldkaFFYTG1NRTFZY19uakF0RE1MQTQyREQ0WjlMcWJZYWFtMlpEZTBTY0xlOXg4UUh3?oc=5",
    "category": "旅遊住宿",
    "updatedAt": "2026-10-30T21:03:29.472Z"
+  },
+  {
+   "id": "news:hawl0t",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "2026地價稅／合庫祭優惠 台灣 Pay、卡友最高回饋200元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "UDN",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:43:25.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JLW44d05tcVltaE9LdnRBWEpRWU9DeDBDSGNsanZlTzhpaFJFVFpra3hhU1EtUGFUTWFrWWZSTnlJUmJHMzUxWFUtRmlJeXRf0gFWQVVfeXFMUDVtMzFQSHp3RWk0M1BCN2xhcW1zZ3NnTk12UXV5c0pTSVV4Y3laQjBIWjEwTmxhNlV3Q2dKYUNxeHZQRHVjODlySm9RbDEtQ0pBeDd2YlE?oc=5",
+   "category": "其他",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:hfkuh0",
@@ -5615,6 +5804,32 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
+   "id": "news:j6zc32",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "Klook",
+   "title": "Klook旅展10/30至11/13！全站最高折1111元、環球影城買一送一與抽獎時程",
+   "reward": {
+    "type": "amount",
+    "value": 1111,
+    "text": "折 $1111"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "輕旅行"
+   ],
+   "startAt": "2026-10-30",
+   "endAt": "2026-11-13",
+   "publishedAt": "2026-10-30T08:11:11.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5BVldpT3VSWVQzZnd0SGdBXzl5bXRVOVBEYXhlekZJMEFhR2EtYm5lQm04OTM3VWgwbmtEMFNxeHk3TWdfNXRmdm5PZmNjZw?oc=5",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:jbfjrj",
    "kind": "promo",
    "source": "news",
@@ -5640,6 +5855,33 @@
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqa1ZIa1ZRTmFDdmhkamZmMk5ESWVudF9BV0NMVks0cVhpZy1KQVU3ejNYaXZSRGhsZnlkOHBqdEl2QVlQZXRzcnhIMEFfNFlD?oc=5",
    "category": "藥妝美妝",
    "updatedAt": "2026-10-30T01:58:09.472Z"
+  },
+  {
+   "id": "news:jeb8dg",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "7-ELEVEN",
+   "title": "7-ELEVEN「咖啡買7送7」11/1限時3天開賣，飲品每週一2杯99元、每週二買2送2一次看！",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Cosmopolitan",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-06",
+   "publishedAt": "2026-10-30T03:46:56.000Z",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZHRNb0EtQkd4Q0l1VFNSNlJ5aUN0bFhLWl9NWFh0cjN2RVRiUHZJY3MwVmFZM01qazJTLWpLN05RLXo0VW5GSVBmaUVlcTRNUmZubjlMNTEwR3UzdHdEVjRybjdza0dRanNTOGM5WnhuWDJNVXlXX3VvMy13blNoSUI5Zw?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:jelhuf",
@@ -5669,6 +5911,33 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
+   "id": "news:jk5znv",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "2026Q4週年慶加碼實體信用卡 週六日消費最高6%活動",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "全聯",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:35:08.000Z",
+   "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNZW8tdmE4OUJRUmxrb054U25mSFBISEEtN2dfT2cyeEZUNUFSUzVtVFh1UHdNRU9DUHdBRTFSdWxPWldFT2p0N3c3UWlnM3otZmoyYkVYcmtFd0xiRWktZUxQcTFJNVEtLXJBTE1zcW5vSlIxTFRZd0s5WDlLRHh1b2txSlBGWW9wV0tBTG03U2hCaHNXVGt2QlpYcDVTQnZYX0U4Ul9YRmFwYUhTeEdoSkVDU2JOMG4wdk0tZ0VReHNIaTNCYVNOS0xDazhMaDZlcFo3QU5UcS1KZDd3QjNlT19id1J4RTJRcnZfUEl2a2tSSTF5SFByaG56dnFvTDRIRW5RVlBTRE10NjZNeGloUXpMeWQyRjRVVUdWWVVtdjdsazF0V0VLdzgwRkxJQXE2X2pJMHN4TEtkNzZYZ3d5TWRXNTQ2OEJBUVEtZVJJRQ?oc=5",
+   "category": "百貨商場",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:jnyinj",
    "kind": "promo",
    "source": "news",
@@ -5696,33 +5965,6 @@
    "updatedAt": "2026-10-27T16:02:13.280Z"
   },
   {
-   "id": "news:jyt50i",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "舊行動電源別丟！3C店家回收「賺超商卡」60間門市限時３天兌換，最高折500元",
-   "reward": {
-    "type": "amount",
-    "value": 500,
-    "text": "折 $500"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "食尚玩家",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T00:31:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83X2VqUVB4YkxrbFlyMXl0bHNrU0IxSVhiUHNtUEhZbUhSTFgxci04RTBoc0M5WUU1SE1jT2dycEJ5czNKaVZ0NGpEZVR1eE1uRXdlRm1aMFFsY1RJaFJqLXVRQdIBY0FVX3lxTE83X2VqUVB4YkxrbFlyMXl0bHNrU0IxSVhiUHNtUEhZbUhSTFgxci04RTBoc0M5WUU1SE1jT2dycEJ5czNKaVZ0NGpEZVR1eE1uRXdlRm1aMFFsY1RJaFJqLXVRQQ?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
    "id": "news:k46fmr",
    "kind": "promo",
    "source": "news",
@@ -5748,33 +5990,6 @@
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1NQm82Sm45MFV3U1d6dWM5enVmcWlfQ2c1QXBwN004R1NOZkxWYXhBYVhDMUYzQ05QNW1ZNE1ZVXJwX0VRRGZlczVhYkhFdw?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-27T10:03:29.976Z"
-  },
-  {
-   "id": "news:kcc2x7",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "台灣大哥大",
-   "title": "台灣大哥大雙11串聯五大通路送優惠！momo最高回饋11%、旅展現折8%",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "TVBS新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T08:07:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQRWg1MDFHTTdvMXFfQnJXWHFSZU5GWldmZWVvbDZMQ2F4OXZ3dkhmdXJ5ZGh1U3RVMUItOGNyVmtKUTA3eENDZUk0TmYyZw?oc=5",
-   "category": "生活服務",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
    "id": "news:keqwic",
@@ -5885,6 +6100,33 @@
    "updatedAt": "2026-10-31T01:36:23.000Z"
   },
   {
+   "id": "news:l0whi3",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "華南",
+   "title": "華南卡繳納地價稅 享免手續費再贈50元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "卡優新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T04:31:26.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBGdGFTbXFSUVF6eEEzZmtOLUt1RzMtcWJNdmxaVmdKUDdnY1MwT0hzZjFEYVRaUlFjeVdKc1hyQ1VYTjMxUUUxT0trZzhlUUhPTi1fc2ZacDF1SmozX0E?oc=5",
+   "category": "金融支付",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:l9qd2p",
    "kind": "promo",
    "source": "news",
@@ -5910,33 +6152,6 @@
    "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOMGxpc1l6SHdyRU1HX3BPejFFWldMVGpKMnNmaWhCTW8tQm1zWm5CWnJYZFRXTy1fckg5QmlwOGtWNHlDMTUzWmVyMUduYkpDQkV0UVJEQmdqUFhPNmgzbFJJaWdDenoybDhjVkFNWThSOGl1VHNMMkxRZDJ2OHhoT1pvM282UVVtRXl2Tmx1emN4akJlQnhNRElxWXpWNVVLSjgzMkM5Q1h2a0ZTTE5iZ3hqZUhac3A0dmdHbGxPWER1czRNdUE0YlhjMF8wdEQxNHZuaGtyVEVWYTlHNTF3ZXRUSlFvVFotWjJ0dXEzVmdaaGhqeXAyd1hhNjJGc1pMRlU5TVh6b3dyTWk0aHR4LVpXd0JWOFZXc0psdS03dTc5RHpHWnp2UVI5bkNVTzdYMWdOd1dR?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-30T01:58:09.472Z"
-  },
-  {
-   "id": "news:lf1wng",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "全聯",
-   "title": "全聯週末下殺！15元奇異果、39元蘋果 限時3天快搶",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "TVBS新聞網",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-10-31",
-   "publishedAt": "2026-10-24T06:08:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE91WWFUS2J6Um5hRlZZc0FVdE5CWWsyYVQwX2lxLUhuSkY1cEJMNHZqWnNoQ3JzYVMtem5qbzMzbFU2MGFUelNPaGJNejF2QQ?oc=5",
-   "category": "超商量販",
-   "updatedAt": "2026-10-24T09:07:49.735Z"
   },
   {
    "id": "news:lhish7",
@@ -6020,15 +6235,15 @@
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
-   "id": "news:lpn6hf",
+   "id": "news:m33218",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "味全龍奪冠！甜點買1送1、吃火鍋免費送肉　近百間店家「封王優惠一次看」",
+   "merchant": "台灣大哥大",
+   "title": "台灣大哥大雙11串聯五大通路送優惠！momo最高回饋11%、旅展現折8%",
    "reward": {
     "type": "gift",
     "value": null,
-    "text": "買一送一"
+    "text": "優惠活動"
    },
    "minSpend": null,
    "code": null,
@@ -6036,15 +6251,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "鏡週刊Mirror Media",
+    "TVBS",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-02",
-   "publishedAt": "2026-10-26T15:02:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tQmdaUEFMMmZaRlVST0pMMHZyd3drWFVXTkFXbTVvZ1BVWjRZQi01NW9uZ0dMdGFDOUtUOWZiZ0FubkJwR2REdTVMR3dFVVU0UnNCRGQ0NXhIbFXSAWBBVV95cUxORGpTVEVkZzlUS0lOeC1ONWVoY3N3MFhoZUgyVjNfT1FIV2JhSF9UaG9POVl4LUpTSmJCOERYYzhoNUdCMGEzel9GcTRWajM2Rm9SUm5iOGNreGJ1bWdiWks?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-27T10:03:29.976Z"
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T08:07:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5xTV9TN2hfdHlFUVNqLVh1THl5Qmc5T294ZlFxWHVkSTR0andpemhlVHVISzFaQ0E3ZWxsdEdDRkVfRE5Na3h5RzhCdU5VQQ?oc=5",
+   "category": "生活服務",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:mah1k1",
@@ -6072,6 +6287,33 @@
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZVVJBXy0xVjVXZGhjaFozQlNvMUhHZzdMeE1PNlJMMV8xZDZGaU82VXI1ZzlIN1ZUdFdHSWZua0ZoR0hjeG5neXdmeFlrWlp1dTd2dkZUTW1TQQ?oc=5",
    "category": "其他",
    "updatedAt": "2026-10-28T10:50:12.309Z"
+  },
+  {
+   "id": "news:mijfq7",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "舊行動電源別丟！3C店家回收「賺超商卡」60間門市限時７天兌換，最高折500元",
+   "reward": {
+    "type": "amount",
+    "value": 500,
+    "text": "折 $500"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "食尚玩家",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T00:31:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5kYnl5Rm9nLWlFQXRTaWI0TGRMenA0Nlc1bTNDMU9BekVhSktYX2xmbHBwV1M4VTRpYTJTY1doWGQ3NnRSaXRqQnhSdS1MMWtGd0cw?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:mja9p2",
@@ -6121,11 +6363,38 @@
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T02:47:02.000Z",
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T00:42:08.000Z",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE92WkhPd2RSUXJRTnFGdE1HY2c5bDYzdEt4dDh1bGR4MTNqLVZpUWxseXBiYmN4VVBBRnpMZjMxRDdNSnJibnZFVXNfUkh3d294Ykt1R1hvcHkwQVdT?oc=5",
    "category": "旅遊住宿",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:n9e9ti",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "momo",
+   "title": "momo 雙11購物節11月1日開跑推出限定周邊及應援活動滿999元可加購彩色閱讀器最高回饋15,555 mo點登記消費還有機會抽汽車",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": 999,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "台灣民眾電子報",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T03:10:15.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE10M0lZV3dEd0VET202Q2hNT1BfakxIcnpuXzgxWEstdDRfODJLX0lKSkRoT1cwYVBmOEZnUVNGeTlhQXBBa2hfNg?oc=5",
+   "category": "綜合電商",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:o8oqnt",
@@ -6207,6 +6476,33 @@
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9zenBWTElhUVVRVkdqQ3hNa08zZWpNZWd1TU1xVjkxR3NFQ0JMMHBfT2I2c0ItTGREdWt1TUR0dktSYndiNVFHdG5KT3ZYdw?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-31T01:36:23.000Z"
+  },
+  {
+   "id": "news:oqch7q",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "奇趣天地分店結業大清貨全場玩具文具精品低至7折被爆離場內情商場全面封閉2年！？附優惠詳情",
+   "reward": {
+    "type": "percent_off",
+    "value": 30,
+    "text": "7折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Sundaykiss",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:02:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQTUJ1eE83YWhPVF9OVkM2bmFielI4RWZCdm1sRHNabzR4NGpURFFEbTgwc1FJQ0xHUG8yam9GQmRqZFUyV2hydDJ0MjYyNE9ZRnlhcTB6OUY3ZTE2YWNKVHAtc1Z5eE5UOFl4U3IzMkJ3eGwzLXRFTHBtaXpBSkdXN2NaS2NiWVlQVU1CWl9QOUVFZVdHc0x6WkZpUS1BQWJmaUF1Zzc3LUpHYTg3c185QU1jR1VDQk9vOENaSnQwel9VTmt2S3NXUVpreWFrZWJhU3lKRzh5TGxZTExoeUdSTFMweEw4dU0tZzBROUdaV0Nxd1ZEaGR1WWNSTFJBTmI5VW1wRU80TUpveWtSTkdteWdEOG1iVDFIanNWZENoUldTZkxqRGY1UXlvWkx0aTZtV3NHazNLbWh2N3RpbUh2U3ZEMnhmWnBWUEwxZWNqc2RMRG1GTFBIanR3SXZnTzN1d0ZpTzVRbGRka0FvM1E?oc=5",
+   "category": "百貨商場",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:ov73i3",
@@ -6344,33 +6640,6 @@
    "updatedAt": "2026-10-30T21:03:29.472Z"
   },
   {
-   "id": "news:pupn0f",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "UNIQLO",
-   "title": "UNIQLO 雙 11 優惠｜PUFFTECH $299、針織外套 $149",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "KONGGOK",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T11:01:18.000Z",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SbzlJNmZaZDN2NjYwNG5ralJIeE1LQ2k5djZtZkp5enRjQTJINGNiTTJHWkIwTVd4bm1CZ1pRVHNuX1lMZlBjSFdOQTQ4eG5QejY5TVRVQnJUNFIxV3RQVlRrSFY1bFhfQ000?oc=5",
-   "category": "服飾配件",
-   "updatedAt": "2026-10-27T16:02:13.280Z"
-  },
-  {
    "id": "news:pzotan",
    "kind": "promo",
    "source": "news",
@@ -6396,6 +6665,33 @@
    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5VQ3BOa25reWpjQmdLLTd2UXo0TGZ0QndkSnZRc3IwNVByVTRzR05taVZ1NkltYVBKZV9vb2ROdi1ERFpCT2hxampLSWI?oc=5",
    "category": "超商量販",
    "updatedAt": "2026-10-27T01:37:17.041Z"
+  },
+  {
+   "id": "news:q2vnls",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "IKEA",
+   "title": "質感家居限時升級：IKEA 雙 11 購物節網店獨家減高達 $800",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "RePlayHK",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-30T18:23:27.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPRGhPNElIcGUtN3ZwWnB1R1Z0NTVrSV9fdUc3VllMblFYNUYwQi1xVTcwakJDNUFiYkV5Wi1kWFpqMEs5V29TenBRUnJyeGJWQ3ZlSndSSnpESVFKOEpiVXRGWU1YWFhSb21xb2JfWlpvSWtRTWNaYXN5SnZhS0VnRDJIWTZnaDRtNWJ1elBKME1Qc0dxYy1MVGZFRFItQTB4MGY2eGs4cjdmd1ZHdS1PRnlvVUp5X1IwOWhKWlEtdVFqTVpKMVFGYkk2S2V1djNyU0s5Y1hNUW85c2lVQkw2VmtTSXJnakp4Y1Y4NGhORXdhVHo4SFNpU2tNemloRlNRUmhaTjIyN3RDNmJtSXVYY0dxeXRyYU16ZE56dGh5VW9MeElNdEZtX2RzalVGRjBJY2QtdGJ6c1U5dw?oc=5",
+   "category": "居家生活",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:qg2t3q",
@@ -6452,6 +6748,33 @@
    "updatedAt": "2026-10-27T01:37:17.041Z"
   },
   {
+   "id": "news:ql8wp4",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "週末碰萬聖節！超商飲品優惠開搶 免費拿TWICE海報、音樂節門票",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "壹蘋新聞網",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T01:37:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00eDZDcElfM1N1X0FoRnRDRVZQMTdJV3R3ZURBbHNzdGpxMFdjOElHLVVfN1RlR2hPTmVfSXI2ME5OazBFR0pnYU1QRlNDMjBxOEFEMTdRNFJ4YmVtbmwwNUw0ZWFLZVVQd3U2eDFfOENtWmJKQktGYjNPRG9vQQ?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:qyj6f5",
    "kind": "promo",
    "source": "news",
@@ -6476,33 +6799,6 @@
    "publishedAt": "2026-10-30T08:34:14.000Z",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9OTGd5ekJrdTlNLTROcTZQQVNLYnYzVTlUbVNMR0lOR0RLeTJ6RG11SzdTd0Q3aXQ1VUpscl9Iall1WXdYeU9qT1p1anVXOTJiV1E?oc=5",
    "category": "百貨商場",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
-  },
-  {
-   "id": "news:r2vdfq",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "優惠情報",
-   "title": "披薩買大送大再送大可樂！7大速食優惠",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "鏡週刊Mirror Media",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-03",
-   "publishedAt": "2026-10-27T03:26:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sTjJWX1lCR2xWZlA5TUs0U3ZseGlvcWJXdW5TQzEyenZkZ2tOdlRUVFY4eWxvNkQyV1g0YktscnhraF92dE9fcy1iSGEwRVd6TE9NVUpnS1NkZG9I0gFiQVVfeXFMTzBPUU1mUUhDczl1dWhiTHhVTGVCb0RJcjFidXdzMU00cURKTnRaWFYtU2ljSE4wUXh1SklYVFBsSzBVZXdsT1ZaWkVhWXNwMDJFbWFkdmpoa1JhNjB3Wm4tbHc?oc=5",
-   "category": "餐飲美食",
    "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
@@ -6587,11 +6883,11 @@
    "updatedAt": "2026-10-28T21:20:36.902Z"
   },
   {
-   "id": "news:srtggp",
+   "id": "news:stv4e0",
    "kind": "promo",
    "source": "news",
-   "merchant": "優惠情報",
-   "title": "歲末聚餐吃鍋趣｜2026火鍋推薦＋限量餐券｜吃到飽/麻辣鍋/涮涮鍋/個人鍋｜獨享鍋299元開吃不限時、青花驕飲品買1送1...最新優惠懶人包",
+   "merchant": "CoCo",
+   "title": "【萬聖節飲品優惠】咖啡買一送一！四大超商、星巴克、CoCo、萬波等 11 家手搖咖啡優惠懶人包",
    "reward": {
     "type": "gift",
     "value": null,
@@ -6603,15 +6899,15 @@
     "新聞報導的優惠情報，活動條件以品牌公告為準"
    ],
    "tags": [
-    "Yahoo新聞",
+    "上報Up Media",
     "期限見原文"
    ],
    "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T03:12:16.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi8wVBVV95cUxNdVNJbWtrLXZaako1TU1XNFhDRHd6SGN5czc5eDdodHo0MllhelJzNG5BZEdZNk5yblJkUTBuTWRtSWQ1UnB1ZjFsdGdXV2FmTlgwWUswaUFZeHRzRnFVWmlwVEpsc2dIMEhWQWVrM2VIdXRaWnVzcWN4Y0xRU3BhTm5EVEx2ZHhFem9GWXl4eGFjNmJQZG9TUzFrUnNweDB6VDJSejIzbUdyUGoyeUVPbGFRbXBXZmMyUk5kSkRCcFlKTllrX1RqbFRKaENUanUzWEhsUVAwY3dnVURpM1RVaEhOMWw5N1FRMW1RX0pQbzUtVUVsNk9oczNqbVhvMS14TkVIMTBuZ3lGVTFkQUVld080Z0U2NHZnb0IxaHRsU0E5TTRnTUpzNTkxTTE3MmRyWWMtb3laRFZUelJrTlJEUGJoMDJpaUhRZUlobXhuUXE1ZmZkVjJnNlptX1E5QnprM0NUNHRjUGxJSHdHVUk2TUdYRjVsMVlLZV9PVWlGMlhYNUVGaGlUelB4YTRDY1l3VlFtLTFRelJqYUUzejVkemdxSk5BNUxBUDF3SWhFb3VVeUZkYXk1RVJERlp6MVQ1VVFmaC0zTXRydkxpZjN6VklwVVlRT2pfbDZEUDByLVNLV3hFSkoyYks2QlNHWjMyOEQxeXRuS0VKY3ZlUXRxRkZVUWpRMXREWlhBTTkyeG1sY05sZy1ObEpETE16NHdyNlI5TGZydnpmemdOZ3N4Tkx2ZlFIVGpQRnFYYlRrSFV6YjRHdTV6OGllT19tekJsZm5kTV84ODFnREFFZHZRWUtGOHk4bUZvTmlKamxMMWdBWTI0TUxxeEs1UGkyZ053TnVlVkFnc2o2d1FUbzJRQjhjT3VfdzNsMDlmNXMxT1NNMFFtTHFkMHVRSmdNcVEydmtGcmRMTmtoN3Bnc1JCNjIwT3I4S0hzQVJVWVhpN05YYW9ma2FubFV1OEk0T2Eyb1RwWlNIQlh5RUVWTXBFRWtzbw?oc=5",
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T04:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GUVBPTjZBMDg1SjZZRUNfaWZ3X01NSGdteWhfVnRGOG5lYXA1ZUFSRjRjTFlSTEdWOThNUGswZk9LVjU1ejNqYV9NRWxmbWt2bm9JNDlqY1ZkWExC?oc=5",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-29T21:26:32.213Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:t49ear",
@@ -6641,6 +6937,33 @@
    "updatedAt": "2026-10-27T16:02:13.280Z"
   },
   {
+   "id": "news:ufk8e3",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "全家",
+   "title": "全家「單品美式咖啡買1送1」10/27開賣，貝納頌咖啡買3送3同步開賣！",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Cosmopolitan",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T08:41:41.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd1IwRE5BcFlBSTVpZ0tXenVNQnFRRTE0UDNqTG8ydGFBamYweXN4RzIweTY0akJWampMaTEwZkNTUUJUZVpKdWRoa0NhaE5BR2pqNnQ1N0JTSjJ2MG5ZTm9SZGI4S2lEczUxNENKYnVNQUJ4ZzZjcnRWSHBEeWZJN2JDelJyUVJXdG5RT0Q5YXQ?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
    "id": "news:uuc21s",
    "kind": "promo",
    "source": "news",
@@ -6668,33 +6991,6 @@
    "updatedAt": "2026-10-29T01:49:03.412Z"
   },
   {
-   "id": "news:uzut2l",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "必勝客",
-   "title": "必勝客比薩、鹽酥雞免費吃！優惠碼快搶",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "鏡週刊Mirror Media",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-06",
-   "publishedAt": "2026-10-30T03:20:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CMkw5dUlaQ2x3WnQzR2xGUjh6Rm0xSHVMUFg1UGRqTWFNODhsTHFHdGl6LVVHLXp2QXV0VExBUE82STRqSnRUMElXNG85QmpjcUF5UGxhRDhGTGNNWFHSAWJBVV95cUxPcm9IWVVmeGN1Mm1aQ2hfbzRxX2RPajdvcng2ME11bjM1Z1hDSk5SWGs3ay1jTXBHanNrZ0RucWR5MFNmY0NfN3pzc2lEVjBrVnBnXy1rbEJfbXZrR3lkdHNzdw?oc=5",
-   "category": "餐飲美食",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:vaqwwd",
    "kind": "promo",
    "source": "news",
@@ -6720,6 +7016,60 @@
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MZ2VrazE1OHNaU3RhWTRSb1dleV9oeF9fSEtsNHJqX1NLY2lUX0piY3JvcktNNlFDbTc0aVZpUVBvWHZXelBEc1dUQ2FrMFNVdkRQcVNZb0Y3UdIBX0FVX3lxTE41WEFSMkpKOFZzalRCSXJPYS1WTWFLc2M4N0N3bzUwenRVNTNxV2szeFBhMGhaNERjQU8zc01zMjZjdFVIUUcxb29GVlNVMTI4NUNVczFXb0doM0R1SV9B?oc=5",
    "category": "金融支付",
    "updatedAt": "2026-10-27T01:37:17.041Z"
+  },
+  {
+   "id": "news:vd4d42",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "全家",
+   "title": "「全家」邀始源即興開鍋！主題店和歐巴比愛心　滿額送「腹肌圍兜」誒噗快衝",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "鏡週刊Mirror Media",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-29T02:09:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRSnI0VVViNU9WVl9QN1lfaWNiN3loYzQxOFpOSkpKWXVhY2VOZGVjZ0t3OGZRMlpMYnJyOFZ4elJqbmJhdTZMaXZPVnk5VUVycEsxc3JtSmliemxYejR0Z3RLRktlUdIBa0FVX3lxTE84aGhvbjQ0YVRWZEJ4eXpVdXJOQjdLUGtka3FVeU9FdDhfc0NncE1kaldMSnVQTjBuNUZ6MHF0Nzh3NlJsXzAweGtDODhlMm5OM1A5cEpJRTRnZXBnQlE0TGF4ZFJuWXh3dDV3?oc=5",
+   "category": "超商量販",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "news:vk7g5",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "優惠情報",
+   "title": "慶中華職棒封王「披薩買大送大再送大可樂」！ 7大速食優惠一次看",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "Yahoo新聞",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-03",
+   "publishedAt": "2026-10-27T03:36:29.000Z",
+   "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQeTI4MndqR2V2RUJIRVRRSFR1bi1rY0NaWG9WV1dzNWRnOS1TV2ZRVHFBNktETXpBV3VzQWIzeTRMaUtFcmt0OGVyem9icjRRMFdMXzZuNlNVQlpHN2xIeXM5aFFxcEZNSUVlVkRxc3hIaGp3d1NaWXU1NllLUlBha1NtVnl5aTF0WGl0dUVvZ0dwOGVrS2pKVlctbmYzaFNoaUZVYkQta1lPdmVBdmxCWWl6MkVucTVRZ0RQRnlHSGlOTUZlVjFRa0hhMk51QzJsdzJWTkVKRlltTUpqQjh6VzlGNTd5QWk3RHlSQ2lNOS03Tm5hdFctSnNGcW95UExXS21CY3l3bzBnQTRlM1k0NVBmaVU3UnFnWG9zY2JyNklRc3Q5aDNqN29jT3ZJaU53bTd2bVJfbm1sMnlUNWgya2s5M2NJV2pUVkExSl9ldlF6TFIxLU1adm5uZGhNU0h1N3EtN3RvX0VHQ3VWc3N2OW5Ic0oxbWR6bnQ3MFFLTXY3cmlQ?oc=5",
+   "category": "餐飲美食",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:vrbmn9",
@@ -6884,33 +7234,6 @@
    "updatedAt": "2026-10-30T21:03:29.472Z"
   },
   {
-   "id": "news:whry44",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "foodpanda",
-   "title": "foodpanda雙11優惠來了！會員免費兌換披薩、鹽酥雞 省錢攻略一次看 | 鏡新聞",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "LINE TODAY",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-28T14:08:17.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JX1RKeHF1V0hNNUktdjBLQ2JuQ1ZNX0JwUXdwUl9BNlZhbXR5VGlFRUE2Wjc4aWNQbUVpUTB5bXFpeVJyaDZISEt6dUhBZkZxSFFtMWRB?oc=5",
-   "category": "外送",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
-  },
-  {
    "id": "news:wk8qng",
    "kind": "promo",
    "source": "news",
@@ -6963,60 +7286,6 @@
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PazJ6RW1mNVVWUmNLb00ycWthd1VXMnBoWW9pM1BqYTB1RXhuRG1YcUl6YVJ1SjFpaFJ1Qlh5b1N1SzhFaVBwSlktQnlHbE5YV0tXWg?oc=5",
    "category": "餐飲美食",
    "updatedAt": "2026-10-30T21:03:29.472Z"
-  },
-  {
-   "id": "news:wx3ig5",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "麗寶",
-   "title": "麗寶OUTLET週年慶！搭台中購物節探索樂園萬聖節限定遊行登場 大小朋友一起搞怪過節",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "台灣好新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-05",
-   "publishedAt": "2026-10-29T05:50:19.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxNVGhWQkZGd3puMzdKUGhobUJ2dzdOSVk1OWd1QV9yV2lRZzNSQ3d1UG81MTQtT3cyaklPbUl6QlRaaGJ6NHZ1ckwzU2s0NVNWc0VRRFZjQmYzV013WnRBaUI3VV9fWTBDX1N6RzhIczZpRnA2UnV5TV9sU1VadVJIOWJ6cFljNDEteG1zMTJjdzlaTVRDVmNQcnNfcERzS2d5VWM0SzlwNTZLakU2Tks4UExob29xQzMyeWFrX2RiX3gxaWN3RXI3VTRRODVkalgyWndLNWZtd1VXSm41TDFiankzMUNNaXZMb0xITmJtNzgxUXBMSEFkM3V1elYyU1Z6Rk11d09CZkY1UVZZZ2RZc1pOT1dwcFFBdzRwZHQ3Q3JMODVpRGtIc01NbDdPU3M1aGp1YXRralVnQWNkRkhuZ3VBc0hMVTk0RGFBc21zYjcyZ2JxOEstRUFsN0ppbEdQMlJONTRhN2JkbjBmdWZNOW1ocGlNTFI1NEhvMWlmSEh3N1RnX3V2UGEyRlRLVFV1V2RYWm5weHZOMXhLRVhFbmlCSDlVNEc0MVFnYUZUMFp1RTdwYUo2dWstRDltVFBSZUpEZlA0SEZiNHQ1LTlYY040WGw0amFIOWJhVl9KV1JncnhJa0tISE44SDBEWVRtWGV6dXJGTFp4VFItNGc?oc=5",
-   "category": "娛樂影音",
-   "updatedAt": "2026-10-29T11:06:34.204Z"
-  },
-  {
-   "id": "news:x36wrc",
-   "kind": "promo",
-   "source": "news",
-   "merchant": "悠遊付",
-   "title": "街口11月優惠直衝25% 悠遊付繳地價稅贈3%",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "新聞報導的優惠情報，活動條件以品牌公告為準"
-   ],
-   "tags": [
-    "PChome Online 新聞",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-04",
-   "publishedAt": "2026-10-27T19:00:37.000Z",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZjBVdmVxeGVsWjJTdjBValc1QUZmcUtaVkRpQ29jWmNlRl9ENVFaUTBRbWZJNUlvQVdVSHdNUlB6aE1mRmtMWFBOWUthYjgxR0pUVEtrSU9ZZGVyU1hWdnJFLVktQVBMWkdHT1RWTUtTU3R1QWx6SlVCY1htR3FrZHg4RnNtZTQ?oc=5",
-   "category": "金融支付",
-   "updatedAt": "2026-10-30T11:01:54.892Z"
   },
   {
    "id": "news:x4u4b2",
@@ -7206,6 +7475,33 @@
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLVF1dWF0bEpOOFRLLW10cUdjejlWR0w1S01Yc0dQYm9IbUlNTnlXM3hOUHByTkZycXhkMmxESG1YODdSVkRpM0NJeFdWM1VNVHUtX3RBYTREREJxSDBtWDdyc1hFTmxHN2ZGMDRpOTQyLWUzcGxON2E2WEF4aTh2clRQN253eFlqV2FCMDA4aw?oc=5",
    "category": "超商量販",
    "updatedAt": "2026-10-30T21:03:29.472Z"
+  },
+  {
+   "id": "news:zjfgsi",
+   "kind": "promo",
+   "source": "news",
+   "merchant": "小米",
+   "title": "小米618最低55折！POCO M8s 5G同步亮相　618萬蝦幣這樣拿",
+   "reward": {
+    "type": "percent_off",
+    "value": 45,
+    "text": "55折起"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "新聞報導的優惠情報，活動條件以品牌公告為準"
+   ],
+   "tags": [
+    "三立新聞網SETN.com",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-28T16:22:38.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE94Q28tZ0xKQWpnS0x6NHBoQWZHRXRZUkpjMjVKcng4aUdQTVJhZ09aZ1Zzc2wzdjl1NTNJcElhQ0p3bDhjYnp5ZtIBTEFVX3lxTFBrLTBaT2hpWXYzVEg2V2s3UzdCVnVwT2YyUGIwc0xhdzJkOTdYN2xuUHRqZ04tdnQzNWRlVVQyQzU5VUhwUmtiazFoUzE?oc=5",
+   "category": "3C家電",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "news:zquqt0",

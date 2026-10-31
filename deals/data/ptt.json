@@ -740,7 +740,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 90",
+    "推 91",
     "期限見原文"
    ],
    "startAt": null,
@@ -748,7 +748,7 @@
    "publishedAt": "2026-10-29T03:41:26.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793245286.A.4B6.html",
    "category": "其他",
-   "updatedAt": "2026-10-29T21:26:32.213Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "ptt:1793320067.A.01C",
@@ -770,7 +770,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 22",
+    "推 24",
     "期限見原文"
    ],
    "startAt": null,
@@ -778,7 +778,7 @@
    "publishedAt": "2026-10-30T00:27:47.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793320067.A.01C.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "ptt:1793332113.A.CBC",
@@ -861,7 +861,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 31",
+    "推 37",
     "期限見原文"
    ],
    "startAt": null,
@@ -869,7 +869,7 @@
    "publishedAt": "2026-10-30T05:57:18.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793339838.A.D54.html",
    "category": "綜合電商",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "ptt:1793348611.A.562",
@@ -919,13 +919,15 @@
     "推文告知新品買一送一到12/31",
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
-   "tags": [],
+   "tags": [
+    "推 11"
+   ],
    "startAt": "2026-10-30",
    "endAt": "2026-11-01",
    "publishedAt": "2026-10-30T13:24:27.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793366667.A.C96.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-10-30T21:03:29.472Z"
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   },
   {
    "id": "ptt:1793367656.A.59C",
@@ -955,6 +957,64 @@
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793367656.A.59C.html",
    "category": "超商量販",
    "updatedAt": "2026-10-30T21:03:29.472Z"
+  },
+  {
+   "id": "ptt:1793416198.A.05F",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "PCHOME",
+   "title": "PCHOME 100P 分眾",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "PCHOME 100P 分眾",
+    "有效期限：2026/11/01～2026/11/05",
+    "終於輪到我了，感謝金主爸爸！",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 59"
+   ],
+   "startAt": "2026-11-01",
+   "endAt": "2026-11-05",
+   "publishedAt": "2026-10-31T03:09:58.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793416198.A.05F.html",
+   "category": "綜合電商",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
+  },
+  {
+   "id": "ptt:1793436114.A.54D",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "LINE GO $50 乘車券",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "信義區發現這活動，馬上跑去領 $50 乘車券",
+    "晚上搭車回家就可以用～～～",
+    "推薦給晚上去信義區的版友",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-07",
+   "publishedAt": "2026-10-31T08:41:54.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793436114.A.54D.html",
+   "category": "其他",
+   "updatedAt": "2026-10-31T10:36:16.659Z"
   }
  ]
 }
