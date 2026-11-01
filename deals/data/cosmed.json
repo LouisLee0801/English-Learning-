@@ -51,30 +51,6 @@
    "updatedAt": "2026-10-23T00:41:22.321Z"
   },
   {
-   "id": "cosmed:3080",
-   "kind": "promo",
-   "source": "cosmed",
-   "merchant": "康是美",
-   "title": "8/21 icash2.0/icash Pay 支付滿$2000回饋8%OPENPOINT",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": 2000,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "門市活動"
-   ],
-   "startAt": "2026-08-21",
-   "endAt": "2026-08-21",
-   "publishedAt": "2026-08-21T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3080",
-   "category": "藥妝美妝",
-   "updatedAt": "2026-10-17T03:18:01.694Z"
-  },
-  {
    "id": "cosmed:3096",
    "kind": "promo",
    "source": "cosmed",
@@ -120,30 +96,6 @@
    "endAt": "2026-09-13",
    "publishedAt": "2026-08-28T09:00:00+08:00",
    "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3097",
-   "category": "藥妝美妝",
-   "updatedAt": "2026-10-17T03:18:01.694Z"
-  },
-  {
-   "id": "cosmed:3102",
-   "kind": "promo",
-   "source": "cosmed",
-   "merchant": "康是美",
-   "title": "8/30 icash2.0/icash Pay單筆支付滿$2,500回饋6%OPENPOINT",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": 2500,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "門市活動"
-   ],
-   "startAt": "2026-08-30",
-   "endAt": "2026-08-30",
-   "publishedAt": "2026-08-28T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3102",
    "category": "藥妝美妝",
    "updatedAt": "2026-10-17T03:18:01.694Z"
   },
