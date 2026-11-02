@@ -2,16 +2,16 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 133,
-   "fresh": 6,
-   "updatedAt": "2026-11-01T20:42:06.308Z",
-   "seconds": 13,
+   "count": 136,
+   "fresh": 5,
+   "updatedAt": "2026-11-02T01:41:05.831Z",
+   "seconds": 12,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團啦",
+      "keyword": "收單",
       "status": 200,
       "posts": 0,
       "limited": true
@@ -19,7 +19,7 @@
      {
       "keyword": "開團",
       "status": 200,
-      "posts": 17,
+      "posts": 18,
       "limited": false
      }
     ],
@@ -27,41 +27,41 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 6
+    "items": 5
    }
   },
   "search": {
    "ok": true,
-   "count": 39,
-   "fresh": 7,
-   "updatedAt": "2026-11-01T20:42:06.308Z",
+   "count": 41,
+   "fresh": 6,
+   "updatedAt": "2026-11-02T01:41:05.831Z",
    "seconds": 13,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:instagram.com 開團 童裝",
+      "q": "site:instagram.com 開團 嬰兒",
       "status": 200,
-      "results": 7,
-      "posts": 7
+      "results": 4,
+      "posts": 4
      },
      {
-      "q": "site:instagram.com 團購 開團期間",
+      "q": "site:instagram.com 開團 收納",
       "status": 200,
       "results": 10,
       "posts": 10
      }
     ],
-    "items": 10
+    "items": 8
    }
   },
   "pages": {
    "ok": true,
    "count": 136,
    "fresh": 147,
-   "updatedAt": "2026-11-01T20:42:06.308Z",
-   "seconds": 9,
+   "updatedAt": "2026-11-02T01:41:05.831Z",
+   "seconds": 7,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -91,10 +91,10 @@
   },
   "rss": {
    "ok": true,
-   "count": 9,
-   "fresh": 2,
-   "updatedAt": "2026-11-01T20:42:06.308Z",
-   "seconds": 0,
+   "count": 10,
+   "fresh": 3,
+   "updatedAt": "2026-11-02T01:41:05.831Z",
+   "seconds": 2,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -102,30 +102,30 @@
      {
       "name": "七先生與艾小姐",
       "posts": 5,
-      "items": 2,
-      "latest": "2026-10-30T12:09:36.000Z"
+      "items": 3,
+      "latest": "2026-11-01T13:44:34.000Z"
      }
     ],
-    "items": 2
+    "items": 3
    }
   },
   "compare": {
    "ok": true,
-   "count": 319,
+   "count": 315,
    "fresh": 20,
-   "updatedAt": "2026-11-01T20:45:09.263Z",
+   "updatedAt": "2026-11-02T01:44:03.251Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 12,
+    "matched": 6,
     "errors": {},
-    "pending": 0,
+    "pending": 2,
     "blocked": {}
    }
   }
  },
- "runs": 74,
- "generatedAt": "2026-11-01T20:42:06.308Z",
+ "runs": 75,
+ "generatedAt": "2026-11-02T01:41:05.831Z",
  "files": [
   "threads.json",
   "search.json",
