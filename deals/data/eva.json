@@ -16,7 +16,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 32 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 32 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "New Customer Orders Over £150：32 哩程 / GBP10",
     "New Customer Orders Under £149.99：19 哩程 / GBP10",
     "Existing Customers：6 哩程 / GBP10",
@@ -34,7 +34,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/monica-vinader",
    "logo": "https://cdn.rewardengine.com/upload/merchant_100234.3b4ba33cb18c3325d9f8aad72dcb13cbde510df1.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:118278",
@@ -198,7 +198,7 @@
     "訂單使用Agoda APP內的優惠碼或銀行相關優惠碼（包括但不限於電子錢包優惠碼）的訂單不會獲得獎勵。",
     "有效交易獎勵在入住完成後才可獲得批准。",
     "獎勵只適用於Agoda 台灣版面上完成之訂單。",
-    "哩約 85 天內入帳"
+    "哩約 99 天內入帳"
    ],
    "tags": [
     "有折價券"
@@ -207,7 +207,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/agoda-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_131238.764e2e94d3b1a3e96bba35ae3f849d2d6a0e2d71.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:131768",
@@ -252,20 +252,27 @@
    "merchant": "Rakuten",
    "merchantId": "133428",
    "category": "綜合電商",
-   "title": "每 NT$100 1 哩",
+   "title": "每 NT$100 3 哩",
    "reward": {
     "type": "miles",
     "value": 1,
     "text": "1 哩程 / TWD100"
    },
-   "boost": null,
+   "boost": {
+    "type": "miles",
+    "value": 3,
+    "text": "3 哩程 / TWD100",
+    "endAt": "2026-11-30"
+   },
    "conditions": [
-    "一般商品：1 哩程 / TWD100",
+    "一般商品：3 哩程 / TWD100",
     "獎勵僅適用於在 www.rakuten.com.tw 鏈接下進行的購買。",
-    "以下店家之訂單不會獲得獎勵：",
-    "MyCard/神腦生活/ezcook 美食廚房/包材中心/樂天書城/屈臣氏Watsons/樂天Kobo電子書。",
     "在樂天台灣APP上完成的訂單不會獲得獎勵。",
     "待確認獎勵並非為最終獲得的獎勵，最終確認獎勵會於交易驗證時調整並存入你的賬戶。",
+    "自 2026年11月3日起，以下店家之訂單將不再獲得獎勵：",
+    "樂天Kobo電子書/樂天旅遊/樂天信用卡/樂分紅/樂天國際銀行。",
+    "於2026年11月3日前，以下店家之訂單均不獲得獎勵：",
+    "MyCard/神腦生活/ezcook 美食廚房/包材中心/樂天書城/屈臣氏Watsons/樂天Kobo電子書。",
     "哩約 105 天內入帳"
    ],
    "tags": [],
@@ -273,7 +280,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/department-stores/rakuten-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_133428.b58b945bb7c7d234b902b76e611ba0a2e10e490357af9a00f527b9c6c3577289.png",
-   "updatedAt": "2026-11-01T01:11:43.539Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:13641",
@@ -352,7 +359,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 19 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 19 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "New Customer：19 哩程 / GBP10",
     "Existing Customer：6 哩程 / GBP10",
     "Stated reward is for new customers only making your first purchase, existing customers will earn a lower reward. No rewards given on coupon/codes beginning with \"SD\".",
@@ -370,7 +377,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/sport-and-fitness/sportsdirect",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_143.1e6f39a9ad66d07e7a3ae0f1555488d3c60be413.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:144078",
@@ -509,15 +516,15 @@
    "merchant": "Hostinger Asia",
    "merchantId": "1635261",
    "category": "生活服務",
-   "title": "每 NT$100 最高 89.43 哩",
+   "title": "每 NT$100 最高 89.55 哩",
    "reward": {
     "type": "miles",
-    "value": 89.43,
+    "value": 89.55,
     "text": "最多 186 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 186 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 186 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Horizon AI website builder：186 哩程 / HKD50",
     "All other new plans：124 哩程 / HKD50",
     "Stated reward is only applicable to the Horizon AI website builder of Hostinger Asia. All other new plans will earn less reward.",
@@ -534,7 +541,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/office-and-business/hostinger-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1635261.39074bfdc380cac5483e900f50372e0eadfea05fa5c69798fc90dc678b5de8b1.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1636661",
@@ -543,15 +550,15 @@
    "merchant": "OneBioShop Asia",
    "merchantId": "1636661",
    "category": "藥妝美妝",
-   "title": "每 NT$100 14.9 哩",
+   "title": "每 NT$100 14.93 哩",
    "reward": {
     "type": "miles",
-    "value": 14.9,
+    "value": 14.93,
     "text": "31 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：31 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -564,7 +571,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/health-and-beauty/onebioshop-asia",
    "logo": "https://cdn.rewardengine.com/images/default-merchant-banner.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1640031",
@@ -627,15 +634,15 @@
    "merchant": "Mondly Asia",
    "merchantId": "1640711",
    "category": "親子寵物",
-   "title": "每 NT$100 31.25 哩",
+   "title": "每 NT$100 31.29 哩",
    "reward": {
     "type": "miles",
-    "value": 31.25,
+    "value": 31.29,
     "text": "65 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 65 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 65 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：65 哩程 / HKD50",
     "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
     "哩約 105 天內入帳"
@@ -648,7 +655,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/children-and-family/mondly-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1640711.33574ce555092f73af35172b736463d5c9a26dfbd6b1d67f17b5cb85fedec7de.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1642541",
@@ -657,15 +664,15 @@
    "merchant": "WPS Software Asia",
    "merchantId": "1642541",
    "category": "生活服務",
-   "title": "每 NT$100 最高 73.08 哩",
+   "title": "每 NT$100 最高 73.18 哩",
    "reward": {
     "type": "miles",
-    "value": 73.08,
+    "value": 73.18,
     "text": "最多 152 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 152 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 152 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "New Customer Subscription：152 哩程 / HKD50",
     "New User first time Installation on a new device：3 哩程",
     "標示獎勵只適用於新客戶的訂閱，現有客戶的訂閱將不會獲得獎勵。",
@@ -681,7 +688,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/office-and-business/wps-software-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1642541.56db09b136b9bfbe76da710788f70657553f4673d8106d9c4550159e23db227d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1642551",
@@ -690,15 +697,15 @@
    "merchant": "British Council Asia",
    "merchantId": "1642551",
    "category": "親子寵物",
-   "title": "每 NT$100 12.5 哩",
+   "title": "每 NT$100 12.52 哩",
    "reward": {
     "type": "miles",
-    "value": 12.5,
+    "value": 12.52,
     "text": "26 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 26 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 26 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：26 哩程 / HKD50",
     "標示獎勵只適用於新客戶，或距上次購買間隔滿12個月以上之客戶。",
     "標示獎勵只適用於付費訂閱課程，其他課程及相關產品將不會獲得獎勵。",
@@ -712,7 +719,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/children-and-family/british-council-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1642551.067c1d8cf7cad7663432d4a08d4a8a7aa9b4cfbfde2715b0e88a19df147b3ff0.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1642721",
@@ -729,7 +736,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：10 哩程 / HKD50",
     "Stated reward is only applicable to bookings made under \"Hotels & Apartments\". Bookings made under \"For business trips\" are not eligible to earn rewards.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -742,7 +749,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/zen-hotels-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1642721.2f522d175a05c50208e1fed8c2094a81bf045612e82091d2ca7911b7ea068456.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1642861",
@@ -848,7 +855,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 52 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 52 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "New customers：52 哩程 / GBP10",
     "Existing customers：39 哩程 / GBP10",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -865,7 +872,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/toys-and-games/jellycat-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1643691.a7bf728203e710f27a9f99058411bec0bd1f0685f5bf2ad4379e7ca30667e4fe.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1646881",
@@ -874,15 +881,15 @@
    "merchant": "Nomad eSIM Asia",
    "merchantId": "1646881",
    "category": "生活服務",
-   "title": "每 NT$100 最高 22.12 哩",
+   "title": "每 NT$100 最高 22.15 哩",
    "reward": {
     "type": "miles",
-    "value": 22.12,
+    "value": 22.15,
     "text": "最多 46 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 46 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 46 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "New customers：46 哩程 / HKD50",
     "Existing customers：31 哩程 / HKD50",
     "Stated reward is only applicable to new customers of Nomad Asia, existing customers of Nomad Asia will earn a lower reward.",
@@ -899,7 +906,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/utilities-and-telecoms/nomad-esim-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1646881.b721d9095f2b9a24cd5f3545961bba9338b248ea19956e017435c41b1500cd0e.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1647601",
@@ -1022,15 +1029,15 @@
    "merchant": "Noble Panacea Asia",
    "merchantId": "1662771",
    "category": "藥妝美妝",
-   "title": "每 NT$100 14.9 哩",
+   "title": "每 NT$100 14.93 哩",
    "reward": {
     "type": "miles",
-    "value": 14.9,
+    "value": 14.93,
     "text": "31 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：31 哩程 / HKD50",
     "哩約 105 天內入帳"
    ],
@@ -1042,7 +1049,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/health-and-beauty/noble-panacea-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1662771.9b8b20e0132c854014a2264efb1ff97a8fea7aec02b3d8360f47a482b8be114b.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1662811",
@@ -1051,15 +1058,15 @@
    "merchant": "Blackview Asia",
    "merchantId": "1662811",
    "category": "3C家電",
-   "title": "每 NT$100 7.21 哩",
+   "title": "每 NT$100 7.22 哩",
    "reward": {
     "type": "miles",
-    "value": 7.21,
+    "value": 7.22,
     "text": "最少 15 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最少 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最少 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "BV6300, BV9800 Pro：24 哩程 / HKD50",
     "其他產品 Other products：15 哩程 / HKD50",
     "BV6300, BV9800 Pro 將獲得更高的獎勵。標示獎勵只適用於其他產品。",
@@ -1074,7 +1081,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/electricals/blackview-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1662811.9f8589f2de81cbf69fe1eece2b414ab1424a50dbf3037dd7652603eaaaabc968.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1665761",
@@ -1083,15 +1090,15 @@
    "merchant": "Ubigi Asia",
    "merchantId": "1665761",
    "category": "旅遊住宿",
-   "title": "每 NT$100 14.9 哩",
+   "title": "每 NT$100 14.93 哩",
    "reward": {
     "type": "miles",
-    "value": 14.9,
+    "value": 14.93,
     "text": "31 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：31 哩程 / HKD50",
     "哩約 105 天內入帳"
    ],
@@ -1103,7 +1110,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/ubigi-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1665761.30b37aa84e8f671e118a6b1445b6265b2dd0fd8fa6a7092cf557927bf33792cf.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1673271",
@@ -1112,15 +1119,15 @@
    "merchant": "Missoni Asia",
    "merchantId": "1673271",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 5.77 哩",
+   "title": "每 NT$100 最高 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "最多 12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Full Price：12 哩程 / HKD50",
     "Markdown price：12 哩程 / HKD50",
     "From 16 July 2026 to 30 September 2026, stated reward is only applicable to full price products. Purchasing markdown price products will earn a lower reward.",
@@ -1136,7 +1143,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/missoni-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1673271.ad2fefc575bbd6082a109afa9344a985c0ff907e25f007b27b0b6f4a4d233845.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1678401",
@@ -1171,15 +1178,15 @@
    "merchant": "Ann Demeulemeester Asia",
    "merchantId": "1680871",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 5.77 哩",
+   "title": "每 NT$100 最高 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "最多 12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Full Price：12 哩程 / HKD50",
     "Markdown price：12 哩程 / HKD50",
     "From 16 July 2026 to 30 September 2026, stated reward is only applicable to full price products. Purchasing markdown price products will earn a lower reward.",
@@ -1194,7 +1201,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/ann-demeulemeester-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1680871.6c752d6c22b1c6a1e2eb7b53e6b36260aa09154406db6c381a4d6a8b3aec0833.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1680981",
@@ -1203,15 +1210,15 @@
    "merchant": "Diesel Asia",
    "merchantId": "1680981",
    "category": "服飾配件",
-   "title": "每 NT$100 8.62 哩",
+   "title": "每 NT$100 8.64 哩",
    "reward": {
     "type": "miles",
-    "value": 8.62,
+    "value": 8.64,
     "text": "22 哩程 / SGD10"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 22 哩程 / SGD10，以 1 SGD ≈ NT$25.5291 換算",
+    "原始回饋 22 哩程 / SGD10，以 1 SGD ≈ NT$25.4771 換算",
     "一般商品：22 哩程 / SGD10",
     "Rewards are only eligible for orders from the following countries/regions: Indonesia, Singapore, Korea, Philippines, Taiwan, Thailand, Vietnam.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -1225,7 +1232,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/diesel-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1680981.b9783355cefce901362ea79383c8f8e764c2113cc02e5b42dcca06c831fcbc3d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1685951",
@@ -1271,7 +1278,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：10 哩程 / HKD50",
     "哩約 105 天內入帳"
    ],
@@ -1283,7 +1290,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/theory-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:1697911",
@@ -1329,7 +1336,7 @@
     "特殊商品：2 哩程 / TWD100",
     "標示獎勵只適用於正常商品。特殊商品將會獲得較少獎勵。排除商品不會獲得獎勵。",
     "請 按此 以查閲特殊商品及排除商品列表。",
-    "哩約 83 天內入帳"
+    "哩約 84 天內入帳"
    ],
    "tags": [
     "依品類不同",
@@ -1339,7 +1346,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:178368",
@@ -1461,26 +1468,33 @@
    "merchant": "iHerb",
    "merchantId": "197118",
    "category": "藥妝美妝",
-   "title": "每 NT$100 3 哩",
+   "title": "每 NT$100 8 哩",
    "reward": {
     "type": "miles",
     "value": 3,
     "text": "3 哩程 / TWD100"
    },
-   "boost": null,
+   "boost": {
+    "type": "miles",
+    "value": 8,
+    "text": "8 哩程 / TWD100",
+    "endAt": "2026-11-16"
+   },
    "conditions": [
-    "一般商品：3 哩程 / TWD100",
+    "一般商品：8 哩程 / TWD100",
     "使用 iHerb 禮券碼、第三方禮券碼或非此網站提供的促銷代碼將導致所有商品的獎勵資格被取消。此外，使用會員積分支付的交易部分將不符合獲得獎勵金的條件。部分或全部使用積分付款的訂單部分將不符合賺取獎勵金的條件。有效交易將在 7-10 天內反映在您的交易記錄中。",
     "iHerb 接受自購買之日起 45 天內提交的交易遺失索賠，且為 2023 年 12 月 8 日之後的訂單。",
     "請參考iHerb網站以確保訂單符合清關程序。",
-    "哩約 123 天內入帳"
+    "哩約 125 天內入帳"
    ],
-   "tags": [],
+   "tags": [
+    "有折價券"
+   ],
    "startAt": null,
    "endAt": null,
    "url": "https://mall.brmile.com/zh/health-and-beauty/iherb-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_197118.053d3e79bea54013bb37e2fa0a5e2044ca545816.png",
-   "updatedAt": "2026-11-01T01:11:43.539Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:198938",
@@ -1489,15 +1503,15 @@
    "merchant": "Rakuten Ichiba (Japan)",
    "merchantId": "198938",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 2.9 哩",
+   "title": "每 NT$100 最高 2.91 哩",
    "reward": {
     "type": "miles",
-    "value": 2.9,
+    "value": 2.91,
     "text": "最多 3 哩程 / JPY500"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 3 哩程 / JPY500，以 1 JPY ≈ NT$0.2071 換算",
+    "原始回饋 最多 3 哩程 / JPY500，以 1 JPY ≈ NT$0.2065 換算",
     "コスメ、マタニティ、ファッション、レディースファッション、メンズファッション、インナー・下着・ナイトウェア、靴・バッグ、食品・飲料、お酒、スイーツ・お菓子、医薬：3 哩程 / JPY500",
     "住宅用品、事務用品、玩具、家庭用品、フィギュア、キッチン、サービス、リフォーム、書籍：2 哩程 / JPY500",
     "テレビ、ゲーム、家電、時計、楽器、携帯電話、パソコン、パソコン周辺機器、CD・DVD：1 哩程 / JPY500",
@@ -1521,7 +1535,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/department-stores/rakuten-ichiba-x28-japan-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_198938.4732b032267a64ea92044be5dc285376e5e8ad11.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:202868",
@@ -1617,7 +1631,7 @@
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 52 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 52 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "Sale items：6 哩程 / GBP10",
     "Existing Customers：26 哩程 / GBP10（08/06–12/31）",
     "New Customers：52 哩程 / GBP10（08/06–12/31）",
@@ -1637,7 +1651,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/handm-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_259355.e8f6060e8cf1d9ee11776c8b69fedb29bc212f6d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:262625",
@@ -1846,15 +1860,15 @@
    "merchant": "Liberty London",
    "merchantId": "32031",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 14.88 哩",
+   "title": "每 NT$100 最高 14.87 哩",
    "reward": {
     "type": "miles",
-    "value": 14.88,
+    "value": 14.87,
     "text": "最多 65 哩程 / GBP10"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 65 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 65 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "Sale：6 哩程 / GBP10",
     "Beauty Advent Calendar：26 哩程 / GBP10",
     "Liberty LBTY Fragrance Purchases：65 哩程 / GBP10",
@@ -1875,7 +1889,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/liberty-london",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_32031.1a3da2515b20093bb47ab3de996190adf672b34572935cda39b81995a611f03c.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:327275",
@@ -1901,7 +1915,7 @@
     "iPhone 16/17全品項/家樂福電子禮券/贈品/0元訂單不會獲得獎勵。",
     "依照商品編號(商品編號請參照產品頁網址)區分: 開頭為10~26 、30~36、40~49、60~66以外的商品不會獲得獎勵。",
     "任何有關賺取獎勵的問題請聯絡我們，請勿聯絡家樂福。",
-    "哩約 96 天內入帳"
+    "哩約 97 天內入帳"
    ],
    "tags": [
     "依品類不同"
@@ -1910,7 +1924,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/department-stores/carrefour-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_327275.e914bd2315e08f33c004cacd1a9bea9c04d4148a.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:327285",
@@ -2126,7 +2140,7 @@
     "購物完成後，請務必點擊 ”完成訂單“，否則訂單會被視爲無效並可能無法獲得獎勵。",
     "所有使用第三方優惠碼/優惠券的訂單皆不會獲得獎勵。",
     "請注意：有效訂單由顯示於交易記錄當天起計需時約120個工作天（或更長時間）才能被商家審核和確認。",
-    "哩約 125 天內入帳"
+    "哩約 118 天內入帳"
    ],
    "tags": [
     "依品類不同"
@@ -2135,7 +2149,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/department-stores/shopee-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_377075.5e325d892f965367413027d857a347077384fb2e0e8319517662263b35edfcb2.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:377085",
@@ -2389,20 +2403,25 @@
    "merchant": "Trip.com",
    "merchantId": "389935",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 5 哩",
+   "title": "每 NT$100 最高 17 哩",
    "reward": {
     "type": "miles",
     "value": 5,
     "text": "最多 5 哩程 / TWD100"
    },
-   "boost": null,
+   "boost": {
+    "type": "miles",
+    "value": 17,
+    "text": "最多 17 哩程 / TWD100",
+    "endAt": "2026-11-13"
+   },
    "conditions": [
-    "酒店訂單：5 哩程 / TWD100",
-    "汽車出租：5 哩程 / TWD100",
-    "國際航班預訂：1 哩程 / TWD100",
-    "其他活動：5 哩程 / TWD100",
+    "酒店訂單：11 哩程 / TWD100（11/02–11/13）",
+    "汽車出租：17 哩程 / TWD100（11/02–11/13）",
+    "國際航班預訂：3 哩程 / TWD100（11/02–11/13）",
+    "其他活動：7 哩程 / TWD100（11/02–11/30）",
     "郵輪：4 哩程 / TWD100",
-    "景點及表演：3 哩程 / TWD100",
+    "景點及表演：5 哩程 / TWD100（11/02–11/30）",
     "除非另有說明，獎勵只適用於 Trip.com 台灣網站上預訂酒店並完成付款的訂單。所有酒店以外之產品會獲得較少獎勵。",
     "中國國內機票獎勵只適用於 Trip.com 網站上預訂並完成付款的訂單。轉到其他地區/其他網站會導致交易無法獲得獎勵。",
     "交易可能需時約7個工作天才會顯示於交易記錄中。",
@@ -2421,7 +2440,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/trip-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_389935.2a85e21939df6b5955fa4b2325af4eddffb32edc.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:394885",
@@ -2610,15 +2629,15 @@
    "merchant": "Love Bonito",
    "merchantId": "412355",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 7.21 哩",
+   "title": "每 NT$100 最高 7.22 哩",
    "reward": {
     "type": "miles",
-    "value": 7.21,
+    "value": 7.22,
     "text": "最多 15 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Existing Customers (Hong Kong Region)：15 哩程 / HKD50",
     "New Customers (Hong Kong Region)：15 哩程 / HKD50",
     "Existing Customer (Other regions)：10 哩程 / HKD50",
@@ -2641,7 +2660,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/love-bonito",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_412355.f0058429657dcad863cb1d4a904e86f83d8394ae57d846a1b4d5736fc3357a4b.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:412905",
@@ -3101,20 +3120,20 @@
    "merchant": "NET-A-PORTER Asia",
    "merchantId": "446495",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 14.9 哩",
+   "title": "每 NT$100 最高 14.93 哩",
    "reward": {
     "type": "miles",
-    "value": 11.54,
+    "value": 11.55,
     "text": "最多 24 哩程 / HKD50"
    },
    "boost": {
     "type": "miles",
-    "value": 14.9,
+    "value": 14.93,
     "text": "最多 31 哩程 / HKD50",
     "endAt": "2029-10-29"
    },
    "conditions": [
-    "原始回饋 最多 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 31 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Fashion Picks：24 哩程 / HKD50",
     "Beauty：9 哩程 / HKD50",
     "When a voucher code is used：9 哩程 / HKD50",
@@ -3139,7 +3158,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/net-a-porter-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_446495.dc1bb6e4d545638054befb74620265372c1f2509.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:452255",
@@ -3652,15 +3671,15 @@
    "merchant": "Marriott International Asia",
    "merchantId": "487905",
    "category": "旅遊住宿",
-   "title": "每 NT$100 5.77 哩",
+   "title": "每 NT$100 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：12 哩程 / HKD50",
     "Marriott International Asia目前在訂單驗證方面出現延誤，導致獎勵審批時間延長。在此期間，獎勵審批可能需要 260 天或更久。",
     "獎勵會在合資格預訂退房後 90-120 天內存入你的賬戶。如果您的預訂有任何更改（例如房間升級或更改住宿日期），可能會導致獎勵無效。",
@@ -3670,7 +3689,7 @@
     "• 使用兌換的萬豪旅享家™ 積分預訂或升級並付款的客房。",
     "• 無法獲得獎勵的品牌（麗思卡爾頓目的地俱樂部、設計酒店、寶格麗）預訂的客房。",
     "• 無法獲得獎勵的酒店預訂的客房（Atlantis Autograph Collection、Bulgari Hotel、London、Joshua G.E. Medical Corp. Conference Center、Jesse Jones Rotary Conference Center、Marriott Ranch、Protea Hotel Amani Beach、Protea Hotel Mbweni Ruins、The Ritz-Carlton London , U.S. Postal Service Conference Center, Four Points by Sheraton Havana, The Cosmopolitan Las Vegas Autograph Collection)。",
-    "哩約 105 天內入帳"
+    "哩約 106 天內入帳"
    ],
    "tags": [
     "外幣計價",
@@ -3680,7 +3699,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/marriott-international-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_487905.e28570a37d23f6ad7fc354b79ee40080be40aef0.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:488075",
@@ -3722,7 +3741,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 32 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 32 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "一般商品：32 哩程 / GBP10",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -3735,7 +3754,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/lounge-pass",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_5.fce514ec7f8da0e0ebb715e369bc379f765b7dfb.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:500245",
@@ -3977,7 +3996,7 @@
    "merchant": "Sunspel",
    "merchantId": "514485",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 14.88 哩",
+   "title": "每 NT$100 最高 14.87 哩",
    "reward": {
     "type": "miles",
     "value": 7.32,
@@ -3985,12 +4004,12 @@
    },
    "boost": {
     "type": "miles",
-    "value": 14.88,
+    "value": 14.87,
     "text": "最多 65 哩程 / GBP10",
     "endAt": "2026-12-06"
    },
    "conditions": [
-    "原始回饋 最多 65 哩程 / GBP10，以 1 GBP ≈ NT$43.6891 換算",
+    "原始回饋 最多 65 哩程 / GBP10，以 1 GBP ≈ NT$43.7063 換算",
     "Existing customers：26 哩程 / GBP10（10/28–12/06）",
     "New customers：65 哩程 / GBP10（10/28–12/06）",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -4007,7 +4026,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/sunspel",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_514485.cd5a2a0ecde7a1fda8fefa0ffe1e8d9b6a6bcf0f.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:517795",
@@ -4120,15 +4139,15 @@
    "merchant": "Tiqets Asia",
    "merchantId": "532105",
    "category": "旅遊住宿",
-   "title": "每 NT$100 10.58 哩",
+   "title": "每 NT$100 10.59 哩",
    "reward": {
     "type": "miles",
-    "value": 10.58,
+    "value": 10.59,
     "text": "22 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 22 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 22 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：22 哩程 / HKD50",
     "使用本頁顯示的優惠碼以外之訂單不會獲得獎勵。",
     "哩約 105 天內入帳"
@@ -4140,7 +4159,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/tiqets-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_532105.507e7e36582a733a6599d4a0e6adba69e2a1a197.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:532295",
@@ -4257,15 +4276,15 @@
    "merchant": "The Luxury Closet Asia",
    "merchantId": "534025",
    "category": "服飾配件",
-   "title": "每 NT$100 10.1 哩",
+   "title": "每 NT$100 10.11 哩",
    "reward": {
     "type": "miles",
-    "value": 10.1,
+    "value": 10.11,
     "text": "21 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：21 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -4277,7 +4296,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-luxury-closet-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_534025.3760ff8a2be62c4966ffbfd058b172447b362b68.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:548975",
@@ -4446,15 +4465,15 @@
    "merchant": "The DoubleF Asia",
    "merchantId": "552035",
    "category": "服飾配件",
-   "title": "每 NT$100 2.88 哩",
+   "title": "每 NT$100 2.89 哩",
    "reward": {
     "type": "miles",
-    "value": 2.88,
+    "value": 2.89,
     "text": "6 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 6 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 6 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：6 哩程 / HKD50",
     "From 16 July 2026 to 30 September 2026, stated reward is only applicable to new customers of The DoubleF Asia. Existing The DoubleF Asia customers will earn a lower reward.",
     "Stated reward is only applicable to the category of Women clothing and Men clothing. Purchase products from the other categories will earn a lower reward.",
@@ -4471,7 +4490,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/the-doublef-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:562435",
@@ -4531,20 +4550,20 @@
    "merchant": "Olive Young (Global)",
    "merchantId": "567975",
    "category": "藥妝美妝",
-   "title": "每 NT$100 23.56 哩",
+   "title": "每 NT$100 23.59 哩",
    "reward": {
     "type": "miles",
-    "value": 11.54,
+    "value": 11.55,
     "text": "24 哩程 / HKD50"
    },
    "boost": {
     "type": "miles",
-    "value": 23.56,
+    "value": 23.59,
     "text": "49 哩程 / HKD50",
     "endAt": "2026-11-12"
    },
    "conditions": [
-    "原始回饋 49 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 49 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：49 哩程 / HKD50",
     "Global orders will be eligible for reward with the exception of orders from South Korea.",
     "No reward for Olive Young App Orders.",
@@ -4559,7 +4578,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/health-and-beauty/olive-young-x28-global-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_567975.05a9bddc02c5afdc1d021cd54f05d663802691c16e0b63420e47218662264a74.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:570565",
@@ -4594,15 +4613,15 @@
    "merchant": "Evisu Asia",
    "merchantId": "578565",
    "category": "服飾配件",
-   "title": "每 NT$100 10.1 哩",
+   "title": "每 NT$100 10.11 哩",
    "reward": {
     "type": "miles",
-    "value": 10.1,
+    "value": 10.11,
     "text": "21 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：21 哩程 / HKD50",
     "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
     "哩約 105 天內入帳"
@@ -4615,7 +4634,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/evisu-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_578565.f25f517303ad6ee518a4647a6560608cf9550ce1863b77b0ed194ad83b8fa638.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:593335",
@@ -4733,15 +4752,15 @@
    "merchant": "ALL-Accor Live Limitless Asia",
    "merchantId": "599855",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 6.27 哩",
+   "title": "每 NT$100 最高 6.28 哩",
    "reward": {
     "type": "miles",
-    "value": 6.27,
+    "value": 6.28,
     "text": "最多 16 哩程 / SGD10"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 16 哩程 / SGD10，以 1 SGD ≈ NT$25.5291 換算",
+    "原始回饋 最多 16 哩程 / SGD10，以 1 SGD ≈ NT$25.4771 換算",
     "Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Acces：16 哩程 / SGD10",
     "Raffles, Swissotel and Fairmont bookings：8 哩程 / SGD10",
     "Reward is applicable to the following brands: Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Access, Ibis, Ibis Style, Ibis Budget, Formule1 Inde, HotelF1, MGallery, Rixos, Novotel, Mercure, Suite Novotel, Orbis and Mama Shelter bookings.",
@@ -4761,7 +4780,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/all-accor-live-limitless-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_599855.8dcc0a31668483cce6072b6eafbc1ec5e06b8ebf94e44e131ae08595d1a869bb.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:601615",
@@ -4770,20 +4789,20 @@
    "merchant": "Harrods Asia",
    "merchantId": "601615",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 16.35 哩",
+   "title": "每 NT$100 最高 16.37 哩",
    "reward": {
     "type": "miles",
-    "value": 7.21,
+    "value": 7.22,
     "text": "最多 15 哩程 / HKD50"
    },
    "boost": {
     "type": "miles",
-    "value": 16.35,
+    "value": 16.37,
     "text": "最多 34 哩程 / HKD50",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 34 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 34 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Fashion, Shoes, Bags, Accessories：24 哩程 / HKD50（08/11–12/31）",
     "Fashion, Shoes, Bags, Accessories：34 哩程 / HKD50（08/11–12/31）",
     "Fine Jewellery, Fine Watches：15 哩程 / HKD50（08/11–12/31）",
@@ -4807,7 +4826,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/department-stores/harrods-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_601615.4f061b2d5884c251e92d3f27238ae35d5611de1358290921eb6a28cb84281718.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:614675",
@@ -5003,15 +5022,15 @@
    "merchant": "Vilebrequin Asia",
    "merchantId": "620995",
    "category": "服飾配件",
-   "title": "每 NT$100 10.1 哩",
+   "title": "每 NT$100 10.11 哩",
    "reward": {
     "type": "miles",
-    "value": 10.1,
+    "value": 10.11,
     "text": "21 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：21 哩程 / HKD50",
     "Rewards will not be given if customer returns the product. Rewards not available alongside staff discounts.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -5025,7 +5044,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/vilebrequin-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_620995.e6cee3dad3e3b21dc51d8566504f743a3708633d22d93decc9d29b1010eecfc6.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:623115",
@@ -5034,15 +5053,15 @@
    "merchant": "eTravelSIM Asia",
    "merchantId": "623115",
    "category": "生活服務",
-   "title": "每 NT$100 16.06 哩",
+   "title": "每 NT$100 16.09 哩",
    "reward": {
     "type": "miles",
-    "value": 16.06,
+    "value": 16.09,
     "text": "41 哩程 / SGD10"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 41 哩程 / SGD10，以 1 SGD ≈ NT$25.5291 換算",
+    "原始回饋 41 哩程 / SGD10，以 1 SGD ≈ NT$25.4771 換算",
     "一般商品：41 哩程 / SGD10",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5055,7 +5074,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/utilities-and-telecoms/etravelsim-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_623115.6cf44ac381dff754da91ba7f817ad9288c364655b9fc5e7d3a4ccc877ef81c89.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:625225",
@@ -5178,15 +5197,15 @@
    "merchant": "SilkSilky Asia",
    "merchantId": "630131",
    "category": "服飾配件",
-   "title": "每 NT$100 10.1 哩",
+   "title": "每 NT$100 10.11 哩",
    "reward": {
     "type": "miles",
-    "value": 10.1,
+    "value": 10.11,
     "text": "21 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 21 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：21 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5199,7 +5218,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/silksilky-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630131.fc5df5eab5904bf30b22e44ab7ca327d8943b8a8a0355fcf77b4d7613c7b489d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630161",
@@ -5208,15 +5227,15 @@
    "merchant": "Gnome & Bow Asia",
    "merchantId": "630161",
    "category": "服飾配件",
-   "title": "每 NT$100 8.17 哩",
+   "title": "每 NT$100 8.18 哩",
    "reward": {
     "type": "miles",
-    "value": 8.17,
+    "value": 8.18,
     "text": "17 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 17 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 17 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：17 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5229,7 +5248,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/gnome-and-bow-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630161.a6a62a060e7139bd7a4ceaf6042f11336cdb2b99216059f2212cb2caf0fea02d.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630211",
@@ -5246,7 +5265,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 10 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：10 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5259,7 +5278,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/park-hotel-group-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630211.a4803700813fc94fdae3f3ea5600df5a0ffb94e2c7b8a01d99f2bdd47a70f808.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630219",
@@ -5268,15 +5287,15 @@
    "merchant": "Rio Hotel Macau Asia",
    "merchantId": "630219",
    "category": "旅遊住宿",
-   "title": "每 NT$100 5.77 哩",
+   "title": "每 NT$100 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：12 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5289,7 +5308,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/rio-hotel-macau-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630219.312b2b4c91fd215ba195442b4b905bf81081e31bfb899daed09fd8643f4cdcfa.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630241",
@@ -5298,15 +5317,15 @@
    "merchant": "New World Millennium Hotel Hong Kong",
    "merchantId": "630241",
    "category": "旅遊住宿",
-   "title": "每 NT$100 5.77 哩",
+   "title": "每 NT$100 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：12 哩程 / HKD50",
     "哩約 105 天內入帳"
    ],
@@ -5318,7 +5337,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/new-world-millennium-hotel-hong-kong",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630241.ded89a52163fc183d9efecbaed98825f2d6a30423e74330ce29f0cd8bfdc8c5a.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630251",
@@ -5327,15 +5346,15 @@
    "merchant": "Lanson Place Causeway Bay Hong Kong",
    "merchantId": "630251",
    "category": "旅遊住宿",
-   "title": "每 NT$100 5.77 哩",
+   "title": "每 NT$100 5.78 哩",
    "reward": {
     "type": "miles",
-    "value": 5.77,
+    "value": 5.78,
     "text": "12 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 12 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：12 哩程 / HKD50",
     "哩約 105 天內入帳"
    ],
@@ -5347,7 +5366,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/lanson-place-causeway-bay-hong-kong",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630251.f0408150d40a3c71a95aa3a2f0d11c15f2ddb61f7538d0541c5cb7ecaa5e822a.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:630261",
@@ -5356,15 +5375,15 @@
    "merchant": "Tiket Asia",
    "merchantId": "630261",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 7.21 哩",
+   "title": "每 NT$100 最高 7.22 哩",
    "reward": {
     "type": "miles",
-    "value": 7.21,
+    "value": 7.22,
     "text": "最多 15 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 15 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "Hotel Orders (New customers)：15 哩程 / HKD50",
     "\"Thing To Do\" Orders (New customers)：6 哩程 / HKD50",
     "Flight Orders (New customers)：9 哩程",
@@ -5384,7 +5403,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/tiket-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_630261.941c252358e73f17ed2934b5c01758335e13368e59452476ff4b941fd00c0095.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:632389",
@@ -5393,15 +5412,15 @@
    "merchant": "Roamless eSIM Asia",
    "merchantId": "632389",
    "category": "旅遊住宿",
-   "title": "每 NT$100 22.12 哩",
+   "title": "每 NT$100 22.15 哩",
    "reward": {
     "type": "miles",
-    "value": 22.12,
+    "value": 22.15,
     "text": "46 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 46 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 46 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "一般商品：46 哩程 / HKD50",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "哩約 105 天內入帳"
@@ -5414,7 +5433,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/travel/roamless-esim-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_632389.757f0c7191763bd2aeee2bef04f43f87d235e0b032595c2a912eb2b9f801bc45.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:633489",
@@ -5455,15 +5474,15 @@
    "merchant": "ASOS Asia",
    "merchantId": "64734",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 8.65 哩",
+   "title": "每 NT$100 最高 8.67 哩",
    "reward": {
     "type": "miles",
-    "value": 8.65,
+    "value": 8.67,
     "text": "最多 18 哩程 / HKD50"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 18 哩程 / HKD50，以 1 HKD ≈ NT$4.1598 換算",
+    "原始回饋 最多 18 哩程 / HKD50，以 1 HKD ≈ NT$4.1541 換算",
     "新顧客 New Customers：18 哩程 / HKD50",
     "現有顧客 Existing Customers：9 哩程 / HKD50",
     "標示之獎勵適用於ASOS Asia的新顧客。ASOS Asia的現有顧客會獲得較少獎勵。",
@@ -5481,7 +5500,7 @@
    "endAt": null,
    "url": "https://mall.brmile.com/zh/clothes-and-fashion/asos-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_64734.e38ad78639d9cc6924b5ea2ff1c18dbc4bda9a7b.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
    "id": "eva:72454",
@@ -6577,6 +6596,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2026-11-11"
+  },
+  {
+   "source": "eva",
+   "merchant": "KKday",
+   "merchantId": "178348",
+   "category": "旅遊住宿",
+   "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
+   "updatedAt": "2026-11-03T03:28:59.161Z",
+   "id": "eva:v:1msci9s",
+   "kind": "coupon",
+   "title": "11.11 狂歡大促銷",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-11-16"
   },
   {
    "source": "eva",
@@ -7855,31 +7899,6 @@
   },
   {
    "source": "eva",
-   "merchant": "KKday",
-   "merchantId": "178348",
-   "category": "旅遊住宿",
-   "url": "https://mall.brmile.com/zh/travel/kkday-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-28T01:23:57.100Z",
-   "id": "eva:v:c6f8fh",
-   "kind": "coupon",
-   "title": "深圳雅高美憬閣酒店住宿雙 11 特惠",
-   "code": "26WE150",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "conditions": [
-    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
-   ],
-   "tags": [],
-   "startAt": null,
-   "endAt": "2026-11-02"
-  },
-  {
-   "source": "eva",
    "merchant": "Liberty London",
    "merchantId": "32031",
    "category": "服飾配件",
@@ -8427,6 +8446,31 @@
    "tags": [],
    "startAt": null,
    "endAt": "2030-06-19"
+  },
+  {
+   "source": "eva",
+   "merchant": "iHerb",
+   "merchantId": "197118",
+   "category": "藥妝美妝",
+   "url": "https://mall.brmile.com/zh/health-and-beauty/iherb-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_197118.053d3e79bea54013bb37e2fa0a5e2044ca545816.png",
+   "updatedAt": "2026-11-03T03:28:59.161Z",
+   "id": "eva:v:qxch07",
+   "kind": "coupon",
+   "title": "專家每日補充劑限時 8 折優惠",
+   "code": "OCT26DAILY",
+   "reward": {
+    "type": "percent_off",
+    "value": 20,
+    "text": "8折"
+   },
+   "minSpend": null,
+   "conditions": [
+    "從長榮 Mileage Mall連結進入並使用此優惠，才能同時累積哩程"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-11-09"
   },
   {
    "source": "eva",
