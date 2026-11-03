@@ -2,18 +2,24 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 133,
-   "fresh": 5,
-   "updatedAt": "2026-11-02T20:27:45.138Z",
-   "seconds": 12,
+   "count": 137,
+   "fresh": 4,
+   "updatedAt": "2026-11-03T03:34:08.232Z",
+   "seconds": 15,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "限時開團",
+      "keyword": "開團啦",
       "status": 200,
-      "posts": 18,
+      "posts": 0,
+      "limited": true
+     },
+     {
+      "keyword": "開團",
+      "status": 200,
+      "posts": 16,
       "limited": false
      }
     ],
@@ -21,27 +27,27 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 5
+    "items": 4
    }
   },
   "search": {
    "ok": true,
    "count": 34,
-   "fresh": 4,
-   "updatedAt": "2026-11-02T20:27:45.138Z",
+   "fresh": 3,
+   "updatedAt": "2026-11-03T03:34:08.232Z",
    "seconds": 13,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:instagram.com 開團 居家",
+      "q": "site:instagram.com 開團 結單",
       "status": 200,
       "results": 10,
       "posts": 10
      },
      {
-      "q": "site:instagram.com 開團 零食",
+      "q": "site:instagram.com 開團 寶寶",
       "status": 200,
       "results": 10,
       "posts": 10
@@ -52,9 +58,9 @@
   },
   "pages": {
    "ok": true,
-   "count": 159,
-   "fresh": 159,
-   "updatedAt": "2026-11-02T20:27:45.138Z",
+   "count": 164,
+   "fresh": 164,
+   "updatedAt": "2026-11-03T03:34:08.232Z",
    "seconds": 8,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -70,10 +76,10 @@
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
-      "items": 35
+      "items": 41
      }
     ],
-    "items": 159
+    "items": 165
    }
   },
   "instagram": {
@@ -85,9 +91,9 @@
   },
   "rss": {
    "ok": true,
-   "count": 10,
+   "count": 11,
    "fresh": 3,
-   "updatedAt": "2026-11-02T20:27:45.138Z",
+   "updatedAt": "2026-11-03T03:34:08.232Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -97,7 +103,7 @@
       "name": "七先生與艾小姐",
       "posts": 5,
       "items": 3,
-      "latest": "2026-11-01T13:44:34.000Z"
+      "latest": "2026-11-02T12:37:45.000Z"
      }
     ],
     "items": 3
@@ -105,21 +111,21 @@
   },
   "compare": {
    "ok": true,
-   "count": 321,
+   "count": 303,
    "fresh": 20,
-   "updatedAt": "2026-11-02T20:30:35.316Z",
+   "updatedAt": "2026-11-03T03:37:11.068Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 8,
+    "matched": 13,
     "errors": {},
-    "pending": 9,
+    "pending": 15,
     "blocked": {}
    }
   }
  },
- "runs": 77,
- "generatedAt": "2026-11-02T20:27:45.138Z",
+ "runs": 78,
+ "generatedAt": "2026-11-03T03:34:08.232Z",
  "files": [
   "threads.json",
   "search.json",
