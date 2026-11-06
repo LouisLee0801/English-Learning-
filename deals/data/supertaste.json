@@ -2699,7 +2699,7 @@
    "kind": "coupon",
    "source": "supertaste",
    "merchant": "韓姜熙的小廚房",
-   "category": "餐飲美食",
+   "category": "居家生活",
    "title": "送釜山炸魚板乙份",
    "code": null,
    "reward": {
@@ -2722,14 +2722,14 @@
    "endAt": "2026-12-10",
    "url": "https://supertaste.tvbs.com.tw/offers/14493",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e97f3714bba222d0b4c4e0d4b.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14494",
    "kind": "coupon",
    "source": "supertaste",
    "merchant": "樂麵屋",
-   "category": "餐飲美食",
+   "category": "其他",
    "title": "點拉麵送黃金脆薯",
    "code": null,
    "reward": {
@@ -2751,14 +2751,14 @@
    "endAt": "2026-12-10",
    "url": "https://supertaste.tvbs.com.tw/offers/14494",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e978b706aa130eff535519525.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14495",
    "kind": "coupon",
    "source": "supertaste",
    "merchant": "鳳甜烘焙",
-   "category": "餐飲美食",
+   "category": "其他",
    "title": "耶誕禮盒買２送１",
    "code": null,
    "reward": {
@@ -2781,14 +2781,14 @@
    "endAt": "2026-12-17",
    "url": "https://supertaste.tvbs.com.tw/offers/14495",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e988c71b9be3486f6fd50f0c7.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14496",
    "kind": "coupon",
    "source": "supertaste",
    "merchant": "涓豆腐",
-   "category": "餐飲美食",
+   "category": "其他",
    "title": "２人同行送炸豆腐",
    "code": null,
    "reward": {
@@ -2810,7 +2810,7 @@
    "endAt": "2026-12-03",
    "url": "https://supertaste.tvbs.com.tw/offers/14496",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e966b7302b5bdc18c782d8fc3.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14497",
@@ -2871,8 +2871,8 @@
    "id": "supertaste:14499",
    "kind": "coupon",
    "source": "supertaste",
-   "merchant": "天湧茶",
-   "category": "餐飲美食",
+   "merchant": "天湧茶Vinegar Tea",
+   "category": "其他",
    "title": "醋茶第２杯25元",
    "code": null,
    "reward": {
@@ -2895,14 +2895,14 @@
    "endAt": "2026-12-10",
    "url": "https://supertaste.tvbs.com.tw/offers/14499",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e96cc709ba6f96c41ddd4d088.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14500",
    "kind": "coupon",
    "source": "supertaste",
    "merchant": "小吉咖哩",
-   "category": "餐飲美食",
+   "category": "其他",
    "title": "滿額送鹹酥雞",
    "code": null,
    "reward": {
@@ -2924,7 +2924,7 @@
    "endAt": "2026-12-10",
    "url": "https://supertaste.tvbs.com.tw/offers/14500",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e987c713c96bf1802223d6981.jpg",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "supertaste:14502",
@@ -3029,6 +3029,121 @@
    "url": "https://supertaste.tvbs.com.tw/offers/14505",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a982d3d9730595cec861538ebf97.png",
    "updatedAt": "2026-11-05T02:29:35.034Z"
+  },
+  {
+   "id": "supertaste:14506",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "成真咖啡",
+   "category": "餐飲美食",
+   "title": "外帶飲品買１送１",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 190,
+    "unit": "省",
+    "text": "最高省190元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-11-20",
+   "endAt": "2026-12-10",
+   "url": "https://supertaste.tvbs.com.tw/offers/14506",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a12e98527219acdaae794df38c10.jpg",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
+  },
+  {
+   "id": "supertaste:14507",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "丘森茶室",
+   "category": "餐飲美食",
+   "title": "第２杯11元",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 44,
+    "unit": "省",
+    "text": "最多省44元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-11-06",
+   "endAt": "2026-11-26",
+   "url": "https://supertaste.tvbs.com.tw/offers/14507",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a9e4337071e8b4c31fee3567ae4b.jpg",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
+  },
+  {
+   "id": "supertaste:14508",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "萊爾富",
+   "category": "超商量販",
+   "title": "大拿鐵第２杯５元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-10-14",
+   "endAt": "2026-11-10",
+   "url": "https://supertaste.tvbs.com.tw/offers/14508",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1aa00640071a192998c16eb092ada.jpg",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
+  },
+  {
+   "id": "supertaste:14509",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "京燒肉",
+   "category": "餐飲美食",
+   "title": "消費贈和牛三角包",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 560,
+    "unit": "省",
+    "text": "現省560元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：台中",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-11-06",
+   "endAt": "2026-11-26",
+   "url": "https://supertaste.tvbs.com.tw/offers/14509",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1aae5efa67120ba962f7e1c7c42b1.jpg",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   }
  ]
 }

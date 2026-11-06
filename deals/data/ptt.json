@@ -1837,7 +1837,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 25",
+    "推 28",
     "期限見原文"
    ],
    "startAt": null,
@@ -1845,7 +1845,7 @@
    "publishedAt": "2026-11-05T01:23:59.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793841839.A.661.html",
    "category": "服飾配件",
-   "updatedAt": "2026-11-05T22:17:24.318Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "ptt:1793842179.A.1EE",
@@ -1897,7 +1897,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 15",
+    "推 16",
     "期限見原文"
    ],
    "startAt": null,
@@ -1905,7 +1905,7 @@
    "publishedAt": "2026-11-05T02:03:39.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793844219.A.52E.html",
    "category": "其他",
-   "updatedAt": "2026-11-05T22:17:24.318Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "ptt:1793845320.A.5EF",
@@ -1959,14 +1959,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 14"
+    "推 16"
    ],
    "startAt": "2026-11-04",
    "endAt": "2026-11-08",
    "publishedAt": "2026-11-05T03:32:01.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793849521.A.321.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-05T22:17:24.318Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "ptt:1793866159.A.F0B",
@@ -1989,7 +1989,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 23",
+    "推 26",
     "期限見原文"
    ],
    "startAt": null,
@@ -1997,7 +1997,7 @@
    "publishedAt": "2026-11-05T08:09:19.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793866159.A.F0B.html",
    "category": "綜合電商",
-   "updatedAt": "2026-11-05T22:17:24.318Z"
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   },
   {
    "id": "ptt:1793885731.A.435",
@@ -2054,6 +2054,65 @@
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793898567.A.FF5.html",
    "category": "娛樂影音",
    "updatedAt": "2026-11-05T22:17:24.318Z"
+  },
+  {
+   "id": "ptt:1793925704.A.0FC",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "三重nice炸雞 12隻炸雞399",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "男12分鐘內吃完12隻炸雞腿",
+    "女 10",
+    "重點不是這個",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-13",
+   "publishedAt": "2026-11-06T00:41:44.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793925704.A.0FC.html",
+   "category": "餐飲美食",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
+  },
+  {
+   "id": "ptt:1793932053.A.FE6",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "全家",
+   "title": "國泰小樹點1點換全家10元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "打開 -> 國泰優惠 -> 快閃優惠 -> 全家購物金10元(1次抵用型)",
+    "只要1點小樹點就可以換到10元",
+    "蠻划算的了",
+    "不知道大家有沒有領到？",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-13",
+   "publishedAt": "2026-11-06T02:27:33.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1793932053.A.FE6.html",
+   "category": "超商量販",
+   "updatedAt": "2026-11-06T02:27:59.636Z"
   }
  ]
 }
