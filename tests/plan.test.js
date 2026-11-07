@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { _setState, defaults, getState } from '../js/store.js';
-import { getPlan, completeLessonStep, nextLesson, nextHotLesson, streak, reviewLessonIds, dueCards } from '../js/plan.js';
+import { getPlan, completeLessonStep, nextLesson, nextHotLesson, streak, reviewLessonIds, dueCards, HOT_FRESH_DAYS } from '../js/plan.js';
 import { LESSONS, HOT_LESSONS, HOT_WEEKS, TOPICS, tokoItems } from '../js/data/lessons.js';
 import { todayStr, addDays, isWeekend } from '../js/util.js';
 
@@ -124,7 +124,9 @@ test('hot topics run on Tue/Thu while core lessons are in progress', () => {
 
 test('hot topics expire from the schedule after 3 weeks and fill every weekday after the core course', () => {
   fresh();
-  assert.equal(nextHotLesson('2026-11-30'), undefined);
+  const latest = HOT_WEEKS[HOT_WEEKS.length - 1].publishedAt;
+  assert.notEqual(nextHotLesson(addDays(latest, HOT_FRESH_DAYS)), undefined);
+  assert.equal(nextHotLesson(addDays(latest, HOT_FRESH_DAYS + 1)), undefined);
   LESSONS.forEach((l) => finish(l.id, '2026-10-07'));
   assert.equal(getPlan('2026-10-12').mode, 'hot'); // Monday, core done
 });
