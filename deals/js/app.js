@@ -96,6 +96,13 @@ function toast(msg) {
 const fmtDate = (s) => (!s ? '' : s.slice(0, 4) === todayStr().slice(0, 4) ? s.slice(5).replace('-', '/') : s.replaceAll('-', '/'));
 const fmtTime = (iso) =>
   iso ? new Date(iso).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) : '';
+/** 排程超過一天沒寫入資料就提醒（排程本身壞掉時，資料狀態頁的各來源仍會顯示「正常」） */
+function staleNotice() {
+  const t = data.meta?.generatedAt;
+  const days = t ? Math.floor((Date.now() - new Date(t)) / 86400000) : 0;
+  if (days < 1) return '';
+  return `<div class="notice bad">⚠ 資料已 ${days} 天沒有更新（最後一次 ${esc(fmtTime(t))}），自動排程可能出錯。<a href="#/status">資料狀態 →</a></div>`;
+}
 const fmtNum = (n) => (Number.isInteger(n) ? n.toLocaleString('zh-TW') : n.toFixed(2).replace(/\.?0+$/, ''));
 
 function rewardHtml(r) {
@@ -317,6 +324,7 @@ function viewList(qs, mode = 'coupons') {
     (q) => setListFilters(mode, { q }),
   );
   paint(body, `
+    ${staleNotice()}
     ${categoryBar(f, liveInSources)}
     <div class="filters">
       <div class="group"><span class="label">來源</span>
@@ -538,6 +546,7 @@ function viewStatus() {
   const m = data.meta;
   const rows = Object.entries(m?.sources || {});
   $main.innerHTML = `
+    ${staleNotice()}
     <section class="panel">
       <h2>資料來源</h2>
       <p class="muted" style="margin-top:0">GitHub Actions 每天台北時間 06:17 抓全部來源，12:47、18:47、00:47 再更新 PTT 與新聞；某個來源失敗時保留上一次成功的資料，不會清空。</p>

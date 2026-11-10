@@ -60,6 +60,13 @@ function toast(msg) {
 
 const md = (s) => (s ? `${+s.slice(5, 7)}/${+s.slice(8, 10)}${s.length > 10 ? ` ${s.slice(11)}` : ''}` : '');
 const fmtTime = (iso) => (iso ? new Date(iso).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) : '');
+/** 排程超過一天沒寫入資料就提醒（排程本身壞掉時，資料狀態頁的各來源仍會顯示「正常」） */
+function staleNotice() {
+  const t = data.meta?.generatedAt;
+  const days = t ? Math.floor((Date.now() - new Date(t)) / 86400000) : 0;
+  if (days < 1) return '';
+  return `<div class="notice bad">⚠ 資料已 ${days} 天沒有更新（最後一次 ${esc(fmtTime(t))}），自動排程可能出錯。<a href="#/sources">資料狀態 →</a></div>`;
+}
 const fmtPrice = (n) => `$${Number(n).toLocaleString('zh-TW')}`;
 
 /** 搜尋字標黃（先跳脫再標記） */
@@ -250,6 +257,7 @@ function viewList(qs) {
   const hasFilter = Boolean(filtersToQuery(f));
 
   paint(mount('list', f, '#/', viewList), `
+    ${staleNotice()}
     ${categoryBar(f, pool, '#/')}
     <div class="filters">
       <div class="group"><span class="label">平台</span>
@@ -300,6 +308,7 @@ function viewCalendar(qs) {
     </a>`;
   };
   paint(mount('calendar', f, '#/calendar', viewCalendar), `
+    ${staleNotice()}
     ${categoryBar(f, pool, '#/calendar')}
     ${groups.length ? groups.map((g) => `<section class="tl-group ${g.title.startsWith('今天') ? 'today' : ''}"><h2>${esc(g.title)} <small>${g.items.length} 筆</small></h2><div class="tl-list">${g.items.map(row).join('')}</div></section>`).join('') : emptyState(Boolean(f.q || f.category))}
     <p class="muted" style="font-size:12px">時間軸只列還沒結單的團；點一列開原文。想在結單前被提醒，可在「團購」卡片按「📅 提醒」加到 Google 日曆。</p>
@@ -497,6 +506,7 @@ function viewSources() {
     return `<span class="ok">已連上</span>${f.latest ? ` <span class="muted">最新貼文 ${esc(fmtTime(f.latest))}</span>` : ''}`;
   };
   $main.innerHTML = `
+    ${staleNotice()}
     <section class="panel">
       <h2>資料來源</h2>
       <p class="muted" style="margin-top:0">GitHub Actions 每 2 小時跑一次；某個來源失敗時保留上一次的資料。社群搜尋每次只看得到一小段，資料會累積到結單（沒寫結單日的保留 10 天）。</p>
