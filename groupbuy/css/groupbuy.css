@@ -287,6 +287,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
 .empty { text-align: center; padding: 48px 16px; color: var(--muted); }
 .empty b { display: block; color: var(--ink); font-size: 17px; margin-bottom: 6px; }
 .notice { border-left: 4px solid var(--upcoming); background: var(--upcoming-soft); padding: 10px 14px; border-radius: 8px; font-size: 14px; margin-bottom: 14px; }
+.notice.bad { border-color: var(--closing); background: var(--closing-soft); }
 .foot { max-width: 1180px; margin: 0 auto; padding: 0 16px 88px; font-size: 12px; color: var(--muted); }
 .foot a { margin-left: 10px; }
 .toast {
