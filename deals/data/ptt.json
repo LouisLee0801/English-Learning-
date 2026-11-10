@@ -1939,7 +1939,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 39",
+    "推 40",
     "期限見原文"
    ],
    "startAt": null,
@@ -1947,7 +1947,7 @@
    "publishedAt": "2026-11-09T03:54:40.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794196480.A.635.html",
    "category": "交通出行",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-10T13:00:43.846Z"
   },
   {
    "id": "ptt:1794213456.A.C80",
@@ -2058,14 +2058,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 39"
+    "推 49"
    ],
    "startAt": null,
    "endAt": "2026-11-18",
    "publishedAt": "2026-11-09T15:17:06.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794237426.A.983.html",
    "category": "生活服務",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-10T13:00:43.846Z"
   },
   {
    "id": "ptt:1794274765.A.EE0",
@@ -2088,7 +2088,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 16",
+    "推 19",
     "期限見原文"
    ],
    "startAt": null,
@@ -2096,7 +2096,66 @@
    "publishedAt": "2026-11-10T01:39:25.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794274765.A.EE0.html",
    "category": "其他",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-10T13:00:43.846Z"
+  },
+  {
+   "id": "ptt:1794293619.A.BCB",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "11/11 台灣好湯券299元買1送1，有限量",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "看起來是觀光署補助的，買一送一，800套。 11/11 限時開賣。",
+    "NT$299元台灣好湯通用券1+1套票組(觀光署溫泉季限量發行800組)",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 20",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-17",
+   "publishedAt": "2026-11-10T06:53:39.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794293619.A.BCB.html",
+   "category": "其他",
+   "updatedAt": "2026-11-10T13:00:43.846Z"
+  },
+  {
+   "id": "ptt:1794297660.A.52E",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "蝦皮",
+   "title": "蝦皮11/11優惠整理",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "先上蝦皮11/11領券連結",
+    "1. 全站$1,000-200 00/12/18",
+    "2. 全站100%蝦幣回饋券",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 31",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-17",
+   "publishedAt": "2026-11-10T08:01:00.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794297660.A.52E.html",
+   "category": "綜合電商",
+   "updatedAt": "2026-11-10T13:00:43.846Z"
   }
  ]
 }
