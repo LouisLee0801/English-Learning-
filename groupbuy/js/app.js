@@ -102,11 +102,13 @@ function compareBlock(it) {
   const v = rec ? priceVerdict(it, rec.offers) : null;
   const summary = rows.length ? `比價｜網路最低 ${SHOPS[rows[0].shop].name} ${fmtPrice(rows[0].price)}` : rec ? '比價｜沒找到同款' : '比價｜到各平台搜尋';
   const note = rec ? `${fmtTime(rec.checkedAt)} 自動比對的相似商品，規格、組數可能不同，請點進去確認。` : '排程每 2 小時比一批，還沒輪到這個商品。';
+  // 酷澎一向擋自動連線；其他平台看最近一次排程有沒有被擋（momo 2026-11 起對排程主機回 403）
+  const blocked = ['coupang', ...Object.keys(data.meta?.sources?.compare?.stats?.blocked || {})].filter((k, i, a) => SHOPS[k] && a.indexOf(k) === i).map((k) => SHOPS[k].name);
   return `<details class="compare">
       <summary>${esc(summary)}${v ? ` <span class="verdict ${v.kind}">${esc(v.text)}</span>` : ''}</summary>
       ${rows.length ? `<ul class="cmp">${rows.map((r) => `<li><a href="${safeUrl(r.url)}" target="_blank" rel="noopener"><b>${esc(SHOPS[r.shop].name)}</b><span class="cmp-price">${fmtPrice(r.price)}</span><span class="cmp-name">${esc(r.name)}</span></a></li>`).join('')}</ul>` : ''}
       <div class="cmp-search"><span>搜尋</span>${SHOP_KEYS.map((k) => `<a href="${esc(SHOPS[k].search(q))}" target="_blank" rel="noopener">${esc(SHOPS[k].name)}</a>`).join('')}</div>
-      <p class="cmp-note">${esc(note)}酷澎不開放自動比價，請用搜尋連結。</p>
+      <p class="cmp-note">${esc(note)}目前擋下自動比價的平台：${esc(blocked.join('、'))}，請用搜尋連結。</p>
     </details>`;
 }
 
