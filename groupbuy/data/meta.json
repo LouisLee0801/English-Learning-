@@ -2,18 +2,18 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 89,
-   "fresh": 11,
-   "updatedAt": "2026-11-11T02:03:21.795Z",
-   "seconds": 8,
+   "count": 90,
+   "fresh": 3,
+   "updatedAt": "2026-11-11T09:41:22.333Z",
+   "seconds": 6,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 19,
+      "posts": 3,
       "limited": false
      }
     ],
@@ -21,7 +21,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 11
+    "items": 3
    }
   },
   "search": {
@@ -50,14 +50,14 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-11T02:03:21.795Z"
+   "failedAt": "2026-11-11T09:41:22.333Z"
   },
   "pages": {
    "ok": true,
-   "count": 170,
-   "fresh": 170,
-   "updatedAt": "2026-11-11T02:03:21.795Z",
-   "seconds": 25,
+   "count": 172,
+   "fresh": 172,
+   "updatedAt": "2026-11-11T09:41:22.333Z",
+   "seconds": 7,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -68,14 +68,14 @@
      },
      {
       "name": "主夫尼克團購",
-      "items": 108
+      "items": 110
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
       "items": 42
      }
     ],
-    "items": 171
+    "items": 173
    }
   },
   "instagram": {
@@ -87,10 +87,10 @@
   },
   "rss": {
    "ok": true,
-   "count": 5,
-   "fresh": 2,
-   "updatedAt": "2026-11-11T02:03:21.795Z",
-   "seconds": 0,
+   "count": 6,
+   "fresh": 3,
+   "updatedAt": "2026-11-11T09:41:22.333Z",
+   "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -98,34 +98,34 @@
      {
       "name": "七先生與艾小姐",
       "posts": 5,
-      "items": 2,
-      "latest": "2026-11-09T12:26:44.000Z"
+      "items": 3,
+      "latest": "2026-11-10T12:53:29.000Z"
      }
     ],
-    "items": 2
+    "items": 3
    }
   },
   "compare": {
    "ok": true,
-   "count": 228,
+   "count": 231,
    "fresh": 20,
-   "updatedAt": "2026-11-11T02:05:42.089Z",
+   "updatedAt": "2026-11-11T09:43:20.498Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 14,
+    "matched": 1,
     "errors": {
      "momo": 1
     },
-    "pending": 32,
+    "pending": 25,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 96,
- "generatedAt": "2026-11-11T02:03:21.795Z",
+ "runs": 97,
+ "generatedAt": "2026-11-11T09:41:22.333Z",
  "files": [
   "threads.json",
   "search.json",
