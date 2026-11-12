@@ -2,20 +2,14 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 91,
-   "fresh": 12,
-   "updatedAt": "2026-11-12T00:55:34.237Z",
-   "seconds": 15,
+   "count": 98,
+   "fresh": 11,
+   "updatedAt": "2026-11-12T10:02:00.750Z",
+   "seconds": 7,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
-     {
-      "keyword": "收單",
-      "status": 200,
-      "posts": 0,
-      "limited": true
-     },
      {
       "keyword": "開團",
       "status": 200,
@@ -27,7 +21,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 12
+    "items": 11
    }
   },
   "search": {
@@ -55,15 +49,15 @@
     ],
     "items": 3
    },
-   "error": "apiRequestContext.get: read ECONNRESET",
-   "failedAt": "2026-11-12T00:55:34.237Z"
+   "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
+   "failedAt": "2026-11-12T10:02:00.750Z"
   },
   "pages": {
    "ok": true,
-   "count": 172,
-   "fresh": 172,
-   "updatedAt": "2026-11-12T00:55:34.237Z",
-   "seconds": 7,
+   "count": 170,
+   "fresh": 170,
+   "updatedAt": "2026-11-12T10:02:00.750Z",
+   "seconds": 9,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -78,10 +72,10 @@
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
-      "items": 42
+      "items": 40
      }
     ],
-    "items": 173
+    "items": 171
    }
   },
   "instagram": {
@@ -95,7 +89,7 @@
    "ok": true,
    "count": 6,
    "fresh": 3,
-   "updatedAt": "2026-11-12T00:55:34.237Z",
+   "updatedAt": "2026-11-12T10:02:00.750Z",
    "seconds": 0,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -113,13 +107,13 @@
   },
   "compare": {
    "ok": true,
-   "count": 224,
+   "count": 219,
    "fresh": 20,
-   "updatedAt": "2026-11-12T00:57:39.588Z",
+   "updatedAt": "2026-11-12T10:03:58.378Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 2,
+    "matched": 3,
     "errors": {
      "momo": 1
     },
@@ -130,8 +124,8 @@
    }
   }
  },
- "runs": 99,
- "generatedAt": "2026-11-12T00:55:34.237Z",
+ "runs": 100,
+ "generatedAt": "2026-11-12T10:02:00.750Z",
  "files": [
   "threads.json",
   "search.json",
