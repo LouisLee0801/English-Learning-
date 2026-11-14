@@ -1690,7 +1690,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 15",
+    "推 17",
     "期限見原文"
    ],
    "startAt": null,
@@ -1698,7 +1698,7 @@
    "publishedAt": "2026-11-11T13:02:37.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794402157.A.3A1.html",
    "category": "其他",
-   "updatedAt": "2026-11-13T12:38:34.335Z"
+   "updatedAt": "2026-11-14T11:45:54.295Z"
   },
   {
    "id": "ptt:1794413181.A.13F",
@@ -1720,7 +1720,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 54",
+    "推 56",
     "期限見原文"
    ],
    "startAt": null,
@@ -1728,7 +1728,7 @@
    "publishedAt": "2026-11-11T16:06:21.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794413181.A.13F.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-13T22:11:21.250Z"
+   "updatedAt": "2026-11-14T11:45:54.295Z"
   },
   {
    "id": "ptt:1794460986.A.42F",
@@ -1781,7 +1781,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 41",
+    "推 42",
     "期限見原文"
    ],
    "startAt": null,
@@ -1789,7 +1789,7 @@
    "publishedAt": "2026-11-12T09:13:51.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794474831.A.D44.html",
    "category": "生活服務",
-   "updatedAt": "2026-11-13T22:11:21.250Z"
+   "updatedAt": "2026-11-14T11:45:54.295Z"
   },
   {
    "id": "ptt:1794536499.A.B2C",
@@ -1811,7 +1811,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 20",
+    "推 22",
     "期限見原文"
    ],
    "startAt": null,
@@ -1819,7 +1819,66 @@
    "publishedAt": "2026-11-13T02:21:39.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794536499.A.B2C.html",
    "category": "娛樂影音",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-14T11:45:54.295Z"
+  },
+  {
+   "id": "ptt:1794625097.A.D98",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "王品",
+   "title": "王品集團TASTy西堤牛排漲價4.3%",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "近期打算使用餐券前往西堤用餐的人要注意了",
+    "王品集團旗下「西堤牛排」宣布調漲經典套餐價格，由原本的698元調升至728元，每客調",
+    "漲30元（漲幅約4.3%），10%服務費另計。",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 52",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-21",
+   "publishedAt": "2026-11-14T02:58:17.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794625097.A.D98.html",
+   "category": "餐飲美食",
+   "updatedAt": "2026-11-14T11:45:54.295Z"
+  },
+  {
+   "id": "ptt:1794651931.A.1F7",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "中油",
+   "title": "中油11/16-11/22汽、柴油價格維持不調整",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "A:NO",
+    "台灣中油公司今(14)日宣布，自下週一(16日)凌晨零時起至11月22日晚上12時止，汽、柴",
+    "油價格維持不調整，分別為92無鉛汽油每公升31.2元、95無鉛汽油每公升32.7元、98無鉛",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [],
+   "startAt": "2026-11-16",
+   "endAt": "2026-11-22",
+   "publishedAt": "2026-11-14T10:25:31.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794651931.A.1F7.html",
+   "category": "交通出行",
+   "updatedAt": "2026-11-14T11:45:54.295Z"
   }
  ]
 }
