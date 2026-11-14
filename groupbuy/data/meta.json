@@ -2,18 +2,24 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 104,
-   "fresh": 13,
-   "updatedAt": "2026-11-13T23:46:16.496Z",
-   "seconds": 8,
+   "count": 106,
+   "fresh": 7,
+   "updatedAt": "2026-11-14T06:51:10.978Z",
+   "seconds": 15,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "限時開團",
+      "keyword": "開團啦",
       "status": 200,
-      "posts": 21,
+      "posts": 0,
+      "limited": true
+     },
+     {
+      "keyword": "開團",
+      "status": 200,
+      "posts": 17,
       "limited": false
      }
     ],
@@ -21,7 +27,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 13
+    "items": 7
    }
   },
   "search": {
@@ -50,14 +56,14 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-13T23:46:16.496Z"
+   "failedAt": "2026-11-14T06:51:10.978Z"
   },
   "pages": {
    "ok": true,
    "count": 168,
    "fresh": 168,
-   "updatedAt": "2026-11-13T23:46:16.496Z",
-   "seconds": 12,
+   "updatedAt": "2026-11-14T06:51:10.978Z",
+   "seconds": 27,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -89,8 +95,8 @@
    "ok": true,
    "count": 3,
    "fresh": 3,
-   "updatedAt": "2026-11-13T23:46:16.496Z",
-   "seconds": 0,
+   "updatedAt": "2026-11-14T06:51:10.978Z",
+   "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -107,25 +113,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 228,
+   "count": 224,
    "fresh": 20,
-   "updatedAt": "2026-11-13T23:48:16.709Z",
+   "updatedAt": "2026-11-14T06:53:36.633Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 10,
+    "matched": 9,
     "errors": {
      "momo": 1
     },
-    "pending": 15,
+    "pending": 14,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 105,
- "generatedAt": "2026-11-13T23:46:16.496Z",
+ "runs": 106,
+ "generatedAt": "2026-11-14T06:51:10.978Z",
  "files": [
   "threads.json",
   "search.json",
