@@ -2,18 +2,18 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 109,
-   "fresh": 12,
-   "updatedAt": "2026-11-14T20:51:33.089Z",
-   "seconds": 6,
+   "count": 115,
+   "fresh": 14,
+   "updatedAt": "2026-11-15T02:02:13.860Z",
+   "seconds": 8,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 21,
+      "posts": 20,
       "limited": false
      }
     ],
@@ -21,7 +21,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 12
+    "items": 14
    }
   },
   "search": {
@@ -50,14 +50,14 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-14T20:51:33.089Z"
+   "failedAt": "2026-11-15T02:02:13.860Z"
   },
   "pages": {
    "ok": true,
    "count": 168,
    "fresh": 168,
-   "updatedAt": "2026-11-14T20:51:33.089Z",
-   "seconds": 26,
+   "updatedAt": "2026-11-15T02:02:13.860Z",
+   "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -89,7 +89,7 @@
    "ok": true,
    "count": 3,
    "fresh": 3,
-   "updatedAt": "2026-11-14T20:51:33.089Z",
+   "updatedAt": "2026-11-15T02:02:13.860Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -107,25 +107,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 236,
+   "count": 239,
    "fresh": 20,
-   "updatedAt": "2026-11-14T20:53:46.188Z",
+   "updatedAt": "2026-11-15T02:04:25.957Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 0,
+    "matched": 1,
     "errors": {
      "momo": 1
     },
-    "pending": 8,
+    "pending": 7,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 108,
- "generatedAt": "2026-11-14T20:51:33.089Z",
+ "runs": 109,
+ "generatedAt": "2026-11-15T02:02:13.860Z",
  "files": [
   "threads.json",
   "search.json",
