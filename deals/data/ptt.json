@@ -1301,7 +1301,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 57",
+    "推 58",
     "期限見原文"
    ],
    "startAt": null,
@@ -1309,7 +1309,7 @@
    "publishedAt": "2026-11-11T16:06:21.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794413181.A.13F.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-14T20:56:25.437Z"
+   "updatedAt": "2026-11-15T01:57:00.627Z"
   },
   {
    "id": "ptt:1794460986.A.42F",
@@ -1423,7 +1423,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 57",
+    "推 59",
     "期限見原文"
    ],
    "startAt": null,
@@ -1431,7 +1431,7 @@
    "publishedAt": "2026-11-14T02:58:17.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794625097.A.D98.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-11-14T20:56:25.437Z"
+   "updatedAt": "2026-11-15T01:57:00.627Z"
   },
   {
    "id": "ptt:1794651931.A.1F7",
@@ -1454,14 +1454,44 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 27"
+    "推 31"
    ],
    "startAt": "2026-11-16",
    "endAt": "2026-11-22",
    "publishedAt": "2026-11-14T10:25:31.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794651931.A.1F7.html",
    "category": "交通出行",
-   "updatedAt": "2026-11-14T20:56:25.437Z"
+   "updatedAt": "2026-11-15T01:57:00.627Z"
+  },
+  {
+   "id": "ptt:1794706322.A.67C",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "福勝亭時報優惠",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "A: 無",
+    "早上買咖啡看到的，就順手也買了報紙~~",
+    "省錢點：買定食送定食，到1122",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-22",
+   "publishedAt": "2026-11-15T01:32:02.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794706322.A.67C.html",
+   "category": "其他",
+   "updatedAt": "2026-11-15T01:57:00.627Z"
   }
  ]
 }
