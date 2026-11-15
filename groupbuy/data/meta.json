@@ -2,20 +2,14 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 119,
-   "fresh": 10,
-   "updatedAt": "2026-11-15T17:20:26.303Z",
-   "seconds": 13,
+   "count": 121,
+   "fresh": 6,
+   "updatedAt": "2026-11-15T23:02:59.605Z",
+   "seconds": 9,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
-     {
-      "keyword": "收單",
-      "status": 200,
-      "posts": 0,
-      "limited": true
-     },
      {
       "keyword": "開團",
       "status": 200,
@@ -27,7 +21,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 10
+    "items": 6
    }
   },
   "search": {
@@ -56,14 +50,14 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-15T17:20:26.303Z"
+   "failedAt": "2026-11-15T23:02:59.605Z"
   },
   "pages": {
    "ok": true,
-   "count": 171,
-   "fresh": 171,
-   "updatedAt": "2026-11-15T17:20:26.303Z",
-   "seconds": 8,
+   "count": 172,
+   "fresh": 172,
+   "updatedAt": "2026-11-15T23:02:59.605Z",
+   "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -74,14 +68,14 @@
      },
      {
       "name": "主夫尼克團購",
-      "items": 112
+      "items": 113
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
       "items": 38
      }
     ],
-    "items": 172
+    "items": 173
    }
   },
   "instagram": {
@@ -95,8 +89,8 @@
    "ok": true,
    "count": 3,
    "fresh": 3,
-   "updatedAt": "2026-11-15T17:20:26.303Z",
-   "seconds": 0,
+   "updatedAt": "2026-11-15T23:02:59.605Z",
+   "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -113,9 +107,9 @@
   },
   "compare": {
    "ok": true,
-   "count": 254,
+   "count": 257,
    "fresh": 20,
-   "updatedAt": "2026-11-15T17:22:28.250Z",
+   "updatedAt": "2026-11-15T23:05:12.050Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
@@ -123,15 +117,15 @@
     "errors": {
      "momo": 1
     },
-    "pending": 2,
+    "pending": 1,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 111,
- "generatedAt": "2026-11-15T17:20:26.303Z",
+ "runs": 112,
+ "generatedAt": "2026-11-15T23:02:59.605Z",
  "files": [
   "threads.json",
   "search.json",
