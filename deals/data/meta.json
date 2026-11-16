@@ -2,33 +2,33 @@
  "sources": {
   "line": {
    "ok": true,
-   "count": 1538,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
-   "seconds": 66,
+   "count": 1398,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
+   "seconds": 56,
    "note": "LINE POINTS 回饋 %；加碼期間、折價券、賺點任務來自 LINE購物 官方 API",
    "version": 1
   },
   "eva": {
    "ok": true,
-   "count": 332,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
-   "seconds": 52,
+   "count": 331,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
+   "seconds": 58,
    "note": "長榮 Mileage Mall台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1
   },
   "cathay": {
    "ok": true,
    "count": 148,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
+   "updatedAt": "2026-11-16T02:10:20.792Z",
    "seconds": 30,
    "note": "國泰 Milesback台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1
   },
   "burgerking": {
    "ok": true,
-   "count": 34,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
-   "seconds": 22,
+   "count": 27,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
+   "seconds": 4,
    "note": "漢堡王官網線上點餐優惠券（官網／App 價格）",
    "version": 1
   },
@@ -40,59 +40,57 @@
    "note": "康是美官網最新活動",
    "version": 1,
    "error": "https://www.cosmed.com.tw/news.aspx?c=2 → HTTP 403",
-   "failedAt": "2026-11-15T01:57:00.627Z"
+   "failedAt": "2026-11-16T02:10:20.792Z"
   },
   "news": {
-   "ok": false,
-   "count": 238,
-   "updatedAt": "2026-11-15T12:16:26.542Z",
+   "ok": true,
+   "count": 228,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
    "seconds": 11,
    "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）",
-   "version": 1,
-   "error": "所有新聞查詢都失敗",
-   "failedAt": "2026-11-15T21:18:23.966Z"
+   "version": 1
   },
   "ptt": {
    "ok": true,
    "count": 53,
-   "updatedAt": "2026-11-15T21:18:23.966Z",
-   "seconds": 2,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
+   "seconds": 1,
    "note": "PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）",
    "version": 1
   },
   "seven": {
    "ok": true,
    "count": 8,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
+   "updatedAt": "2026-11-16T02:10:20.792Z",
    "seconds": 3,
    "note": "7-ELEVEN 官網首頁看板、精品集點活動",
    "version": 2
   },
   "supertaste": {
    "ok": true,
-   "count": 127,
-   "updatedAt": "2026-11-15T01:57:00.627Z",
+   "count": 123,
+   "updatedAt": "2026-11-16T02:10:20.792Z",
    "seconds": 4,
    "note": "食尚玩家 App 優惠券（需在 App／官網領券）",
    "version": 1
   }
  },
- "generatedAt": "2026-11-15T21:18:23.966Z",
+ "generatedAt": "2026-11-16T02:10:20.792Z",
  "fx": {
-  "USD": 32.9294,
-  "HKD": 4.1961,
-  "SGD": 25.5598,
-  "AUD": 22.3294,
-  "NZD": 18.2076,
-  "CAD": 23.0947,
-  "JPY": 0.206,
+  "USD": 32.9196,
+  "HKD": 4.1932,
+  "SGD": 25.5415,
+  "AUD": 22.3125,
+  "NZD": 18.1944,
+  "CAD": 23.0601,
+  "JPY": 0.2058,
   "KRW": 0.0246,
   "CNY": 4.931,
-  "THB": 0.9714,
-  "MYR": 8.0476,
-  "GBP": 43.5294,
-  "EUR": 36.3914,
-  "CHF": 39.2866,
+  "THB": 0.9704,
+  "MYR": 8.0428,
+  "GBP": 43.4877,
+  "EUR": 36.2911,
+  "CHF": 39.2126,
   "_src": "open.er-api.com"
  },
  "files": [
