@@ -2826,7 +2826,7 @@
    "id": "supertaste:14532",
    "kind": "coupon",
    "source": "supertaste",
-   "merchant": "肯德基－板橋中山二餐廳",
+   "merchant": "肯德基",
    "category": "餐飲美食",
    "title": "炸雞蛋塔組53折",
    "code": null,
@@ -2839,7 +2839,7 @@
    "minSpend": null,
    "conditions": [
     "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "地點：新北",
+    "全台連鎖門市",
     "每位會員每種券限領一次，數量有限"
    ],
    "tags": [
@@ -2849,7 +2849,35 @@
    "endAt": "2026-12-03",
    "url": "https://supertaste.tvbs.com.tw/offers/14532",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a11a69a17289a318730dcfd22224.jpg",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14533",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "MSC榮耀號",
+   "category": "旅遊住宿",
+   "title": "每房現折１萬元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：網路店家",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-11-16",
+   "endAt": "2026-12-06",
+   "url": "https://supertaste.tvbs.com.tw/offers/14533",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1c5d03d5f715a8c8f58a2dcb1fde0.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "supertaste:14534",
@@ -3270,6 +3298,504 @@
    "url": "https://supertaste.tvbs.com.tw/offers/14550",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1d41bc273721388adc06e3b8c9cfc.webp",
    "updatedAt": "2026-11-14T02:27:52.815Z"
+  },
+  {
+   "id": "supertaste:14551",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "可不可熟成茶行",
+   "category": "餐飲美食",
+   "title": "新品免費升級",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-24",
+   "endAt": "2026-12-07",
+   "url": "https://supertaste.tvbs.com.tw/offers/14551",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e2a63c1e7050b7628935c79e12b2.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14552",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "丹丹漢堡",
+   "category": "餐飲美食",
+   "title": "抽抽樂最高０元吃",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-16",
+   "endAt": "2027-01-21",
+   "url": "https://supertaste.tvbs.com.tw/offers/14552",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e3f5e13772cc9acb8d6d14ca36a9.webp",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14553",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "狗一下居酒食堂",
+   "category": "餐飲美食",
+   "title": "送鮭魚毛毛蟲壽司",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-16",
+   "endAt": "2026-11-30",
+   "url": "https://supertaste.tvbs.com.tw/offers/14553",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e4267db170adaa6c0e2eed87123c.webp",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14554",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "王品牛排",
+   "category": "餐飲美食",
+   "title": "抽萬元好禮",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-17",
+   "endAt": "2026-12-15",
+   "url": "https://supertaste.tvbs.com.tw/offers/14554",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e36c79467377a1406ad034108c11.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14555",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "煙波城行阿里山北門館",
+   "category": "旅遊住宿",
+   "title": "４千有找",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：嘉義",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-13",
+   "endAt": "2026-11-17",
+   "url": "https://supertaste.tvbs.com.tw/offers/14555",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e346c1de7272bdad035a4527465f.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14556",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "RT雅特烘焙 府後店",
+   "category": "其他",
+   "title": "聖誕系列商品９折",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 9,
+    "unit": "省",
+    "text": "現省9元起"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-12-05",
+   "endAt": "2026-12-25",
+   "url": "https://supertaste.tvbs.com.tw/offers/14556",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e76bd18d7176b98ca1c791114c7a.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14557",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "Buddy Burger Lab﹒ 美式漢堡",
+   "category": "餐飲美食",
+   "title": "買主餐送套餐",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 90,
+    "unit": "省",
+    "text": "現省90元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-12-09",
+   "endAt": "2026-12-29",
+   "url": "https://supertaste.tvbs.com.tw/offers/14557",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e77607bb7195b9a2aeaf7c11d75e.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14558",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "蔗一條豬 大同店",
+   "category": "其他",
+   "title": "滿200元享８折",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 40,
+    "unit": "省",
+    "text": "現省40元"
+   },
+   "minSpend": 200,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-12-16",
+   "endAt": "2026-12-31",
+   "url": "https://supertaste.tvbs.com.tw/offers/14558",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e786b26173c39321494d3926df85.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14559",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "cama café",
+   "category": "餐飲美食",
+   "title": "任２杯88折",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 12,
+    "text": "88折"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-17",
+   "endAt": "2026-11-30",
+   "url": "https://supertaste.tvbs.com.tw/offers/14559",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7811e1172c38eaba7d34f239a47.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14560",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "特好喝",
+   "category": "餐飲美食",
+   "title": "免費喝１杯",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-19",
+   "endAt": "2026-11-22",
+   "url": "https://supertaste.tvbs.com.tw/offers/14560",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e78bb94a7059b2038a6463424998.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14561",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "新橋燒肉屋 府後店",
+   "category": "餐飲美食",
+   "title": "滿千送菜品６選１",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 120,
+    "unit": "省",
+    "text": "現省120元起"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-12-05",
+   "endAt": "2026-12-25",
+   "url": "https://supertaste.tvbs.com.tw/offers/14561",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e78fe05f72c08978c70433d59110.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14562",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "新美乃斯食品行",
+   "category": "其他",
+   "title": "滿百９折滿千送禮",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 10,
+    "unit": "省",
+    "text": "現省10元起"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-12-05",
+   "endAt": "2026-12-25",
+   "url": "https://supertaste.tvbs.com.tw/offers/14562",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e79bef9870a8905639e62395ffac.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14563",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "茂昌草本茶 新竹城隍店",
+   "category": "餐飲美食",
+   "title": "手搖飲品買一送一",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 50,
+    "unit": "省",
+    "text": "現省50元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-12-09",
+   "endAt": "2026-12-29",
+   "url": "https://supertaste.tvbs.com.tw/offers/14563",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7aa01a771cd952b2d32b3944082.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14564",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "阿忠冰店（城隍總店）",
+   "category": "其他",
+   "title": "每碗冰品現折５元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家",
+    "依品項不同"
+   ],
+   "startAt": "2026-12-09",
+   "endAt": "2026-12-29",
+   "url": "https://supertaste.tvbs.com.tw/offers/14564",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7b02c007142a6cdb8a5699bd585.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14565",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "虎嘯小麵館",
+   "category": "其他",
+   "title": "滿200送燙青菜",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 50,
+    "unit": "省",
+    "text": "現省50元"
+   },
+   "minSpend": 200,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-12-09",
+   "endAt": "2026-12-29",
+   "url": "https://supertaste.tvbs.com.tw/offers/14565",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7b6f204710eb217b50ca03aa875.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14566",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "7-ELEVEN",
+   "category": "超商量販",
+   "title": "任選２件79折",
+   "code": null,
+   "reward": {
+    "type": "percent_off",
+    "value": 21,
+    "text": "79折"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-11",
+   "endAt": "2026-12-08",
+   "url": "https://supertaste.tvbs.com.tw/offers/14566",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7b9c40f7012ad13eefa94ce15a0.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14567",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "亞尼克",
+   "category": "餐飲美食",
+   "title": "全品項９折",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-26",
+   "endAt": "2026-11-27",
+   "url": "https://supertaste.tvbs.com.tw/offers/14567",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7b747e0726abcac280c0c0e5d78.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
+  },
+  {
+   "id": "supertaste:14568",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "肯德基 新竹中正餐廳",
+   "category": "餐飲美食",
+   "title": "超值組合餐61折",
+   "code": null,
+   "reward": {
+    "type": "amount",
+    "value": 361,
+    "unit": "省",
+    "text": "現省361元"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [
+    "食尚獨家"
+   ],
+   "startAt": "2026-12-05",
+   "endAt": "2026-12-25",
+   "url": "https://supertaste.tvbs.com.tw/offers/14568",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1a11a67f9729aa68cc3eec719e04d.jpg",
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   }
  ]
 }

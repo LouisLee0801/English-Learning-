@@ -16,7 +16,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4802 換算",
     "New Customer Orders Over £150：£1 = 3.25",
     "New Customer Orders Under £149.99：£1 = 2",
     "Existing Customers：£1 = 0.75",
@@ -33,13 +33,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/monica-vinader",
    "logo": "https://cdn.rewardengine.com/upload/merchant_100234.3b4ba33cb18c3325d9f8aad72dcb13cbde510df1.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:118278",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Apple Store Online",
+   "merchant": "Apple Store Online 台灣",
    "merchantId": "118278",
    "category": "3C家電",
    "title": "每 NT$100 1.5 里",
@@ -69,13 +69,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/apple-store-online-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_118278.b76a431cf42f50906a18a4b619da370da27446dd.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:122988",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Taobao Taiwan (Desktop)",
+   "merchant": "淘寶網台灣 (PC版)",
    "merchantId": "122988",
    "category": "綜合電商",
    "title": "每 NT$100 3.75 里",
@@ -107,13 +107,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/taobao-taiwan-x28-desktop-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_122988.13adbda75aee3f7c2b54a7b6ad003616c0c11966.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:127798",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Hotels.com",
+   "merchant": "好訂網",
    "merchantId": "127798",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 7.75 里",
@@ -147,13 +147,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/hotels-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_127798.85cde1491a6f376fe638c22e8b592b30835474c2bc481da21c80ea0afc8217cf.png",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:131238",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Agoda",
+   "merchant": "Agoda 臺灣",
    "merchantId": "131238",
    "category": "旅遊住宿",
    "title": "每 NT$100 4.5 里",
@@ -178,7 +178,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/agoda-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_131238.764e2e94d3b1a3e96bba35ae3f849d2d6a0e2d71.png",
-   "updatedAt": "2026-11-11T01:57:02.801Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:131768",
@@ -219,7 +219,7 @@
    "id": "cathay:133428",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Rakuten",
+   "merchant": "台灣樂天市場",
    "merchantId": "133428",
    "category": "綜合電商",
    "title": "每 NT$100 3.75 里",
@@ -248,13 +248,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/rakuten-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_133428.b58b945bb7c7d234b902b76e611ba0a2e10e490357af9a00f527b9c6c3577289.png",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:13641",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "JD.com",
+   "merchant": "京东商城",
    "merchantId": "13641",
    "category": "綜合電商",
    "title": "每 NT$100 最高 10.65 里",
@@ -285,13 +285,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/jd-com",
    "logo": "https://cdn.rewardengine.com/upload/merchant_13641.93ce752cbf7a2a9c0bad5fa587cbcab5ff0e2482.png",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:140608",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "DOKODEMO Asia",
+   "merchant": "DOKODEMO Aisa",
    "merchantId": "140608",
    "category": "綜合電商",
    "title": "每 NT$100 4.5 里",
@@ -310,7 +310,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/dokodemo-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_140608.730bb1fb727f7b796bce566bf4cbb4e1d59433be.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:140878",
@@ -327,7 +327,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 SGD1 = 1.25 里數，以 1 SGD ≈ NT$25.5415 換算",
+    "原始回饋 SGD1 = 1.25 里數，以 1 SGD ≈ NT$25.5696 換算",
     "一般商品：SGD1 = 1.25",
     "Only transactions made from Vrbo Singapore site will be eligible to earn rewards.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -340,7 +340,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/vrbo-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_140878.03f744e63ab7e65f14e1668ee81d5251e06387ad44cf1ab43ce560f8e5949f6a.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:143",
@@ -357,7 +357,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 2 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 2 里數，以 1 GBP ≈ NT$43.4802 換算",
     "New Customer：£1 = 2",
     "Existing Customer：£1 = 0.75",
     "Stated reward is for new customers only making your first purchase, existing customers will earn a lower reward. No rewards given on coupon/codes beginning with \"SD\".",
@@ -374,13 +374,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/sport-and-fitness/sportsdirect",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_143.1e6f39a9ad66d07e7a3ae0f1555488d3c60be413.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:144078",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "StubHub",
+   "merchant": "StubHub (台灣)",
    "merchantId": "144078",
    "category": "運動戶外",
    "title": "每 NT$100 13.75 里",
@@ -399,13 +399,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/stubhub-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_144078.ae8b6b3a9a57ad1ec37389a1a0ca1eb84c4ee0f29c03c6529081678d3cc7c5ab.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:157458",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Rakuten Travel",
+   "merchant": "樂天旅遊（台灣）",
    "merchantId": "157458",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 15.25 里",
@@ -440,13 +440,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/rakuten-travel-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_157458.5982807039d8c4f15d6890f6ba34111d4c29fe60.png",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:163288",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Yahoo Shopping",
+   "merchant": "Yahoo奇摩購物中心 (台灣)",
    "merchantId": "163288",
    "category": "綜合電商",
    "title": "每 NT$100 最高 1.5 里",
@@ -469,7 +469,7 @@
     "購中店（訂單號碼為 YM 開頭之訂單）的訂單不會獲得獎勵。",
     "通過App完成之訂單不會獲得獎勵。",
     "交易可能需要1至2星期才會顯示於交易記錄中。",
-    "里約 73 天內入帳"
+    "里約 72 天內入帳"
    ],
    "tags": [
     "依品類不同"
@@ -478,13 +478,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/yahoo-shopping-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_163288.37297ce1f637b9526e0fcc6054a33acb0433dbe0.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1640031",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Coupang",
+   "merchant": "Coupang (台灣)",
    "merchantId": "1640031",
    "category": "綜合電商",
    "title": "每 NT$100 4.5 里",
@@ -506,13 +506,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/coupang-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1640031.aa0ca6a5c2faa483be007ff5c5dd1566c680663a4b8cf39ba74154d1c9a3399b.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1642861",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "HopeGoo",
+   "merchant": "HopeGoo（台灣）",
    "merchantId": "1642861",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 23 里",
@@ -544,7 +544,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/hopegoo-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1642861.39ffe92355643421d7c54bd7569bce74c3a8b3cf364337542cf86091596f60cb.png",
-   "updatedAt": "2026-11-11T01:57:02.801Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1643261",
@@ -561,7 +561,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 1 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 1 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 1",
     "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
     "里約 105 天內入帳"
@@ -573,7 +573,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/charlotte-tilbury-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1643261.b84ec1288dbaa02459024ea15e0e871528a89db29e0cc89e12295b7016a1b053.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1643451",
@@ -615,7 +615,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4802 換算",
     "New customers：£1 = 5.25",
     "Existing customers：£1 = 4",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -631,7 +631,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/toys-and-games/jellycat-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1643691.a7bf728203e710f27a9f99058411bec0bd1f0685f5bf2ad4379e7ca30667e4fe.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1646731",
@@ -640,15 +640,15 @@
    "merchant": "Pelago Asia",
    "merchantId": "1646731",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 8.81 里",
+   "title": "每 NT$100 最高 8.8 里",
    "reward": {
     "type": "miles",
-    "value": 8.81,
+    "value": 8.8,
     "text": "最多 SGD1 = 2.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5415 換算",
+    "原始回饋 最多 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5696 換算",
     "New Customers：SGD1 = 2.25",
     "Existing Customers：SGD1 = 1.75",
     "Universal Studios Japan Studio Pass *Direct Entry* & Universal Studios Singapore：SGD1 = 1.25",
@@ -667,7 +667,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/pelago-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1646731.c8fdcc08154de963d652859a9303a22896f2f8c74e3fdedb65b667b06a6b5c30.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1646881",
@@ -676,15 +676,15 @@
    "merchant": "Nomad eSIM Asia",
    "merchantId": "1646881",
    "category": "生活服務",
-   "title": "每 NT$100 最高 22.66 里",
+   "title": "每 NT$100 最高 22.62 里",
    "reward": {
     "type": "miles",
-    "value": 22.66,
+    "value": 22.62,
     "text": "最多 HKD10 = 9.5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 HKD10 = 9.5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 9.5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "New customers：HKD10 = 9.5",
     "Existing customers：HKD10 = 6.25",
     "Stated reward is only applicable to new customers of Nomad Asia, existing customers of Nomad Asia will earn a lower reward.",
@@ -700,13 +700,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/nomad-esim-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1646881.b721d9095f2b9a24cd5f3545961bba9338b248ea19956e017435c41b1500cd0e.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1652621",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "GetYourGuide",
+   "merchant": "GetYourGuide （台灣）",
    "merchantId": "1652621",
    "category": "旅遊住宿",
    "title": "每 NT$100 10.75 里",
@@ -727,13 +727,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/getyourguide-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1652621.d76704583002fc31bd349e41f4ad18df421b612bcd12642410af74c2a95362de.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1654271",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Plaud",
+   "merchant": "Plaud（台灣）",
    "merchantId": "1654271",
    "category": "3C家電",
    "title": "每 NT$100 7.75 里",
@@ -752,13 +752,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/plaud-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1654271.adc6121a5b51a2519d11e1625c98f88de7277b14a30718bae9a4ccb234770d83.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:165708",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Nike.com",
+   "merchant": "Nike.com 台灣",
    "merchantId": "165708",
    "category": "運動戶外",
    "title": "每 NT$100 8.5 里",
@@ -780,7 +780,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/sport-and-fitness/nike-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_165708.2fd6d367e73a71ae31cc87939d42eafc1fd13560.png",
-   "updatedAt": "2026-11-12T03:00:25.934Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1662771",
@@ -789,15 +789,15 @@
    "merchant": "Noble Panacea Asia",
    "merchantId": "1662771",
    "category": "藥妝美妝",
-   "title": "每 NT$100 14.91 里",
+   "title": "每 NT$100 14.88 里",
    "reward": {
     "type": "miles",
-    "value": 14.91,
+    "value": 14.88,
     "text": "HKD10 = 6.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 6.25 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 6.25 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 6.25",
     "里約 105 天內入帳"
    ],
@@ -808,7 +808,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/noble-panacea-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1662771.9b8b20e0132c854014a2264efb1ff97a8fea7aec02b3d8360f47a482b8be114b.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1678211",
@@ -817,15 +817,15 @@
    "merchant": "MOMAX International",
    "merchantId": "1678211",
    "category": "生活服務",
-   "title": "每 NT$100 3.58 里",
+   "title": "每 NT$100 3.57 里",
    "reward": {
     "type": "miles",
-    "value": 3.58,
+    "value": 3.57,
     "text": "HKD10 = 1.5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 1.5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 1.5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 1.5",
     "透過MOMAX中國網站購買將不會獲得獎勵。",
     "里約 105 天內入帳"
@@ -837,7 +837,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/momax-international",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1678211.d062a270974a9616f8ad7f4e17afb2b025be7766c3fe833d1bd66018e3635537.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1680981",
@@ -846,15 +846,15 @@
    "merchant": "Diesel Asia",
    "merchantId": "1680981",
    "category": "服飾配件",
-   "title": "每 NT$100 8.81 里",
+   "title": "每 NT$100 8.8 里",
    "reward": {
     "type": "miles",
-    "value": 8.81,
+    "value": 8.8,
     "text": "SGD1 = 2.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5415 換算",
+    "原始回饋 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5696 換算",
     "一般商品：SGD1 = 2.25",
     "Rewards are only eligible for orders from the following countries/regions: Indonesia, Singapore, Korea, Philippines, Taiwan, Thailand, Vietnam.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -867,13 +867,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/diesel-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1680981.b9783355cefce901362ea79383c8f8e764c2113cc02e5b42dcca06c831fcbc3d.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1692661",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "TUMI",
+   "merchant": "TUMI（台灣）",
    "merchantId": "1692661",
    "category": "服飾配件",
    "title": "每 NT$100 7.75 里",
@@ -895,24 +895,24 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/tumi-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1692661.90f16204d1949098ceb0a5add4bf2ab21a783c6383574232f2716c5265c9bd3c.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1697871",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Theory Asia",
+   "merchant": "Theory (香港)",
    "merchantId": "1697871",
    "category": "服飾配件",
-   "title": "每 NT$100 5.37 里",
+   "title": "每 NT$100 5.36 里",
    "reward": {
     "type": "miles",
-    "value": 5.37,
+    "value": 5.36,
     "text": "HKD10 = 2.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 2.25 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 2.25 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 2.25",
     "里約 105 天內入帳"
    ],
@@ -924,13 +924,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/theory-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697871.31bb16ae3f3bf8eefbce8652e55d293f6c6b12a1f78aee110708f270767c143d.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1697911",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "COS",
+   "merchant": "COS (台灣)",
    "merchantId": "1697911",
    "category": "服飾配件",
    "title": "每 NT$100 6.5 里",
@@ -949,7 +949,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/cos-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1697911.63026919e98b247532e947d33443d5d22cfd76f69f290c528725b9ff0d37f725.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:1710011",
@@ -958,20 +958,20 @@
    "merchant": "Coursera Asia",
    "merchantId": "1710011",
    "category": "生活服務",
-   "title": "每 NT$100 最高 47.7 里",
+   "title": "每 NT$100 最高 47.62 里",
    "reward": {
     "type": "miles",
-    "value": 5.37,
+    "value": 5.36,
     "text": "最多 HKD10 = 2.25 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 47.7,
+    "value": 47.62,
     "text": "最多 HKD10 = 20 里數",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 HKD10 = 20 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 20 里數，以 1 HKD ≈ NT$4.1998 換算",
     "Coursera Plus Monthly Subscription/Professional Certificate/Specialization Subsc：HKD10 = 20（11/03–12/31）",
     "Coursera Plus Annual Subscription：HKD10 = 6.75（11/03–12/31）",
     "Course/Guided Project/Others：HKD10 = 9（11/03–12/31）",
@@ -988,13 +988,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/office-and-business/coursera-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1710011.43ea0da5832614a909dff7785be48148b59aeb313ac01f011f0618483be85d62.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:178348",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "KKday",
+   "merchant": "KKday 台灣",
    "merchantId": "178348",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 6.25 里",
@@ -1019,13 +1019,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:178368",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "KLOOK",
+   "merchant": "KLOOK 台灣",
    "merchantId": "178368",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 10.75 里",
@@ -1061,13 +1061,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/klook-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178368.9b25315c6863c2ea6d5dd1ae147823f429c15fa8.png",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:185398",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "FARFETCH",
+   "merchant": "FARFETCH 台灣",
    "merchantId": "185398",
    "category": "服飾配件",
    "title": "每 NT$100 18.5 里",
@@ -1097,7 +1097,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/farfetch-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_185398.7442e8bb2b9b8951be2066d5d5c24374fe2bb241.png",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:195508",
@@ -1136,51 +1136,48 @@
    "id": "cathay:197118",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "iHerb",
+   "merchant": "iHerb 台灣",
    "merchantId": "197118",
    "category": "藥妝美妝",
-   "title": "每 NT$100 8.5 里",
+   "title": "每 NT$100 3.75 里",
    "reward": {
     "type": "miles",
     "value": 3.75,
     "text": "TWD100 = 3.75 里數"
    },
-   "boost": {
-    "type": "miles",
-    "value": 8.5,
-    "text": "TWD100 = 8.5 里數",
-    "endAt": "2026-11-16"
-   },
+   "boost": null,
    "conditions": [
-    "一般商品：TWD100 = 8.5",
+    "一般商品：TWD100 = 3.75",
     "使用 iHerb 禮券碼、第三方禮券碼或非此網站提供的促銷代碼將導致所有商品的獎勵資格被取消。此外，使用會員積分支付的交易部分將不符合獲得獎勵金的條件。部分或全部使用積分付款的訂單部分將不符合賺取獎勵金的條件。有效交易將在 7-10 天內反映在您的交易記錄中。",
     "iHerb 接受自購買之日起 45 天內提交的交易遺失索賠，且為 2023 年 12 月 8 日之後的訂單。",
     "請參考iHerb網站以確保訂單符合清關程序。",
-    "里約 120 天內入帳"
+    "里約 121 天內入帳"
    ],
-   "tags": [],
+   "tags": [
+    "有折價券"
+   ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/iherb-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_197118.053d3e79bea54013bb37e2fa0a5e2044ca545816.png",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:198938",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Rakuten Ichiba (Japan)",
+   "merchant": "日本樂天市場",
    "merchantId": "198938",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 3.04 里",
+   "title": "每 NT$100 最高 3.03 里",
    "reward": {
     "type": "miles",
-    "value": 3.04,
+    "value": 3.03,
     "text": "最多 ¥1000 = 6.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 ¥1000 = 6.25 里數，以 1 JPY ≈ NT$0.2058 換算",
+    "原始回饋 最多 ¥1000 = 6.25 里數，以 1 JPY ≈ NT$0.2066 換算",
     "コスメ、マタニティ、ファッション、レディースファッション、メンズファッション、インナー・下着・ナイトウェア、靴・バッグ、食品・飲料、お酒、スイーツ・お菓子、医薬：¥1000 = 6.25",
     "住宅用品、事務用品、玩具、家庭用品、フィギュア、キッチン、サービス、リフォーム、書籍：¥1000 = 4.75",
     "テレビ、ゲーム、家電、時計、楽器、携帯電話、パソコン、パソコン周辺機器、CD・DVD：¥1000 = 3.25",
@@ -1203,13 +1200,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/rakuten-ichiba-x28-japan-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_198938.4732b032267a64ea92044be5dc285376e5e8ad11.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:202868",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "SSENSE",
+   "merchant": "SSENSE 台灣",
    "merchantId": "202868",
    "category": "服飾配件",
    "title": "每 NT$100 最高 30.75 里",
@@ -1245,7 +1242,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/ssense-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_202868.e7947b70ffdca94a0416a4c815edeab934107ffd.png",
-   "updatedAt": "2026-11-05T02:29:35.034Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:259355",
@@ -1267,7 +1264,7 @@
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4802 換算",
     "Sale items：£1 = 0.75",
     "Existing Customers：£1 = 2.75（08/06–12/31）",
     "New Customers：£1 = 5.25（08/06–12/31）",
@@ -1286,13 +1283,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/handm-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_259355.e8f6060e8cf1d9ee11776c8b69fedb29bc212f6d.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:262625",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Zuzuche",
+   "merchant": "租租車台灣",
    "merchantId": "262625",
    "category": "旅遊住宿",
    "title": "每 NT$100 5.5 里",
@@ -1312,13 +1309,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/zuzuche-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_262625.d5b230a0548d4ac999f7736703a37a07d2642d27.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:265045",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Kingstone",
+   "merchant": "金石堂（台灣）",
    "merchantId": "265045",
    "category": "運動戶外",
    "title": "每 NT$100 最高 4.75 里",
@@ -1346,13 +1343,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/kingstone-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_265045.6e0a1ee03205f596540807fc6bbfa1ae02f18194.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:265055",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Dyson",
+   "merchant": "Dyson 戴森線上商城",
    "merchantId": "265055",
    "category": "3C家電",
    "title": "每 NT$100 5.5 里",
@@ -1373,13 +1370,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/dyson-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_265055.665ca1243e3ae6ceaf55a8a448b9273b2f8bf7c5.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:276095",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Rentalcars.com",
+   "merchant": "Rentalcars.com 台灣",
    "merchantId": "276095",
    "category": "旅遊住宿",
    "title": "每 NT$100 3 里",
@@ -1398,13 +1395,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/rentalcars-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_276095.af893fc2eb7254c1de499fcdfdc864b177d49204.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:289975",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Apple Music",
+   "merchant": "Apple Music 台灣",
    "merchantId": "289975",
    "category": "運動戶外",
    "title": "每 NT$100 338.25 里",
@@ -1429,13 +1426,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/apple-music-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_289975.63ea9bf29ad03dbb6f1fba87ff4220fc4b93b834aa539319dc3344589686413c.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:31451",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "StrawberryNet",
+   "merchant": "草莓網 (台灣)",
    "merchantId": "31451",
    "category": "藥妝美妝",
    "title": "每 NT$100 最高 10.75 里",
@@ -1461,7 +1458,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/strawberrynet-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_31451.8ad856ad9bb08b57dd8d2e6e6d6fa65ead5f044c33b7aa89b33dc9887d95f76f.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:32031",
@@ -1478,7 +1475,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 6.75 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 6.75 里數，以 1 GBP ≈ NT$43.4802 換算",
     "Sale：£1 = 0.75",
     "Beauty Advent Calendar：£1 = 2.75",
     "Liberty LBTY Fragrance Purchases：£1 = 6.75",
@@ -1499,13 +1496,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/liberty-london",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_32031.1a3da2515b20093bb47ab3de996190adf672b34572935cda39b81995a611f03c.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:327275",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Carrefour",
+   "merchant": "家樂福線上購物網",
    "merchantId": "327275",
    "category": "綜合電商",
    "title": "每 NT$100 最高 4.5 里",
@@ -1534,13 +1531,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/carrefour-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_327275.e914bd2315e08f33c004cacd1a9bea9c04d4148a.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:327285",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "MYPROTEIN",
+   "merchant": "MYPROTEIN 台灣",
    "merchantId": "327285",
    "category": "藥妝美妝",
    "title": "每 NT$100 最高 18.5 里",
@@ -1569,13 +1566,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/myprotein-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_327285.57d28eb1165e84424f4cd0c4cc249c36497f3e476584583340cc96bc0b37daea.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:331485",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Mytheresa",
+   "merchant": "Mytheresa 台灣",
    "merchantId": "331485",
    "category": "服飾配件",
    "title": "每 NT$100 最高 12.25 里",
@@ -1607,13 +1604,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/mytheresa-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_331485.38667362705270080f9531c97eed6fab588cad98ec01e549242aa6f1965f3131.png",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:336875",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Hahow",
+   "merchant": "Hahow 好學校",
    "merchantId": "336875",
    "category": "親子寵物",
    "title": "每 NT$100 10.75 里",
@@ -1633,13 +1630,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/children-and-family/hahow-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_336875.61c36fae3efba417d2821d52307bfbc180280ac3222bb9793a729eb0c7a1face.jpeg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:359035",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Michael Kors",
+   "merchant": "Michael Kors 台灣",
    "merchantId": "359035",
    "category": "服飾配件",
    "title": "每 NT$100 4.5 里",
@@ -1658,13 +1655,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/michael-kors-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_359035.56bfedfb8b9713097336dcff7108ee3513ea163f.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:371975",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "i3Fresh",
+   "merchant": "i3Fresh 愛上新鮮",
    "merchantId": "371975",
    "category": "餐飲美食",
    "title": "每 NT$100 13.75 里",
@@ -1685,13 +1682,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/food-and-drink/i3fresh-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_371975.17950b35026bc624512389e5ba32e2a78d01784b.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:377075",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Shopee",
+   "merchant": "蝦皮商城 (台灣)",
    "merchantId": "377075",
    "category": "綜合電商",
    "title": "每 NT$100 最高 12.5 里",
@@ -1728,13 +1725,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/shopee-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_377075.5e325d892f965367413027d857a347077384fb2e0e8319517662263b35edfcb2.png",
-   "updatedAt": "2026-11-03T03:28:59.161Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:377105",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "OwlTing",
+   "merchant": "奧丁丁體驗",
    "merchantId": "377105",
    "category": "旅遊住宿",
    "title": "每 NT$100 5.5 里",
@@ -1755,13 +1752,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/owlting-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_377105.95cef25866bfec68b8cfed9b5325c520c033da42.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:389935",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Trip.com",
+   "merchant": "Trip.com 台灣",
    "merchantId": "389935",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 10.5 里",
@@ -1791,7 +1788,7 @@
     "- 使用銀行相關優惠碼（包括但不限於電子錢包優惠碼）/飯店預售優惠券的訂單",
     "- 購買禮品卡及使用禮品卡的訂單",
     "- 購買兒童票或嬰兒票",
-    "里約 121 天內入帳"
+    "里約 122 天內入帳"
    ],
    "tags": [
     "依品類不同",
@@ -1801,13 +1798,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/trip-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_389935.2a85e21939df6b5955fa4b2325af4eddffb32edc.png",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:394885",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "eDreams",
+   "merchant": "eDreams 旅行社 (台灣)",
    "merchantId": "394885",
    "category": "旅遊住宿",
    "title": "每筆98.5 里",
@@ -1830,13 +1827,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/edreams-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_394885.19c73f234348c2c2b1bb48dbed24147472e8d1f8.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:395385",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "LOOKFANTASTIC",
+   "merchant": "LOOKFANTASTIC 台灣",
    "merchantId": "395385",
    "category": "藥妝美妝",
    "title": "每 NT$100 最高 10.75 里",
@@ -1861,13 +1858,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/lookfantastic-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_395385.3b49bf74b72d8ff076328cafabf492d086238e85.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:397015",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Pinkoi",
+   "merchant": "Pinkoi (台灣）",
    "merchantId": "397015",
    "category": "綜合電商",
    "title": "每 NT$100 最高 6.25 里",
@@ -1894,13 +1891,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/pinkoi-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_397015.f31056954a18ddba4d40a88911dab078dcaf29be.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:397515",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Samsonite",
+   "merchant": "新秀麗 (台灣)",
    "merchantId": "397515",
    "category": "服飾配件",
    "title": "每 NT$100 7.75 里",
@@ -1920,13 +1917,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/samsonite-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_397515.ce5a20678a8c8f1c504b8da3549caed9b9ffe078.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:399445",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "American Eagle Outfitters",
+   "merchant": "American Eagle Outfitters (台灣）",
    "merchantId": "399445",
    "category": "服飾配件",
    "title": "每 NT$100 9.25 里",
@@ -1945,13 +1942,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/american-eagle-outfitters-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_399445.5d22e7c68cb87572b30cc3bd5d9ea4c2c127c27f.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:410975",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "foodpanda",
+   "merchant": "foodpanda 台灣",
    "merchantId": "410975",
    "category": "餐飲美食",
    "title": "每 NT$100 最高 15.25 里",
@@ -1981,7 +1978,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/food-and-drink/foodpanda-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_410975.1f4a85780d96384dd69590e3e57a64e787842294c15c41553355629f4c6c22bb.png",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:412355",
@@ -1990,20 +1987,20 @@
    "merchant": "Love Bonito",
    "merchantId": "412355",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 13.71 里",
+   "title": "每 NT$100 最高 13.69 里",
    "reward": {
     "type": "miles",
-    "value": 7.75,
+    "value": 7.74,
     "text": "最多 HKD10 = 3.25 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 13.71,
+    "value": 13.69,
     "text": "最多 HKD10 = 5.75 里數",
     "endAt": "2026-11-30"
    },
    "conditions": [
-    "原始回饋 最多 HKD10 = 5.75 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 5.75 里數，以 1 HKD ≈ NT$4.1998 換算",
     "Existing Customers (Hong Kong Region)：HKD10 = 5.75（11/11–11/30）",
     "New Customers (Hong Kong Region)：HKD10 = 5.75（11/11–11/30）",
     "Existing Customer (Other regions)：HKD10 = 2.25",
@@ -2020,19 +2017,20 @@
    "tags": [
     "新客條件",
     "依品類不同",
-    "外幣計價"
+    "外幣計價",
+    "有折價券"
    ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/love-bonito",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_412355.f0058429657dcad863cb1d4a904e86f83d8394ae57d846a1b4d5736fc3357a4b.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:412905",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Lalalocker",
+   "merchant": "Lalalocker (台灣）",
    "merchantId": "412905",
    "category": "旅遊住宿",
    "title": "每 NT$100 15.25 里",
@@ -2051,13 +2049,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/lalalocker-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_412905.af045fa7a6619d6b15539eafba4abe3fd5ca9bbe.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:413755",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "iROO",
+   "merchant": "iROO 台灣",
    "merchantId": "413755",
    "category": "服飾配件",
    "title": "每 NT$100 10.75 里",
@@ -2076,13 +2074,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/iroo-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_413755.c4528f7d70bbf055016e4e340a77d236de57ed8e.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:415625",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Lianhwa Foods",
+   "merchant": "聯華食品E購網 （台灣）",
    "merchantId": "415625",
    "category": "餐飲美食",
    "title": "每 NT$100 5.5 里",
@@ -2104,13 +2102,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/food-and-drink/lianhwa-foods-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_415625.58ee373cf764668cd70fb3f6235690ecfca9f290.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:415645",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Norton",
+   "merchant": "諾頓 (台灣)",
    "merchantId": "415645",
    "category": "3C家電",
    "title": "每 NT$100 69.25 里",
@@ -2129,13 +2127,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/norton-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_415645.97ad216f212c84fd0666ac45ed2e4f5af9cad3fb.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:425955",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Calvin Klein",
+   "merchant": "Calvin Klein （台灣）",
    "merchantId": "425955",
    "category": "服飾配件",
    "title": "每 NT$100 9.25 里",
@@ -2154,13 +2152,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/calvin-klein-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_425955.0a676fb7d354a02f627002b030627cf87a3abf44.jpg",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:427155",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Pinduoduo China",
+   "merchant": "拼多多 （中国）",
    "merchantId": "427155",
    "category": "綜合電商",
    "title": "每 NT$100 1.01 里",
@@ -2190,13 +2188,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/pinduoduo-china",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_427155.63868311f0876a3094bdeb2e4383fccd1a0f1147.png",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:442555",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "EPSON",
+   "merchant": "EPSON 台灣",
    "merchantId": "442555",
    "category": "生活服務",
    "title": "每 NT$100 4.25 里",
@@ -2215,7 +2213,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/office-and-business/epson-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_442555.15a80a645ffa38efa61c35e135112c2f65e0af58.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:446495",
@@ -2224,20 +2222,20 @@
    "merchant": "NET-A-PORTER Asia",
    "merchantId": "446495",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 14.91 里",
+   "title": "每 NT$100 最高 14.88 里",
    "reward": {
     "type": "miles",
-    "value": 11.92,
+    "value": 11.91,
     "text": "最多 HKD10 = 5 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 14.91,
+    "value": 14.88,
     "text": "最多 HKD10 = 6.25 里數",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 HKD10 = 6.25 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 6.25 里數，以 1 HKD ≈ NT$4.1998 換算",
     "Fashion Picks：HKD10 = 5",
     "Beauty：HKD10 = 2",
     "When a voucher code is used：HKD10 = 2",
@@ -2262,13 +2260,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/net-a-porter-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_446495.dc1bb6e4d545638054befb74620265372c1f2509.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:457205",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "VoiceTube Hero",
+   "merchant": "VoiceTube Hero 線上英文學習平台",
    "merchantId": "457205",
    "category": "運動戶外",
    "title": "每 NT$100 12.25 里",
@@ -2288,13 +2286,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/voicetube-hero-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457205.a9a363cf6d230190f30a932992242dd1470c4c3e.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:457245",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Disney+ Taiwan - Monthly Subscription",
+   "merchant": "Disney+ 台灣 - 月費計劃",
    "merchantId": "457245",
    "category": "運動戶外",
    "title": "每筆最高 43 里",
@@ -2317,13 +2315,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/disney-taiwan-monthly-subscription",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457245.165974fe8314ae733a1c9cc480a27e1c23fa3c190dcf09d427395efca3357ad9.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:457255",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Disney+ Taiwan - Annual Subscription",
+   "merchant": "Disney+ 台灣 - 年費計劃",
    "merchantId": "457255",
    "category": "運動戶外",
    "title": "每筆最高 538.25 里",
@@ -2346,13 +2344,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/disney-taiwan-annual-subscription",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_457255.e0f37c2bc1432f75b6b9694f724224211bb35faf7fe8abf18c157d00f1440e59.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:468125",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Don Don Donki",
+   "merchant": "Don Don Donki 唐吉訶德 （台灣）",
    "merchantId": "468125",
    "category": "綜合電商",
    "title": "每 NT$100 2.75 里",
@@ -2373,13 +2371,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/don-don-donki-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_468125.1a8a6a284ab4dd6bf15d9143029bd5782c1190dc.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:474255",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Surfshark",
+   "merchant": "Surfshark （台灣）",
    "merchantId": "474255",
    "category": "生活服務",
    "title": "每 NT$100 61.5 里",
@@ -2398,13 +2396,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/office-and-business/surfshark-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_474255.9ebed8f33402c6af552e5876e83b046ca522d200.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:475285",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Callcarbar",
+   "merchant": "叫車吧 （台灣）",
    "merchantId": "475285",
    "category": "旅遊住宿",
    "title": "每 NT$100 10.75 里",
@@ -2425,13 +2423,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/callcarbar-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_475285.82d81d8ffc8755766ca9b48ca9ea9982206dd479.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:475365",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Clarks",
+   "merchant": "Clarks （台灣）",
    "merchantId": "475365",
    "category": "服飾配件",
    "title": "每 NT$100 10.75 里",
@@ -2451,13 +2449,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/clarks-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_475365.ad6dd40195aebb59635a188c64730cdbcdc38605.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:475945",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Longchamp",
+   "merchant": "Longchamp （台灣）",
    "merchantId": "475945",
    "category": "服飾配件",
    "title": "每 NT$100 7.75 里",
@@ -2477,24 +2475,24 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/longchamp-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_475945.08b865611281b852e5bd09b8baa31eb20edc8b7a.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:487905",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Marriott International Asia",
+   "merchant": "Marriott International 亞洲",
    "merchantId": "487905",
    "category": "旅遊住宿",
-   "title": "每 NT$100 5.96 里",
+   "title": "每 NT$100 5.95 里",
    "reward": {
     "type": "miles",
-    "value": 5.96,
+    "value": 5.95,
     "text": "HKD10 = 2.5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 2.5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 2.5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 2.5",
     "Marriott International Asia目前在訂單驗證方面出現延誤，導致獎勵審批時間延長。在此期間，獎勵審批可能需要 260 天或更久。",
     "獎勵會在合資格預訂退房後 90-120 天內存入你的賬戶。如果您的預訂有任何更改（例如房間升級或更改住宿日期），可能會導致獎勵無效。",
@@ -2504,7 +2502,7 @@
     "• 使用兌換的萬豪旅享家™ 積分預訂或升級並付款的客房。",
     "• 無法獲得獎勵的品牌（麗思卡爾頓目的地俱樂部、設計酒店、寶格麗）預訂的客房。",
     "• 無法獲得獎勵的酒店預訂的客房（Atlantis Autograph Collection、Bulgari Hotel、London、Joshua G.E. Medical Corp. Conference Center、Jesse Jones Rotary Conference Center、Marriott Ranch、Protea Hotel Amani Beach、Protea Hotel Mbweni Ruins、The Ritz-Carlton London , U.S. Postal Service Conference Center, Four Points by Sheraton Havana, The Cosmopolitan Las Vegas Autograph Collection)。",
-    "里約 110 天內入帳"
+    "里約 109 天內入帳"
    ],
    "tags": [
     "外幣計價"
@@ -2513,7 +2511,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/marriott-international-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_487905.e28570a37d23f6ad7fc354b79ee40080be40aef0.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:5",
@@ -2530,7 +2528,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4802 換算",
     "一般商品：£1 = 3.25",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "里約 105 天內入帳"
@@ -2542,13 +2540,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/lounge-pass",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_5.fce514ec7f8da0e0ebb715e369bc379f765b7dfb.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:500245",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Tommy Hilfiger",
+   "merchant": "Tommy Hilfiger (台灣)",
    "merchantId": "500245",
    "category": "服飾配件",
    "title": "每 NT$100 9.75 里",
@@ -2568,13 +2566,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/tommy-hilfiger-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_500245.b972e51b46cff6fa896fcd105ff74aaf18093b92.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:506715",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "PatPat",
+   "merchant": "PatPat （台灣）",
    "merchantId": "506715",
    "category": "親子寵物",
    "title": "每 NT$100 7.75 里",
@@ -2593,13 +2591,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/children-and-family/patpat-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_506715.5bea1402c6f2fc2092a5e59e7ed55476e8c047ab6ead3faae66c7f9cab16dd4c.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:506765",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "NordVPN",
+   "merchant": "NordVPN （台灣）",
    "merchantId": "506765",
    "category": "生活服務",
    "title": "每 NT$100 61.5 里",
@@ -2620,13 +2618,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/nordvpn-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_506765.3cb7077fd266e7cf8cc2625389ae5fc269a58809.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:507485",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "The Body Shop",
+   "merchant": "美體小舖 （台灣）",
    "merchantId": "507485",
    "category": "藥妝美妝",
    "title": "每 NT$100 3 里",
@@ -2646,7 +2644,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/the-body-shop-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_507485.fff30b8b2b337b5fa165ef7b23e13039184d91ec.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:514485",
@@ -2668,7 +2666,7 @@
     "endAt": "2026-12-01"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8.75 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 8.75 里數，以 1 GBP ≈ NT$43.4802 換算",
     "Existing customers：£1 = 4（11/12–12/01）",
     "New customers：£1 = 8.75（11/12–12/01）",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -2678,19 +2676,20 @@
    "tags": [
     "新客條件",
     "依品類不同",
-    "外幣計價"
+    "外幣計價",
+    "有折價券"
    ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/sunspel",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_514485.cd5a2a0ecde7a1fda8fefa0ffe1e8d9b6a6bcf0f.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:520755",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Emma Mattress",
+   "merchant": "Emma 床墊 （台灣）",
    "merchantId": "520755",
    "category": "居家生活",
    "title": "每 NT$100 10.75 里",
@@ -2710,13 +2709,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/home-and-garden/emma-mattress-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_520755.fa34ef8837b6a515bba3ef048569e3920b824ece.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:532295",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Thermos",
+   "merchant": "THERMOS 膳魔師（台灣）",
    "merchantId": "532295",
    "category": "居家生活",
    "title": "每 NT$100 5.5 里",
@@ -2736,13 +2735,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/home-and-garden/thermos-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_532295.39c4e81b3fa69bbf4d59ad63d534d2a25fd27b91.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:533605",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "LG Electronics",
+   "merchant": "LG 台灣",
    "merchantId": "533605",
    "category": "3C家電",
    "title": "每 NT$100 3 里",
@@ -2766,13 +2765,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/lg-electronics-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_533605.4a758c991391cbd1bd132de6b61eff61bafa6940c5eb458cc3113b26104f26e4.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:533985",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "AsiaYo",
+   "merchant": "AsiaYo （台灣）",
    "merchantId": "533985",
    "category": "旅遊住宿",
    "title": "每 NT$100 6.25 里",
@@ -2792,7 +2791,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/asiayo-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_533985.8ecd73b6de1897f2c80afee4c53748ed54296286.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:534025",
@@ -2801,15 +2800,15 @@
    "merchant": "The Luxury Closet Asia",
    "merchantId": "534025",
    "category": "服飾配件",
-   "title": "每 NT$100 10.73 里",
+   "title": "每 NT$100 10.71 里",
    "reward": {
     "type": "miles",
-    "value": 10.73,
+    "value": 10.71,
     "text": "HKD10 = 4.5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 4.5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 4.5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 4.5",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "里約 105 天內入帳"
@@ -2821,7 +2820,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/the-luxury-closet-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_534025.3760ff8a2be62c4966ffbfd058b172447b362b68.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:539275",
@@ -2838,7 +2837,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 1.25 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 1.25 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 1.25",
     "里約 105 天內入帳"
    ],
@@ -2849,42 +2848,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/zenplus-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_539275.fdd46d9b914960263d1d5067ed0119e001f595172ed289460a00c99c986f9a80.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
-  },
-  {
-   "id": "cathay:548975",
-   "kind": "rebate",
-   "source": "cathay",
-   "merchant": "Chow Sang Sang",
-   "merchantId": "548975",
-   "category": "生活服務",
-   "title": "每 NT$100 最高 13 里",
-   "reward": {
-    "type": "miles",
-    "value": 13,
-    "text": "最多 TWD100 = 13 里數"
-   },
-   "boost": null,
-   "conditions": [
-    "黃金或鉑金產品：TWD100 = 6.25",
-    "黃金或鉑金以外之產品：TWD100 = 13",
-    "標示獎勵只適用於購買黃金以外的產品。購買黃金產品會獲得較少獎勵。",
-    "里約 105 天內入帳"
-   ],
-   "tags": [
-    "依品類不同"
-   ],
-   "startAt": null,
-   "endAt": null,
-   "url": "https://shop.asiamiles.com/zh/gifts-and-flowers/chow-sang-sang-taiwan",
-   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_548975.62f75b72bca8770d6cdd792ebca242aa7246b126ebeec0fdbb15ad7bae1cbcd8.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:551995",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Kipling",
+   "merchant": "Kipling （台灣）",
    "merchantId": "551995",
    "category": "服飾配件",
    "title": "每 NT$100 3 里",
@@ -2905,13 +2875,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/kipling-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_551995.4c3e790f9e7c75cc155c66b1ebf99fa4df382a32c715516ebf8739a4b1ad3446.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:552005",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "JOYTEL",
+   "merchant": "JOYTEL 卓一電訊 （台灣）",
    "merchantId": "552005",
    "category": "旅遊住宿",
    "title": "每 NT$100 8.5 里",
@@ -2931,13 +2901,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/joytel-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552005.85ecae7dc329ebdaf60c22d0be12dc4e30fbe1986a0340ee3c06d536eb760608.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:552025",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "AIWA",
+   "merchant": "AIWA 愛華 （台灣）",
    "merchantId": "552025",
    "category": "運動戶外",
    "title": "每 NT$100 8.5 里",
@@ -2957,7 +2927,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/entertainment-and-leisure/aiwa-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552025.64ea9ccfb90b37b2c377715f180157785836b6d9df82c8b0ad795890fd5a5e43.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:552035",
@@ -2974,7 +2944,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 1.25 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 1.25 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 1.25",
     "From 16 July 2026 to 30 September 2026, stated reward is only applicable to new customers of The DoubleF Asia. Existing The DoubleF Asia customers will earn a lower reward.",
     "Stated reward is only applicable to the category of Women clothing and Men clothing. Purchase products from the other categories will earn a lower reward.",
@@ -2991,7 +2961,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/the-doublef-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_552035.91d2be9d534d7fe49ed870a3ca671cbef61364c5fe00fe98e1eca8623be5356c.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:55464",
@@ -3013,7 +2983,7 @@
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4802 換算",
     "Technology：£1 = 1.25",
     "Fine Jewellery, Fine Watches & Apple products：£1 = 0.75",
     "Purchases billed and/or delivered in: New Zealand, Brunei Darussalam, Iceland, M：£1 = 0.75",
@@ -3024,7 +2994,7 @@
     "Rewards are only given when a purchase is made within the following billing and/or delivery countries: UK, USA, Hong Kong, Saudi Arabia, United Arab Emirates, Singapore, Kuwait, Macau, Canada, Thailand, Qatar, Jersey or Guernsey.",
     "No rewards are given on App sales and if orders are deemed to be not genuine personal customers' orders.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
-    "里約 113 天內入帳"
+    "里約 112 天內入帳"
    ],
    "tags": [
     "依品類不同",
@@ -3034,13 +3004,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/selfridges",
    "logo": "https://cdn.rewardengine.com/upload/merchant_55464.7bc986f268abdda067ac2e41a31081441d896909.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:562435",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "eSIM4TRAVEL",
+   "merchant": "eSIM4TRAVEL （台灣）",
    "merchantId": "562435",
    "category": "旅遊住宿",
    "title": "每 NT$100 15.25 里",
@@ -3059,13 +3029,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/esim4travel-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_562435.3da339119d1863fe3db55da1201cfe417840da7df71be54b59de8ec8748af5ac.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:565315",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Havaianas",
+   "merchant": "Havaianas 台灣",
    "merchantId": "565315",
    "category": "服飾配件",
    "title": "每 NT$100 7.75 里",
@@ -3085,7 +3055,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/havaianas-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_565315.d6d1f077b30ca7fa4fd4712ec4ced0b6765137d79c65cad1591b00e9db54a2a1.png",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:567975",
@@ -3094,15 +3064,15 @@
    "merchant": "Olive Young (Global)",
    "merchantId": "567975",
    "category": "藥妝美妝",
-   "title": "每 NT$100 11.92 里",
+   "title": "每 NT$100 11.91 里",
    "reward": {
     "type": "miles",
-    "value": 11.92,
+    "value": 11.91,
     "text": "HKD10 = 5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 5",
     "From 9 November 2026 onwards, purchases made via the Olive Young App will be eligible to earn rewards. Any purchases made prior to this date will not be eligible for rewards.",
     "Global orders will be eligible for reward with the exception of orders from South Korea.",
@@ -3116,7 +3086,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/olive-young-x28-global-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_567975.05a9bddc02c5afdc1d021cd54f05d663802691c16e0b63420e47218662264a74.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:578565",
@@ -3125,15 +3095,15 @@
    "merchant": "Evisu Asia",
    "merchantId": "578565",
    "category": "服飾配件",
-   "title": "每 NT$100 10.73 里",
+   "title": "每 NT$100 10.71 里",
    "reward": {
     "type": "miles",
-    "value": 10.73,
+    "value": 10.71,
     "text": "HKD10 = 4.5 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 HKD10 = 4.5 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 HKD10 = 4.5 里數，以 1 HKD ≈ NT$4.1998 換算",
     "一般商品：HKD10 = 4.5",
     "透過ATM/超商代碼/信用卡付款後，必需手動返回商戶頁面，訂單才會被有效追蹤及獲得獎勵。",
     "里約 105 天內入帳"
@@ -3145,13 +3115,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/evisu-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_578565.f25f517303ad6ee518a4647a6560608cf9550ce1863b77b0ed194ad83b8fa638.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:593335",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Fastmove",
+   "merchant": "飛速移動 （台灣）",
    "merchantId": "593335",
    "category": "生活服務",
    "title": "每 NT$100 7.75 里",
@@ -3170,13 +3140,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/utilities-and-telecoms/fastmove-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_593335.4f07d9e2d9dd033921edcad7d6e7cdfe0668928ec319355f67bf09079ef138a1.png",
-   "updatedAt": "2026-10-17T01:57:11.554Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:593355",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "DESENO",
+   "merchant": "DESENO 笛森諾 （台灣）",
    "merchantId": "593355",
    "category": "旅遊住宿",
    "title": "每 NT$100 16.25 里",
@@ -3195,13 +3165,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/deseno-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_593355.d7925b37a7766c2993b1b6ff3217ffce8ce73e52eed42d2139a5354543d2118e.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:593375",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "KISSME",
+   "merchant": "KISSME 奇士美 （台灣）",
    "merchantId": "593375",
    "category": "藥妝美妝",
    "title": "每 NT$100 8.5 里",
@@ -3221,13 +3191,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/kissme-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_593375.cfe584a0a8aa167ae88aff9345f41ac9a48fb7c1fea251fb3c4e40c1e2c8f316.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:597615",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "IHG Hotels & Resorts",
+   "merchant": "IHG Hotels & Resorts 洲際酒店集團 （台灣）",
    "merchantId": "597615",
    "category": "旅遊住宿",
    "title": "每 NT$100 4.5 里",
@@ -3254,7 +3224,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/ihg-hotels-and-resorts-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_597615.cc6cf05ed9d546cd7ae56eab235dfefaf644009391989b4ca627bed6771f30fc.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:599855",
@@ -3263,15 +3233,15 @@
    "merchant": "ALL-Accor Live Limitless Asia",
    "merchantId": "599855",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 6.85 里",
+   "title": "每 NT$100 最高 6.84 里",
    "reward": {
     "type": "miles",
-    "value": 6.85,
+    "value": 6.84,
     "text": "最多 SGD1 = 1.75 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 SGD1 = 1.75 里數，以 1 SGD ≈ NT$25.5415 換算",
+    "原始回饋 最多 SGD1 = 1.75 里數，以 1 SGD ≈ NT$25.5696 換算",
     "Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Acces：SGD1 = 1.75",
     "Raffles, Swissotel and Fairmont bookings：SGD1 = 0.75",
     "Reward is applicable to the following brands: Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Access, Ibis, Ibis Style, Ibis Budget, Formule1 Inde, HotelF1, MGallery, Rixos, Novotel, Mercure, Suite Novotel, Orbis and Mama Shelter bookings.",
@@ -3290,7 +3260,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/all-accor-live-limitless-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_599855.8dcc0a31668483cce6072b6eafbc1ec5e06b8ebf94e44e131ae08595d1a869bb.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:601615",
@@ -3299,20 +3269,20 @@
    "merchant": "Harrods Asia",
    "merchantId": "601615",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 16.69 里",
+   "title": "每 NT$100 最高 16.67 里",
    "reward": {
     "type": "miles",
-    "value": 7.75,
+    "value": 7.74,
     "text": "最多 HKD10 = 3.25 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 16.69,
+    "value": 16.67,
     "text": "最多 HKD10 = 7 里數",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 HKD10 = 7 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 7 里數，以 1 HKD ≈ NT$4.1998 換算",
     "Fashion, Shoes, Bags, Accessories：HKD10 = 5（08/11–12/31）",
     "Fashion, Shoes, Bags, Accessories：HKD10 = 7（08/11–12/31）",
     "Fine Jewellery, Fine Watches：HKD10 = 3.25（08/11–12/31）",
@@ -3335,13 +3305,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/harrods-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_601615.4f061b2d5884c251e92d3f27238ae35d5611de1358290921eb6a28cb84281718.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614675",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Clinique",
+   "merchant": "Clinique 倩碧 （台灣）",
    "merchantId": "614675",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3362,13 +3332,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/clinique-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614675.3f09342de0b9dffd3d4a32d5c7eb5225bb859d2329a2941a4b50919d3c7c2fec.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614685",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "La Mer",
+   "merchant": "La Mer 海洋拉娜 （台灣）",
    "merchantId": "614685",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3389,13 +3359,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/la-mer-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614685.2fa653c1c7f3f04da1ce851458d1638d8b6f9b2c91a49af0829348109a1213ba.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614695",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Jo Malone",
+   "merchant": "Jo Malone (台灣)",
    "merchantId": "614695",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3418,13 +3388,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/jo-malone-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614695.d8f32cbc420b1664478e035f320f7138c55dafd7df68b489ced67dabfdaf5bd2.jpg",
-   "updatedAt": "2026-11-01T01:11:43.539Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614715",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "MAC Cosmetics",
+   "merchant": "MAC （台灣）",
    "merchantId": "614715",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3445,13 +3415,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/mac-cosmetics-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614715.2d3ba37f51b2c97aff786e1092de98f233794fb7a0c06eb2fdcbf23f9fbff3a4.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614725",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Bobbi Brown",
+   "merchant": "Bobbi Brown 芭比波朗 （台灣）",
    "merchantId": "614725",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3472,13 +3442,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/bobbi-brown-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614725.eb4d132902888351c0199180d215af2b29afa196b266f3e58697658c375f1f4e.png",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:614735",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Estee Lauder",
+   "merchant": "Estee Lauder 雅詩蘭黛 （台灣）",
    "merchantId": "614735",
    "category": "藥妝美妝",
    "title": "每 NT$100 7.75 里",
@@ -3499,13 +3469,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/estee-lauder-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_614735.557c8c8d63809a53bf14d50721ec36d8e4697e3a887c36ae7ef0edd5cf843ad3.png",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:625225",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "lululemon",
+   "merchant": "lululemon (台灣)",
    "merchantId": "625225",
    "category": "運動戶外",
    "title": "每 NT$100 10.75 里",
@@ -3528,13 +3498,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/sport-and-fitness/lululemon-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_625225.17902da244cde48d25c386ea727609ccaea1ec93831312eb79707b2a10d193d7.png",
-   "updatedAt": "2026-11-15T01:57:00.627Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:627579",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "HANDS",
+   "merchant": "HANDS 台隆手創館 (台灣)",
    "merchantId": "627579",
    "category": "綜合電商",
    "title": "每 NT$100 3.75 里",
@@ -3554,13 +3524,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/hands-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_627579.e3c4d6a05bade35d00119de8e1cc3476fdf76784b4f9e473031cbf99fdd11ba7.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:633489",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "DJI Store",
+   "merchant": "DJI Store （台灣）",
    "merchantId": "633489",
    "category": "3C家電",
    "title": "每 NT$100 最高 8.5 里",
@@ -3586,7 +3556,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/electricals/dji-store-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_633489.02ce91123737038e74c297dd179869a94650873e3f7cac5a53701d8895cbdb5c.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:64734",
@@ -3595,15 +3565,15 @@
    "merchant": "ASOS Asia",
    "merchantId": "64734",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 8.94 里",
+   "title": "每 NT$100 最高 8.93 里",
    "reward": {
     "type": "miles",
-    "value": 8.94,
+    "value": 8.93,
     "text": "最多 HKD10 = 3.75 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 HKD10 = 3.75 里數，以 1 HKD ≈ NT$4.1932 換算",
+    "原始回饋 最多 HKD10 = 3.75 里數，以 1 HKD ≈ NT$4.1998 換算",
     "新顧客 New Customers：HKD10 = 3.75",
     "現有顧客 Existing Customers：HKD10 = 2",
     "標示之獎勵適用於ASOS Asia的新顧客。ASOS Asia的現有顧客會獲得較少獎勵。",
@@ -3620,13 +3590,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/asos-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_64734.e38ad78639d9cc6924b5ea2ff1c18dbc4bda9a7b.jpg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:72454",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Expedia",
+   "merchant": "Expedia 台灣",
    "merchantId": "72454",
    "category": "旅遊住宿",
    "title": "每 NT$100 最高 9.25 里",
@@ -3654,13 +3624,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/expedia-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_72454.85a437228d4f7bf0ce9fc1bfcb0bcf3c88acfe8e.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:81524",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "YOOX",
+   "merchant": "YOOX台灣",
    "merchantId": "81524",
    "category": "服飾配件",
    "title": "每 NT$100 7.75 里",
@@ -3683,13 +3653,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/yoox-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_81524.4e678c78b8c882c5de89dd615254701161fac3114c9279ac6738936c4ff9bb5b.png",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:94094",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Easy Travel",
+   "merchant": "四方通行",
    "merchantId": "94094",
    "category": "旅遊住宿",
    "title": "每 NT$100 2 里",
@@ -3708,13 +3678,13 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/easy-travel",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_94094.14891a3950aad59464c60b1a485ead2de152a024d778581460321b8d2ab712da.jpeg",
-   "updatedAt": "2026-10-17T03:14:18.345Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:98674",
    "kind": "rebate",
    "source": "cathay",
-   "merchant": "Ashford",
+   "merchant": "Ashford (台灣)",
    "merchantId": "98674",
    "category": "服飾配件",
    "title": "每 NT$100 4.25 里",
@@ -3733,7 +3703,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/ashford-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_98674.f85e3b1a6101cce6bce6fee57c55ecad0cbea06a.png",
-   "updatedAt": "2026-11-02T01:30:31.431Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "id": "cathay:99224",
@@ -3755,7 +3725,7 @@
     "endAt": "2026-11-22"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4877 換算",
+    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4802 換算",
     "New Customers：£1 = 8（11/16–11/22）",
     "Existing Customers：£1 = 5.25（11/16–11/22）",
     "Voucher code purchases：£1 = 2.75（11/16–11/22）",
@@ -3767,13 +3737,14 @@
    "tags": [
     "新客條件",
     "依品類不同",
-    "外幣計價"
+    "外幣計價",
+    "有折價券"
    ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/paul-smith",
    "logo": "https://cdn.rewardengine.com/upload/merchant_99224.13428e06d37f7100be4dd61a344411172558b453.png",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
    "source": "cathay",
@@ -3828,6 +3799,33 @@
    ],
    "startAt": null,
    "endAt": "2029-03-02"
+  },
+  {
+   "source": "cathay",
+   "merchant": "iHerb",
+   "merchantId": "197118",
+   "category": "藥妝美妝",
+   "url": "https://shop.asiamiles.com/zh/health-and-beauty/iherb-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_197118.053d3e79bea54013bb37e2fa0a5e2044ca545816.png",
+   "updatedAt": "2026-11-17T04:30:04.185Z",
+   "id": "cathay:v:170qv4k",
+   "kind": "coupon",
+   "title": "1 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "會員券"
+   },
+   "minSpend": null,
+   "conditions": [
+    "各張到期日：11/18"
+   ],
+   "tags": [
+    "需登入"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-18"
   },
   {
    "source": "cathay",
@@ -3998,7 +3996,7 @@
    "category": "旅遊住宿",
    "url": "https://shop.asiamiles.com/zh/travel/kkday-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178348.5d714cbd91fcdfbf41af461c0263a47c7b6dc800.png",
-   "updatedAt": "2026-11-15T01:57:00.627Z",
+   "updatedAt": "2026-11-17T04:30:04.185Z",
    "id": "cathay:v:1kpbq67",
    "kind": "coupon",
    "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
@@ -4010,7 +4008,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：11/16、11/17、12/31、12/31"
+    "各張到期日：11/17、11/30、12/31、12/31"
    ],
    "tags": [
     "需登入"
@@ -4187,10 +4185,10 @@
    "category": "旅遊住宿",
    "url": "https://shop.asiamiles.com/zh/travel/klook-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_178368.9b25315c6863c2ea6d5dd1ae147823f429c15fa8.png",
-   "updatedAt": "2026-11-13T02:38:34.205Z",
+   "updatedAt": "2026-11-17T04:30:04.185Z",
    "id": "cathay:v:1uz4ejv",
    "kind": "coupon",
-   "title": "5 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "4 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -4199,7 +4197,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：11/16、11/20、11/30、12/31、01/31"
+    "各張到期日：11/20、11/30、12/31、01/31"
    ],
    "tags": [
     "需登入"
