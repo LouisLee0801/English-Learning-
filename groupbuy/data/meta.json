@@ -2,16 +2,16 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 134,
-   "fresh": 5,
-   "updatedAt": "2026-11-18T07:48:36.585Z",
-   "seconds": 15,
+   "count": 132,
+   "fresh": 6,
+   "updatedAt": "2026-11-18T17:32:54.632Z",
+   "seconds": 13,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團啦",
+      "keyword": "收單",
       "status": 200,
       "posts": 0,
       "limited": true
@@ -19,7 +19,7 @@
      {
       "keyword": "開團",
       "status": 200,
-      "posts": 24,
+      "posts": 22,
       "limited": false
      }
     ],
@@ -27,7 +27,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 5
+    "items": 6
    }
   },
   "search": {
@@ -56,14 +56,14 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-18T07:48:36.585Z"
+   "failedAt": "2026-11-18T17:32:54.632Z"
   },
   "pages": {
    "ok": true,
-   "count": 170,
-   "fresh": 173,
-   "updatedAt": "2026-11-18T07:48:36.585Z",
-   "seconds": 7,
+   "count": 169,
+   "fresh": 172,
+   "updatedAt": "2026-11-18T17:32:54.632Z",
+   "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -74,14 +74,14 @@
      },
      {
       "name": "主夫尼克團購",
-      "items": 115
+      "items": 114
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
       "items": 37
      }
     ],
-    "items": 174
+    "items": 173
    }
   },
   "instagram": {
@@ -93,9 +93,9 @@
   },
   "rss": {
    "ok": true,
-   "count": 1,
+   "count": 0,
    "fresh": 3,
-   "updatedAt": "2026-11-18T07:48:36.585Z",
+   "updatedAt": "2026-11-18T17:32:54.632Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -113,9 +113,9 @@
   },
   "compare": {
    "ok": true,
-   "count": 268,
+   "count": 261,
    "fresh": 20,
-   "updatedAt": "2026-11-18T07:50:38.944Z",
+   "updatedAt": "2026-11-18T17:35:13.237Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
@@ -123,15 +123,15 @@
     "errors": {
      "momo": 1
     },
-    "pending": 6,
+    "pending": 5,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 118,
- "generatedAt": "2026-11-18T07:48:36.585Z",
+ "runs": 119,
+ "generatedAt": "2026-11-18T17:32:54.632Z",
  "files": [
   "threads.json",
   "search.json",
