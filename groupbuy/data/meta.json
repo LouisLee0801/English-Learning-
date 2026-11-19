@@ -2,18 +2,18 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 138,
-   "fresh": 10,
-   "updatedAt": "2026-11-19T00:38:55.576Z",
+   "count": 141,
+   "fresh": 15,
+   "updatedAt": "2026-11-19T10:42:16.133Z",
    "seconds": 8,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 28,
+      "posts": 21,
       "limited": false
      }
     ],
@@ -21,7 +21,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 10
+    "items": 15
    }
   },
   "search": {
@@ -50,13 +50,13 @@
     "items": 3
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-19T00:38:55.576Z"
+   "failedAt": "2026-11-19T10:42:16.133Z"
   },
   "pages": {
    "ok": true,
-   "count": 170,
-   "fresh": 173,
-   "updatedAt": "2026-11-19T00:38:55.576Z",
+   "count": 172,
+   "fresh": 175,
+   "updatedAt": "2026-11-19T10:42:16.133Z",
    "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -72,10 +72,10 @@
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
-      "items": 37
+      "items": 39
      }
     ],
-    "items": 174
+    "items": 176
    }
   },
   "instagram": {
@@ -89,7 +89,7 @@
    "ok": true,
    "count": 0,
    "fresh": 3,
-   "updatedAt": "2026-11-19T00:38:55.576Z",
+   "updatedAt": "2026-11-19T10:42:16.133Z",
    "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -107,25 +107,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 254,
+   "count": 251,
    "fresh": 20,
-   "updatedAt": "2026-11-19T00:41:07.859Z",
+   "updatedAt": "2026-11-19T10:44:31.823Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 2,
+    "matched": 3,
     "errors": {
      "momo": 1
     },
-    "pending": 7,
+    "pending": 8,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 120,
- "generatedAt": "2026-11-19T00:38:55.576Z",
+ "runs": 121,
+ "generatedAt": "2026-11-19T10:42:16.133Z",
  "files": [
   "threads.json",
   "search.json",
