@@ -1208,7 +1208,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 15",
+    "推 17",
     "期限見原文"
    ],
    "startAt": null,
@@ -1216,7 +1216,7 @@
    "publishedAt": "2026-11-18T10:31:44.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794997904.A.A1F.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-19T03:35:00.372Z"
+   "updatedAt": "2026-11-19T13:59:50.449Z"
   },
   {
    "id": "ptt:1795002403.A.E15",
@@ -1300,14 +1300,14 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 18"
+    "推 26"
    ],
    "startAt": "2026-11-18",
    "endAt": "2026-11-22",
    "publishedAt": "2026-11-18T17:53:56.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795024436.A.320.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-19T03:35:00.372Z"
+   "updatedAt": "2026-11-19T13:59:50.449Z"
   },
   {
    "id": "ptt:1795044211.A.527",
@@ -1330,7 +1330,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 54",
+    "推 80",
     "期限見原文"
    ],
    "startAt": null,
@@ -1338,7 +1338,7 @@
    "publishedAt": "2026-11-18T23:23:31.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795044211.A.527.html",
    "category": "旅遊住宿",
-   "updatedAt": "2026-11-19T03:35:00.372Z"
+   "updatedAt": "2026-11-19T13:59:50.449Z"
   },
   {
    "id": "ptt:1795053810.A.A45",
@@ -1360,7 +1360,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 13",
+    "推 25",
     "期限見原文"
    ],
    "startAt": null,
@@ -1368,7 +1368,98 @@
    "publishedAt": "2026-11-19T02:03:30.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795053810.A.A45.html",
    "category": "其他",
-   "updatedAt": "2026-11-19T03:35:00.372Z"
+   "updatedAt": "2026-11-19T13:59:50.449Z"
+  },
+  {
+   "id": "ptt:1795060414.A.A9A",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "uber eats",
+   "title": "uber eats 優惠碼",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "line pay 的通知",
+    "699-80",
+    "----",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-26",
+   "publishedAt": "2026-11-19T03:53:34.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795060414.A.A9A.html",
+   "category": "外送",
+   "updatedAt": "2026-11-19T13:59:50.449Z"
+  },
+  {
+   "id": "ptt:1795062882.A.4FE",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "星巴克",
+   "title": "丸龜優惠and星巴克點中杯送點心",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "A:消費者",
+    "丸龜製麵的Line有冬日好友季兌換券，點炸物豆皮烏龍麵（中）買一送一。",
+    "我去K區地下街的丸龜使用可折扣東森新會員送的三張50元折價券滿101元就可用。",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 11",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-26",
+   "publishedAt": "2026-11-19T04:34:42.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795062882.A.4FE.html",
+   "category": "餐飲美食",
+   "updatedAt": "2026-11-19T13:59:50.449Z"
+  },
+  {
+   "id": "ptt:1795070059.A.D28",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "7-11",
+   "title": "7-11大大大鹽酥雞買2送1",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "7-11大大大鹽酥雞 原味/辣味任選買2送1",
+    "一包59元。",
+    "真的很便宜，而且是無骨的，警語是說可能",
+    "還有碎骨，可是我沒吃到骨頭。",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 23",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-26",
+   "publishedAt": "2026-11-19T06:34:19.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795070059.A.D28.html",
+   "category": "超商量販",
+   "updatedAt": "2026-11-19T13:59:50.449Z"
   }
  ]
 }
