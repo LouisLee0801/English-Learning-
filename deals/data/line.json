@@ -45,13 +45,19 @@
    "merchant": "台灣樂天市場",
    "merchantId": "4217685",
    "category": "綜合電商",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 3,
     "text": "3%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
+   },
    "conditions": [
     "單一商品最高回饋 1000 點",
     "點數發放：出貨日45天後",
@@ -70,7 +76,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4217685",
    "logo": "https://buy-obs.line-scdn.net/0hSfDS-IfDDEl5Kh_HKOJzHip-ACkGBBdLEBQTMQ5xU3sGRkNaOipLZgwpUjIBbBJcPhM_Jwx1InovRSsXLj4oLz1PJSIHUTNZOk4nKyBfNjA_UTtDFSlCaQ",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4217704",
@@ -319,13 +325,19 @@
    "merchant": "Gap",
    "merchantId": "4447369",
    "category": "服飾配件",
-   "title": "LINE POINTS 2% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-20"
+   },
    "conditions": [
     "點數發放：出貨日30天後",
     "需透過 LINE 購物前往並在同一瀏覽器於 24 小時內結帳才享有回饋，點數將於廠商出貨後 30 天前後發送。若於商家App下單，不符合LINE購物導購資格。"
@@ -335,7 +347,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4447369",
    "logo": "https://buy-obs.line-scdn.net/0htK5TVxzAK2QILQKpJdBUMyh5JwR3AzBmYRM0HHN1IDolGm03PEJgAywudV0mH2oxM0plAi0lIVEgFWo1cUo2Viooc1x1",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4536437",
@@ -629,8 +641,8 @@
    "source": "line",
    "merchant": "iQueen愛女人購物網",
    "merchantId": "4536476",
-   "category": "生活服務",
-   "title": "LINE POINTS 8% 回饋",
+   "category": "藥妝美妝",
+   "title": "LINE POINTS 3% 回饋",
    "reward": {
     "type": "percent",
     "value": 1,
@@ -638,13 +650,12 @@
    },
    "boost": {
     "type": "percent",
-    "value": 8,
-    "text": "8%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
+    "value": 3,
+    "text": "3%",
+    "startAt": "2026-11-01",
+    "endAt": "2026-11-30"
    },
    "conditions": [
-    "單一商品最高回饋 200 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -652,7 +663,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4536476",
    "logo": "https://buy-obs.line-scdn.net/0hirG5TKJnNl16TCRgZh5JCl0YOj0FYi1fE3IpJQEUPQNXe3gJQSl8O1dKYW5Qe3YDQi1xOw1Ea25fdXNORipxPF1KP2k",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4536479",
@@ -1696,7 +1707,7 @@
    "source": "line",
    "merchant": "康是美網購eShop",
    "merchantId": "4536567",
-   "category": "超商量販",
+   "category": "居家生活",
    "title": "LINE POINTS 0.5% 回饋",
    "reward": {
     "type": "percent",
@@ -1720,7 +1731,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4536567",
    "logo": "https://buy-obs.line-scdn.net/0hsA9GSJyVLG4EPgUMrvZTOSRqIA57EDdsbQAzFn9mJzApCmM9O1lkCCE-clwuB2swOVtjCyE2cQ4sB2owfVkxDSFsJld-",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4536568",
@@ -2198,19 +2209,13 @@
    "merchant": "糖罐子",
    "merchantId": "4536608",
    "category": "服飾配件",
-   "title": "LINE POINTS 8% 回饋",
+   "title": "LINE POINTS 4% 回饋",
    "reward": {
     "type": "percent",
     "value": 4,
     "text": "4%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 8,
-    "text": "8%",
-    "startAt": "2026-11-17",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後",
     "消費貼心提醒：",
@@ -2221,7 +2226,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4536608",
    "logo": "https://buy-obs.line-scdn.net/0hGAEVGgxRGG54LzGjNNlnOV97FA4HAQNsEREHFgN3EzBVGF49TEFVDVgvQ15SHVs9RE9WCFUsFF5cHlt9RRsDD1omTl4",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4536611",
@@ -3991,21 +3996,14 @@
    "merchant": "小三美日官網",
    "merchantId": "4747319",
    "category": "超商量販",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 50 點",
     "點數發放：出貨日30天後",
     "提供多樣化、無限制的選擇！ 以批發價販售，保證正品，讓你以最快最便利方式趕上流行的腳步； 美日韓平價美妝保養品及高cp生活小物盡在小三美日！",
     "注意事項：",
@@ -4023,7 +4021,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4747319",
    "logo": "https://buy-obs.line-scdn.net/0hac_s1ovyPkxiCihkTqFBG0VeMiwdJCVOCzQhNBlSNRJPPXkeWGR4LE4LaX9OMnoYXW90Kk9eZX9KM3tfXzl4eUIDNC4",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4747321",
@@ -4661,7 +4659,7 @@
    "source": "line",
    "merchant": "萬家福線上購物",
    "merchantId": "4747427",
-   "category": "綜合電商",
+   "category": "超商量販",
    "title": "LINE POINTS 1% 回饋",
    "reward": {
     "type": "percent",
@@ -4685,7 +4683,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4747427",
    "logo": "https://buy-obs.line-scdn.net/0hFP2Z7Bj6GX8PIwVeLS1mKFx3FR9wDQJ9Zh0GB3h4RgddTwdwWCNSQXhFOBBxEF8oSBoqEXp8N0xZTD4hWDc9GUtGMA1cZVsqTyAEG3loOAxeZi51YyBXXw",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4747428",
@@ -5002,21 +5000,14 @@
    "merchant": "agoda (住宿) - LINE旅遊",
    "merchantId": "4747497",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 11% 回饋",
+   "title": "LINE POINTS 3% 回饋",
    "reward": {
     "type": "percent",
     "value": 3,
     "text": "3%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 11,
-    "text": "11%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 1100 點",
     "點數發放：出貨日30天後",
     "訂飯店、渡假村、青年旅館？包山包海超過200萬間國內外各類優惠住宿，都可以在agoda找到。",
     "透過LINE旅遊至agoda訂住宿，筆筆訂單享LINE POINTS回饋。"
@@ -5026,7 +5017,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4747497",
    "logo": "https://buy-obs.line-scdn.net/0hpUL-NhcjL3pxVAS4MGxQLVEAIxoOejR4GGowAgoMJCRcYG4sTTJlHVxQcUxYY2gtTTNlGVRcJU9bbWstCDMwSFRSc04L",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4747499",
@@ -5150,7 +5141,7 @@
     "value": 8,
     "text": "8%",
     "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
+    "endAt": "2026-11-19"
    },
    "conditions": [
     "單一商品最高回饋 200 點",
@@ -5163,7 +5154,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/4747522",
    "logo": "https://buy-obs.line-scdn.net/0hZWdDq-YsBXhZPS5xXHx6L3lpCRgmEx56MAMaACJlDiYoWR59MRhJcHk7Xk5wDkFAOAUcQHw1WEFzCUAqIFoaTiw-DElz",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:4747526",
@@ -5526,14 +5517,21 @@
    "merchant": "Booking.com (住宿) - LINE旅遊",
    "merchantId": "880044220676",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 10% 回饋",
    "reward": {
     "type": "percent",
     "value": 5,
     "text": "5%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 10,
+    "text": "10%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
+   },
    "conditions": [
+    "單一商品最高回饋 1000 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -5541,7 +5539,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880044220676",
    "logo": "https://buy-obs.line-scdn.net/0h9xBZn3UlZld_I3gFJV4ZACJ3ajcADX1VFh15Lwh4OSIuWHRZEEZ8cwpFYTo5SHxHPB1CejtFeSEtS0oAIiNJbQ9GOS4CZnRBEyxKazJFMWYCdXNHOBlzOSZT",
-   "updatedAt": "2026-11-10T06:16:27.878Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880044225097",
@@ -5784,21 +5782,14 @@
    "merchant": "i3fresh 愛上新鮮",
    "merchantId": "880044516771",
    "category": "餐飲美食",
-   "title": "LINE POINTS 20% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 5,
     "text": "5%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 20,
-    "text": "20%",
-    "startAt": "2026-11-17",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 150 點",
     "點數發放：出貨日30天後",
     "需透過LINE購物前往，並在同一瀏覽器於 24 小時內結帳，才具點數回饋資格。",
     "點數回饋上限以單筆訂單計算。",
@@ -5811,7 +5802,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880044516771",
    "logo": "https://buy-obs.line-scdn.net/0hkjCVcXXdNEV-LxyQXTBLEll7OCUBAS9HFxErPQV3PxtTG3oaREt_J1wub3JQHXsRRkB4I1MsOHFUFnRWQxovd18raHw",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880044545149",
@@ -6553,19 +6544,13 @@
    "merchant": "Kipling官方網路旗艦店",
    "merchantId": "880045268975",
    "category": "服飾配件",
-   "title": "LINE POINTS 11% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 11,
-    "text": "11%",
-    "startAt": "2026-11-13",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後"
    ],
@@ -6574,7 +6559,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045268975",
    "logo": "https://buy-obs.line-scdn.net/0hjmmlyiX3NUJQFRxfzmtKFXdBOSIvOy5AOSsqOitNPhx9InMUZXRzIHwRaHt6LXsUa3R4JH1BbXZ5JnNRbSEpIyZFa3o",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045273431",
@@ -6632,21 +6617,14 @@
    "merchant": "DV 麗彤生醫",
    "merchantId": "880045292808",
    "category": "藥妝美妝",
-   "title": "LINE POINTS 8% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 8,
-    "text": "8%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 300 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -6654,7 +6632,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045292808",
    "logo": "https://buy-obs.line-scdn.net/0hNz_HspVHEVViMQM8zTRuAkJlHTUdHwpXCw8OLRlpGgtPBlAKWV5fNEM4T2BOA14KWlBdO0dkGmRLAVQDG1deNhdjR2BM",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045305057",
@@ -6663,7 +6641,7 @@
    "merchant": "葡萄王購健康",
    "merchantId": "880045305057",
    "category": "藥妝美妝",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 10% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -6671,10 +6649,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-01",
-    "endAt": "2026-11-30"
+    "value": 10,
+    "text": "10%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-20"
    },
    "conditions": [
     "點數發放：出貨日30天後",
@@ -6686,7 +6664,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045305057",
    "logo": "https://buy-obs.line-scdn.net/0h2J41PdKhbWUJSER_NuMSMikcYQV2ZnZnYHZyHXIQZjskfyswNCsjBypLM1Esfyo1MS4kAixAZ1IheCoycC9wUCRMOwF2",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045338062",
@@ -6758,21 +6736,14 @@
    "merchant": "The North Face",
    "merchantId": "880045380827",
    "category": "服飾配件",
-   "title": "LINE POINTS 15% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 15,
-    "text": "15%",
-    "startAt": "2026-11-16",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 300 點",
     "點數發放：出貨日30天後",
     "The North Face的名字緣起於北半球，在這裡尤以山脊北壁的日照時間最短、也最寒冷嚴峻，是最具危險與挑戰性的區域，需要較好的技巧與絕佳的裝備來克服，而真正的登山愛好者總能無所畏懼、迎難而上，這正是品牌被命名為The North Face的原因，“探索永不停止Never Stop Exploring”也成為品牌永恆的精神口號。",
     "The North Face自1966年由兩位熱愛登山的年輕登山者在美西舊金山創立至今50年，始終以最先進的技術投入設計，生產專業戶外服飾與配備。在全球市場上，The North Face永遠都是成功登頂者、世界性探險隊、極限運動選手、極地探險家的首選，品牌在1976年便成立了品質控制實驗室，專門用於材料測試，研發適合不同戶外環境、滿足各類需求的材質及面料；並且每一件產品都需要經過嚴格的運動員實地測試、精進設計，至今，The North Face代表著的不僅只是優良的裝備，更是人們走出戶外或是從事惡劣苛刻的戶外探險時的最佳夥伴。",
@@ -6783,7 +6754,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045380827",
    "logo": "https://buy-obs.line-scdn.net/0hgYrgHw6wOHZPHiZDYIxHIRJKNBYwMCN0JiAnDjhFZwMdVxh8GCMAUwF4LwUKcQslIQocWwt4JwAddhQhEh4XTD97Zw8yWBhjIw5-EAJ4NA0KSw9mCCQtGBZu",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045380862",
@@ -6849,21 +6820,14 @@
    "merchant": "Anden Hud",
    "merchantId": "880045421100",
    "category": "服飾配件",
-   "title": "LINE POINTS 15% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 15,
-    "text": "15%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 4 點",
     "點數發放：出貨日35天後",
     "台灣男女內褲領導品牌，百萬網友推薦，每三秒賣一件！堅持100%台灣製造，年度熱銷百萬件，還有好穿兼具品味的平價服飾，男女士居家衣著、長短褲、襪子。從今天開始享受MIT的好品質。",
     "※需注意：若有取消訂單、整單退貨、部分商品退貨，該訂單皆不符合贈點資格。"
@@ -6873,7 +6837,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045421100",
    "logo": "https://buy-obs.line-scdn.net/0hTebUKnXRC0pfLCLrWzZ0HX94ByogAhBINhIUMiR0ABRyG00bakpBLXkkVX57HEUZZ0xFLHokAX1yG0oYJksRLXkuVHgn",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045421130",
@@ -7133,13 +7097,19 @@
    "merchant": "AsiaYo (住宿) - LINE旅遊",
    "merchantId": "880045456623",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 5.5% 回饋",
    "reward": {
     "type": "percent",
     "value": 3,
     "text": "3%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5.5,
+    "text": "5.5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
+   },
    "conditions": [
     "點數發放：出貨日30天後",
     "提供國內外特色旅宿線上預訂，包棟/親子友善/寵物友善/湯屋/海景房，滿足你所有旅行住宿的需求。 出門也有回家的溫暖，體驗當地文化首選。AsiaYo提供台日韓泰港星馬，各種特色房源。 台日韓泰港星馬超過8萬房間。無訂房服務費、無稅項。即時客服語言無煩惱。"
@@ -7149,7 +7119,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880045456623",
    "logo": "https://buy-obs.line-scdn.net/0hsW5YexyQLHgIIAW9mY9TLy90IBh3Djd6YR4zAHN4JyYlF2orMU5gGi8nckEnEG0tMUdhGS0ocRgnFWJrNRQ2Sn8iJkE",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880045456637",
@@ -7832,19 +7802,13 @@
    "merchant": "Nespresso 膠囊咖啡機官方網站",
    "merchantId": "880046073726",
    "category": "3C家電",
-   "title": "LINE POINTS 最高 6% 回饋",
+   "title": "LINE POINTS 1% 回饋",
    "reward": {
     "type": "percent",
     "value": 1,
     "text": "1%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 6,
-    "text": "6%",
-    "startAt": "2026-11-17",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日75天後",
     "僅「咖啡機」類型商品符合贈點資格。2. 其餘零元即享方案、膠囊、配件、回收袋等商品不符合贈點資格。3. 不符合贈點資格商品不得使用點數紅包。"
@@ -7854,7 +7818,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880046073726",
    "logo": "https://buy-obs.line-scdn.net/0hvoGvTJgNKUB6Dz_RWptWF11bJSAFITJCEzE2OAFXIh5XOG0RQGxhJF4Jf3lSOG4VRW1gJldbcHJXOmlTRz1kJVsKJHI",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880046086414",
@@ -7939,19 +7903,13 @@
    "merchant": "九乘九購物網",
    "merchantId": "880046102666",
    "category": "綜合電商",
-   "title": "LINE POINTS 8% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 8,
-    "text": "8%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後",
     "九乘九文具專家於民國85年11月23日在高雄創立第一家門市；本著『用心就是專業』，網羅世界各國高品質，實用性的精緻文具用品，以平價優惠的價格，提供給廣大消費者。在維持實體門市經營理念原則、品牌、形象image的一致性延伸至網路，以發展非店舖通路及整合虛實行銷為目標，並以完整的物流倉儲系統，跨區域為客戶服務，提供便利、快捷的文具生活商品。",
@@ -7965,7 +7923,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880046102666",
    "logo": "https://buy-obs.line-scdn.net/0hTT_iBBoGC3tiEB3smod0LEVEBxsdPhB5Cy4UAxlIACVPJ08qW3dBHk4ZUEhNIUooXnNCHU8TXEJIJEpoXyJHSEdCBko",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880046150403",
@@ -9712,7 +9670,7 @@
    "merchant": "Mamas & Papas 英國第一育兒品牌",
    "merchantId": "880047257813",
    "category": "親子寵物",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 10% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -9720,10 +9678,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-01",
-    "endAt": "2026-11-30"
+    "value": 10,
+    "text": "10%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-20"
    },
    "conditions": [
     "點數發放：出貨日30天後"
@@ -9733,7 +9691,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880047257813",
    "logo": "https://buy-obs.line-scdn.net/0hTy3aIZf1C1YOGBhZXAd0AV1MBzZxNhBUZyYULnlDVGd2TS9EYBsRdHtTLWRcTkxcSSE4OHtHJWVYdywIWQwvMEp9Ij5wKxYFYCUzanlTKWNIYzxcYhtFdg",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880047274600",
@@ -9742,7 +9700,7 @@
    "merchant": "tokuyo按摩椅",
    "merchantId": "880047274600",
    "category": "3C家電",
-   "title": "LINE POINTS 6% 回饋",
+   "title": "LINE POINTS 10% 回饋",
    "reward": {
     "type": "percent",
     "value": 1,
@@ -9750,10 +9708,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 6,
-    "text": "6%",
-    "startAt": "2026-11-14",
-    "endAt": "2026-11-18"
+    "value": 10,
+    "text": "10%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-21"
    },
    "conditions": [
     "點數發放：出貨日30天後"
@@ -9763,7 +9721,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880047274600",
    "logo": "https://buy-obs.line-scdn.net/0hyHJ3HVcdJmd3SjJf6TJZMFceKgcIZD1lHnQ5HwwSLTlafWUwTi5oB1VMeFNbe2U2Qy1tAlJCewVZcmE5Di0-CQEZKFcN",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880047320350",
@@ -10763,21 +10721,14 @@
    "merchant": "VANS TAIWAN",
    "merchantId": "880047896811",
    "category": "服飾配件",
-   "title": "LINE POINTS 8% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 8,
-    "text": "8%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 200 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -10785,7 +10736,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880047896811",
    "logo": "https://buy-obs.line-scdn.net/0ha__L5CP2PnBiNSrTXqtBJ0VhMhAdGyVyCwshCBltNS5PAn0gX1B0HkA9ZUNLDH8lXVFwFk9hZ0JIAn9jXlJwF0M8M0g",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880047898150",
@@ -11391,7 +11342,7 @@
    "merchant": "judy喬蒂",
    "merchantId": "880048346830",
    "category": "藥妝美妝",
-   "title": "LINE POINTS 10% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -11399,10 +11350,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 10,
-    "text": "10%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-01",
+    "endAt": "2026-11-30"
    },
    "conditions": [
     "點數發放：出貨日30天後",
@@ -11415,7 +11366,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048346830",
    "logo": "https://buy-obs.line-scdn.net/0hIm62s93UFkILSwMMPvxpFSwfGiJ0ZQ1AYnUJOnATHRwmfFYWMChdLC1KT3EmfFERMyhYJCYfTncufFhRNyxeICocHXM",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048371836",
@@ -11655,13 +11606,19 @@
    "merchant": "DK 呼吸空氣鞋",
    "merchantId": "880048372030",
    "category": "服飾配件",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 8% 回饋",
    "reward": {
     "type": "percent",
     "value": 3,
     "text": "3%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 8,
+    "text": "8%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-21"
+   },
    "conditions": [
     "單一商品最高回饋 100 點",
     "點數發放：出貨日30天後",
@@ -11672,7 +11629,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048372030",
    "logo": "https://buy-obs.line-scdn.net/0hdCg5Xb28O2xaTC4h9rpEO30YNwwlYiBuM3IkFCEUMDJ3e3s4YCh9CXlOZVR3eXg_Yyx1DH9EMVh1fHl_ZitzDS1FbVw",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048402285",
@@ -12456,13 +12413,19 @@
    "merchant": "gogoout (租車與包車) - LINE旅遊",
    "merchantId": "880048583852",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 3.5% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 3.5,
     "text": "3.5%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
+   },
    "conditions": [
     "點數發放：出貨日30天後",
     "一次比價 9000 間以上租車公司，輕鬆找到優惠價格，預訂最理想的車輛。"
@@ -12472,7 +12435,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048583852",
    "logo": "https://buy-obs.line-scdn.net/0h1JafW8zpbmVcH31WYJ4RMgFLYgUjMXVnNSFxHStEMRANRkl6C3peXiodRFciWVE3MiFKSBh5cRMOd0IyAR9BXyx6MRwZc2hwMHpGSBFEQB4ZSXt1GyV7CwVv",
-   "updatedAt": "2026-10-20T01:06:36.987Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048583871",
@@ -13112,13 +13075,19 @@
    "merchant": "Trip.com (機票) - LINE旅遊",
    "merchantId": "880048631559",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 0.5% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 0.5,
     "text": "0.5%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 2,
+    "text": "2%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-20"
+   },
    "conditions": [
     "點數發放：出貨日30天後",
     "Trip.com提供120萬家飯店，5000多個城市航班可供選擇，超值價格輕鬆搞定旅程。"
@@ -13128,7 +13097,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048631559",
    "logo": "https://buy-obs.line-scdn.net/0hwBZTsu-GKG1nLT19BcFXOkd5JA0YAzNvDhM3FRx1IzNKGmgyXU1nDUQtdl9NGW86XElvA0EuIlxPGWY-HktmWEAlcQ0Z",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048631569",
@@ -13598,21 +13567,14 @@
    "merchant": "Samsonite 官方網站",
    "merchantId": "880048889729",
    "category": "居家生活",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 3,
-    "text": "3%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 300 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -13620,7 +13582,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048889729",
    "logo": "https://buy-obs.line-scdn.net/0h2kiB2vDEbURUO393zDISE3RvYSQrFXZGPQVyPC9jZhp5DCMQa1onK3Y4MHV-AiwSYFwmJnI4Z3R5DCoVLV0iKnBoYXEt",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048889733",
@@ -13629,21 +13591,14 @@
    "merchant": "American Tourister 官方網站",
    "merchantId": "880048889733",
    "category": "居家生活",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 3,
-    "text": "3%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 300 點",
     "點數發放：出貨日30天後"
    ],
    "tags": [],
@@ -13651,7 +13606,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048889733",
    "logo": "https://buy-obs.line-scdn.net/0hZRv8lTBSBX1LQRe1J696KhYVCR00bx5_In8aBTwaWggZLj1zH2w9XTsoOBU2LT12J0UhUA8nGgsZKSkqFkEqRzskWgQOFzlxC0IfQD4aOwYYFDJtDHsQExIx",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048890059",
@@ -13735,19 +13690,13 @@
    "merchant": "Tripbaa 趣吧 (體驗與票券) - LINE旅遊",
    "merchantId": "880048890175",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 5.5% 回饋",
+   "title": "LINE POINTS 3.5% 回饋",
    "reward": {
     "type": "percent",
     "value": 3.5,
     "text": "3.5%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 5.5,
-    "text": "5.5%",
-    "startAt": "2026-11-16",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後"
    ],
@@ -13756,7 +13705,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048890175",
    "logo": "https://buy-obs.line-scdn.net/0hIwyIa1DbFlhEMAPQcSNpD2RkGjg7Hg1aLQ4JID9oHQZpB1cJf1VZN2kzS2lsB1UKcVNQNmFiTz1hAFAPPVZZPTI0H2ps",
-   "updatedAt": "2026-11-16T02:10:20.792Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048890189",
@@ -13844,14 +13793,21 @@
    "merchant": "gozo個性女裝",
    "merchantId": "880048899275",
    "category": "服飾配件",
-   "title": "LINE POINTS 2% 回饋",
+   "title": "LINE POINTS 6% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 6,
+    "text": "6%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-22"
+   },
    "conditions": [
+    "單一商品最高回饋 60 點",
     "點數發放：出貨日50天後",
     "be Different 以趣味設計的DNA翻轉日常",
     "在個體與群體的邊界之間跨越與穿梭",
@@ -13862,7 +13818,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880048899275",
    "logo": "https://buy-obs.line-scdn.net/0hKXZ2uJn-FHdnSwfhCWVrIDQfGBcYZQ91DnULDxAQSwIZMDdnCWY4WRctCx81eAlnIHInGRIUOkQxJDMpMF8wESMuPRwYHiBkDkgnWDw-KkMhMCN9C0haVw",
-   "updatedAt": "2026-11-12T03:00:25.934Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880048900128",
@@ -15194,19 +15150,13 @@
    "merchant": "衣芙",
    "merchantId": "880049233441",
    "category": "服飾配件",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後",
     "衣芙品牌：以「Buy Better and Last Forever」的理念， 將舒適、簡約、永續作為品牌標籤。"
@@ -15216,7 +15166,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049233441",
    "logo": "https://buy-obs.line-scdn.net/0hnWuuFrnlMXhIDCPP7SVOLxVYPRg3Iip6ITIuAD9Xbg0ZVQ1uJx8sHj55Cw4OWnZxCxgVVQxqLg4aZB0vFQweQjhpbgENWjdwCBwJHj1HDwMNPyRoDzYkFhF8",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049234792",
@@ -16875,14 +16825,21 @@
    "merchant": "Hotels.com(住宿)-LINE旅遊",
    "merchantId": "880049493154",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 3% 回饋",
+   "title": "LINE POINTS 7% 回饋",
    "reward": {
     "type": "percent",
     "value": 3,
     "text": "3%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 7,
+    "text": "7%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
+   },
    "conditions": [
+    "單一商品最高回饋 1000 點",
     "點數發放：出貨日30天後",
     "線上預訂飯店！去自助旅遊就要瀏覽我們優惠價格的平價飯店，通過Hotels.com的線上飯店搜尋功能，您可輕鬆比較房價、查看供應情況，方便您找到和預訂適合您要求的飯店房間。"
    ],
@@ -16891,7 +16848,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049493154",
    "logo": "https://buy-obs.line-scdn.net/0hMTLJcKyzEntxMw2kqw9tLCxnHhsOHQl5GA0NAwZoTQ4jei5rGAldHCt4FUsgXwgsGA02VjVVDQ0jWz4sLDM9QQFWTQIMSD0uGDA6RShVHgAJZQdrNgkHFShD",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049511543",
@@ -17293,7 +17250,7 @@
    "merchant": "adidas 官方網站",
    "merchantId": "880049575092",
    "category": "服飾配件",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 15% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -17301,13 +17258,13 @@
    },
    "boost": {
     "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
+    "value": 15,
+    "text": "15%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-19"
    },
    "conditions": [
-    "單一商品最高回饋 100 點",
+    "單一商品最高回饋 300 點",
     "點數發放：出貨日30天後",
     "我們專注於一切與運動、流行時尚、以及生活風格相關的事物，提供您專業運動跑鞋、訓練鞋、籃球鞋、各種機能運動服飾；也帶給您代表時尚潮流、街頭經典的adidas Originals原創單品。官方購物網將全系列的運動與Originals商品一次呈現給您，搭配不定期舉辦的優惠活動，加上滿1,500免運與七天鑑賞期服務，讓您能輕鬆入手世界頂級的運動與時尚單品，和我們一起變得更好。",
     "無點數回饋商品: Prada聯名系列、Yeezy系列、網路獨家專區、品牌聯名專區及特殊指定商品，恕不參與LINE購物點數回饋活動。"
@@ -17317,7 +17274,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049575092",
    "logo": "https://buy-obs.line-scdn.net/0h0NMlxIMZb2FwFXz_M0oQNiNBYwEPO3RjGStwGQdOMFMOfkwzMApYTwVga1IPeV9vNyxcDwVKQVImekg_JwFLBzRwRgoPek9pGSxLRilgVVQ2blhrHBYhQQ",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049582827",
@@ -17773,7 +17730,7 @@
    "merchant": "ADAM 亞果元素",
    "merchantId": "880049722459",
    "category": "綜合電商",
-   "title": "LINE POINTS 11% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 1,
@@ -17781,10 +17738,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 11,
-    "text": "11%",
-    "startAt": "2026-11-17",
-    "endAt": "2026-11-18"
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-01",
+    "endAt": "2026-11-30"
    },
    "conditions": [
     "點數發放：出貨日30天後"
@@ -17794,7 +17751,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049722459",
    "logo": "https://buy-obs.line-scdn.net/0hUOI1leagCmB0SBZEo9N1NyccBgALZhFiHXYVGAMTVVMJexRrI0s1AwMhLxkyIzprM3E5DgEXJFMiJy0-I1wuBjAtIxInDS41I0chTQIDKFQlDT1qGEtEQA",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049725990",
@@ -17828,7 +17785,7 @@
    "merchant": "CONTIN康定",
    "merchantId": "880049745993",
    "category": "藥妝美妝",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 10% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -17836,10 +17793,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-01",
-    "endAt": "2026-11-30"
+    "value": 10,
+    "text": "10%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-20"
    },
    "conditions": [
     "點數發放：出貨日30天後",
@@ -17850,7 +17807,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049745993",
    "logo": "https://buy-obs.line-scdn.net/0hb6TwGy0oPRlpDi11FmBCTjRaMXkWICYbADAiYR5VYmw7WAEMKTcRNDN7CGwUWy8GKhoZNC1oIm87ZhFONA4SIxlrYmAvSwkUKw4FfDB4aikvSwoJLjQodzB-",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049746013",
@@ -17908,15 +17865,21 @@
    "merchant": "Fashionforyes",
    "merchantId": "880049746042",
    "category": "服飾配件",
-   "title": "LINE POINTS 2% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-23"
+   },
    "conditions": [
-    "單一商品最高回饋 5 點",
+    "單一商品最高回饋 10 點",
     "點數發放：出貨日30天後",
     "FASHION FOR YES",
     "24HRS系列",
@@ -17930,7 +17893,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880049746042",
    "logo": "https://buy-obs.line-scdn.net/0hWeinUORkCEpUFxgMs6F3HQlDBCorORNIPSkXMiNMVz8GURYcOHIkaiJLLSEqUhZCFxMsZxBxFzwGfyQdCRcncCRyVzMSUihUOiogcg5hBHsqQR1aEy0dJA1n",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880049746084",
@@ -22037,13 +22000,19 @@
    "merchant": "樂天旅遊(住宿)-LINE旅遊",
    "merchantId": "880050249453",
    "category": "旅遊住宿",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 8% 回饋",
    "reward": {
     "type": "percent",
     "value": 5,
     "text": "5%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 8,
+    "text": "8%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-30"
+   },
    "conditions": [
     "點數發放：出貨日30天後"
    ],
@@ -22052,7 +22021,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880050249453",
    "logo": "https://buy-obs.line-scdn.net/0hNA8A0OENEW4FOAAtWVVuOVhsHQ56FgpsbAYOFnJjThtXVANwRSgECFxeHRhXblJnRQY1Q0FeDhhXUD05WDg-VHVdThdDUzU4aQUhQXVkM19DQyZ-QgIEAFxI",
-   "updatedAt": "2026-11-12T03:00:25.934Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880050264384",
@@ -23496,19 +23465,13 @@
    "merchant": "蝦皮直營_生活超市_最快當日到",
    "merchantId": "880050678110",
    "category": "綜合電商",
-   "title": "LINE POINTS 6% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 6,
-    "text": "6%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "單一商品最高回饋 100 點",
     "點數發放：出貨日30天後",
@@ -23530,7 +23493,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880050678110",
    "logo": "https://buy-obs.line-scdn.net/0hEfg4XdG-GklaTQTyV9JlHgcZFiklYwFLM3MFMS0WRTwLJjpCNncxaQEoHTAkCw8dGUk-ZB4rBT8IJTYeB001cyooRTAnGw8bNigMLhcRFjIcCC1ZHXcPJwM9",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880050681138",
@@ -33114,7 +33077,7 @@
    "merchant": "UD LAB｜療癒的力量， 來自每一個生活小細節",
    "merchantId": "880051043363",
    "category": "其他",
-   "title": "LINE POINTS 10% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
@@ -33122,10 +33085,10 @@
    },
    "boost": {
     "type": "percent",
-    "value": 10,
-    "text": "10%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-01",
+    "endAt": "2026-11-30"
    },
    "conditions": [
     "點數發放：出貨日30天後",
@@ -33137,7 +33100,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880051043363",
    "logo": "https://buy-obs.line-scdn.net/0hHJOYUYgiF2VyIAiBe6BoMi90GwUNDgxnGx4IHQV7SBAjSwZ7HQ0_WAdJNhE0TDd2HQ4zSDZGCBMgSDsyLyA4XwJFSBwPTyB7JSANRQdZNR40EwJ6NRoCCytQ",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880051046871",
@@ -33603,13 +33566,19 @@
    "merchant": "Studio Doe",
    "merchantId": "880051078961",
    "category": "服飾配件",
-   "title": "LINE POINTS 2% 回饋",
+   "title": "LINE POINTS 5% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": null,
+   "boost": {
+    "type": "percent",
+    "value": 5,
+    "text": "5%",
+    "startAt": "2026-11-19",
+    "endAt": "2026-11-28"
+   },
    "conditions": [
     "點數發放：出貨日40天後",
     "「Flow in Styles. ⾵格，與⾝同流」將時髦精煉為⼀種簡單、輕鬆且⾼級的氛圍，品牌打造簡約且高級的設計，並由生活體驗融合轉化為細節質感與穿著形式，穿梭在各種風格和日常時刻，期望透過⾃⾝對時尚與⾵格的影響⼒啟發當代人，讓彼此產⽣共鳴。"
@@ -33619,7 +33588,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880051078961",
    "logo": "https://buy-obs.line-scdn.net/0hAwi41dMCHlhUTQH9UoBhDwcZEjgrYwVaPXMBICMWQSAsGABOFCgEZxokMG0SBCFFE3QtNiESMGsCIjkGA1k6PhAoNysHCz5GF14pOiEGIGkSNilSOE5QeA",
-   "updatedAt": "2026-10-31T01:36:23.000Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880051083054",
@@ -33932,21 +33901,14 @@
    "merchant": "民視消費高手一起購",
    "merchantId": "880051100288",
    "category": "藥妝美妝",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-14",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
-    "單一商品最高回饋 100 點",
     "點數發放：出貨日30天後",
     "以「觀眾服務」為中心",
     "全方位的社群購物平台",
@@ -33959,7 +33921,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880051100288",
    "logo": "https://buy-obs.line-scdn.net/0hh24b2GmQNx0JGyibpw9ISlRPO312NSwfYCUoZX5AaGhYQhsXXgsfPH4YKHNPKCYNSjUTME19KGtbcxtKVBsYJ3l-aGR0KCJLZggtJ0QYKyxYKCINTiEic1Br",
-   "updatedAt": "2026-11-14T02:27:52.815Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880051100316",
@@ -34664,19 +34626,13 @@
    "merchant": "XEXYMIX Taiwan",
    "merchantId": "880051109326",
    "category": "服飾配件",
-   "title": "LINE POINTS 5% 回饋",
+   "title": "LINE POINTS 2% 回饋",
    "reward": {
     "type": "percent",
     "value": 2,
     "text": "2%"
    },
-   "boost": {
-    "type": "percent",
-    "value": 5,
-    "text": "5%",
-    "startAt": "2026-11-18",
-    "endAt": "2026-11-18"
-   },
+   "boost": null,
    "conditions": [
     "點數發放：出貨日30天後"
    ],
@@ -34685,7 +34641,7 @@
    "endAt": null,
    "url": "https://buy.line.me/u/partner/880051109326",
    "logo": "https://buy-obs.line-scdn.net/0hOiAu4xW3EEZ8DAwD64xvESFYHCYDIgtEFTIPPgtXTzMuPjBKPx8KYwtpNS0CWh5UKwg0azhqDzAuZDwRIQw_fAxpTz8CSSdZPyEvJAp6HHctZydWOzYFKCV8",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:880051109606",
@@ -40413,6 +40369,65 @@
    "updatedAt": "2026-11-18T03:43:18.678Z"
   },
   {
+   "id": "line:880051544829",
+   "kind": "rebate",
+   "source": "line",
+   "merchant": "蘆醫草本",
+   "merchantId": "880051544829",
+   "category": "居家生活",
+   "title": "LINE POINTS 0% 回饋",
+   "reward": {
+    "type": "percent",
+    "value": 0,
+    "text": "0%"
+   },
+   "boost": null,
+   "conditions": [
+    "點數發放：出貨日30天後",
+    "【蘆醫草本】— 循自然之徑，養身心之源",
+    "\"盧醫\" 是一代名醫“扁鵲”的別稱。“扁鵲”是中醫學的開山鼻祖，世人敬他為神醫，創造瞭望、聞、問、切的診斷方法，奠定了中醫臨床診斷和治療方法的基礎。",
+    "在現代快節奏的生活中，我們追逐效率與速度，卻往往忽略了身體與心靈深處的呼喚。「蘆醫草本」正是為了回應這份對「慢活」與「本真」的渴望而誕生。",
+    "蘆醫草本的創始信念，原始於中藥治病的原理，以陰陽調和、治標也治本的方式，用五千年來的中草藥與療癒基礎，創造新的健康生活理念。",
+    "我們深信，真正的健康與美好，源自於對自然的尊重與對自身的珍視，更是一處引領您重返自然、實踐養生哲學的靜謐之所。透過草本力量，為生活帶來平衡、淨化與療癒。",
+    "— 靜心之香與草之智 —",
+    "無論是日常薰香、靜坐冥想，或是居家淨化，我們的香品都能助您凝神靜氣，藉由芬芳的煙霧，讓身心進行一次深層的「排濁納清」。每一縷馨香都是對身體溫和的滋養，讓您在吸吐之間，感受到草本的溫暖呵護",
+    "— 氛圍美學與能量提煉 —",
+    "我們深知環境氛圍對身心健康的影響。因此，我們提供一系列精緻的香品周邊，如專為天然香設計的香爐，讓您的薰香體驗更加安全與優雅。是您打造一個「療癒系」家居空間的絕佳幫手。",
+    "「蘆醫草本」的每一件產品，都代表著我們的品質的承諾，能夠放心地將大自然的饋贈融入日常生活，從嗅覺、觸覺到心靈，全面啟動您的養身之旅。",
+    "選擇「蘆醫草本」，就是選擇一種與自然和諧共處的生活態度。讓我們一同循著草本的芬芳，探索養生的深層奧秘，找回您身心靈的最佳狀態。"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://buy.line.me/u/partner/880051544829",
+   "logo": "https://buy-obs.line-scdn.net/0hCJc5gd_xHGVeTAD3JU1jMg0YEAUhYgdnN3IDHSkXQxwMCg03HnEwWRMHGw0gIzBrGXUvCysTMlYIIzs7CVg4AxopNRAjIA5tCnYBAxAHJlEPCStvMk9SRQ",
+   "updatedAt": "2026-11-19T03:35:00.372Z"
+  },
+  {
+   "id": "line:880051544840",
+   "kind": "rebate",
+   "source": "line",
+   "merchant": "NBA Store線上店",
+   "merchantId": "880051544840",
+   "category": "運動戶外",
+   "title": "LINE POINTS 2% 回饋",
+   "reward": {
+    "type": "percent",
+    "value": 2,
+    "text": "2%"
+   },
+   "boost": null,
+   "conditions": [
+    "點數發放：出貨日30天後"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": null,
+   "url": "https://buy.line.me/u/partner/880051544840",
+   "logo": "https://buy-obs.line-scdn.net/0hop82e-yEMF8FSyzGRSVPCFgfPD96ZStdbHUvJ3IQbypUHT4IUi4Df0sXJ2xWHhBQRWUUckEtLylXIxwIWEsfZXUubyZ7HT5LaXYUf1w-OCRXHSVPQnElMVw7",
+   "updatedAt": "2026-11-19T03:35:00.372Z"
+  },
+  {
    "id": "line:coupon:880051002203:line11",
    "kind": "coupon",
    "source": "line",
@@ -40443,7 +40458,7 @@
    "source": "line",
    "merchant": "康是美網購eShop",
    "merchantId": "4536567",
-   "category": "超商量販",
+   "category": "居家生活",
    "title": "康是美網購：11月首購滿額贈100點",
    "reward": {
     "type": "amount",
@@ -40463,7 +40478,7 @@
    "endAt": "2026-11-30",
    "url": "https://buy.line.me/u/partner/4536567",
    "logo": "https://buy-obs.line-scdn.net/0hsA9GSJyVLG4EPgUMrvZTOSRqIA57EDdsbQAzFn9mJzApCmM9O1lkCCE-clwuB2swOVtjCyE2cQ4sB2owfVkxDSFsJld-",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:mission:11486",
@@ -40835,7 +40850,7 @@
    "source": "line",
    "merchant": "iQueen愛女人購物網",
    "merchantId": "4536476",
-   "category": "生活服務",
+   "category": "藥妝美妝",
    "title": "iQueen：11月首購滿額贈100點",
    "reward": {
     "type": "amount",
@@ -40855,7 +40870,7 @@
    "endAt": "2026-11-30",
    "url": "https://buy.line.me/u/partner/4536476",
    "logo": "https://buy-obs.line-scdn.net/0hirG5TKJnNl16TCRgZh5JCl0YOj0FYi1fE3IpJQEUPQNXe3gJQSl8O1dKYW5Qe3YDQi1xOw1Ea25fdXNORipxPF1KP2k",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:mission:11502",
@@ -41227,7 +41242,7 @@
    "source": "line",
    "merchant": "萬家福線上購物",
    "merchantId": "4747427",
-   "category": "綜合電商",
+   "category": "超商量販",
    "title": "萬家福線上購物：11月首購滿額贈100點",
    "reward": {
     "type": "amount",
@@ -41247,7 +41262,7 @@
    "endAt": "2026-11-30",
    "url": "https://buy.line.me/u/partner/4747427",
    "logo": "https://buy-obs.line-scdn.net/0hFP2Z7Bj6GX8PIwVeLS1mKFx3FR9wDQJ9Zh0GB3h4RgddTwdwWCNSQXhFOBBxEF8oSBoqEXp8N0xZTD4hWDc9GUtGMA1cZVsqTyAEG3loOAxeZi51YyBXXw",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "line:mission:11567",

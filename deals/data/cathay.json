@@ -8,15 +8,15 @@
    "merchant": "Monica Vinader",
    "merchantId": "100234",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 7.47 里",
+   "title": "每 NT$100 最高 7.5 里",
    "reward": {
     "type": "miles",
-    "value": 7.47,
+    "value": 7.5,
     "text": "最多 £1 = 3.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 3.25 里數，以 1 GBP ≈ NT$43.352 換算",
     "New Customer Orders Over £150：£1 = 3.25",
     "New Customer Orders Under £149.99：£1 = 2",
     "Existing Customers：£1 = 0.75",
@@ -33,7 +33,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/monica-vinader",
    "logo": "https://cdn.rewardengine.com/upload/merchant_100234.3b4ba33cb18c3325d9f8aad72dcb13cbde510df1.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:118278",
@@ -207,13 +207,14 @@
     "里約 105 天內入帳"
    ],
    "tags": [
-    "依品類不同"
+    "依品類不同",
+    "有折價券"
    ],
    "startAt": null,
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/booking-com-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_131768.1e9f3505180aa353f977e00e4801afeb2864cbba.png",
-   "updatedAt": "2026-11-11T01:57:02.801Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:133428",
@@ -257,15 +258,15 @@
    "merchant": "京东商城",
    "merchantId": "13641",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 10.61 里",
+   "title": "每 NT$100 最高 10.64 里",
    "reward": {
     "type": "miles",
-    "value": 10.61,
+    "value": 10.64,
     "text": "最多 CNY10 = 5.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 CNY10 = 5.25 里數，以 1 CNY ≈ NT$4.948 換算",
+    "原始回饋 最多 CNY10 = 5.25 里數，以 1 CNY ≈ NT$4.9334 換算",
     "糖果/巧克力, 车载蓝牙, 电子香薰, 汽车炭包, 车内除味剂, 灭火器, 手机贴膜：CNY10 = 5.25",
     "请注意，京东不接受丢单查询。不同产品的奖励有所不同，某些商品奖励可能会较少或没有奖励，最终待确认里数以京东方面作准。",
     "京东Plus会员在京东商城自营店铺购物会获得较少的奖励。",
@@ -285,7 +286,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/jd-com",
    "logo": "https://cdn.rewardengine.com/upload/merchant_13641.93ce752cbf7a2a9c0bad5fa587cbcab5ff0e2482.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:140608",
@@ -327,7 +328,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 SGD1 = 1.25 里數，以 1 SGD ≈ NT$25.5604 換算",
+    "原始回饋 SGD1 = 1.25 里數，以 1 SGD ≈ NT$25.5532 換算",
     "一般商品：SGD1 = 1.25",
     "Only transactions made from Vrbo Singapore site will be eligible to earn rewards.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -340,7 +341,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/vrbo-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_140878.03f744e63ab7e65f14e1668ee81d5251e06387ad44cf1ab43ce560f8e5949f6a.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:143",
@@ -349,15 +350,15 @@
    "merchant": "SportsDirect",
    "merchantId": "143",
    "category": "運動戶外",
-   "title": "每 NT$100 最高 4.6 里",
+   "title": "每 NT$100 最高 4.61 里",
    "reward": {
     "type": "miles",
-    "value": 4.6,
+    "value": 4.61,
     "text": "最多 £1 = 2 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 2 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 2 里數，以 1 GBP ≈ NT$43.352 換算",
     "New Customer：£1 = 2",
     "Existing Customer：£1 = 0.75",
     "Stated reward is for new customers only making your first purchase, existing customers will earn a lower reward. No rewards given on coupon/codes beginning with \"SD\".",
@@ -374,7 +375,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/sport-and-fitness/sportsdirect",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_143.1e6f39a9ad66d07e7a3ae0f1555488d3c60be413.jpg",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:144078",
@@ -607,15 +608,15 @@
    "merchant": "Jellycat UK",
    "merchantId": "1643691",
    "category": "親子寵物",
-   "title": "每 NT$100 最高 12.07 里",
+   "title": "每 NT$100 最高 12.11 里",
    "reward": {
     "type": "miles",
-    "value": 12.07,
+    "value": 12.11,
     "text": "最多 £1 = 5.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.352 換算",
     "New customers：£1 = 5.25",
     "Existing customers：£1 = 4",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -631,7 +632,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/toys-and-games/jellycat-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1643691.a7bf728203e710f27a9f99058411bec0bd1f0685f5bf2ad4379e7ca30667e4fe.jpg",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:1646731",
@@ -640,15 +641,15 @@
    "merchant": "Pelago Asia",
    "merchantId": "1646731",
    "category": "旅遊住宿",
-   "title": "每 NT$100 最高 8.8 里",
+   "title": "每 NT$100 最高 8.81 里",
    "reward": {
     "type": "miles",
-    "value": 8.8,
+    "value": 8.81,
     "text": "最多 SGD1 = 2.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5604 換算",
+    "原始回饋 最多 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5532 換算",
     "New Customers：SGD1 = 2.25",
     "Existing Customers：SGD1 = 1.75",
     "Universal Studios Japan Studio Pass *Direct Entry* & Universal Studios Singapore：SGD1 = 1.25",
@@ -667,7 +668,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/pelago-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1646731.c8fdcc08154de963d652859a9303a22896f2f8c74e3fdedb65b667b06a6b5c30.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:1646881",
@@ -846,15 +847,15 @@
    "merchant": "Diesel Asia",
    "merchantId": "1680981",
    "category": "服飾配件",
-   "title": "每 NT$100 8.8 里",
+   "title": "每 NT$100 8.81 里",
    "reward": {
     "type": "miles",
-    "value": 8.8,
+    "value": 8.81,
     "text": "SGD1 = 2.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5604 換算",
+    "原始回饋 SGD1 = 2.25 里數，以 1 SGD ≈ NT$25.5532 換算",
     "一般商品：SGD1 = 2.25",
     "Rewards are only eligible for orders from the following countries/regions: Indonesia, Singapore, Korea, Philippines, Taiwan, Thailand, Vietnam.",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
@@ -867,7 +868,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/diesel-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_1680981.b9783355cefce901362ea79383c8f8e764c2113cc02e5b42dcca06c831fcbc3d.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:1692661",
@@ -1171,15 +1172,15 @@
    "merchant": "日本樂天市場",
    "merchantId": "198938",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 3.03 里",
+   "title": "每 NT$100 最高 3.02 里",
    "reward": {
     "type": "miles",
-    "value": 3.03,
+    "value": 3.02,
     "text": "最多 ¥1000 = 6.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 ¥1000 = 6.25 里數，以 1 JPY ≈ NT$0.2066 換算",
+    "原始回饋 最多 ¥1000 = 6.25 里數，以 1 JPY ≈ NT$0.2067 換算",
     "コスメ、マタニティ、ファッション、レディースファッション、メンズファッション、インナー・下着・ナイトウェア、靴・バッグ、食品・飲料、お酒、スイーツ・お菓子、医薬：¥1000 = 6.25",
     "住宅用品、事務用品、玩具、家庭用品、フィギュア、キッチン、サービス、リフォーム、書籍：¥1000 = 4.75",
     "テレビ、ゲーム、家電、時計、楽器、携帯電話、パソコン、パソコン周辺機器、CD・DVD：¥1000 = 3.25",
@@ -1202,7 +1203,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/rakuten-ichiba-x28-japan-x29-",
    "logo": "https://cdn.rewardengine.com/upload/merchant_198938.4732b032267a64ea92044be5dc285376e5e8ad11.png",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:202868",
@@ -1253,20 +1254,20 @@
    "merchant": "H&M UK",
    "merchantId": "259355",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 12.07 里",
+   "title": "每 NT$100 最高 12.11 里",
    "reward": {
     "type": "miles",
-    "value": 4.6,
+    "value": 4.61,
     "text": "最多 £1 = 2 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 12.07,
+    "value": 12.11,
     "text": "最多 £1 = 5.25 里數",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 5.25 里數，以 1 GBP ≈ NT$43.352 換算",
     "Sale items：£1 = 0.75",
     "Existing Customers：£1 = 2.75（08/06–12/31）",
     "New Customers：£1 = 5.25（08/06–12/31）",
@@ -1285,7 +1286,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/handm-uk",
    "logo": "https://cdn.rewardengine.com/upload/merchant_259355.e8f6060e8cf1d9ee11776c8b69fedb29bc212f6d.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:262625",
@@ -1469,15 +1470,15 @@
    "merchant": "Liberty London",
    "merchantId": "32031",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 15.52 里",
+   "title": "每 NT$100 最高 15.57 里",
    "reward": {
     "type": "miles",
-    "value": 15.52,
+    "value": 15.57,
     "text": "最多 £1 = 6.75 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 £1 = 6.75 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 6.75 里數，以 1 GBP ≈ NT$43.352 換算",
     "Sale：£1 = 0.75",
     "Beauty Advent Calendar：£1 = 2.75",
     "Liberty LBTY Fragrance Purchases：£1 = 6.75",
@@ -1498,7 +1499,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/liberty-london",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_32031.1a3da2515b20093bb47ab3de996190adf672b34572935cda39b81995a611f03c.jpg",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:327275",
@@ -2171,7 +2172,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 CNY10 = 0.5 里數，以 1 CNY ≈ NT$4.948 換算",
+    "原始回饋 CNY10 = 0.5 里數，以 1 CNY ≈ NT$4.9334 換算",
     "一般商品：CNY10 = 0.5",
     "请注意，拼多多不接受丢单查询。奖励只适用于拼多多App订单。不同产品的奖励有所不同，某些商品奖励可能会较少或没有奖励，最终待确认奖励以拼多多方面为准。",
     "以下订单或商品不会获得奖励，购物前请务必先确认以下购买细则：",
@@ -2190,7 +2191,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/pinduoduo-china",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_427155.63868311f0876a3094bdeb2e4383fccd1a0f1147.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:442555",
@@ -2522,15 +2523,15 @@
    "merchant": "Lounge Pass",
    "merchantId": "5",
    "category": "旅遊住宿",
-   "title": "每 NT$100 7.47 里",
+   "title": "每 NT$100 7.5 里",
    "reward": {
     "type": "miles",
-    "value": 7.47,
+    "value": 7.5,
     "text": "£1 = 3.25 里數"
    },
    "boost": null,
    "conditions": [
-    "原始回饋 £1 = 3.25 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 £1 = 3.25 里數，以 1 GBP ≈ NT$43.352 換算",
     "一般商品：£1 = 3.25",
     "Using a voucher/coupon code not displayed on this site may invalidate your reward. Rewards and are not calculated on postage / handling / delivery costs or associated purchase taxes in your region (This may include but not be limited to VAT, GST etc).",
     "里約 105 天內入帳"
@@ -2542,7 +2543,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/lounge-pass",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_5.fce514ec7f8da0e0ebb715e369bc379f765b7dfb.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:500245",
@@ -2655,20 +2656,20 @@
    "merchant": "Sunspel",
    "merchantId": "514485",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 20.12 里",
+   "title": "每 NT$100 最高 20.18 里",
    "reward": {
     "type": "miles",
-    "value": 7.47,
+    "value": 7.5,
     "text": "最多 £1 = 3.25 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 20.12,
+    "value": 20.18,
     "text": "最多 £1 = 8.75 里數",
     "endAt": "2026-12-01"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8.75 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 8.75 里數，以 1 GBP ≈ NT$43.352 換算",
     "Existing customers：£1 = 4（11/12–12/01）",
     "New customers：£1 = 8.75（11/12–12/01）",
     "Offer rate applies to new customers placing their first order. Existing customers will earn a lower reward.",
@@ -2685,7 +2686,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/sunspel",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_514485.cd5a2a0ecde7a1fda8fefa0ffe1e8d9b6a6bcf0f.jpg",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:520755",
@@ -2972,20 +2973,20 @@
    "merchant": "Selfridges",
    "merchantId": "55464",
    "category": "綜合電商",
-   "title": "每 NT$100 最高 18.4 里",
+   "title": "每 NT$100 最高 18.45 里",
    "reward": {
     "type": "miles",
-    "value": 9.2,
+    "value": 9.23,
     "text": "最多 £1 = 4 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 18.4,
+    "value": 18.45,
     "text": "最多 £1 = 8 里數",
     "endAt": "2026-12-31"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.352 換算",
     "Technology：£1 = 1.25",
     "Fine Jewellery, Fine Watches & Apple products：£1 = 0.75",
     "Purchases billed and/or delivered in: New Zealand, Brunei Darussalam, Iceland, M：£1 = 0.75",
@@ -3006,7 +3007,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/department-stores/selfridges",
    "logo": "https://cdn.rewardengine.com/upload/merchant_55464.7bc986f268abdda067ac2e41a31081441d896909.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:562435",
@@ -3243,7 +3244,7 @@
    },
    "boost": null,
    "conditions": [
-    "原始回饋 最多 SGD1 = 1.75 里數，以 1 SGD ≈ NT$25.5604 換算",
+    "原始回饋 最多 SGD1 = 1.75 里數，以 1 SGD ≈ NT$25.5532 換算",
     "Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Acces：SGD1 = 1.75",
     "Raffles, Swissotel and Fairmont bookings：SGD1 = 0.75",
     "Reward is applicable to the following brands: Sofitel, Pullman, Grand Mercure, The Sebel, Adagio, Adagio Premium, Adagio Access, Ibis, Ibis Style, Ibis Budget, Formule1 Inde, HotelF1, MGallery, Rixos, Novotel, Mercure, Suite Novotel, Orbis and Mama Shelter bookings.",
@@ -3262,7 +3263,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/travel/all-accor-live-limitless-asia",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_599855.8dcc0a31668483cce6072b6eafbc1ec5e06b8ebf94e44e131ae08595d1a869bb.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "id": "cathay:601615",
@@ -3714,20 +3715,20 @@
    "merchant": "Paul Smith",
    "merchantId": "99224",
    "category": "服飾配件",
-   "title": "每 NT$100 最高 18.4 里",
+   "title": "每 NT$100 最高 18.45 里",
    "reward": {
     "type": "miles",
-    "value": 12.07,
+    "value": 12.11,
     "text": "最多 £1 = 5.25 里數"
    },
    "boost": {
     "type": "miles",
-    "value": 18.4,
+    "value": 18.45,
     "text": "最多 £1 = 8 里數",
     "endAt": "2026-11-22"
    },
    "conditions": [
-    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.4839 換算",
+    "原始回饋 最多 £1 = 8 里數，以 1 GBP ≈ NT$43.352 換算",
     "New Customers：£1 = 8（11/16–11/22）",
     "Existing Customers：£1 = 5.25（11/16–01/03）",
     "Voucher code purchases：£1 = 2.75（11/16–01/03）",
@@ -3746,7 +3747,7 @@
    "endAt": null,
    "url": "https://shop.asiamiles.com/zh/clothes-and-fashion/paul-smith",
    "logo": "https://cdn.rewardengine.com/upload/merchant_99224.13428e06d37f7100be4dd61a344411172558b453.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z"
+   "updatedAt": "2026-11-19T03:35:00.372Z"
   },
   {
    "source": "cathay",
@@ -3809,10 +3810,10 @@
    "category": "藥妝美妝",
    "url": "https://shop.asiamiles.com/zh/health-and-beauty/iherb-taiwan",
    "logo": "https://cdn.rewardengine.com/upload/merchant_featured_197118.053d3e79bea54013bb37e2fa0a5e2044ca545816.png",
-   "updatedAt": "2026-11-18T03:43:18.678Z",
+   "updatedAt": "2026-11-19T03:35:00.372Z",
    "id": "cathay:v:170qv4k",
    "kind": "coupon",
-   "title": "2 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "title": "1 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
    "code": null,
    "reward": {
     "type": "gift",
@@ -3821,7 +3822,7 @@
    },
    "minSpend": null,
    "conditions": [
-    "各張到期日：11/18、12/02"
+    "各張到期日：12/02"
    ],
    "tags": [
     "需登入"
@@ -3936,6 +3937,33 @@
    ],
    "startAt": null,
    "endAt": "2030-09-12"
+  },
+  {
+   "source": "cathay",
+   "merchant": "Booking.com",
+   "merchantId": "131768",
+   "category": "旅遊住宿",
+   "url": "https://shop.asiamiles.com/zh/travel/booking-com-taiwan",
+   "logo": "https://cdn.rewardengine.com/upload/merchant_featured_131768.1e9f3505180aa353f977e00e4801afeb2864cbba.png",
+   "updatedAt": "2026-11-19T03:35:00.372Z",
+   "id": "cathay:v:1e8ujz4",
+   "kind": "coupon",
+   "title": "1 張會員專屬優惠券（登入國泰 Milesback後查看內容）",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "會員券"
+   },
+   "minSpend": null,
+   "conditions": [
+    "各張到期日：12/02"
+   ],
+   "tags": [
+    "需登入"
+   ],
+   "startAt": null,
+   "endAt": "2026-12-02"
   },
   {
    "source": "cathay",
