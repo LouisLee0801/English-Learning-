@@ -1009,6 +1009,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 10",
     "期限見原文"
    ],
    "startAt": null,
@@ -1016,7 +1017,7 @@
    "publishedAt": "2026-11-20T00:14:23.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795133663.A.356.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-20T03:17:32.693Z"
+   "updatedAt": "2026-11-20T13:37:10.643Z"
   },
   {
    "id": "ptt:1795134353.A.075",
@@ -1038,20 +1039,22 @@
     "今年的優惠活動主要有兩項：",
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
-   "tags": [],
+   "tags": [
+    "推 12"
+   ],
    "startAt": "2026-11-20",
    "endAt": "2026-11-30",
    "publishedAt": "2026-11-20T00:25:53.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795134353.A.075.html",
    "category": "綜合電商",
-   "updatedAt": "2026-11-20T03:17:32.693Z"
+   "updatedAt": "2026-11-20T13:37:10.643Z"
   },
   {
    "id": "ptt:1795144774.A.CFB",
    "kind": "promo",
    "source": "ptt",
    "merchant": "優惠情報",
-   "title": "安卓 Line+4p",
+   "title": "安卓 Line+4p〈已滿〉",
    "reward": {
     "type": "gift",
     "value": null,
@@ -1072,7 +1075,235 @@
    "publishedAt": "2026-11-20T03:19:34.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795144774.A.CFB.html",
    "category": "其他",
-   "updatedAt": "2026-11-20T03:17:32.693Z"
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795145097.A.954",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "momo",
+   "title": "momo 哈根打滋",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "月初特價現在又來了",
+    "不知道有沒有leg",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T03:24:57.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795145097.A.954.html",
+   "category": "綜合電商",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795148332.A.A64",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "全家",
+   "title": "全家隨買跨店取咖啡優惠",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "兌換期限到明年三月底",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T04:18:52.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795148332.A.A64.html",
+   "category": "超商量販",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795148379.A.C95",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "7-11",
+   "title": "line 「逛逛」領券7-11熱美式9元",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "9元（4元）咖啡又來了",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 51",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T04:19:39.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795148379.A.C95.html",
+   "category": "超商量販",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795151818.A.565",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "三商炸雞黃金戰斧2隻99",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "原本的OP了改分享其他的",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T05:16:58.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795151818.A.565.html",
+   "category": "餐飲美食",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795158846.A.477",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "捷運",
+   "title": "台北捷運Go 看片拿點-搭捷運挺臺北戰神",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "【活動名稱】：看影片拿點數-搭捷運挺臺北戰神",
+    "【廠商名稱】：台北捷運Go APP",
+    "【活動時間】：2026/11/20～ 領完為止",
+    "【活動內容】：",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 22",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T07:14:06.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795158846.A.477.html",
+   "category": "交通出行",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795161063.A.E70",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "必勝客",
+   "title": "必勝客番茄肉醬起司麵 $69",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "輸入91120",
+    "91120 番茄肉醬起司麵 $69 (原價$139)",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 14",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T07:51:03.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795161063.A.E70.html",
+   "category": "餐飲美食",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795168469.A.C95",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "南投 圖書館借電子書送711商品卡",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "不知道是不是因為之前有在圖書館借書，收到華藝電子書寄來的活動訊息，發現南投縣有",
+    "特殊活動，借滿10本書可以領711商品卡50元，如果有借閱證好像還不錯？",
+    "附上截圖跟信中的連結，大家可以參考。",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-27",
+   "publishedAt": "2026-11-20T09:54:29.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795168469.A.C95.html",
+   "category": "娛樂影音",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795169476.A.5FC",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "屈臣氏",
+   "title": "屈臣氏 點數到期-11/30",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "A : 無收受報酬",
+    "2025年消費累積之屈臣氏寵i會員點數，將於2026/12/01失效！",
+    "請把握最後用點機會，在11/30前將即期點數使用完畢~",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [],
+   "startAt": null,
+   "endAt": "2026-11-30",
+   "publishedAt": "2026-11-20T10:11:16.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795169476.A.5FC.html",
+   "category": "藥妝美妝",
+   "updatedAt": "2026-11-20T13:37:10.643Z"
   }
  ]
 }
