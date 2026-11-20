@@ -1882,32 +1882,6 @@
    "updatedAt": "2026-11-03T03:28:59.161Z"
   },
   {
-   "id": "supertaste:14478",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "全聯福利中心",
-   "category": "超商量販",
-   "title": "百件商品買一送一",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠"
-   },
-   "minSpend": null,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [],
-   "startAt": "2026-10-30",
-   "endAt": "2026-11-19",
-   "url": "https://supertaste.tvbs.com.tw/offers/14478",
-   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/legacy/img/program/upload/2024/10/30/20241030153225-8ce9a548.jpg",
-   "updatedAt": "2026-11-03T03:28:59.161Z"
-  },
-  {
    "id": "supertaste:14480",
    "kind": "coupon",
    "source": "supertaste",
@@ -3977,6 +3951,32 @@
    "url": "https://supertaste.tvbs.com.tw/offers/14577",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e8ff906872ac87cbb51e398161d4.jpg?c=304%2C1728%2C4160%2C4620",
    "updatedAt": "2026-11-18T03:43:18.678Z"
+  },
+  {
+   "id": "supertaste:14578",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "有飲Youin",
+   "category": "餐飲美食",
+   "title": "第２杯８折",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "全台連鎖門市",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-26",
+   "endAt": "2026-12-02",
+   "url": "https://supertaste.tvbs.com.tw/offers/14578",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1f1fc23d070d8874ed0f235fe74a0.png",
+   "updatedAt": "2026-11-20T03:17:32.693Z"
   }
  ]
 }
