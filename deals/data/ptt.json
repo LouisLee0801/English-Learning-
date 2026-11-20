@@ -2,65 +2,6 @@
  "source": "ptt",
  "deals": [
   {
-   "id": "ptt:1794460986.A.42F",
-   "kind": "promo",
-   "source": "ptt",
-   "merchant": "7-11",
-   "title": "萊爾富限時/7-11 超值/全家康康 11/11~17",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "標題太長，故省略部分文字",
-    "【活動名稱】：萊爾富限時殺5日",
-    "【便利商店/廠商名稱】：萊爾富便利商店",
-    "【活動時間】：2026/11/11～2026/11/15",
-    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
-   ],
-   "tags": [],
-   "startAt": "2026-11-11",
-   "endAt": "2026-11-15",
-   "publishedAt": "2026-11-12T05:23:06.000Z",
-   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794460986.A.42F.html",
-   "category": "超商量販",
-   "updatedAt": "2026-11-15T21:18:23.966Z"
-  },
-  {
-   "id": "ptt:1794474831.A.D44",
-   "kind": "promo",
-   "source": "ptt",
-   "merchant": "遠傳",
-   "title": "名字有「榮、耀」，遠傳Honor 600現折一萬",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [
-    "去遠傳繳費看到的",
-    "「阿榮，你在哪裡！」",
-    "應該就是跟好久以前那個壽司郎鮭魚改名活動類似",
-    "名字裡有「榮」或「耀」，買HONOR 600系列空機",
-    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
-   ],
-   "tags": [
-    "推 46",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-11-19",
-   "publishedAt": "2026-11-12T09:13:51.000Z",
-   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1794474831.A.D44.html",
-   "category": "生活服務",
-   "updatedAt": "2026-11-15T12:16:26.542Z"
-  },
-  {
    "id": "ptt:1794536499.A.B2C",
    "kind": "promo",
    "source": "ptt",
@@ -1054,7 +995,7 @@
    "kind": "promo",
    "source": "ptt",
    "merchant": "優惠情報",
-   "title": "安卓 Line+4p〈已滿〉",
+   "title": "安卓 Line+4p",
    "reward": {
     "type": "gift",
     "value": null,
@@ -1068,6 +1009,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 12",
     "期限見原文"
    ],
    "startAt": null,
@@ -1075,7 +1017,7 @@
    "publishedAt": "2026-11-20T03:19:34.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795144774.A.CFB.html",
    "category": "其他",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   },
   {
    "id": "ptt:1795145097.A.954",
@@ -1150,7 +1092,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 51",
+    "推 52",
     "期限見原文"
    ],
    "startAt": null,
@@ -1158,7 +1100,7 @@
    "publishedAt": "2026-11-20T04:19:39.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795148379.A.C95.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   },
   {
    "id": "ptt:1795151818.A.565",
@@ -1179,6 +1121,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 14",
     "期限見原文"
    ],
    "startAt": null,
@@ -1186,7 +1129,7 @@
    "publishedAt": "2026-11-20T05:16:58.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795151818.A.565.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   },
   {
    "id": "ptt:1795158846.A.477",
@@ -1209,7 +1152,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 22",
+    "推 27",
     "期限見原文"
    ],
    "startAt": null,
@@ -1217,7 +1160,7 @@
    "publishedAt": "2026-11-20T07:14:06.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795158846.A.477.html",
    "category": "交通出行",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   },
   {
    "id": "ptt:1795161063.A.E70",
@@ -1238,7 +1181,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 14",
+    "推 17",
     "期限見原文"
    ],
    "startAt": null,
@@ -1246,7 +1189,7 @@
    "publishedAt": "2026-11-20T07:51:03.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795161063.A.E70.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   },
   {
    "id": "ptt:1795168469.A.C95",
@@ -1304,6 +1247,66 @@
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795169476.A.5FC.html",
    "category": "藥妝美妝",
    "updatedAt": "2026-11-20T13:37:10.643Z"
+  },
+  {
+   "id": "ptt:1795192297.A.435",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "iPhone",
+   "title": "Go Share 25元騎乘金",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Go share騎乘金25元",
+    "［布袋戲的故鄉在雲林］",
+    "-----",
+    "Sent from JPTT on my iPhone",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-28",
+   "publishedAt": "2026-11-20T16:31:37.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795192297.A.435.html",
+   "category": "3C家電",
+   "updatedAt": "2026-11-20T22:49:26.152Z"
+  },
+  {
+   "id": "ptt:1795196326.A.BF2",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "日本零食展-高雄萬家福愛河店",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "Q:文章作者與業者(提供優惠之廠商)之關係? (ex:發文是否收受報酬)",
+    "高雄萬家福愛河店-日本零食展(在地下一樓)",
+    "裡面有賣很多日本好吃的零食",
+    "很多都百元以下(我覺得有比較便宜但不確定是便宜多少%)",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-28",
+   "publishedAt": "2026-11-20T17:38:46.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795196326.A.BF2.html",
+   "category": "旅遊住宿",
+   "updatedAt": "2026-11-20T22:49:26.152Z"
   }
  ]
 }
