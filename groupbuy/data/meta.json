@@ -2,18 +2,18 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 156,
-   "fresh": 10,
-   "updatedAt": "2026-11-20T13:24:17.885Z",
+   "count": 146,
+   "fresh": 12,
+   "updatedAt": "2026-11-20T21:54:39.968Z",
    "seconds": 7,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "開團",
+      "keyword": "限時開團",
       "status": 200,
-      "posts": 20,
+      "posts": 14,
       "limited": false
      }
     ],
@@ -21,42 +21,40 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 10
+    "items": 12
    }
   },
   "search": {
-   "ok": false,
-   "count": 33,
-   "fresh": 3,
-   "updatedAt": "2026-11-06T21:42:33.960Z",
-   "seconds": 13,
+   "ok": true,
+   "count": 9,
+   "fresh": 8,
+   "updatedAt": "2026-11-20T21:54:39.968Z",
+   "seconds": 14,
    "note": "DuckDuckGo 近一週索引：IG／FB／Threads 公開開團貼文（每次輪替 2 組關鍵字，累積 10 天）",
    "version": 1,
    "stats": {
     "queries": [
      {
-      "q": "site:instagram.com 開團 結單",
+      "q": "site:instagram.com 開團 居家",
       "status": 200,
       "results": 10,
       "posts": 10
      },
      {
-      "q": "site:instagram.com 開團 寶寶",
+      "q": "site:instagram.com 開團 零食",
       "status": 200,
       "results": 10,
       "posts": 10
      }
     ],
-    "items": 3
-   },
-   "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-20T13:24:17.885Z"
+    "items": 11
+   }
   },
   "pages": {
    "ok": true,
-   "count": 172,
+   "count": 163,
    "fresh": 175,
-   "updatedAt": "2026-11-20T13:24:17.885Z",
+   "updatedAt": "2026-11-20T21:54:39.968Z",
    "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -89,7 +87,7 @@
    "ok": true,
    "count": 0,
    "fresh": 3,
-   "updatedAt": "2026-11-20T13:24:17.885Z",
+   "updatedAt": "2026-11-20T21:54:39.968Z",
    "seconds": 0,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
@@ -107,25 +105,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 260,
+   "count": 254,
    "fresh": 20,
-   "updatedAt": "2026-11-20T13:26:31.030Z",
+   "updatedAt": "2026-11-20T21:57:03.379Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 3,
+    "matched": 9,
     "errors": {
      "momo": 1
     },
-    "pending": 5,
+    "pending": 11,
     "blocked": {
      "momo": 403
     }
    }
   }
  },
- "runs": 124,
- "generatedAt": "2026-11-20T13:24:17.885Z",
+ "runs": 125,
+ "generatedAt": "2026-11-20T21:54:39.968Z",
  "files": [
   "threads.json",
   "search.json",
