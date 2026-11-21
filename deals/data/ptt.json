@@ -950,7 +950,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 10",
+    "推 11",
     "期限見原文"
    ],
    "startAt": null,
@@ -958,7 +958,7 @@
    "publishedAt": "2026-11-20T00:14:23.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795133663.A.356.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-20T13:37:10.643Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "ptt:1795134353.A.075",
@@ -1009,7 +1009,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 12",
+    "推 14",
     "期限見原文"
    ],
    "startAt": null,
@@ -1017,7 +1017,7 @@
    "publishedAt": "2026-11-20T03:19:34.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795144774.A.CFB.html",
    "category": "其他",
-   "updatedAt": "2026-11-20T22:49:26.152Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "ptt:1795145097.A.954",
@@ -1152,7 +1152,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 27",
+    "推 29",
     "期限見原文"
    ],
    "startAt": null,
@@ -1160,7 +1160,7 @@
    "publishedAt": "2026-11-20T07:14:06.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795158846.A.477.html",
    "category": "交通出行",
-   "updatedAt": "2026-11-20T22:49:26.152Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "ptt:1795161063.A.E70",
@@ -1181,7 +1181,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 17",
+    "推 20",
     "期限見原文"
    ],
    "startAt": null,
@@ -1189,7 +1189,7 @@
    "publishedAt": "2026-11-20T07:51:03.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795161063.A.E70.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-11-20T22:49:26.152Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "ptt:1795168469.A.C95",
@@ -1269,6 +1269,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
+    "推 14",
     "期限見原文"
    ],
    "startAt": null,
@@ -1276,7 +1277,7 @@
    "publishedAt": "2026-11-20T16:31:37.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795192297.A.435.html",
    "category": "3C家電",
-   "updatedAt": "2026-11-20T22:49:26.152Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "ptt:1795196326.A.BF2",
@@ -1307,6 +1308,64 @@
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795196326.A.BF2.html",
    "category": "旅遊住宿",
    "updatedAt": "2026-11-20T22:49:26.152Z"
+  },
+  {
+   "id": "ptt:1795226254.A.8FC",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "全聯",
+   "title": "全聯：可樂果燒番薯、蒜味香腸買一送一",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "買一送一"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "可樂果碗豆酥，燒番麥口味/蒜味香腸口味 160g，",
+    "單包55元，現買一送一，平均一包27.5元，5.81g/1元",
+    "=====",
+    "查了一下，可樂果通常落在2.4g～3.5g / 1元，這開到5.81g應該是真的有便宜了，",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-11-28",
+   "publishedAt": "2026-11-21T01:57:34.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795226254.A.8FC.html",
+   "category": "超商量販",
+   "updatedAt": "2026-11-21T03:14:13.154Z"
+  },
+  {
+   "id": "ptt:1795229587.A.1AF",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "11月第三輪JCB悠遊聯名卡自動加值10%回饋",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "同一卡號限登錄三次",
+    "活動期間：",
+    "2026年1月1日起至2026年12月31日",
+    "1號早上9點到 5號下午6點",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [],
+   "startAt": "2026-01-01",
+   "endAt": "2026-12-31",
+   "publishedAt": "2026-11-21T02:53:07.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795229587.A.1AF.html",
+   "category": "其他",
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   }
  ]
 }

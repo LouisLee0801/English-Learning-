@@ -27,11 +27,11 @@
    "updatedAt": "2026-10-17T03:18:01.694Z"
   },
   {
-   "id": "cosmed:3032",
+   "id": "cosmed:3066",
    "kind": "promo",
    "source": "cosmed",
    "merchant": "康是美",
-   "title": "10/23-11/19【金卡專屬優惠】*實體門市限定*",
+   "title": "11/20-12/24【金卡專屬優惠】*實體門市限定*",
    "reward": {
     "type": "gift",
     "value": null,
@@ -43,12 +43,12 @@
    "tags": [
     "會員活動"
    ],
-   "startAt": "2026-10-23",
-   "endAt": "2026-11-19",
-   "publishedAt": "2026-10-23T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3032",
+   "startAt": "2026-11-20",
+   "endAt": "2026-12-24",
+   "publishedAt": "2026-11-20T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3066",
    "category": "藥妝美妝",
-   "updatedAt": "2026-10-23T00:41:22.321Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "cosmed:3096",
@@ -292,11 +292,35 @@
    "updatedAt": "2026-10-30T01:58:09.472Z"
   },
   {
-   "id": "cosmed:3148",
+   "id": "cosmed:3163",
    "kind": "promo",
    "source": "cosmed",
    "merchant": "康是美",
-   "title": "10/23-11/19【LINE好友專屬優惠】",
+   "title": "11/20-11/22 icash2.0、icash Pay不限金額回饋10% OPENPOINT",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [],
+   "tags": [
+    "門市活動"
+   ],
+   "startAt": "2026-11-20",
+   "endAt": "2026-11-22",
+   "publishedAt": "2026-11-20T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3163",
+   "category": "藥妝美妝",
+   "updatedAt": "2026-11-21T03:14:13.154Z"
+  },
+  {
+   "id": "cosmed:3174",
+   "kind": "promo",
+   "source": "cosmed",
+   "merchant": "康是美",
+   "title": "11/20-12/24【LINE好友綁定會員送$50】",
    "reward": {
     "type": "gift",
     "value": null,
@@ -308,19 +332,19 @@
    "tags": [
     "會員活動"
    ],
-   "startAt": "2026-10-23",
-   "endAt": "2026-11-19",
-   "publishedAt": "2026-10-23T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3148",
+   "startAt": "2026-11-20",
+   "endAt": "2026-12-24",
+   "publishedAt": "2026-11-20T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3174",
    "category": "藥妝美妝",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
-   "id": "cosmed:3149",
+   "id": "cosmed:3175",
    "kind": "promo",
    "source": "cosmed",
    "merchant": "康是美",
-   "title": "10/23-11/19【OPENPOINT點數加購】",
+   "title": "11/20-12/24【OPENPOINT點數加購】",
    "reward": {
     "type": "gift",
     "value": null,
@@ -332,19 +356,19 @@
    "tags": [
     "會員活動"
    ],
-   "startAt": "2026-10-23",
-   "endAt": "2026-11-19",
-   "publishedAt": "2026-10-23T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3149",
+   "startAt": "2026-11-20",
+   "endAt": "2026-12-24",
+   "publishedAt": "2026-11-20T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3175",
    "category": "藥妝美妝",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
-   "id": "cosmed:3150",
+   "id": "cosmed:3176",
    "kind": "promo",
    "source": "cosmed",
    "merchant": "康是美",
-   "title": "10/23-11/19【LINE好友綁定會員送$50】",
+   "title": "11/20-12/24【LINE好友專屬優惠】",
    "reward": {
     "type": "gift",
     "value": null,
@@ -356,37 +380,12 @@
    "tags": [
     "會員活動"
    ],
-   "startAt": "2026-10-23",
-   "endAt": "2026-11-19",
-   "publishedAt": "2026-10-23T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3150",
+   "startAt": "2026-11-20",
+   "endAt": "2026-12-24",
+   "publishedAt": "2026-11-20T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3176",
    "category": "藥妝美妝",
-   "updatedAt": "2026-10-28T01:23:57.100Z"
-  },
-  {
-   "id": "cosmed:3164",
-   "kind": "promo",
-   "source": "cosmed",
-   "merchant": "康是美",
-   "title": "11/13-15 全店滿千送$110現金折價券",
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠活動"
-   },
-   "minSpend": null,
-   "code": null,
-   "conditions": [],
-   "tags": [
-    "門市活動",
-    "期限見原文"
-   ],
-   "startAt": null,
-   "endAt": "2026-12-13",
-   "publishedAt": "2026-11-13T09:00:00+08:00",
-   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3164",
-   "category": "藥妝美妝",
-   "updatedAt": "2026-11-13T02:38:34.205Z"
+   "updatedAt": "2026-11-21T03:14:13.154Z"
   },
   {
    "id": "cosmed:856",
