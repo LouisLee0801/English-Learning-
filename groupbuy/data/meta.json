@@ -2,16 +2,22 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 151,
-   "fresh": 16,
-   "updatedAt": "2026-11-22T02:28:21.646Z",
+   "count": 155,
+   "fresh": 9,
+   "updatedAt": "2026-11-22T12:46:30.726Z",
    "seconds": 14,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "限時開團",
+      "keyword": "開團啦",
+      "status": 200,
+      "posts": 0,
+      "limited": true
+     },
+     {
+      "keyword": "開團",
       "status": 200,
       "posts": 22,
       "limited": false
@@ -21,7 +27,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 16
+    "items": 9
    }
   },
   "search": {
@@ -49,15 +55,15 @@
     ],
     "items": 11
    },
-   "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-22T02:28:21.646Z"
+   "error": "apiRequestContext.get: Timeout 30000ms exceeded.",
+   "failedAt": "2026-11-22T12:46:30.726Z"
   },
   "pages": {
    "ok": true,
-   "count": 172,
-   "fresh": 175,
-   "updatedAt": "2026-11-22T02:28:21.646Z",
-   "seconds": 24,
+   "count": 174,
+   "fresh": 177,
+   "updatedAt": "2026-11-22T12:46:30.726Z",
+   "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
    "stats": {
@@ -68,14 +74,14 @@
      },
      {
       "name": "主夫尼克團購",
-      "items": 114
+      "items": 116
      },
      {
       "name": "倩兒☓魯蛋 Adrianne Life",
       "items": 39
      }
     ],
-    "items": 176
+    "items": 178
    }
   },
   "instagram": {
@@ -89,8 +95,8 @@
    "ok": true,
    "count": 0,
    "fresh": 3,
-   "updatedAt": "2026-11-22T02:28:21.646Z",
-   "seconds": 1,
+   "updatedAt": "2026-11-22T12:46:30.726Z",
+   "seconds": 0,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -107,27 +113,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 252,
+   "count": 249,
    "fresh": 20,
-   "updatedAt": "2026-11-22T02:29:59.522Z",
+   "updatedAt": "2026-11-22T12:50:46.334Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 1,
+    "matched": 3,
     "errors": {
-     "momo": 1,
-     "pchome": 1
+     "momo": 1
     },
-    "pending": 13,
+    "pending": 16,
     "blocked": {
-     "momo": 403,
-     "pchome": 429
+     "momo": 403
     }
    }
   }
  },
- "runs": 129,
- "generatedAt": "2026-11-22T02:28:21.646Z",
+ "runs": 130,
+ "generatedAt": "2026-11-22T12:46:30.726Z",
  "files": [
   "threads.json",
   "search.json",
