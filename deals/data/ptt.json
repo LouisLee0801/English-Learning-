@@ -1212,7 +1212,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 31",
+    "推 32",
     "期限見原文"
    ],
    "startAt": null,
@@ -1220,7 +1220,7 @@
    "publishedAt": "2026-11-23T16:24:40.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795451080.A.46B.html",
    "category": "交通出行",
-   "updatedAt": "2026-11-25T14:58:23.019Z"
+   "updatedAt": "2026-11-26T04:10:26.464Z"
   },
   {
    "id": "ptt:1795497812.A.72C",
@@ -1393,7 +1393,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 78",
+    "推 80",
     "期限見原文"
    ],
    "startAt": null,
@@ -1401,7 +1401,7 @@
    "publishedAt": "2026-11-24T20:27:41.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795552061.A.2DA.html",
    "category": "3C家電",
-   "updatedAt": "2026-11-26T00:41:06.166Z"
+   "updatedAt": "2026-11-26T04:10:26.464Z"
   },
   {
    "id": "ptt:1795571218.A.733",
@@ -1513,7 +1513,7 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 47",
+    "推 62",
     "期限見原文"
    ],
    "startAt": null,
@@ -1521,7 +1521,7 @@
    "publishedAt": "2026-11-25T12:29:28.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795609768.A.D37.html",
    "category": "餐飲美食",
-   "updatedAt": "2026-11-26T00:41:06.166Z"
+   "updatedAt": "2026-11-26T04:10:26.464Z"
   },
   {
    "id": "ptt:1795630381.A.32B",
@@ -1544,14 +1544,74 @@
     "PTT 省錢板網友情報，完整條件請點「前往」看原文"
    ],
    "tags": [
-    "推 12"
+    "推 23"
    ],
    "startAt": "2026-11-25",
    "endAt": "2026-12-01",
    "publishedAt": "2026-11-25T18:13:01.000Z",
    "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795630381.A.32B.html",
    "category": "超商量販",
-   "updatedAt": "2026-11-26T00:41:06.166Z"
+   "updatedAt": "2026-11-26T04:10:26.464Z"
+  },
+  {
+   "id": "ptt:1795655968.A.FD5",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "Iherb",
+   "title": "Iherb 黑五  7折 LP導購8% 比雙11優惠",
+   "reward": {
+    "type": "percent_off",
+    "value": 30,
+    "text": "7折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "iHerb 黑五驚喜購物週",
+    "(red check mark)全網 7 折起 優惠，全站狂歡，優惠再升級",
+    "請用折扣碼 (hand pointing right) BFCMAPAC30",
+    "(heart)特殊商品不參與活動。",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-12-03",
+   "publishedAt": "2026-11-26T01:19:28.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795655968.A.FD5.html",
+   "category": "藥妝美妝",
+   "updatedAt": "2026-11-26T04:10:26.464Z"
+  },
+  {
+   "id": "ptt:1795659087.A.068",
+   "kind": "promo",
+   "source": "ptt",
+   "merchant": "優惠情報",
+   "title": "line禮物25-20",
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠活動"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [
+    "line禮物優惠券25-20",
+    "不知是不是分眾（可能性很大）",
+    "在最上面，沒看到應該就是沒有吧",
+    "PTT 省錢板網友情報，完整條件請點「前往」看原文"
+   ],
+   "tags": [
+    "推 15",
+    "期限見原文"
+   ],
+   "startAt": null,
+   "endAt": "2026-12-03",
+   "publishedAt": "2026-11-26T02:11:27.000Z",
+   "url": "https://www.ptt.cc/bbs/Lifeismoney/M.1795659087.A.068.html",
+   "category": "其他",
+   "updatedAt": "2026-11-26T04:10:26.464Z"
   }
  ]
 }

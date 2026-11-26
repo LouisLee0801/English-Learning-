@@ -2,17 +2,17 @@
  "sources": {
   "line": {
    "ok": true,
-   "count": 1409,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
-   "seconds": 69,
+   "count": 1413,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
+   "seconds": 59,
    "note": "LINE POINTS 回饋 %；加碼期間、折價券、賺點任務來自 LINE購物 官方 API",
    "version": 1
   },
   "eva": {
    "ok": true,
-   "count": 342,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
-   "seconds": 44,
+   "count": 347,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
+   "seconds": 54,
    "note": "長榮 Mileage Mall台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1
   },
@@ -24,58 +24,58 @@
    "note": "國泰 Milesback台灣版；外幣計價依當日匯率換算成每 NT$100",
    "version": 1,
    "error": "不是台灣版頁面：「Access Denied」",
-   "failedAt": "2026-11-25T04:54:47.329Z"
+   "failedAt": "2026-11-26T04:10:26.464Z"
   },
   "burgerking": {
    "ok": true,
    "count": 27,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
-   "seconds": 23,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
+   "seconds": 22,
    "note": "漢堡王官網線上點餐優惠券（官網／App 價格）",
    "version": 1
   },
   "cosmed": {
    "ok": true,
-   "count": 17,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
-   "seconds": 9,
+   "count": 18,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
+   "seconds": 4,
    "note": "康是美官網最新活動",
    "version": 1
   },
   "news": {
    "ok": true,
-   "count": 180,
-   "updatedAt": "2026-11-26T00:41:06.166Z",
+   "count": 249,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
    "seconds": 11,
    "note": "Google 新聞近 7 天優惠報導（依分類關鍵字搜尋）",
    "version": 1
   },
   "ptt": {
    "ok": true,
-   "count": 53,
-   "updatedAt": "2026-11-26T00:41:06.166Z",
+   "count": 55,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
    "seconds": 1,
    "note": "PTT Lifeismoney 板近 7 天情報（Atom 訂閱源，每 6 小時累積）",
    "version": 1
   },
   "seven": {
    "ok": true,
-   "count": 7,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
-   "seconds": 4,
+   "count": 8,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
+   "seconds": 3,
    "note": "7-ELEVEN 官網首頁看板、精品集點活動",
    "version": 2
   },
   "supertaste": {
    "ok": true,
-   "count": 143,
-   "updatedAt": "2026-11-25T04:54:47.329Z",
+   "count": 150,
+   "updatedAt": "2026-11-26T04:10:26.464Z",
    "seconds": 5,
    "note": "食尚玩家 App 優惠券（需在 App／官網領券）",
    "version": 1
   }
  },
- "generatedAt": "2026-11-26T00:41:06.166Z",
+ "generatedAt": "2026-11-26T04:10:26.464Z",
  "fx": {
   "USD": 32.9381,
   "HKD": 4.2003,
