@@ -2,16 +2,22 @@
  "sources": {
   "threads": {
    "ok": true,
-   "count": 147,
-   "fresh": 16,
-   "updatedAt": "2026-11-26T23:10:36.001Z",
-   "seconds": 8,
+   "count": 149,
+   "fresh": 8,
+   "updatedAt": "2026-11-27T08:55:24.788Z",
+   "seconds": 14,
    "note": "Threads 公開搜尋（每次輪替 1 個關鍵字，累積 10 天）＋追蹤帳號",
    "version": 1,
    "stats": {
     "search": [
      {
-      "keyword": "限時開團",
+      "keyword": "開團啦",
+      "status": 200,
+      "posts": 0,
+      "limited": true
+     },
+     {
+      "keyword": "開團",
       "status": 200,
       "posts": 20,
       "limited": false
@@ -21,7 +27,7 @@
      "accounts": 0,
      "posts": 0
     },
-    "items": 16
+    "items": 8
    }
   },
   "search": {
@@ -50,13 +56,13 @@
     "items": 11
    },
    "error": "DuckDuckGo 擋下所有查詢（202），保留舊資料",
-   "failedAt": "2026-11-26T23:10:36.001Z"
+   "failedAt": "2026-11-27T08:55:24.788Z"
   },
   "pages": {
    "ok": true,
    "count": 173,
    "fresh": 173,
-   "updatedAt": "2026-11-26T23:10:36.001Z",
+   "updatedAt": "2026-11-27T08:55:24.788Z",
    "seconds": 25,
    "note": "團媽網站／開團日曆（watchlist.json 的 pages，每次整頁重抓）",
    "version": 1,
@@ -89,8 +95,8 @@
    "ok": true,
    "count": 0,
    "fresh": 0,
-   "updatedAt": "2026-11-26T23:10:36.001Z",
-   "seconds": 0,
+   "updatedAt": "2026-11-27T08:55:24.788Z",
+   "seconds": 1,
    "note": "FB 粉專（RSS.app／FetchRSS 免費 feed，每天更新、結果累積）",
    "version": 1,
    "stats": {
@@ -107,27 +113,25 @@
   },
   "compare": {
    "ok": true,
-   "count": 245,
+   "count": 243,
    "fresh": 20,
-   "updatedAt": "2026-11-26T23:12:01.891Z",
+   "updatedAt": "2026-11-27T08:57:40.977Z",
    "note": "比價（PChome、momo、Yahoo購物中心；每次比 20 個商品，3 天更新一次）",
    "stats": {
     "checked": 20,
-    "matched": 5,
+    "matched": 9,
     "errors": {
-     "pchome": 1,
      "momo": 1
     },
     "pending": 27,
     "blocked": {
-     "pchome": 429,
      "momo": 403
     }
    }
   }
  },
- "runs": 141,
- "generatedAt": "2026-11-26T23:10:36.001Z",
+ "runs": 142,
+ "generatedAt": "2026-11-27T08:55:24.788Z",
  "files": [
   "threads.json",
   "search.json",
