@@ -3130,32 +3130,6 @@
    "updatedAt": "2026-11-17T04:30:04.185Z"
   },
   {
-   "id": "supertaste:14567",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "亞尼克",
-   "category": "餐飲美食",
-   "title": "全品項９折",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠"
-   },
-   "minSpend": null,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [],
-   "startAt": "2026-11-26",
-   "endAt": "2026-11-27",
-   "url": "https://supertaste.tvbs.com.tw/offers/14567",
-   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a1e7b747e0726abcac280c0c0e5d78.jpg",
-   "updatedAt": "2026-11-17T04:30:04.185Z"
-  },
-  {
    "id": "supertaste:14568",
    "kind": "coupon",
    "source": "supertaste",
@@ -3522,58 +3496,6 @@
    "endAt": "2026-11-30",
    "url": "https://supertaste.tvbs.com.tw/offers/14581",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a206be420d72b7b7dce968793648d1.jpg",
-   "updatedAt": "2026-11-24T06:04:27.903Z"
-  },
-  {
-   "id": "supertaste:14582",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "拿坡里披薩.炸雞",
-   "category": "餐飲美食",
-   "title": "披薩炸翅199元",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠"
-   },
-   "minSpend": null,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [],
-   "startAt": "2026-11-23",
-   "endAt": "2026-11-27",
-   "url": "https://supertaste.tvbs.com.tw/offers/14582",
-   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a206c27b267225b28d7257677c4892.jpg",
-   "updatedAt": "2026-11-24T06:04:27.903Z"
-  },
-  {
-   "id": "supertaste:14583",
-   "kind": "coupon",
-   "source": "supertaste",
-   "merchant": "先喝道",
-   "category": "餐飲美食",
-   "title": "２杯65元起",
-   "code": null,
-   "reward": {
-    "type": "gift",
-    "value": null,
-    "text": "優惠"
-   },
-   "minSpend": null,
-   "conditions": [
-    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
-    "全台連鎖門市",
-    "每位會員每種券限領一次，數量有限"
-   ],
-   "tags": [],
-   "startAt": "2026-11-27",
-   "endAt": "2026-11-27",
-   "url": "https://supertaste.tvbs.com.tw/offers/14583",
-   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a206c9142172beb014ec1309b5524b.jpg",
    "updatedAt": "2026-11-24T06:04:27.903Z"
   },
   {
@@ -4043,6 +3965,110 @@
    "url": "https://supertaste.tvbs.com.tw/offers/14608",
    "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a217ba5c5f701da2cca30bf4805f93.webp",
    "updatedAt": "2026-11-27T04:16:30.071Z"
+  },
+  {
+   "id": "supertaste:14609",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "GAIA MANOR蓋婭莊園",
+   "category": "旅遊住宿",
+   "title": "憑證件門票０元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：嘉義・大林鎮",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-01",
+   "endAt": "2026-11-30",
+   "url": "https://supertaste.tvbs.com.tw/offers/14609",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a21b6249f5701b93403e798d8f79d5.webp",
+   "updatedAt": "2026-11-28T03:55:00.376Z"
+  },
+  {
+   "id": "supertaste:14610",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "成美文化園",
+   "category": "旅遊住宿",
+   "title": "對中名字免門票",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：彰化・永靖鄉",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-21",
+   "endAt": "2026-11-30",
+   "url": "https://supertaste.tvbs.com.tw/offers/14610",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a21b648f6772dc9f46c44c96ac6345.webp",
+   "updatedAt": "2026-11-28T03:55:00.376Z"
+  },
+  {
+   "id": "supertaste:14611",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "小人國主題樂園",
+   "category": "旅遊住宿",
+   "title": "門票現省751元",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：桃園・龍潭區",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-01",
+   "endAt": "2026-11-30",
+   "url": "https://supertaste.tvbs.com.tw/offers/14611",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a21b6692b272c4bcb25ea095fc3116.webp",
+   "updatedAt": "2026-11-28T03:55:00.376Z"
+  },
+  {
+   "id": "supertaste:14612",
+   "kind": "coupon",
+   "source": "supertaste",
+   "merchant": "六福村主題遊樂園",
+   "category": "旅遊住宿",
+   "title": "秀證件門票499",
+   "code": null,
+   "reward": {
+    "type": "gift",
+    "value": null,
+    "text": "優惠"
+   },
+   "minSpend": null,
+   "conditions": [
+    "需在「食尚玩家」App 或官網登入領券，再到店家兌換",
+    "地點：新竹",
+    "每位會員每種券限領一次，數量有限"
+   ],
+   "tags": [],
+   "startAt": "2026-11-28",
+   "endAt": "2026-11-29",
+   "url": "https://supertaste.tvbs.com.tw/offers/14612",
+   "logo": "https://supertaste-images.tvbs.com.tw/api/v1/images/01a21b689b997185b2c98dc30aa2c390.webp",
+   "updatedAt": "2026-11-28T03:55:00.376Z"
   }
  ]
 }

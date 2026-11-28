@@ -412,6 +412,30 @@
    "updatedAt": "2026-11-26T04:10:26.464Z"
   },
   {
+   "id": "cosmed:3179",
+   "kind": "promo",
+   "source": "cosmed",
+   "merchant": "康是美",
+   "title": "11/29 全店不限金額88折 *實體門市限定*",
+   "reward": {
+    "type": "percent_off",
+    "value": 12,
+    "text": "88折"
+   },
+   "minSpend": null,
+   "code": null,
+   "conditions": [],
+   "tags": [
+    "門市活動"
+   ],
+   "startAt": "2026-11-29",
+   "endAt": "2026-11-29",
+   "publishedAt": "2026-11-27T09:00:00+08:00",
+   "url": "https://www.cosmed.com.tw/news_detail.aspx?id=3179",
+   "category": "藥妝美妝",
+   "updatedAt": "2026-11-28T03:55:00.376Z"
+  },
+  {
    "id": "cosmed:856",
    "kind": "promo",
    "source": "cosmed",
